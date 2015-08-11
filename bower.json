@@ -1,0 +1,6 @@
+{
+  "name": "vr-mother",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}

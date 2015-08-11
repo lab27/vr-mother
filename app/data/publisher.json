@@ -1,0 +1,43 @@
+[
+	{
+		"name":"eth & uzh",
+		"image":"eth",
+		"classification":"academic"
+	},
+	{
+		"name":"wilpf international",
+		"image":"wilpf",
+		"classification":"conference"
+	},
+		{
+		"name":"re:publica",
+		"image":"republica",
+		"classification":"conference"
+	},
+		{
+		"name":"webinale",
+		"image":"webinale",
+		"classification":"conference"
+	},
+		{
+		"name":"courage foundation",
+		"image":"courage",
+		"classification":"foundation"
+	},
+		{
+		"name":"AMAZE",
+		"image":"amaze",
+		"classification":"conference"
+	},
+		{
+		"name":"47th International Ferienkurse",
+		"image":"ferien",
+		"classification":"conference"
+	},
+		{
+		"name":"internet of things",
+		"image":"things",
+		"classification":"conference"
+	}
+	
+]

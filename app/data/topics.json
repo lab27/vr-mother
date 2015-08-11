@@ -1,0 +1,34 @@
+[
+	{
+		"topic":"politics",
+		"amount":"237"
+	},
+	{
+		"topic":"culture",
+		"amount":"237"	
+	},
+		{
+		"topic":"philosophy",
+		"amount":"237"	
+	},
+		{
+		"topic":"technology",
+		"amount":"237"	
+	},
+		{
+		"topic":"art",
+		"amount":"237"		
+	},
+		{
+		"topic":"music",
+		"amount":"237"	
+	},
+		{
+		"topic":"science",
+		"amount":"237"	
+	},
+		{
+		"topic":"society",
+		"amount":"237"	
+	}
+]
