@@ -63,6 +63,84 @@ html, body {
 	text-transform:uppercase;
 }
 
+//big search:
+.big-search {
+	margin:24px;
+}
+
+//home-search section 
+.home-search {
+	margin-top:-3px;
+	// min-height:50vw;
+	// height: 50vw;
+	// max-height:50vw;
+	background:orange;
+	background:url(../img/bg/jacketlady-blue.jpg) no-repeat 50% 50%;
+	// background: -moz-linear-gradient( 30deg, rgb(44,70,176) 0%, rgb(84,198,198) 100%), url(../img/bg/jacketlady.jpg) no-repeat 50% 50%;
+ //    background: -webkit-linear-gradient( 30deg, rgba(44,70,176, .3) 0%, rgba(84,198,198, .3) 100%), url(../img/bg/jacketlady-blue.jpg) no-repeat 50% 50%;
+ //    background: -ms-linear-gradient( 30deg, rgb(44,70,176) 0%, rgb(84,198,198) 100%), url(../img/bg/jacketlady.jpg) no-repeat 50% 50%;
+	background-size:cover;
+	padding:84px 24px;
+
+	h1 {
+			color:$white;
+	letter-spacing:-1px;
+	font-weight:700;
+	}
+
+	h4 {
+		color: $white;
+	}
+
+}
+
+
+
+
+
+//GRad Button
+$gradient: linear-gradient(45deg, $secondary-color, $warning-color);
+$gradient2: linear-gradient(45deg, $primary-color, $secondary-color);
+$gradient3: linear-gradient(45deg, $smoke, $white);
+
+.grad-button {
+  color: transparent;
+  font-size: 2rem;
+  // letter-spacing: 1px;
+  border: 4px solid transparent;
+  border-image: $gradient;
+  border-image-slice: 1;
+  background: $gradient;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  transition: all 0.2s ease;
+  padding:12px;
+
+  
+  &:hover {
+  color: transparent;
+  border-image: $gradient2;
+  border-image-slice: 1;
+  background: $gradient2;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+
+
+  }
+
+	// &:before {
+	// 	content: "";
+	// 	position:absolute;
+	// 	top:0;
+	// 	left:0;
+	// 	right:0;
+	// 	bottom:0;
+	// 	background:$white;
+	// 	z-index: 0;
+	// }
+
+}
+
 // TITLEBAR 
 
 .titlebar {
@@ -238,7 +316,7 @@ footer ul li {
 	bottom:0;
 	width:100%;
 	height:100%;
-	background:rgba(97,111,123,.2);
+	background:rgba($info-color, .2);
 	transition: background .5s ease;
 	display:flex; display:-webkit-flex;
 	flex-flow:row nowrap;
@@ -267,7 +345,10 @@ footer ul li {
 }
 
 .thumb-image-holder:hover .thumb-overlay {
- 	background:rgba(221,186,118,.7);
+ 	background:rgba($secondary-color, .7);
+ 	// $svg-gradient-shim-threshold: 1 !global;
+  // @include background-image(linear-gradient(120deg, #2ac363, #cd8c14, #9c4cc2));
+  width: 80px;
 }
 
 .thumbnail-inside:hover .thumb-overlay:after {
@@ -623,6 +704,11 @@ p.thumb-logline {
 }
 
 @media  #{$large-up} { 
+
+	.home-search h1 {
+	font-size: 5em;
+
+}
 	
 	
 	.thumbnail {
@@ -698,6 +784,10 @@ p.thumb-logline {
 @media #{$xlarge-up} { 
 	.thumbnail {
 		width:33.33%;
+	}
+
+	.home-search {
+		background-position: 50% 0;
 	}
 
 	// .thumb-image-holder, .thumb-image {

@@ -98,6 +98,7 @@ $font-family-sans-serif: "Roboto Condensed","Helvetica Neue", Helvetica, Roboto,
 // $font-weight-bold: bold;
 
 //custom vars:
+//vr colors:
 $white         : #FFFFFF !default;
 $ghost         : #FAFAFA !default;
 $snow          : #f2f2f2 !default;
@@ -111,20 +112,21 @@ $base          : #AAAAAA !default;
 $aluminum      : #999999 !default;
 $jumbo         : #888888 !default;
 $monsoon       : #777777 !default;
-$steel         : #DADBDE !default;
-$charcoal      : #B5B7BD !default;
+//----
+$steel         : #d9dadd !default;
+$charcoal      : #b4b6be !default;
 $tuatara       : #8F939C !default;
-$oil           : #6A6F7B !default;
-$jet           : #444A59 !default;
+$oil           : #64697e !default;
+$jet           : #3c4258 !default;
 $black         : #000000 !default;
 
 // We use these as default colors throughout
-$primary-color: #1677CB !default;   // royal-blue
-$secondary-color: #DDBA76 !default; // golden-grahams
-$alert-color: #6097C8 !default;     // mild-blue
-$success-color: #43AC6A !default;   // sea-green
-$warning-color: #f08a24 !default;   // carrot
-$info-color: #a0d3e8 !default;      // cornflower
+$primary-color: #2c46b0 !default;   // vr blue
+$secondary-color: #54c6c6 !default; // vr turq
+$alert-color: #f82847 !default;     // vr red
+$success-color: #d8f793 !default;   // vr greeen (new from nick)
+$warning-color: #ffed00 !default;   // vr yellow
+$info-color: #fef1de !default;      // vr beige
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -144,7 +146,7 @@ $info-color: #a0d3e8 !default;      // cornflower
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
-// $global-rounded: 1000px;
+$global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -469,7 +471,7 @@ $info-color: #a0d3e8 !default;      // cornflower
 
 // We use this to set the default radius used throughout the core.
 // $button-radius: $global-radius;
-// $button-round: $global-rounded;
+$button-round: $global-rounded;
 
 // We use this to set default opacity and cursor for disabled buttons.
 // $button-disabled-opacity: 0.7;
@@ -623,7 +625,7 @@ $info-color: #a0d3e8 !default;      // cornflower
 // $include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-// $form-spacing: rem-calc(16);
+$form-spacing: rem-calc(24);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
@@ -634,14 +636,14 @@ $info-color: #a0d3e8 !default;      // cornflower
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
-// $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
+$input-font-color: $oil;
+$input-font-size: rem-calc(18);
+$input-bg-color: rgba($white,.8);
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
-// $input-border-color: scale-color($white, $lightness: -20%);
-// $input-focus-border-color: scale-color($white, $lightness: -40%);
+$input-border-color: $secondary-color;
+$input-focus-border-color: $secondary-color;
 // $input-border-style: solid;
-// $input-border-width: 1px;
+$input-border-width: 4px;
 // $input-border-radius: $global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
