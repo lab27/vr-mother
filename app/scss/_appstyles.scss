@@ -24,7 +24,8 @@ html, body {
 }
 
 .top-bar {
- box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);}
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+ }
 
 .name {
 	padding:20px;
@@ -220,9 +221,9 @@ footer ul li {
 	margin:0;
 	background:url(../img/thumbs/thumb0.jpg) no-repeat 50% 50%;
 	background-size:cover;
-	-webkit-filter: sepia(1) hue-rotate(180deg) opacity(.4); 
+	-webkit-filter: sepia(.2) opacity(.4); 
 	// -webkit-filter: grayscale(.5);
-	filter:sepia(1) hue-rotate(180deg) opacity(.2);
+	// filter:sepia(1) hue-rotate(180deg) opacity(.2);
 	// filter:hue-rotate(100);
 	flex:0;
 	-webkit-flex:0;
