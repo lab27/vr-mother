@@ -1405,10 +1405,10 @@ $topbar-link-color-active-hover: $black;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: $topbar-bg-color;
-$topbar-link-bg-hover: $white-smoke;
-$topbar-link-bg-color-hover: $smoke;
-$topbar-link-bg-active: $ghost;
-$topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: 35%);
+$topbar-link-bg-hover: $topbar-bg-color;
+$topbar-link-bg-color-hover: $topbar-bg-color;
+$topbar-link-bg-active: $topbar-bg-color;
+$topbar-link-bg-active-hover: $topbar-bg-color;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);

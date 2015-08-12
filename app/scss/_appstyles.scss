@@ -319,29 +319,56 @@ $gradient3: linear-gradient(45deg, $smoke, $white);
 //FOOTER
 
 footer {
-	display:flex;
-	flex-flow:column nowrap;
-	justify-content:space-between;
-	align-items:center;
-	align-content:center;
-	padding:84px;
-	padding-bottom:24px;
+	// display:flex;
+	// flex-flow:column nowrap;
+	// justify-content:space-between;
+	// align-items:center;
+	// align-content:center;
+	padding:84px 12px;
+	padding-bottom:12px;
 	background:$oil;
 	color:$ghost;
 
-	.social {
-		font-size: rem-calc(36);
-		// max-width: 48px;
-	}
+
 
 	a {
 		color: $smoke;
 		font-weight: 700;
 	}
 
+	a:hover {
+		color: $white;
+		text-decoration: underline;
+	}
+
+	ul {
+		text-align: center;
+		float:none;
+	}
+
+	ul li {
+		float: none;
+		display: inline-block;
+	}
+
 	.footer-links {
 		margin-top: 48px;
+		padding-top:84px;
+		text-align:center;
+		margin:0 auto; 
 	}
+
+	.social {
+		text-align: center;
+		font-size: rem-calc(36);
+		// max-width: 48px;
+		margin-bottom: 84px;
+	}
+
+	.copyright {
+		color:$info-color;
+	}
+
 
 }
 
@@ -350,14 +377,14 @@ footer * {
 }
 
 footer ul  {
-	display:flex;
-	flex-flow:row wrap;
-	justify-content:space-around;
+	// display:flex;
+	// flex-flow:row wrap;
+	// justify-content:space-around;
 
 }
 
 footer ul li {
-	flex:1 1 calc(100/8);
+	// flex:1 1 calc(100/8);
 }
 
 // THUMBNAILS!!
