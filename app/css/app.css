@@ -8720,7 +8720,9 @@ html, body {
   text-transform: uppercase; }
 
 .big-search {
-  margin: 24px; }
+  margin: 24px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
 
 .home-search {
   margin-top: -3px;
@@ -8768,6 +8770,10 @@ html, body {
   background: none;
   color: #64697e; }
 
+.happening-now {
+  background: #64697e;
+  padding: 84px 12px; }
+
 .open-blink {
   content: ' ';
   position: relative;
@@ -8776,7 +8782,7 @@ html, body {
   height: 14px;
   margin: 0 20px;
   border-radius: 50%;
-  background-color: #4caf50;
+  background-color: #d8f793;
   -webkit-animation-name: flash;
   animation-name: flash;
   -webkit-animation-duration: 1s;
@@ -8794,7 +8800,7 @@ html, body {
   height: 30px;
   opacity: 0.1;
   border-radius: 50%;
-  background-color: #4caf50; }
+  background-color: #d8f793; }
 
 .grad-button {
   color: transparent;
@@ -8910,7 +8916,8 @@ footer ul li {
   padding: 6px;
   width: 100%;
   background: none;
-  display: block; }
+  display: block;
+  cursor: pointer; }
 
 .thumbnail-inside {
   background: #FFFFFF;
@@ -9076,8 +9083,26 @@ p.thumb-meta {
   line-height: 0.875rem;
   margin-bottom: 8px; }
 
+.publisher {
+  background: #54c6c6;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  font-weight: 400; }
+
 .thumb-publisher:hover {
   text-decoration: underline; }
+
+.classification {
+  background: #54c6c6;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  font-weight: 400; }
 
 .thumb-timeago {
   color: #b4b6be;

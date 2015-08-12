@@ -6,6 +6,7 @@
     <title>Foundation project</title>
     <!-- build:css css/libraries.min.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
     <!-- endbower -->
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-     <a href="index.html"><img src="img/logo/logo-blue.svg" width="57" height="40"></a>
+     <a href="index.html"><img src="img/logo/logo-red.svg" width="57" height="40"></a>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar"><a href="#"><span>Menu</span></a></li>
@@ -66,12 +67,12 @@
 
 <!-- SEARCH AND HERO -->
 
-<section class="home-search"><h1 class="text-center">People are talking.</h1>
-<div class="medium-8 medium-offset-2 large-6 large-offset-3 xlarge-4 xlarge-offset-4 columns"><h4 class="text-center">Voice Republic features some of the most interesting and relevant conversations happening today. Dive in and start listening.</h4></div>
+<section class="home-search"><h1 class="text-center animated fadeInUp">People are talking.</h1>
+<div class="medium-8 medium-offset-2 large-6 large-offset-3 xlarge-4 xlarge-offset-4 columns animated fadeInUp"><h4 class="text-center">Voice Republic features some of the most interesting and relevant conversations happening today. Dive in and start listening.</h4></div>
 
 
 <div class="row">
-<form><div class="large-6 large-offset-3 columns big-search">
+<form><div class="large-6 large-offset-3 columns big-search animated fadeInUp">
       <div class="row collapse prefix-round">
         <div class="small-9 columns">
           <input type="text" placeholder="Search Voice Republic">
@@ -94,7 +95,7 @@
 
 <section class="sign-in">
 <div class="row">
-	<div class="medium-6 columns sign-in-box">
+	<div class="medium-6 medium-offset-3 columns sign-in-box">
 		
 <div class="small-12 columns">
   <div class="sign-in-box">
@@ -127,13 +128,15 @@
 </div>
 
 	</div>
-	<div class="medium-6 columns features-box">
+<!-- 	<div class="medium-6 columns features-box">
 		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 1</div>
 				<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 2</div>
 
 		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 3</div>
 
-	</div></div>
+	</div> -->
+
+	</div>
 
 </section>
 
@@ -142,11 +145,39 @@
 <!-- HAPPENING NOW -->
 
 <section class="happening-now">
-	<div class="row">
-	<h1 class="text-center">Happening Now</h1>
-	<span class="open-blink"></span>
-		thumb1
-	</div>
+	<h1 class="text-center">Happening Now <span class="open-blink"></span></h1>
+	<div id="thumb-container">
+
+	
+	<div class="thumbnail">
+		<div class="thumbnail-inside">
+			<div class="thumb-image-holder hide-for-small-only">
+				<div class="thumb-image" data-bg="thumb3"></div>
+				<div class="thumb-overlay">
+					<!-- <div class="play-icon">
+						PLAY
+				</div> -->
+				</div>
+			</div>
+			<div class="thumb-right right">
+				<div class="thumb-info">
+					<h1 class="thumb-title">A MAZE Masterclass: Rami Ismail in conversation with L...</h1>
+					<p class="thumb-meta"><span class="thumb-publisher"> AMAZE Berlin</span>
+					<span class="classification">conference</span>
+					<span class="thumb-timeago">4 months ago</span></p>
+					<p class="thumb-logline">Leigh Alexander and Rami Ismail: In-depth conversation between a journalist &amp; a &#x27;veteran&#x27; of the game scene.</p>
+				</div>
+				<div class="thumb-actions">
+					<div class="thumb-duration">80 Min</div>
+					<div class="thumb-plays">56 Plays</div>
+					<div class="thumb-listenlater"><span class="icon-uniE704"></span></div>
+	
+				</div>
+			</div>
+		</div>
+	</div></div>
+	
+
 </section>
 
 

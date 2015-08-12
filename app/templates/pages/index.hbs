@@ -4,12 +4,12 @@ title: Welcome
 
 <!-- SEARCH AND HERO -->
 
-<section class="home-search"><h1 class="text-center">People are talking.</h1>
-<div class="medium-8 medium-offset-2 large-6 large-offset-3 xlarge-4 xlarge-offset-4 columns"><h4 class="text-center">Voice Republic features some of the most interesting and relevant conversations happening today. Dive in and start listening.</h4></div>
+<section class="home-search"><h1 class="text-center animated fadeInUp">People are talking.</h1>
+<div class="medium-8 medium-offset-2 large-6 large-offset-3 xlarge-4 xlarge-offset-4 columns animated fadeInUp"><h4 class="text-center">Voice Republic features some of the most interesting and relevant conversations happening today. Dive in and start listening.</h4></div>
 
 
 <div class="row">
-<form><div class="large-6 large-offset-3 columns big-search">
+<form><div class="large-6 large-offset-3 columns big-search animated fadeInUp">
       <div class="row collapse prefix-round">
         <div class="small-9 columns">
           <input type="text" placeholder="Search Voice Republic">
@@ -32,7 +32,7 @@ title: Welcome
 
 <section class="sign-in">
 <div class="row">
-	<div class="medium-6 columns sign-in-box">
+	<div class="medium-6 medium-offset-3 columns sign-in-box">
 		
 <div class="small-12 columns">
   <div class="sign-in-box">
@@ -65,13 +65,15 @@ title: Welcome
 </div>
 
 	</div>
-	<div class="medium-6 columns features-box">
+<!-- 	<div class="medium-6 columns features-box">
 		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 1</div>
 				<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 2</div>
 
 		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 3</div>
 
-	</div></div>
+	</div> -->
+
+	</div>
 
 </section>
 
@@ -80,9 +82,13 @@ title: Welcome
 <!-- HAPPENING NOW -->
 
 <section class="happening-now">
-	<div class="row">
-	<h1 class="text-center">Happening Now</h1>
-	<span class="open-blink"></span>
-		thumb1
-	</div>
+	<h1 class="text-center">Happening Now <span class="open-blink"></span></h1>
+	<div id="thumb-container">
+
+	{{#each live-talk }}
+	{{> thumbnail}}
+	{{/each}}
+</div>
+	
+
 </section>

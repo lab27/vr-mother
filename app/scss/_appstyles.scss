@@ -73,6 +73,8 @@ html, body {
 //big search:
 .big-search {
 	margin:24px;
+		-webkit-animation-duration: 2s;
+	animation-duration: 2s;
 }
 
 //home-search section 
@@ -137,6 +139,13 @@ html, body {
 
 // happening now
 
+.happening-now {
+	background:$oil;
+	padding:84px 12px;
+
+
+}
+
 .open-blink {
 	content: ' ';
 	position: relative;
@@ -145,7 +154,7 @@ html, body {
 	height: 14px;
 	margin: 0 20px;
 	border-radius: 50%;
-	background-color: #4caf50;
+	background-color: $success-color;
 	-webkit-animation-name: flash;
 	animation-name: flash;
 	-webkit-animation-duration: 1s;
@@ -164,7 +173,7 @@ html, body {
 	height: 30px;
 	opacity: 0.1;
 	border-radius: 50%;
-	background-color: #4caf50;
+	background-color: $success-color;
 }
 
 
@@ -338,6 +347,7 @@ footer ul li {
 	width:100%;
 	background: none;
 	display:block;
+	cursor:pointer;
 }
 
 .thumbnail-inside {
@@ -533,10 +543,29 @@ p.thumb-meta {
 	margin-bottom:8px;
 }
 
+.publisher {
+		background:$secondary-color;
+	color:$white;
+	font-size:rem-calc(12);
+	padding:2px 6px;
+	border-radius:2px;
+	margin-left:6px;
+	font-weight:400;
+}
+
 .thumb-publisher:hover {
 	text-decoration:underline;
 }
 
+.classification {
+	background:$secondary-color;
+	color:$white;
+	font-size:rem-calc(12);
+	padding:2px 6px;
+	border-radius:2px;
+	margin-left:6px;
+	font-weight:400;
+}
 
 
 .thumb-timeago {
