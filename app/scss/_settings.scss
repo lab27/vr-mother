@@ -446,7 +446,7 @@ $global-rounded: 1000px;
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
+$button-font-weight: 700;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -1404,7 +1404,7 @@ $topbar-link-color-active-hover: $black;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
+$topbar-link-bg: $topbar-bg-color;
 $topbar-link-bg-hover: $white-smoke;
 $topbar-link-bg-color-hover: $smoke;
 $topbar-link-bg-active: $ghost;

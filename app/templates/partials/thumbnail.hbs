@@ -13,13 +13,14 @@ component: thumbnail
 		</div>
 		<div class="thumb-right right">
 			<div class="thumb-info">
-				<h1 class="thumb-title">{{truncate title 57 "..."}}</h1>
+				<h1 class="thumb-title"><span class="is-live">LIVE</span>{{truncate title 57 "..."}}</h1>
 				<p class="thumb-meta"><span class="thumb-publisher"> {{ publisher }}</span>
-				<span class="classification">{{classification}}</span>
-				<span class="thumb-timeago">{{ time-ago }} ago</span></p>
+				<span class="thumb-classification">/ {{classification}}</span>
+				{{!-- <span class="thumb-timeago">{{ time-ago }} ago</span></p> --}}
 				<p class="thumb-logline">{{ truncate logline 120 "..." }}</p>
 			</div>
 			<div class="thumb-actions">
+				<div class="thumb-timeago">{{ time-ago }} ago</div>
 				<div class="thumb-duration">{{ duration }} Min</div>
 				<div class="thumb-plays">{{ plays }} Plays</div>
 				<div class="thumb-listenlater"><span class="icon-uniE704"></span></div>
