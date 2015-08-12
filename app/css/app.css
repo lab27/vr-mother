@@ -8734,6 +8734,67 @@ html, body {
     font-weight: 700; }
   .home-search h4 {
     color: #FFFFFF; }
+  .home-search ::-webkit-input-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+  .home-search :-moz-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+  .home-search ::-moz-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+  .home-search :-ms-input-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+
+.sign-in {
+  background: #54c6c6;
+  padding: 84px 0; }
+
+.sign-in-box {
+  background: #FFFFFF;
+  padding: 12px 12px 8px 12px; }
+  .sign-in-box h3 {
+    color: #54c6c6;
+    margin-bottom: 18px; }
+  .sign-in-box input {
+    color: #54c6c6; }
+  .sign-in-box ::-webkit-input-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+  .sign-in-box :-moz-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+  .sign-in-box ::-moz-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+  .sign-in-box :-ms-input-placeholder {
+    color: rgba(84, 198, 198, 0.8); }
+
+.button.blank {
+  background: none;
+  color: #64697e; }
+
+.open-blink {
+  content: ' ';
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 20px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.open-blink:before {
+  content: ' ';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: #4caf50; }
 
 .grad-button {
   color: transparent;
@@ -9224,7 +9285,7 @@ p.thumb-logline {
   .thumbnail {
     width: 33.33%; }
   .home-search {
-    background-position: 50% 0; }
+    background-position: 50% 20%; }
   .thumb-image-holder, .thumb-image {
     width: 210px;
     height: 210px;

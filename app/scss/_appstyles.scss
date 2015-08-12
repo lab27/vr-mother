@@ -1,3 +1,10 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
 
 
 /* all app scss styles here */
@@ -92,10 +99,73 @@ html, body {
 		color: $white;
 	}
 
+	@include placeholder {
+    color: rgba($secondary-color,.8);
+}
+
+}
+
+//home sign in section
+.sign-in {
+	background:$secondary-color;
+	padding:84px 0;
+}
+
+.sign-in-box {
+	background:$white;
+	padding:12px 12px 8px 12px;
+
+	h3 {
+		color: $secondary-color;
+		margin-bottom: 18px;
+	}
+
+	input {
+		color:$secondary-color;
+	}
+
+	@include placeholder {
+    color: rgba($secondary-color,.8);
+}
+}
+
+.button.blank {
+	background:none;
+	color:$oil;
 }
 
 
+// happening now
 
+.open-blink {
+	content: ' ';
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0 20px;
+	border-radius: 50%;
+	background-color: #4caf50;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+ .open-blink:before {
+	content: ' ';
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	opacity: 0.1;
+	border-radius: 50%;
+	background-color: #4caf50;
+}
 
 
 //GRad Button
@@ -787,7 +857,7 @@ p.thumb-logline {
 	}
 
 	.home-search {
-		background-position: 50% 0;
+		background-position: 50% 20%;
 	}
 
 	// .thumb-image-holder, .thumb-image {
