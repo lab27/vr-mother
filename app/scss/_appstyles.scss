@@ -831,7 +831,13 @@ p.thumb-logline {
 }
 
 @media #{$small-up} { }
-@media #{$small-only} { }
+@media #{$small-only} { 
+
+.sign-in {
+	padding:0;
+}
+
+}
 
 @media #{$medium-up} { 
 

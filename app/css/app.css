@@ -9263,6 +9263,10 @@ p.thumb-logline {
 .topic-tile:hover .topic-image {
   -webkit-filter: sepia(.2) hue-rotate(0) opacity(0.4); }
 
+@media only screen and (max-width: 40em) {
+  .sign-in {
+    padding: 0; } }
+
 @media only screen and (min-width:40.0625em) {
   .thumb-info {
     flex: 1 1 calc(10vw - 42px);

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation project</title>
-
+    <link rel="stylesheet" href="css/libraries.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
 <script src="//use.typekit.net/ilh7iri.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -17,7 +17,7 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-     <a href="index.html"><img src="img/logo.svg" width="57" height="40"></a>
+     <a href="index.html"><img src="img/logo/logo-red.svg" width="57" height="40"></a>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar"><a href="#"><span>Menu</span></a></li>
@@ -26,9 +26,9 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class=""><a href="#"><span class="icon-uniE7E9"> </span> Search</a></li>
-      <li class="active"><a href="explore.html">Explore</a></li>
-      <li class="has-dropdown">
+      <li class=""><a href="explore.html">Browse the Archive</a></li>
+      <li class="sign-in-top"><a href="#" class="button small secondary">Sign In</a></li>
+<!--       <li class="has-dropdown">
         <a href="#">
              
               <div class="avatar">
@@ -46,18 +46,134 @@
           <li class=""><a href="#">My Profile</a></li>
           <li><a href="#">My Account</a></li>
         </ul>
-      </li>
+      </li> -->
     </ul>
  
     
   </section>
 </nav>
-    <div class="container-fluid theme-showcase" role="main">
+    <div role="main">
 
       
 
-<h1 class="text-center">Voice Republic</h1>
-<h3 class="text-center">Wonderful content.</h3>
+<!-- SEARCH AND HERO -->
+
+<section class="home-search"><h1 class="text-center animated fadeInUp">People are talking.</h1>
+<div class="medium-8 medium-offset-2 large-6 large-offset-3 xlarge-4 xlarge-offset-4 columns animated fadeInUp"><h4 class="text-center">Voice Republic features some of the most interesting and relevant conversations happening today. Dive in and start listening.</h4></div>
+
+
+<div class="row">
+<form><div class="large-6 large-offset-3 columns big-search animated fadeInUp">
+      <div class="row collapse prefix-round">
+        <div class="small-9 columns">
+          <input type="text" placeholder="Search Voice Republic">
+        </div>
+        <div class="small-3 columns">
+          <a href="#" class="button secondary medium-expand">Go</a>
+        </div>
+      </div>
+    </div>
+    </form>
+
+
+    </div>
+
+<div class="row"><h4 class="text-center animated fadeInUp"><a href="explore.html">Or Browse the Archive</a></h4></div>
+
+<!-- <h3 class="text-center"><a class="grad-button" href="">Sign In</a></h3> -->
+
+</section>
+
+
+<!-- SIGN IN -->
+
+<section class="sign-in">
+<div class="row">
+	<div class="medium-6 medium-offset-3 columns sign-in-box">
+		
+<div class="small-12 columns">
+  <div class="sign-in-box">
+  <div class="row">
+  <div class="large-12 columns">
+    <form>
+    <h3>Sign in for the full experience.</h3>
+       <div class="row">
+         <div class="large-12 columns large-collapse">
+             <input type="text" name="email" placeholder="Email" />
+         </div>
+       </div>
+      <div class="row">
+         <div class="large-12 columns large-collapse">
+             <input type="password" name="password" placeholder="Password" />
+         </div>
+      </div>
+      <div class="row">
+        <div class="small-6 columns collapse">
+          <input type="submit" class="button secondary expand" value="Sign In"/>
+        </div>
+        <div class="small-6 columns collapse">
+          <input type="submit" class="button blank expand" value="Or Join"/>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+	</div>
+<!-- 	<div class="medium-6 columns features-box">
+		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 1</div>
+				<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 2</div>
+
+		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 3</div>
+
+	</div> -->
+
+	</div>
+
+</section>
+
+
+
+<!-- HAPPENING NOW -->
+
+<section class="happening-now">
+	<div class="section-title"><h2 class="text-center">Happening Now <span class="open-blink"></span></h2></div>
+	<div id="thumb-container">
+
+	
+	<div class="thumbnail">
+		<div class="thumbnail-inside">
+			<div class="thumb-image-holder hide-for-small-only">
+				<div class="thumb-image" data-bg="thumb3"></div>
+				<div class="thumb-overlay">
+					<!-- <div class="play-icon">
+						PLAY
+				</div> -->
+				</div>
+			</div>
+			<div class="thumb-right right">
+				<div class="thumb-info">
+					<h1 class="thumb-title"><span class="is-live">LIVE</span>A MAZE Masterclass: Rami Ismail in conversation with L...</h1>
+					<p class="thumb-meta"><span class="thumb-publisher"> AMAZE Berlin</span>
+					<span class="thumb-classification">/ conference</span>
+					<p class="thumb-logline">Leigh Alexander and Rami Ismail: In-depth conversation between a journalist &amp; a &#x27;veteran&#x27; of the game scene.</p>
+				</div>
+				<div class="thumb-actions">
+					<div class="thumb-timeago">4 months ago</div>
+					<div class="thumb-duration">80 Min</div>
+					<div class="thumb-plays">56 Plays</div>
+					<div class="thumb-listenlater"><span class="icon-uniE704"></span></div>
+	
+				</div>
+			</div>
+		</div>
+	</div></div>
+	
+
+</section>
+
 
     </div>
 
@@ -66,13 +182,29 @@
 
 	<div class="row">
 	<div class="small-12 columns">
-	<h3 class="text-center">VOICE REPUBLIC</h3>
+	<h3 class="text-center"><img src="img/logo/logotype-beige.svg" width="180"></h3>
 	</div>
 	</div>
 
 
-<div class="row">	<div class="small-12 columns">
-	<ul class="inline-list">
+<div class="footer-links">	<div class="small-12 columns">
+
+<div class="large-1 medium-3 column large-offset-2"><a href="#">About</a></div>
+<div class="large-1 medium-3 column"><a href="#">Pricing</a></div>
+<div class="large-1 medium-3 column"><a href="#">Help</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">Blog</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">Terms</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">Press Kit</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">System Stats</a></div>
+
+<div class="large-1 medium-3 column end"><a href="#">Contact Us</a></div>
+
+
+	<!-- <ul class="inline-list">
 		  <li role="presentation"><a href="#">About</a></li>
 		  <li role="presentation"><a href="#">Pricing</a></li>
 		  <li role="presentation"><a href="#">Help</a></li>
@@ -81,20 +213,26 @@
 		  <li role="presentation"><a href="#">Press Kit</a></li>
 		  <li role="presentation"><a href="#">System Status</a></li>
 		  <li role="presentation"><a href="#">Contact Us</a></li>
-		</ul></div>
+		</ul> -->
+
+
+		</div>
 </div>
 	
 
 
 
-<div class="row">	<div class="small-12 columns"><ul class="inline-list">
-		  <li role="presentation"><a href="#">Facebook</a></li>
-		  <li role="presentation"><a href="#">Twitter</a></li>
-		</ul></div>
+<div class="row">	<div class="small-12 medium-6 medium-offset-3 columns social">
+
+		    <a href="#"><span class="icon-uniE949"> </span></a>
+		    <a href="#"><span class="icon-uniE94A"> </span></a>
+
+		  <!-- <li role="presentation"><a href="#"><span class="social icon-uniE94A"> </span></a></li> -->
+		</div>
 		</div>
 
 		<div class="row">
-<div class="small-12 columns"><p class="text-center">&copy;2015 Voice Republic Media AG</p>
+<div class="small-12 columns"><p class="text-center copyright">&copy;2015 Voice Republic Media AG</p>
 </div></div>
 		
 </footer>
