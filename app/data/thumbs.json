@@ -2,7 +2,7 @@
 {
   "myNum": "0", 
   "title": "Sozialer Wandel und Politische Kunst in der Südosttürkei",
-  "publisher": "ngbk neue Gesellschaft für bildende...  ",
+  "publisher": "nGbK",
   "time-ago": "3 days",
   "logline": "Podiumsgespräch mit kurdischen Künstlern. Eine Kooperation mit der Heinrich-Böll Stiftung. Sprache: Deutsch/ Türkisch.",
   "plays":"234", 
@@ -13,7 +13,7 @@
 {
   "myNum": "1", 
   "title": "Independent Cultural Spaces in Turkey and Germany",
-  "publisher": "ngbk neue Gesellschaft für bildende...  ",
+  "publisher": "nGbK",
   "time-ago": "3 days",
   "logline": "Asena Günal (DEPO Istanbul), Çağla İlk (Präsidium nGbK) and Zeyno Pekünlü (Performer) at neue Gesellschaft für bildende Kunst Berlin.",
   "plays":"1k", 
@@ -49,7 +49,7 @@
   "time-ago": "3 days",
   "logline": "Eine Diskussion zu religiösen Werten in der Gesellschaft. Mit Lissy Eichert und Cemile Giousouf. In Kooperation mit der Schwarzkopf-Stiftung",
   "plays":"12k", 
-  "classification":"conference",
+  "classification":"foundation",
   "duration": "75"
 },
 
@@ -60,7 +60,7 @@
   "time-ago": "3 days",
   "logline": "Talk by Axel Menning, Andrea Scheer and Benjamin-Heinz Meier",
   "plays":"449", 
-  "classification":"conference",
+  "classification":"academic",
   "duration": "45"
 },
 {
@@ -70,7 +70,7 @@
   "time-ago": "3 days",
   "logline": "Talk and Discussion with Trebor Scholz (New School, New York/USA)",
   "plays":"3k", 
-  "classification":"conference",
+  "classification":"foundation",
   "duration": "45"
 },
 
@@ -81,7 +81,7 @@
   "time-ago": "3 days",
   "logline": "Thomas Drake, Daniel Ellsberg, Jesselyn Radack, Coleen Rowley, Konstantin von Notz, Martina Renner, Peter Schaar, Prof. Dr. Josef Foschepoth",
   "plays":"324", 
-  "classification":"conference",
+  "classification":"foundation",
   "duration": "45"
 },
 
@@ -92,7 +92,7 @@
   "time-ago": "3 days",
   "logline": "Ein Stück Geschichte zum Hören und Sehen - Henrik Lafrenz im Gespräch mit Deert Lafrenz. Circa 60 Minuten Audiomaterial.",
   "plays":"78", 
-  "classification":"conference",
+  "classification":"private",
   "duration": "60"
 }
 ]
