@@ -76,4 +76,4 @@ $('.sortby .button').on('click',function(){
 
 $('.start-listening .thumbnail h3.topic').each(function(){
 	$(this).removeClass('hide').addClass('show-for-small-up');
-})
+});
