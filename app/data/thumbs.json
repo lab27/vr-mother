@@ -1,5 +1,6 @@
 [
 {
+  "topic":"politics",
   "myNum": "0", 
   "title": "Sozialer Wandel und Politische Kunst in der Südosttürkei",
   "publisher": "nGbK",
@@ -11,6 +12,7 @@
 },
 
 {
+  "topic":"culture",
   "myNum": "1", 
   "title": "Independent Cultural Spaces in Turkey and Germany",
   "publisher": "nGbK",
@@ -22,6 +24,7 @@
 },
 
 {
+  "topic":"philosophy",
   "myNum": "2", 
   "title": "Watching the Watchers: Building a Sousveillance State",
   "publisher": "re:publica15",
@@ -32,6 +35,7 @@
   "duration": "45"
 },
 {
+  "topic":"technology",
   "myNum": "3", 
   "title": "A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander",
   "publisher": "AMAZE Berlin",
@@ -43,6 +47,7 @@
 },
 
 {
+  "topic":"art",
   "myNum": "4", 
   "title": "Religion in Europa",
   "publisher": "Publixsphere Channel",
@@ -54,6 +59,7 @@
 },
 
 {
+  "topic":"music",
   "myNum": "5", 
   "title": "Visual Diagnostics for Design Thinking Teams",
   "publisher": "HPI School of Design Thinking",
@@ -64,6 +70,7 @@
   "duration": "45"
 },
 {
+  "topic":"science",
   "myNum": "6", 
   "title": "Platform Cooperativism vs. the Sharing Economy",
   "publisher": "Rosa Luxemburg Stiftung",
@@ -75,6 +82,7 @@
 },
 
 {
+  "topic":"society",
   "myNum": "7", 
   "title": "The digital surveillance state - Quo vadis, Democracy?",
   "publisher": "Courage Foundation",
@@ -86,6 +94,7 @@
 },
 
 {
+  "topic":"politics",
   "myNum": "8", 
   "title": "Der Deichgraf Peter Lafrenz",
   "publisher": "Henrik Lafrenz",
@@ -96,6 +105,7 @@
   "duration": "60"
 },
 {
+  "topic":"politics",
   "myNum": "9", 
   "title": "Playful Oasis - An indie collective story",
   "publisher": "Respawn",
@@ -106,6 +116,7 @@
   "duration": "29"
 },
 {
+  "topic":"politics",
   "myNum": "9", 
   "title": "Fast Forward Africa - A Digital Movement moderated by Thorsten S. Wiedemann, Founder and Artistic Director of A MAZE.",
   "publisher": "Respawn",
@@ -116,6 +127,7 @@
   "duration": "63"
 },
 {
+  "topic":"politics",
   "myNum": "9", 
   "title": "Der Deichgraf Peter Lafrenz",
   "publisher": "Henrik Lafrenz",

@@ -8825,6 +8825,18 @@ li.sign-in-top {
   border-radius: 50%;
   background-color: #54c6c6; }
 
+.start-listening {
+  background: #d9dadd;
+  padding: 84px 12px; }
+  .start-listening .section-title h2 {
+    color: #64697e; }
+  .start-listening h3.topic a {
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #8F939C; }
+
 .grad-button {
   color: transparent;
   font-size: 2rem;
@@ -8932,7 +8944,7 @@ footer * {
 #image-width:after {
   content: 40em; }
 
-#thumb-container {
+#thumb-container, .thumb-container {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

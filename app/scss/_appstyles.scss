@@ -216,6 +216,24 @@ li.sign-in-top {
 	background-color: $secondary-color;
 }
 
+//start-listening
+.start-listening {
+	background:$steel;
+	padding:84px 12px;
+
+	.section-title h2{
+		color:$oil;
+	}
+
+	h3.topic a{
+		font-weight: 700;
+		font-size: rem-calc(18);
+		text-transform: capitalize;
+		text-decoration: underline;
+		color:$tuatara;
+	}
+}
+
 
 //GRad Button
 $gradient: linear-gradient(45deg, $secondary-color, $warning-color);
@@ -407,7 +425,7 @@ footer ul li {
 	content: $small-breakpoint;
 }
 
-#thumb-container {
+#thumb-container, .thumb-container {
 	 display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
