@@ -6,7 +6,6 @@
 }
 
 
-
 /* all app scss styles here */
 html, body {
 	-webkit-font-smoothing: antialiased;
@@ -829,6 +828,17 @@ p.thumb-logline {
 .topic-tile:hover .topic-image {
 	-webkit-filter:sepia(.2) hue-rotate(0) opacity(.4);
 }
+
+
+//tags: results
+
+ul.tags li {
+	background:$oil;
+	color:$white;
+	padding:6px 12px;
+	border-radius:6px;
+}
+
 
 @media #{$small-up} { }
 @media #{$small-only} { 

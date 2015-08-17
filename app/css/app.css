@@ -9263,6 +9263,12 @@ p.thumb-logline {
 .topic-tile:hover .topic-image {
   -webkit-filter: sepia(.2) hue-rotate(0) opacity(0.4); }
 
+ul.tags li {
+  background: #64697e;
+  color: #FFFFFF;
+  padding: 6px 12px;
+  border-radius: 6px; }
+
 @media only screen and (max-width: 40em) {
   .sign-in {
     padding: 0; } }

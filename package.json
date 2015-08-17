@@ -1,5 +1,5 @@
 {
-  "name": "VR Mother",
+  "name": "vr-mother",
   "description": "Nick's VR Prototyping Sandbox",
   "version": "0.0.1",
   "homepage": "",
@@ -24,6 +24,7 @@
     "grunt-contrib-uglify": "~0.8.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-newer": "~1.1.0",
+    "grunt-pageres": "^1.4.0",
     "grunt-sass": "~0.18.0",
     "grunt-usemin": "~3.0.0",
     "grunt-wiredep": "~2.0.0",

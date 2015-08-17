@@ -24,6 +24,26 @@ module.exports = function(grunt) {
 			}
 		},
 
+		pageres: {
+	          screenshot: {
+	              options: {
+	                  urls: ['127.0.0.1:9000', '127.0.0.1:9000/explore.html','127.0.0.1:9000/results.html'],
+	                  sizes: ['1200x800'],
+	                  dest: '<%= app %>/img/screenshots',
+	                  crop: true
+	              }
+	          }
+	          // multipleUrls: {
+	          //     options: {
+	          //         urls: ['127.0.0.1:9000', '127.0.0.1:9000/explore.html','127.0.0.1:9000/results.html'],
+	          //         sizes: ['w3counter'],
+	          //         dest: '<%= app %>/img/screenshots',
+	          //         crop: true,
+	          //         delay: 5
+	          //     }
+	          // }
+	    },
+
 	    assemble: {
 	      pages: {
 	        options: {
@@ -162,7 +182,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['assemble','compile-sass', 'bower-install', 'connect:app', 'watch']);
+	grunt.registerTask('default', ['assemble','compile-sass', 'bower-install', 'connect:app', 'pageres','watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
