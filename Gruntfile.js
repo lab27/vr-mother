@@ -182,7 +182,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['assemble','compile-sass', 'bower-install', 'connect:app', 'pageres','watch']);
+	grunt.registerTask('default', ['assemble','compile-sass', 'bower-install', 'connect:app','watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	

@@ -94,5 +94,35 @@
   "plays":"78", 
   "classification":"private",
   "duration": "60"
+},
+{
+  "myNum": "9", 
+  "title": "Playful Oasis - An indie collective story",
+  "publisher": "Respawn",
+  "time-ago": "1 day",
+  "logline": "Speaker: Philomena Schwab",
+  "plays":"129", 
+  "classification":"conference",
+  "duration": "29"
+},
+{
+  "myNum": "9", 
+  "title": "Fast Forward Africa - A Digital Movement moderated by Thorsten S. Wiedemann, Founder and Artistic Director of A MAZE.",
+  "publisher": "Respawn",
+  "time-ago": "2 days",
+  "logline": "Speaker: Adebayo Adegbembo, Binta Coudy, Nick Hall, Kaggia Andrew, Bayo Puddicombe",
+  "plays":"139", 
+  "classification":"conference",
+  "duration": "63"
+},
+{
+  "myNum": "9", 
+  "title": "Der Deichgraf Peter Lafrenz",
+  "publisher": "Henrik Lafrenz",
+  "time-ago": "3 days",
+  "logline": "Ein Stück Geschichte zum Hören und Sehen - Henrik Lafrenz im Gespräch mit Deert Lafrenz. Circa 60 Minuten Audiomaterial.",
+  "plays":"78", 
+  "classification":"private",
+  "duration": "60"
 }
 ]

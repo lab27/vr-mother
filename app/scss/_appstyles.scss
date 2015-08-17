@@ -422,6 +422,10 @@ footer ul li {
 	align-items:flex-start;
 }
 
+.more-thumbs {
+	flex:0 0 auto;
+	align-self:center;
+}
 
 
 .thumbnail {
@@ -601,7 +605,7 @@ h1.thumb-title {
 
 .thumb-listenlater, .thumb-duration, .thumb-plays, .thumb-timeago {
 	height:42px;
-	font-size:rem-calc(14);
+	font-size:rem-calc(12);
 	display:flex; display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
@@ -615,6 +619,10 @@ h1.thumb-title {
 	transition:width .5s ease;
 	line-height:14px;
 	text-align:center;
+}
+
+.thumb-listenlater {
+	font-size:rem-calc(14);
 }
 
 .thumb-listenlater.selected {
@@ -832,11 +840,33 @@ p.thumb-logline {
 
 //tags: results
 
-ul.tags li {
-	background:$oil;
-	color:$white;
-	padding:6px 12px;
-	border-radius:6px;
+ul.tags {
+
+	margin-top:24px;
+	margin-bottom:0;
+
+	li {
+	background:$ghost;
+	color:$tuatara;
+	padding:3px 18px;
+	border-radius:18px;
+	margin-left:4px;
+
+	&:hover {
+		background: $white;
+	}
+
+	&:first-child {
+		margin-left:24px;
+		background: none;
+		padding:0;
+		padding-top:3px;
+		margin-right: 6px;
+		color:$base;
+	}
+}
+
+	
 }
 
 
