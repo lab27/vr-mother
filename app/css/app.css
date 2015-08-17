@@ -8988,6 +8988,17 @@ footer * {
   flex: 0;
   -webkit-flex: 0; }
 
+.follow-topic {
+  font-size: 1rem;
+  background: rgba(180, 182, 190, 0.3);
+  padding: 6px 6px 3px 6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 12px; }
+  .follow-topic:hover {
+    cursor: pointer;
+    background: rgba(180, 182, 190, 0.5); }
+
 .thumb-overlay {
   position: absolute;
   z-index: 10;
@@ -9151,6 +9162,23 @@ p.thumb-logline {
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-bottom: 12px; }
+  p.thumb-logline a {
+    color: #8F939C; }
+
+.talk-container {
+  background-image: -moz-linear-gradient(30deg, #f82847 0%, #2c46b0 100%);
+  background-image: -webkit-linear-gradient(30deg, #f82847 0%, #2c46b0 100%);
+  background-image: -ms-linear-gradient(30deg, #f82847 0%, #2c46b0 100%);
+  width: 100%;
+  height: 100%;
+  min-height: 50vw;
+  padding-top: 84px; }
+  .talk-container h1 {
+    color: #ffed00;
+    font-size: 10em;
+    text-transform: uppercase;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite; }
 
 .topics, .publishers {
   display: flex;
