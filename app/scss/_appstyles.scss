@@ -18,6 +18,14 @@ html, body {
 	padding-bottom:1.1rem;
 }
 
+.button.dark {
+	background:$oil;
+}
+
+hr {
+	margin:0;
+}
+
 #main {
 	width:100%;
 	height:100%;
@@ -35,7 +43,7 @@ html, body {
 }
 
 .top-bar input {
-	border:1px solid $secondary-color;
+	border:1px solid $oil;
 }
 
 .top-bar-section ul li {
@@ -107,6 +115,8 @@ li.sign-in-top {
  //    background: -ms-linear-gradient( 30deg, rgb(44,70,176) 0%, rgb(84,198,198) 100%), url(../img/bg/jacketlady.jpg) no-repeat 50% 50%;
 	background-size:cover;
 	padding:84px 24px;
+	max-width:100vw;
+	// min-height:50vw;
 
 	h1 {
 			color:$white;
@@ -136,13 +146,13 @@ li.sign-in-top {
 
 //home sign in section
 .sign-in {
-	background:$secondary-color;
-	padding:84px 0;
+	// background:$secondary-color;
+	padding:60px 0;
 }
 
 .sign-in-box {
 	background:$white;
-	padding:12px 12px 8px 12px;
+	padding:24px 12px 8px 12px;
 
 	h3 {
 		color: $secondary-color;
@@ -286,7 +296,7 @@ $gradient3: linear-gradient(45deg, $smoke, $white);
 
 .titlebar {
 	flex:1 0;
-	background:rgba(68,74,89,.1);	
+	// background:rgba(68,74,89,.1);	
 	// margin:-24px 0 0 -24px;
 	padding:12px;
 	display:flex;
@@ -749,7 +759,7 @@ p.thumb-logline {
 
 // TOPICS
 
-.topics, .publishers {
+.topics {
 	display:flex;
 	background:$secondary-color;
 	flex-flow:row wrap;
@@ -763,7 +773,7 @@ p.thumb-logline {
 	padding-bottom:84px;
 }
 
-.topics-holder, .publishers-holder {
+.topics-holder{
 	display:flex;
 	flex-flow:row wrap;
 	justify-content:center;
@@ -790,6 +800,15 @@ p.thumb-logline {
 	text-align:center;
 }
 
+.subheader {
+	font-family:'adobe-caslon-pro', times, serif;
+	margin-bottom:48px;
+}
+
+.topics .subheader {
+	color:$white;
+}
+
 .publishers .section-title h2 {
 	color:$oil;
 }
@@ -801,27 +820,22 @@ p.thumb-logline {
 
 .publisher-tile {
 	padding:6px;
-	flex:0 1 50%;
+	// flex:0 1 50%;
 }
 
 .publisher-inside {
 	padding:48px;
-	display:flex;
+	// display:flex;
 	border:1px solid $smoke;
-
-
 }
 
 .publisher-classification {
-	flex:0 0 100px;
-	background: $ghost;
 	color:$charcoal;
-	// position:absolute;
 	padding: 3px 6px;
 	border-radius:2px;
-	align-self:center;
 	width:auto;
 	text-align:center;
+	text-transform:capitalize;
 }
 
 
@@ -900,34 +914,57 @@ p.thumb-logline {
 
 //tags: results
 
-ul.tags {
-
-	margin-top:24px;
+ul.tags, ul.tags-classification {
+	padding:12px 12px 0 12px;
+	// margin-top:24px;
 	margin-bottom:0;
 
 	li {
+	font-size: rem-calc(14);
 	background:$ghost;
 	color:$tuatara;
 	padding:3px 18px;
 	border-radius:18px;
 	margin-left:4px;
+	margin-bottom:6px;
 
 	&:hover {
 		background: $white;
 	}
 
-	&:first-child {
-		margin-left:24px;
+
+
+
+}
+
+	// li.classification-tag {
+	// 	background:$white;
+	// }
+
+	li.classification-tag span {
+		display: inline-block;
+	}
+	
+}
+
+ul.tags-classification li {
+	background:$charcoal;
+	color:$white;
+	transition:background .2s;
+
+	&:hover {
+		background:$tuatara;
+	}
+}
+	
+	ul.tags li:first-child {
+		// margin-left:24px;
 		background: none;
 		padding:0;
 		padding-top:3px;
 		margin-right: 6px;
 		color:$base;
 	}
-}
-
-	
-}
 
 
 @media #{$small-up} { }
@@ -970,6 +1007,7 @@ ul.tags {
 	}
 
 	.publishers-holder {
+		max-width: 100vw;
 		padding:10vw;
 	}
 
@@ -984,6 +1022,10 @@ ul.tags {
 	height: 15vw;
 	min-width:100%;
 	min-height: 10vh;
+	}
+
+		ul.tags {
+		padding:24px 24px 0 24px;
 	}
 
 
@@ -1016,6 +1058,7 @@ ul.tags {
 
 }
 	
+
 	
 	.thumbnail {
 		width:50%;
@@ -1138,7 +1181,7 @@ ul.tags {
 
 	.section-title h2 {
 
-	margin:0 0 48px 0;
+	margin:0 0 24px 0;
 }
 
 

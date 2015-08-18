@@ -4,8 +4,11 @@ title: Welcome
 
 <!-- SEARCH AND HERO -->
 
-<section class="home-search"><h1 class="text-center animated fadeInUp">People are talking.</h1>
-<div class="medium-8 medium-offset-2 large-6 large-offset-3 xlarge-4 xlarge-offset-4 columns animated fadeInUp"><h4 class="text-center">Voice Republic features some of the most interesting and relevant conversations happening today. Dive in and start listening.</h4></div>
+<section class="home-search row medium-collapse large-collapse">
+
+<div class="large-7 columns">
+<h1 class="text-center animated fadeInUp">Talk Smart.</h1>
+<div class="medium-8 medium-offset-2 columns animated fadeInUp"><h4 class="text-center sub-claim">Voice Republic features some of the most interesting and relevant conversations, from exclusive content providers. Dive in and start listening.</h4></div>
 
 
 <div class="row">
@@ -27,15 +30,50 @@ title: Welcome
     </div>
 
 <div class="row"><h4 class="text-center animated fadeInUp"><a href="explore.html">Or Browse the Archive</a></h4></div>
+</div> <!-- :LEFT -->
 
-<!-- <h3 class="text-center"><a class="grad-button" href="">Sign In</a></h3> -->
+
+
+	<div class="large-4 columns end sign-in">
+		
+<div class="small-12 columns">
+  <div class="sign-in-box">
+  <div class="row">
+  <div class="large-12 columns">
+    <form>
+    <h3>Sign in for the full experience.</h3>
+       <div class="row">
+         <div class="large-12 columns large-collapse">
+             <input type="text" name="email" placeholder="Email" />
+         </div>
+       </div>
+      <div class="row">
+         <div class="large-12 columns large-collapse">
+             <input type="password" name="password" placeholder="Password" />
+         </div>
+      </div>
+      <div class="row">
+        <div class="small-6 columns collapse">
+          <input type="submit" class="button secondary expand" value="Sign In"/>
+        </div>
+        <div class="small-6 columns collapse">
+          <input type="submit" class="button blank expand" value="Or Join"/>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+	</div> <!-- RIGHT -->
 
 </section>
 
 
 <!-- SIGN IN -->
 
-<section class="sign-in">
+<!-- <section class="sign-in">
 <div class="row">
 	<div class="medium-6 medium-offset-3 columns sign-in-box">
 		
@@ -70,17 +108,9 @@ title: Welcome
 </div>
 
 	</div>
-<!-- 	<div class="medium-6 columns features-box">
-		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 1</div>
-				<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 2</div>
-
-		<div class="small-12 columns feature"><span class="feature-icon">icon</span>feature 3</div>
-
-	</div> -->
-
 	</div>
 
-</section>
+</section> -->
 
 
 
@@ -109,4 +139,19 @@ title: Welcome
 	{{/withFirst}}
 
 </div>
+</section>
+
+<section class="publishers">
+	<div class="publishers-holder row">
+	<div class="section-title"><h2>Browse Publishers</h2>
+	<h4 class="subheader text-center">Here are some of Voice Republic's world-class, exclusive publishers.</h4>
+
+	</div>
+		{{#each publisher}}
+		{{>publisher}}
+		{{/each}}
+	</div>
+
+<h1 class="text-center"><button class="button secondary">See All Publishers <span class="icon-uniE7CD"> </span></button>
+</h1>
 </section>

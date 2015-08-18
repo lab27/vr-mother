@@ -8678,6 +8678,12 @@ html, body {
 .button {
   padding-bottom: 1.1rem; }
 
+.button.dark {
+  background: #64697e; }
+
+hr {
+  margin: 0; }
+
 #main {
   width: 100%;
   height: 100%;
@@ -8691,7 +8697,7 @@ html, body {
   padding-right: 48px; }
 
 .top-bar input {
-  border: 1px solid #54c6c6; }
+  border: 1px solid #64697e; }
 
 .top-bar-section ul li {
   background: #FFFFFF; }
@@ -8741,7 +8747,8 @@ li.sign-in-top {
   background: orange;
   background: url(../img/bg/jacketlady-blue.jpg) no-repeat 50% 50%;
   background-size: cover;
-  padding: 84px 24px; }
+  padding: 84px 24px;
+  max-width: 100vw; }
   .home-search h1 {
     color: #FFFFFF;
     letter-spacing: -1px;
@@ -8763,12 +8770,11 @@ li.sign-in-top {
       text-decoration: underline; }
 
 .sign-in {
-  background: #54c6c6;
-  padding: 84px 0; }
+  padding: 60px 0; }
 
 .sign-in-box {
   background: #FFFFFF;
-  padding: 12px 12px 8px 12px; }
+  padding: 24px 12px 8px 12px; }
   .sign-in-box h3 {
     color: #54c6c6;
     margin-bottom: 18px; }
@@ -8861,7 +8867,6 @@ li.sign-in-top {
 
 .titlebar {
   flex: 1 0;
-  background: rgba(68, 74, 89, 0.1);
   padding: 12px;
   display: flex;
   display: -webkit-flex;
@@ -9197,7 +9202,7 @@ p.thumb-logline {
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite; }
 
-.topics, .publishers {
+.topics {
   display: flex;
   background: #54c6c6;
   flex-flow: row wrap;
@@ -9209,7 +9214,7 @@ p.thumb-logline {
   background: #FFFFFF;
   padding-bottom: 84px; }
 
-.topics-holder, .publishers-holder {
+.topics-holder {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -9232,6 +9237,13 @@ p.thumb-logline {
   margin: 0 0 24px 0;
   text-align: center; }
 
+.subheader {
+  font-family: 'adobe-caslon-pro', times, serif;
+  margin-bottom: 48px; }
+
+.topics .subheader {
+  color: #FFFFFF; }
+
 .publishers .section-title h2 {
   color: #64697e; }
 
@@ -9240,23 +9252,19 @@ p.thumb-logline {
   flex: 1 1 100%; }
 
 .publisher-tile {
-  padding: 6px;
-  flex: 0 1 50%; }
+  padding: 6px; }
 
 .publisher-inside {
   padding: 48px;
-  display: flex;
   border: 1px solid #EEEEEE; }
 
 .publisher-classification {
-  flex: 0 0 100px;
-  background: #FAFAFA;
   color: #b4b6be;
   padding: 3px 6px;
   border-radius: 2px;
-  align-self: center;
   width: auto;
-  text-align: center; }
+  text-align: center;
+  text-transform: capitalize; }
 
 .topic-inside, .topic-image {
   flex: 1 0 100%;
@@ -9316,24 +9324,35 @@ p.thumb-logline {
 .topic-tile:hover .topic-image {
   -webkit-filter: sepia(.2) hue-rotate(0) opacity(0.4); }
 
-ul.tags {
-  margin-top: 24px;
+ul.tags, ul.tags-classification {
+  padding: 12px 12px 0 12px;
   margin-bottom: 0; }
-  ul.tags li {
+  ul.tags li, ul.tags-classification li {
+    font-size: 0.875rem;
     background: #FAFAFA;
     color: #8F939C;
     padding: 3px 18px;
     border-radius: 18px;
-    margin-left: 4px; }
-    ul.tags li:hover {
+    margin-left: 4px;
+    margin-bottom: 6px; }
+    ul.tags li:hover, ul.tags-classification li:hover {
       background: #FFFFFF; }
-    ul.tags li:first-child {
-      margin-left: 24px;
-      background: none;
-      padding: 0;
-      padding-top: 3px;
-      margin-right: 6px;
-      color: #AAAAAA; }
+  ul.tags li.classification-tag span, ul.tags-classification li.classification-tag span {
+    display: inline-block; }
+
+ul.tags-classification li {
+  background: #b4b6be;
+  color: #FFFFFF;
+  transition: background .2s; }
+  ul.tags-classification li:hover {
+    background: #8F939C; }
+
+ul.tags li:first-child {
+  background: none;
+  padding: 0;
+  padding-top: 3px;
+  margin-right: 6px;
+  color: #AAAAAA; }
 
 @media only screen and (max-width: 40em) {
   .sign-in {
@@ -9355,6 +9374,7 @@ ul.tags {
   .titlebar {
     padding: 24px; }
   .publishers-holder {
+    max-width: 100vw;
     padding: 10vw; }
   .topic-tile, .publisher-tile {
     padding: 6px 6px 6px 6px;
@@ -9364,7 +9384,9 @@ ul.tags {
     width: 50%;
     height: 15vw;
     min-width: 100%;
-    min-height: 10vh; } }
+    min-height: 10vh; }
+  ul.tags {
+    padding: 24px 24px 0 24px; } }
 
 @media only screen and (min-width:40.0625em) and (max-width:64em) {
   .thumb-image-holder, .thumb-image {
@@ -9438,7 +9460,7 @@ ul.tags {
     min-width: 100%;
     min-height: 200px; }
   .section-title h2 {
-    margin: 0 0 48px 0; } }
+    margin: 0 0 24px 0; } }
 
 @media only screen and (min-width:120.0625em) {
   .thumbnail {
