@@ -6,6 +6,7 @@ layout: app/templates/layouts/layout-explore.hbs
 <section class="topics">
 	<div class="topics-holder">
 	<div class="section-title"><h2>Browse Topics</h2>
+	<h4 class="subheader">All the Talks on Voice Republic fall into the following Topics.</h4>
 	{{!-- <h5>Browse Talks by these Voice Republic Topics.</h5> --}}
 	</div>
 		{{#each topics}}
@@ -17,7 +18,10 @@ layout: app/templates/layouts/layout-explore.hbs
 
 <section class="publishers">
 	<div class="publishers-holder">
-	<div class="section-title"><h2>Browse Publishers</h2></div>
+	<div class="section-title"><h2>Browse Publishers</h2>
+	<h4 class="subheader">Here are some of Voice Republic's world-class, exclusive publishers.</h4>
+
+	</div>
 		{{#each publisher}}
 		{{>publisher}}
 		{{/each}}
@@ -26,3 +30,4 @@ layout: app/templates/layouts/layout-explore.hbs
 <button class="button secondary">See All Publishers <span class="icon-uniE7CD"> </span></button>
 
 </section>
+

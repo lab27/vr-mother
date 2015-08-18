@@ -9245,7 +9245,8 @@ p.thumb-logline {
 
 .publisher-inside {
   padding: 48px;
-  display: flex; }
+  display: flex;
+  border: 1px solid #EEEEEE; }
 
 .publisher-classification {
   flex: 0 0 100px;
@@ -9280,11 +9281,11 @@ p.thumb-logline {
   transition: -webkit-filter .3s ease; }
 
 .publisher-image {
-  -webkit-filter: opacity(0.2);
+  -webkit-filter: opacity(0.8);
   transition: -webkit-filter .5s ease; }
 
 .publisher-tile:hover .publisher-image {
-  -webkit-filter: opacity(0.7); }
+  -webkit-filter: opacity(1); }
 
 .topic-overlay, .publisher-overlay {
   position: absolute;

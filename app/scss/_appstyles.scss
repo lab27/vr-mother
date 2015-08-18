@@ -807,6 +807,8 @@ p.thumb-logline {
 .publisher-inside {
 	padding:48px;
 	display:flex;
+	border:1px solid $smoke;
+
 
 }
 
@@ -852,12 +854,12 @@ p.thumb-logline {
 }
 
 .publisher-image {
-	-webkit-filter: opacity(.2);
+	-webkit-filter: opacity(.8);
 	transition:-webkit-filter .5s ease;
 	}
 
 .publisher-tile:hover .publisher-image {
-	-webkit-filter:opacity(.7);
+	-webkit-filter:opacity(1);
 }
 
 .topic-overlay, .publisher-overlay {
