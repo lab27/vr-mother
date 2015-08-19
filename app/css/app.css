@@ -8675,6 +8675,13 @@ html, body {
   background: #EEEEEE;
   font-family: 'Roboto Condensed', helvetica, arial, sans-serif; }
 
+.slideUp {
+  position: fixed;
+  top: 0;
+  transition: top 0.4s ease-in-out;
+  width: 100%;
+  z-index: 999; }
+
 .button {
   padding-bottom: 1.1rem; }
 
@@ -9456,23 +9463,66 @@ ul.tags li:first-child {
     font-size: 1.4rem;
     line-height: 22px; } }
 
-.talk-container {
-  background-image: -moz-linear-gradient(30deg, #f82847 0%, #2c46b0 100%);
-  background-image: -webkit-linear-gradient(30deg, #f82847 0%, #2c46b0 100%);
-  background-image: -ms-linear-gradient(30deg, #f82847 0%, #2c46b0 100%);
-  background: url(../img/bg/fischer2.jpg) no-repeat 50% 0%;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  min-height: 50vw;
-  padding-top: 84px; }
+.talk-picture {
+  padding: 0; }
+  .talk-picture img {
+    width: 100vw; }
+
+.talk-story {
+  padding: 0;
+  margin: 0;
+  z-index: 1; }
+
+.description-column {
+  padding: 48px 24px 108px 24px;
+  margin: 0; }
+  .description-column h3 {
+    margin-bottom: 24px;
+    color: #b4b6be;
+    font-weight: 300; }
+
+.talk-infopanel {
+  margin: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 24px; }
+
+p.talk-description {
+  font-family: 'adobe-caslon-pro',time,serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #64697e; }
+  @media only screen and (min-width:40.0625em) {
+    p.talk-description {
+      font-size: 1.5rem;
+      line-height: 2.25rem; } }
+
+#talk-body {
+  max-width: 100vw; }
+
+#talk-playbar {
+  max-width: 100vw;
+  min-height: 60px;
+  background: #020408;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000; }
 
 #talk-titlebar {
-  background: #3c4258;
+  background: rgba(60, 66, 88, 0.8);
   max-width: 100vw;
-  padding: 20px 24px;
-  height: auto;
-  position: relative; }
+  padding: 20px 24px; }
+  @media only screen and (min-width:64.0625em) {
+    #talk-titlebar {
+      height: auto;
+      position: fixed;
+      bottom: 60px;
+      right: 0;
+      left: 0;
+      z-index: 9999; } }
+  #talk-titlebar #talk-title-left {
+    padding: 0; }
   #talk-titlebar .talk-info-holder {
     margin-left: 54px;
     margin-top: 5px; }
@@ -9488,25 +9538,43 @@ ul.tags li:first-child {
       display: inline-block; }
   #talk-titlebar .talk-title {
     color: #FAFAFA;
-    font-size: 1.875rem;
+    font-size: 1.125rem;
     margin: 0;
-    line-height: 2rem;
+    line-height: 1.25rem;
     font-weight: 700;
     display: inline-block;
     margin-right: 12px; }
+    @media only screen and (min-width:40.0625em) {
+      #talk-titlebar .talk-title {
+        font-size: 1.5rem;
+        line-height: 1.625rem; } }
+    @media only screen and (min-width:64.0625em) {
+      #talk-titlebar .talk-title {
+        font-size: 1.75rem;
+        line-height: 1.875rem; } }
   #talk-titlebar .talk-meta-holder {
     display: inline-block;
-    margin-top: 6px; }
+    margin-top: 2px; }
   #talk-titlebar .talk-meta {
     color: #d9dadd;
-    font-size: 1.3125rem;
-    line-height: 1.4375rem;
+    font-size: 0.875rem;
+    line-height: 1rem;
     font-weight: 300;
     display: inline-block; }
     #talk-titlebar .talk-meta:last-child {
       border-left: 1px solid #8F939C;
       margin-left: 12px;
       padding-left: 12px; }
+    @media only screen and (min-width:40.0625em) {
+      #talk-titlebar .talk-meta {
+        font-size: 1.125rem;
+        line-height: 1.25rem; } }
+    @media only screen and (min-width:64.0625em) {
+      #talk-titlebar .talk-meta {
+        font-size: 1.3125rem;
+        line-height: 1.4375rem; } }
+  #talk-titlebar #talk-actions {
+    padding: 0; }
   #talk-titlebar #talk-actions a {
     color: #d9dadd;
     font-size: 1.375rem;
