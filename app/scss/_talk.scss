@@ -57,13 +57,21 @@ p.talk-description {
 
 #talk-playbar {
 	max-width:100vw;
-	min-height:60px;
+	min-height:80px;
 	background:$almost-black;
 	position:fixed;
 	bottom:0;
 	left:0;
 	right:0;
 	z-index:2000;
+	padding:6px;
+}
+
+.button-playbar {
+	margin:0;
+	border-radius:2px;
+	background:rgba($oil, .2);
+	margin-right:3px;
 }
 
 
@@ -75,7 +83,7 @@ p.talk-description {
 	@media #{$large-up} {
 	height:auto;
 	position:fixed;
-	bottom:60px;
+	bottom:80px;
 	right:0;
 	left:0;
 	z-index:9999;
