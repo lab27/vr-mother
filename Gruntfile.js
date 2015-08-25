@@ -60,6 +60,49 @@ module.exports = function(grunt) {
 	      }
 	    },
 
+		browserSync: {
+	      options: {
+	        notify: false,
+	        background: true
+	      },
+	      livereload: {
+	        options: {
+	          files: [
+	            '<%= app %>/{,*/}*.html',
+	            '.tmp/styles/{,*/}*.css',
+	            '<%= app %>/images/{,*/}*',
+	            '.tmp/scripts/{,*/}*.js'
+	          ],
+	          port: 9000,
+	          server: {
+	            baseDir: ['.tmp', 'app'],
+	            routes: {
+	              '/bower_components': './bower_components'
+	            }
+	          }
+	        }
+	      },
+	      // test: {
+	      //   options: {
+	      //     port: 9001,
+	      //     open: false,
+	      //     logLevel: 'silent',
+	      //     host: 'localhost',
+	      //     server: {
+	      //       baseDir: ['.tmp', './test', config.app],
+	      //       routes: {
+	      //         '/bower_components': './bower_components'
+	      //       }
+	      //     }
+	      //   }
+	      // },
+	      dist: {
+	        options: {
+	          background: false,
+	          server: '<%= dist %>'
+	        }
+	      }
+	    },
 
 		jshint: {
 			options: {
@@ -182,7 +225,13 @@ module.exports = function(grunt) {
 	grunt.registerTask('compile-sass', ['sass']);
 	grunt.registerTask('bower-install', ['wiredep']);
 	
-	grunt.registerTask('default', ['assemble','compile-sass', 'bower-install', 'connect:app','watch']);
+	grunt.registerTask('default', [
+		'assemble',
+		'compile-sass', 
+		'bower-install', 
+		'browserSync:livereload', 
+		// 'connect:app',
+		'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
