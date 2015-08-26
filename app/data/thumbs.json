@@ -7,7 +7,7 @@
   "time-ago": "3 days",
   "logline": "Podiumsgespräch mit kurdischen Künstlern. Eine Kooperation mit der Heinrich-Böll Stiftung. Sprache: Deutsch/ Türkisch.",
   "plays":"234", 
-  "classification":"conference",
+  "classification":"uniE77A",
   "duration": "75"
 },
 
@@ -19,7 +19,7 @@
   "time-ago": "3 days",
   "logline": "Asena Günal (DEPO Istanbul), Çağla İlk (Präsidium nGbK) and Zeyno Pekünlü (Performer) at neue Gesellschaft für bildende Kunst Berlin.",
   "plays":"1k", 
-  "classification":"conference",
+  "classification":"uniE77A",
   "duration": "95"
 },
 
@@ -31,7 +31,7 @@
   "time-ago": "2 months",
   "logline": "Secret surveillance programs have metadata too. The same people and companies that operate secret surveillance programs also publish deta...",
   "plays":"877", 
-  "classification":"conference",
+  "classification":"uniE77A",
   "duration": "45"
 },
 {
@@ -42,7 +42,7 @@
   "time-ago": "4 months",
   "logline": "Leigh Alexander and Rami Ismail: In-depth conversation between a journalist & a 'veteran' of the game scene.",
   "plays":"56", 
-  "classification":"conference",
+  "classification":"uniE77A",
   "duration": "80"
 },
 
@@ -54,7 +54,7 @@
   "time-ago": "3 days",
   "logline": "Eine Diskussion zu religiösen Werten in der Gesellschaft. Mit Lissy Eichert und Cemile Giousouf. In Kooperation mit der Schwarzkopf-Stiftung",
   "plays":"12k", 
-  "classification":"foundation",
+  "classification":"uniE907",
   "duration": "75"
 },
 
@@ -66,7 +66,7 @@
   "time-ago": "3 days",
   "logline": "Talk by Axel Menning, Andrea Scheer and Benjamin-Heinz Meier",
   "plays":"449", 
-  "classification":"academic",
+  "classification":"uniE8E8",
   "duration": "45"
 },
 {
@@ -77,7 +77,7 @@
   "time-ago": "3 days",
   "logline": "Talk and Discussion with Trebor Scholz (New School, New York/USA)",
   "plays":"3k", 
-  "classification":"foundation",
+  "classification":"uniE907",
   "duration": "45"
 },
 
@@ -89,7 +89,7 @@
   "time-ago": "3 days",
   "logline": "Thomas Drake, Daniel Ellsberg, Jesselyn Radack, Coleen Rowley, Konstantin von Notz, Martina Renner, Peter Schaar, Prof. Dr. Josef Foschepoth",
   "plays":"324", 
-  "classification":"foundation",
+  "classification":"uniE907",
   "duration": "45"
 },
 
@@ -101,7 +101,7 @@
   "time-ago": "3 days",
   "logline": "Ein Stück Geschichte zum Hören und Sehen - Henrik Lafrenz im Gespräch mit Deert Lafrenz. Circa 60 Minuten Audiomaterial.",
   "plays":"78", 
-  "classification":"private",
+  "classification":"uniE731",
   "duration": "60"
 },
 {
@@ -112,7 +112,7 @@
   "time-ago": "1 day",
   "logline": "Speaker: Philomena Schwab",
   "plays":"129", 
-  "classification":"conference",
+  "classification":"uniE77A",
   "duration": "29"
 },
 {
@@ -123,7 +123,7 @@
   "time-ago": "2 days",
   "logline": "Speaker: Adebayo Adegbembo, Binta Coudy, Nick Hall, Kaggia Andrew, Bayo Puddicombe",
   "plays":"139", 
-  "classification":"conference",
+  "classification":"uniE77A",
   "duration": "63"
 },
 {
@@ -134,7 +134,7 @@
   "time-ago": "3 days",
   "logline": "Ein Stück Geschichte zum Hören und Sehen - Henrik Lafrenz im Gespräch mit Deert Lafrenz. Circa 60 Minuten Audiomaterial.",
   "plays":"78", 
-  "classification":"private",
+  "classification":"uniE731",
   "duration": "60"
 }
 ]

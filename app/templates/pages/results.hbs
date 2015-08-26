@@ -8,7 +8,7 @@ layout: app/templates/layouts/layout-explore.hbs
 <div id="main">
 <div class="titlebar">
 	<div class="title-left left"><h3 class="breadcrumb"><a href="explore.html">Explore </a> / <span class="current-branch">Politics</span><span class="follow-topic"><span class="icon-uniE704"></span></span></h3></div>
-	<div class="sort-by show-for-large-up">
+	<!-- <div class="sort-by show-for-large-up">
 <ul class="inline-list tags-classification">
 
 		<li class="classification-tag"><span class="icon-uniE77A"></span> Conference</li>
@@ -19,11 +19,11 @@ layout: app/templates/layouts/layout-explore.hbs
 
 	
 	</ul>
-	</div>
+	</div> -->
 	<div class="title-right"><h3 class="results show-for-small-only">(473)</h3><h3 class="results show-for-medium-up">473 Results</h3></div>
 </div>
 
-<div class="sort-bar hide-for-large-up">
+<!-- <div class="sort-bar hide-for-large-up">
 
 
 
@@ -37,7 +37,7 @@ layout: app/templates/layouts/layout-explore.hbs
 
 
 	</ul>
-</div>
+</div> -->
 	<hr>
 
 <div class="tags">
@@ -58,6 +58,30 @@ layout: app/templates/layouts/layout-explore.hbs
 	</ul>
 </div>
 
+<!-- <div id="filters-results"> -->
+<!-- <div id="filter-column">test</div> -->
+
+<div id="classifications" class="hide-for-small-only">
+	
+		<a class="classification-tag"><span class="icon-uniE77A"></span> Conference</a>
+		<a class="classification-tag"><span class="icon-uniE907"></span> Foundation &amp; NGO</a>
+		<a class="classification-tag"><span class="icon-uniE8E8"></span> Academic</a>
+		<a class="classification-tag"><span class="icon-uniE85C"></span> Institution</a>
+		<a class="classification-tag"><span class="icon-uniE731"></span> Independent</a>
+
+</div>
+
+
+<div id="classifications" class="show-for-small-only">
+	
+		<a class="classification-tag"><span class="icon-uniE77A"></span> </a>
+		<a class="classification-tag"><span class="icon-uniE907"></span> </a>
+		<a class="classification-tag"><span class="icon-uniE8E8"></span> </a>
+		<a class="classification-tag"><span class="icon-uniE85C"></span> </a>
+		<a class="classification-tag"><span class="icon-uniE731"></span> </a>
+
+</div>
+
 <div id="thumb-container">
 
 	{{#each thumbs }}
@@ -67,6 +91,7 @@ layout: app/templates/layouts/layout-explore.hbs
 
 
 </div>
-	<button class="button secondary more-thumbs">Load More</button>
+<!-- </div> -->
+	<!-- <button class="button secondary more-thumbs">Load More</button> -->
 
 </div>

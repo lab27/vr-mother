@@ -16,17 +16,21 @@ component: thumbnail
 			<div class="thumb-info">
 				<a href="talk.html"><h1 class="thumb-title"><span class="is-live">LIVE</span>{{truncate title 57 "..."}}</h1></a>
 				<p class="thumb-meta"><span class="thumb-publisher"> {{ publisher }}</span>
-				<span class="thumb-classification">/ {{classification}}</span>
+				<span class="thumb-classification">/ <span class="icon-{{classification}}"> </span></span>
 				{{!-- <span class="thumb-timeago">{{ time-ago }} ago</span></p> --}}
-				<a href="talk.html"><p class="thumb-logline">{{ truncate logline 120 "..." }}</p></a>
+				<a href="talk.html"><p class="thumb-logline">{{ truncate logline 220 "..." }} <br><span class="thumb-meta-meta">{{ time-ago }} ago / {{ duration }} Min / <span class="icon-uniE6BB"></span>{{ plays }}</span></p></a>
+
 			</div>
-			<div class="thumb-actions">
+<!-- 			<div class="thumb-actions">
 				<div class="thumb-timeago">{{ time-ago }} ago</div>
 				<div class="thumb-duration">{{ duration }} Min</div>
 				<div class="thumb-plays"><span class="icon-uniE6BB"> </span>{{ plays }}</div>
 				<div class="thumb-listenlater"><span class="icon-uniE704"></span></div>
 
-			</div>
+			</div> -->
+
+
+			<div class="thumb-listenlater"><span class="icon-uniE704"></span></div>
 		</div>
 	</div>
 </div>

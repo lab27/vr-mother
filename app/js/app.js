@@ -84,3 +84,7 @@ $('.button-play-pause').on('click',function(){
 
 		});
 });
+
+$('.classification-tag').on('click', function() {
+	$(this).toggleClass('selected');
+});
