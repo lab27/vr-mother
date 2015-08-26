@@ -33,16 +33,8 @@ module.exports = function(grunt) {
 	                  crop: true
 	              }
 	          }
-	          // multipleUrls: {
-	          //     options: {
-	          //         urls: ['127.0.0.1:9000', '127.0.0.1:9000/explore.html','127.0.0.1:9000/results.html'],
-	          //         sizes: ['w3counter'],
-	          //         dest: '<%= app %>/img/screenshots',
-	          //         crop: true,
-	          //         delay: 5
-	          //     }
-	          // }
 	    },
+
 
 	    assemble: {
 	      pages: {
@@ -176,34 +168,50 @@ module.exports = function(grunt) {
 				files: '<%= app %>/scss/**/*.scss',
 				tasks: ['sass']
 			},
+			postcss: {
+				files: '<%= app %>/scss/**/*.scss',
+				tasks: ['postcss']
+			},			
 			livereload: {
 				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}'],
 				options: {
 					livereload: true
 				}
-			}
+			},
 		},
 
-		connect: {
-			app: {
-				options: {
-					port: 9000,
-					base: '<%= app %>/',
-					open: true,
-					livereload: true,
-					hostname: '127.0.0.1'
-				}
-			},
-			dist: {
-				options: {
-					port: 9001,
-					base: '<%= dist %>/',
-					open: true,
-					keepalive: true,
-					livereload: false,
-					hostname: '127.0.0.1'
-				}
-			}
+		// connect: {
+		// 	app: {
+		// 		options: {
+		// 			port: 9000,
+		// 			base: '<%= app %>/',
+		// 			open: true,
+		// 			livereload: true,
+		// 			hostname: '127.0.0.1'
+		// 		}
+		// 	},
+		// 	dist: {
+		// 		options: {
+		// 			port: 9001,
+		// 			base: '<%= dist %>/',
+		// 			open: true,
+		// 			keepalive: true,
+		// 			livereload: false,
+		// 			hostname: '127.0.0.1'
+		// 		}
+		// 	}
+		// },
+
+		postcss: {
+		  options: {
+		    map: true,
+		    processors: [
+		      require('autoprefixer-core')({browsers: ['last 2 versions']})
+		    ]
+		  },
+		  dist: {
+		    src: '<%= app %>/css/*.css'
+		  }
 		},
 
 		wiredep: {
@@ -228,6 +236,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'assemble',
 		'compile-sass', 
+		'postcss',
+
 		'bower-install', 
 		'browserSync:livereload', 
 		// 'connect:app',
