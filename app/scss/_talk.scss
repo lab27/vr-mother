@@ -138,6 +138,24 @@ p.talk-description {
 	height:56px;
 	font-size:1.4em;
 	outline:none;
+	
+}
+
+.button-play-pause {
+	animation:pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    background-color: rgba($oil,.2);
+  }
+  50% {
+    background-color: $primary-color;
+  }
+  100% {
+	background-color: rgba($oil,.2);
+  }
 }
 
 .timecode {
@@ -186,6 +204,7 @@ p.talk-description {
 	padding:12px;
 	padding-left:24px;
 	padding-right:24px;
+	z-index:2000;
 	}
 
 	.play-count {
@@ -337,6 +356,13 @@ p.talk-description {
 
 }
 
+	#slide-counter {
+		// position:fixed;
+		// top:24px;
+		// left:24px;
+		font-size:1.5rem;
+		color:$ghost;
+	}
 
 #slides-holder {
 	z-index:1990;
@@ -345,6 +371,8 @@ p.talk-description {
 	height:100vh;
 	padding:0px 0 80px 0;
 	background:rgba($white,.9);
+
+
 
 	.slide-close, #right-slide,#left-slide {
 		position:fixed;

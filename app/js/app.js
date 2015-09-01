@@ -24,7 +24,7 @@ var app = (function(document, $) {
 	app.init();
 })();
 
- $('.slides').slick({
+ $('.my-slides').slick({
    centerMode: true,
   centerPadding: '0',
   slidesToShow: 1,
@@ -55,7 +55,7 @@ var app = (function(document, $) {
   });
 
  // Manually refresh positioning of slick
-$('.slides').slick('setPosition');
+$('.my-slides').slick('setPosition');
 
 // if (Modernizr.touch) { 
 //     $('html').addClass('touch');
@@ -124,15 +124,15 @@ $('.classification-tag').on('click', function() {
 });
 
 $('#view-slides').on('click', function() {
-	console.log("view, slides: "+slidesAreUp);
+	console.log('view, slides: '+slidesAreUp);
 	$('#slides-holder').removeClass('hide').removeClass('fadeOut').addClass('fadeIn');
 	 // Manually refresh positioning of slick
-	$('.slides').slick('setPosition'); 
+	$('.my-slides').slick('setPosition'); 
 });
 
 
 $('.slide-close').on('click', function() {
-	console.log("hide, slides: "+slidesAreUp);
+	console.log('hide, slides: '+slidesAreUp);
 	$('#slides-holder').removeClass('fadeIn').addClass('fadeOut');
 
 });
@@ -140,12 +140,15 @@ $('.slide-close').on('click', function() {
 //checks the animation end of slides hodler to see wha tto doe:
 $('#slides-holder').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 	console.log('animation ended, slides: '+slidesAreUp);
-	if(slidesAreUp == 1) {
+	$('.play-count').toggleClass('hide');	
+	$('#slide-counter').toggleClass('hide');
+
+	if(slidesAreUp === 1) {
 		$(this).addClass('hide');
 		// .removeClass('fadeOut');
 		slidesAreUp = 0;
-	} else if(slidesAreUp == 0){
-		// $(this).addClass('hide');		
+	} else if(slidesAreUp === 0){
+		// $(this).addClass('hide');	
 		slidesAreUp = 1;
 	}
 });
@@ -161,7 +164,15 @@ $('.track-playing').on('click', function(){
 	
 });
 
-var showSlides = function(){
+//On after slide change
+$('.my-slides').on('afterChange', function(event, slick, currentSlide){
+  // Get the current slide
+	currentSlide = $('.my-slides').slick('slickCurrentSlide') + 1;
+  	console.log(currentSlide);
+  	 $('#current-slide').html(currentSlide).addClass('animated flash').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+  	 	$(this).removeClass('flash')
+  	 });
 
 
-};
+});
+      
