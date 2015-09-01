@@ -23,6 +23,36 @@ var app = (function(document, $) {
 	app.init();
 })();
 
+ $('.slides').slick({
+   centerMode: true,
+  centerPadding: '0',
+  slidesToShow: 1,
+  dots: true,
+  respondTo: 'slider',
+  nextArrow: $('#right-slide'),
+  prevArrow: $('#left-slide')
+  // responsive: [
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       arrows: false,
+  //       centerMode: true,
+  //       centerPadding: '40px',
+  //       slidesToShow: 3
+  //     }
+  //   },
+  //   {
+  //     breakpoint: 480,
+  //     settings: {
+  //       arrows: false,
+  //       centerMode: true,
+  //       centerPadding: '40px',
+  //       slidesToShow: 1
+  //     }
+  //   }
+  // ]
+  });
+
 // if (Modernizr.touch) { 
 //     $('html').addClass('touch');
 // } else { 
@@ -87,6 +117,15 @@ $('.button-play-pause').on('click',function(){
 
 $('.classification-tag').on('click', function() {
 	$(this).toggleClass('selected');
+});
+
+$('#view-slides').on('click', function() {
+	$('#slides-holder').removeClass('hide');
+});
+
+
+$('.slide-close').on('click', function() {
+	$('#slides-holder').addClass('hide');
 });
 
 // change picture on talk click

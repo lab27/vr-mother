@@ -11,8 +11,8 @@ layout: app/templates/layouts/talk.hbs
 
 {{!-- meta actions --}}
 <div id="talk-meta-actions" class="show-for-large-up">
-<a href="#"><button class="button small info talk-view-slides left"><span class="icon-uniE752"></span> View Slides</button></a>
-<a href="#"><button class="button small info talk-view-slides left"><span class="icon-uniE716"></span> View Description</button></a>
+<a href="#"><button id="view-slides" class="button small info talk-view-slides left"><span class="icon-uniE752"></span> View Slides</button></a>
+<a href="#"><button class="button small info talk-view-slide left"><span class="icon-uniE716"></span> View Description</button></a>
 
 <button class="button small info talk-view-slides right no-text"><span class="icon-uniE704"></span></button>
 <button class="button small info talk-view-slides right no-text"><span class="icon-uniE7BF"></span></button>
@@ -81,4 +81,14 @@ World tours laters, this year marks FISCHERSPOONER's return to the studio, devel
 
 {{!-- PLAYBAR --}}
 {{>talk-playbar}}
-<div id="slides-holder"></div>
+<div id="slides-holder" class="hide">
+<button class="slide-close"><span class="icon-uniE7D7"></span></button>
+<button id="left-slide"><span class="icon-uniE7CF"></span></button>
+<button id="right-slide"><span class="icon-uniE7CD"></span></button>
+	<div class="slides">
+  <div><img src="img/slides/slide0.jpg" alt=""><p class="talk-slide-counter">1/3</p></div>
+  <div><img src="img/slides/slide1.jpg" alt=""><p class="talk-slide-counter">2/3</p></div>
+  <div><img src="img/slides/slide2.jpg" alt=""><p class="talk-slide-counter">3/3</p></div>
+</div>
+				
+</div>
