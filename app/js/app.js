@@ -172,7 +172,5 @@ $('.my-slides').on('afterChange', function(event, slick, currentSlide){
   	 $('#current-slide').html(currentSlide).addClass('animated flash').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
   	 	$(this).removeClass('flash')
   	 });
-
-
 });
       

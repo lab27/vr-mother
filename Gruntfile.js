@@ -180,27 +180,27 @@ module.exports = function(grunt) {
 			},
 		},
 
-		connect: {
-			app: {
-				options: {
-					port: 9000,
-					base: '<%= app %>/',
-					open: true,
-					livereload: true,
-					hostname: '127.0.0.1'
-				}
-			},
-			dist: {
-				options: {
-					port: 9001,
-					base: '<%= dist %>/',
-					open: true,
-					keepalive: true,
-					livereload: false,
-					hostname: '127.0.0.1'
-				}
-			}
-		},
+		// connect: {
+		// 	app: {
+		// 		options: {
+		// 			port: 9000,
+		// 			base: '<%= app %>/',
+		// 			open: true,
+		// 			livereload: true,
+		// 			hostname: '127.0.0.1'
+		// 		}
+		// 	},
+		// 	dist: {
+		// 		options: {
+		// 			port: 9001,
+		// 			base: '<%= dist %>/',
+		// 			open: true,
+		// 			keepalive: true,
+		// 			livereload: false,
+		// 			hostname: '127.0.0.1'
+		// 		}
+		// 	}
+		// },
 
 		postcss: {
 		  options: {
