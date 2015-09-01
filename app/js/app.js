@@ -1,5 +1,6 @@
 'use strict';
 var statueNum = 0;
+var slidesAreUp = 0;
 var app = (function(document, $) {
 	var docElem = document.documentElement,
 		_userAgentInit = function() {
@@ -52,6 +53,9 @@ var app = (function(document, $) {
   //   }
   // ]
   });
+
+ // Manually refresh positioning of slick
+$('.slides').slick('setPosition');
 
 // if (Modernizr.touch) { 
 //     $('html').addClass('touch');
@@ -120,12 +124,30 @@ $('.classification-tag').on('click', function() {
 });
 
 $('#view-slides').on('click', function() {
-	$('#slides-holder').removeClass('hide');
+	console.log("view, slides: "+slidesAreUp);
+	$('#slides-holder').removeClass('hide').removeClass('fadeOut').addClass('fadeIn');
+	 // Manually refresh positioning of slick
+	$('.slides').slick('setPosition'); 
 });
 
 
 $('.slide-close').on('click', function() {
-	$('#slides-holder').addClass('hide');
+	console.log("hide, slides: "+slidesAreUp);
+	$('#slides-holder').removeClass('fadeIn').addClass('fadeOut');
+
+});
+
+//checks the animation end of slides hodler to see wha tto doe:
+$('#slides-holder').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	console.log('animation ended, slides: '+slidesAreUp);
+	if(slidesAreUp == 1) {
+		$(this).addClass('hide');
+		// .removeClass('fadeOut');
+		slidesAreUp = 0;
+	} else if(slidesAreUp == 0){
+		// $(this).addClass('hide');		
+		slidesAreUp = 1;
+	}
 });
 
 // change picture on talk click
@@ -138,3 +160,8 @@ $('.track-playing').on('click', function(){
 	}
 	
 });
+
+var showSlides = function(){
+
+
+};
