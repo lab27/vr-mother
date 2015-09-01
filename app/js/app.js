@@ -1,5 +1,5 @@
 'use strict';
-
+var statueNum = 0;
 var app = (function(document, $) {
 	var docElem = document.documentElement,
 		_userAgentInit = function() {
@@ -87,4 +87,15 @@ $('.button-play-pause').on('click',function(){
 
 $('.classification-tag').on('click', function() {
 	$(this).toggleClass('selected');
+});
+
+// change picture on talk click
+$('.track-playing').on('click', function(){
+	$('.talk-picture img').attr('src','img/bg/chantal/chantal'+statueNum+'.jpg');
+	if(statueNum < 9){
+		statueNum += 1;
+	} else {
+		statueNum = 0;
+	}
+	
 });
