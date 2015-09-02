@@ -344,11 +344,17 @@ p.talk-description {
 	width:100%;
 	padding:12px;
 	// margin-top:-100px;
+	transition:bottom .2s ease;
 
+
+
+	
 	@media #{$large-up} {
 	position:fixed;
 	bottom:120px;
 	padding:24px;
+	z-index:1000;
+
 	}
 
 	.button {
@@ -380,6 +386,16 @@ p.talk-description {
 	
 
 }
+
+	@media #{$large-up} {
+		#talk-meta-actions.lower {
+		bottom: 60px;
+	}
+	}
+
+	
+	
+
 
 	#slide-counter {
 		// position:fixed;

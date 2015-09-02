@@ -9721,12 +9721,14 @@ p.talk-description {
 #talk-meta-actions {
   position: relative;
   width: 100%;
-  padding: 12px; }
+  padding: 12px;
+  transition: bottom .2s ease; }
   @media only screen and (min-width:64.0625em) {
     #talk-meta-actions {
       position: fixed;
       bottom: 120px;
-      padding: 24px; } }
+      padding: 24px;
+      z-index: 1000; } }
   #talk-meta-actions .button {
     background: rgba(2, 4, 8, 0.6);
     color: #FFFFFF;
@@ -9748,6 +9750,10 @@ p.talk-description {
     color: #CCCCCC;
     background: rgba(2, 4, 8, 0.6);
     margin-left: 6px; }
+
+@media only screen and (min-width:64.0625em) {
+  #talk-meta-actions.lower {
+    bottom: 60px; } }
 
 #slide-counter {
   font-size: 1.5rem;

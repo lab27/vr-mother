@@ -19,7 +19,7 @@ layout: app/templates/layouts/talk.hbs
 {{!-- meta actions --}}
 <div id="talk-meta-actions" class="show-for-large-up">
 <a href="#"><button id="view-slides" class="button small info talk-view-slides left"><span class="icon-uniE752"></span> View Slides</button></a>
-<a href="#"><button class="button small info talk-view-slide left"><span class="icon-uniE716"></span> View Description</button></a>
+<a href="#talk-description" id="view-description"><button class="button small info talk-view-slide left"><span class="icon-uniE716"></span> View Description</button></a>
 
 <button class="button small info talk-view-slides right no-text" data-dropdown="share-drop" aria-controls="share-drop" aria-expanded="false"><span class="icon-uniE704"></span></button>
 
@@ -33,7 +33,7 @@ layout: app/templates/layouts/talk.hbs
 
 <div class="small-12 columns talk-story">
 
-	<div class="small-12 medium-10 medium-offset-1 large-6 large-offset-3 description-column">
+	<div id="talk-description" class="small-12 medium-10 medium-offset-1 large-6 large-offset-3 description-column wow" data-magellan-destination="js">
 			<p class="description-publisher"><a href="#">FutuRamen</a> / <span class="icon-uniE731"></span></p>
 
 			<p class="description-meta">10 days ago • 347 Plays • 45 Minutes</p>

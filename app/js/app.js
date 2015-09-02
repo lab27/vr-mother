@@ -20,9 +20,28 @@ var app = (function(document, $) {
 	};
 })(document, jQuery);
 
+
+//Smooth scrolll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 (function() {
 	app.init();
 })();
+
+new WOW().init();
 
  $('.my-slides').slick({
    centerMode: true,
@@ -183,4 +202,26 @@ $('#share-drop li').on('click',function(){
 	console.log('clicking an li in drop');
 	$('#share-drop').fadeToggle('fast','linear');
 });
+
+//in viewport description
+// $( '.talk-description:in-viewport' )
+
+var $div = $('.talk-description');
+$( window ).scroll(function() {
+  if ( $div.is( ':in-viewport' ) ) {
+  // $div.css( 'background-color', 'red' );
+  console.log('desc in view');
+  $('#view-description').fadeOut('fast','linear')
+  $('#talk-titlebar').fadeOut('fast','linear')
+  $('#talk-meta-actions').addClass('lower')
+
+} else if ($div.not(':in-viewport')) {
+	$('#view-description').fadeIn('fast','linear')
+	$('#talk-titlebar').fadeIn('fast','linear')
+	$('#talk-meta-actions').removeClass('lower')
+
+}
+});
+
+
       
