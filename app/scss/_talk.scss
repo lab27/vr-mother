@@ -427,3 +427,23 @@ p.talk-description {
 		margin:0 auto;
 	}
 }
+
+ul#share-drop {
+	position:fixed;
+	font-size:1rem;
+	bottom:190px;
+	right:64px;
+	background:rgba($dark-gray,.8);
+	color:$ghost;
+	list-style:none;
+	padding:12px;
+	border-radius:2px;
+	transition:opacity .2s;
+
+	a {
+		color:$ghost;
+		&:hover {
+			color:$white;
+		}
+	}
+}

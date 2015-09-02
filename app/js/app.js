@@ -173,4 +173,9 @@ $('.my-slides').on('afterChange', function(event, slick, currentSlide){
   	 	$(this).removeClass('flash')
   	 });
 });
+
+//share button drop up
+$('#share-button').on('click', function(){
+	$('#share-drop').fadeToggle( "fast", "ease" );
+});
       
