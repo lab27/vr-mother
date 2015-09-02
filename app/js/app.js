@@ -176,6 +176,11 @@ $('.my-slides').on('afterChange', function(event, slick, currentSlide){
 
 //share button drop up
 $('#share-button').on('click', function(){
-	$('#share-drop').fadeToggle( "fast", "ease" );
+	$('#share-drop').fadeToggle( 'fast', 'linear');
+});
+
+$('#share-drop li').on('click',function(){
+	console.log('clicking an li in drop');
+	$('#share-drop').fadeToggle('fast','linear');
 });
       

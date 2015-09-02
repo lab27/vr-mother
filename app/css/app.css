@@ -9489,6 +9489,9 @@ ul.tags li:first-child {
     font-size: 1.4rem;
     line-height: 22px; } }
 
+button, .button {
+  outline: none; }
+
 #vr-overlay {
   position: fixed;
   top: 12px;
@@ -9530,21 +9533,35 @@ ul.tags li:first-child {
   padding: 24px 12px 108px 12px;
   margin: 0; }
   .description-column h3 {
-    margin-bottom: 12px;
+    margin-bottom: 24px;
+    color: #64697e;
+    font-weight: 300;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #b4b6be;
+    border-bottom: 1px solid #b4b6be; }
+  .description-column .description-meta {
+    font-size: 1rem;
     color: #b4b6be;
-    font-weight: 300; }
+    margin-bottom: 6px;
+    margin-top: 0; }
+  .description-column .description-publisher {
+    color: #b4b6be;
+    margin-bottom: 0; }
+    .description-column .description-publisher a {
+      color: #54c6c6; }
   @media only screen and (min-width:64.0625em) {
     .description-column {
       padding: 48px 24px 240px 24px;
       margin: 0; }
       .description-column h3 {
-        margin-bottom: 24px; } }
+        margin-bottom: 36px; } }
 
 p.talk-description {
   font-family: 'adobe-caslon-pro',time,serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.3125rem;
-  color: #64697e;
+  color: #8F939C;
   font-weight: 300; }
   @media only screen and (min-width:40.0625em) {
     p.talk-description {
