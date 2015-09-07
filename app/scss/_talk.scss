@@ -81,6 +81,7 @@ button, .button {
 		padding-bottom:12px;
 		border-top:1px solid $charcoal;
 		border-bottom:1px solid $charcoal;
+		font-family: 'Eagle';
 
 	}
 
@@ -118,7 +119,7 @@ button, .button {
 // }
 
 p.talk-description {
-	font-family:'adobe-caslon-pro',time,serif;
+	// font-family:'adobe-caslon-pro',time,serif;
 	// font-family:'Primo Serif';
 	font-size:rem-calc(14);
 	line-height:rem-calc(21);
@@ -271,6 +272,7 @@ p.talk-description {
 		font-weight: 700;
 		display: inline-block;
 		margin-right: 12px;
+		font-family: 'Eagle';
 
 		@media #{$medium-up} {
 			font-size: rem-calc(24);

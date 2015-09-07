@@ -41,14 +41,14 @@ $(function() {
 	app.init();
 })();
 
- // $('.my-slides').slick({
- //   centerMode: true,
- //  centerPadding: '0',
- //  slidesToShow: 1,
- //  dots: true,
- //  respondTo: 'slider',
- //  nextArrow: $('#right-slide'),
- //  prevArrow: $('#left-slide')
+ $('.my-slides').slick({
+   centerMode: true,
+  centerPadding: '0',
+  slidesToShow: 1,
+  dots: true,
+  respondTo: 'slider',
+  nextArrow: $('#right-slide'),
+  prevArrow: $('#left-slide')
 
   // responsive: [
   //   {
@@ -70,10 +70,10 @@ $(function() {
   //     }
   //   }
   // ]
-  //});
+  });
 
  // Manually refresh positioning of slick
-// $('.my-slides').slick('setPosition');
+$('.my-slides').slick('setPosition');
 
 // if (Modernizr.touch) { 
 //     $('html').addClass('touch');
