@@ -1,0 +1,160 @@
+//results
+$sidebarWidth: 240px;
+
+
+h5 {
+	font-weight:700;
+}
+
+#sidebar {
+	width:$sidebarWidth;
+	max-width:$sidebarWidth;
+	height:100vh;
+	max-height:100vh;
+	padding:24px;
+	position: fixed;
+	background:$secondary-color;
+	top:0;
+	left:0;
+	color:$primary-color;
+
+	input[type="file"], input[type="checkbox"], input[type="radio"], select {
+		margin:0 0 .5rem 0;
+		color:$primary-color;
+	}
+
+	label {
+		color:$primary-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	h5 {
+		margin-top: 24px;
+		color:$primary-color;
+	}
+
+	#vr-logo {
+		margin-left: calc(#{$sidebarWidth}/2 - 60px);
+	}
+}
+
+#filter-svg {
+	display:none;
+}
+
+#results {
+	width:100vw;
+	padding:24px;
+	padding-left:calc(18px + #{$sidebarWidth});
+
+	#titlebar {
+		height:24px;
+		padding:6px;
+		margin-bottom: 12px;
+		font-size: 18px;
+		.results {
+			
+		}
+	}
+
+}
+
+#results-grid {
+	
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:flex-start;
+	align-content:flex-start;
+}
+
+.tile-wrapper {
+	flex:1 1 20vw;
+	width:20vw;
+	min-width:20vw;
+	height:20vw;
+	min-height:20vw;
+	padding:6px;
+	overflow:hidden;
+}
+
+.tile {
+	box-sizing:border-box;
+	// border:4px solid $dark-gray;
+	padding:0;
+	height:100%;
+	width:100%;
+	transition:border .2s;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:space-between;
+	position:relative;
+
+		svg {
+			display: none;
+		}
+	
+	.tile-image {
+		background:url(../img/thumbs/thumb-loading.jpg) no-repeat 50% 50%;
+		background-size:cover;
+		width: 100%;
+		height: 100%;
+		position:relative;
+		-webkit-filter: url(#blue-purple);
+		transition: -webkit-filter .2s ease;
+	}
+
+	&:hover .tile-image {
+		border:10px solid $primary-color;
+	}
+
+
+	.tile-title {
+		position:absolute;
+		flex:1 0 auto;
+		z-index: 100;
+		top:0;
+		// margin-top:calc(-20vw + 6px);
+		padding:12px;
+		// top:0;
+	}
+
+	.actions {
+		position:relative;
+		align-self:flex-end;
+		width: 100%;
+		flex:1 0 auto;
+		height:44px;
+		padding:0;
+		margin-top:-56px;
+		// border:1px solid red;
+		padding-right:12px;
+
+		.add-to-playlist {
+			width:44px;
+			height:44px;
+			background: $primary-color;
+			color:$white;
+			font-size:rem-calc(18px);
+			text-align: center;
+			padding-top:8px;
+		}
+	}
+
+
+	h2 {
+		font-family: 'Eagle';
+		font-size: rem-calc(18px);
+		line-height: rem-calc(21px);
+		color:$white;
+	}
+
+	.thumb-publisher {
+		font-weight: 500;
+	}
+
+	.thumb-classification {
+		color:$white;
+	}
+}

@@ -1,0 +1,73 @@
+---
+title: politics
+layout: app/templates/layouts/layout-no-topbar.hbs
+---
+
+<svg version="1.1" id="filter-svg" width="0" height="0">
+	<path></path>
+	<filter id="blue-purple">
+		<feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" result="gray"></feColorMatrix>
+		<feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.17254901960784313 0.6392156862745098"></feFuncR><feFuncG type="table" tableValues="0.27450980392156865 0.2235294117647059"></feFuncG><feFuncB type="table" tableValues="0.6901960784313725 0.803921568627451"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer>
+	</filter>
+</svg>
+
+
+<div id="sidebar">
+{{>logo-white}}
+<form>
+	<label><h5>Publisher Types:</h5></label>
+      <input type="checkbox" name="pokemon" value="Red" id="conf"><label for="conf">Conference</label><br>
+      <input type="checkbox" name="pokemon" value="Blue" id="found"><label for="found">Foundation &amp; NGO</label><br>
+            <input type="checkbox" name="pokemon" value="Red" id="aca"><label for="aca">Academic</label><br>
+      <input type="checkbox" name="pokemon" value="Red" id="inst"><label for="inst">Institution</label><br>
+            <input type="checkbox" name="pokemon" value="Red" id="ind"><label for="ind">Independent</label><br>
+
+
+</form>
+
+
+<form>
+	<label><h5>Topics:</h5></label>
+      <input type="checkbox" name="pokemon" value="Red" id="poli"><label for="poli">Politics</label><br>
+      <input type="checkbox" name="pokemon" value="Blue" id="cult"><label for="cult">Culture</label><br>
+            <input type="checkbox" name="pokemon" value="Red" id="phil"><label for="phil">Philosophy</label><br>
+      <input type="checkbox" name="pokemon" value="Red" id="tech"><label for="tech">Technology</label><br>
+            <input type="checkbox" name="pokemon" value="Red" id="art"><label for="art">Art</label><br>
+  <input type="checkbox" name="pokemon" value="Red" id="mus"><label for="mus">Music</label><br>
+      <input type="checkbox" name="pokemon" value="Red" id="sci"><label for="sci">Science</label><br>
+            <input type="checkbox" name="pokemon" value="Red" id="soc"><label for="soc">Society</label><br>
+
+</form>
+
+<ul class="inline-list tags">
+
+	<li>Tags:</li>
+<!-- 		<li class="classification-tag"><span class="icon-uniE77A"></span> Conference</li>
+		<li class="classification-tag"><span class="icon-uniE907"></span> Foundation</li>
+		<li class="classification-tag"><span class="icon-uniE8E8"></span> Academic</li>
+		<li class="classification-tag"><span class="icon-uniE85E"></span> Corporate</li>
+		<li class="classification-tag"><span class="icon-uniE731"></span> Boutique</li> -->
+
+		<li>Greece</li>
+		<li>EU</li>
+		<li>Germany</li>
+		<li>Internet</li>
+		<li>NSA</li>
+	</ul>
+</div>
+<div id="results">
+<div id="titlebar">
+	<div class="results left">Results for: "Greece"</div> <div class="meta right">212 Results</div>
+</div>
+<div id="results-grid">
+{{#each thumbs }}
+<div class="tile-wrapper">
+<a href="talk.html">
+
+		{{> funky-tile}}
+		</a>
+			</div>
+
+	{{/each}}
+</div>
+</div>

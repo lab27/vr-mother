@@ -80,7 +80,6 @@
       
 
 
-
 <div id="main">
 <div class="titlebar">
 	<div class="title-left left"><h3 class="breadcrumb"><a href="explore.html">Explore </a> / <span class="current-branch">Politics</span><span class="follow-topic"><span class="icon-uniE704"></span></span></h3></div>
@@ -157,6 +156,7 @@
 		<a class="classification-tag"><span class="icon-uniE731"></span> </a>
 
 </div>
+
 
 <div id="thumb-container">
 
@@ -640,8 +640,18 @@
     <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <!-- endbuild -->
+        <script src="js/gradientmaps.min.js"></script>
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
+            <script>
+          var gradientMap = "purple, lemonchiffon";
+
+$('.thumb-image').each(function(){
+    var target = this
+    GradientMaps.applyGradientMap(target, gradientMap);
+
+});
+</script>
     <!-- endbuild -->
   </body>
 </html>

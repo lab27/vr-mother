@@ -89,7 +89,7 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Roboto Condensed","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//$font-family-sans-serif: "Roboto Condensed","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -129,6 +129,7 @@ $alert-color: #f82847 !default;     // vr red
 $success-color: #d8f793 !default;   // vr greeen (new from nick)
 $warning-color: #ffed00 !default;   // vr yellow
 $info-color: #fef1de !default;      // vr beige
+$brand-purple: #a339cd !default; //vr-purple
 
 // We use these to control various global styles
 // $body-bg: $white;
