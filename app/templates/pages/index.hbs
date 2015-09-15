@@ -2,13 +2,21 @@
 title: Welcome
 ---
 
+<svg version="1.1" id="filter-svg" width="0" height="0">
+  <path></path>
+  <filter id="blue-purple">
+    <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" result="gray"></feColorMatrix>
+    <feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.17254901960784313 0.6392156862745098"></feFuncR><feFuncG type="table" tableValues="0.27450980392156865 0.2235294117647059"></feFuncG><feFuncB type="table" tableValues="0.6901960784313725 0.803921568627451"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer>
+  </filter>
+</svg>
+
 <!-- SEARCH AND HERO -->
 
 <section class="home-search row medium-collapse large-collapse">
 
 <div class="large-7 columns">
-<h1 class="text-center animated fadeInUp">Talk Smart.</h1>
-<div class="medium-8 medium-offset-2 columns animated fadeInUp"><h4 class="text-center sub-claim">Voice Republic features some of the most interesting and relevant conversations, from exclusive content providers. Dive in and start listening.</h4></div>
+<h1 class="text-center animated fadeInUp">The Platform For Quality Spoken Content.</h1>
+{{!-- <div class="medium-8 medium-offset-2 columns animated fadeInUp"><h4 class="text-center sub-claim">Voice Republic features some of the most interesting and relevant conversations, from exclusive content providers. Dive in and start listening.</h4></div> --}}
 
 
 <div class="row">
@@ -20,7 +28,7 @@ title: Welcome
 
         </div>
         <div class="small-3 columns">
-          <a href="#" class="button secondary medium-expand">Go</a>
+          <a href="results-sidebar.html" class="button secondary medium-expand">Go</a>
         </div>
       </div>
     </div>
@@ -71,46 +79,7 @@ title: Welcome
 </section>
 
 
-<!-- SIGN IN -->
 
-<!-- <section class="sign-in">
-<div class="row">
-	<div class="medium-6 medium-offset-3 columns sign-in-box">
-		
-<div class="small-12 columns">
-  <div class="sign-in-box">
-  <div class="row">
-  <div class="large-12 columns">
-    <form>
-    <h3>Sign in for the full experience.</h3>
-       <div class="row">
-         <div class="large-12 columns large-collapse">
-             <input type="text" name="email" placeholder="Email" />
-         </div>
-       </div>
-      <div class="row">
-         <div class="large-12 columns large-collapse">
-             <input type="password" name="password" placeholder="Password" />
-         </div>
-      </div>
-      <div class="row">
-        <div class="small-6 columns collapse">
-          <input type="submit" class="button secondary expand" value="Sign In"/>
-        </div>
-        <div class="small-6 columns collapse">
-          <input type="submit" class="button blank expand" value="Or Join"/>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-</div>
-</div>
-
-	</div>
-	</div>
-
-</section> -->
 
 
 
@@ -132,12 +101,17 @@ title: Welcome
 <section class="start-listening">
 	<div class="section-title"><h2 class="text-center"> Start Listening</h2></div>
 
-<div class="thumb-container">	
+<div id="results-grid">
+{{#each thumbs }}
+<div class="tile-wrapper">
+<a href="talk.html">
 
-	{{#withFirst thumbs 8}}
-	{{> thumbnail}}
-	{{/withFirst}}
+    {{> funky-tile}}
+    </a>
+      </div>
 
+  {{/each}}
+</div>
 </div>
 </section>
 

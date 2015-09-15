@@ -173,7 +173,7 @@ module.exports = function(grunt) {
 			// 	tasks: ['postcss']
 			// },			
 			livereload: {
-				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}'],
+				files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css','<%= app %>/scss/**/*.scss', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}'],
 				options: {
 					livereload: true
 				}
@@ -236,7 +236,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'assemble',
 		'compile-sass', 
-		'postcss',
+		// 'postcss',
 
 		'bower-install', 
 		'browserSync:livereload', 
