@@ -16,6 +16,16 @@ html, body {
 	// font-family:'Roboto Condensed', helvetica, arial, sans-serif;
 }
 
+.dropdown {
+	box-shadow: 0 1px 10px rgba(0,0,0,.3);
+	margin-top:-10px;
+}
+
+.dropdown.button {
+	box-shadow:none;
+	margin-top:0;
+}
+
 .slideUp {
     position: fixed;
     top: 0;
@@ -59,6 +69,23 @@ hr {
 
 .top-bar-section ul li {
 	background:$white;
+
+	&.join {
+		margin-right:24px;
+		margin-left: 12px;
+	}
+
+	button, .button {
+		height: 36px;
+		line-height: 36px;
+		padding:0 12px;
+		border:2px;
+		font-weight: 700;
+
+		@media #{$large-up} {
+			top:22px;
+		}
+	}
 }
 
 .top-bar {
@@ -67,7 +94,7 @@ hr {
 
 li.sign-in-top {
 	background:$white;
-	padding-right:24px;
+	// padding-right:24px;
 }
 
 .name {
@@ -95,6 +122,14 @@ li.sign-in-top {
 
 .sizes {
 	color:$white;
+}
+
+.top-bar-section ul li > a.button.outline {
+	background:none;
+	border: 2px solid $steel;
+	color:$steel;
+	font-weight:700;
+	line-height:34px;
 }
 
 .top-bar-section .has-dropdown > a:after {
@@ -252,7 +287,7 @@ li.sign-in-top {
 //start-listening
 .start-listening {
 	background:$white;
-	padding:84px 12px;
+	padding:48px;
 
 	.section-title h2{
 		color:$oil;

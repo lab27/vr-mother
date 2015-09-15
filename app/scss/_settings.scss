@@ -1418,7 +1418,7 @@ $topbar-link-bg-active-hover: $topbar-bg-color;
 // $topbar-back-link-size: rem-calc(18);
 // $topbar-link-dropdown-padding: rem-calc(20);
 // $topbar-button-font-size: 0.75rem;
-// $topbar-button-top: 7px;
+$topbar-button-top: 4px !default;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: $smoke;

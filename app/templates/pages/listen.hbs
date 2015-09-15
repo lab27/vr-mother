@@ -1,0 +1,64 @@
+---
+title: listen
+---
+
+<svg version="1.1" id="filter-svg" width="0" height="0">
+	<path></path>
+	<filter id="blue-purple">
+		<feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" result="gray"></feColorMatrix>
+		<feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.17254901960784313 0.6392156862745098"></feFuncR><feFuncG type="table" tableValues="0.27450980392156865 0.2235294117647059"></feFuncG><feFuncB type="table" tableValues="0.6901960784313725 0.803921568627451"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer>
+	</filter>
+</svg>
+
+<div id="filter-bar" class="row">
+	<div class="large-3 columns filter">
+
+	<form>	
+
+			          <input type="search" placeholder="Search Talks..." class="search expand">
+
+	        </form>
+
+     </div>
+	<div class="large-3 columns filter">
+		<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown expand">Topics</button><br>
+		<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		<li><a href="#">This is a link</a></li>
+		<li><a href="#">This is another</a></li>
+		<li><a href="#">Yet another</a></li>
+		</ul>
+	</div>
+
+		<div class="large-3 columns filter">
+		<button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="button dropdown expand">Publisher Type</button><br>
+		<ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		<li><a href="#">This is a link</a></li>
+		<li><a href="#">This is another</a></li>
+		<li><a href="#">Yet another</a></li>
+		</ul>
+	</div>
+
+		<div class="large-3 columns filter">
+		<button href="#" data-dropdown="drop3" aria-controls="drop3" aria-expanded="false" class="button dropdown expand">Language</button><br>
+		<ul id="drop3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		<li><a href="#">This is a link</a></li>
+		<li><a href="#">This is another</a></li>
+		<li><a href="#">Yet another</a></li>
+		</ul>
+	</div>
+
+</div> {{!-- filterbar --}}
+
+
+<div id="results-grid" class="topics-results">
+{{#each thumbs }}
+<div class="tile-wrapper">
+<a href="talk.html">
+
+		{{> funky-tile}}
+		</a>
+			</div>
+
+	{{/each}}
+</div>
+</div>
