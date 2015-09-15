@@ -3,6 +3,7 @@ title: politics
 layout: app/templates/layouts/layout-no-topbar.hbs
 ---
 
+{{>topbar-home}}
 <svg version="1.1" id="filter-svg" width="0" height="0">
 	<path></path>
 	<filter id="blue-purple">
@@ -11,11 +12,12 @@ layout: app/templates/layouts/layout-no-topbar.hbs
 	</filter>
 </svg>
 
+<div id="results-all" class="">
 
-<div id="sidebar">
-{{>logo-white}}
+<div id="sidebar" class="large-3 columns">
+{{!-- {{>logo-white}} --}}
 <form>
-	<label><h5>Publisher Types:</h5></label>
+	<h5>Publisher Types:</h5>
       <input type="checkbox" name="pokemon" value="Red" id="conf"><label for="conf">Conference</label><br>
       <input type="checkbox" name="pokemon" value="Blue" id="found"><label for="found">Foundation &amp; NGO</label><br>
             <input type="checkbox" name="pokemon" value="Red" id="aca"><label for="aca">Academic</label><br>
@@ -27,7 +29,7 @@ layout: app/templates/layouts/layout-no-topbar.hbs
 
 
 <form>
-	<label><h5>Topics:</h5></label>
+	<h5>Topics:</h5>
       <input type="checkbox" name="pokemon" value="Red" id="poli"><label for="poli">Politics</label><br>
       <input type="checkbox" name="pokemon" value="Blue" id="cult"><label for="cult">Culture</label><br>
             <input type="checkbox" name="pokemon" value="Red" id="phil"><label for="phil">Philosophy</label><br>
@@ -55,7 +57,7 @@ layout: app/templates/layouts/layout-no-topbar.hbs
 		<li>NSA</li>
 	</ul>
 </div>
-<div id="results">
+<div id="results" class="large-9 columns">
 <div id="titlebar">
 	<div class="results left">Results for: "Greece"</div> <div class="meta right">212 Results</div>
 </div>
@@ -71,3 +73,5 @@ layout: app/templates/layouts/layout-no-topbar.hbs
 	{{/each}}
 </div>
 </div>
+</div>
+

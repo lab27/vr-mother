@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voice Republic | politics</title>
+    <title>Voice Republic | topics</title>
     <!-- build:css css/libraries.min.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/animate.css/animate.css">
@@ -22,11 +22,6 @@
 
   </head>
   <body>
-
-
-    <div role="main">
-
-      
 
 
 <nav class="top-bar" data-topbar role="navigation">
@@ -73,7 +68,12 @@
  
     
   </section>
-</nav><svg version="1.1" id="filter-svg" width="0" height="0">
+</nav>
+    <div role="main">
+
+      
+
+<svg version="1.1" id="filter-svg" width="0" height="0">
 	<path></path>
 	<filter id="blue-purple">
 		<feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" result="gray"></feColorMatrix>
@@ -81,55 +81,47 @@
 	</filter>
 </svg>
 
-<div id="results-all" class="">
+<div id="filter-bar" class="row">
+	<div class="large-3 columns">
 
-<div id="sidebar" class="large-3 columns">
-<form>
-	<h5>Publisher Types:</h5>
-      <input type="checkbox" name="pokemon" value="Red" id="conf"><label for="conf">Conference</label><br>
-      <input type="checkbox" name="pokemon" value="Blue" id="found"><label for="found">Foundation &amp; NGO</label><br>
-            <input type="checkbox" name="pokemon" value="Red" id="aca"><label for="aca">Academic</label><br>
-      <input type="checkbox" name="pokemon" value="Red" id="inst"><label for="inst">Institution</label><br>
-            <input type="checkbox" name="pokemon" value="Red" id="ind"><label for="ind">Independent</label><br>
+	<form>	
+
+			          <input type="search" placeholder="Search Talks..." class="search expand">
+
+	        </form>
+
+     </div>
+	<div class="large-3 columns">
+		<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown expand">Topics</button><br>
+		<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		<li><a href="#">This is a link</a></li>
+		<li><a href="#">This is another</a></li>
+		<li><a href="#">Yet another</a></li>
+		</ul>
+	</div>
+
+		<div class="large-3 columns">
+		<button href="#" data-dropdown="drop2" aria-controls="drop2" aria-expanded="false" class="button dropdown expand">Publisher Type</button><br>
+		<ul id="drop2" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		<li><a href="#">This is a link</a></li>
+		<li><a href="#">This is another</a></li>
+		<li><a href="#">Yet another</a></li>
+		</ul>
+	</div>
+
+		<div class="large-3 columns">
+		<button href="#" data-dropdown="drop3" aria-controls="drop3" aria-expanded="false" class="button dropdown expand">Language</button><br>
+		<ul id="drop3" data-dropdown-content class="f-dropdown" aria-hidden="true">
+		<li><a href="#">This is a link</a></li>
+		<li><a href="#">This is another</a></li>
+		<li><a href="#">Yet another</a></li>
+		</ul>
+	</div>
+
+</div> 
 
 
-</form>
-
-
-<form>
-	<h5>Topics:</h5>
-      <input type="checkbox" name="pokemon" value="Red" id="poli"><label for="poli">Politics</label><br>
-      <input type="checkbox" name="pokemon" value="Blue" id="cult"><label for="cult">Culture</label><br>
-            <input type="checkbox" name="pokemon" value="Red" id="phil"><label for="phil">Philosophy</label><br>
-      <input type="checkbox" name="pokemon" value="Red" id="tech"><label for="tech">Technology</label><br>
-            <input type="checkbox" name="pokemon" value="Red" id="art"><label for="art">Art</label><br>
-  <input type="checkbox" name="pokemon" value="Red" id="mus"><label for="mus">Music</label><br>
-      <input type="checkbox" name="pokemon" value="Red" id="sci"><label for="sci">Science</label><br>
-            <input type="checkbox" name="pokemon" value="Red" id="soc"><label for="soc">Society</label><br>
-
-</form>
-<h5>Tags:</h5>
-<ul class="inline-list tags">
-
-	
-<!-- 		<li class="classification-tag"><span class="icon-uniE77A"></span> Conference</li>
-		<li class="classification-tag"><span class="icon-uniE907"></span> Foundation</li>
-		<li class="classification-tag"><span class="icon-uniE8E8"></span> Academic</li>
-		<li class="classification-tag"><span class="icon-uniE85E"></span> Corporate</li>
-		<li class="classification-tag"><span class="icon-uniE731"></span> Boutique</li> -->
-
-		<li>Greece</li>
-		<li>EU</li>
-		<li>Germany</li>
-		<li>Internet</li>
-		<li>NSA</li>
-	</ul>
-</div>
-<div id="results" class="large-9 columns">
-<div id="titlebar">
-	<div class="results left">Results for: "Greece"</div> <div class="meta right">212 Results</div>
-</div>
-<div id="results-grid">
+<div id="results-grid" class="topics-results">
 <div class="tile-wrapper">
 <a href="talk.html">
 
@@ -300,18 +292,76 @@
 
 </div>
 </div>
-</div>
-
-
 
     </div>
 
+
+<footer>
+
+	<div class="row">
+	<div class="small-12 columns">
+	<h3 class="text-center"><img src="img/logo/logotype-beige.svg" width="180"></h3>
+	</div>
+	</div>
+
+
+<div class="footer-links">	<div class="small-12 columns">
+
+<div class="large-1 medium-3 column large-offset-2"><a href="#">About</a></div>
+<div class="large-1 medium-3 column"><a href="#">Pricing</a></div>
+<div class="large-1 medium-3 column"><a href="#">Help</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">Blog</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">Terms</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">Press Kit</a></div>
+
+<div class="large-1 medium-3 column"><a href="#">System Stats</a></div>
+
+<div class="large-1 medium-3 column end"><a href="#">Contact Us</a></div>
+
+
+	<!-- <ul class="inline-list">
+		  <li role="presentation"><a href="#">About</a></li>
+		  <li role="presentation"><a href="#">Pricing</a></li>
+		  <li role="presentation"><a href="#">Help</a></li>
+		   <li role="presentation"><a href="#">Blog</a></li>
+		  <li role="presentation"><a href="#">Terms</a></li>
+		  <li role="presentation"><a href="#">Press Kit</a></li>
+		  <li role="presentation"><a href="#">System Status</a></li>
+		  <li role="presentation"><a href="#">Contact Us</a></li>
+		</ul> -->
+
+
+		</div>
+</div>
+	
+
+
+
+<div class="row">	<div class="small-12 medium-6 medium-offset-3 columns social">
+
+		    <a href="#"><span class="icon-uniE949"> </span></a>
+		    <a href="#"><span class="icon-uniE94A"> </span></a>
+
+		  <!-- <li role="presentation"><a href="#"><span class="social icon-uniE94A"> </span></a></li> -->
+		</div>
+		</div>
+
+		<div class="row">
+<div class="small-12 columns"><p class="text-center copyright">&copy;2015 Voice Republic Media AG</p>
+</div></div>
+		
+</footer>
     <!-- build:js js/vendor/libraries.min.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-        <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+            <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+                <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
 
     <!-- endbower -->
     <!-- endbuild -->
@@ -334,10 +384,10 @@
     <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <!-- endbuild -->
-        <script src="js/gradientmaps.min.js"></script>
+            <script src="js/gradientmaps.min.js"></script>
+
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
-
     <!-- endbuild -->
   </body>
 </html>

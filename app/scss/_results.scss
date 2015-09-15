@@ -7,16 +7,25 @@ h5 {
 
 }
 
+#results-all {
+	height:100%;
+	min-height:100%;
+	background:yellow;
+}
+
 #sidebar {
-	width:$sidebarWidth;
-	max-width:$sidebarWidth;
-	height:100vh;
-	max-height:100vh;
+	// width:$sidebarWidth;
+	// max-width:$sidebarWidth;
+	// height:1500px;
+	// max-height:100vh;
+	min-height:200%;
+	margin:0 auto;
 	padding:24px;
-	position: fixed;
+	position: relative;
 	background:$secondary-color;
 	top:0;
 	left:0;
+	bottom:0;
 	color:$primary-color;
 
 	input[type="file"], input[type="checkbox"], input[type="radio"], select {
@@ -58,9 +67,9 @@ h5 {
 }
 
 #results {
-	width:100vw;
+	// width:100%;
 	padding:24px;
-	padding-left:calc(18px + #{$sidebarWidth});
+	// padding-left:calc(18px + #{$sidebarWidth});
 
 	#titlebar {
 		height:36px;
@@ -157,6 +166,7 @@ h5 {
 			font-size:rem-calc(18px);
 			text-align: center;
 			padding-top:8px;
+			border:1px solid $white;
 		}
 	}
 
