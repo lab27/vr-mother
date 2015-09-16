@@ -24,6 +24,15 @@ module.exports = function(grunt) {
 			}
 		},
 
+  convert: {
+    options: {
+      explicitArray: false,
+    },
+    csv2json: {
+      src: ['<%= app %>/data/tags.csv'],
+      dest: '<%= app %>/data/tags.json'
+    }
+  },
 		pageres: {
 	          screenshot: {
 	              options: {
@@ -234,6 +243,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('bower-install', ['wiredep']);
 	
 	grunt.registerTask('default', [
+		'convert',
 		'assemble',
 		'compile-sass', 
 		// 'postcss',

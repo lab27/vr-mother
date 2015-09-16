@@ -16,6 +16,15 @@ html, body {
 	// font-family:'Roboto Condensed', helvetica, arial, sans-serif;
 }
 
+.about {
+	padding:48px;
+
+	p.lead {
+		font-family: georgia, serif;
+		color:$oil;
+	}
+}
+
 .dropdown {
 	box-shadow: 0 1px 10px rgba(0,0,0,.3);
 	margin-top:-10px;

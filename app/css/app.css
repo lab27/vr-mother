@@ -8794,6 +8794,75 @@ h5 {
   .tile .thumb-classification {
     color: #FFFFFF; }
 
+.ted-tile-wrapper {
+  flex: 1 1 16vw;
+  width: 16vw;
+  min-width: 16vw;
+  height: 20vw;
+  min-height: 20vw;
+  padding: 6px;
+  overflow: hidden; }
+
+.ted-tile {
+  box-sizing: border-box;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  transition: border .2s;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  position: relative; }
+  .ted-tile svg {
+    display: none; }
+  .ted-tile .tile-image {
+    background: url(../img/thumbs/thumb-loading.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    transition: -webkit-filter .2s ease; }
+  .ted-tile .tile-title {
+    position: absolute;
+    flex: 1 0 auto;
+    z-index: 100;
+    top: 50%;
+    padding: 0;
+    padding-top: 6px; }
+    .ted-tile .tile-title h2 {
+      font-size: 0.9375rem;
+      line-height: 1.125rem; }
+  .ted-tile .actions {
+    position: relative;
+    align-self: flex-end;
+    width: 100%;
+    flex: 1 0 auto;
+    height: 44px;
+    padding: 0;
+    margin-top: -56px;
+    padding-right: 12px; }
+    .ted-tile .actions .add-to-playlist {
+      width: 44px;
+      height: 44px;
+      background: #2c46b0;
+      color: #FFFFFF;
+      font-size: 1.125rem;
+      text-align: center;
+      padding-top: 8px;
+      border: 1px solid #FFFFFF; }
+  .ted-tile h2 {
+    font-family: 'Eagle';
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    color: #3F4044; }
+  .ted-tile .thumb-publisher {
+    font-weight: 500; }
+  .ted-tile .thumb-classification {
+    color: #64697e; }
+  .ted-tile .thumb-publisher {
+    font-size: 0.75rem;
+    line-height: 1.125rem; }
+
 #image-width:after {
   content: 40em; }
 
@@ -9038,6 +9107,12 @@ html, body {
   font-weight: 300;
   color: #020408;
   background: #EEEEEE; }
+
+.about {
+  padding: 48px; }
+  .about p.lead {
+    font-family: georgia, serif;
+    color: #64697e; }
 
 .dropdown {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
