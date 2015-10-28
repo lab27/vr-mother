@@ -189,9 +189,9 @@ h5 {
 
 
 .ted-tile-wrapper {
-	flex:1 1 16vw;
-	width:16vw;
-	min-width:16vw;
+	flex:1 1 20vw;
+	width:20vw;
+	min-width:20vw;
 	height:20vw;
 	min-height:20vw;
 	padding:6px;
@@ -219,7 +219,7 @@ h5 {
 		background:url(../img/thumbs/thumb-loading.jpg) no-repeat 50% 50%;
 		background-size:cover;
 		width: 100%;
-		height: 50%;
+		height: 60%;
 		position:relative;
 		// -webkit-filter:opacity(.5);
 		// -webkit-filter: url(#blue-purple);
@@ -235,15 +235,30 @@ h5 {
 		position:absolute;
 		flex:1 0 auto;
 		z-index: 100;
-		top:50%;
+		top:60%;
 		// margin-top:calc(-20vw + 6px);
 		padding:0;
-		padding-top:6px;
+		padding-top:1px;
 		// top:0;
 
+		$font-size: 15px;
+		$line-height: 1.2;
+		$lines-to-show: 2;
+
 		h2 {
-			font-size: rem-calc(15);
-			line-height: rem-calc(18);
+			
+		  display: block; /* Fallback for non-webkit */
+		  display: -webkit-box;
+		  max-width: 400px;
+		  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+		  margin: 0 auto;
+		  font-size: $font-size;
+		  line-height: $line-height;
+		  -webkit-line-clamp: $lines-to-show;
+		  -webkit-box-orient: vertical;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+		  margin-top:2px;
 		}
 	}
 
