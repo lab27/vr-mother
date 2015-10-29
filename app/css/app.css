@@ -9750,7 +9750,7 @@ button, .button {
   top: 12px;
   left: 12px;
   z-index: 999;
-  background: rgba(44, 70, 176, 0.95);
+  background: rgba(84, 198, 198, 0.95);
   padding: 13px;
   padding-top: 15px;
   border-radius: 50%;
@@ -9922,7 +9922,7 @@ p.talk-description {
       border-radius: 20px;
       border: 1px solid #FAFAFA;
       box-shadow: 0 1px 3px rgba(100, 105, 126, 0.2);
-      margin-right: 6px;
+      margin-right: 3px;
       display: inline-block; }
   #talk-titlebar .talk-title {
     color: #FAFAFA;
@@ -9934,8 +9934,9 @@ p.talk-description {
     font-family: 'Eagle'; }
     @media only screen and (min-width:40.0625em) {
       #talk-titlebar .talk-title {
-        font-size: 1.5rem;
-        line-height: 1.625rem; } }
+        font-size: 1.3125rem;
+        line-height: 1.5rem;
+        margin-top: 3px; } }
   #talk-titlebar .talk-meta-holder {
     display: inline-block;
     margin-top: 2px;
@@ -9992,17 +9993,22 @@ p.talk-description {
     #talk-meta-actions .button span {
       margin-right: 6px;
       margin-top: 4px; }
-  #talk-meta-actions .button.no-text {
-    width: 44px;
-    max-width: 44px;
-    height: 44px;
-    max-height: 44px;
-    text-align: center;
-    padding: 12px;
-    font-size: 18px;
-    color: #CCCCCC;
-    background: rgba(2, 4, 8, 0.6);
-    margin-left: 6px; }
+    #talk-meta-actions .button.no-text {
+      width: 44px;
+      max-width: 44px;
+      height: 44px;
+      max-height: 44px;
+      text-align: center;
+      padding: 12px;
+      font-size: 18px;
+      color: #CCCCCC;
+      background: rgba(2, 4, 8, 0.6);
+      margin-left: 6px; }
+  #talk-meta-actions .button.selected {
+    background: red; }
+
+#talk-meta-actions a#pin-talk.button.small.info.talk-view-slides.right.no-text.ouch {
+  background: lemonchiffon; }
 
 @media only screen and (min-width:64.0625em) {
   #talk-meta-actions.lower {

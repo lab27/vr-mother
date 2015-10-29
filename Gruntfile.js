@@ -125,7 +125,14 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd:'<%= app %>/',
-					src: ['fonts/**', '**/*.html', '!**/*.scss', 'bower_components/**'],
+					src: [
+						'fonts/**', '**/*.html', '!**/*.scss', 
+						'!bower_components/**', 
+						'bower_components/animate.css/animate.min.css',
+						'bower_components/slick-carousel/slick/slick.min.js',
+						'bower_components/wow/dist/wow.min.js',
+						'bower_components/isInViewport/lib/isInViewport.min.js'
+						],
 					dest: '<%= dist %>/'
 				}]
 			},
