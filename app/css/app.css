@@ -9033,7 +9033,7 @@ h1.thumb-title {
   margin-top: 0;
   font-size: 1.25rem;
   line-height: 21px;
-  font-weight: 700;
+  font-weight: normal;
   text-decoration: none;
   transition: text-decoration .5s ease; }
 
@@ -9780,7 +9780,8 @@ button, .button {
 .talk-story {
   padding: 0;
   margin: 0;
-  z-index: 1; }
+  z-index: 1;
+  padding-bottom: 220px; }
 
 .description-column {
   padding: 24px 12px 108px 12px;
