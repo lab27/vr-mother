@@ -9112,6 +9112,13 @@ p.thumb-logline {
   p.thumb-logline a {
     color: #8F939C; }
 
+@font-face {
+  font-family: 'Eagle';
+  src: url('../fonts/Eagle-Book.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Eagle-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Eagle-Book.woff2') format('woff2'), url('../fonts/Eagle-Book.woff') format('woff'), url('../fonts/Eagle-Book.ttf') format('truetype'), url('../fonts/Eagle-Book.svg#svgFontName') format('svg');
+  /* Legacy iOS */ }
+
 /* all app scss styles here */
 html, body {
   -webkit-font-smoothing: antialiased;
