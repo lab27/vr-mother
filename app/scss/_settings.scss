@@ -90,7 +90,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to define default font stacks
 //$font-family-sans-serif: "Roboto Condensed","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-serif: "Minion Pro",Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
@@ -121,6 +121,7 @@ $jet           : #3c4258 !default;
 $dark-gray     : #3F4044 !default;
 $almost-black  : #020408 !default;
 $black         : #000000 !default;
+$talk-dark     : #29292b !default;
 
 // We use these as default colors throughout
 $primary-color: #2c46b0 !default;   // vr blue
@@ -134,7 +135,7 @@ $brand-purple: #a339cd !default; //vr-purple
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-font-family: $font-family-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 

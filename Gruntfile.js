@@ -10,6 +10,29 @@ module.exports = function(grunt) {
 		app: 'app',
 		dist: 'dist',
 
+		
+
+		convert: {
+			options: {
+		      explicitArray: false,
+		    },
+		    csv2json: {
+		      src: ['<%= app %>/data/tags.csv'],
+		      dest: '<%= app %>/data/tags.json'
+		    }
+		  },
+		pageres: {
+	          screenshot: {
+	              options: {
+	                  urls: ['127.0.0.1:9000', '127.0.0.1:9000/explore.html','127.0.0.1:9000/results.html'],
+	                  sizes: ['1200x800'],
+	                  dest: '<%= app %>/img/screenshots',
+	                  crop: true
+	              }
+	          }
+	    },
+
+
 		sass: {
 			options: {
 				includePaths: ['<%= app %>/bower_components/foundation/scss']
@@ -23,27 +46,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-
-  convert: {
-    options: {
-      explicitArray: false,
-    },
-    csv2json: {
-      src: ['<%= app %>/data/tags.csv'],
-      dest: '<%= app %>/data/tags.json'
-    }
-  },
-		pageres: {
-	          screenshot: {
-	              options: {
-	                  urls: ['127.0.0.1:9000', '127.0.0.1:9000/explore.html','127.0.0.1:9000/results.html'],
-	                  sizes: ['1200x800'],
-	                  dest: '<%= app %>/img/screenshots',
-	                  crop: true
-	              }
-	          }
-	    },
-
 
 	    assemble: {
 	      pages: {
@@ -189,27 +191,27 @@ module.exports = function(grunt) {
 			},
 		},
 
-		// connect: {
-		// 	app: {
-		// 		options: {
-		// 			port: 9000,
-		// 			base: '<%= app %>/',
-		// 			open: true,
-		// 			livereload: true,
-		// 			hostname: '127.0.0.1'
-		// 		}
-		// 	},
-		// 	dist: {
-		// 		options: {
-		// 			port: 9001,
-		// 			base: '<%= dist %>/',
-		// 			open: true,
-		// 			keepalive: true,
-		// 			livereload: false,
-		// 			hostname: '127.0.0.1'
-		// 		}
-		// 	}
-		// },
+		connect: {
+			app: {
+				options: {
+					port: 9002,
+					base: '<%= app %>/',
+					open: true,
+					livereload: true,
+					hostname: '127.0.0.1'
+				}
+			},
+			dist: {
+				options: {
+					port: 9001,
+					base: '<%= dist %>/',
+					open: true,
+					keepalive: true,
+					livereload: false,
+					hostname: '127.0.0.1'
+				}
+			}
+		},
 
 		postcss: {
 		  options: {
@@ -250,7 +252,7 @@ module.exports = function(grunt) {
 
 		'bower-install', 
 		'browserSync:livereload', 
-		// 'connect:app',
+		'connect:app',
 		'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
