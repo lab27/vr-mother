@@ -6,6 +6,8 @@
     <title>Voice Republic | Talk</title>
     <!-- build:css css/libraries.min.css -->
     <!-- bower:css -->
+
+
     <!-- endbower -->
     <!-- endbuild -->
         <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
@@ -83,36 +85,54 @@
 			<button class="button small info talk-view-slides right no-text" data-dropdown="share-drop" aria-controls="share-drop" aria-expanded="false"><span class="icon-uniE704"></span></button>
 			<button id="share-button" class="button small info talk-view-slides right no-text"><span class="icon-uniE7BF"></span></button>
 	</div> --> 
-
 	<!-- description and actions -->
-
 	<div class="row collapse">
-		<div id="talk-description">
+		<div id="talk-actions" class="right">
+			<ul class="button-group">
+				<li><a href="#" class="button small"><span class="icon-uniE8E6"></span><span class="action-name">Pin to My Feed</span></a></li>
+				<li><a href="#" class="button small"><span class="icon-uniE918"></span> <span class="comment-count">12</span><span class="action-name">Comments</span></a></li>
+				<li class="hide-for-small-only"><a href="#" class="button small"><span class="icon-uniE756"></span><span class="action-name">Embed</span></a></li>
+				<li class="hide-for-small-only"><a href="#" class="button small"><span class="icon-uniE909"></span><span class="action-name">Send Card</span></a></li>
+				<li><a href="#" class="button small"><span class="icon-uniE7BF"></span><span class="action-name">Share</span></a></li>
+			</ul>
+		</div>
+		<div id="talk-description" class="left">
 			<p class="lead">
 				Die Berliner Buchpremiere im Deutschen Theater präsentiert den jüngsten Roman »Die schützende Hand« über den NSU-Skandal.
 			</p>
 			
-			<p class="talk-description">We hosted our first Q&amp;A, titled 'Love, Loss, Lust' at Topics bookshop, Berlin.<br><br>
-				Casey Spooner of FISCHERSPOONER discussed the development of the duo's new imagery, music and performance in light of the publication of 'Egos, an "aggressively homosexual" book that "attacks desire" and explores "the balance between connection and disconnection in a contemporary homosexual landscape."<br><br>
-				FISCHERSPOONER is a multifaceted art and performance project helmed by Warren Fischer and Casey Spooner that produces music, dance, fashion, film and photography. The duo has released three full-length albums, #1 (2001), Odyssey (2005) and Entertainment (2009).<br><br>
-				FISCHERSPOONER's hyper-stylised performances at clubs like WMF in Berlin and Pyramid Club in New York left packed houses awestruck when the began in the early 2000s. Intense press attention led to a record deal with club pioneers Ministry of Sound, which drove their first single 'Emerge' into the UK Top 40, leading to a legendary appearance on Top of the Pops, and in turn landed them a worldwide exclusive with Capitol Records.<br><br>
-			World tours laters, this year marks FISCHERSPOONER's return to the studio, developing new music as a reaction to the imagery produced in their book 'Egos.'</p>
-		</div>
-
-		<div id="talk-actions">
-			<button>thing</button>
+			<p>Die Berliner Buchpremiere und Eröffnungsveranstaltung von STADT LAND BUCH im Deutschen Theater:<Br><Br>
+				Mit seinem jüngsten Buch »Die schützende Hand« (Kiepenheuer &amp; Witsch) hat Wolfgang Schorlau einen hochbrisanten Kriminalroman vor dem Hintergrund der NSU-Mordserie geschrieben. Die Sicherheitsbehörden ermitteln nicht gegen die Täter, sondern gegen das Umfeld der Opfer der NSU-Mordserie, Akten werden geschreddert, der Verfassungsschutz hat überall seine Finger im Spiel ... Was, wenn das kein bloßes Behördenversagen ist? Wer hält seine schützende Hand über die Mörder? Dieser Kriminalroman ist ein Ereignis und beschäftigt schon vor seinem Erscheinen Anfang November Medien und Politik.
+				<Br><Br>
+				Wolfgang Schorlau, bekannt für seine brisanten, exzellent recherchierten Krimis, greift den Fall auf, der im laufenden Prozess gegen Beate Zschäpe und Mitangeklagte verhandelt wird, und er stellt die entscheidenden Fragen. Die Ergebnisse seiner Recherche sind spektakulär und haben bereits dazu geführt, dass Wolfgang Schorlau im NSU-Ausschuss das Landtages von Baden-Württemberg gehört wurde. Der Autor liest kurz aus seinem Buch und erzählt anschließend im Gespräch mit Gregor Gysi über die Ergebnisse seiner Recherchen und die Merkwürdigkeiten, die sich dabei ereignet haben.<Br><Br>
+			Foto: CC by Timo Kabel</p>
 		</div>
 	</div>
-	<div id="vr-overlay" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">
-		<a href="index.html"><img src="img/logo/logo-white.svg" id="logo"></a>
+
+<div class="row" id="comments">
+	<div class="small-12 columns">
+	<h3>Comments</h3>
+	<div class="panel">
+  <p contenteditable="true">Share your thoughts here.</p>
+</div>
+<button class="right small">Post</button>
+<button class="right cancel small">Cancel</button>
+	</div>
+</div>
+
+	<!-- 	<div id="vr-overlay" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">
+			<a href="index.html"><img src="img/logo/logo-white.svg" id="logo"></a>
 	</div>
 	<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="results-sidebar.html">Browse the Archive</a></li>
-		<li><a href="#">My Playlist</a></li>
-		<li><a href="#">Search</a></li>
-		<li><a href="#">My Profile</a></li>
-	</ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="results-sidebar.html">Browse the Archive</a></li>
+			<li><a href="#">My Playlist</a></li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">My Profile</a></li>
+	</ul> -->
+	</div> <!-- Left side -->
+
+	<!-- Slides -->
 	<div id="slides-holder" class="hide animated">
 		<button class="slide-close"><span class="icon-uniE7D7"></span></button>
 		<button id="left-slide"><span class="icon-uniE7CF"></span></button>
@@ -127,7 +147,6 @@
 		</div>
 		
 	</div>
-	</div> <!-- Left side -->
 
     </div>
 
@@ -136,10 +155,11 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>     
     <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-    <script src="bower_components/wow/dist/wow.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->
