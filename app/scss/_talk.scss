@@ -4,16 +4,23 @@ body {
 }
 
 body.talk-page {
-    padding: 12px;
-    padding-bottom: 200px;
+    padding: 0;
     @media #{$medium-up} {
-        padding-top: 48px;
-        padding-bottom: 48px;
+        padding: 0;
     }
 }
 
 .row {
     max-width: 68rem;
+}
+
+#main-column {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @media #{$medium-up} {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 }
 
 button,
@@ -97,57 +104,17 @@ button,
     img {
         width: 100vw;
     }
-}
-
-.talk-story {
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-}
-
-.description-column {
-    padding: 24px 12px 108px 12px;
-    margin: 0;
-    h3 {
-        margin-bottom: 24px;
-        color: $oil;
-        font-weight: 300;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        border-top: 1px solid $charcoal;
-        border-bottom: 1px solid $charcoal;
-        font-family: 'Eagle';
-    }
-    .description-meta {
-        font-size: rem-calc(16);
-        color: $charcoal;
-        margin-bottom: 6px;
-        margin-top: 0;
-    }
-    .description-publisher {
-        color: $charcoal;
-        margin-bottom: 0;
-        a {
-            color: $secondary-color;
-        }
-    }
-    @media #{$large-up} {
-        padding: 48px 24px 240px 24px;
-        margin: 0;
-        h3 {
-            margin-bottom: 36px;
-        }
+    button {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin-top: -72px;
+        margin-left: 12px;
+        background: rgba($almost-black, .5);
     }
 }
 
-// .talk-infopanel {
-//  margin:24px;
-//  background:rgba($white,.9);
-//  padding:24px;
-// }
 #talk-description {
-    // font-family:'adobe-caslon-pro',time,serif;
-    // font-family:'Primo Serif';
     @extend .medium-9;
     @extend .columns;
     font-family: $system-font-family;
@@ -155,19 +122,27 @@ button,
     line-height: rem-calc(21);
     color: $tuatara;
     font-weight: 300;
+    padding-right: 24px;
     p {
         font-size: rem-calc(14);
         line-height: rem-calc(20);
         color: rgba($info-color, .8);
+        @media #{$medium-up} {
+            padding-right: 24px;
+        }
     }
     .lead {
         font-size: rem-calc(18);
         line-height: rem-calc(24);
         color: white;
+        @media #{$medium-up} {
+            padding-right: 24px;
+        }
     }
     @media #{$medium-up} {
         font-size: rem-calc(18);
         line-height: rem-calc(24);
+        padding-right: 24px;
     }
 }
 
@@ -217,7 +192,8 @@ button,
 }
 
 .button-play-pause {
-    animation: pulse 2s infinite;
+    // animation: pulse 2s infinite;
+    background: $primary-color;
 }
 
 @keyframes pulse {
@@ -351,7 +327,9 @@ button,
     padding: 0;
     @media #{$medium-up} {
         text-align: right;
-        width: 180px;
+    }
+    @media #{$large-up} {
+        // width: 180px;
     }
     .button-group {
         width: 100%;
@@ -359,19 +337,22 @@ button,
         margin-bottom: 24px;
         @media #{$medium-up} {
             text-align: right;
+        }
+        @media #{$large-up} {
             width: 180px;
         }
         li {
             width: 33.33%;
             padding: 1px;
-            // @include button-group-style($radius: false, $even: 3, $float: false, $orientation: horizontal);
             .button {
                 border: 0;
-                // margin-bottom: 2px;
             }
             @media #{$medium-up} {
-                width: 180px;
                 margin: 0;
+                width: 100%;
+            }
+            @media #{$large-up} {
+                width: 180px;
             }
             a {
                 width: 100%;
@@ -386,6 +367,9 @@ button,
                 @media #{$medium-up} {
                     margin: 0;
                     text-align: left;
+                }
+                @media #{$medium-only} {
+                    padding-left: 16px;
                 }
                 &:hover {
                     background: $primary-color;
@@ -404,68 +388,6 @@ button,
     }
 }
 
-// #talk-actions a {
-//     color: $steel;
-//     font-size: rem-calc(22);
-//     line-height: rem-calc(40);
-//     background: rgba($black, 0.2);
-//     padding: 12px;
-//     border-radius: 2px;
-//     transition: background .2s;
-//     &:first-child {
-//         margin-right: 6px;
-//         margin-bottom: -4px;
-//         padding-top: 12px;
-//     }
-//     &:hover {
-//         background: rgba($black, 0.4);
-//     }
-// }
-// meta actions (slides, description, share, listen later)
-// #talk-meta-actions {
-//     position: relative;
-//     // bottom:120px;
-//     width: 100%;
-//     padding: 12px;
-//     // margin-top:-100px;
-//     transition: bottom .2s ease;
-//     @media #{$large-up} {
-//         position: fixed;
-//         bottom: 120px;
-//         padding: 24px;
-//         z-index: 1000;
-//     }
-//     // .button {
-//     //     background: rgba($almost-black, 0.6);
-//     //     color: $white;
-//     //     border-radius: 36px;
-//     //     margin-right: 6px;
-//     //     &:hover {
-//     //         background: rgba($almost-black, 0.9);
-//     //     }
-//     //     span {
-//     //         margin-right: 6px;
-//     //         margin-top: 4px;
-//     //     }
-//     // }
-//     // .button.no-text {
-//     //     width: 44px;
-//     //     max-width: 44px;
-//     //     height: 44px;
-//     //     max-height: 44px;
-//     //     text-align: center;
-//     //     padding: 12px;
-//     //     font-size: 18px;
-//     //     color: $iron;
-//     //     background: rgba($almost-black, 0.6);
-//     //     margin-left: 6px;
-//     // }
-// }
-// @media #{$large-up} {
-//     #talk-meta-actions.lower {
-//         bottom: 60px;
-//     }
-// }
 #slide-counter {
     // position:fixed;
     // top:24px;
@@ -475,11 +397,13 @@ button,
 }
 
 #slides-holder {
-    z-index: 1990;
+    z-index: 2000;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 0px 0 80px 0;
+    padding: 0px 0 0px 0;
     background: rgba($white, 0.9);
     .slide-close,
     #right-slide,
@@ -552,8 +476,14 @@ ul#share-drop {
 
 #comments {
     background: $light-gray;
-    padding-top: 24px;
+    padding: 12px;
     margin-top: 48px;
+    @media #{$medium-up} {
+        padding: 24px;
+    }
+    .previous-comments {
+        margin-top: 48px;
+    }
     .cancel {
         background: rgba($dark-gray, .2);
         margin-right: 6px;
@@ -564,5 +494,79 @@ ul#share-drop {
         border: none;
         padding: 12px;
         margin-bottom: 6px;
+    }
+    .comment-block {
+        padding: 12px;
+        @media #{$medium-up} {
+            padding: 24px;
+        }
+        p {
+            font-size: rem-calc(14);
+            line-height: rem-calc(20);
+        }
+        &:nth-child(odd) {
+            background: rgba(white, .2);
+        }
+    }
+    .comment-meta {
+        @extend .small-3;
+        @extend .columns;
+        img {
+            margin-bottom: 6px;
+        }
+        p {
+            margin: 0;
+            font-size: rem-calc(10);
+            line-height: rem-calc(12);
+        }
+        .post-time {
+            color: rgba($dark-gray, .6);
+        }
+    }
+    .comment-content {
+        @extend .small-8;
+        @extend .small-offset-1;
+        @extend .medium-offset-0;
+        @extend .medium-9;
+        @extend .columns;
+        p {
+            color: rgba($dark-gray, .8);
+        }
+    }
+}
+
+#right-sidebar {
+    background: rgba($almost-black, .5);
+    height: auto;
+    padding: 24px 24px 200px 24px;
+    @media #{$medium-up} {
+        padding: 48px 24px 48px 24px;
+        max-width: 300px;
+    }
+    @media #{$large-up} {
+        position: absolute;
+        right: 0;
+    }
+    h3 {
+        color: $secondary-color;
+        font-size: rem-calc(16);
+    }
+    .reco-tile {
+        background: rgba(#3d404d, .5);
+        padding: 12px;
+        margin-bottom: 12px;
+        .reco-publisher {
+            color: rgba($light-gray, .5);
+            font-size: rem-calc(12);
+            line-height: rem-calc(12);
+            margin-bottom: 6px;
+        }
+        .reco-title {
+            color: rgba($light-gray, .4);
+            font-size: rem-calc(18);
+            line-height: rem-calc(21);
+            margin-top: 8px;
+            font-weight: normal;
+        }
     }
 }

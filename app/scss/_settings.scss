@@ -107,7 +107,7 @@ $tuatara: #8F939C !default;
 $oil: #64697e !default;
 $jet: #3c4258 !default;
 $dark-gray: #3F4044 !default;
-$almost-black: #020408 !default;
+$almost-black: #121214 !default;
 $black: #000000 !default;
 $talk-dark: #29292b !default;
 // We use these as default colors throughout
@@ -122,7 +122,6 @@ $light-gray: #e1e2e7 !default; //comments-bg
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
-$body-font-family: $font-family-serif;
 $system-font-family: -apple-system,
 BlinkMacSystemFont,
 "Segoe UI",
@@ -134,6 +133,7 @@ BlinkMacSystemFont,
 "Droid Sans",
 "Helvetica Neue",
 sans-serif;
+$body-font-family: $system-font-family;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 // We use this to control font-smoothing
@@ -1096,11 +1096,11 @@ $input-border-width: 4px;
 // 33. Tooltips
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 // $include-html-tooltip-classes: $include-html-classes;
-// $has-tip-border-bottom: dotted 1px $iron;
+$has-tip-border-bottom: none;
 // $has-tip-font-weight: $font-weight-bold;
-// $has-tip-font-color: $oil;
+$has-tip-font-color: auto;
 // $has-tip-border-bottom-hover: dotted 1px scale-color($primary-color, $lightness: -55%);
-// $has-tip-font-color-hover: $primary-color;
+$has-tip-font-color-hover: auto;
 // $has-tip-cursor-type: help;
 // $tooltip-padding: rem-calc(12);
 // $tooltip-bg: $oil;
@@ -1120,17 +1120,17 @@ $input-border-width: 4px;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 // $include-html-top-bar-classes: $include-html-classes;
 // Background color for the top bar
-$topbar-bg-color: $white;
+$topbar-bg-color: #33353c;
 // $topbar-bg: $topbar-bg-color;
 // Height and margin
-$topbar-height: rem-calc(80);
+$topbar-height: rem-calc(60);
 // $topbar-margin-bottom: 0;
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
 // $topbar-title-font-size: rem-calc(17);
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $oil;
-$topbar-link-color-hover: $jet;
+$topbar-link-color: $secondary-color;
+$topbar-link-color-hover: $light-gray;
 $topbar-link-color-active: $jet;
 $topbar-link-color-active-hover: $black;
 // $topbar-link-weight: $font-weight-normal;
