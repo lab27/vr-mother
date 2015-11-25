@@ -1,5 +1,6 @@
 html {
     background: $talk-dark;
+
 }
 
 body.talk-page {
@@ -27,11 +28,12 @@ button, .button {
 }
 
 .pub-meta {
-	font-size: rem-calc(14);
+	font-size: rem-calc(10);
 	color:white;
-	line-height:rem-calc(14);
+	line-height:rem-calc(10);
 	margin:0;
 	margin-left:6px;
+	font-family: $system-font-family;
 
 	 @media #{$medium-up} {
 		margin-bottom: 30px;
@@ -41,6 +43,7 @@ button, .button {
 	& p {
 		margin: 0;
 		line-height: rem-calc(14);
+		font-size: rem-calc(12);
 	}
 	.meta-publisher {
 		font-weight: bold;
@@ -146,6 +149,7 @@ button, .button {
 p.talk-description {
     // font-family:'adobe-caslon-pro',time,serif;
     // font-family:'Primo Serif';
+    font-family: $system-font-family;
     font-size: rem-calc(14);
     line-height: rem-calc(21);
     color: $tuatara;
@@ -221,6 +225,8 @@ p.talk-description {
     margin: 0 0 0 12px;
     padding: 0;
     color: $oil;
+    font-family: $system-font-family;
+    font-size: rem-calc(12);
 }
 
 .timecode.right {

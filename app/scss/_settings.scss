@@ -136,6 +136,7 @@ $brand-purple: #a339cd !default; //vr-purple
 // $body-bg: $white;
 // $body-font-color: $jet;
 $body-font-family: $font-family-serif;
+$system-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -445,7 +446,7 @@ $header-font-weight: 300;
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-// $button-font-family: $body-font-family;
+$button-font-family: $system-font-family;
 // $button-font-color: $white;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
