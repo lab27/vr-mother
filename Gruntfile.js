@@ -131,12 +131,8 @@ module.exports = function(grunt) {
                         'fonts/**',
                         '**/*.html',
                         '!**/*.scss',
-                        '!bower_components/**',
-                        'bower_components/animate.css/animate.css',
-                        'bower_components/slick-carousel/slick/slick.css',
-                        'bower_components/slick-carousel/slick/slick-theme.css',
-                        'bower_components/slick-carousel/slick/fonts/**',
-                        'bower_components/slick-carousel/slick/ajax-loader.gif'
+                        '!bower_components/**'
+
                     ],
                     dest: '<%= dist %>/'
                 }]
