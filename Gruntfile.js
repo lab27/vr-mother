@@ -131,8 +131,8 @@ module.exports = function(grunt) {
                         'fonts/**',
                         '**/*.html',
                         '!**/*.scss',
-                        '!bower_components/**'
-
+                        '!bower_components/**',
+                        'js/sup-topbar.min.js'
                     ],
                     dest: '<%= dist %>/'
                 }]
