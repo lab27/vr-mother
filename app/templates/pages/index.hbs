@@ -1,115 +1,179 @@
 ---
-title: Welcome
+title: Talk
+layout: app/templates/layouts/talk.hbs
 ---
+<!-- Begin Left -->
+<div class="medium-9 columns" id="main-column">
+	<!-- title -->
+	<div class="row collapse">
+		<h3 class="talk-title">Wolfgang Schorlau im Gespräch mit Gregor Gysi</h3>
+	</div>
+	<!-- publisher info -->
+	<div class="row collapse pub-block">
+		<div class="pub-avatar left">
+			<img src="http://placehold.it/36x36" alt="">
+		</div>
+		<div class="pub-meta left">
+			<p class="meta-publisher"><a href="#">Stadt Land Buch</a> / <span class="icon-uniE731"></span></p>
+			<p class="meta-info">10 days ago • 347 plays • 45 min</p>
+		</div>
+	</div>
+	{{!-- PLAYBAR --}}
+	<div class="row collapse">
+		{{>talk-playbar}}
+	</div>
+	<!-- Picture -->
+	<div class="row collapse">
+		<div class="talk-picture">
+			<img src="img/bg/gysi.jpg" alt="">
+				<button id="view-slides" title="View Slides" class="button button-playbar button-volume right show-for-small-only"><span class="icon-uniE8A2"> </span></button>
 
-<svg version="1.1" id="filter-svg" width="0" height="0">
-  <path></path>
-  <filter id="blue-purple">
-    <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" result="gray"></feColorMatrix>
-    <feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.17254901960784313 0.6392156862745098"></feFuncR><feFuncG type="table" tableValues="0.27450980392156865 0.2235294117647059"></feFuncG><feFuncB type="table" tableValues="0.6901960784313725 0.803921568627451"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer>
-  </filter>
-</svg>
+		</div>
+	</div>
+	<!-- 	<ul id="share-drop" class="hide animated fadeIn">
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Email Link</a></li>
+			<li><a href="#">Embed</a></li>
+			<li><a href="#">Download</a></li>
+	</ul> -->
+	{{!-- meta actions --}}
+	<!-- 	<div id="talk-meta-actions" class="show-for-large-up">
+			<a href="#"><button id="view-slides" class="button small info talk-view-slides left"><span class="icon-uniE752"></span> View Slides</button></a>
+			<a href="#talk-description" id="view-description"><button class="button small info talk-view-slide left"><span class="icon-uniE716"></span> View Description</button></a>
+			<button class="button small info talk-view-slides right no-text" data-dropdown="share-drop" aria-controls="share-drop" aria-expanded="false"><span class="icon-uniE704"></span></button>
+			<button id="share-button" class="button small info talk-view-slides right no-text"><span class="icon-uniE7BF"></span></button>
+	</div> --> {{!-- meta actions --}}
+	<!-- description and actions -->
+	<div class="row collapse">
+		<div id="talk-actions" class="right">
+			<ul class="button-group right">
+				<li><a href="#" class="button small" data-reveal-id="pin-modal" ><span class="icon-uniE8E6"></span><span class="action-name">Pin <span class="hide-for-medium-only">to My Feed</span></span></a></li>
+				<li><a href="#comments" class="button small"><span class="icon-uniE918"></span> <span class="comment-count">3</span><span class="action-name">Comments</span></a></li>
+				<li class="hide-for-small-only"><a href="#" data-reveal-id="embed-modal" class="button small"><span class="icon-uniE756"></span><span class="action-name">Embed</span></a></li>
+				<li class="hide-for-small-only"><a href="#" data-reveal-id="card-modal" class="button small"><span class="icon-uniE909"></span><span class="action-name">Send Card</span></a></li>
+				<li><a href="#" data-reveal-id="share-modal" class="button small"><span class="icon-uniE7BF"></span><span class="action-name">Share</span></a></li>
+			</ul>
+		</div>
+		<div id="talk-description" class="left">
+			<p class="lead">
+				Die Berliner Buchpremiere im Deutschen Theater präsentiert den jüngsten Roman »Die schützende Hand« über den NSU-Skandal.
+			</p>
+			
+			<p>Die Berliner Buchpremiere und Eröffnungsveranstaltung von STADT LAND BUCH im Deutschen Theater:<Br><Br>
+				Mit seinem jüngsten Buch »Die schützende Hand« (Kiepenheuer &amp; Witsch) hat Wolfgang Schorlau einen hochbrisanten Kriminalroman vor dem Hintergrund der NSU-Mordserie geschrieben. Die Sicherheitsbehörden ermitteln nicht gegen die Täter, sondern gegen das Umfeld der Opfer der NSU-Mordserie, Akten werden geschreddert, der Verfassungsschutz hat überall seine Finger im Spiel ... Was, wenn das kein bloßes Behördenversagen ist? Wer hält seine schützende Hand über die Mörder? Dieser Kriminalroman ist ein Ereignis und beschäftigt schon vor seinem Erscheinen Anfang November Medien und Politik.
+				<Br><Br>
+				Wolfgang Schorlau, bekannt für seine brisanten, exzellent recherchierten Krimis, greift den Fall auf, der im laufenden Prozess gegen Beate Zschäpe und Mitangeklagte verhandelt wird, und er stellt die entscheidenden Fragen. Die Ergebnisse seiner Recherche sind spektakulär und haben bereits dazu geführt, dass Wolfgang Schorlau im NSU-Ausschuss das Landtages von Baden-Württemberg gehört wurde. Der Autor liest kurz aus seinem Buch und erzählt anschließend im Gespräch mit Gregor Gysi über die Ergebnisse seiner Recherchen und die Merkwürdigkeiten, die sich dabei ereignet haben.<Br><Br>
+			Foto: CC by Timo Kabel</p>
+		</div>
+	</div>
 
-<!-- SEARCH AND HERO -->
-
-<section class="home-search row medium-collapse large-collapse">
-
-<div class="large-8 columns">
-<h1 class="animated fadeInUp"><span class="">The Platform For Quality Spoken Content.</span></h1>
-<p class="lead">
-  Voice Republic is the place where amazing ideas are discussed by amazing speakers with incredibly interesting accents. They are well-educated, clean and smartly-dressed people. And they crush it.
-</p>
-
-
-
-
-<!-- <div class="row"><h4 class="text-center animated fadeInUp"><a href="explore.html">Or Browse the Archive</a></h4></div> -->
-</div> <!-- :LEFT -->
-
-
-
-<!-- 	<div class="large-4 columns end sign-in">
+<div class="row collapse" id="comments">
+	<div class="small-12 columns">
+	<h3>Comments</h3>
+	<div class="panel">
+  <p contenteditable="true">Share your thoughts here.</p>
+</div>
+<button class="right small">Post</button>
+<button class="right cancel small">Cancel</button>
+	</div>
+	<div class="small-12 columns previous-comments">
 		
-<div class="small-12 columns">
-  <div class="sign-in-box">
-  <div class="row">
-  <div class="large-12 columns">
-    <form>
-    <h3>Sign in for the full experience.</h3>
-       <div class="row">
-         <div class="large-12 columns large-collapse">
-             <input type="text" name="email" placeholder="Email" />
-         </div>
-       </div>
-      <div class="row">
-         <div class="large-12 columns large-collapse">
-             <input type="password" name="password" placeholder="Password" />
-         </div>
-      </div>
-      <div class="row">
-        <div class="small-6 columns collapse">
-          <input type="submit" class="button secondary expand" value="Sign In"/>
-        </div>
-        <div class="small-6 columns collapse">
-          <input type="submit" class="button blank expand" value="Or Join"/>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-</div>
-</div>
+	{{#each comments}}
+	<div class="row collapse comment-block">
 
-	</div> --> <!-- RIGHT -->
-
-</section>
-
-
-
-
-
-
-
-
-
-<section class="start-listening">
-	<div class="section-title"><h2 class="">Check out some of the hottest talks on Voice Republic</h2></div>
-
-<div id="results-grid">
-{{#each thumbs }}
-<div class="ted-tile-wrapper">
-<a href="talk.html">
-
-    {{> ted-tile}}
-    </a>
-      </div>
-
-  {{/each}}
-</div>
-</div>
-</section>
-
-<section class="about">
-<div class="row">
-<div class="large-8 large-offset-2 columns">
-  <h1 class="text-center">About Voice Republic</h1>
-  <p class="lead text-center">
-Listen to live and archived talks from leading thinkers and cutting edge conferences. Dive in to 1801 great talks on Art, Culture, Politics, Tech, Design.  </p></div>
-</div>
-
-</section>
-
-{{!-- <section class="publishers">
-	<div class="publishers-holder row">
-	<div class="section-title"><h2>Browse Publishers</h2>
-	<h4 class="subheader text-center">Here are some of Voice Republic's world-class, exclusive publishers.</h4>
+		<div class="comment-meta">
+			<p><img src="img/avatars/{{IMAGE}}.png" alt="" width="42" height="42"></p>
+			<p class="post-author">{{SPEAKER}}</p>
+			<p class="post-time">{{TIME}}</p>
+		</div>
+		<div class="comment-content">
+			<p class="meta-info">{{QUOTE}}</p>
+		</div>
+	</div>
+	{{/each}}
 
 	</div>
-		{{#each publisher}}
-		{{>publisher}}
-		{{/each}}
+</div>
+
+	<!-- 	<div id="vr-overlay" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">
+			<a href="index.html"><img src="img/logo/logo-white.svg" id="logo"></a>
+	</div>
+	<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="results-sidebar.html">Browse the Archive</a></li>
+			<li><a href="#">My Playlist</a></li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">My Profile</a></li>
+	</ul> -->
+	</div> <!-- Left side -->
+
+	<div class="medium-3 columns" id="right-sidebar">
+		<div class="row collapse">
+			<h3>
+				Recommended Talks
+			</h3>
+			{{#withFirst thumbs 7}}
+<div class="reco-tile">
+	<p class="reco-publisher">{{publisher}}</p>
+	<img src="img/thumbs/thumb{{myNum}}.jpg" alt="">
+	<h5 class="reco-title">{{title}}</h5>
+</div>
+
+	{{/withFirst}}
+		</div>
+
+<h1 class="text-center show-for-small-only"><a href="#">What is Voice Republic?</a></h1>
+
 	</div>
 
-<h1 class="text-center"><button class="button secondary">See All Publishers <span class="icon-uniE7CD"> </span></button>
-</h1>
-</section> --}}
+	<!-- Slides -->
+	<div id="slides-holder" class="hide animated">
+		<button class="slide-close"><span class="icon-uniE7D7"></span></button>
+		<button id="left-slide"><span class="icon-uniE7CF"></span></button>
+		<button id="right-slide"><span class="icon-uniE7CD"></span></button>
+		<div class="my-slides">
+			<div><img src="img/slides/slide0.jpg" alt=""></div>
+			<div><img src="img/slides/slide1.jpg" alt=""></div>
+			<div><img src="img/slides/slide2.jpg" alt=""></div>
+			<div><img src="img/slides/slide3.jpg" alt=""></div>
+			<div><img src="img/slides/slide4.jpg" alt=""></div>
+			<div><img src="img/slides/slide5.jpg" alt=""></div>
+		</div>
+		{{!-- <div id="slide-counter"><span id="current-slide">1</span>/<span id="total-slides">6</span></div> --}}
+		
+	</div>
+
+<!-- 	modal -->
+<div id="embed-modal" class="reveal-modal medium" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Embed This Talk!</h2>
+  <p class="lead">Here's your embed code: Blah Blah blahhhhh</p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<!-- 	modal -->
+<div id="pin-modal" class="reveal-modal medium" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">This Talk has been pinned to your Feed!</h2>
+  <p class="lead"><button>Go to my Feed</button></p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<!-- 	modal -->
+<div id="card-modal" class="reveal-modal medium" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Send a card</h2>
+  <p>It will look like this: blah blah</p>
+  <p class="lead"><button>Send Now</button></p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<!-- 	modal -->
+<div id="share-modal" class="reveal-modal medium" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <h2 id="modalTitle">Share This Talk</h2>
+  <p>How would you like to share?</p>
+  <p class="lead">
+  <button>Facebook</button>
+  <button>Twitter</button>
+  <button>Mail</button>
+  </p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>

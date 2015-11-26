@@ -24,7 +24,7 @@ var app = (function(document, $) {
 //Smooth scrolll
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
@@ -195,7 +195,7 @@ $('.my-slides').on('afterChange', function(event, slick, currentSlide) {
     currentSlide = $('.my-slides').slick('slickCurrentSlide') + 1;
     console.log(currentSlide);
     $('#current-slide').html(currentSlide).addClass('animated flash').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $(this).removeClass('flash')
+        $(this).removeClass('flash');
     });
 });
 
@@ -225,14 +225,14 @@ $(window).scroll(function() {
     if ($div.is(':in-viewport')) {
         // $div.css( 'background-color', 'red' );
         console.log('desc in view');
-        $('#view-description').fadeOut('fast', 'linear')
-        $('#talk-titlebar').fadeOut('fast', 'linear')
-        $('#talk-meta-actions').addClass('lower')
+        $('#view-description').fadeOut('fast', 'linear');
+        $('#talk-titlebar').fadeOut('fast', 'linear');
+        $('#talk-meta-actions').addClass('lower');
 
     } else if ($div.not(':in-viewport')) {
-        $('#view-description').fadeIn('fast', 'linear')
-        $('#talk-titlebar').fadeIn('fast', 'linear')
-        $('#talk-meta-actions').removeClass('lower')
+        $('#view-description').fadeIn('fast', 'linear');
+        $('#talk-titlebar').fadeIn('fast', 'linear');
+        $('#talk-meta-actions').removeClass('lower');
 
     }
 });
