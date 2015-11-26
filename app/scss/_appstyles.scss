@@ -126,8 +126,9 @@ hr {
     .dropdown {
         z-index: 2200;
     }
-    .dropdown li {
+    li a:hover {
         // height: rem-calc(40);
+        text-decoration: none;
     }
     .dropdown .title {
         padding-left: 20px;

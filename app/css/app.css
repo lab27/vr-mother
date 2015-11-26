@@ -398,7 +398,7 @@ img {
 #map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object, .mqa-display img, .mqa-display embed, .mqa-display object {
   max-width: none !important; }
 
-.left {
+.left, #talk-description .format-box {
   float: left !important; }
 
 .right {
@@ -3265,7 +3265,7 @@ label.error {
     bottom: -20px; }
   .joyride-tip-guide .joyride-nub.right {
     right: -20px; }
-  .joyride-tip-guide .joyride-nub.left {
+  .joyride-tip-guide .joyride-nub.left, .joyride-tip-guide #talk-description .joyride-nub.format-box, #talk-description .joyride-tip-guide .joyride-nub.format-box {
     left: -20px; }
 
 /* Typography */
@@ -3351,7 +3351,7 @@ label.error {
       left: auto;
       right: -20px;
       top: 22px; }
-    .joyride-tip-guide .joyride-nub.left {
+    .joyride-tip-guide .joyride-nub.left, .joyride-tip-guide #talk-description .joyride-nub.format-box, #talk-description .joyride-tip-guide .joyride-nub.format-box {
       border-color: #64697e !important;
       border-bottom-color: transparent !important;
       border-left-color: transparent !important;
@@ -4959,10 +4959,10 @@ meta.foundation-mq-topbar {
       right: 0; }
       .top-bar-section .right li .dropdown li .dropdown {
         right: 100%; }
-    .top-bar-section .left li .dropdown {
+    .top-bar-section .left li .dropdown, .top-bar-section #talk-description .format-box li .dropdown, #talk-description .top-bar-section .format-box li .dropdown {
       right: auto;
       left: 0; }
-      .top-bar-section .left li .dropdown li .dropdown {
+      .top-bar-section .left li .dropdown li .dropdown, .top-bar-section #talk-description .format-box li .dropdown li .dropdown, #talk-description .top-bar-section .format-box li .dropdown li .dropdown {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
     background-color: #33353c;
@@ -5378,11 +5378,11 @@ blockquote, blockquote p {
   position: absolute;
   text-align: center;
   top: 0; }
-  .tab-bar-section.left {
+  .tab-bar-section.left, #talk-description .tab-bar-section.format-box {
     text-align: left; }
   .tab-bar-section.right {
     text-align: right; }
-  .tab-bar-section.left {
+  .tab-bar-section.left, #talk-description .tab-bar-section.format-box {
     left: 0;
     right: 2.8125rem; }
   .tab-bar-section.right {
@@ -9159,6 +9159,8 @@ hr {
 
 .top-bar-section .dropdown {
   z-index: 2200; }
+.top-bar-section li a:hover {
+  text-decoration: none; }
 .top-bar-section .dropdown .title {
   padding-left: 20px;
   color: #2c46b0;
@@ -9775,9 +9777,11 @@ button, .button {
   .pub-meta .meta-publisher {
     font-weight: bold;
     color: white;
-    margin-bottom: 3px; }
+    margin-bottom: 4px; }
     .pub-meta .meta-publisher a {
       color: white; }
+      .pub-meta .meta-publisher a:hover {
+        text-decoration: underline; }
   .pub-meta .meta-info, .pub-meta .meta-series {
     color: rgba(254, 241, 222, 0.5);
     margin-bottom: 3px; }
@@ -9850,6 +9854,20 @@ button, .button {
     @media only screen and (min-width:40.0625em) {
       #talk-description .lead {
         padding-right: 24px; } }
+  #talk-description .speaker, #talk-description .format-box {
+    color: #fef1de; }
+    #talk-description .speaker a, #talk-description .format-box a {
+      color: #54c6c6; }
+      #talk-description .speaker a:hover, #talk-description .format-box a:hover {
+        text-decoration: underline; }
+  #talk-description .format-box {
+    padding: 12px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    font-size: 0.75rem;
+    background: rgba(18, 18, 20, 0.2);
+    color: rgba(225, 226, 231, 0.4);
+    width: auto; }
   @media only screen and (min-width:40.0625em) {
     #talk-description {
       font-size: 1.125rem;
@@ -10186,7 +10204,12 @@ ul#share-drop {
       font-weight: normal; }
 
 .reveal-modal h2 {
-  color: white; }
+  color: white;
+  font-size: 1.5rem; }
+.reveal-modal code {
+  background: #fef1de;
+  padding: 6px;
+  border: none; }
 .reveal-modal p.lead {
   color: #fef1de; }
 

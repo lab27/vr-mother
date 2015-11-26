@@ -55,9 +55,12 @@ button,
     .meta-publisher {
         font-weight: bold;
         color: white;
-        margin-bottom: 3px;
+        margin-bottom: 4px;
         a {
             color: white;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
     .meta-info,
@@ -151,6 +154,26 @@ button,
         @media #{$medium-up} {
             padding-right: 24px;
         }
+    }
+    .speaker {
+        color: $info-color;
+        a {
+            color: $secondary-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .format-box {
+        @extend .speaker;
+        @extend .left;
+        padding: 12px;
+        margin-bottom: 6px;
+        margin-right: 6px;
+        font-size: rem-calc(12);
+        background: rgba($almost-black, .2);
+        color: rgba($light-gray, .4);
+        width: auto;
     }
     @media #{$medium-up} {
         font-size: rem-calc(18);
@@ -587,6 +610,12 @@ ul#share-drop {
 .reveal-modal {
     h2 {
         color: white;
+        font-size: rem-calc(24);
+    }
+    code {
+        background: $info-color;
+        padding: 6px;
+        border: none;
     }
     p.lead {
         color: $info-color;
