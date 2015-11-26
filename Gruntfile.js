@@ -127,7 +127,17 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= app %>/',
-                    src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**', 'bower_components/animate.css/animate.min.css', 'bower_components/slick-carousel/slick/slick.css', 'bower_components/slick-carousel/slick/slick-theme.css'],
+                    src: [
+                        'fonts/**',
+                        '**/*.html',
+                        '!**/*.scss',
+                        '!bower_components/**',
+                        'bower_components/animate.css/animate.css',
+                        'bower_components/slick-carousel/slick/slick.css',
+                        'bower_components/slick-carousel/slick/slick-theme.css',
+                        'bower_components/slick-carousel/slick/fonts/**',
+                        'bower_components/slick-carousel/slick/ajax-loader.gif'
+                    ],
                     dest: '<%= dist %>/'
                 }]
             },
