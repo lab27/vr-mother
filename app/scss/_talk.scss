@@ -18,7 +18,7 @@ body.talk-page {
     padding-top: 24px;
     padding-bottom: 24px;
     @media #{$medium-up} {
-        padding-top: 48px;
+        padding-top: 103px;
         padding-bottom: 48px;
     }
 }
@@ -41,8 +41,9 @@ button,
     color: white;
     line-height: rem-calc(10);
     margin: 0;
-    margin-left: 6px;
+    margin-left: 12px;
     font-family: $system-font-family;
+    margin-top: 6px;
     @media #{$medium-up} {
         margin-bottom: 30px;
     }
@@ -54,13 +55,22 @@ button,
     .meta-publisher {
         font-weight: bold;
         color: white;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
         a {
             color: white;
         }
     }
-    .meta-info {
+    .meta-info,
+    .meta-series {
         color: rgba($info-color, .5);
+        margin-bottom: 3px;
+        a {
+            font-weight: bold;
+            color: rgba($info-color, .5);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -543,7 +553,7 @@ ul#share-drop {
     height: auto;
     padding: 24px 24px 200px 24px;
     @media #{$medium-up} {
-        padding: 48px 24px 48px 24px;
+        padding: 103px 24px 48px 24px;
         max-width: 300px;
     }
     @media #{$large-up} {
@@ -571,5 +581,17 @@ ul#share-drop {
             margin-top: 8px;
             font-weight: normal;
         }
+    }
+}
+
+.reveal-modal {
+    h2 {
+        color: white;
+    }
+    p.lead {
+        color: $info-color;
+    }
+    button {
+        @extend .secondary;
     }
 }

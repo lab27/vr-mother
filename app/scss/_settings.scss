@@ -445,7 +445,7 @@ $button-round: $global-rounded;
 // We use these to controls height and width styles.
 // $f-dropdown-max-width: 200px;
 // $f-dropdown-height: auto;
-// $f-dropdown-max-height: none;
+$f-dropdown-max-height: 40px;
 // Used for bottom position
 // $f-dropdown-margin-top: 2px;
 // Used for right position
@@ -908,7 +908,7 @@ $input-border-width: 4px;
 // $reveal-overlay-bg: rgba($black, .45);
 // $reveal-overlay-bg-old: $black;
 // We use these to control the style of the modal itself.
-// $reveal-modal-bg: $white;
+$reveal-modal-bg: $primary-color;
 // $reveal-position-top: rem-calc(100);
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
@@ -918,14 +918,14 @@ $input-border-width: 4px;
 // $reveal-close-font-size: rem-calc(40);
 // $reveal-close-top: rem-calc(10);
 // $reveal-close-side: rem-calc(22);
-// $reveal-close-color: $base;
+$reveal-close-color: white;
 // $reveal-close-weight: $font-weight-bold;
 // We use this to set the default radius used throughout the core.
-// $reveal-radius: $global-radius;
+$reveal-radius: 0;
 // $reveal-round: $global-rounded;
 // We use these to control the modal border
 // $reveal-border-style: solid;
-// $reveal-border-width: 1px;
+$reveal-border-width: 0;
 // $reveal-border-color: $steel;
 // $reveal-modal-class: "reveal-modal";
 // $close-reveal-modal-class: "close-reveal-modal";
@@ -1154,7 +1154,6 @@ $topbar-dropdown-link-color: $oil;
 $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 $topbar-dropdown-link-bg: $smoke;
 $topbar-dropdown-link-bg-hover: scale-color($topbar-link-bg-active, $lightness: 35%);
-;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1184,7 +1183,7 @@ $topbar-dropdown-link-bg-hover: scale-color($topbar-link-bg-active, $lightness: 
 // $topbar-divider-border-bottom: solid 1px scale-color($topbar-bg-color, $lightness: 13%);
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
+$topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 // $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//
 // 36. Visibility Classes

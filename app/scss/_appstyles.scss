@@ -75,52 +75,76 @@ hr {
 }
 
 //TOPBAR
-.top-bar-section li:not(.has-form) a:not(.button) {
-    font-weight: 700;
-    padding-right: 12px;
-    // text-transform:uppercase;
+// .top-bar-section li:not(.has-form) a:not(.button) {
+//     font-weight: 700;
+//     padding-right: 12px;
+//     // text-transform:uppercase;
+// }
+// .top-bar input {
+//     border: 1px solid $oil;
+// }
+// .top-bar-section ul li {
+//     background: $white;
+//     &.join {
+//         margin-right: 24px;
+//         margin-left: 12px;
+//     }
+//     button,
+//     .button {
+//         height: 36px;
+//         line-height: 36px;
+//         padding: 0 12px;
+//         border: 2px;
+//         font-weight: 700;
+//         @media #{$large-up} {
+//             top: 22px;
+//         }
+//     }
+// }
+// .top-bar {
+//     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+//     padding-right: 24px;
+//     @media #{$small-only} {
+//         background: none;
+//         box-shadow: none;
+//         padding-right: 0;
+//         margin-bottom: 12px;
+//     }
+//     li.toggle-topbar a {
+//         font-size: 18px;
+//     }
+// }
+// li.sign-in-top {
+//     background: $white;
+//     // padding-right:24px;
+// }
+.sticky {
+    z-index: 3000;
 }
 
-.top-bar input {
-    border: 1px solid $oil;
-}
-
-.top-bar-section ul li {
-    background: $white;
-    &.join {
-        margin-right: 24px;
-        margin-left: 12px;
+.top-bar-section {
+    .dropdown {
+        z-index: 2200;
     }
-    button,
-    .button {
-        height: 36px;
-        line-height: 36px;
-        padding: 0 12px;
-        border: 2px;
-        font-weight: 700;
-        @media #{$large-up} {
-            top: 22px;
+    .dropdown li {
+        // height: rem-calc(40);
+    }
+    .dropdown .title {
+        padding-left: 20px;
+        color: $primary-color;
+        font-size: rem-calc(13);
+        line-height: rem-calc(40);
+        font-weight: bold;
+        height: 40px;
+    }
+    @media #{$medium-up} {
+        .dropdown li:not(.has-form) a:not(.button) {
+            line-height: rem-calc(40);
+        }
+        .dropdown li .divider {
+            height: 6px;
         }
     }
-}
-
-.top-bar {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    padding-right: 24px;
-    @media #{$small-only} {
-        background: none;
-        box-shadow: none;
-        padding-right: 0;
-        margin-bottom: 12px;
-    }
-    li.toggle-topbar a {
-        font-size: 18px;
-    }
-}
-
-li.sign-in-top {
-    background: $white;
-    // padding-right:24px;
 }
 
 .name {

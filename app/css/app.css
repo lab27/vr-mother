@@ -1277,7 +1277,7 @@ select {
     background-color: #f82847;
     border-color: #f0082a;
     color: #FFFFFF; }
-  .alert-box.secondary {
+  .alert-box.secondary, .reveal-modal button.alert-box {
     background-color: #54c6c6;
     border-color: #3db6b6;
     color: #FFFFFF; }
@@ -1642,13 +1642,13 @@ button, .button {
     background-color: #23388d; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #FFFFFF; }
-  button.secondary, .button.secondary {
+  button.secondary, .reveal-modal button, .button.secondary, .reveal-modal button.button {
     background-color: #54c6c6;
     border-color: #38a9a9;
     color: #FFFFFF; }
-    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+    button.secondary:hover, .reveal-modal button:hover, button.secondary:focus, .reveal-modal button:focus, .button.secondary:hover, .reveal-modal button.button:hover, .button.secondary:focus, .reveal-modal button.button:focus {
       background-color: #38a9a9; }
-    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+    button.secondary:hover, .reveal-modal button:hover, button.secondary:focus, .reveal-modal button:focus, .button.secondary:hover, .reveal-modal button.button:hover, .button.secondary:focus, .reveal-modal button.button:focus {
       color: #FFFFFF; }
   button.success, .button.success {
     background-color: #d8f793;
@@ -1718,18 +1718,18 @@ button, .button {
       color: #FFFFFF; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: #2c46b0; }
-    button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
+    button.disabled.secondary, .reveal-modal button.disabled, button[disabled].secondary, .reveal-modal button[disabled], .button.disabled.secondary, .reveal-modal button.button.disabled, .button[disabled].secondary, .reveal-modal button.button[disabled] {
       background-color: #54c6c6;
       border-color: #38a9a9;
       color: #FFFFFF;
       box-shadow: none;
       cursor: default;
       opacity: 0.7; }
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+      button.disabled.secondary:hover, .reveal-modal button.disabled:hover, button.disabled.secondary:focus, .reveal-modal button.disabled:focus, button[disabled].secondary:hover, .reveal-modal button[disabled]:hover, button[disabled].secondary:focus, .reveal-modal button[disabled]:focus, .button.disabled.secondary:hover, .reveal-modal button.button.disabled:hover, .button.disabled.secondary:focus, .reveal-modal button.button.disabled:focus, .button[disabled].secondary:hover, .reveal-modal button.button[disabled]:hover, .button[disabled].secondary:focus, .reveal-modal button.button[disabled]:focus {
         background-color: #38a9a9; }
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+      button.disabled.secondary:hover, .reveal-modal button.disabled:hover, button.disabled.secondary:focus, .reveal-modal button.disabled:focus, button[disabled].secondary:hover, .reveal-modal button[disabled]:hover, button[disabled].secondary:focus, .reveal-modal button[disabled]:focus, .button.disabled.secondary:hover, .reveal-modal button.button.disabled:hover, .button.disabled.secondary:focus, .reveal-modal button.button.disabled:focus, .button[disabled].secondary:hover, .reveal-modal button.button[disabled]:hover, .button[disabled].secondary:focus, .reveal-modal button.button[disabled]:focus {
         color: #FFFFFF; }
-      button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+      button.disabled.secondary:hover, .reveal-modal button.disabled:hover, button.disabled.secondary:focus, .reveal-modal button.disabled:focus, button[disabled].secondary:hover, .reveal-modal button[disabled]:hover, button[disabled].secondary:focus, .reveal-modal button[disabled]:focus, .button.disabled.secondary:hover, .reveal-modal button.button.disabled:hover, .button.disabled.secondary:focus, .reveal-modal button.button.disabled:focus, .button[disabled].secondary:hover, .reveal-modal button.button[disabled]:hover, .button[disabled].secondary:focus, .reveal-modal button.button[disabled]:focus {
         background-color: #54c6c6; }
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #d8f793;
@@ -2325,7 +2325,7 @@ button::-moz-focus-inner {
   border: solid 1px #cccccc;
   font-size: 0.875rem;
   height: auto;
-  max-height: none;
+  max-height: 40px;
   width: 100%;
   z-index: 89;
   margin-top: 2px;
@@ -2376,7 +2376,7 @@ button::-moz-focus-inner {
     border: solid 1px #cccccc;
     font-size: 0.875rem;
     height: auto;
-    max-height: none;
+    max-height: 40px;
     width: 100%;
     z-index: 89;
     margin-top: 0;
@@ -2422,7 +2422,7 @@ button::-moz-focus-inner {
     border: solid 1px #cccccc;
     font-size: 0.875rem;
     height: auto;
-    max-height: none;
+    max-height: 40px;
     width: 100%;
     z-index: 89;
     margin-top: 0;
@@ -2470,7 +2470,7 @@ button::-moz-focus-inner {
     border: solid 1px #cccccc;
     font-size: 0.875rem;
     height: auto;
-    max-height: none;
+    max-height: 40px;
     width: 100%;
     z-index: 89;
     margin-left: 0;
@@ -2533,7 +2533,7 @@ button::-moz-focus-inner {
     border: solid 1px #cccccc;
     font-size: 0.875rem;
     height: auto;
-    max-height: none;
+    max-height: 40px;
     padding: 1.25rem;
     width: 100%;
     z-index: 89;
@@ -2600,7 +2600,7 @@ button::-moz-focus-inner {
       margin-top: -0.15625rem; }
     .dropdown.button.large::after, button.dropdown.large::after {
       border-color: #FFFFFF transparent transparent transparent; }
-  .dropdown.button.secondary:after, button.dropdown.secondary:after {
+  .dropdown.button.secondary:after, .reveal-modal button.dropdown.button:after, button.dropdown.secondary:after, .reveal-modal button.dropdown:after {
     border-color: #64697e transparent transparent transparent; }
 
 .flex-video {
@@ -3399,7 +3399,7 @@ label.error {
   .label.success {
     background-color: #d8f793;
     color: #64697e; }
-  .label.secondary {
+  .label.secondary, .reveal-modal button.label {
     background-color: #54c6c6;
     color: #FFFFFF; }
   .label.info {
@@ -3796,7 +3796,7 @@ ul.pagination {
     background: #2c46b0;
     display: block;
     height: 100%; }
-  .progress.secondary .meter {
+  .progress.secondary .meter, .reveal-modal button.progress .meter {
     background: #54c6c6;
     display: block;
     height: 100%; }
@@ -3911,7 +3911,7 @@ ul.pagination {
   left: 0; }
 
 .reveal-modal {
-  border-radius: 3px;
+  border-radius: 0;
   display: none;
   position: absolute;
   top: 0;
@@ -3919,9 +3919,9 @@ ul.pagination {
   width: 100%;
   z-index: 1005;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #2c46b0;
   padding: 1.875rem;
-  border: solid 1px #d9dadd;
+  border: solid 0 #d9dadd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 40em) {
     .reveal-modal {
@@ -3943,7 +3943,7 @@ ul.pagination {
     .reveal-modal {
       top: 6.25rem; } }
   .reveal-modal.radius {
-    border-radius: 3px; }
+    border-radius: 0; }
   .reveal-modal.round {
     border-radius: 1000px; }
   .reveal-modal.collapse {
@@ -4001,7 +4001,7 @@ ul.pagination {
   .reveal-modal.toback {
     z-index: 1003; }
   .reveal-modal .close-reveal-modal {
-    color: #AAAAAA;
+    color: white;
     cursor: pointer;
     font-size: 2.5rem;
     font-weight: bold;
@@ -4079,9 +4079,9 @@ ul.pagination {
       top: 48%; }
   .split.button span:after {
     border-color: #FFFFFF transparent transparent transparent; }
-  .split.button.secondary span {
+  .split.button.secondary span, .reveal-modal button.split.button span {
     border-left-color: rgba(255, 255, 255, 0.5); }
-  .split.button.secondary span:after {
+  .split.button.secondary span:after, .reveal-modal button.split.button span:after {
     border-color: #FFFFFF transparent transparent transparent; }
   .split.button.alert span {
     border-left-color: rgba(255, 255, 255, 0.5); }
@@ -4116,7 +4116,7 @@ ul.pagination {
         top: 48%; }
   .split.button.expand {
     padding-left: 2rem; }
-  .split.button.secondary span:after {
+  .split.button.secondary span:after, .reveal-modal button.split.button span:after {
     border-color: #64697e transparent transparent transparent; }
   .split.button.radius span {
     -webkit-border-bottom-right-radius: 3px;
@@ -4697,13 +4697,13 @@ meta.foundation-mq-topbar {
         background-color: #23388d; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
         color: #FFFFFF; }
-      .top-bar-section ul li > button.secondary {
+      .top-bar-section ul li > button.secondary, .top-bar-section ul .reveal-modal li > button, .reveal-modal .top-bar-section ul li > button {
         background-color: #54c6c6;
         border-color: #38a9a9;
         color: #FFFFFF; }
-        .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
+        .top-bar-section ul li > button.secondary:hover, .top-bar-section ul .reveal-modal li > button:hover, .reveal-modal .top-bar-section ul li > button:hover, .top-bar-section ul li > button.secondary:focus, .top-bar-section ul .reveal-modal li > button:focus, .reveal-modal .top-bar-section ul li > button:focus {
           background-color: #38a9a9; }
-        .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
+        .top-bar-section ul li > button.secondary:hover, .top-bar-section ul .reveal-modal li > button:hover, .reveal-modal .top-bar-section ul li > button:hover, .top-bar-section ul li > button.secondary:focus, .top-bar-section ul .reveal-modal li > button:focus, .reveal-modal .top-bar-section ul li > button:focus {
           color: #FFFFFF; }
       .top-bar-section ul li > button.success {
         background-color: #d8f793;
@@ -9154,42 +9154,23 @@ hr {
   -webkit-flex-flow: column nowrap;
   background: #f9f9f9; }
 
-.top-bar-section li:not(.has-form) a:not(.button) {
-  font-weight: 700;
-  padding-right: 12px; }
+.sticky {
+  z-index: 3000; }
 
-.top-bar input {
-  border: 1px solid #64697e; }
-
-.top-bar-section ul li {
-  background: #FFFFFF; }
-  .top-bar-section ul li.join {
-    margin-right: 24px;
-    margin-left: 12px; }
-  .top-bar-section ul li button, .top-bar-section ul li .button {
-    height: 36px;
-    line-height: 36px;
-    padding: 0 12px;
-    border: 2px;
-    font-weight: 700; }
-    @media only screen and (min-width:64.0625em) {
-      .top-bar-section ul li button, .top-bar-section ul li .button {
-        top: 22px; } }
-
-.top-bar {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  padding-right: 24px; }
-  @media only screen and (max-width: 40em) {
-    .top-bar {
-      background: none;
-      box-shadow: none;
-      padding-right: 0;
-      margin-bottom: 12px; } }
-  .top-bar li.toggle-topbar a {
-    font-size: 18px; }
-
-li.sign-in-top {
-  background: #FFFFFF; }
+.top-bar-section .dropdown {
+  z-index: 2200; }
+.top-bar-section .dropdown .title {
+  padding-left: 20px;
+  color: #2c46b0;
+  font-size: 0.8125rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  height: 40px; }
+@media only screen and (min-width:40.0625em) {
+  .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+    line-height: 2.5rem; }
+  .top-bar-section .dropdown li .divider {
+    height: 6px; } }
 
 .name {
   padding: 20px; }
@@ -9764,7 +9745,7 @@ body.talk-page {
   padding-bottom: 24px; }
   @media only screen and (min-width:40.0625em) {
     #main-column {
-      padding-top: 48px;
+      padding-top: 103px;
       padding-bottom: 48px; } }
 
 button, .button {
@@ -9781,8 +9762,9 @@ button, .button {
   color: white;
   line-height: 0.625rem;
   margin: 0;
-  margin-left: 6px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  margin-left: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin-top: 6px; }
   @media only screen and (min-width:40.0625em) {
     .pub-meta {
       margin-bottom: 30px; } }
@@ -9793,11 +9775,17 @@ button, .button {
   .pub-meta .meta-publisher {
     font-weight: bold;
     color: white;
-    margin-bottom: 4px; }
+    margin-bottom: 3px; }
     .pub-meta .meta-publisher a {
       color: white; }
-  .pub-meta .meta-info {
-    color: rgba(254, 241, 222, 0.5); }
+  .pub-meta .meta-info, .pub-meta .meta-series {
+    color: rgba(254, 241, 222, 0.5);
+    margin-bottom: 3px; }
+    .pub-meta .meta-info a, .pub-meta .meta-series a {
+      font-weight: bold;
+      color: rgba(254, 241, 222, 0.5); }
+      .pub-meta .meta-info a:hover, .pub-meta .meta-series a:hover {
+        text-decoration: underline; }
 
 #vr-overlay {
   top: 12px;
@@ -10172,7 +10160,7 @@ ul#share-drop {
   padding: 24px 24px 200px 24px; }
   @media only screen and (min-width:40.0625em) {
     #right-sidebar {
-      padding: 48px 24px 48px 24px;
+      padding: 103px 24px 48px 24px;
       max-width: 300px; } }
   @media only screen and (min-width:64.0625em) {
     #right-sidebar {
@@ -10196,6 +10184,11 @@ ul#share-drop {
       line-height: 1.3125rem;
       margin-top: 8px;
       font-weight: normal; }
+
+.reveal-modal h2 {
+  color: white; }
+.reveal-modal p.lead {
+  color: #fef1de; }
 
 #filter-bar {
   padding-top: 24px; }
