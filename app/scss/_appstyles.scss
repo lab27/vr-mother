@@ -150,6 +150,20 @@ hr {
 
 .name {
     padding: 20px;
+    @media #{$medium-up} {
+        padding: 0;
+        padding-left: 24px;
+    }
+    img {
+        margin-right: 12px;
+    }
+    a {
+        font-family: $header-font-family;
+        color: $alert-color;
+        letter-spacing: 6px;
+        font-size: rem-calc(14);
+        line-height: rem-calc(14);
+    }
 }
 
 //avatar
@@ -958,3 +972,12 @@ ul.tags li:first-child {
 }
 
 @media #{$xxlarge-only} {}
+
+// Slide Up
+.slideUp {
+    position: fixed;
+    top: 0;
+    transition: top 0.4s ease-in-out;
+    width: 100%;
+    z-index: 4000;
+}
