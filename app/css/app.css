@@ -9828,6 +9828,9 @@ button, .button {
 .talk-picture {
   padding: 0;
   margin-bottom: 12px; }
+  @media only screen and (min-width:40.0625em) {
+    .talk-picture {
+      margin-bottom: 48px; } }
   .talk-picture img {
     width: 100vw; }
   .talk-picture button {

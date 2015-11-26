@@ -101,6 +101,9 @@ button,
 .talk-picture {
     padding: 0;
     margin-bottom: 12px;
+    @media #{$medium-up} {
+        margin-bottom: 48px;
+    }
     img {
         width: 100vw;
     }
