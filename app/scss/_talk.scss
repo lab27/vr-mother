@@ -233,7 +233,7 @@ button,
     // font-weight: 700;
     display: inline-block;
     // margin-right: 12px;
-    font-family: 'Eagle';
+    font-family: $header-font-family;
     @media #{$medium-up} {
         font-size: rem-calc(48);
         line-height: rem-calc(48);

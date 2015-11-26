@@ -5134,7 +5134,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #3c4258;
-  font-family: 'Eagle';
+  font-family: 'Eagle', 'Eagle-Book';
   font-style: normal;
   font-weight: 300;
   line-height: 1.4;
@@ -9183,7 +9183,7 @@ hr {
   .name img {
     margin-right: 12px; }
   .name a {
-    font-family: 'Eagle';
+    font-family: 'Eagle', 'Eagle-Book';
     color: #f82847;
     letter-spacing: 6px;
     font-size: 0.875rem;
@@ -9940,7 +9940,7 @@ button, .button {
   margin-bottom: 18px;
   line-height: 1.75rem;
   display: inline-block;
-  font-family: 'Eagle'; }
+  font-family: 'Eagle', 'Eagle-Book'; }
   @media only screen and (min-width:40.0625em) {
     .talk-title {
       font-size: 3rem;
