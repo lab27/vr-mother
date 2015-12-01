@@ -10754,7 +10754,8 @@ button,
     margin-bottom: 48px; }
   .talk-title .lead .inline-speaker {
     color: white;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 0.875rem; }
     .talk-title .lead .inline-speaker a {
       font-weight: normal;
       color: #54c6c6; }

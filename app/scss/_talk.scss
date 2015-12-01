@@ -362,6 +362,7 @@ button,
         .inline-speaker {
             color: white;
             font-weight: bold;
+            font-size: rem-calc(14);
             a {
                 font-weight: normal;
                 color: $secondary-color;
