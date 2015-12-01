@@ -18,7 +18,7 @@ body.talk-page {
     padding-top: 103px;
     padding-bottom: 24px;
     @media #{$medium-up} {
-        padding-top: 103px;
+        padding-top: 78px;
         padding-bottom: 48px;
     }
 }
@@ -43,20 +43,20 @@ button,
 }
 
 .blue {
-background: $primary-color;
+    background: $primary-color;
 }
 
-.meta-speaker  a{
+.meta-speaker a {
     color: $secondary-color;
     line-height: rem-calc(16);
     &:hover {
         text-decoration: underline;
     }
-
 }
 
 .pub-block {
-    padding-bottom: 20px;
+    padding-bottom: 48px;
+    // margin-bottom: 24px;
 }
 
 .pub-meta {
@@ -68,7 +68,7 @@ background: $primary-color;
     font-family: $system-font-family;
     margin-top: 6px;
     @media #{$medium-up} {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
     & p {
         margin: 0;
@@ -128,25 +128,23 @@ background: $primary-color;
     color: $tuatara;
     font-weight: 300;
     padding-right: 24px;
-      
     p {
         font-size: rem-calc(14);
         line-height: rem-calc(20);
         color: rgba($info-color, .8);
-          @media #{$medium-up} {
-        // font-size: rem-calc(18);
-        // line-height: rem-calc(24);
-        padding-right: 24px;
-    }
-       
+        @media #{$medium-up} {
+            // font-size: rem-calc(18);
+            // line-height: rem-calc(24);
+            padding-right: 24px;
+        }
     }
     .lead {
         font-size: rem-calc(18);
         line-height: rem-calc(24);
         color: white;
         @media #{$medium-up} {
-        //      font-size: rem-calc(21);
-        // line-height: rem-calc(28);
+            //      font-size: rem-calc(21);
+            // line-height: rem-calc(28);
             padding-right: 24px;
         }
     }
@@ -224,7 +222,7 @@ background: $primary-color;
 }
 
 #meter {
-    flex:0 0 6px;
+    flex: 0 0 6px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
@@ -235,9 +233,9 @@ background: $primary-color;
         flex: 1 1 6px;
         width: 6px;
         height: 1px;
-        max-height: 1px;
-        background:$warning-color;
-        align-self:flex-end;
+        max-height: 0px;
+        background: $warning-color;
+        align-self: flex-end;
     }
 }
 
@@ -272,19 +270,33 @@ background: $primary-color;
 }
 
 .talk-title {
-    color: $secondary-color;
-    font-size: rem-calc(24);
-    margin: 0;
-    margin-bottom: 18px;
-    line-height: rem-calc(28);
-    // font-weight: 700;
-    display: inline-block;
-    // margin-right: 12px;
-    font-family: $header-font-family;
-    @media #{$medium-up} {
-        font-size: rem-calc(48);
-        line-height: rem-calc(48);
-        margin-bottom: 36px;
+    h3 {
+        color: $secondary-color;
+        font-size: rem-calc(24);
+        margin: 0;
+        margin-bottom: 18px;
+        line-height: rem-calc(28);
+        // font-weight: 700;
+        display: inline-block;
+        // margin-right: 12px;
+        font-family: $header-font-family;
+        @media #{$medium-up} {
+            font-size: rem-calc(48);
+            line-height: rem-calc(48);
+            margin-bottom: 18px;
+        }
+    }
+    .lead {
+        font-size: rem-calc(18);
+        line-height: rem-calc(24);
+        color: $info-color;
+        // max-width: 540px;
+        margin-bottom: 24px;
+        @media #{$medium-up} {
+            //      font-size: rem-calc(21);
+            // line-height: rem-calc(28);
+            padding-right: 24px;
+        }
     }
     // @media #{$large-up} {
     //  font-size: rem-calc(28);
@@ -509,6 +521,7 @@ background: $primary-color;
         font-family: $body-font-family;
         font-weight: bold;
         font-size: rem-calc(16);
+        margin-bottom: 24px;
     }
     .reco-tile {
         background: rgba(#3d404d, .5);
