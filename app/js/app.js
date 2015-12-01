@@ -144,6 +144,14 @@ $('.button-play-pause').on('click', function() {
     $('#indicator').toggleClass('metering');
 });
 
+$('.button-volume').on('click', function() {
+    $(this).children('span').each(function() {
+        $(this).toggleClass('hide');
+
+    });
+    $(this).toggleClass('muted');
+});
+
 $('.classification-tag').on('click', function() {
     $(this).toggleClass('selected');
 });

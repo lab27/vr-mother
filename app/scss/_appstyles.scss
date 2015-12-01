@@ -122,13 +122,27 @@ hr {
     z-index: 3000;
 }
 
+.top-bar {
+    box-shadow:0 1px 10px rgba(0,0,0,.2);
+}
+
 .top-bar-section {
     .dropdown {
         z-index: 2200;
     }
+    ul li {
+        background:none;
+        &:hover {
+            background:none;
+        }
+        a:hover {
+            background:none;
+        }
+    }
     li a:hover {
         // height: rem-calc(40);
         text-decoration: none;
+        background:none;
     }
     .dropdown .title {
         padding-left: 20px;

@@ -3,11 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Voice Republic | Talk</title>
-        <link rel="stylesheet" href="css/libraries.min.css">
+        <title>Voice Republic | Talk2</title>
+        <!-- build:css css/libraries.min.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
+        <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+        <!-- endbower -->
+        <!-- endbuild -->
     
-        <link rel="stylesheet" href="css/app.min.css">
-        <script src="js/vendor/modernizr.min.js"></script>
+        <!-- build:css css/app.min.css -->
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/app_override.css">
+        <!-- endbuild -->
+        <!-- build:js js/vendor/modernizr.min.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
     </head>
     <body class="talk-page">
         
@@ -78,28 +89,8 @@
         </div>        <div class="row" role="main">
         
 <!-- Begin Left -->
-<div class="medium-9 columns" id="main-column">
-	<!-- publisher info -->
-	<div class="row collapse pub-block">
-		<div class="meta-left">
-			<div class="pub-avatar left">
-				<img src="img/avatars/slb.jpg" width="40" alt="">
-			</div>
-			<div class="pub-meta left">
-				<p class="meta-publisher"><a href="#">Stadt Land Buch</a> / <span class="icon-uniE731"></span></p>
-				<p class="meta-series">From the Series: <a href="#">That's My Mama</a></p>
-				<!-- <p class="meta-info">10 days ago • 347 plays • 45 min</p> -->
-			</div>
-		</div>
-		<div class="meta-right">
-			
-			<div class="pub-meta">
-				
-				<p class="meta-speaker">SprecherIn: <a href="#">Wolfgang Schorlau</a>, <a href="#">Gregor Gysi</a></p>
-				
-			</div>
-		</div>
-		</div>
+<div class="medium-9 columns alt" id="main-column">
+
 	<!-- title -->
 	<div class="row collapse talk-title">
 		<h3 class="">Wolfgang Schorlau im Gespräch mit Gregor Gysi</h3>
@@ -107,6 +98,27 @@
 					Die Berliner Buchpremiere im Deutschen Theater präsentiert den jüngsten Roman »Die schützende Hand« über den NSU-Skandal.
 				</p>
 	</div>
+		<!-- publisher info -->
+	<div class="row collapse pub-block">
+		<div class="meta-left">
+			<div class="pub-avatar left">
+				<img src="img/avatars/slb.jpg" width="60" alt="">
+			</div>
+			<div class="pub-meta left">
+				<p class="meta-publisher"><a href="#">Stadt Land Buch</a> / <span class="icon-uniE731"></span></p>
+				<p class="meta-series">From the Series: <a href="#">Lesemarathon</a></p>
+				<p class="meta-info">10 days ago • 347 plays</p>
+			</div>
+		</div>
+		<div class="meta-right">
+			
+			<!-- <div class="pub-meta"> -->
+				
+				<p class="meta-speaker large-text-right">SprecherIn:<br><a href="#">Wolfgang Schorlau</a>, <a href="#">Gregor Gysi</a></p>
+				
+			<!-- </div> -->
+		</div>
+		</div>
 			
 			
 			<div class="row collapse" id="talk-playbar">
@@ -130,11 +142,11 @@
 				<div class=""></div>
 			</div>
 	<!-- date and play count -->
-	<div class="row collapse">
+<!-- 	<div class="row collapse">
 		<div id="date-playcount">
 			<p class=""><span class="left">21 November, 2015</span><span class="right">234 Plays</span></p>
 		</div>
-	</div>
+	</div> -->
 		<!-- Picture -->
 		<div class="row collapse">
 			<div class="talk-picture">
@@ -231,36 +243,57 @@
 				<div class="reco-tile">
 					<p class="reco-publisher">nGbK</p>
 					<img src="img/thumbs/thumb0.jpg" alt="">
+					<div class="reco-play hide">	
+					<span class="icon-uniE6BB"> </span>
+					</div>
 					<h5 class="reco-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
 				</div>
 				<div class="reco-tile">
 					<p class="reco-publisher">nGbK</p>
 					<img src="img/thumbs/thumb1.jpg" alt="">
+					<div class="reco-play hide">	
+					<span class="icon-uniE6BB"> </span>
+					</div>
 					<h5 class="reco-title">Independent Cultural Spaces in Turkey and Germany</h5>
 				</div>
 				<div class="reco-tile">
 					<p class="reco-publisher">re:publica15</p>
 					<img src="img/thumbs/thumb2.jpg" alt="">
+					<div class="reco-play hide">	
+					<span class="icon-uniE6BB"> </span>
+					</div>
 					<h5 class="reco-title">Watching the Watchers: Building a Sousveillance State</h5>
 				</div>
 				<div class="reco-tile">
 					<p class="reco-publisher">AMAZE Berlin</p>
 					<img src="img/thumbs/thumb3.jpg" alt="">
+					<div class="reco-play hide">	
+					<span class="icon-uniE6BB"> </span>
+					</div>
 					<h5 class="reco-title">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</h5>
 				</div>
 				<div class="reco-tile">
 					<p class="reco-publisher">Publixsphere Channel</p>
 					<img src="img/thumbs/thumb4.jpg" alt="">
+					<div class="reco-play hide">	
+					<span class="icon-uniE6BB"> </span>
+					</div>
 					<h5 class="reco-title">Religion in Europa</h5>
 				</div>
 				<div class="reco-tile">
 					<p class="reco-publisher">HPI School of Design Thinking</p>
 					<img src="img/thumbs/thumb5.jpg" alt="">
+					<div class="reco-play hide">	
+					<span class="icon-uniE6BB"> </span>
+					</div>
 					<h5 class="reco-title">Visual Diagnostics for Design Thinking Teams</h5>
 				</div>
 				<div class="reco-tile">
 					<p class="reco-publisher">Rosa Luxemburg Stiftung</p>
 					<img src="img/thumbs/thumb6.jpg" alt="">
+					<div class="reco-play hide">	
+					<span class="icon-uniE6BB"> </span>
+					</div>
 					<h5 class="reco-title">Platform Cooperativism vs. the Sharing Economy</h5>
 				</div>
 			</div>
@@ -314,9 +347,26 @@
 			<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 		</div>
         </div>
-        <script src="js/vendor/libraries.min.js"></script>
-        <script src="js/vendor/foundation.min.js"></script>
-        <script src="js/app.min.js"></script>
+        <!-- build:js js/vendor/libraries.min.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+        <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+        <script src="bower_components/wow/dist/wow.min.js"></script>
+        <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:js js/vendor/foundation.min.js -->
+        <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+        <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+        <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+        <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
+        <!-- endbuild -->
+        <!-- build:js js/app.min.js -->
+        <script src="js/app.js"></script>
+
+        <!-- endbuild -->
         <script src="js/sup-topbar.min.js"></script>
     </body>
 </html>
