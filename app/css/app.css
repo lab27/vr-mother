@@ -10752,6 +10752,12 @@ button,
       line-height: 1.5rem; } }
   .alt .talk-title .lead, .alt3 .talk-title .lead {
     margin-bottom: 48px; }
+  .talk-title .lead .inline-speaker {
+    color: white;
+    font-weight: bold; }
+    .talk-title .lead .inline-speaker a {
+      font-weight: normal;
+      color: #54c6c6; }
 
 #date-playcount {
   padding: 12px;
