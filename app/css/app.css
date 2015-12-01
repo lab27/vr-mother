@@ -10500,10 +10500,10 @@ body.talk-page {
     #main-column {
       padding-top: 78px;
       padding-bottom: 48px; } }
-  #main-column.alt {
+  #main-column.alt, #main-column.alt3 {
     padding-top: 78px; }
     @media only screen and (min-width: 40.0625em) {
-      #main-column.alt {
+      #main-column.alt, #main-column.alt3 {
         padding-top: 103px; } }
 
 button,
@@ -10659,6 +10659,8 @@ button,
       margin-bottom: 12px; } }
   .alt #talk-playbar {
     margin-top: 12px; }
+  .alt3 #talk-playbar {
+    margin-bottom: 24px; }
 
 .button-playbar {
   flex: 0 0 70px;
@@ -10734,8 +10736,8 @@ button,
   font-family: "Eagle", "Eagle-Book"; }
   @media only screen and (min-width: 40.0625em) {
     .talk-title h3 {
-      font-size: 3.75rem;
-      line-height: 3.75rem;
+      font-size: 3rem;
+      line-height: 3rem;
       margin-bottom: 18px; } }
 
 .talk-title .lead {
@@ -10746,9 +10748,9 @@ button,
   margin-bottom: 82px; }
   @media only screen and (min-width: 40.0625em) {
     .talk-title .lead {
-      font-size: 1.3125rem;
-      line-height: 1.875rem; } }
-  .alt .talk-title .lead {
+      font-size: 1.125rem;
+      line-height: 1.5rem; } }
+  .alt .talk-title .lead, .alt3 .talk-title .lead {
     margin-bottom: 48px; }
 
 #date-playcount {

@@ -25,7 +25,7 @@ body.talk-page {
         padding-bottom: 48px;
 
     }
-            &.alt {
+            &.alt, &.alt3 {
             padding-top: 78px;
             @media #{$medium-up} {
         padding-top: 103px;
@@ -244,6 +244,9 @@ button,
     .alt & {
         margin-top: 12px;
     }
+    .alt3 & {
+        margin-bottom: 24px;
+    }
 }
 
 .button-playbar {
@@ -337,8 +340,8 @@ button,
         // margin-right: 12px;
         font-family: $header-font-family;
         @media #{$medium-up} {
-            font-size: rem-calc(60);
-            line-height: rem-calc(60);
+            font-size: rem-calc(48);
+            line-height: rem-calc(48);
             margin-bottom: 18px;
         }
     }
@@ -350,10 +353,10 @@ button,
         // max-width: 540px;
         margin-bottom: 82px;
         @media #{$medium-up} {
-                 font-size: rem-calc(21);
-            line-height: rem-calc(30);
+                 font-size: rem-calc(18);
+            line-height: rem-calc(24);
         }
-        .alt &{
+        .alt &,.alt3 &{
             margin-bottom: 48px;
         }
     }
