@@ -141,6 +141,7 @@ $('.button-play-pause').on('click', function() {
         $(this).toggleClass('hide');
 
     });
+    $('#indicator').toggleClass('metering');
 });
 
 $('.classification-tag').on('click', function() {
@@ -213,55 +214,9 @@ $('.tile-image').each(function() {
     $(this).css('background-image', 'url(' + myBG + ')');
 });
 
-//share button drop up
-// $('#share-button').on('click', function() {
-//     $('#share-drop').fadeToggle('fast', 'linear');
-// });
 
-// $('#share-drop li').on('click', function() {
-//     //console.log('clicking an li in drop');
-//     $('#share-drop').fadeToggle('fast', 'linear');
-// });
+window.setInterval(function(){
+  $('.metering').css(
+    {"max-height":Math.random() * 20});
+}, 100);
 
-//in viewport description
-// $( '.talk-description:in-viewport' )
-
-// var $div = $('.talk-description');
-// $(window).scroll(function() {
-//     if ($div.is(':in-viewport')) {
-//         // $div.css( 'background-color', 'red' );
-//         //console.log('desc in view');
-//         $('#view-description').fadeOut('fast', 'linear');
-//         $('#talk-titlebar').fadeOut('fast', 'linear');
-//         $('#talk-meta-actions').addClass('lower');
-
-//     } else if ($div.not(':in-viewport')) {
-//         $('#view-description').fadeIn('fast', 'linear');
-//         $('#talk-titlebar').fadeIn('fast', 'linear');
-//         $('#talk-meta-actions').removeClass('lower');
-
-//     }
-// });
-
-// ---------------------------------------------------------------
-// SlideUp for Foundation top-bar
-// ---------------------------------------------------------------
-// $(document).foundation();
-// var didScroll, lastScrollTop = 0,
-//     scrollAmount = 10,
-//     navbarHeight = $(".slideUp").outerHeight();
-// $(window).scroll(function(a) {
-//     didScroll = !0
-// });
-// setInterval(function() {
-//     didScroll && (hasScrolled(), didScroll = !1)
-// }, 250);
-
-// function hasScrolled() {
-//     var a = $(this).scrollTop();
-//     Math.abs(lastScrollTop - a) <= scrollAmount || (a > lastScrollTop && a > navbarHeight ? $(".slideUp").css({
-//         top: -$(this).outerHeight()
-//     }) : a + $(window).height() < $(document).height() && $(".slideUp").css({
-//         top: 0
-//     }), lastScrollTop = a)
-// };

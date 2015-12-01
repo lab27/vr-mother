@@ -21,16 +21,16 @@ module.exports = function(grunt) {
                 dest: '<%= app %>/data/tags.json'
             }
         },
-        pageres: {
-            screenshot: {
-                options: {
-                    urls: ['127.0.0.1:9000', '127.0.0.1:9000/explore.html', '127.0.0.1:9000/results.html'],
-                    sizes: ['1200x800'],
-                    dest: '<%= app %>/img/screenshots',
-                    crop: true
-                }
-            }
-        },
+        // pageres: {
+        //     screenshot: {
+        //         options: {
+        //             urls: ['127.0.0.1:9000', '127.0.0.1:9000/explore.html', '127.0.0.1:9000/results.html'],
+        //             sizes: ['1200x800'],
+        //             dest: '<%= app %>/img/screenshots',
+        //             crop: true
+        //         }
+        //     }
+        // },
 
 
         sass: {
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
                         '<%= app %>/images/{,*/}*',
                         '.tmp/scripts/{,*/}*.js'
                     ],
-                    port: 9000,
+                    port: 9003,
                     server: {
                         baseDir: ['.tmp', 'app'],
                         routes: {
@@ -200,7 +200,7 @@ module.exports = function(grunt) {
         connect: {
             app: {
                 options: {
-                    port: 9002,
+                    port: 9003,
                     base: '<%= app %>/',
                     open: true,
                     livereload: true,
@@ -259,7 +259,7 @@ module.exports = function(grunt) {
         // 'postcss',
 
         'bower-install',
-        'browserSync:livereload',
+        //'browserSync:livereload',
         'connect:app',
         'watch'
     ]);

@@ -1122,6 +1122,8 @@ $has-tip-font-color-hover: auto;
 // $include-html-top-bar-classes: $include-html-classes;
 // Background color for the top bar
 $topbar-bg-color: #33353c;
+$topbar-bg-color: rgb(53,54,59);
+//$topbar-bg-color: $primary-color;
 // $topbar-bg: $topbar-bg-color;
 // Height and margin
 $topbar-height: rem-calc(60);
