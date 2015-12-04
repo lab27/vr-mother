@@ -206,13 +206,24 @@ html.profile-page, .profile-page body {
 			margin: 0;
 			.profile-tile-inside {
 				padding: 18px;
-				padding-bottom:24px;
+				// padding-bottom:24px;
 				background: rgba($almost-black,.2);
 			}
 
 			.profile-publisher {
 				color:rgba(white,.2);
 				margin-bottom: 6px;
+				font-size: rem-calc(12);
+			}
+
+			.speaker {
+				color: rgba($info-color,.5);
+				margin-top: 24px;
+				margin-bottom: 0;
+				font-size: rem-calc(12);
+				a {
+					color: $secondary-color;
+				}
 			}
 
 

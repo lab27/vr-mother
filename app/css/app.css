@@ -11776,11 +11776,18 @@ html.profile-page, .profile-page body {
     margin: 0; }
     .profile-page body #right-column .profile-tile .profile-tile-inside {
       padding: 18px;
-      padding-bottom: 24px;
       background: rgba(18, 18, 20, 0.2); }
     .profile-page body #right-column .profile-tile .profile-publisher {
       color: rgba(255, 255, 255, 0.2);
-      margin-bottom: 6px; }
+      margin-bottom: 6px;
+      font-size: 0.75rem; }
+    .profile-page body #right-column .profile-tile .speaker, .profile-page body #right-column .profile-tile #talk-description .format-box, #talk-description .profile-page body #right-column .profile-tile .format-box {
+      color: rgba(254, 241, 222, 0.5);
+      margin-top: 24px;
+      margin-bottom: 0;
+      font-size: 0.75rem; }
+      .profile-page body #right-column .profile-tile .speaker a, .profile-page body #right-column .profile-tile #talk-description .format-box a, #talk-description .profile-page body #right-column .profile-tile .format-box a {
+        color: #54c6c6; }
     .profile-page body #right-column .profile-tile img {
       margin-bottom: 12px; }
     .profile-page body #right-column .profile-tile .profile-title {
