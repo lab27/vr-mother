@@ -11697,8 +11697,8 @@ html.profile-page, .profile-page body {
     margin-bottom: 48px; }
     .profile-page body #left-column .user-meta-group li {
       font-size: 0.75rem;
-      color: rgba(255, 255, 255, 0.5);
-      background: rgba(18, 18, 20, 0.2);
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(18, 18, 20, 0.5);
       padding: 6px;
       height: 32px;
       margin: 0;
