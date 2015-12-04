@@ -270,9 +270,17 @@ html.profile-page, .profile-page body {
 		}
 
 		.profile-row {
+			@extend .row;
+			max-width: 100%;
 			border-top: 1px solid rgba(white,.1);
 			padding:12px 0;
+			margin-right: 0;
+			margin-left: 0;
+		
 
+			.profile-row-inside {
+				width: 100%;
+			}
 			.profile-title {
 				font-size: rem-calc(16);
 				color: rgba(white,.8);
