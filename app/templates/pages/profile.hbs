@@ -1,0 +1,83 @@
+---
+title: User Patrick Frank
+layout: app/templates/layouts/profile-layout.hbs
+---
+{{!-- Left Column --}}
+<div id="left-column">
+	<div id="user-block">
+		<p class="profile-avatar">
+			<img src="img/avatars/patrick.png" width="160" height="160" class="img-circle" alt="">
+		</p>
+		<h3 id="user-name">Patrick Frank</h3>
+		<p id="user-badge">Publisher</p>
+		<p id="user-description">Composer, cultural theorist, co-founder and CEO Voice Republic.</p>
+		<ul class="user-meta-group">
+			<li class="user-meta-item">5 Talks</li>
+			<li class="user-meta-item">3 Series</li>
+			<li class="user-meta-item">14 Pinned</li>
+			<li class="user-meta-item">2k Plays</li>
+		</ul>
+	</div>
+	<hr>
+	<div class="row" id="user-about">
+		<p class="column-header">About Me</p>
+		<p>
+			Kompositionsstudien an der ZHdK in Zürich. Studium der Kulturwissenschaften, Philosophie und Soziologie an der Universität Luzern.<br><br>
+			In Franks kompositorische Arbeiten verbinden sich Kulturtheorie mit Neuer Musik. Frank inszeniert 'Diskurskonzerte' unter Beteiligung von Philosophen, Politiker oder Aktivisten. Dabei greift er sowohl auf bestehende Theorien bekannter und weniger bekannter PhilosophenInnen und SoziologenInnen zurück, als auch auf eigene Thesen.<br><br>
+			Voice Republic ist ein Projekt, das aus der Beschäftigung mit Gegenwartsdiagnosen entstand: Der Diskurs als wissensbildender Akt und demokratisierende Praxis droht in hyperindividualisierter und tendenziell indifferenter Kultur zu verschwinden. Voice Republic unternimmt den Versuch, den live gesprochenen Diskurs im Internet zu stützen.<br><br>
+			2007: Projekt Limina - Indifferenz in Kunst und Kultur<br><br>
+			2010: the law of quality - Abbildung des Kunstmarktes und Thematisierung von Quantität und Qualität<br><br>
+			2013: wir sind aussergeöwhnlich I - Quantitäten / Populismus / Subversion (mit Enno Rudolph, Philosoph)<br><br>
+			2014: Launch Voice Republic<br><br>
+			2014: wir sind aussergewöhnlich II - Quantitäten / Populismus / Subversion (mit Enno Rudolph, Philosoph, Moritz Leuenberger, Politiker)<br><br>
+			2014: wir sind aussergewöhnlich III - Quantitäten / Populismus / Subversion (mit Harry Lehmann, Philosoph und einem noch anzukündigenden Politiker)<br><br>
+			Frank ist Gründer und 'prime-minister' (CEO) der Voice Republic Media AG. Er entwirft als freischaffender Komponist Projekte und Musik.<br><br>
+			<a href="http://patrickfrank.ch" target="_blank">Webseite von Patrick Frank</a>
+		</p>
+	</div>
+</div>
+{{!-- Right Columns --}}
+<div id="right-column">
+<div class="tab-holder">
+	<ul class="tabs left" data-tab>
+		<li class="tab-title "><a href="#upcoming">Upcoming Talks&nbsp;&nbsp;<span class="tab-badge">3</span></a></li>
+		<li class="tab-title active"><a href="#archived">Archived Talks&nbsp;&nbsp;<span class="tab-badge">7</span></a></li>
+		<li class="tab-title"><a href="#series">Series&nbsp;&nbsp;<span class="tab-badge">3</span></a></li>
+		<li class="tab-title"><a href="#pinned">Pinned Talks&nbsp;&nbsp;<span class="tab-badge">14</span></a></li>
+	</ul>
+	<ul class="tabs right viewtoggle" data-tab>
+		<li class="tab-title "><a href="#list"><span class="icon-uniE789"></span></a></li>
+		<li class="tab-title active"><a href="#archived"><span class="icon-uniE78A"></span></a></li>
+		
+	</ul></div>
+	<div class="tabs-content">
+		<div class="content" id="upcoming">
+	
+			<h3>Coming soon upcoming.</h3>
+
+		</div>
+
+		
+		<div class="content active" id="archived">
+			
+			{{#withFirst thumbs 12}}
+	{{>profile-tile}}
+			{{/withFirst}}
+
+
+		</div>
+		<div class="content" id="list">
+	
+			{{#withFirst thumbs 12}}
+{{>profile-row}}
+						{{/withFirst}}
+
+		</div>
+		<div class="content" id="series">
+			<h3>Coming soon.</h3>
+		</div>
+		<div class="content" id="pinned">
+<h3>Coming soon.</h3>
+		</div>
+	</div>
+</div>

@@ -15,9 +15,10 @@ var app = (function(document, $) {
             });
             // needed to use joyride
             // doc: http://foundation.zurb.com/docs/components/joyride.html
-            $(document).on('click', '#start-jr', function() {
-                $(document).foundation('joyride', 'start');
-            });
+            // $(document).on('click', '#start-jr', function() {
+            //     $(document).foundation('joyride', 'start');
+            // });
+            $(document).foundation('tab','reflow');
 
             _userAgentInit();
         };
