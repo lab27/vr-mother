@@ -99,16 +99,47 @@ html.profile-page, .profile-page body {
 		
 	}
 
-	#right-column {
-		padding: 103px 24px 24px 24px;
+#right-column {
+	// @extend .row;
+	// @extend .collapse;
+
+	#pinned {
+		h3 {
+			color: white;
+			margin-bottom: 36px;
+		}
+	}
+	.content {
+		padding-top:24px;
+	}
+		padding: 103px 12px 24px 12px;
+
+		h5 {
+			color: rgba(white,.3);
+		}
 
 		.tab-holder {
 			height: 52px;
-			padding: 6px;
+			width: 100%;
+			padding: 0;
 			margin-bottom: 24px;
 		}
 
+		ul.tabs {
+			// @extend .left;
+			li {
+				@media #{$small-only} {
+					width: 100%;
+					& a {
+						margin-bottom: 6px;
+					}
+				}
+			}
+
+		}
+
 			.tab-title {
+
 				a {
 				border:1px solid transparent;
 				// background: rgba($info-color,.2);
@@ -120,7 +151,22 @@ html.profile-page, .profile-page body {
 				padding:rem-calc(11) rem-calc(24);
 				padding-right: 7px;
 
+				span.label-text {
+					@extend .left;
+					// @extend .show-for-small-only;
+					// @extend .show-for-xlarge-up;
+					// @extend .hide-for-medium-only;
+				}
+
+				.icon {
+					@extend .left;
+					font-size: rem-calc(16);
+					vertical-align: text-bottom;
+					margin-right: 12px;
+				}
+
 				.tab-badge {
+					@extend .right;
 					font-size: rem-calc(10);
 					background:rgba($almost-black,.4);
 					padding: 6px;
@@ -130,7 +176,7 @@ html.profile-page, .profile-page body {
 				    border-radius: 15px;
 				    display: inline-block;
 				    vertical-align: -webkit-baseline-middle;
-				    margin-top: -9px;
+				    margin-top: -5px;
 				    margin-left:12px;
 				}
 				&:hover {
@@ -172,12 +218,19 @@ html.profile-page, .profile-page body {
 		}
 
 		.viewtoggle {
-			// @extend .small-12;
-			// @extend .columns;
-			// width: 100%;
-			// text-align: right;
-			// margin-top: -60px;
-			// padding-bottom: 24px;
+			@extend .hide-for-small-only;
+			// @extend .right;
+
+			.tab-label {
+				list-style: none;
+				color: white;
+				font-size: rem-calc(12);
+				@extend .left;
+				    padding-top: 12px;
+    padding-right: 12px;
+
+			}
+
 			.tab-title {
 				a {
 					font-size: rem-calc(18);
@@ -195,6 +248,7 @@ html.profile-page, .profile-page body {
 
 				}
 			}
+
 		}
 
 		.profile-tile {
@@ -204,16 +258,28 @@ html.profile-page, .profile-page body {
 			@extend .columns;
 			padding: 6px;
 			margin: 0;
+			&:last-child {
+				@extend .end;
+			}
 			.profile-tile-inside {
 				padding: 18px;
 				// padding-bottom:24px;
 				background: rgba($almost-black,.2);
 			}
 
-			.profile-publisher {
+			.profile-date, .profile-publisher {
 				color:rgba(white,.2);
 				margin-bottom: 6px;
 				font-size: rem-calc(12);
+			}
+
+			.profile-publisher {
+				color:$secondary-color;
+			}
+
+			td.thumb {
+				width: 140px;
+				margin-bottom: 0;
 			}
 
 			.speaker {
@@ -245,7 +311,7 @@ html.profile-page, .profile-page body {
 			//   overflow: hidden;
 			//   text-overflow: ellipsis;
 			// }
-		$font-size: 16px;
+				$font-size: 16px;
 				$line-height: 1.2;
 				$lines-to-show: 2;
 
@@ -269,14 +335,36 @@ html.profile-page, .profile-page body {
 			}
 		}
 
+		table {
+			width: 100%;
+			.thumb {
+				width: 120px;
+				// padding-left: 0;
+			} 
+			tr:hover {
+				background: rgba($almost-black,.2);
+				.profile-title {
+					color: white;
+				}
+
+			}
+		}
+
 		.profile-row {
-			@extend .row;
+			// @extend .row;
 			max-width: 100%;
-			border-top: 1px solid rgba(white,.1);
+			border-top: 1px solid rgba(white,.05);
 			padding:12px 0;
 			margin-right: 0;
 			margin-left: 0;
 		
+			tr & {
+				background: red;
+			}
+
+			// td.thumb {
+			// 	min-width: 200px;
+			// }
 
 			.profile-row-inside {
 				width: 100%;
@@ -286,16 +374,21 @@ html.profile-page, .profile-page body {
 				color: rgba(white,.8);
 				font-weight: bold;
 				display: inline-block;
-				max-width: 40%;
+				// max-width: 40%;
 				line-height: rem-calc(18);
 			}
 
 			img {
-				max-height: 66px;
-				margin-right: 12px;
+				// max-height: 66px;
+				// min-height: 66px;
+				width: 117px;
+				min-width: 117px;
+				height: 66px;
+				min-height: 66px;
+				// margin-right: 12px;
 			}
 			.date {
-				color:rgba(white,.2);
+				color:rgba(white,.5);
 			}
 			
 		}

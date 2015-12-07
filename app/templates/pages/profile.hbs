@@ -3,7 +3,7 @@ title: User Patrick Frank
 layout: app/templates/layouts/profile-layout.hbs
 ---
 {{!-- Left Column --}}
-<div id="left-column">
+<div class="row" id="left-column">
 	<div id="user-block">
 		<p class="profile-avatar">
 			<img src="img/avatars/patrick.png" width="160" height="160" class="img-circle" alt="">
@@ -14,7 +14,7 @@ layout: app/templates/layouts/profile-layout.hbs
 		<ul class="user-meta-group">
 			<li class="user-meta-item">5 Talks</li>
 			<li class="user-meta-item">3 Series</li>
-			<li class="user-meta-item">14 Pinned</li>
+			<li class="user-meta-item">14 Pins</li>
 			<li class="user-meta-item">2k Plays</li>
 		</ul>
 	</div>
@@ -38,46 +38,92 @@ layout: app/templates/layouts/profile-layout.hbs
 </div>
 {{!-- Right Columns --}}
 <div id="right-column">
-<div class="tab-holder">
-	<ul class="tabs left" data-tab>
-		<li class="tab-title "><a href="#upcoming">Upcoming Talks&nbsp;&nbsp;<span class="tab-badge">3</span></a></li>
-		<li class="tab-title active"><a href="#archived">Archived Talks&nbsp;&nbsp;<span class="tab-badge">7</span></a></li>
-		<li class="tab-title"><a href="#series">Series&nbsp;&nbsp;<span class="tab-badge">3</span></a></li>
-		<li class="tab-title"><a href="#pinned">Pinned Talks&nbsp;&nbsp;<span class="tab-badge">14</span></a></li>
-	</ul>
-	<ul class="tabs right viewtoggle" data-tab>
-		<li class="tab-title "><a href="#list"><span class="icon-uniE789"></span></a></li>
-		<li class="tab-title active"><a href="#archived"><span class="icon-uniE78A"></span></a></li>
-		
-	</ul></div>
-	<div class="tabs-content">
-		<div class="content" id="upcoming">
-	
-			<h3>Coming soon upcoming.</h3>
-
-		</div>
-
-		
-		<div class="content active" id="archived">
+	<div class="tab-holder">
+		<ul class="tabs left" data-tab>
 			
-			{{#withFirst thumbs 12}}
-	{{>profile-tile}}
-			{{/withFirst}}
-
-
-		</div>
-		<div class="content" id="list">
-	
-			{{#withFirst thumbs 12}}
-{{>profile-row}}
+			<li class="tab-title" id="tab-upcoming">
+				<a href="#upcoming">
+					<span class="icon icon-uniE875"> </span> <span class="label-text">Upcoming</span>&nbsp;&nbsp;<span class="tab-badge">3</span></a>
+				</li>
+				<li class="tab-title active" id="tab-archived">
+					<a href="#archived">
+						<span class="icon icon-uniE6A0"> </span> <span class="label-text">Archived</span>&nbsp;&nbsp;<span class="tab-badge">7</span>
+					</a>
+				</li>
+				
+				<li class="tab-title" id="tab-series">
+					<a href="#series">
+						<span class="icon icon-uniE6B2"> </span> <span class="label-text">Series</span>&nbsp;&nbsp;<span class="tab-badge">3</span>
+					</a>
+				</li>
+				
+				<li class="tab-title" id="tab-pinned">
+					<a href="#pinned">
+						<span class="icon icon-uniE8E6"> </span> <span class="label-text">Pinned</span>&nbsp;&nbsp;<span class="tab-badge">12</span></a>
+					</li>
+				</ul>
+				<ul class="tabs viewtoggle right" data-tab>
+					<li class="tab-label">VIEW:</li>
+					<li class="tab-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
+					<li class="tab-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
+				</ul>
+			</div>
+			<div class="tabs-content">
+				<div class="content" id="upcoming">
+					
+					{{#withFirst thumbs 3}}
+					{{>upcoming-tile}}
+					{{/withFirst}}
+				</div>
+				<div class="content" id="upcoming-list">
+					<table id="archive-table">
+						<thead>
+							<tr>
+								<th class="thumb">Image</th>
+								<th>Title</th>
+								
+								<th>Date</th>
+							</tr>
+						</thead>
+						{{#withFirst thumbs 7}}
+						{{>profile-row}}
 						{{/withFirst}}
-
+					</table>
+					
+				</div>
+				
+				<div class="content active" id="archived">
+					
+					{{#withFirst thumbs 7}}
+					{{>archive-tile}}
+					{{/withFirst}}
+				</div>
+				<div class="content" id="list">
+					<table id="archive-table">
+						<thead>
+							<tr>
+								<th class="thumb">Image</th>
+								<th>Title</th>
+								<th>Date</th>
+								<th>Plays</th>
+							</tr>
+						</thead>
+						{{#withFirst thumbs 7}}
+						{{>profile-row}}
+						{{/withFirst}}
+					</table>
+					
+				</div>
+				<div class="content" id="series">
+					{{#each series}}
+					{{>series}}
+					{{/each}}
+				</div>
+				<div class="content" id="pinned">
+					
+					{{#each thumbs}}
+					{{>pinned-tile}}
+					{{/each}}
+				</div>
+			</div>
 		</div>
-		<div class="content" id="series">
-			<h3>Coming soon.</h3>
-		</div>
-		<div class="content" id="pinned">
-<h3>Coming soon.</h3>
-		</div>
-	</div>
-</div>
