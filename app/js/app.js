@@ -229,8 +229,13 @@ window.setInterval(function(){
     {"max-height":Math.random() * 20});
 }, 100);
 
-//chaning the viewtoggle targets and visiblility:
-$('#tab-upcoming a').on('click', function(){
-    // alert('me:' + $(this).parent().attr('id'));
-    $('ul.viewtoggle li a#list-vew').attr('href','#upcoming-list');
+
+//change to light view on avatar click (profile page)
+$('.profile-avatar').on('click',function(){
+    $('html').toggleClass('profile-light');
+    
+});
+
+$('#user-name').on('click',function(){
+    $('.tab-holder').toggleClass('funky');
 });

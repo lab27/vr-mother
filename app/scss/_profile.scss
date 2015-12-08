@@ -1,17 +1,29 @@
 html.profile-page, .profile-page body {
 	background:$talk-dark;
+	height:100%;
+	min-height:100vh;
+}
+
+html.profile-light, .profile-light body {
+	background: $info-color;
+	height:100%;
+	min-height:100vh;
 }
 
 .profile-page body {
 	// padding-top: 103px;
 
+
 	#left-column {
 		padding: 103px 24px 24px 24px;
-		color: $info-color;
+		color: white;
+
+		transition: all .2 ease;
 
 
 		h3 {
 			color: $secondary-color;
+			font-size: rem-calc(36);
 		}
 
 		p {
@@ -42,7 +54,7 @@ html.profile-page, .profile-page body {
 		}
 
 		hr {
-			border-top:1px solid rgba($info-color,.2);
+			border-top:4px solid $secondary-color;
 			margin-bottom: 24px;
 		}
 
@@ -56,9 +68,10 @@ html.profile-page, .profile-page body {
 		}
 
 		.column-header {
-			text-transform: uppercase;
+			// text-transform: uppercase;
 			color: white;
 			font-weight: bold;
+			// font-family: $header-font-family;
 		}
 
 		.user-meta-group {
@@ -85,12 +98,12 @@ html.profile-page, .profile-page body {
 		@media #{$large-up}{
 			background: rgba($almost-black,.2);
 			max-width: 396px;
-			padding:48px;
+			padding:24px;
 			padding-top:103px;
 			position: absolute;
 			left:0;
 			top:0;
-
+			min-height:  100vh;
 
 		}
 				#user-block {
@@ -123,6 +136,62 @@ html.profile-page, .profile-page body {
 			width: 100%;
 			padding: 0;
 			margin-bottom: 24px;
+		}
+
+		.funky {
+			// height: 84px;
+			padding-left: 6px;
+			.tabs.viewtoggle {
+					display: none !important;
+				}
+			ul.tabs {
+
+				
+
+				.tab-title {
+					margin-right: 48px;
+ 						&.active {
+							border-bottom: 4px solid $secondary-color;
+							a {
+								color: $secondary-color;
+							}
+							.tab-badge {
+								background: $secondary-color;
+							}
+						}
+					a {
+						background: none;
+						font-family: $header-font-family;
+						letter-spacing: 2px;
+						font-size: rem-calc(16);
+						font-weight: normal;
+						color: rgba($secondary-color,.5);
+						padding: 0;
+						margin-right:0;
+						text-transform: uppercase;
+						height: 40px
+
+					}
+					.tab-badge {
+						background: rgba($secondary-color,.5);
+						color: white;
+						margin-left: -4px;
+						// margin-right: 48px;
+						min-width: 24px;
+				    height: 24px;
+				    border-radius: 12px;
+				    padding-top:4px;
+						// width: 24px;
+						// max-width: 24px;
+					}
+
+					.icon {
+						margin-right: 6px;
+						margin-top: 0px;
+						font-size: rem-calc(24);
+					}
+				}
+			}
 		}
 
 		ul.tabs {
@@ -265,10 +334,12 @@ html.profile-page, .profile-page body {
 				padding: 18px;
 				// padding-bottom:24px;
 				background: rgba($almost-black,.2);
+				background: rgba(#3d404d, .5);
+				// background: $primary-color;
 			}
 
 			.profile-date, .profile-publisher {
-				color:rgba(white,.2);
+				color:rgba(white,.5);
 				margin-bottom: 6px;
 				font-size: rem-calc(12);
 			}
@@ -392,6 +463,85 @@ html.profile-page, .profile-page body {
 			}
 			
 		}
+	}
+}
+
+.profile-light body {
+	#left-column {
+		// padding:0;
+		background: rgba($almost-black,.1);
+		background:rgba(white,1);
+		color: $almost-black;
+		#user-block {
+			img {
+				margin-bottom: 24px;
+			}
+
+			#user-name {
+				margin-bottom: 0;
+			}
+		}
+		p {
+			color: $almost-black;
+		}
+		.column-header {
+			color: $almost-black;
+			// letter-spacing: 2px;
+			margin-bottom: 6px;
+			margin-top: 24px;
+			text-transform: normal;
+		}
+		#user-description {
+			color: $almost-black;
+			margin-top: 0;
+			font-size: rem-calc(18);
+			font-weight:200;
+			// font-weight: bold;
+		}
+	}
+
+	#right-column {
+
+	
+
+		.tabs li a {
+			color: rgba($almost-black,.8);
+			&:hover {
+				color: rgba($almost-black,1);
+			}
+		}
+
+		
+
+		ul.viewtoggle  {
+				@extend .hide;
+			li.tab-label {
+				color: $almost-black;
+			}
+			li.tab-title {
+				a {
+				color: rgba($almost-black,.2);
+			}
+			
+			&.active a {
+				color: $almost-black;
+			}
+			}
+		}
+
+		.profile-tile {
+			.profile-tile-inside {
+			background: rgba(white,1);
+			// background: $brand-purple;
+			.profile-title {
+				color: $almost-black;
+			}
+			.profile-publisher, .profile-date {
+				color: $talk-dark;
+			}
+		}
+		}
+
 	}
 }
 

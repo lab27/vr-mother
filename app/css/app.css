@@ -458,7 +458,7 @@ img {
 .clearfix:after {
   clear: both; }
 
-.hide {
+.hide, .profile-light body #right-column ul.viewtoggle {
   display: none; }
 
 .invisible {
@@ -11797,13 +11797,22 @@ button,
   color: #fef1de; }
 
 html.profile-page, .profile-page body {
-  background: #29292b; }
+  background: #29292b;
+  height: 100%;
+  min-height: 100vh; }
+
+html.profile-light, .profile-light body {
+  background: #fef1de;
+  height: 100%;
+  min-height: 100vh; }
 
 .profile-page body #left-column {
   padding: 103px 24px 24px 24px;
-  color: #fef1de; }
+  color: white;
+  transition: all .2 ease; }
   .profile-page body #left-column h3 {
-    color: #54c6c6; }
+    color: #54c6c6;
+    font-size: 2.25rem; }
   .profile-page body #left-column p {
     font-size: 0.875rem; }
   .profile-page body #left-column .profile-avatar {
@@ -11824,12 +11833,11 @@ html.profile-page, .profile-page body {
     margin-top: 12px;
     color: white; }
   .profile-page body #left-column hr {
-    border-top: 1px solid rgba(254, 241, 222, 0.2);
+    border-top: 4px solid #54c6c6;
     margin-bottom: 24px; }
   .profile-page body #left-column #user-about {
     padding: 0; }
   .profile-page body #left-column .column-header {
-    text-transform: uppercase;
     color: white;
     font-weight: bold; }
   .profile-page body #left-column .user-meta-group {
@@ -11851,11 +11859,12 @@ html.profile-page, .profile-page body {
     .profile-page body #left-column {
       background: rgba(18, 18, 20, 0.2);
       max-width: 396px;
-      padding: 48px;
+      padding: 24px;
       padding-top: 103px;
       position: absolute;
       left: 0;
-      top: 0; } }
+      top: 0;
+      min-height: 100vh; } }
   .profile-page body #left-column #user-block {
     text-align: center; }
 
@@ -11873,6 +11882,41 @@ html.profile-page, .profile-page body {
     width: 100%;
     padding: 0;
     margin-bottom: 24px; }
+  .profile-page body #right-column .funky {
+    padding-left: 6px; }
+    .profile-page body #right-column .funky .tabs.viewtoggle {
+      display: none !important; }
+    .profile-page body #right-column .funky ul.tabs .tab-title {
+      margin-right: 48px; }
+      .profile-page body #right-column .funky ul.tabs .tab-title.active {
+        border-bottom: 4px solid #54c6c6; }
+        .profile-page body #right-column .funky ul.tabs .tab-title.active a {
+          color: #54c6c6; }
+        .profile-page body #right-column .funky ul.tabs .tab-title.active .tab-badge {
+          background: #54c6c6; }
+      .profile-page body #right-column .funky ul.tabs .tab-title a {
+        background: none;
+        font-family: "Eagle", "Eagle-Book";
+        letter-spacing: 2px;
+        font-size: 1rem;
+        font-weight: normal;
+        color: rgba(84, 198, 198, 0.5);
+        padding: 0;
+        margin-right: 0;
+        text-transform: uppercase;
+        height: 40px; }
+      .profile-page body #right-column .funky ul.tabs .tab-title .tab-badge {
+        background: rgba(84, 198, 198, 0.5);
+        color: white;
+        margin-left: -4px;
+        min-width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        padding-top: 4px; }
+      .profile-page body #right-column .funky ul.tabs .tab-title .icon {
+        margin-right: 6px;
+        margin-top: 0px;
+        font-size: 1.5rem; }
   @media only screen and (max-width: 40em) {
     .profile-page body #right-column ul.tabs li {
       width: 100%; }
@@ -11938,9 +11982,10 @@ html.profile-page, .profile-page body {
     margin: 0; }
     .profile-page body #right-column .profile-tile .profile-tile-inside {
       padding: 18px;
-      background: rgba(18, 18, 20, 0.2); }
+      background: rgba(18, 18, 20, 0.2);
+      background: rgba(61, 64, 77, 0.5); }
     .profile-page body #right-column .profile-tile .profile-date, .profile-page body #right-column .profile-tile .profile-publisher {
-      color: rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.5);
       margin-bottom: 6px;
       font-size: 0.75rem; }
     .profile-page body #right-column .profile-tile .profile-publisher {
@@ -12004,6 +12049,48 @@ html.profile-page, .profile-page body {
       min-height: 66px; }
     .profile-page body #right-column .profile-row .date {
       color: rgba(255, 255, 255, 0.5); }
+
+.profile-light body #left-column {
+  background: rgba(18, 18, 20, 0.1);
+  background: white;
+  color: #121214; }
+  .profile-light body #left-column #user-block img {
+    margin-bottom: 24px; }
+  .profile-light body #left-column #user-block #user-name {
+    margin-bottom: 0; }
+  .profile-light body #left-column p {
+    color: #121214; }
+  .profile-light body #left-column .column-header {
+    color: #121214;
+    margin-bottom: 6px;
+    margin-top: 24px;
+    text-transform: normal; }
+  .profile-light body #left-column #user-description {
+    color: #121214;
+    margin-top: 0;
+    font-size: 1.125rem;
+    font-weight: 200; }
+
+.profile-light body #right-column .tabs li a {
+  color: rgba(18, 18, 20, 0.8); }
+  .profile-light body #right-column .tabs li a:hover {
+    color: #121214; }
+
+.profile-light body #right-column ul.viewtoggle li.tab-label {
+  color: #121214; }
+
+.profile-light body #right-column ul.viewtoggle li.tab-title a {
+  color: rgba(18, 18, 20, 0.2); }
+
+.profile-light body #right-column ul.viewtoggle li.tab-title.active a {
+  color: #121214; }
+
+.profile-light body #right-column .profile-tile .profile-tile-inside {
+  background: white; }
+  .profile-light body #right-column .profile-tile .profile-tile-inside .profile-title {
+    color: #121214; }
+  .profile-light body #right-column .profile-tile .profile-tile-inside .profile-publisher, .profile-light body #right-column .profile-tile .profile-tile-inside .profile-date {
+    color: #29292b; }
 
 #filter-bar {
   padding-top: 24px; }
