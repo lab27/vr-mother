@@ -11830,8 +11830,9 @@ html.profile-light, .profile-light body {
     line-height: 0.75rem;
     margin-top: -4px; }
   .profile-page body #left-column #user-description {
-    margin-top: 12px;
-    color: white; }
+    margin-top: 0;
+    font-size: 1.125rem;
+    font-weight: 200; }
   .profile-page body #left-column hr {
     border-top: 4px solid #54c6c6;
     margin-bottom: 24px; }
@@ -11839,7 +11840,10 @@ html.profile-light, .profile-light body {
     padding: 0; }
   .profile-page body #left-column .column-header {
     color: white;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 24px;
+    text-transform: normal; }
   .profile-page body #left-column .user-meta-group {
     margin-bottom: 48px; }
     .profile-page body #left-column .user-meta-group li {
@@ -11867,6 +11871,10 @@ html.profile-light, .profile-light body {
       min-height: 100vh; } }
   .profile-page body #left-column #user-block {
     text-align: center; }
+    .profile-page body #left-column #user-block img {
+      margin-bottom: 24px; }
+    .profile-page body #left-column #user-block #user-name {
+      margin-bottom: 0; }
 
 .profile-page body #right-column {
   padding: 103px 12px 24px 12px; }
@@ -11898,7 +11906,7 @@ html.profile-light, .profile-light body {
         background: none;
         font-family: "Eagle", "Eagle-Book";
         letter-spacing: 2px;
-        font-size: 1rem;
+        font-size: 0.875rem;
         font-weight: normal;
         color: rgba(84, 198, 198, 0.5);
         padding: 0;
@@ -11915,7 +11923,7 @@ html.profile-light, .profile-light body {
         padding-top: 4px; }
       .profile-page body #right-column .funky ul.tabs .tab-title .icon {
         margin-right: 6px;
-        margin-top: 0px;
+        margin-top: -2px;
         font-size: 1.5rem; }
   @media only screen and (max-width: 40em) {
     .profile-page body #right-column ul.tabs li {
@@ -12054,10 +12062,6 @@ html.profile-light, .profile-light body {
   background: rgba(18, 18, 20, 0.1);
   background: white;
   color: #121214; }
-  .profile-light body #left-column #user-block img {
-    margin-bottom: 24px; }
-  .profile-light body #left-column #user-block #user-name {
-    margin-bottom: 0; }
   .profile-light body #left-column p {
     color: #121214; }
   .profile-light body #left-column .column-header {
@@ -12066,10 +12070,7 @@ html.profile-light, .profile-light body {
     margin-top: 24px;
     text-transform: normal; }
   .profile-light body #left-column #user-description {
-    color: #121214;
-    margin-top: 0;
-    font-size: 1.125rem;
-    font-weight: 200; }
+    color: #121214; }
 
 .profile-light body #right-column .tabs li a {
   color: rgba(18, 18, 20, 0.8); }
@@ -12091,6 +12092,8 @@ html.profile-light, .profile-light body {
     color: #121214; }
   .profile-light body #right-column .profile-tile .profile-tile-inside .profile-publisher, .profile-light body #right-column .profile-tile .profile-tile-inside .profile-date {
     color: #29292b; }
+  .profile-light body #right-column .profile-tile .profile-tile-inside .speaker, .profile-light body #right-column .profile-tile .profile-tile-inside #talk-description .format-box, #talk-description .profile-light body #right-column .profile-tile .profile-tile-inside .format-box {
+    color: #121214; }
 
 #filter-bar {
   padding-top: 24px; }
