@@ -12,7 +12,7 @@ body.talk-page {
 
 .row {
     max-width: 68rem;
-        @media #{$xlarge-up} {
+    @media #{$xlarge-up} {
         max-width: 88rem
     }
 }
@@ -23,16 +23,14 @@ body.talk-page {
     @media #{$medium-up} {
         padding-top: 78px;
         padding-bottom: 48px;
-
     }
-            &.alt, &.alt3 {
-            padding-top: 78px;
-            @media #{$medium-up} {
-        padding-top: 103px;
-        
-
-    }
+    &.alt,
+    &.alt3 {
+        padding-top: 78px;
+        @media #{$medium-up} {
+            padding-top: 103px;
         }
+    }
 }
 
 button,
@@ -71,27 +69,24 @@ button,
     margin-top: 12px;
     a {
         font-weight: normal;
-    color: $secondary-color;
-    line-height: rem-calc(16);
-    &:hover {
-        text-decoration: underline;
+        color: $secondary-color;
+        line-height: rem-calc(16);
+        &:hover {
+            text-decoration: underline;
+        }
     }
-}
- @media #{$large-up} {
+    @media #{$large-up} {
         margin-top: 0;
-        
-
     }
-
 }
 
 .pub-block {
     padding-bottom: 50px;
     // margin-bottom: 24px;
     .alt & {
-        padding:12px;
+        padding: 12px;
         padding-bottom: 12px;
-        background: rgba($almost-black,.3);
+        background: rgba($almost-black, .3);
         margin-bottom: 24px;
     }
 }
@@ -215,8 +210,6 @@ button,
     }
 }
 
-
-
 #talk-playbar {
     max-width: 100vw;
     min-height: 70px;
@@ -271,12 +264,14 @@ button,
 
 .muted {
     background: $alert-color;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background: $alert-color;
     }
 }
 
-#meter, .playbar-divider {
+#meter,
+.playbar-divider {
     flex: 0 0 12px;
     display: flex;
     flex-flow: column nowrap;
@@ -328,6 +323,11 @@ button,
     border-radius: 2px;
 }
 
+.track-live {
+    background: $alert-color;
+    width: 43%;
+}
+
 .talk-title {
     h3 {
         color: $secondary-color;
@@ -344,6 +344,19 @@ button,
             line-height: rem-calc(48);
             margin-bottom: 18px;
         }
+        .live-badge {
+            font-family: $body-font-family;
+            font-weight: bold;
+            font-size: 1rem;
+            color: white;
+            background: $alert-color;
+            padding: 10px;
+            border-radius: 3px;
+            letter-spacing: 1px;
+            padding-bottom: -9px;
+            line-height: -53px;
+            vertical-align: text-bottom;
+        }
     }
     .lead {
         font-size: rem-calc(16);
@@ -353,10 +366,11 @@ button,
         // max-width: 540px;
         margin-bottom: 82px;
         @media #{$medium-up} {
-                 font-size: rem-calc(18);
+            font-size: rem-calc(18);
             line-height: rem-calc(24);
         }
-        .alt &,.alt3 &{
+        .alt &,
+        .alt3 & {
             margin-bottom: 48px;
         }
         .inline-speaker {
@@ -381,17 +395,15 @@ button,
 }
 
 #date-playcount {
- 
-        padding: 12px;
-        margin-bottom: 12px;
-        margin-right: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+    margin-right: 6px;
+    font-size: rem-calc(12);
+    background: rgba($almost-black, .2);
+    color: rgba($light-gray, .4);
+    p {
         font-size: rem-calc(12);
-        background: rgba($almost-black, .2);
-        color: rgba($light-gray, .4);
-        p {
-            font-size: rem-calc(12);
-        }
-    
+    }
 }
 
 #talk-actions {
@@ -613,7 +625,7 @@ button,
         padding: 12px;
         margin-bottom: 12px;
         &:hover {
-            background:rgba(#3d404d, .8);
+            background: rgba(#3d404d, .8);
             .reco-title {
                 color: $light-gray;
             }
@@ -637,21 +649,19 @@ button,
             content: "333";
             font-size: rem-calc(36);
             color: white;
-            position:absolute;
+            position: absolute;
             display: block;
             width: 100px;
             height: 100px;
-            top:-100px;
+            top: -100px;
             z-index: 6000;
         }
-
         .reco-play {
             color: white;
             font-size: 36px;
             position: absolute;
-            margin-top:-48px;
+            margin-top: -48px;
             width: 100%;
-
         }
     }
 }
