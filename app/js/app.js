@@ -18,7 +18,7 @@ var app = (function(document, $) {
             // $(document).on('click', '#start-jr', function() {
             //     $(document).foundation('joyride', 'start');
             // });
-            $(document).foundation('tab','reflow');
+            $(document).foundation('tab', 'reflow');
 
             _userAgentInit();
         };
@@ -224,18 +224,19 @@ $('.tile-image').each(function() {
 });
 
 
-window.setInterval(function(){
-  $('.metering').css(
-    {"max-height":Math.random() * 20});
+window.setInterval(function() {
+    $('.metering').css({
+        "max-height": Math.random() * 20
+    });
 }, 100);
 
 
 //change to light view on avatar click (profile page)
-$('.profile-avatar').on('click',function(){
-    $('html').toggleClass('profile-light');
-    
-});
+// $('.profile-avatar').on('click',function(){
+//     $('html').toggleClass('profile-light');
 
-$('#user-name').on('click',function(){
-    $('.tab-holder').toggleClass('funky');
-});
+// });
+
+// $('#user-name').on('click',function(){
+//     $('.tab-holder').toggleClass('funky');
+// });

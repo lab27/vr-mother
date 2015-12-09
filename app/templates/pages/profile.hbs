@@ -5,18 +5,26 @@ layout: app/templates/layouts/profile-layout.hbs
 {{!-- Left Column --}}
 <div class="row" id="left-column">
 	<div id="user-block">
-		<p class="profile-avatar">
-			<img src="img/avatars/patrick.png" width="220" height="220" class="img-circle" alt="">
-		</p>
+	<div class="publisher-badge"></div>
+		<div class="profile-avatar">
+					<!-- <div id="user-badge"><span class="icon-uniE913"></span></div> -->
+
+			<img src="img/avatars/patrick.png" width="160" height="160" class="img-circle" alt="">
+		</div>
 		<h3 id="user-name">Patrick Frank</h3>
-		<!-- <p id="user-badge">Publisher</p> -->
+		
 		<p id="user-description">Composer, cultural theorist, co-founder and CEO Voice Republic.</p>
-<!-- 		<ul class="user-meta-group">
+		<ul class="user-meta-group">
 			<li class="user-meta-item">5 Talks</li>
 			<li class="user-meta-item">3 Series</li>
 			<li class="user-meta-item">14 Pins</li>
-			<li class="user-meta-item">2k Plays</li>
-		</ul> -->
+			{{!-- <li class="user-meta-item">2k Plays</li> --}}
+		</ul>
+		<ul class="social-links">
+			<li class="list-item"><span class="icon-uniE949"></span></li>
+			<li class="list-item"><span class="icon-uniE94A"></span></li>
+			<li class="list-item"><span class="icon-uniE941"></span></li>
+		</ul> 
 	</div>
 	<hr>
 	<div class="row" id="user-about">
@@ -38,7 +46,7 @@ layout: app/templates/layouts/profile-layout.hbs
 </div>
 {{!-- Right Columns --}}
 <div id="right-column">
-	<div class="tab-holder">
+	<div class="tab-holder funky">
 		<ul class="tabs left" data-tab>
 			
 			<li class="tab-title" id="tab-upcoming">
