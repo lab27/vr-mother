@@ -22,72 +22,6 @@
     </head>
     <body class="">
         
-        <div class="slideUp">
-        <nav class="top-bar" data-topbar role="navigation">
-          <ul class="title-area">
-            <li class="name">
-              <a href="#"><img src="img/logo/logo-red.svg" width="40"><span class="show-for-large-up">VOICE REPUBLIC</span></a>
-            </li>
-            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-            <li class="toggle-topbar"><a href="#"><span class="icon-uniE7E9"></span> </a></li>
-          </ul>
-          <section class="top-bar-section">
-            <!-- Right Nav Section -->
-            <ul class="right">
-                  <li><a href="#"><span class="search-line">______________</span><span class="icon-uniE7E9"></span></a></li>
-        
-              <li class="has-dropdown">
-                <a href="#">Senden</a>
-                <ul class="dropdown">
-                  <li class="title">Produkte</li>
-                  <li><a href="#">Livestream</a></li>
-                  <li><a href="#">Audio-Archiv</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Preise</a></li>
-                  <li><a href="#">Hilfe</a></li>
-                  <li class="divider"></li>
-                  <li class="title">Lösungen</li>
-                  <li class=""><a href="#">Konferenzen</a></li>
-                  <li> <a href="#">Wissenschaft &amp; Bildung</a></li>
-                  <li><a href="#">Kultur & Events</a></li>
-                  <li><a href="#">Technologie</a></li>
-                  <li><a href="#">Unternehmen</a></li>
-                  <li><a href="#">Agenturen</a></li>
-                  <li><a href="#">Medien</a></li>
-                  <li class="divider"></li>
-                  <li><a href=#><strong>Jetzt starten &raquo;</strong></a></li>
-                </ul>
-              </li>
-              <li class="has-dropdown">
-                <a href="#">Hören</a>
-                <ul class="dropdown">
-                  <li><a href="coming.html">Coming Up Live</a></li>
-                  <li class="divider"></li>
-                  
-                  <li class="title">Kategorien</li>
-                  <li><a href="index.html">Talk1</a></li>
-                  <li><a href="talk2.html">Talk2</a></li>
-                  <li><a href="#">Politik und Gesellschaft</a></li>
-                  <li><a href="#">Wissenschaften</a></li>
-                  <li><a href="#">Technologie</a></li>
-                  <li><a href="#">Medien</a></li>
-                  <li class="divider"></li>
-                  <li class="title">Sender</li>
-                  <li><a href="#">Konferenzen</a></li>
-                  <li><a href="#">Öffentliche Einrichtungen</a></li>
-                  <li><a href="#">Verbände &amp; NGOs</a></li>
-                  <li><a href="#">Independent</a></li>
-                  <li><a href="#">Wissenschaft</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Konto erstellen</a></li>
-              <li><a href="profile-my-new.html">Anmelden</a></li>
-            
-            </ul>
-            
-          </section>
-        </nav>
-        </div>        
 <div class="row" id="left-column">
 	<div id="user-block">
 	<div class="publisher-badge"></div>
@@ -130,38 +64,43 @@
 </div>
 <div id="right-column">
 	<div class="tab-holder funky">
-		<ul class="tabs left" data-tab>
+		<ul class="tabs left" data-tabs id="main-tabs">
 			
-			<li class="tab-title" id="tab-upcoming">
+			<li class="tabs-title" id="tab-upcoming">
 				<a href="#upcoming">
-					<span class="icon icon-uniE875"> </span> <span class="label-text">Upcoming</span>&nbsp;&nbsp;<span class="tab-badge">3</span></a>
+					<span class="icon icon-uniE875"> </span> <span class="label-text">Upcoming</span>
+					<!-- <span class="tab-badge">3</span> -->
+					</a>
 				</li>
-				<li class="tab-title active" id="tab-archived">
+				<li class="tabs-title is-active" id="tab-archived">
 					<a href="#archived">
 						<span class="icon icon-uniE6A0"> </span> <span class="label-text">Archived</span>
 					</a>
-					<span class="tab-badge">7</span>
+					<!-- <span class="tab-badge">7</span> -->
 				</li>
 				
-				<li class="tab-title" id="tab-series">
+				<li class="tabs-title" id="tab-series">
 					<a href="#series">
-						<span class="icon icon-uniE6B2"> </span> <span class="label-text">Series</span>&nbsp;&nbsp;<span class="tab-badge">3</span>
+						<span class="icon icon-uniE6B2"> </span> <span class="label-text">Series</span>
+						<!-- <span class="tab-badge">3</span> -->
 					</a>
 				</li>
 				
-				<li class="tab-title" id="tab-pinned">
+				<li class="tabs-title" id="tab-pinned">
 					<a href="#pinned">
-						<span class="icon icon-uniE8E6"> </span> <span class="label-text">Pinned</span>&nbsp;&nbsp;<span class="tab-badge">12</span></a>
+						<span class="icon icon-uniE8E6"> </span> <span class="label-text">Pinned</span>
+						<!-- <span class="tab-badge">12</span> -->
+						</a>
 					</li>
 				</ul>
-				<ul class="tabs viewtoggle right" data-tab>
+			<!-- 	<ul class="tabs viewtoggle right" data-tab>
 					<li class="tab-label">VIEW:</li>
-					<li class="tab-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
-					<li class="tab-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
-				</ul>
+					<li class="tabs-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
+					<li class="tabs-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
+				</ul> -->
 			</div>
-			<div class="tabs-content">
-				<div class="content" id="upcoming">
+			<div class="tabs-content" data-tabs-content="main-tabs">
+				<div class="tabs-panel" id="upcoming">
 					
 					
 					<div class="profile-tile">
@@ -188,7 +127,7 @@
 							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 						</div>
 					</div>				</div>
-				<div class="content" id="upcoming-list">
+	<!-- 			<div class="tabs-panel" id="upcoming-list">
 					<table id="archive-table">
 						<thead>
 							<tr>
@@ -347,9 +286,9 @@
 						
 						</tr>					</table>
 					
-				</div>
+				</div> -->
 				
-				<div class="content active" id="archived">
+				<div class="tabs-panel is-active" id="archived">
 					
 					
 					<div class="profile-tile">
@@ -408,7 +347,7 @@
 							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 						</div>
 					</div>				</div>
-				<div class="content" id="list">
+<!-- 				<div class="tabs-panel" id="list">
 					<table id="archive-table">
 						<thead>
 							<tr>
@@ -567,8 +506,8 @@
 						
 						</tr>					</table>
 					
-				</div>
-				<div class="content" id="series">
+				</div> -->
+				<div class="tabs-panel" id="series">
 					
 					<div class="profile-tile">
 						<div class="profile-tile-inside">
@@ -584,7 +523,7 @@
 							<p class="speaker">3 Talks</p>
 						</div>
 					</div>				</div>
-				<div class="content" id="pinned">
+				<div class="tabs-panel" id="pinned">
 					
 					
 					<div class="profile-tile">
@@ -708,11 +647,14 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:js js/vendor/foundation.min.js -->
-        <script src="bower_components/foundation/js/foundation/foundation.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
+        <script src="bower_components/foundation-sites/js/foundation.core.js"></script>
+        <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+        <script src="bower_components/foundation-sites/js/foundation.reveal.js"></script>
+        <script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+        <script src="bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js"></script>
+
+        <script src="bower_components/foundation-sites/js/foundation.tabs.js"></script>
+        <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
 
         
         <!-- endbuild -->

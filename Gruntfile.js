@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 
         sass: {
             options: {
-                includePaths: ['<%= app %>/bower_components/foundation/scss']
+                includePaths: ['<%= app %>/bower_components/foundation-sites/scss']
             },
             dist: {
                 options: {
@@ -241,7 +241,7 @@ module.exports = function(grunt) {
                 exclude: [
                     'modernizr',
                     'jquery-placeholder',
-                    'foundation'
+                    'foundation-sites'
                 ]
             }
         }

@@ -139,7 +139,7 @@
                     }
                 }
             }
-            @media #{$large-up} {
+            @include breakpoint(large) {
                 background: rgba($almost-black, .2);
                 max-width: 396px;
                 padding: 24px;
@@ -168,8 +168,12 @@
                     margin-bottom: 36px;
                 }
             }
+            .tabs-content {
+                border: 0;
+            }
             .content {
                 padding-top: 24px;
+                border: 0;
             }
             padding: 103px 12px 24px 12px;
             h5 {
@@ -188,6 +192,7 @@
                     display: none !important;
                 }
                 ul.tabs {
+                    border: 0;
                     .tab-title {
                         margin-right: 48px;
                         &.active {
@@ -233,7 +238,7 @@
             ul.tabs {
                 // @extend .left;
                 li {
-                    @media #{$small-only} {
+                    @include breakpoint(small only) {
                         width: 100%;
                         & a {
                             margin-bottom: 6px;
@@ -300,7 +305,7 @@
                     }
                 }
             }
-            @media #{$large-up} {
+            @include breakpoint(large) {
                 margin-left: 396px;
                 padding: 103px 48px 48px 48px;
             }

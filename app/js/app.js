@@ -7,12 +7,12 @@ var app = (function(document, $) {
             docElem.setAttribute('data-useragent', navigator.userAgent);
         },
         _init = function() {
-            $(document).foundation({
-                reveal: {
-                    animation: 'fade',
-                    animation_speed: 200
-                }
-            });
+            // $(document).foundation({
+            //     reveal: {
+            //         animation: 'fade',
+            //         animation_speed: 200
+            //     }
+            // });
             // needed to use joyride
             // doc: http://foundation.zurb.com/docs/components/joyride.html
             // $(document).on('click', '#start-jr', function() {
@@ -44,9 +44,9 @@ var app = (function(document, $) {
 //     });
 // });
 
-(function() {
-    app.init();
-})();
+// (function() {
+//     app.init();
+// })();
 
 $('.my-slides').slick({
     centerMode: true,

@@ -1,12 +1,13 @@
 {
-  "name": "vr-mother",
-  "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "isInViewport": "~2.2.4",
-    "slick-carousel": "~1.5.8",
-    "wow": "wowjs#~1.1.2"
-  },
-  "devDependencies": {
-    "animate.css": "~3.4.0"
-  }
+    "name": "vr-mother",
+    "dependencies": {
+        //"foundation": "zurb/bower-foundation",
+        "isInViewport": "~2.2.4",
+        "slick-carousel": "~1.5.8",
+        "wow": "wowjs#~1.1.2"
+    },
+    "devDependencies": {
+        "animate.css": "~3.4.0",
+        "foundation-sites": "~6.0.5"
+    }
 }
