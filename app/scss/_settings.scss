@@ -119,6 +119,7 @@ $warning-color: #ffed00 !default; // vr yellow
 $info-color: #fef1de !default; // vr beige
 $brand-purple: #a339cd !default; //vr-purple
 $light-gray: #e1e2e7 !default; //comments-bg
+$bluish-gray: #3C404B !default;
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
@@ -1037,7 +1038,7 @@ $reveal-border-width: 0;
 // $include-html-table-classes: $include-html-classes;
 // These control the background color for the table and even rows
 $table-bg: none;
-$table-even-row-bg: rgba($almost-black,.1);
+$table-even-row-bg: rgba($almost-black, .1);
 // These control the table cell border style
 // $table-border-style: solid;
 $table-border-size: 0;
@@ -1072,7 +1073,7 @@ $table-head-bg: none;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 // $include-html-tabs-classes: $include-html-classes;
 // $tabs-navigation-padding: rem-calc(16);
-$tabs-navigation-bg-color: rgba($almost-black,.2);
+$tabs-navigation-bg-color: rgba($almost-black, .2);
 $tabs-navigation-active-bg-color: $primary-color;
 $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
 $tabs-navigation-font-color: $jet;
@@ -1139,7 +1140,7 @@ $topbar-link-color-active-hover: $black;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg: rgba(0,0,0,0);
+$topbar-link-bg: rgba(0, 0, 0, 0);
 $topbar-link-bg-hover: none;
 $topbar-link-bg-color-hover: $topbar-bg-color;
 $topbar-link-bg-active: $topbar-bg-color;

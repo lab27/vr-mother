@@ -15,7 +15,7 @@
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
             <li class="name">
-              <a href="#"><img src="img/logo/logo-red.svg" width="40"><span class="show-for-large-up">VOICE REPUBLIC</span></a>
+              <a href="#"><img class="show-for-small-only" src="img/logo/logo-red.svg" width="40"><span class="show-for-large-up">VOICE REPUBLIC</span></a>
             </li>
             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
             <li class="toggle-topbar"><a href="#"><span class="icon-uniE7E9"></span> </a></li>
@@ -93,6 +93,7 @@
 			<li class="user-meta-item">3 Series</li>
 			<li class="user-meta-item">14 Pins</li>
 		</ul>
+		<p class="plays-count">2k Plays</p>
 		<ul class="social-links">
 			<li class="list-item"><span class="icon-uniE949"></span></li>
 			<li class="list-item"><span class="icon-uniE94A"></span></li>
@@ -123,23 +124,29 @@
 			
 			<li class="tab-title" id="tab-upcoming">
 				<a href="#upcoming">
-					<span class="icon icon-uniE875"> </span> <span class="label-text">Upcoming</span>&nbsp;&nbsp;<span class="tab-badge">3</span></a>
+					<span class="icon icon-uniE875"> </span> <span class="label-text">3 Upcoming</span>
+					<!-- <span class="tab-badge">3</span> -->
+					</a>
 				</li>
 				<li class="tab-title active" id="tab-archived">
 					<a href="#archived">
-						<span class="icon icon-uniE6A0"> </span> <span class="label-text">Archived</span>&nbsp;&nbsp;<span class="tab-badge">7</span>
+						<span class="icon icon-uniE6A0"> </span> <span class="label-text">7 Archived</span>
 					</a>
+					<!-- <span class="tab-badge">7</span> -->
 				</li>
 				
 				<li class="tab-title" id="tab-series">
 					<a href="#series">
-						<span class="icon icon-uniE6B2"> </span> <span class="label-text">Series</span>&nbsp;&nbsp;<span class="tab-badge">3</span>
+						<span class="icon icon-uniE6B2"> </span> <span class="label-text">3 Series</span>
+						<!-- <span class="tab-badge">3</span> -->
 					</a>
 				</li>
 				
 				<li class="tab-title" id="tab-pinned">
 					<a href="#pinned">
-						<span class="icon icon-uniE8E6"> </span> <span class="label-text">Pinned</span>&nbsp;&nbsp;<span class="tab-badge">12</span></a>
+						<span class="icon icon-uniE8E6"> </span> <span class="label-text">12 Pinned</span>
+						<!-- <span class="tab-badge">12</span> -->
+						</a>
 					</li>
 				</ul>
 				<ul class="tabs viewtoggle right" data-tab>
@@ -562,14 +569,22 @@
 						<div class="profile-tile-inside">
 							<img src="img/thumbs/series1.jpg" alt="">
 							<h5 class="profile-title">Wir reden über uns: Perspektiven der Gegenwart</h5>
-							<p class="speaker">1 Talks</p>
+							<div class="clearfix">
+							<p class="speaker left">1 Talks</p>
+							<p class="speaker right">234 Plays</p>
+					
+							</div>
 						</div>
 					</div>					
 					<div class="profile-tile">
 						<div class="profile-tile-inside">
 							<img src="img/thumbs/series2.png" alt="">
 							<h5 class="profile-title">Neue Musik Diskurs</h5>
-							<p class="speaker">3 Talks</p>
+							<div class="clearfix">
+							<p class="speaker left">3 Talks</p>
+							<p class="speaker right">1244 Plays</p>
+					
+							</div>
 						</div>
 					</div>				</div>
 				<div class="content" id="pinned">

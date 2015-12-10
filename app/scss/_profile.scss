@@ -1,6 +1,8 @@
     html.profile-page,
     .profile-page body {
         background: $talk-dark;
+        background: rgb(59, 59, 64);
+        // background: $bluish-gray;
         height: 100%;
         min-height: 100vh;
     }
@@ -12,6 +14,7 @@
     // }
     .profile-page body {
         // padding-top: 103px;
+        min-height: 100vh;
         #left-column {
             padding: 103px 24px 24px 24px;
             color: white;
@@ -107,6 +110,18 @@
                 @extend .large-offset-0;
                 @extend .columns;
                 padding: 0;
+                a {
+                    color: $secondary-color;
+                }
+            }
+            .plays-count {
+                display: inline-block;
+                background: rgba($almost-black, .2);
+                color: rgba(white, .5);
+                // width: 200px;
+                margin: 0 auto;
+                padding: 6px 12px;
+                margin-bottom: 24px;
             }
             .column-header {
                 // text-transform: uppercase;
@@ -169,14 +184,14 @@
                 }
             }
             .content {
-                padding-top: 24px;
+                padding-top: 0;
             }
             padding: 103px 12px 24px 12px;
             h5 {
                 color: rgba(white, .3);
             }
             .tab-holder {
-                height: 52px;
+                height: 36px;
                 width: 100%;
                 padding: 0;
                 margin-bottom: 24px;
@@ -191,9 +206,15 @@
                     .tab-title {
                         margin-right: 48px;
                         &.active {
-                            border-bottom: 4px solid $secondary-color;
+                            border-bottom: 2px solid $secondary-color;
                             a {
                                 color: $secondary-color;
+                                height: 24px;
+                                &:hover {
+                                    color: $secondary-color;
+                                    border-bottom: 0;
+                                    height: 24px;
+                                }
                             }
                         }
                         a {
@@ -206,7 +227,11 @@
                             padding: 0;
                             margin-right: 0;
                             text-transform: uppercase;
-                            height: 32px;
+                            height: 24px;
+                            &:hover {
+                                color: rgba(white, .6);
+                                border-bottom: 2px solid rgba(white, .2);
+                            }
                         }
                         .tab-badge {
                             background: rgba($almost-black, .5);
@@ -246,7 +271,7 @@
                     border: 1px solid transparent;
                     // background: rgba($info-color,.2);
                     height: 44px;
-                    border-radius: 22px;
+                    //border-radius: 22px;
                     margin-right: 6px;
                     color: rgba(white, .3);
                     font-weight: bold;
@@ -346,7 +371,7 @@
                     padding: 18px;
                     // padding-bottom:24px;
                     background: rgba($almost-black, .2);
-                    background: rgba(#3d404d, .5);
+                    // background: rgba(#3d404d, .5);
                     // background: $primary-color;
                 }
                 .profile-date,

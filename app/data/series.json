@@ -1,12 +1,11 @@
-[
-{
-"title":"Wir reden über uns: Perspektiven der Gegenwart",
-"image":"series1.jpg",
-"talks-count":"1"
-},
-{
-"title":"Neue Musik Diskurs",
-"image":"series2.png",
-"talks-count":"3"
-}
-]
+[{
+    "title": "Wir reden über uns: Perspektiven der Gegenwart",
+    "image": "series1.jpg",
+    "talks-count": "1",
+    "plays": "234"
+}, {
+    "title": "Neue Musik Diskurs",
+    "image": "series2.png",
+    "talks-count": "3",
+    "plays": "1244"
+}]

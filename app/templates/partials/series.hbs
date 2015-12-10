@@ -6,6 +6,10 @@ component: series
 		{{!-- <p class="profile-publisher">Published {{time-ago}} ago</p> --}}
 		<img src="img/thumbs/{{image}}" alt="">
 		<h5 class="profile-title">{{title}}</h5>
-		<p class="speaker">{{talks-count}} Talks</p>
+		<div class="clearfix">
+		<p class="speaker left">{{talks-count}} Talks</p>
+		<p class="speaker right">{{plays}} Plays</p>
+
+		</div>
 	</div>
 </div>
