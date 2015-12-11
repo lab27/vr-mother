@@ -109,9 +109,13 @@ layout: app/templates/layouts/profile-layout.hbs
 				
 				<div class="content active" id="archived">
 					
-					{{#withFirst thumbs 7}}
-					{{>archive-tile}}
-					{{/withFirst}}
+					<div class="row clearfix">{{#withFirst thumbs 7}}
+										{{>archive-tile}}
+										{{/withFirst}}</div>
+
+					<div class="row clearfix">
+						<p class="text-center">Do you have content to share? <button class="button primary">Become A Publisher on VR</button></p>
+					</div>
 				</div>
 				<div class="content" id="list">
 					<table id="archive-table">
