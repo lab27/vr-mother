@@ -188,7 +188,9 @@ hr {
     background-image: -moz-linear-gradient( 90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
-    // background: $talk-dark;
+    background: rgba($talk-dark,.5);
+    background: $secondary-color;
+    box-shadow: none;
 }
 
 //avatar

@@ -232,10 +232,10 @@ window.setInterval(function() {
 
 
 //change to light view on avatar click (profile page)
-// $('.profile-avatar').on('click',function(){
-//     $('html').toggleClass('profile-light');
+$('.profile-avatar').on('click',function(){
+    $('html').toggleClass('profile-light');
 
-// });
+});
 
 // $('#user-name').on('click',function(){
 //     $('.tab-holder').toggleClass('funky');

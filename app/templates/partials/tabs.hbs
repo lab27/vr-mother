@@ -1,0 +1,52 @@
+---
+component: tabs
+---
+<div id="talks" class="tab-holder funky">
+	<ul class="tabs left" data-tab>
+
+	{{#isnt page.type "listener"}}
+		
+		<li class="tab-title" id="tab-upcoming">
+			<a href="#upcoming">
+				<span class="icon icon-uniE875"> </span> <span class="label-text">3 Upcoming</span>
+				<!-- <span class="tab-badge">3</span> -->
+			</a>
+		</li>
+		<li class="tab-title active" id="tab-archived">
+			<a href="#archived">
+				<span class="icon icon-uniE6A0"> </span> <span class="label-text">7 Archived</span>
+			</a>
+			<!-- <span class="tab-badge">7</span> -->
+		</li>
+		
+		<li class="tab-title" id="tab-series">
+			<a href="#series">
+				<span class="icon icon-uniE6B2"> </span> <span class="label-text">3 Series</span>
+				<!-- <span class="tab-badge">3</span> -->
+			</a>
+		</li>
+
+				<li class="tab-title" id="tab-pinned">
+			<a href="#pinned">
+				<span class="icon icon-uniE8E6"> </span> <span class="label-text">12 Pinned</span>
+				<!-- <span class="tab-badge">12</span> -->
+			</a>
+		</li>
+	{{/isnt}}
+
+	{{#isnt page.type "publisher"}}
+		<li class="tab-title active" id="tab-pinned">
+			<a href="#pinned">
+				<span class="icon icon-uniE8E6"> </span> <span class="label-text">12 Pinned</span>
+				<!-- <span class="tab-badge">12</span> -->
+			</a>
+		</li>
+		{{/isnt}}
+
+	</ul>
+	<ul class="tabs viewtoggle right" data-tab>
+		<li class="tab-label">VIEW:</li>
+		<li class="tab-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
+		<li class="tab-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
+	</ul>
+</div>

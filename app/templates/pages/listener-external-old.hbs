@@ -1,0 +1,49 @@
+---
+title: Sitting Bull
+type: listener
+layout: app/templates/layouts/profile-layout.hbs
+---
+{{!-- Left Column --}}
+<div class="row" id="left-column">
+	<div id="user-block">
+		<div class="profile-avatar">
+					
+
+			<img src="img/avatars/sittingbull.jpg" width="160" height="160" class="img-circle" alt="">
+		</div>
+		<h3 id="user-name">{{title}}</h3>
+
+		<p id="user-description">Formerly Jumping Badger. Lakota holy man. Chief. Buffalo Bill Roadshow performer.</p>
+
+		<ul class="social-links">
+			<li class="list-item"><a href="#"><span class="icon-uniE949"></span></a></li>
+			<li class="list-item"><a href="#"><span class="icon-uniE94A"></span><a></li>
+			<li class="list-item"><a href="#"><span class="icon-uniE6ED"></span></a></li>
+		</ul> 
+		<p id="jump-link"><a href="#talks"><button>12 Pinned Talks</button></a></p>
+	</div>
+
+	<hr>
+	<div class="row" id="user-about">
+		<p class="column-header">About Sitting Bull</p>
+		{{#markdown}}
+
+Sitting Bull (Lakota: Tȟatȟáŋka Íyotake in Standard Lakota Orthography, also nicknamed Húŋkešni or "Slow"; c. 1831 – December 15, 1890) was a Hunkpapa Lakota holy man who led his people as a tribal chief during years of resistance to United States government policies. He was killed by Indian agency police on the Standing Rock Indian Reservation during an attempt to arrest him, at a time when authorities feared that he would join the Ghost Dance movement.
+
+Before the Battle of the Little Bighorn, Sitting Bull had a vision in which he saw the defeat of the 7th Cavalry under Lt. Col. George Armstrong Custer on June 25, 1876. Sitting Bull's leadership inspired his people to a major victory. Months after their victory at the battle, Sitting Bull and his group left the United States for Wood Mountain, North-West Territories (now Saskatchewan), where he remained until 1881, at which time he and most of his band returned to US territory and surrendered to U.S. forces. A small remnant of his band under Chief Waŋblí Ǧí decided to stay at Wood Mountain.
+
+After working as a performer with Buffalo Bill's Wild West show, Sitting Bull returned to the Standing Rock Agency in South Dakota. Because of fears that he would use his influence to support the Ghost Dance movement, Indian Service agent James McLaughlin at Fort Yates ordered his arrest. During an ensuing struggle between Sitting Bull's followers and the agency police, Sitting Bull was shot in the side and head by Standing Rock policemen Lieutenant Bull Head (Tatankapah Lakota: Tȟatȟáŋka Pȟá) and Red Tomahawk (Marcelus Chankpidutah Lakota: "Čhaŋȟpí Dúta") after the police were fired upon by Sitting Bull's supporters. His body was taken to nearby Fort Yates for burial. In 1953, his Lakota family exhumed what were believed to be his remains, reburying them near Mobridge, South Dakota, near his birthplace.
+
+{{/markdown}}
+	</div>
+
+</div>
+
+
+{{!-- Right Columns --}}
+<div id="right-column">
+{{>tabs}}
+{{>tab-content}}
+
+{{>cta}}
+		</div>

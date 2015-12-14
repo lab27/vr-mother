@@ -1133,11 +1133,11 @@ $topbar-height: rem-calc(60);
 // $topbar-title-weight: $font-weight-normal;
 $topbar-title-font-size: rem-calc(14);
 // Set the link colors and styles for top-level nav
-$topbar-link-color: $secondary-color;
-$topbar-link-color-hover: $light-gray;
+$topbar-link-color: $light-gray;
+$topbar-link-color-hover: $secondary-color;
 $topbar-link-color-active: $jet;
 $topbar-link-color-active-hover: $black;
-// $topbar-link-weight: $font-weight-normal;
+$topbar-link-weight: bold;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: rgba(0, 0, 0, 0);
@@ -1146,7 +1146,7 @@ $topbar-link-bg-color-hover: $topbar-bg-color;
 $topbar-link-bg-active: $topbar-bg-color;
 $topbar-link-bg-active-hover: $topbar-bg-color;
 // $topbar-link-font-family: $body-font-family;
-// $topbar-link-text-transform: none;
+$topbar-link-text-transform: uppercase;
 // $topbar-link-padding: ($topbar-height / 3);
 // $topbar-back-link-size: rem-calc(18);
 // $topbar-link-dropdown-padding: rem-calc(20);

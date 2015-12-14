@@ -96,14 +96,14 @@ img {
 .right, .profile-page body #right-column .tab-title a .tab-badge {
   float: right !important; }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before, .profile-page body #left-column #user-description:before, .clearfix:after, .profile-page body #left-column #user-description:after {
   content: " ";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, .profile-page body #left-column #user-description:after {
   clear: both; }
 
-.hide {
+.hide, .profile-light body #right-column ul.viewtoggle {
   display: none; }
 
 .invisible {
@@ -141,6 +141,8 @@ select {
   .row.collapse > #talk-actions, #comments
   .row.collapse > .comment-meta, #comments
   .row.collapse > .comment-content, .profile-page body #left-column
+  .row.collapse > #user-description, .profile-page body #left-column
+  .row.collapse > ul.social-links, .profile-page body #left-column
   .row.collapse > #user-about, .profile-page body #right-column
   .row.collapse > .profile-tile {
     padding-left: 0;
@@ -175,6 +177,8 @@ select {
 #talk-actions,
 #comments .comment-meta,
 #comments .comment-content,
+.profile-page body #left-column #user-description,
+.profile-page body #left-column ul.social-links,
 .profile-page body #left-column #user-about,
 .profile-page body #right-column .profile-tile {
   padding-left: 0.9375rem;
@@ -183,7 +187,7 @@ select {
   float: left; }
 
 .column + .column:last-child,
-.columns + .column:last-child, .meta-left + .column:last-child, .meta-right + .column:last-child, #talk-description + .column:last-child, #talk-actions + .column:last-child, #comments .comment-meta + .column:last-child, #comments .comment-content + .column:last-child, .profile-page body #left-column #user-about + .column:last-child, .profile-page body #right-column .profile-tile + .column:last-child,
+.columns + .column:last-child, .meta-left + .column:last-child, .meta-right + .column:last-child, #talk-description + .column:last-child, #talk-actions + .column:last-child, #comments .comment-meta + .column:last-child, #comments .comment-content + .column:last-child, .profile-page body #left-column #user-description + .column:last-child, .profile-page body #left-column ul.social-links + .column:last-child, .profile-page body #left-column #user-about + .column:last-child, .profile-page body #right-column .profile-tile + .column:last-child,
 .column +
 .columns:last-child,
 .column + .meta-left:last-child,
@@ -192,6 +196,8 @@ select {
 .column + #talk-actions:last-child,
 #comments .column + .comment-meta:last-child,
 #comments .column + .comment-content:last-child,
+.profile-page body #left-column .column + #user-description:last-child,
+.profile-page body #left-column .column + ul.social-links:last-child,
 .profile-page body #left-column .column + #user-about:last-child,
 .profile-page body #right-column .column + .profile-tile:last-child,
 .columns +
@@ -208,6 +214,10 @@ select {
 .columns:last-child,
 #comments .comment-content +
 .columns:last-child,
+.profile-page body #left-column #user-description +
+.columns:last-child,
+.profile-page body #left-column ul.social-links +
+.columns:last-child,
 .profile-page body #left-column #user-about +
 .columns:last-child,
 .profile-page body #right-column .profile-tile +
@@ -219,6 +229,8 @@ select {
 #talk-actions + .meta-left:last-child,
 #comments .comment-meta + .meta-left:last-child,
 #comments .comment-content + .meta-left:last-child,
+.profile-page body #left-column #user-description + .meta-left:last-child,
+.profile-page body #left-column ul.social-links + .meta-left:last-child,
 .profile-page body #left-column #user-about + .meta-left:last-child,
 .profile-page body #right-column .profile-tile + .meta-left:last-child,
 .columns + .meta-right:last-child,
@@ -228,6 +240,8 @@ select {
 #talk-actions + .meta-right:last-child,
 #comments .comment-meta + .meta-right:last-child,
 #comments .comment-content + .meta-right:last-child,
+.profile-page body #left-column #user-description + .meta-right:last-child,
+.profile-page body #left-column ul.social-links + .meta-right:last-child,
 .profile-page body #left-column #user-about + .meta-right:last-child,
 .profile-page body #right-column .profile-tile + .meta-right:last-child,
 .columns + #talk-description:last-child,
@@ -237,6 +251,8 @@ select {
 #talk-actions + #talk-description:last-child,
 #comments .comment-meta + #talk-description:last-child,
 #comments .comment-content + #talk-description:last-child,
+.profile-page body #left-column #user-description + #talk-description:last-child,
+.profile-page body #left-column ul.social-links + #talk-description:last-child,
 .profile-page body #left-column #user-about + #talk-description:last-child,
 .profile-page body #right-column .profile-tile + #talk-description:last-child,
 .columns + #talk-actions:last-child,
@@ -246,6 +262,8 @@ select {
 #talk-actions + #talk-actions:last-child,
 #comments .comment-meta + #talk-actions:last-child,
 #comments .comment-content + #talk-actions:last-child,
+.profile-page body #left-column #user-description + #talk-actions:last-child,
+.profile-page body #left-column ul.social-links + #talk-actions:last-child,
 .profile-page body #left-column #user-about + #talk-actions:last-child,
 .profile-page body #right-column .profile-tile + #talk-actions:last-child,
 #comments
@@ -256,6 +274,10 @@ select {
 #comments #talk-actions + .comment-meta:last-child,
 #comments .comment-meta + .comment-meta:last-child,
 #comments .comment-content + .comment-meta:last-child,
+.profile-page body #left-column #comments #user-description + .comment-meta:last-child,
+#comments .profile-page body #left-column #user-description + .comment-meta:last-child,
+.profile-page body #left-column #comments ul.social-links + .comment-meta:last-child,
+#comments .profile-page body #left-column ul.social-links + .comment-meta:last-child,
 .profile-page body #left-column #comments #user-about + .comment-meta:last-child,
 #comments .profile-page body #left-column #user-about + .comment-meta:last-child,
 .profile-page body #right-column #comments .profile-tile + .comment-meta:last-child,
@@ -268,10 +290,44 @@ select {
 #comments #talk-actions + .comment-content:last-child,
 #comments .comment-meta + .comment-content:last-child,
 #comments .comment-content + .comment-content:last-child,
+.profile-page body #left-column #comments #user-description + .comment-content:last-child,
+#comments .profile-page body #left-column #user-description + .comment-content:last-child,
+.profile-page body #left-column #comments ul.social-links + .comment-content:last-child,
+#comments .profile-page body #left-column ul.social-links + .comment-content:last-child,
 .profile-page body #left-column #comments #user-about + .comment-content:last-child,
 #comments .profile-page body #left-column #user-about + .comment-content:last-child,
 .profile-page body #right-column #comments .profile-tile + .comment-content:last-child,
 #comments .profile-page body #right-column .profile-tile + .comment-content:last-child,
+.profile-page body #left-column
+.columns + #user-description:last-child,
+.profile-page body #left-column .meta-left + #user-description:last-child,
+.profile-page body #left-column .meta-right + #user-description:last-child,
+.profile-page body #left-column #talk-description + #user-description:last-child,
+.profile-page body #left-column #talk-actions + #user-description:last-child,
+#comments .profile-page body #left-column .comment-meta + #user-description:last-child,
+.profile-page body #left-column #comments .comment-meta + #user-description:last-child,
+#comments .profile-page body #left-column .comment-content + #user-description:last-child,
+.profile-page body #left-column #comments .comment-content + #user-description:last-child,
+.profile-page body #left-column #user-description + #user-description:last-child,
+.profile-page body #left-column ul.social-links + #user-description:last-child,
+.profile-page body #left-column #user-about + #user-description:last-child,
+.profile-page body #right-column #left-column .profile-tile + #user-description:last-child,
+.profile-page body #left-column #right-column .profile-tile + #user-description:last-child,
+.profile-page body #left-column
+.columns + ul.social-links:last-child,
+.profile-page body #left-column .meta-left + ul.social-links:last-child,
+.profile-page body #left-column .meta-right + ul.social-links:last-child,
+.profile-page body #left-column #talk-description + ul.social-links:last-child,
+.profile-page body #left-column #talk-actions + ul.social-links:last-child,
+#comments .profile-page body #left-column .comment-meta + ul.social-links:last-child,
+.profile-page body #left-column #comments .comment-meta + ul.social-links:last-child,
+#comments .profile-page body #left-column .comment-content + ul.social-links:last-child,
+.profile-page body #left-column #comments .comment-content + ul.social-links:last-child,
+.profile-page body #left-column #user-description + ul.social-links:last-child,
+.profile-page body #left-column ul.social-links + ul.social-links:last-child,
+.profile-page body #left-column #user-about + ul.social-links:last-child,
+.profile-page body #right-column #left-column .profile-tile + ul.social-links:last-child,
+.profile-page body #left-column #right-column .profile-tile + ul.social-links:last-child,
 .profile-page body #left-column
 .columns + #user-about:last-child,
 .profile-page body #left-column .meta-left + #user-about:last-child,
@@ -282,6 +338,8 @@ select {
 .profile-page body #left-column #comments .comment-meta + #user-about:last-child,
 #comments .profile-page body #left-column .comment-content + #user-about:last-child,
 .profile-page body #left-column #comments .comment-content + #user-about:last-child,
+.profile-page body #left-column #user-description + #user-about:last-child,
+.profile-page body #left-column ul.social-links + #user-about:last-child,
 .profile-page body #left-column #user-about + #user-about:last-child,
 .profile-page body #right-column #left-column .profile-tile + #user-about:last-child,
 .profile-page body #left-column #right-column .profile-tile + #user-about:last-child,
@@ -295,14 +353,18 @@ select {
 .profile-page body #right-column #comments .comment-meta + .profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + .profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + .profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + .profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + .profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + .profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + .profile-tile:last-child,
 .profile-page body #left-column #right-column #user-about + .profile-tile:last-child,
 .profile-page body #right-column #left-column #user-about + .profile-tile:last-child,
 .profile-page body #right-column .profile-tile + .profile-tile:last-child {
   float: right; }
 
 .column + .column.end, .profile-page body #right-column .column + .column.profile-tile:last-child,
-.columns + .column.end, .meta-left + .column.end, .meta-right + .column.end, #talk-description + .column.end, #talk-actions + .column.end, #comments .comment-meta + .column.end, #comments .comment-content + .column.end, .profile-page body #left-column #user-about + .column.end, .profile-page body #right-column .profile-tile + .column.end, .profile-page body #right-column
-.columns + .column.profile-tile:last-child, .profile-page body #right-column .meta-left + .column.profile-tile:last-child, .profile-page body #right-column .meta-right + .column.profile-tile:last-child, .profile-page body #right-column #talk-description + .column.profile-tile:last-child, .profile-page body #right-column #talk-actions + .column.profile-tile:last-child, #comments .profile-page body #right-column .comment-meta + .column.profile-tile:last-child, .profile-page body #right-column #comments .comment-meta + .column.profile-tile:last-child, #comments .profile-page body #right-column .comment-content + .column.profile-tile:last-child, .profile-page body #right-column #comments .comment-content + .column.profile-tile:last-child, .profile-page body #left-column #right-column #user-about + .column.profile-tile:last-child, .profile-page body #right-column #left-column #user-about + .column.profile-tile:last-child, .profile-page body #right-column .profile-tile + .column.profile-tile:last-child,
+.columns + .column.end, .meta-left + .column.end, .meta-right + .column.end, #talk-description + .column.end, #talk-actions + .column.end, #comments .comment-meta + .column.end, #comments .comment-content + .column.end, .profile-page body #left-column #user-description + .column.end, .profile-page body #left-column ul.social-links + .column.end, .profile-page body #left-column #user-about + .column.end, .profile-page body #right-column .profile-tile + .column.end, .profile-page body #right-column
+.columns + .column.profile-tile:last-child, .profile-page body #right-column .meta-left + .column.profile-tile:last-child, .profile-page body #right-column .meta-right + .column.profile-tile:last-child, .profile-page body #right-column #talk-description + .column.profile-tile:last-child, .profile-page body #right-column #talk-actions + .column.profile-tile:last-child, #comments .profile-page body #right-column .comment-meta + .column.profile-tile:last-child, .profile-page body #right-column #comments .comment-meta + .column.profile-tile:last-child, #comments .profile-page body #right-column .comment-content + .column.profile-tile:last-child, .profile-page body #right-column #comments .comment-content + .column.profile-tile:last-child, .profile-page body #left-column #right-column #user-description + .column.profile-tile:last-child, .profile-page body #right-column #left-column #user-description + .column.profile-tile:last-child, .profile-page body #left-column #right-column ul.social-links + .column.profile-tile:last-child, .profile-page body #right-column #left-column ul.social-links + .column.profile-tile:last-child, .profile-page body #left-column #right-column #user-about + .column.profile-tile:last-child, .profile-page body #right-column #left-column #user-about + .column.profile-tile:last-child, .profile-page body #right-column .profile-tile + .column.profile-tile:last-child,
 .column +
 .columns.end,
 .column + .end.meta-left,
@@ -313,6 +375,11 @@ select {
 .profile-page body #right-column #comments .column + .comment-meta.profile-tile:last-child,
 #comments .column + .end.comment-content,
 .profile-page body #right-column #comments .column + .comment-content.profile-tile:last-child,
+.profile-page body #left-column .column + .end#user-description,
+.profile-page body #left-column #right-column .column + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column .column + #user-description.profile-tile:last-child,
+.profile-page body #left-column .column + ul.end.social-links,
+.profile-page body #right-column #left-column .column + ul.social-links.profile-tile:last-child,
 .profile-page body #left-column .column + .end#user-about,
 .profile-page body #left-column #right-column .column + #user-about.profile-tile:last-child,
 .profile-page body #right-column #left-column .column + #user-about.profile-tile:last-child,
@@ -332,6 +399,10 @@ select {
 .columns.end,
 #comments .comment-content +
 .columns.end,
+.profile-page body #left-column #user-description +
+.columns.end,
+.profile-page body #left-column ul.social-links +
+.columns.end,
 .profile-page body #left-column #user-about +
 .columns.end,
 .profile-page body #right-column .profile-tile +
@@ -343,6 +414,8 @@ select {
 #talk-actions + .end.meta-left,
 #comments .comment-meta + .end.meta-left,
 #comments .comment-content + .end.meta-left,
+.profile-page body #left-column #user-description + .end.meta-left,
+.profile-page body #left-column ul.social-links + .end.meta-left,
 .profile-page body #left-column #user-about + .end.meta-left,
 .profile-page body #right-column .profile-tile + .end.meta-left,
 .profile-page body #right-column
@@ -355,6 +428,10 @@ select {
 .profile-page body #right-column #comments .comment-meta + .meta-left.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + .meta-left.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + .meta-left.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + .meta-left.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + .meta-left.profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + .meta-left.profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + .meta-left.profile-tile:last-child,
 .profile-page body #left-column #right-column #user-about + .meta-left.profile-tile:last-child,
 .profile-page body #right-column #left-column #user-about + .meta-left.profile-tile:last-child,
 .profile-page body #right-column .profile-tile + .meta-left.profile-tile:last-child,
@@ -365,6 +442,8 @@ select {
 #talk-actions + .end.meta-right,
 #comments .comment-meta + .end.meta-right,
 #comments .comment-content + .end.meta-right,
+.profile-page body #left-column #user-description + .end.meta-right,
+.profile-page body #left-column ul.social-links + .end.meta-right,
 .profile-page body #left-column #user-about + .end.meta-right,
 .profile-page body #right-column .profile-tile + .end.meta-right,
 .profile-page body #right-column
@@ -377,6 +456,10 @@ select {
 .profile-page body #right-column #comments .comment-meta + .meta-right.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + .meta-right.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + .meta-right.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + .meta-right.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + .meta-right.profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + .meta-right.profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + .meta-right.profile-tile:last-child,
 .profile-page body #left-column #right-column #user-about + .meta-right.profile-tile:last-child,
 .profile-page body #right-column #left-column #user-about + .meta-right.profile-tile:last-child,
 .profile-page body #right-column .profile-tile + .meta-right.profile-tile:last-child,
@@ -387,6 +470,8 @@ select {
 #talk-actions + .end#talk-description,
 #comments .comment-meta + .end#talk-description,
 #comments .comment-content + .end#talk-description,
+.profile-page body #left-column #user-description + .end#talk-description,
+.profile-page body #left-column ul.social-links + .end#talk-description,
 .profile-page body #left-column #user-about + .end#talk-description,
 .profile-page body #right-column .profile-tile + .end#talk-description,
 .profile-page body #right-column
@@ -399,6 +484,10 @@ select {
 .profile-page body #right-column #comments .comment-meta + #talk-description.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + #talk-description.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + #talk-description.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + #talk-description.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + #talk-description.profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + #talk-description.profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + #talk-description.profile-tile:last-child,
 .profile-page body #left-column #right-column #user-about + #talk-description.profile-tile:last-child,
 .profile-page body #right-column #left-column #user-about + #talk-description.profile-tile:last-child,
 .profile-page body #right-column .profile-tile + #talk-description.profile-tile:last-child,
@@ -409,6 +498,8 @@ select {
 #talk-actions + .end#talk-actions,
 #comments .comment-meta + .end#talk-actions,
 #comments .comment-content + .end#talk-actions,
+.profile-page body #left-column #user-description + .end#talk-actions,
+.profile-page body #left-column ul.social-links + .end#talk-actions,
 .profile-page body #left-column #user-about + .end#talk-actions,
 .profile-page body #right-column .profile-tile + .end#talk-actions,
 .profile-page body #right-column
@@ -421,6 +512,10 @@ select {
 .profile-page body #right-column #comments .comment-meta + #talk-actions.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + #talk-actions.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + #talk-actions.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + #talk-actions.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + #talk-actions.profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + #talk-actions.profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + #talk-actions.profile-tile:last-child,
 .profile-page body #left-column #right-column #user-about + #talk-actions.profile-tile:last-child,
 .profile-page body #right-column #left-column #user-about + #talk-actions.profile-tile:last-child,
 .profile-page body #right-column .profile-tile + #talk-actions.profile-tile:last-child,
@@ -432,6 +527,10 @@ select {
 #comments #talk-actions + .end.comment-meta,
 #comments .comment-meta + .end.comment-meta,
 #comments .comment-content + .end.comment-meta,
+.profile-page body #left-column #comments #user-description + .end.comment-meta,
+#comments .profile-page body #left-column #user-description + .end.comment-meta,
+.profile-page body #left-column #comments ul.social-links + .end.comment-meta,
+#comments .profile-page body #left-column ul.social-links + .end.comment-meta,
 .profile-page body #left-column #comments #user-about + .end.comment-meta,
 #comments .profile-page body #left-column #user-about + .end.comment-meta,
 .profile-page body #right-column #comments .profile-tile + .end.comment-meta,
@@ -444,6 +543,10 @@ select {
 #comments .profile-page body #right-column #talk-actions + .comment-meta.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-meta + .comment-meta.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + .comment-meta.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column #user-description + .comment-meta.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column #user-description + .comment-meta.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column ul.social-links + .comment-meta.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column ul.social-links + .comment-meta.profile-tile:last-child,
 #comments .profile-page body #left-column #right-column #user-about + .comment-meta.profile-tile:last-child,
 #comments .profile-page body #right-column #left-column #user-about + .comment-meta.profile-tile:last-child,
 #comments .profile-page body #right-column .profile-tile + .comment-meta.profile-tile:last-child,
@@ -455,6 +558,10 @@ select {
 .profile-page body #right-column #comments #talk-actions + .comment-meta.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-meta + .comment-meta.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + .comment-meta.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments #user-description + .comment-meta.profile-tile:last-child,
+.profile-page body #right-column #comments #left-column #user-description + .comment-meta.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments ul.social-links + .comment-meta.profile-tile:last-child,
+.profile-page body #right-column #comments #left-column ul.social-links + .comment-meta.profile-tile:last-child,
 .profile-page body #left-column #right-column #comments #user-about + .comment-meta.profile-tile:last-child,
 .profile-page body #right-column #comments #left-column #user-about + .comment-meta.profile-tile:last-child,
 .profile-page body #right-column #comments .profile-tile + .comment-meta.profile-tile:last-child,
@@ -466,6 +573,10 @@ select {
 #comments #talk-actions + .end.comment-content,
 #comments .comment-meta + .end.comment-content,
 #comments .comment-content + .end.comment-content,
+.profile-page body #left-column #comments #user-description + .end.comment-content,
+#comments .profile-page body #left-column #user-description + .end.comment-content,
+.profile-page body #left-column #comments ul.social-links + .end.comment-content,
+#comments .profile-page body #left-column ul.social-links + .end.comment-content,
 .profile-page body #left-column #comments #user-about + .end.comment-content,
 #comments .profile-page body #left-column #user-about + .end.comment-content,
 .profile-page body #right-column #comments .profile-tile + .end.comment-content,
@@ -478,6 +589,10 @@ select {
 #comments .profile-page body #right-column #talk-actions + .comment-content.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-meta + .comment-content.profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + .comment-content.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column #user-description + .comment-content.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column #user-description + .comment-content.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column ul.social-links + .comment-content.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column ul.social-links + .comment-content.profile-tile:last-child,
 #comments .profile-page body #left-column #right-column #user-about + .comment-content.profile-tile:last-child,
 #comments .profile-page body #right-column #left-column #user-about + .comment-content.profile-tile:last-child,
 #comments .profile-page body #right-column .profile-tile + .comment-content.profile-tile:last-child,
@@ -489,9 +604,99 @@ select {
 .profile-page body #right-column #comments #talk-actions + .comment-content.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-meta + .comment-content.profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + .comment-content.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments #user-description + .comment-content.profile-tile:last-child,
+.profile-page body #right-column #comments #left-column #user-description + .comment-content.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments ul.social-links + .comment-content.profile-tile:last-child,
+.profile-page body #right-column #comments #left-column ul.social-links + .comment-content.profile-tile:last-child,
 .profile-page body #left-column #right-column #comments #user-about + .comment-content.profile-tile:last-child,
 .profile-page body #right-column #comments #left-column #user-about + .comment-content.profile-tile:last-child,
 .profile-page body #right-column #comments .profile-tile + .comment-content.profile-tile:last-child,
+.profile-page body #left-column
+.columns + .end#user-description,
+.profile-page body #left-column .meta-left + .end#user-description,
+.profile-page body #left-column .meta-right + .end#user-description,
+.profile-page body #left-column #talk-description + .end#user-description,
+.profile-page body #left-column #talk-actions + .end#user-description,
+#comments .profile-page body #left-column .comment-meta + .end#user-description,
+.profile-page body #left-column #comments .comment-meta + .end#user-description,
+#comments .profile-page body #left-column .comment-content + .end#user-description,
+.profile-page body #left-column #comments .comment-content + .end#user-description,
+.profile-page body #left-column #user-description + .end#user-description,
+.profile-page body #left-column ul.social-links + .end#user-description,
+.profile-page body #left-column #user-about + .end#user-description,
+.profile-page body #right-column #left-column .profile-tile + .end#user-description,
+.profile-page body #left-column #right-column .profile-tile + .end#user-description,
+.profile-page body #left-column #right-column
+.columns + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column .meta-left + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column .meta-right + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column #talk-description + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column #talk-actions + #user-description.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column .comment-meta + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments .comment-meta + #user-description.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column .comment-content + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments .comment-content + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-about + #user-description.profile-tile:last-child,
+.profile-page body #left-column #right-column .profile-tile + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column
+.columns + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column .meta-left + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column .meta-right + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column #talk-description + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column #talk-actions + #user-description.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column .comment-meta + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column #comments .comment-meta + #user-description.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column .comment-content + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column #comments .comment-content + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-about + #user-description.profile-tile:last-child,
+.profile-page body #right-column #left-column .profile-tile + #user-description.profile-tile:last-child,
+.profile-page body #left-column
+.columns + ul.end.social-links,
+.profile-page body #left-column .meta-left + ul.end.social-links,
+.profile-page body #left-column .meta-right + ul.end.social-links,
+.profile-page body #left-column #talk-description + ul.end.social-links,
+.profile-page body #left-column #talk-actions + ul.end.social-links,
+#comments .profile-page body #left-column .comment-meta + ul.end.social-links,
+.profile-page body #left-column #comments .comment-meta + ul.end.social-links,
+#comments .profile-page body #left-column .comment-content + ul.end.social-links,
+.profile-page body #left-column #comments .comment-content + ul.end.social-links,
+.profile-page body #left-column #user-description + ul.end.social-links,
+.profile-page body #left-column ul.social-links + ul.end.social-links,
+.profile-page body #left-column #user-about + ul.end.social-links,
+.profile-page body #right-column #left-column .profile-tile + ul.end.social-links,
+.profile-page body #left-column #right-column .profile-tile + ul.end.social-links,
+.profile-page body #left-column #right-column
+.columns + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column .meta-left + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column .meta-right + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column #talk-description + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column #talk-actions + ul.social-links.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column .comment-meta + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments .comment-meta + ul.social-links.profile-tile:last-child,
+#comments .profile-page body #left-column #right-column .comment-content + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column #comments .comment-content + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-about + ul.social-links.profile-tile:last-child,
+.profile-page body #left-column #right-column .profile-tile + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column
+.columns + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column .meta-left + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column .meta-right + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column #talk-description + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column #talk-actions + ul.social-links.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column .comment-meta + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column #comments .comment-meta + ul.social-links.profile-tile:last-child,
+#comments .profile-page body #right-column #left-column .comment-content + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column #comments .comment-content + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-about + ul.social-links.profile-tile:last-child,
+.profile-page body #right-column #left-column .profile-tile + ul.social-links.profile-tile:last-child,
 .profile-page body #left-column
 .columns + .end#user-about,
 .profile-page body #left-column .meta-left + .end#user-about,
@@ -502,6 +707,8 @@ select {
 .profile-page body #left-column #comments .comment-meta + .end#user-about,
 #comments .profile-page body #left-column .comment-content + .end#user-about,
 .profile-page body #left-column #comments .comment-content + .end#user-about,
+.profile-page body #left-column #user-description + .end#user-about,
+.profile-page body #left-column ul.social-links + .end#user-about,
 .profile-page body #left-column #user-about + .end#user-about,
 .profile-page body #right-column #left-column .profile-tile + .end#user-about,
 .profile-page body #left-column #right-column .profile-tile + .end#user-about,
@@ -515,6 +722,8 @@ select {
 .profile-page body #left-column #right-column #comments .comment-meta + #user-about.profile-tile:last-child,
 #comments .profile-page body #left-column #right-column .comment-content + #user-about.profile-tile:last-child,
 .profile-page body #left-column #right-column #comments .comment-content + #user-about.profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + #user-about.profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + #user-about.profile-tile:last-child,
 .profile-page body #left-column #right-column #user-about + #user-about.profile-tile:last-child,
 .profile-page body #left-column #right-column .profile-tile + #user-about.profile-tile:last-child,
 .profile-page body #right-column #left-column
@@ -527,6 +736,8 @@ select {
 .profile-page body #right-column #left-column #comments .comment-meta + #user-about.profile-tile:last-child,
 #comments .profile-page body #right-column #left-column .comment-content + #user-about.profile-tile:last-child,
 .profile-page body #right-column #left-column #comments .comment-content + #user-about.profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + #user-about.profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + #user-about.profile-tile:last-child,
 .profile-page body #right-column #left-column #user-about + #user-about.profile-tile:last-child,
 .profile-page body #right-column #left-column .profile-tile + #user-about.profile-tile:last-child,
 .profile-page body #right-column
@@ -539,6 +750,10 @@ select {
 .profile-page body #right-column #comments .comment-meta + .end.profile-tile,
 #comments .profile-page body #right-column .comment-content + .end.profile-tile,
 .profile-page body #right-column #comments .comment-content + .end.profile-tile,
+.profile-page body #left-column #right-column #user-description + .end.profile-tile,
+.profile-page body #right-column #left-column #user-description + .end.profile-tile,
+.profile-page body #left-column #right-column ul.social-links + .end.profile-tile,
+.profile-page body #right-column #left-column ul.social-links + .end.profile-tile,
 .profile-page body #left-column #right-column #user-about + .end.profile-tile,
 .profile-page body #right-column #left-column #user-about + .end.profile-tile,
 .profile-page body #right-column .profile-tile + .end.profile-tile,
@@ -552,6 +767,10 @@ select {
 .profile-page body #right-column #comments .comment-meta + .profile-tile:last-child,
 #comments .profile-page body #right-column .comment-content + .profile-tile:last-child,
 .profile-page body #right-column #comments .comment-content + .profile-tile:last-child,
+.profile-page body #left-column #right-column #user-description + .profile-tile:last-child,
+.profile-page body #right-column #left-column #user-description + .profile-tile:last-child,
+.profile-page body #left-column #right-column ul.social-links + .profile-tile:last-child,
+.profile-page body #right-column #left-column ul.social-links + .profile-tile:last-child,
 .profile-page body #left-column #right-column #user-about + .profile-tile:last-child,
 .profile-page body #right-column #left-column #user-about + .profile-tile:last-child,
 .profile-page body #right-column .profile-tile + .profile-tile:last-child {
@@ -662,6 +881,8 @@ select {
   #talk-actions,
   #comments .comment-meta,
   #comments .comment-content,
+  .profile-page body #left-column #user-description,
+  .profile-page body #left-column ul.social-links,
   .profile-page body #left-column #user-about,
   .profile-page body #right-column .profile-tile {
     position: relative;
@@ -690,7 +911,7 @@ select {
     width: 83.3333333333%; }
   .small-11 {
     width: 91.6666666667%; }
-  .small-12 {
+  .small-12, .profile-page body #left-column ul.social-links {
     width: 100%; }
   .small-offset-0 {
     margin-left: 0 !important; }
@@ -730,6 +951,8 @@ select {
   .small-centered#talk-actions,
   #comments .small-centered.comment-meta,
   #comments .small-centered.comment-content,
+  .profile-page body #left-column .small-centered#user-description,
+  .profile-page body #left-column ul.small-centered.social-links,
   .profile-page body #left-column .small-centered#user-about,
   .profile-page body #right-column .small-centered.profile-tile {
     margin-left: auto;
@@ -743,6 +966,8 @@ select {
   .small-uncentered#talk-actions,
   #comments .small-uncentered.comment-meta,
   #comments .small-uncentered.comment-content,
+  .profile-page body #left-column .small-uncentered#user-description,
+  .profile-page body #left-column ul.small-uncentered.social-links,
   .profile-page body #left-column .small-uncentered#user-about,
   .profile-page body #right-column .small-uncentered.profile-tile {
     float: left;
@@ -756,6 +981,8 @@ select {
   .small-centered#talk-actions:last-child,
   #comments .small-centered.comment-meta:last-child,
   #comments .small-centered.comment-content:last-child,
+  .profile-page body #left-column .small-centered#user-description:last-child,
+  .profile-page body #left-column ul.small-centered.social-links:last-child,
   .profile-page body #left-column .small-centered#user-about:last-child,
   .profile-page body #right-column .small-centered.profile-tile:last-child {
     float: none; }
@@ -767,6 +994,8 @@ select {
   .small-uncentered#talk-actions:last-child,
   #comments .small-uncentered.comment-meta:last-child,
   #comments .small-uncentered.comment-content:last-child,
+  .profile-page body #left-column .small-uncentered#user-description:last-child,
+  .profile-page body #left-column ul.small-uncentered.social-links:last-child,
   .profile-page body #left-column .small-uncentered#user-about:last-child,
   .profile-page body #right-column .small-uncentered.profile-tile:last-child {
     float: left; }
@@ -778,6 +1007,8 @@ select {
   .small-uncentered.opposite#talk-actions,
   #comments .small-uncentered.opposite.comment-meta,
   #comments .small-uncentered.opposite.comment-content,
+  .profile-page body #left-column .small-uncentered.opposite#user-description,
+  .profile-page body #left-column ul.small-uncentered.opposite.social-links,
   .profile-page body #left-column .small-uncentered.opposite#user-about,
   .profile-page body #right-column .small-uncentered.opposite.profile-tile {
     float: right; }
@@ -789,6 +1020,8 @@ select {
   .row.small-collapse > #talk-actions, #comments
   .row.small-collapse > .comment-meta, #comments
   .row.small-collapse > .comment-content, .profile-page body #left-column
+  .row.small-collapse > #user-description, .profile-page body #left-column
+  .row.small-collapse > ul.social-links, .profile-page body #left-column
   .row.small-collapse > #user-about, .profile-page body #right-column
   .row.small-collapse > .profile-tile {
     padding-left: 0;
@@ -804,6 +1037,8 @@ select {
   .row.small-uncollapse > #talk-actions, #comments
   .row.small-uncollapse > .comment-meta, #comments
   .row.small-uncollapse > .comment-content, .profile-page body #left-column
+  .row.small-uncollapse > #user-description, .profile-page body #left-column
+  .row.small-uncollapse > ul.social-links, .profile-page body #left-column
   .row.small-uncollapse > #user-about, .profile-page body #right-column
   .row.small-uncollapse > .profile-tile {
     padding-left: 0.9375rem;
@@ -915,6 +1150,8 @@ select {
   #talk-actions,
   #comments .comment-meta,
   #comments .comment-content,
+  .profile-page body #left-column #user-description,
+  .profile-page body #left-column ul.social-links,
   .profile-page body #left-column #user-about,
   .profile-page body #right-column .profile-tile {
     position: relative;
@@ -935,7 +1172,7 @@ select {
     width: 50%; }
   .medium-7 {
     width: 58.3333333333%; }
-  .medium-8, .profile-page body #left-column #user-about {
+  .medium-8, .profile-page body #left-column #user-description, .profile-page body #left-column #user-about {
     width: 66.6666666667%; }
   .medium-9, #talk-description, #comments .comment-content {
     width: 75%; }
@@ -949,7 +1186,7 @@ select {
     margin-left: 0 !important; }
   .medium-offset-1 {
     margin-left: 8.3333333333% !important; }
-  .medium-offset-2, .profile-page body #left-column #user-about {
+  .medium-offset-2, .profile-page body #left-column #user-description, .profile-page body #left-column #user-about {
     margin-left: 16.6666666667% !important; }
   .medium-offset-3 {
     margin-left: 25% !important; }
@@ -983,6 +1220,8 @@ select {
   .medium-centered#talk-actions,
   #comments .medium-centered.comment-meta,
   #comments .medium-centered.comment-content,
+  .profile-page body #left-column .medium-centered#user-description,
+  .profile-page body #left-column ul.medium-centered.social-links,
   .profile-page body #left-column .medium-centered#user-about,
   .profile-page body #right-column .medium-centered.profile-tile {
     margin-left: auto;
@@ -996,6 +1235,8 @@ select {
   .medium-uncentered#talk-actions,
   #comments .medium-uncentered.comment-meta,
   #comments .medium-uncentered.comment-content,
+  .profile-page body #left-column .medium-uncentered#user-description,
+  .profile-page body #left-column ul.medium-uncentered.social-links,
   .profile-page body #left-column .medium-uncentered#user-about,
   .profile-page body #right-column .medium-uncentered.profile-tile {
     float: left;
@@ -1009,6 +1250,8 @@ select {
   .medium-centered#talk-actions:last-child,
   #comments .medium-centered.comment-meta:last-child,
   #comments .medium-centered.comment-content:last-child,
+  .profile-page body #left-column .medium-centered#user-description:last-child,
+  .profile-page body #left-column ul.medium-centered.social-links:last-child,
   .profile-page body #left-column .medium-centered#user-about:last-child,
   .profile-page body #right-column .medium-centered.profile-tile:last-child {
     float: none; }
@@ -1020,6 +1263,8 @@ select {
   .medium-uncentered#talk-actions:last-child,
   #comments .medium-uncentered.comment-meta:last-child,
   #comments .medium-uncentered.comment-content:last-child,
+  .profile-page body #left-column .medium-uncentered#user-description:last-child,
+  .profile-page body #left-column ul.medium-uncentered.social-links:last-child,
   .profile-page body #left-column .medium-uncentered#user-about:last-child,
   .profile-page body #right-column .medium-uncentered.profile-tile:last-child {
     float: left; }
@@ -1031,6 +1276,8 @@ select {
   .medium-uncentered.opposite#talk-actions,
   #comments .medium-uncentered.opposite.comment-meta,
   #comments .medium-uncentered.opposite.comment-content,
+  .profile-page body #left-column .medium-uncentered.opposite#user-description,
+  .profile-page body #left-column ul.medium-uncentered.opposite.social-links,
   .profile-page body #left-column .medium-uncentered.opposite#user-about,
   .profile-page body #right-column .medium-uncentered.opposite.profile-tile {
     float: right; }
@@ -1042,6 +1289,8 @@ select {
   .row.medium-collapse > #talk-actions, #comments
   .row.medium-collapse > .comment-meta, #comments
   .row.medium-collapse > .comment-content, .profile-page body #left-column
+  .row.medium-collapse > #user-description, .profile-page body #left-column
+  .row.medium-collapse > ul.social-links, .profile-page body #left-column
   .row.medium-collapse > #user-about, .profile-page body #right-column
   .row.medium-collapse > .profile-tile {
     padding-left: 0;
@@ -1057,6 +1306,8 @@ select {
   .row.medium-uncollapse > #talk-actions, #comments
   .row.medium-uncollapse > .comment-meta, #comments
   .row.medium-uncollapse > .comment-content, .profile-page body #left-column
+  .row.medium-uncollapse > #user-description, .profile-page body #left-column
+  .row.medium-uncollapse > ul.social-links, .profile-page body #left-column
   .row.medium-uncollapse > #user-about, .profile-page body #right-column
   .row.medium-uncollapse > .profile-tile {
     padding-left: 0.9375rem;
@@ -1264,6 +1515,8 @@ select {
   #talk-actions,
   #comments .comment-meta,
   #comments .comment-content,
+  .profile-page body #left-column #user-description,
+  .profile-page body #left-column ul.social-links,
   .profile-page body #left-column #user-about,
   .profile-page body #right-column .profile-tile {
     position: relative;
@@ -1288,7 +1541,7 @@ select {
     width: 66.6666666667%; }
   .large-9 {
     width: 75%; }
-  .large-10 {
+  .large-10, .profile-page body #left-column #user-description {
     width: 83.3333333333%; }
   .large-11 {
     width: 91.6666666667%; }
@@ -1296,7 +1549,7 @@ select {
     width: 100%; }
   .large-offset-0, .profile-page body #left-column #user-about {
     margin-left: 0 !important; }
-  .large-offset-1 {
+  .large-offset-1, .profile-page body #left-column #user-description {
     margin-left: 8.3333333333% !important; }
   .large-offset-2 {
     margin-left: 16.6666666667% !important; }
@@ -1332,6 +1585,8 @@ select {
   .large-centered#talk-actions,
   #comments .large-centered.comment-meta,
   #comments .large-centered.comment-content,
+  .profile-page body #left-column .large-centered#user-description,
+  .profile-page body #left-column ul.large-centered.social-links,
   .profile-page body #left-column .large-centered#user-about,
   .profile-page body #right-column .large-centered.profile-tile {
     margin-left: auto;
@@ -1345,6 +1600,8 @@ select {
   .large-uncentered#talk-actions,
   #comments .large-uncentered.comment-meta,
   #comments .large-uncentered.comment-content,
+  .profile-page body #left-column .large-uncentered#user-description,
+  .profile-page body #left-column ul.large-uncentered.social-links,
   .profile-page body #left-column .large-uncentered#user-about,
   .profile-page body #right-column .large-uncentered.profile-tile {
     float: left;
@@ -1358,6 +1615,8 @@ select {
   .large-centered#talk-actions:last-child,
   #comments .large-centered.comment-meta:last-child,
   #comments .large-centered.comment-content:last-child,
+  .profile-page body #left-column .large-centered#user-description:last-child,
+  .profile-page body #left-column ul.large-centered.social-links:last-child,
   .profile-page body #left-column .large-centered#user-about:last-child,
   .profile-page body #right-column .large-centered.profile-tile:last-child {
     float: none; }
@@ -1369,6 +1628,8 @@ select {
   .large-uncentered#talk-actions:last-child,
   #comments .large-uncentered.comment-meta:last-child,
   #comments .large-uncentered.comment-content:last-child,
+  .profile-page body #left-column .large-uncentered#user-description:last-child,
+  .profile-page body #left-column ul.large-uncentered.social-links:last-child,
   .profile-page body #left-column .large-uncentered#user-about:last-child,
   .profile-page body #right-column .large-uncentered.profile-tile:last-child {
     float: left; }
@@ -1380,6 +1641,8 @@ select {
   .large-uncentered.opposite#talk-actions,
   #comments .large-uncentered.opposite.comment-meta,
   #comments .large-uncentered.opposite.comment-content,
+  .profile-page body #left-column .large-uncentered.opposite#user-description,
+  .profile-page body #left-column ul.large-uncentered.opposite.social-links,
   .profile-page body #left-column .large-uncentered.opposite#user-about,
   .profile-page body #right-column .large-uncentered.opposite.profile-tile {
     float: right; }
@@ -1391,6 +1654,8 @@ select {
   .row.large-collapse > #talk-actions, #comments
   .row.large-collapse > .comment-meta, #comments
   .row.large-collapse > .comment-content, .profile-page body #left-column
+  .row.large-collapse > #user-description, .profile-page body #left-column
+  .row.large-collapse > ul.social-links, .profile-page body #left-column
   .row.large-collapse > #user-about, .profile-page body #right-column
   .row.large-collapse > .profile-tile {
     padding-left: 0;
@@ -1406,6 +1671,8 @@ select {
   .row.large-uncollapse > #talk-actions, #comments
   .row.large-uncollapse > .comment-meta, #comments
   .row.large-uncollapse > .comment-content, .profile-page body #left-column
+  .row.large-uncollapse > #user-description, .profile-page body #left-column
+  .row.large-uncollapse > ul.social-links, .profile-page body #left-column
   .row.large-uncollapse > #user-about, .profile-page body #right-column
   .row.large-uncollapse > .profile-tile {
     padding-left: 0.9375rem;
@@ -1613,6 +1880,8 @@ select {
   #talk-actions,
   #comments .comment-meta,
   #comments .comment-content,
+  .profile-page body #left-column #user-description,
+  .profile-page body #left-column ul.social-links,
   .profile-page body #left-column #user-about,
   .profile-page body #right-column .profile-tile {
     position: relative;
@@ -1681,6 +1950,8 @@ select {
   .xlarge-centered#talk-actions,
   #comments .xlarge-centered.comment-meta,
   #comments .xlarge-centered.comment-content,
+  .profile-page body #left-column .xlarge-centered#user-description,
+  .profile-page body #left-column ul.xlarge-centered.social-links,
   .profile-page body #left-column .xlarge-centered#user-about,
   .profile-page body #right-column .xlarge-centered.profile-tile {
     margin-left: auto;
@@ -1694,6 +1965,8 @@ select {
   .xlarge-uncentered#talk-actions,
   #comments .xlarge-uncentered.comment-meta,
   #comments .xlarge-uncentered.comment-content,
+  .profile-page body #left-column .xlarge-uncentered#user-description,
+  .profile-page body #left-column ul.xlarge-uncentered.social-links,
   .profile-page body #left-column .xlarge-uncentered#user-about,
   .profile-page body #right-column .xlarge-uncentered.profile-tile {
     float: left;
@@ -1707,6 +1980,8 @@ select {
   .xlarge-centered#talk-actions:last-child,
   #comments .xlarge-centered.comment-meta:last-child,
   #comments .xlarge-centered.comment-content:last-child,
+  .profile-page body #left-column .xlarge-centered#user-description:last-child,
+  .profile-page body #left-column ul.xlarge-centered.social-links:last-child,
   .profile-page body #left-column .xlarge-centered#user-about:last-child,
   .profile-page body #right-column .xlarge-centered.profile-tile:last-child {
     float: none; }
@@ -1718,6 +1993,8 @@ select {
   .xlarge-uncentered#talk-actions:last-child,
   #comments .xlarge-uncentered.comment-meta:last-child,
   #comments .xlarge-uncentered.comment-content:last-child,
+  .profile-page body #left-column .xlarge-uncentered#user-description:last-child,
+  .profile-page body #left-column ul.xlarge-uncentered.social-links:last-child,
   .profile-page body #left-column .xlarge-uncentered#user-about:last-child,
   .profile-page body #right-column .xlarge-uncentered.profile-tile:last-child {
     float: left; }
@@ -1729,6 +2006,8 @@ select {
   .xlarge-uncentered.opposite#talk-actions,
   #comments .xlarge-uncentered.opposite.comment-meta,
   #comments .xlarge-uncentered.opposite.comment-content,
+  .profile-page body #left-column .xlarge-uncentered.opposite#user-description,
+  .profile-page body #left-column ul.xlarge-uncentered.opposite.social-links,
   .profile-page body #left-column .xlarge-uncentered.opposite#user-about,
   .profile-page body #right-column .xlarge-uncentered.opposite.profile-tile {
     float: right; }
@@ -1740,6 +2019,8 @@ select {
   .row.xlarge-collapse > #talk-actions, #comments
   .row.xlarge-collapse > .comment-meta, #comments
   .row.xlarge-collapse > .comment-content, .profile-page body #left-column
+  .row.xlarge-collapse > #user-description, .profile-page body #left-column
+  .row.xlarge-collapse > ul.social-links, .profile-page body #left-column
   .row.xlarge-collapse > #user-about, .profile-page body #right-column
   .row.xlarge-collapse > .profile-tile {
     padding-left: 0;
@@ -1755,6 +2036,8 @@ select {
   .row.xlarge-uncollapse > #talk-actions, #comments
   .row.xlarge-uncollapse > .comment-meta, #comments
   .row.xlarge-uncollapse > .comment-content, .profile-page body #left-column
+  .row.xlarge-uncollapse > #user-description, .profile-page body #left-column
+  .row.xlarge-uncollapse > ul.social-links, .profile-page body #left-column
   .row.xlarge-uncollapse > #user-about, .profile-page body #right-column
   .row.xlarge-uncollapse > .profile-tile {
     padding-left: 0.9375rem;
@@ -1866,6 +2149,8 @@ select {
   #talk-actions,
   #comments .comment-meta,
   #comments .comment-content,
+  .profile-page body #left-column #user-description,
+  .profile-page body #left-column ul.social-links,
   .profile-page body #left-column #user-about,
   .profile-page body #right-column .profile-tile {
     position: relative;
@@ -1934,6 +2219,8 @@ select {
   .xxlarge-centered#talk-actions,
   #comments .xxlarge-centered.comment-meta,
   #comments .xxlarge-centered.comment-content,
+  .profile-page body #left-column .xxlarge-centered#user-description,
+  .profile-page body #left-column ul.xxlarge-centered.social-links,
   .profile-page body #left-column .xxlarge-centered#user-about,
   .profile-page body #right-column .xxlarge-centered.profile-tile {
     margin-left: auto;
@@ -1947,6 +2234,8 @@ select {
   .xxlarge-uncentered#talk-actions,
   #comments .xxlarge-uncentered.comment-meta,
   #comments .xxlarge-uncentered.comment-content,
+  .profile-page body #left-column .xxlarge-uncentered#user-description,
+  .profile-page body #left-column ul.xxlarge-uncentered.social-links,
   .profile-page body #left-column .xxlarge-uncentered#user-about,
   .profile-page body #right-column .xxlarge-uncentered.profile-tile {
     float: left;
@@ -1960,6 +2249,8 @@ select {
   .xxlarge-centered#talk-actions:last-child,
   #comments .xxlarge-centered.comment-meta:last-child,
   #comments .xxlarge-centered.comment-content:last-child,
+  .profile-page body #left-column .xxlarge-centered#user-description:last-child,
+  .profile-page body #left-column ul.xxlarge-centered.social-links:last-child,
   .profile-page body #left-column .xxlarge-centered#user-about:last-child,
   .profile-page body #right-column .xxlarge-centered.profile-tile:last-child {
     float: none; }
@@ -1971,6 +2262,8 @@ select {
   .xxlarge-uncentered#talk-actions:last-child,
   #comments .xxlarge-uncentered.comment-meta:last-child,
   #comments .xxlarge-uncentered.comment-content:last-child,
+  .profile-page body #left-column .xxlarge-uncentered#user-description:last-child,
+  .profile-page body #left-column ul.xxlarge-uncentered.social-links:last-child,
   .profile-page body #left-column .xxlarge-uncentered#user-about:last-child,
   .profile-page body #right-column .xxlarge-uncentered.profile-tile:last-child {
     float: left; }
@@ -1982,6 +2275,8 @@ select {
   .xxlarge-uncentered.opposite#talk-actions,
   #comments .xxlarge-uncentered.opposite.comment-meta,
   #comments .xxlarge-uncentered.opposite.comment-content,
+  .profile-page body #left-column .xxlarge-uncentered.opposite#user-description,
+  .profile-page body #left-column ul.xxlarge-uncentered.opposite.social-links,
   .profile-page body #left-column .xxlarge-uncentered.opposite#user-about,
   .profile-page body #right-column .xxlarge-uncentered.opposite.profile-tile {
     float: right; }
@@ -1993,6 +2288,8 @@ select {
   .row.xxlarge-collapse > #talk-actions, #comments
   .row.xxlarge-collapse > .comment-meta, #comments
   .row.xxlarge-collapse > .comment-content, .profile-page body #left-column
+  .row.xxlarge-collapse > #user-description, .profile-page body #left-column
+  .row.xxlarge-collapse > ul.social-links, .profile-page body #left-column
   .row.xxlarge-collapse > #user-about, .profile-page body #right-column
   .row.xxlarge-collapse > .profile-tile {
     padding-left: 0;
@@ -2008,6 +2305,8 @@ select {
   .row.xxlarge-uncollapse > #talk-actions, #comments
   .row.xxlarge-uncollapse > .comment-meta, #comments
   .row.xxlarge-uncollapse > .comment-content, .profile-page body #left-column
+  .row.xxlarge-uncollapse > #user-description, .profile-page body #left-column
+  .row.xxlarge-uncollapse > ul.social-links, .profile-page body #left-column
   .row.xxlarge-uncollapse > #user-about, .profile-page body #right-column
   .row.xxlarge-uncollapse > .profile-tile {
     padding-left: 0.9375rem;
@@ -3524,6 +3823,10 @@ form .row .row {
   form .row .row .comment-meta,
   form .row .row #comments .comment-content, #comments
   form .row .row .comment-content,
+  form .row .row .profile-page body #left-column #user-description, .profile-page body #left-column
+  form .row .row #user-description,
+  form .row .row .profile-page body #left-column ul.social-links, .profile-page body #left-column
+  form .row .row ul.social-links,
   form .row .row .profile-page body #left-column #user-about, .profile-page body #left-column
   form .row .row #user-about,
   form .row .row .profile-page body #right-column .profile-tile, .profile-page body #right-column
@@ -3541,6 +3844,10 @@ form .row .row {
     form .row .row.collapse .comment-meta,
     form .row .row.collapse #comments .comment-content, #comments
     form .row .row.collapse .comment-content,
+    form .row .row.collapse .profile-page body #left-column #user-description, .profile-page body #left-column
+    form .row .row.collapse #user-description,
+    form .row .row.collapse .profile-page body #left-column ul.social-links, .profile-page body #left-column
+    form .row .row.collapse ul.social-links,
     form .row .row.collapse .profile-page body #left-column #user-about, .profile-page body #left-column
     form .row .row.collapse #user-about,
     form .row .row.collapse .profile-page body #right-column .profile-tile, .profile-page body #right-column
@@ -3562,6 +3869,8 @@ form .row #comments input.comment-meta, #comments
 form .row input.comment-meta,
 form .row #comments input.comment-content, #comments
 form .row input.comment-content,
+form .row .profile-page body #left-column input#user-description, .profile-page body #left-column
+form .row input#user-description,
 form .row .profile-page body #left-column input#user-about, .profile-page body #left-column
 form .row input#user-about,
 form .row .profile-page body #right-column input.profile-tile, .profile-page body #right-column
@@ -3576,6 +3885,8 @@ form .row #comments textarea.comment-meta, #comments
 form .row textarea.comment-meta,
 form .row #comments textarea.comment-content, #comments
 form .row textarea.comment-content,
+form .row .profile-page body #left-column textarea#user-description, .profile-page body #left-column
+form .row textarea#user-description,
 form .row .profile-page body #left-column textarea#user-about, .profile-page body #left-column
 form .row textarea#user-about,
 form .row .profile-page body #right-column textarea.profile-tile, .profile-page body #right-column
@@ -4961,7 +5272,7 @@ ul.pagination {
   @media only screen and (max-width: 40em) {
     .reveal-modal {
       min-height: 100vh; } }
-  .reveal-modal .column, .reveal-modal .columns, .reveal-modal .meta-left, .reveal-modal .meta-right, .reveal-modal #talk-description, .reveal-modal #talk-actions, .reveal-modal #comments .comment-meta, #comments .reveal-modal .comment-meta, .reveal-modal #comments .comment-content, #comments .reveal-modal .comment-content, .reveal-modal .profile-page body #left-column #user-about, .profile-page body #left-column .reveal-modal #user-about, .reveal-modal .profile-page body #right-column .profile-tile, .profile-page body #right-column .reveal-modal .profile-tile {
+  .reveal-modal .column, .reveal-modal .columns, .reveal-modal .meta-left, .reveal-modal .meta-right, .reveal-modal #talk-description, .reveal-modal #talk-actions, .reveal-modal #comments .comment-meta, #comments .reveal-modal .comment-meta, .reveal-modal #comments .comment-content, #comments .reveal-modal .comment-content, .reveal-modal .profile-page body #left-column #user-description, .profile-page body #left-column .reveal-modal #user-description, .reveal-modal .profile-page body #left-column ul.social-links, .profile-page body #left-column .reveal-modal ul.social-links, .reveal-modal .profile-page body #left-column #user-about, .profile-page body #left-column .reveal-modal #user-about, .reveal-modal .profile-page body #right-column .profile-tile, .profile-page body #right-column .reveal-modal .profile-tile {
     min-width: 0; }
   .reveal-modal > :first-child {
     margin-top: 0; }
@@ -5614,7 +5925,7 @@ meta.foundation-mq-topbar {
       line-height: 3.75rem;
       margin: 0; }
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
-        color: #54c6c6;
+        color: #e1e2e7;
         display: block;
         font-weight: normal;
         padding: 0 1.25rem;
@@ -5624,7 +5935,7 @@ meta.foundation-mq-topbar {
     right: 0;
     top: 0; }
     .top-bar .toggle-topbar a {
-      color: #54c6c6;
+      color: #e1e2e7;
       display: block;
       font-size: 0.8125rem;
       font-weight: bold;
@@ -5691,14 +6002,14 @@ meta.foundation-mq-topbar {
   .top-bar-section ul li {
     background: #EEEEEE; }
     .top-bar-section ul li > a {
-      color: #54c6c6;
+      color: #e1e2e7;
       display: block;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       font-size: 0.8125rem;
-      font-weight: normal;
+      font-weight: bold;
       padding-left: 1.25rem;
       padding: 12px 0 12px 1.25rem;
-      text-transform: none;
+      text-transform: uppercase;
       width: 100%; }
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
@@ -5804,7 +6115,7 @@ meta.foundation-mq-topbar {
           color: #64697e; }
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #35363b;
-      color: #e1e2e7;
+      color: #54c6c6;
       background: none; }
     .top-bar-section ul li.active > a {
       background: #35363b;
@@ -5861,13 +6172,13 @@ meta.foundation-mq-topbar {
         font-weight: normal;
         padding: 8px 1.25rem; }
         .top-bar-section .dropdown li a.parent-link {
-          font-weight: normal; }
+          font-weight: bold; }
       .top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
         margin-bottom: 0;
         margin-top: 0;
         font-size: 1.125rem; }
         .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-          color: #54c6c6;
+          color: #e1e2e7;
           display: block; }
           .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
             background: none; }
@@ -5935,7 +6246,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li.hover > a:not(.button) {
       background-color: #35363b;
       background: none;
-      color: #e1e2e7; }
+      color: #54c6c6; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       background: transparent;
       line-height: 3.75rem;
@@ -6009,7 +6320,7 @@ meta.foundation-mq-topbar {
         color: #64697e; }
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         background-color: #35363b;
-        color: #e1e2e7;
+        color: #54c6c6;
         background: #777984; }
       .top-bar-section .dropdown li label {
         background: #64697e;
@@ -6042,7 +6353,7 @@ meta.foundation-mq-topbar {
   .no-js .top-bar-section ul li:hover > a {
     background-color: #35363b;
     background: none;
-    color: #e1e2e7; }
+    color: #54c6c6; }
   .no-js .top-bar-section ul li:active > a {
     background: #35363b;
     color: #3c4258; }
@@ -6856,7 +7167,7 @@ ul.off-canvas-list {
 
 /* small displays */
 @media only screen {
-  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .show-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
+  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .show-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .profile-page body #left-column #jump-link, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
   .hide-for-small-only, #talk-actions .button-group li a .action-name, .profile-page body #right-column .viewtoggle, .hide-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
     display: none !important; }
@@ -6872,20 +7183,20 @@ ul.off-canvas-list {
     overflow: hidden;
     position: absolute !important;
     width: 1px; }
-  table.show-for-small-only, #talk-actions .button-group li a table.comment-count, .profile-page body #left-column table.user-meta-group, table.show-for-small-up, table.show-for-small, table.show-for-small-down, table.hide-for-medium-only, table.hide-for-medium-up, table.hide-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
+  table.show-for-small-only, #talk-actions .button-group li a table.comment-count, .profile-page body #left-column table.user-meta-group, table.show-for-small-up, table.show-for-small, table.show-for-small-down, table.hide-for-medium-only, table.hide-for-medium-up, table.hide-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, .profile-page body #left-column table#jump-link, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
     display: table !important; }
-  thead.show-for-small-only, #talk-actions .button-group li a thead.comment-count, .profile-page body #left-column thead.user-meta-group, thead.show-for-small-up, thead.show-for-small, thead.show-for-small-down, thead.hide-for-medium-only, thead.hide-for-medium-up, thead.hide-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
+  thead.show-for-small-only, #talk-actions .button-group li a thead.comment-count, .profile-page body #left-column thead.user-meta-group, thead.show-for-small-up, thead.show-for-small, thead.show-for-small-down, thead.hide-for-medium-only, thead.hide-for-medium-up, thead.hide-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, .profile-page body #left-column thead#jump-link, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
     display: table-header-group !important; }
-  tbody.show-for-small-only, #talk-actions .button-group li a tbody.comment-count, .profile-page body #left-column tbody.user-meta-group, tbody.show-for-small-up, tbody.show-for-small, tbody.show-for-small-down, tbody.hide-for-medium-only, tbody.hide-for-medium-up, tbody.hide-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
+  tbody.show-for-small-only, #talk-actions .button-group li a tbody.comment-count, .profile-page body #left-column tbody.user-meta-group, tbody.show-for-small-up, tbody.show-for-small, tbody.show-for-small-down, tbody.hide-for-medium-only, tbody.hide-for-medium-up, tbody.hide-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, .profile-page body #left-column tbody#jump-link, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
     display: table-row-group !important; }
-  tr.show-for-small-only, #talk-actions .button-group li a tr.comment-count, .profile-page body #left-column tr.user-meta-group, tr.show-for-small-up, tr.show-for-small, tr.show-for-small-down, tr.hide-for-medium-only, tr.hide-for-medium-up, tr.hide-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
+  tr.show-for-small-only, #talk-actions .button-group li a tr.comment-count, .profile-page body #left-column tr.user-meta-group, tr.show-for-small-up, tr.show-for-small, tr.show-for-small-down, tr.hide-for-medium-only, tr.hide-for-medium-up, tr.hide-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, .profile-page body #left-column tr#jump-link, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
     display: table-row; }
-  th.show-for-small-only, #talk-actions .button-group li a th.comment-count, .profile-page body #left-column th.user-meta-group, td.show-for-small-only, #talk-actions .button-group li a td.comment-count, .profile-page body #left-column td.user-meta-group, th.show-for-small-up, td.show-for-small-up, th.show-for-small, td.show-for-small, th.show-for-small-down, td.show-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.hide-for-medium-up, td.hide-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
+  th.show-for-small-only, #talk-actions .button-group li a th.comment-count, .profile-page body #left-column th.user-meta-group, td.show-for-small-only, #talk-actions .button-group li a td.comment-count, .profile-page body #left-column td.user-meta-group, th.show-for-small-up, td.show-for-small-up, th.show-for-small, td.show-for-small, th.show-for-small-down, td.show-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.hide-for-medium-up, td.hide-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, .profile-page body #left-column th#jump-link, td.hide-for-large-up, .profile-page body #left-column td#jump-link, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 
 /* medium displays */
 @media only screen and (min-width: 40.0625em) {
-  .hide-for-small-only, #talk-actions .button-group li a .action-name, .profile-page body #right-column .viewtoggle, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
+  .hide-for-small-only, #talk-actions .button-group li a .action-name, .profile-page body #right-column .viewtoggle, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .profile-page body #left-column #jump-link, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
   .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .hide-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
     display: none !important; }
@@ -6901,22 +7212,22 @@ ul.off-canvas-list {
     overflow: hidden;
     position: absolute !important;
     width: 1px; }
-  table.hide-for-small-only, #talk-actions .button-group li a table.action-name, .profile-page body #right-column table.viewtoggle, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.show-for-medium-only, table.show-for-medium-up, table.show-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
+  table.hide-for-small-only, #talk-actions .button-group li a table.action-name, .profile-page body #right-column table.viewtoggle, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.show-for-medium-only, table.show-for-medium-up, table.show-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, .profile-page body #left-column table#jump-link, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
     display: table !important; }
-  thead.hide-for-small-only, #talk-actions .button-group li a thead.action-name, .profile-page body #right-column thead.viewtoggle, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.show-for-medium-only, thead.show-for-medium-up, thead.show-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
+  thead.hide-for-small-only, #talk-actions .button-group li a thead.action-name, .profile-page body #right-column thead.viewtoggle, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.show-for-medium-only, thead.show-for-medium-up, thead.show-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, .profile-page body #left-column thead#jump-link, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
     display: table-header-group !important; }
-  tbody.hide-for-small-only, #talk-actions .button-group li a tbody.action-name, .profile-page body #right-column tbody.viewtoggle, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.show-for-medium-only, tbody.show-for-medium-up, tbody.show-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
+  tbody.hide-for-small-only, #talk-actions .button-group li a tbody.action-name, .profile-page body #right-column tbody.viewtoggle, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.show-for-medium-only, tbody.show-for-medium-up, tbody.show-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, .profile-page body #left-column tbody#jump-link, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
     display: table-row-group !important; }
-  tr.hide-for-small-only, #talk-actions .button-group li a tr.action-name, .profile-page body #right-column tr.viewtoggle, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.show-for-medium-only, tr.show-for-medium-up, tr.show-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
+  tr.hide-for-small-only, #talk-actions .button-group li a tr.action-name, .profile-page body #right-column tr.viewtoggle, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.show-for-medium-only, tr.show-for-medium-up, tr.show-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, .profile-page body #left-column tr#jump-link, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
     display: table-row; }
-  th.hide-for-small-only, #talk-actions .button-group li a th.action-name, .profile-page body #right-column th.viewtoggle, td.hide-for-small-only, #talk-actions .button-group li a td.action-name, .profile-page body #right-column td.viewtoggle, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
+  th.hide-for-small-only, #talk-actions .button-group li a th.action-name, .profile-page body #right-column th.viewtoggle, td.hide-for-small-only, #talk-actions .button-group li a td.action-name, .profile-page body #right-column td.viewtoggle, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, .profile-page body #left-column th#jump-link, td.hide-for-large-up, .profile-page body #left-column td#jump-link, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
     display: table-cell !important; } }
 
 /* large displays */
 @media only screen and (min-width: 64.0625em) {
   .hide-for-small-only, #talk-actions .button-group li a .action-name, .profile-page body #right-column .viewtoggle, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
-  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
+  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .profile-page body #left-column #jump-link, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
     display: none !important; }
   .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xlarge, .visible-for-xlarge-down, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up, .hidden-for-xxlarge, .visible-for-xxlarge-down {
     position: static !important;
@@ -6945,7 +7256,7 @@ ul.off-canvas-list {
 @media only screen and (min-width: 90.0625em) {
   .hide-for-small-only, #talk-actions .button-group li a .action-name, .profile-page body #right-column .viewtoggle, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
-  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
+  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .profile-page body #left-column #jump-link, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
     display: none !important; }
   .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xlarge, .visible-for-xlarge-down, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up, .hidden-for-xxlarge, .visible-for-xxlarge-down {
     position: static !important;
@@ -6974,7 +7285,7 @@ ul.off-canvas-list {
 @media only screen and (min-width: 120.0625em) {
   .hide-for-small-only, #talk-actions .button-group li a .action-name, .profile-page body #right-column .viewtoggle, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .hide-for-xlarge-only, .show-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
-  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .show-for-xlarge-only, .hide-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-down {
+  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .profile-page body #left-column #jump-link, .show-for-large, .show-for-large-down, .show-for-xlarge-only, .hide-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-down {
     display: none !important; }
   .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .hidden-for-xlarge-only, .visible-for-xlarge-up, .hidden-for-xlarge, .hidden-for-xlarge-down, .visible-for-xxlarge-only, .visible-for-xxlarge-up, .visible-for-xxlarge, .visible-for-xxlarge-down {
     position: static !important;
@@ -10348,7 +10659,10 @@ hr {
   background-image: -ms-linear-gradient(90deg, #383a3d 0%, #35363b 100%);
   background-image: -moz-linear-gradient(90deg, #404245 0%, #35353b 100%);
   background-image: -webkit-linear-gradient(90deg, #404245 0%, #35353b 100%);
-  background-image: -ms-linear-gradient(90deg, #404245 0%, #35353b 100%); }
+  background-image: -ms-linear-gradient(90deg, #404245 0%, #35353b 100%);
+  background: rgba(41, 41, 43, 0.5);
+  background: #54c6c6;
+  box-shadow: none; }
 
 .avatar {
   height: 100%;
@@ -11447,9 +11761,26 @@ button,
 html.profile-page,
 .profile-page body {
   background: #29292b;
-  background: #3b3b40;
   height: 100%;
   min-height: 100vh; }
+
+html.profile-light,
+.profile-light body {
+  background: #2c46b0;
+  height: 100%;
+  min-height: 100vh; }
+
+.view-links {
+  margin-top: 100px; }
+  .view-links h1 {
+    color: #fef1de; }
+
+#cta {
+  margin-top: 60px; }
+  #cta p {
+    color: #fef1de;
+    font-weight: bold;
+    font-size: 1.125rem; }
 
 .profile-page body {
   min-height: 100vh; }
@@ -11459,51 +11790,45 @@ html.profile-page,
     transition: all .2 ease; }
     .profile-page body #left-column h3 {
       color: #54c6c6;
-      font-size: 1.5rem; }
+      font-size: 2rem;
+      line-height: 2.25rem; }
+      @media only screen and (min-width: 90.0625em) {
+        .profile-page body #left-column h3 {
+          font-size: 2.25rem;
+          line-height: 2.4375rem; } }
+    .profile-page body #left-column .publisher-badge {
+      display: inline-block;
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      color: white;
+      background: #3C404B;
+      border-radius: 2px;
+      padding: 2px;
+      padding-left: 6px; }
+      .profile-page body #left-column .publisher-badge .plays-count {
+        display: inline-block;
+        background: rgba(18, 18, 20, 0.2);
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+        padding: 1px 6px;
+        border-radius: 2px;
+        margin-left: 4px;
+        font-weight: normal; }
     .profile-page body #left-column p {
       font-size: 0.875rem; }
     .profile-page body #left-column .profile-avatar {
-      margin-bottom: 6px;
+      margin-bottom: 12px;
       display: block; }
-      .profile-page body #left-column .profile-avatar:after {
-        content: "";
-        background: #2c46b0;
-        height: 30px;
-        width: 30px;
-        max-width: 30px;
-        max-height: 30px;
-        display: inline-block;
-        border-radius: 15px;
-        position: absolute;
-        background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2016%2016%22%20style%3D%22enable-background%3Anew%200%200%2016%2016%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%0A%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M16%2C0l-4.1%2C3h-1.4c0%2C0%2C0%2C0%2C0%2C0h-9C0.7%2C3%2C0%2C3.7%2C0%2C4.5v5C0%2C10.3%2C0.7%2C11%2C1.5%2C11h1.7L4%2C16l4-2l-0.8-3H9v0h2.9%0A%09%09l4.1%2C3V0z%22/%3E%0A%0A%3C/svg%3E%0A") !important;
-        background-repeat: no-repeat !important;
-        background-position: center center !important;
-        background-size: .6875rem !important;
-        -webkit-appearance: none !important;
-        -moz-appearance: none !important;
-        line-height: 1 !important;
-        margin-top: 110px;
-        margin-left: -25px; }
-    .profile-page body #left-column #user-badge {
-      position: absolute;
-      top: 220px;
-      left: 240px;
-      color: white;
-      background: #2c46b0;
-      padding: 2px;
-      width: 36px;
-      height: 36px;
-      max-width: 36px;
-      margin: 0 auto;
-      border-radius: 18px;
-      text-transform: uppercase;
-      font-size: 1.125rem;
-      line-height: 1.125rem;
-      padding-top: 8px; }
     .profile-page body #left-column #user-description {
-      margin-top: 0;
+      margin-top: 6px;
       font-size: 1rem;
       font-weight: 200; }
+      @media only screen and (min-width: 90.0625em) {
+        .profile-page body #left-column #user-description {
+          font-size: 1.125rem;
+          line-height: 1.75rem; } }
     .profile-page body #left-column hr {
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       margin-bottom: 12px; }
@@ -11514,18 +11839,23 @@ html.profile-page,
       .profile-page body #left-column ul.social-links li {
         display: inline-block;
         padding: 0 12px; }
+        .profile-page body #left-column ul.social-links li a {
+          font-size: 1.125rem;
+          color: rgba(255, 255, 255, 0.5); }
+          .profile-page body #left-column ul.social-links li a:hover {
+            color: white; }
     .profile-page body #left-column #user-about {
+      margin: 0;
       color: #fef1de;
       padding: 0; }
       .profile-page body #left-column #user-about a {
-        color: #2c46b0; }
-    .profile-page body #left-column .plays-count {
-      display: inline-block;
-      background: rgba(18, 18, 20, 0.2);
-      color: rgba(255, 255, 255, 0.5);
-      margin: 0 auto;
-      padding: 6px 12px;
-      margin-bottom: 24px; }
+        color: #54c6c6; }
+      @media only screen and (min-width: 90.0625em) {
+        .profile-page body #left-column #user-about {
+          padding: 24px; } }
+      @media only screen and (min-width: 90.0625em) {
+        .profile-page body #left-column #user-about p {
+          font-size: 1rem; } }
     .profile-page body #left-column .column-header {
       color: white;
       font-weight: bold;
@@ -11536,8 +11866,8 @@ html.profile-page,
       margin-bottom: 24px; }
       .profile-page body #left-column .user-meta-group li {
         font-size: 0.75rem;
-        color: rgba(255, 255, 255, 0.6);
-        background: rgba(18, 18, 20, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+        background: #2c46b0;
         padding: 6px;
         height: 32px;
         margin: 0;
@@ -11550,7 +11880,7 @@ html.profile-page,
     @media only screen and (min-width: 64.0625em) {
       .profile-page body #left-column {
         background: rgba(18, 18, 20, 0.2);
-        max-width: 396px;
+        max-width: 38.3%;
         padding: 24px;
         padding-top: 103px;
         position: absolute;
@@ -11661,8 +11991,8 @@ html.profile-page,
         background: #2c46b0; }
     @media only screen and (min-width: 64.0625em) {
       .profile-page body #right-column {
-        margin-left: 396px;
-        padding: 103px 48px 48px 48px; } }
+        margin-left: 38.3%;
+        padding: 103px 24px 48px 24px; } }
     .profile-page body #right-column .viewtoggle .tab-label {
       list-style: none;
       color: white;
@@ -11703,20 +12033,20 @@ html.profile-page,
         margin-bottom: 0;
         font-size: 0.75rem; }
         .profile-page body #right-column .profile-tile .speaker a, .profile-page body #right-column .profile-tile #talk-description .format-box a, #talk-description .profile-page body #right-column .profile-tile .format-box a {
-          color: #2c46b0; }
+          color: #54c6c6; }
       .profile-page body #right-column .profile-tile img {
         margin-bottom: 12px; }
       .profile-page body #right-column .profile-tile .profile-title {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         font-weight: bold;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.9);
         display: block;
         /* Fallback for non-webkit */
         display: -webkit-box;
-        height: 38.4px;
+        height: 43.2px;
         /* Fallback for non-webkit */
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.2;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
@@ -11741,11 +12071,11 @@ html.profile-page,
       .profile-page body #right-column .profile-row .profile-row-inside {
         width: 100%; }
       .profile-page body #right-column .profile-row .profile-title {
-        font-size: 1rem;
+        font-size: 1.125rem;
         color: rgba(255, 255, 255, 0.8);
         font-weight: bold;
         display: inline-block;
-        line-height: 1.125rem; }
+        line-height: 1.3125rem; }
       .profile-page body #right-column .profile-row img {
         width: 117px;
         min-width: 117px;
@@ -11753,6 +12083,43 @@ html.profile-page,
         min-height: 66px; }
       .profile-page body #right-column .profile-row .date {
         color: rgba(255, 255, 255, 0.5); }
+
+.profile-light body #left-column {
+  background: rgba(18, 18, 20, 0.1);
+  background: white;
+  color: #121214; }
+  .profile-light body #left-column p {
+    color: #121214; }
+  .profile-light body #left-column .column-header {
+    color: #121214;
+    margin-bottom: 6px;
+    margin-top: 24px;
+    text-transform: normal; }
+  .profile-light body #left-column #user-description {
+    color: #121214; }
+
+.profile-light body #right-column .tabs li a {
+  color: rgba(18, 18, 20, 0.8); }
+  .profile-light body #right-column .tabs li a:hover {
+    color: #121214; }
+
+.profile-light body #right-column ul.viewtoggle li.tab-label {
+  color: #121214; }
+
+.profile-light body #right-column ul.viewtoggle li.tab-title a {
+  color: rgba(18, 18, 20, 0.2); }
+
+.profile-light body #right-column ul.viewtoggle li.tab-title.active a {
+  color: #121214; }
+
+.profile-light body #right-column .profile-tile .profile-tile-inside {
+  background: white; }
+  .profile-light body #right-column .profile-tile .profile-tile-inside .profile-title {
+    color: #121214; }
+  .profile-light body #right-column .profile-tile .profile-tile-inside .profile-publisher, .profile-light body #right-column .profile-tile .profile-tile-inside .profile-date {
+    color: #29292b; }
+  .profile-light body #right-column .profile-tile .profile-tile-inside .speaker, .profile-light body #right-column .profile-tile .profile-tile-inside #talk-description .format-box, #talk-description .profile-light body #right-column .profile-tile .profile-tile-inside .format-box {
+    color: #121214; }
 
 #filter-bar {
   padding-top: 24px; }
