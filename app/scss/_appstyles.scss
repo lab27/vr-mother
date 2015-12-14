@@ -173,7 +173,7 @@ hr {
     }
     a {
         font-family: $header-font-family;
-        color: $alert-color;
+        color: $info-color;
         letter-spacing: 6px;
         font-size: rem-calc(14);
         line-height: rem-calc(14);
@@ -190,7 +190,9 @@ hr {
     background-image: -ms-linear-gradient( 90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
     background: rgba($talk-dark,.5);
     background: $secondary-color;
+    // background: $info-color;
     box-shadow: none;
+    border-bottom: 2px solid $info-color;
 }
 
 //avatar

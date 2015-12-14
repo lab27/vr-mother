@@ -5925,7 +5925,7 @@ meta.foundation-mq-topbar {
       line-height: 3.75rem;
       margin: 0; }
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
-        color: #e1e2e7;
+        color: #fef1de;
         display: block;
         font-weight: normal;
         padding: 0 1.25rem;
@@ -5935,7 +5935,7 @@ meta.foundation-mq-topbar {
     right: 0;
     top: 0; }
     .top-bar .toggle-topbar a {
-      color: #e1e2e7;
+      color: #fef1de;
       display: block;
       font-size: 0.8125rem;
       font-weight: bold;
@@ -6002,7 +6002,7 @@ meta.foundation-mq-topbar {
   .top-bar-section ul li {
     background: #EEEEEE; }
     .top-bar-section ul li > a {
-      color: #e1e2e7;
+      color: #fef1de;
       display: block;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       font-size: 0.8125rem;
@@ -6115,7 +6115,7 @@ meta.foundation-mq-topbar {
           color: #64697e; }
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #35363b;
-      color: #54c6c6;
+      color: white;
       background: none; }
     .top-bar-section ul li.active > a {
       background: #35363b;
@@ -6178,7 +6178,7 @@ meta.foundation-mq-topbar {
         margin-top: 0;
         font-size: 1.125rem; }
         .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-          color: #e1e2e7;
+          color: #fef1de;
           display: block; }
           .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
             background: none; }
@@ -6246,7 +6246,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li.hover > a:not(.button) {
       background-color: #35363b;
       background: none;
-      color: #54c6c6; }
+      color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       background: transparent;
       line-height: 3.75rem;
@@ -6320,7 +6320,7 @@ meta.foundation-mq-topbar {
         color: #64697e; }
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         background-color: #35363b;
-        color: #54c6c6;
+        color: white;
         background: #777984; }
       .top-bar-section .dropdown li label {
         background: #64697e;
@@ -6353,7 +6353,7 @@ meta.foundation-mq-topbar {
   .no-js .top-bar-section ul li:hover > a {
     background-color: #35363b;
     background: none;
-    color: #54c6c6; }
+    color: white; }
   .no-js .top-bar-section ul li:active > a {
     background: #35363b;
     color: #3c4258; }
@@ -10648,7 +10648,7 @@ hr {
     margin-right: 12px; }
   .name a {
     font-family: "Eagle", "Eagle-Book";
-    color: #f82847;
+    color: #fef1de;
     letter-spacing: 6px;
     font-size: 0.875rem;
     line-height: 0.875rem; }
@@ -10662,7 +10662,8 @@ hr {
   background-image: -ms-linear-gradient(90deg, #404245 0%, #35353b 100%);
   background: rgba(41, 41, 43, 0.5);
   background: #54c6c6;
-  box-shadow: none; }
+  box-shadow: none;
+  border-bottom: 2px solid #fef1de; }
 
 .avatar {
   height: 100%;
@@ -11777,6 +11778,9 @@ html.profile-light,
 
 #cta {
   margin-top: 60px; }
+  #cta button {
+    background: #ffed00;
+    color: #54c6c6; }
   #cta p {
     color: #fef1de;
     font-weight: bold;
@@ -11856,13 +11860,14 @@ html.profile-light,
           padding: 24px; } }
       @media only screen and (min-width: 90.0625em) {
         .profile-page body #left-column #user-about p {
-          font-size: 1rem; } }
+          font-size: 1.125rem; } }
     .profile-page body #left-column .column-header {
       color: white;
       font-weight: bold;
       margin-bottom: 6px;
       margin-top: 24px;
-      text-transform: normal; }
+      text-transform: normal;
+      font-size: 1.125rem; }
     .profile-page body #left-column .user-meta-group {
       margin-bottom: 24px; }
       .profile-page body #left-column .user-meta-group li {

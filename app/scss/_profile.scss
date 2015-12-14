@@ -27,6 +27,10 @@
 
 #cta {
     margin-top: 60px;
+    button {
+        background: $warning-color;
+        color: $secondary-color;
+    }
     p {
         color: $info-color;
     font-weight: bold;
@@ -153,7 +157,7 @@
                    @media #{$xlarge-up} {
                     // @extend .large-10;
                     // @extend .large-offset-1;
-                    font-size: rem-calc(16);
+                    font-size: rem-calc(18);
                 } 
                 }
                 
@@ -168,6 +172,7 @@
                 margin-bottom: 6px;
                 margin-top: 24px;
                 text-transform: normal;
+                font-size: rem-calc(18);
                 // font-family: $header-font-family;
             }
             .user-meta-group {
