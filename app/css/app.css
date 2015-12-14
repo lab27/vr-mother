@@ -1186,7 +1186,7 @@ select {
     margin-left: 0 !important; }
   .medium-offset-1 {
     margin-left: 8.3333333333% !important; }
-  .medium-offset-2, .profile-page body #left-column #user-description, .profile-page body #left-column #user-about {
+  .medium-offset-2, .profile-page body #left-column #user-about {
     margin-left: 16.6666666667% !important; }
   .medium-offset-3 {
     margin-left: 25% !important; }
@@ -1549,7 +1549,7 @@ select {
     width: 100%; }
   .large-offset-0, .profile-page body #left-column #user-about {
     margin-left: 0 !important; }
-  .large-offset-1, .profile-page body #left-column #user-description {
+  .large-offset-1 {
     margin-left: 8.3333333333% !important; }
   .large-offset-2 {
     margin-left: 16.6666666667% !important; }
@@ -11789,7 +11789,7 @@ html.profile-light,
     color: white;
     transition: all .2 ease; }
     .profile-page body #left-column h3 {
-      color: #54c6c6;
+      color: #a339cd;
       font-size: 2rem;
       line-height: 2.25rem; }
       @media only screen and (min-width: 90.0625em) {
@@ -11824,7 +11824,8 @@ html.profile-light,
     .profile-page body #left-column #user-description {
       margin-top: 6px;
       font-size: 1rem;
-      font-weight: 200; }
+      font-weight: 200;
+      padding: 0; }
       @media only screen and (min-width: 90.0625em) {
         .profile-page body #left-column #user-description {
           font-size: 1.125rem;
@@ -11834,16 +11835,16 @@ html.profile-light,
       margin-bottom: 12px; }
     .profile-page body #left-column ul.social-links {
       list-style: none;
-      text-align: center;
-      margin-left: 0; }
+      text-align: left;
+      margin-left: 0;
+      padding: 0; }
       .profile-page body #left-column ul.social-links li {
         display: inline-block;
-        padding: 0 12px; }
+        padding: 0;
+        margin-right: 24px; }
         .profile-page body #left-column ul.social-links li a {
           font-size: 1.125rem;
-          color: rgba(255, 255, 255, 0.5); }
-          .profile-page body #left-column ul.social-links li a:hover {
-            color: white; }
+          color: #a339cd; }
     .profile-page body #left-column #user-about {
       margin: 0;
       color: #fef1de;
@@ -11888,7 +11889,7 @@ html.profile-light,
         top: 0;
         min-height: 100vh; } }
     .profile-page body #left-column #user-block {
-      text-align: center; }
+      text-align: left; }
       .profile-page body #left-column #user-block img {
         margin-bottom: 0; }
       .profile-page body #left-column #user-block #user-name {
@@ -11903,25 +11904,23 @@ html.profile-light,
     .profile-page body #right-column h5 {
       color: rgba(255, 255, 255, 0.3); }
     .profile-page body #right-column .tab-holder {
-      height: 36px;
+      height: 30px;
       width: 100%;
       padding: 0;
-      margin-bottom: 24px; }
+      margin-bottom: 0; }
     .profile-page body #right-column .funky {
       padding-left: 6px; }
       .profile-page body #right-column .funky .tabs.viewtoggle {
         display: none !important; }
       .profile-page body #right-column .funky ul.tabs .tab-title {
         margin-right: 48px; }
-        .profile-page body #right-column .funky ul.tabs .tab-title.active {
-          border-bottom: 2px solid #54c6c6; }
-          .profile-page body #right-column .funky ul.tabs .tab-title.active a {
-            color: #54c6c6;
+        .profile-page body #right-column .funky ul.tabs .tab-title.active a {
+          color: white;
+          height: 24px; }
+          .profile-page body #right-column .funky ul.tabs .tab-title.active a:hover {
+            color: #2c46b0;
+            border-bottom: 0;
             height: 24px; }
-            .profile-page body #right-column .funky ul.tabs .tab-title.active a:hover {
-              color: #54c6c6;
-              border-bottom: 0;
-              height: 24px; }
         .profile-page body #right-column .funky ul.tabs .tab-title a {
           background: none;
           font-family: "Eagle", "Eagle-Book";
@@ -12085,41 +12084,60 @@ html.profile-light,
         color: rgba(255, 255, 255, 0.5); }
 
 .profile-light body #left-column {
-  background: rgba(18, 18, 20, 0.1);
-  background: white;
-  color: #121214; }
+  padding: 100px 0 100px 24px;
+  color: #121214;
+  background: none; }
+  .profile-light body #left-column .user-info {
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-family: "Eagle", "Eagle-Book"; }
+  .profile-light body #left-column .user-holder {
+    background: white;
+    margin: 0;
+    padding: 24px; }
   .profile-light body #left-column p {
     color: #121214; }
   .profile-light body #left-column .column-header {
     color: #121214;
     margin-bottom: 6px;
     margin-top: 24px;
-    text-transform: normal; }
+    text-transform: normal;
+    font-size: 1.125rem; }
   .profile-light body #left-column #user-description {
+    color: #121214;
+    color: #a339cd;
+    margin-bottom: 16px;
+    font-weight: 400; }
+  .profile-light body #left-column #user-about {
+    color: #121214;
+    padding: 0;
+    font-size: 1.125rem;
+    font-weight: 200; }
+
+.profile-light body #right-column {
+  padding-left: 8px; }
+  .profile-light body #right-column .tabs li a {
+    color: rgba(18, 18, 20, 0.8); }
+    .profile-light body #right-column .tabs li a:hover {
+      color: #121214; }
+  .profile-light body #right-column ul.viewtoggle li.tab-label {
     color: #121214; }
-
-.profile-light body #right-column .tabs li a {
-  color: rgba(18, 18, 20, 0.8); }
-  .profile-light body #right-column .tabs li a:hover {
+  .profile-light body #right-column ul.viewtoggle li.tab-title a {
+    color: rgba(18, 18, 20, 0.2); }
+  .profile-light body #right-column ul.viewtoggle li.tab-title.active a {
     color: #121214; }
-
-.profile-light body #right-column ul.viewtoggle li.tab-label {
-  color: #121214; }
-
-.profile-light body #right-column ul.viewtoggle li.tab-title a {
-  color: rgba(18, 18, 20, 0.2); }
-
-.profile-light body #right-column ul.viewtoggle li.tab-title.active a {
-  color: #121214; }
-
-.profile-light body #right-column .profile-tile .profile-tile-inside {
-  background: white; }
-  .profile-light body #right-column .profile-tile .profile-tile-inside .profile-title {
-    color: #121214; }
-  .profile-light body #right-column .profile-tile .profile-tile-inside .profile-publisher, .profile-light body #right-column .profile-tile .profile-tile-inside .profile-date {
-    color: #29292b; }
-  .profile-light body #right-column .profile-tile .profile-tile-inside .speaker, .profile-light body #right-column .profile-tile .profile-tile-inside #talk-description .format-box, #talk-description .profile-light body #right-column .profile-tile .profile-tile-inside .format-box {
-    color: #121214; }
+  .profile-light body #right-column .profile-tile .profile-tile-inside {
+    background: white;
+    padding: 12px; }
+    .profile-light body #right-column .profile-tile .profile-tile-inside .profile-title {
+      color: #121214; }
+    .profile-light body #right-column .profile-tile .profile-tile-inside .profile-publisher, .profile-light body #right-column .profile-tile .profile-tile-inside .profile-date {
+      color: #29292b; }
+    .profile-light body #right-column .profile-tile .profile-tile-inside .speaker, .profile-light body #right-column .profile-tile .profile-tile-inside #talk-description .format-box, #talk-description .profile-light body #right-column .profile-tile .profile-tile-inside .format-box {
+      color: #121214; }
 
 #filter-bar {
   padding-top: 24px; }

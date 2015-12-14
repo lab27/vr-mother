@@ -14,6 +14,7 @@
         background: rgba($secondary-color,1);
         height: 100%;
         min-height: 100vh;
+        // padding-left:24px;
     }
     
 
@@ -44,7 +45,7 @@
             color: white;
             transition: all .2 ease;
             h3 {
-                color: $secondary-color;
+                color: $brand-purple;
                 font-size: rem-calc(32);
                 line-height: rem-calc(36);
                 @media #{$xlarge-up}{
@@ -91,14 +92,16 @@
             
             #user-description {
                 @extend .medium-8;
-                @extend .medium-offset-2;
+                // @extend .medium-offset-2;
                 @extend .large-10;
-                @extend .large-offset-1;
+                // @extend .large-offset-1;
                 @extend .columns;
                 @extend .clearfix;
                 margin-top: 6px;
                 font-size: rem-calc(16);
                 font-weight: 200;
+                padding: 0;
+
                 @media #{$xlarge-up} {
                     font-size: rem-calc(18);
                     line-height: rem-calc(28);
@@ -113,16 +116,19 @@
                 @extend .small-12;
                 @extend .columns;
                 list-style: none;
-                text-align: center;
+                text-align: left;
                 margin-left: 0;
+                padding:0;
                 li {
                     display: inline-block;
-                    padding: 0 12px;
+                    padding: 0;
+                    margin-right: 24px;
+
                     a {
                         font-size: rem-calc(18);
-                        color: rgba(white,.5);
+                        color: $brand-purple;
                         &:hover {
-                            color: rgba(white,1);
+                            // color: rgba(white,1);
                         }
                     }
                 }
@@ -195,7 +201,7 @@
                 min-height: 100vh;
             }
             #user-block {
-                text-align: center;
+                text-align: left;
                 img {
                     margin-bottom: 0;
                 }
@@ -221,10 +227,10 @@
                 color: rgba(white, .3);
             }
             .tab-holder {
-                height: 36px;
+                height: 30px;
                 width: 100%;
                 padding: 0;
-                margin-bottom: 24px;
+                margin-bottom: 0;
             }
             .funky {
                 // height: 84px;
@@ -236,12 +242,12 @@
                     .tab-title {
                         margin-right: 48px;
                         &.active {
-                            border-bottom: 2px solid $secondary-color;
+                            // border-bottom: 2px solid white;
                             a {
-                                color: $secondary-color;
+                                color: white;
                                 height: 24px;
                                 &:hover {
-                                    color: $secondary-color;
+                                    color: $primary-color;
                                     border-bottom: 0;
                                     height: 24px;
                                 }
@@ -519,9 +525,26 @@
     .profile-light body {
     	#left-column {
     		// padding:0;
-    		background: rgba($almost-black,.1);
-    		background:white;
+    		// background: rgba($almost-black,.1);
+    		// background:white;
+            padding: 100px 0 100px 24px;
     		color: $almost-black;
+            background: none;
+            .user-info {
+                font-weight: normal;
+                letter-spacing: 2px;
+                color: white;
+                text-transform: uppercase;
+                font-size: rem-calc(12);
+                font-family: $header-font-family;
+            }
+            .user-holder {
+                background: white;
+                margin:0;
+                padding: 24px;
+
+            }
+
     		#user-block {
     		}
     		p {
@@ -533,15 +556,25 @@
     			margin-bottom: 6px;
     			margin-top: 24px;
     			text-transform: normal;
+                font-size: rem-calc(18);
     		}
     		#user-description {
     			
 
                 color: $almost-black;
-
+                color:$brand-purple;
+                margin-bottom: 16px;
+                font-weight: 400;
     		}
+            #user-about {
+                color: $almost-black;
+                padding: 0;
+                font-size: rem-calc(18);
+                font-weight: 200;
+            }
     	}
     	#right-column {
+            padding-left: 8px;
     		.tabs li a {
     			color: rgba($almost-black,.8);
     			&:hover {
@@ -566,6 +599,7 @@
     			.profile-tile-inside {
     			background: rgba(white,1);
     			// background: $brand-purple;
+                padding: 12px;
     			.profile-title {
     				color: $almost-black;
     			}
