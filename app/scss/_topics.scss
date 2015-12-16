@@ -1,0 +1,32 @@
+//topics
+
+#filter-bar {
+	padding-top:24px;
+
+	input[type="search"] {
+	// border-radius:26px;
+	border:1px solid $charcoal;
+
+
+}
+
+	.filter {
+		padding:0 6px;
+	}
+
+button, .button {
+	background:$ghost;
+	color:$oil;
+	text-align:left;
+	padding-left:24px;
+}
+
+button.dropdown:after {
+    border-color: $oil transparent transparent transparent;
+}
+}
+
+.topics-results {
+	padding:18px;
+}
+
