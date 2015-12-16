@@ -1,4 +1,5 @@
 {
+
   "name": "vr-mother",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
@@ -10,4 +11,5 @@
     "animate.css": "~3.4.0",
     "foundation-sites": "~6.0.6"
   }
+
 }

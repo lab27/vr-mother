@@ -35,7 +35,8 @@ module.exports = function(grunt) {
 
         sass: {
             options: {
-                includePaths: ['<%= app %>/bower_components/foundation-sites']
+
+                includePaths: ['<%= app %>/bower_components/foundation-sites/scss']
             },
             dist: {
                 options: {
@@ -241,7 +242,7 @@ module.exports = function(grunt) {
                 exclude: [
                     'modernizr',
                     'jquery-placeholder',
-                    'foundation'
+                    'foundation-sites'
                 ]
             }
         }
@@ -258,7 +259,7 @@ module.exports = function(grunt) {
         'compile-sass',
         // 'postcss',
 
-        'bower-install',
+        //'bower-install',
         //'browserSync:livereload',
         'connect:app',
         'watch'

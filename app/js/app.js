@@ -1,31 +1,33 @@
 'use strict';
 var statueNum = 0;
 var slidesAreUp = 0;
-var app = (function(document, $) {
-    var docElem = document.documentElement,
-        _userAgentInit = function() {
-            docElem.setAttribute('data-useragent', navigator.userAgent);
-        },
-        _init = function() {
-            $(document).foundation({
-                reveal: {
-                    animation: 'fade',
-                    animation_speed: 200
-                }
-            });
-            // needed to use joyride
-            // doc: http://foundation.zurb.com/docs/components/joyride.html
-            // $(document).on('click', '#start-jr', function() {
-            //     $(document).foundation('joyride', 'start');
-            // });
-            $(document).foundation('tab', 'reflow');
+$(document).foundation();
 
-            _userAgentInit();
-        };
-    return {
-        init: _init
-    };
-})(document, jQuery);
+// var app = (function(document, $) {
+//     var docElem = document.documentElement,
+//         _userAgentInit = function() {
+//             docElem.setAttribute('data-useragent', navigator.userAgent);
+//         },
+//         _init = function() {
+//             // $(document).foundation({
+//             //     reveal: {
+//             //         animation: 'fade',
+//             //         animation_speed: 200
+//             //     }
+//             // });
+//             // needed to use joyride
+//             // doc: http://foundation.zurb.com/docs/components/joyride.html
+//             // $(document).on('click', '#start-jr', function() {
+//             //     $(document).foundation('joyride', 'start');
+//             // });
+//             $(document).foundation('tab', 'reflow');
+
+//             _userAgentInit();
+//         };
+//     return {
+//         init: _init
+//     };
+// })(document, jQuery);
 
 
 //Smooth scrolll
@@ -44,9 +46,9 @@ var app = (function(document, $) {
 //     });
 // });
 
-(function() {
-    app.init();
-})();
+// (function() {
+//     app.init();
+// })();
 
 $('.my-slides').slick({
     centerMode: true,
