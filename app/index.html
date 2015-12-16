@@ -25,17 +25,48 @@
   <body>
 
 
-<div class="slideUp">
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li class="has-submenu">
+        <a href="#">One</a>
+        <ul class="submenu menu vertical" data-submenu>
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- <div class="slideUp">
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
       <a href="#"><img class="" src="img/logo/logo-red.svg" width="40"><span class="show-for-large-up">VOICE REPUBLIC</span></a>
     </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar"><a href="#"><span class="icon-uniE7E9"></span> </a></li>
+
+   <li class="toggle-topbar"><a href="#"><span class="icon-uniE7E9"></span> </a></li>
   </ul>
+  
   <section class="top-bar-section">
-    <!-- Right Nav Section -->
+
     <ul class="right">
           <li><a href="#"><span class="search-line">______________</span><span class="icon-uniE7E9"></span></a></li>
 
@@ -92,7 +123,7 @@
     
   </section>
 </nav>
-</div>
+</div> -->
     <div id="main" role="main">
 
       
@@ -100,9 +131,11 @@
 <section class="dark">
 
 <div class="row">
-<h1 id="voice-republic-is-the-platform-for-the-spoken-word-">Voice Republic is the platform for the spoken word.</h1>
+
+<div class="medium-8 medium-offset-2 columns text-center"><h1 id="voice-republic-home-to-the-spoken-word-">Voice Republic. Home To the Spoken Word.</h1>
 <button class="secondary hollow button" href="#">Publish</button>
 <button class="secondary hollow button" href="#">Listen</button>
+</div>
 </div>
 
 </section>
@@ -185,26 +218,28 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->
-    <script src="bower_components/foundation/js/foundation/foundation.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.abide.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.accordion.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.alert.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.clearing.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.joyride.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.orbit.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.slider.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
-    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
-     <script src="bower_components/foundation/js/foundation/foundation.tab.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.core.js"></script>
+       <script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+   <script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
+   <script src="bower_components/foundation-sites/js/foundation.util.nest.js"></script>
+      <script src="bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
+
+    <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.equalizer.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.interchange.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.orbit.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.reveal.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.slider.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.tabs.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+   <script src="bower_components/foundation-sites/js/foundation.dropdownMenu.js"></script>
+   <script src="bower_components/foundation-sites/js/foundation.responsiveMenu.js"></script>
+   <script src="bower_components/foundation-sites/js/foundation.responsiveToggle.js"></script>
+
+
     <!-- endbuild -->
-            <script src="js/gradientmaps.min.js"></script>
+          
 
     <!-- build:js js/app.min.js -->
     <script src="js/app.js"></script>
