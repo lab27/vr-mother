@@ -258,7 +258,7 @@ module.exports = function(grunt) {
         'compile-sass',
         // 'postcss',
 
-        'bower-install',
+        //'bower-install',
         //'browserSync:livereload',
         'connect:app',
         'watch'
