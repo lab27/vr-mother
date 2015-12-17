@@ -382,7 +382,7 @@ button {
     display: table; }
   .row::after {
     clear: both; }
-  .row.collapse > .column, .row.collapse > .columns, .row.collapse > .meta-left, .row.collapse > .meta-right, .row.collapse > #talk-description, .row.collapse > #talk-actions, #comments .row.collapse > .comment-meta, #comments .row.collapse > .comment-content, .profile-page body #left-column .row.collapse > #user-about, .profile-page body #right-column .row.collapse > .profile-tile {
+  .row.collapse > .column, .row.collapse > .columns, .row.collapse > .meta-left, .row.collapse > .meta-right, .row.collapse > #talk-description, .row.collapse > #talk-actions, #comments .row.collapse > .comment-meta, #comments .row.collapse > .comment-content, .profile-page body #left-column .row.collapse > #user-about, .profile-page body #right-column .row.collapse > .profile-tile, .landing-page #main .row.collapse > .container, .landing-page #main #claim .row.collapse > .container, .landing-page #main .row.collapse > .talk-card {
     padding-left: 0;
     padding-right: 0; }
   .row .row {
@@ -391,42 +391,42 @@ button {
     .row .row.collapse {
       margin-left: 0;
       margin-right: 0; }
-  .row.small-collapse > .column, .row.small-collapse > .columns, .row.small-collapse > .meta-left, .row.small-collapse > .meta-right, .row.small-collapse > #talk-description, .row.small-collapse > #talk-actions, #comments .row.small-collapse > .comment-meta, #comments .row.small-collapse > .comment-content, .profile-page body #left-column .row.small-collapse > #user-about, .profile-page body #right-column .row.small-collapse > .profile-tile {
+  .row.small-collapse > .column, .row.small-collapse > .columns, .row.small-collapse > .meta-left, .row.small-collapse > .meta-right, .row.small-collapse > #talk-description, .row.small-collapse > #talk-actions, #comments .row.small-collapse > .comment-meta, #comments .row.small-collapse > .comment-content, .profile-page body #left-column .row.small-collapse > #user-about, .profile-page body #right-column .row.small-collapse > .profile-tile, .landing-page #main .row.small-collapse > .container, .landing-page #main #claim .row.small-collapse > .container, .landing-page #main .row.small-collapse > .talk-card {
     padding-left: 0;
     padding-right: 0; }
-  .row.small-uncollapse > .column, .row.small-uncollapse > .columns, .row.small-uncollapse > .meta-left, .row.small-uncollapse > .meta-right, .row.small-uncollapse > #talk-description, .row.small-uncollapse > #talk-actions, #comments .row.small-uncollapse > .comment-meta, #comments .row.small-uncollapse > .comment-content, .profile-page body #left-column .row.small-uncollapse > #user-about, .profile-page body #right-column .row.small-uncollapse > .profile-tile {
+  .row.small-uncollapse > .column, .row.small-uncollapse > .columns, .row.small-uncollapse > .meta-left, .row.small-uncollapse > .meta-right, .row.small-uncollapse > #talk-description, .row.small-uncollapse > #talk-actions, #comments .row.small-uncollapse > .comment-meta, #comments .row.small-uncollapse > .comment-content, .profile-page body #left-column .row.small-uncollapse > #user-about, .profile-page body #right-column .row.small-uncollapse > .profile-tile, .landing-page #main .row.small-uncollapse > .container, .landing-page #main #claim .row.small-uncollapse > .container, .landing-page #main .row.small-uncollapse > .talk-card {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem; }
   @media screen and (min-width: 40em) {
-    .row.medium-collapse > .column, .row.medium-collapse > .columns, .row.medium-collapse > .meta-left, .row.medium-collapse > .meta-right, .row.medium-collapse > #talk-description, .row.medium-collapse > #talk-actions, #comments .row.medium-collapse > .comment-meta, #comments .row.medium-collapse > .comment-content, .profile-page body #left-column .row.medium-collapse > #user-about, .profile-page body #right-column .row.medium-collapse > .profile-tile {
+    .row.medium-collapse > .column, .row.medium-collapse > .columns, .row.medium-collapse > .meta-left, .row.medium-collapse > .meta-right, .row.medium-collapse > #talk-description, .row.medium-collapse > #talk-actions, #comments .row.medium-collapse > .comment-meta, #comments .row.medium-collapse > .comment-content, .profile-page body #left-column .row.medium-collapse > #user-about, .profile-page body #right-column .row.medium-collapse > .profile-tile, .landing-page #main .row.medium-collapse > .container, .landing-page #main #claim .row.medium-collapse > .container, .landing-page #main .row.medium-collapse > .talk-card {
       padding-left: 0;
       padding-right: 0; }
-    .row.medium-uncollapse > .column, .row.medium-uncollapse > .columns, .row.medium-uncollapse > .meta-left, .row.medium-uncollapse > .meta-right, .row.medium-uncollapse > #talk-description, .row.medium-uncollapse > #talk-actions, #comments .row.medium-uncollapse > .comment-meta, #comments .row.medium-uncollapse > .comment-content, .profile-page body #left-column .row.medium-uncollapse > #user-about, .profile-page body #right-column .row.medium-uncollapse > .profile-tile {
+    .row.medium-uncollapse > .column, .row.medium-uncollapse > .columns, .row.medium-uncollapse > .meta-left, .row.medium-uncollapse > .meta-right, .row.medium-uncollapse > #talk-description, .row.medium-uncollapse > #talk-actions, #comments .row.medium-uncollapse > .comment-meta, #comments .row.medium-uncollapse > .comment-content, .profile-page body #left-column .row.medium-uncollapse > #user-about, .profile-page body #right-column .row.medium-uncollapse > .profile-tile, .landing-page #main .row.medium-uncollapse > .container, .landing-page #main #claim .row.medium-uncollapse > .container, .landing-page #main .row.medium-uncollapse > .talk-card {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
   @media screen and (min-width: 64em) {
-    .row.large-collapse > .column, .row.large-collapse > .columns, .row.large-collapse > .meta-left, .row.large-collapse > .meta-right, .row.large-collapse > #talk-description, .row.large-collapse > #talk-actions, #comments .row.large-collapse > .comment-meta, #comments .row.large-collapse > .comment-content, .profile-page body #left-column .row.large-collapse > #user-about, .profile-page body #right-column .row.large-collapse > .profile-tile {
+    .row.large-collapse > .column, .row.large-collapse > .columns, .row.large-collapse > .meta-left, .row.large-collapse > .meta-right, .row.large-collapse > #talk-description, .row.large-collapse > #talk-actions, #comments .row.large-collapse > .comment-meta, #comments .row.large-collapse > .comment-content, .profile-page body #left-column .row.large-collapse > #user-about, .profile-page body #right-column .row.large-collapse > .profile-tile, .landing-page #main .row.large-collapse > .container, .landing-page #main #claim .row.large-collapse > .container, .landing-page #main .row.large-collapse > .talk-card {
       padding-left: 0;
       padding-right: 0; }
-    .row.large-uncollapse > .column, .row.large-uncollapse > .columns, .row.large-uncollapse > .meta-left, .row.large-uncollapse > .meta-right, .row.large-uncollapse > #talk-description, .row.large-uncollapse > #talk-actions, #comments .row.large-uncollapse > .comment-meta, #comments .row.large-uncollapse > .comment-content, .profile-page body #left-column .row.large-uncollapse > #user-about, .profile-page body #right-column .row.large-uncollapse > .profile-tile {
+    .row.large-uncollapse > .column, .row.large-uncollapse > .columns, .row.large-uncollapse > .meta-left, .row.large-uncollapse > .meta-right, .row.large-uncollapse > #talk-description, .row.large-uncollapse > #talk-actions, #comments .row.large-uncollapse > .comment-meta, #comments .row.large-uncollapse > .comment-content, .profile-page body #left-column .row.large-uncollapse > #user-about, .profile-page body #right-column .row.large-uncollapse > .profile-tile, .landing-page #main .row.large-uncollapse > .container, .landing-page #main #claim .row.large-uncollapse > .container, .landing-page #main .row.large-uncollapse > .talk-card {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
   .row.expanded {
     max-width: none; }
 
-.column, .columns, .meta-left, .meta-right, #talk-description, #talk-actions, #comments .comment-meta, #comments .comment-content, .profile-page body #left-column #user-about, .profile-page body #right-column .profile-tile {
+.column, .columns, .meta-left, .meta-right, #talk-description, #talk-actions, #comments .comment-meta, #comments .comment-content, .profile-page body #left-column #user-about, .profile-page body #right-column .profile-tile, .landing-page #main .row .container, .landing-page #main #claim .container, .landing-page #main .talk-card {
   width: 100%;
   float: left;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem; }
-  .column:last-child:not(:first-child), .columns:last-child:not(:first-child), .meta-left:last-child:not(:first-child), .meta-right:last-child:not(:first-child), #talk-description:last-child:not(:first-child), #talk-actions:last-child:not(:first-child), #comments .comment-meta:last-child:not(:first-child), #comments .comment-content:last-child:not(:first-child), .profile-page body #left-column #user-about:last-child:not(:first-child), .profile-page body #right-column .profile-tile:last-child:not(:first-child) {
+  .column:last-child:not(:first-child), .columns:last-child:not(:first-child), .meta-left:last-child:not(:first-child), .meta-right:last-child:not(:first-child), #talk-description:last-child:not(:first-child), #talk-actions:last-child:not(:first-child), #comments .comment-meta:last-child:not(:first-child), #comments .comment-content:last-child:not(:first-child), .profile-page body #left-column #user-about:last-child:not(:first-child), .profile-page body #right-column .profile-tile:last-child:not(:first-child), .landing-page #main .row .container:last-child:not(:first-child), .landing-page #main #claim .container:last-child:not(:first-child), .landing-page #main .talk-card:last-child:not(:first-child) {
     float: right; }
-  .column.end:last-child:last-child, .end.columns:last-child:last-child, .end.meta-left:last-child:last-child, .end.meta-right:last-child:last-child, .end#talk-description:last-child:last-child, .end#talk-actions:last-child:last-child, #comments .end.comment-meta:last-child:last-child, #comments .end.comment-content:last-child:last-child, .profile-page body #left-column .end#user-about:last-child:last-child, .profile-page body #left-column #right-column #user-about.profile-tile:last-child:last-child, .profile-page body #right-column #left-column #user-about.profile-tile:last-child:last-child, .profile-page body #right-column .profile-tile:last-child:last-child {
+  .column.end:last-child:last-child, .end.columns:last-child:last-child, .end.meta-left:last-child:last-child, .end.meta-right:last-child:last-child, .end#talk-description:last-child:last-child, .end#talk-actions:last-child:last-child, #comments .end.comment-meta:last-child:last-child, #comments .end.comment-content:last-child:last-child, .profile-page body #left-column .end#user-about:last-child:last-child, .profile-page body #left-column #right-column #user-about.profile-tile:last-child:last-child, .profile-page body #right-column #left-column #user-about.profile-tile:last-child:last-child, .profile-page body #right-column .profile-tile:last-child:last-child, .profile-page body #right-column .landing-page #main #claim .profile-tile.container:last-child:last-child, .landing-page #main #claim .profile-page body #right-column .profile-tile.container:last-child:last-child, .landing-page #main .row .end.container:last-child:last-child, .landing-page #main #claim .end.container:last-child:last-child, .landing-page #main .end.talk-card:last-child:last-child {
     float: left; }
 
-.column.row.row, .row.row.columns, .row.row.meta-left, .row.row.meta-right, .row.row#talk-description, .row.row#talk-actions, #comments .row.row.comment-meta, #comments .row.row.comment-content, .profile-page body #left-column .row.row#user-about, .profile-page body #right-column .row.row.profile-tile {
+.column.row.row, .row.row.columns, .row.row.meta-left, .row.row.meta-right, .row.row#talk-description, .row.row#talk-actions, #comments .row.row.comment-meta, #comments .row.row.comment-content, .profile-page body #left-column .row.row#user-about, .profile-page body #right-column .row.row.profile-tile, .landing-page #main .row .row.row.container, .landing-page #main #claim .row.row.container, .landing-page #main .row.row.talk-card {
   float: none; }
-  .row .column.row.row, .row .row.row.columns, .row .row.row.meta-left, .row .row.row.meta-right, .row .row.row#talk-description, .row .row.row#talk-actions, .row #comments .row.row.comment-meta, #comments .row .row.row.comment-meta, .row #comments .row.row.comment-content, #comments .row .row.row.comment-content, .row .profile-page body #left-column .row.row#user-about, .profile-page body #left-column .row .row.row#user-about, .row .profile-page body #right-column .row.row.profile-tile, .profile-page body #right-column .row .row.row.profile-tile {
+  .row .column.row.row, .row .row.row.columns, .row .row.row.meta-left, .row .row.row.meta-right, .row .row.row#talk-description, .row .row.row#talk-actions, .row #comments .row.row.comment-meta, #comments .row .row.row.comment-meta, .row #comments .row.row.comment-content, #comments .row .row.row.comment-content, .row .profile-page body #left-column .row.row#user-about, .profile-page body #left-column .row .row.row#user-about, .row .profile-page body #right-column .row.row.profile-tile, .profile-page body #right-column .row .row.row.profile-tile, .landing-page #main .row .row.row.container, .row .landing-page #main #claim .row.row.container, .landing-page #main #claim .row .row.row.container, .row .landing-page #main .row.row.talk-card, .landing-page #main .row .row.row.talk-card {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
@@ -592,87 +592,87 @@ button {
 .small-offset-11 {
   margin-left: 91.6666666667%; }
 
-.small-up-1 > .column, .small-up-1 > .columns, .small-up-1 > .meta-left, .small-up-1 > .meta-right, .small-up-1 > #talk-description, .small-up-1 > #talk-actions, #comments .small-up-1 > .comment-meta, #comments .small-up-1 > .comment-content, .profile-page body #left-column .small-up-1 > #user-about, .profile-page body #right-column .small-up-1 > .profile-tile {
+.small-up-1 > .column, .small-up-1 > .columns, .small-up-1 > .meta-left, .small-up-1 > .meta-right, .small-up-1 > #talk-description, .small-up-1 > #talk-actions, #comments .small-up-1 > .comment-meta, #comments .small-up-1 > .comment-content, .profile-page body #left-column .small-up-1 > #user-about, .profile-page body #right-column .small-up-1 > .profile-tile, .landing-page #main .row .small-up-1 > .container, .landing-page #main #claim .small-up-1 > .container, .landing-page #main .small-up-1 > .talk-card {
   width: 100%;
   float: left; }
-  .small-up-1 > .column:nth-of-type(1n), .small-up-1 > .columns:nth-of-type(1n), .small-up-1 > .meta-left:nth-of-type(1n), .small-up-1 > .meta-right:nth-of-type(1n), .small-up-1 > #talk-description:nth-of-type(1n), .small-up-1 > #talk-actions:nth-of-type(1n), #comments .small-up-1 > .comment-meta:nth-of-type(1n), #comments .small-up-1 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-1 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-1 > .profile-tile:nth-of-type(1n) {
+  .small-up-1 > .column:nth-of-type(1n), .small-up-1 > .columns:nth-of-type(1n), .small-up-1 > .meta-left:nth-of-type(1n), .small-up-1 > .meta-right:nth-of-type(1n), .small-up-1 > #talk-description:nth-of-type(1n), .small-up-1 > #talk-actions:nth-of-type(1n), #comments .small-up-1 > .comment-meta:nth-of-type(1n), #comments .small-up-1 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-1 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-1 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-1 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-1 > .container:nth-of-type(1n), .landing-page #main .small-up-1 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-1 > .column:nth-of-type(1n+1), .small-up-1 > .columns:nth-of-type(1n+1), .small-up-1 > .meta-left:nth-of-type(1n+1), .small-up-1 > .meta-right:nth-of-type(1n+1), .small-up-1 > #talk-description:nth-of-type(1n+1), .small-up-1 > #talk-actions:nth-of-type(1n+1), #comments .small-up-1 > .comment-meta:nth-of-type(1n+1), #comments .small-up-1 > .comment-content:nth-of-type(1n+1), .profile-page body #left-column .small-up-1 > #user-about:nth-of-type(1n+1), .profile-page body #right-column .small-up-1 > .profile-tile:nth-of-type(1n+1) {
+  .small-up-1 > .column:nth-of-type(1n+1), .small-up-1 > .columns:nth-of-type(1n+1), .small-up-1 > .meta-left:nth-of-type(1n+1), .small-up-1 > .meta-right:nth-of-type(1n+1), .small-up-1 > #talk-description:nth-of-type(1n+1), .small-up-1 > #talk-actions:nth-of-type(1n+1), #comments .small-up-1 > .comment-meta:nth-of-type(1n+1), #comments .small-up-1 > .comment-content:nth-of-type(1n+1), .profile-page body #left-column .small-up-1 > #user-about:nth-of-type(1n+1), .profile-page body #right-column .small-up-1 > .profile-tile:nth-of-type(1n+1), .landing-page #main .row .small-up-1 > .container:nth-of-type(1n+1), .landing-page #main #claim .small-up-1 > .container:nth-of-type(1n+1), .landing-page #main .small-up-1 > .talk-card:nth-of-type(1n+1) {
     clear: both; }
-  .small-up-1 > .column:last-child, .small-up-1 > .columns:last-child, .small-up-1 > .meta-left:last-child, .small-up-1 > .meta-right:last-child, .small-up-1 > #talk-description:last-child, .small-up-1 > #talk-actions:last-child, #comments .small-up-1 > .comment-meta:last-child, #comments .small-up-1 > .comment-content:last-child, .profile-page body #left-column .small-up-1 > #user-about:last-child, .profile-page body #right-column .small-up-1 > .profile-tile:last-child {
+  .small-up-1 > .column:last-child, .small-up-1 > .columns:last-child, .small-up-1 > .meta-left:last-child, .small-up-1 > .meta-right:last-child, .small-up-1 > #talk-description:last-child, .small-up-1 > #talk-actions:last-child, #comments .small-up-1 > .comment-meta:last-child, #comments .small-up-1 > .comment-content:last-child, .profile-page body #left-column .small-up-1 > #user-about:last-child, .profile-page body #right-column .small-up-1 > .profile-tile:last-child, .landing-page #main .row .small-up-1 > .container:last-child, .landing-page #main #claim .small-up-1 > .container:last-child, .landing-page #main .small-up-1 > .talk-card:last-child {
     float: left; }
 
-.small-up-2 > .column, .small-up-2 > .columns, .small-up-2 > .meta-left, .small-up-2 > .meta-right, .small-up-2 > #talk-description, .small-up-2 > #talk-actions, #comments .small-up-2 > .comment-meta, #comments .small-up-2 > .comment-content, .profile-page body #left-column .small-up-2 > #user-about, .profile-page body #right-column .small-up-2 > .profile-tile {
+.small-up-2 > .column, .small-up-2 > .columns, .small-up-2 > .meta-left, .small-up-2 > .meta-right, .small-up-2 > #talk-description, .small-up-2 > #talk-actions, #comments .small-up-2 > .comment-meta, #comments .small-up-2 > .comment-content, .profile-page body #left-column .small-up-2 > #user-about, .profile-page body #right-column .small-up-2 > .profile-tile, .landing-page #main .row .small-up-2 > .container, .landing-page #main #claim .small-up-2 > .container, .landing-page #main .small-up-2 > .talk-card {
   width: 50%;
   float: left; }
-  .small-up-2 > .column:nth-of-type(1n), .small-up-2 > .columns:nth-of-type(1n), .small-up-2 > .meta-left:nth-of-type(1n), .small-up-2 > .meta-right:nth-of-type(1n), .small-up-2 > #talk-description:nth-of-type(1n), .small-up-2 > #talk-actions:nth-of-type(1n), #comments .small-up-2 > .comment-meta:nth-of-type(1n), #comments .small-up-2 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-2 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-2 > .profile-tile:nth-of-type(1n) {
+  .small-up-2 > .column:nth-of-type(1n), .small-up-2 > .columns:nth-of-type(1n), .small-up-2 > .meta-left:nth-of-type(1n), .small-up-2 > .meta-right:nth-of-type(1n), .small-up-2 > #talk-description:nth-of-type(1n), .small-up-2 > #talk-actions:nth-of-type(1n), #comments .small-up-2 > .comment-meta:nth-of-type(1n), #comments .small-up-2 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-2 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-2 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-2 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-2 > .container:nth-of-type(1n), .landing-page #main .small-up-2 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-2 > .column:nth-of-type(2n+1), .small-up-2 > .columns:nth-of-type(2n+1), .small-up-2 > .meta-left:nth-of-type(2n+1), .small-up-2 > .meta-right:nth-of-type(2n+1), .small-up-2 > #talk-description:nth-of-type(2n+1), .small-up-2 > #talk-actions:nth-of-type(2n+1), #comments .small-up-2 > .comment-meta:nth-of-type(2n+1), #comments .small-up-2 > .comment-content:nth-of-type(2n+1), .profile-page body #left-column .small-up-2 > #user-about:nth-of-type(2n+1), .profile-page body #right-column .small-up-2 > .profile-tile:nth-of-type(2n+1) {
+  .small-up-2 > .column:nth-of-type(2n+1), .small-up-2 > .columns:nth-of-type(2n+1), .small-up-2 > .meta-left:nth-of-type(2n+1), .small-up-2 > .meta-right:nth-of-type(2n+1), .small-up-2 > #talk-description:nth-of-type(2n+1), .small-up-2 > #talk-actions:nth-of-type(2n+1), #comments .small-up-2 > .comment-meta:nth-of-type(2n+1), #comments .small-up-2 > .comment-content:nth-of-type(2n+1), .profile-page body #left-column .small-up-2 > #user-about:nth-of-type(2n+1), .profile-page body #right-column .small-up-2 > .profile-tile:nth-of-type(2n+1), .landing-page #main .row .small-up-2 > .container:nth-of-type(2n+1), .landing-page #main #claim .small-up-2 > .container:nth-of-type(2n+1), .landing-page #main .small-up-2 > .talk-card:nth-of-type(2n+1) {
     clear: both; }
-  .small-up-2 > .column:last-child, .small-up-2 > .columns:last-child, .small-up-2 > .meta-left:last-child, .small-up-2 > .meta-right:last-child, .small-up-2 > #talk-description:last-child, .small-up-2 > #talk-actions:last-child, #comments .small-up-2 > .comment-meta:last-child, #comments .small-up-2 > .comment-content:last-child, .profile-page body #left-column .small-up-2 > #user-about:last-child, .profile-page body #right-column .small-up-2 > .profile-tile:last-child {
+  .small-up-2 > .column:last-child, .small-up-2 > .columns:last-child, .small-up-2 > .meta-left:last-child, .small-up-2 > .meta-right:last-child, .small-up-2 > #talk-description:last-child, .small-up-2 > #talk-actions:last-child, #comments .small-up-2 > .comment-meta:last-child, #comments .small-up-2 > .comment-content:last-child, .profile-page body #left-column .small-up-2 > #user-about:last-child, .profile-page body #right-column .small-up-2 > .profile-tile:last-child, .landing-page #main .row .small-up-2 > .container:last-child, .landing-page #main #claim .small-up-2 > .container:last-child, .landing-page #main .small-up-2 > .talk-card:last-child {
     float: left; }
 
-.small-up-3 > .column, .small-up-3 > .columns, .small-up-3 > .meta-left, .small-up-3 > .meta-right, .small-up-3 > #talk-description, .small-up-3 > #talk-actions, #comments .small-up-3 > .comment-meta, #comments .small-up-3 > .comment-content, .profile-page body #left-column .small-up-3 > #user-about, .profile-page body #right-column .small-up-3 > .profile-tile {
+.small-up-3 > .column, .small-up-3 > .columns, .small-up-3 > .meta-left, .small-up-3 > .meta-right, .small-up-3 > #talk-description, .small-up-3 > #talk-actions, #comments .small-up-3 > .comment-meta, #comments .small-up-3 > .comment-content, .profile-page body #left-column .small-up-3 > #user-about, .profile-page body #right-column .small-up-3 > .profile-tile, .landing-page #main .row .small-up-3 > .container, .landing-page #main #claim .small-up-3 > .container, .landing-page #main .small-up-3 > .talk-card {
   width: 33.3333333333%;
   float: left; }
-  .small-up-3 > .column:nth-of-type(1n), .small-up-3 > .columns:nth-of-type(1n), .small-up-3 > .meta-left:nth-of-type(1n), .small-up-3 > .meta-right:nth-of-type(1n), .small-up-3 > #talk-description:nth-of-type(1n), .small-up-3 > #talk-actions:nth-of-type(1n), #comments .small-up-3 > .comment-meta:nth-of-type(1n), #comments .small-up-3 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-3 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-3 > .profile-tile:nth-of-type(1n) {
+  .small-up-3 > .column:nth-of-type(1n), .small-up-3 > .columns:nth-of-type(1n), .small-up-3 > .meta-left:nth-of-type(1n), .small-up-3 > .meta-right:nth-of-type(1n), .small-up-3 > #talk-description:nth-of-type(1n), .small-up-3 > #talk-actions:nth-of-type(1n), #comments .small-up-3 > .comment-meta:nth-of-type(1n), #comments .small-up-3 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-3 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-3 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-3 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-3 > .container:nth-of-type(1n), .landing-page #main .small-up-3 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-3 > .column:nth-of-type(3n+1), .small-up-3 > .columns:nth-of-type(3n+1), .small-up-3 > .meta-left:nth-of-type(3n+1), .small-up-3 > .meta-right:nth-of-type(3n+1), .small-up-3 > #talk-description:nth-of-type(3n+1), .small-up-3 > #talk-actions:nth-of-type(3n+1), #comments .small-up-3 > .comment-meta:nth-of-type(3n+1), #comments .small-up-3 > .comment-content:nth-of-type(3n+1), .profile-page body #left-column .small-up-3 > #user-about:nth-of-type(3n+1), .profile-page body #right-column .small-up-3 > .profile-tile:nth-of-type(3n+1) {
+  .small-up-3 > .column:nth-of-type(3n+1), .small-up-3 > .columns:nth-of-type(3n+1), .small-up-3 > .meta-left:nth-of-type(3n+1), .small-up-3 > .meta-right:nth-of-type(3n+1), .small-up-3 > #talk-description:nth-of-type(3n+1), .small-up-3 > #talk-actions:nth-of-type(3n+1), #comments .small-up-3 > .comment-meta:nth-of-type(3n+1), #comments .small-up-3 > .comment-content:nth-of-type(3n+1), .profile-page body #left-column .small-up-3 > #user-about:nth-of-type(3n+1), .profile-page body #right-column .small-up-3 > .profile-tile:nth-of-type(3n+1), .landing-page #main .row .small-up-3 > .container:nth-of-type(3n+1), .landing-page #main #claim .small-up-3 > .container:nth-of-type(3n+1), .landing-page #main .small-up-3 > .talk-card:nth-of-type(3n+1) {
     clear: both; }
-  .small-up-3 > .column:last-child, .small-up-3 > .columns:last-child, .small-up-3 > .meta-left:last-child, .small-up-3 > .meta-right:last-child, .small-up-3 > #talk-description:last-child, .small-up-3 > #talk-actions:last-child, #comments .small-up-3 > .comment-meta:last-child, #comments .small-up-3 > .comment-content:last-child, .profile-page body #left-column .small-up-3 > #user-about:last-child, .profile-page body #right-column .small-up-3 > .profile-tile:last-child {
+  .small-up-3 > .column:last-child, .small-up-3 > .columns:last-child, .small-up-3 > .meta-left:last-child, .small-up-3 > .meta-right:last-child, .small-up-3 > #talk-description:last-child, .small-up-3 > #talk-actions:last-child, #comments .small-up-3 > .comment-meta:last-child, #comments .small-up-3 > .comment-content:last-child, .profile-page body #left-column .small-up-3 > #user-about:last-child, .profile-page body #right-column .small-up-3 > .profile-tile:last-child, .landing-page #main .row .small-up-3 > .container:last-child, .landing-page #main #claim .small-up-3 > .container:last-child, .landing-page #main .small-up-3 > .talk-card:last-child {
     float: left; }
 
-.small-up-4 > .column, .small-up-4 > .columns, .small-up-4 > .meta-left, .small-up-4 > .meta-right, .small-up-4 > #talk-description, .small-up-4 > #talk-actions, #comments .small-up-4 > .comment-meta, #comments .small-up-4 > .comment-content, .profile-page body #left-column .small-up-4 > #user-about, .profile-page body #right-column .small-up-4 > .profile-tile {
+.small-up-4 > .column, .small-up-4 > .columns, .small-up-4 > .meta-left, .small-up-4 > .meta-right, .small-up-4 > #talk-description, .small-up-4 > #talk-actions, #comments .small-up-4 > .comment-meta, #comments .small-up-4 > .comment-content, .profile-page body #left-column .small-up-4 > #user-about, .profile-page body #right-column .small-up-4 > .profile-tile, .landing-page #main .row .small-up-4 > .container, .landing-page #main #claim .small-up-4 > .container, .landing-page #main .small-up-4 > .talk-card {
   width: 25%;
   float: left; }
-  .small-up-4 > .column:nth-of-type(1n), .small-up-4 > .columns:nth-of-type(1n), .small-up-4 > .meta-left:nth-of-type(1n), .small-up-4 > .meta-right:nth-of-type(1n), .small-up-4 > #talk-description:nth-of-type(1n), .small-up-4 > #talk-actions:nth-of-type(1n), #comments .small-up-4 > .comment-meta:nth-of-type(1n), #comments .small-up-4 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-4 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-4 > .profile-tile:nth-of-type(1n) {
+  .small-up-4 > .column:nth-of-type(1n), .small-up-4 > .columns:nth-of-type(1n), .small-up-4 > .meta-left:nth-of-type(1n), .small-up-4 > .meta-right:nth-of-type(1n), .small-up-4 > #talk-description:nth-of-type(1n), .small-up-4 > #talk-actions:nth-of-type(1n), #comments .small-up-4 > .comment-meta:nth-of-type(1n), #comments .small-up-4 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-4 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-4 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-4 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-4 > .container:nth-of-type(1n), .landing-page #main .small-up-4 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-4 > .column:nth-of-type(4n+1), .small-up-4 > .columns:nth-of-type(4n+1), .small-up-4 > .meta-left:nth-of-type(4n+1), .small-up-4 > .meta-right:nth-of-type(4n+1), .small-up-4 > #talk-description:nth-of-type(4n+1), .small-up-4 > #talk-actions:nth-of-type(4n+1), #comments .small-up-4 > .comment-meta:nth-of-type(4n+1), #comments .small-up-4 > .comment-content:nth-of-type(4n+1), .profile-page body #left-column .small-up-4 > #user-about:nth-of-type(4n+1), .profile-page body #right-column .small-up-4 > .profile-tile:nth-of-type(4n+1) {
+  .small-up-4 > .column:nth-of-type(4n+1), .small-up-4 > .columns:nth-of-type(4n+1), .small-up-4 > .meta-left:nth-of-type(4n+1), .small-up-4 > .meta-right:nth-of-type(4n+1), .small-up-4 > #talk-description:nth-of-type(4n+1), .small-up-4 > #talk-actions:nth-of-type(4n+1), #comments .small-up-4 > .comment-meta:nth-of-type(4n+1), #comments .small-up-4 > .comment-content:nth-of-type(4n+1), .profile-page body #left-column .small-up-4 > #user-about:nth-of-type(4n+1), .profile-page body #right-column .small-up-4 > .profile-tile:nth-of-type(4n+1), .landing-page #main .row .small-up-4 > .container:nth-of-type(4n+1), .landing-page #main #claim .small-up-4 > .container:nth-of-type(4n+1), .landing-page #main .small-up-4 > .talk-card:nth-of-type(4n+1) {
     clear: both; }
-  .small-up-4 > .column:last-child, .small-up-4 > .columns:last-child, .small-up-4 > .meta-left:last-child, .small-up-4 > .meta-right:last-child, .small-up-4 > #talk-description:last-child, .small-up-4 > #talk-actions:last-child, #comments .small-up-4 > .comment-meta:last-child, #comments .small-up-4 > .comment-content:last-child, .profile-page body #left-column .small-up-4 > #user-about:last-child, .profile-page body #right-column .small-up-4 > .profile-tile:last-child {
+  .small-up-4 > .column:last-child, .small-up-4 > .columns:last-child, .small-up-4 > .meta-left:last-child, .small-up-4 > .meta-right:last-child, .small-up-4 > #talk-description:last-child, .small-up-4 > #talk-actions:last-child, #comments .small-up-4 > .comment-meta:last-child, #comments .small-up-4 > .comment-content:last-child, .profile-page body #left-column .small-up-4 > #user-about:last-child, .profile-page body #right-column .small-up-4 > .profile-tile:last-child, .landing-page #main .row .small-up-4 > .container:last-child, .landing-page #main #claim .small-up-4 > .container:last-child, .landing-page #main .small-up-4 > .talk-card:last-child {
     float: left; }
 
-.small-up-5 > .column, .small-up-5 > .columns, .small-up-5 > .meta-left, .small-up-5 > .meta-right, .small-up-5 > #talk-description, .small-up-5 > #talk-actions, #comments .small-up-5 > .comment-meta, #comments .small-up-5 > .comment-content, .profile-page body #left-column .small-up-5 > #user-about, .profile-page body #right-column .small-up-5 > .profile-tile {
+.small-up-5 > .column, .small-up-5 > .columns, .small-up-5 > .meta-left, .small-up-5 > .meta-right, .small-up-5 > #talk-description, .small-up-5 > #talk-actions, #comments .small-up-5 > .comment-meta, #comments .small-up-5 > .comment-content, .profile-page body #left-column .small-up-5 > #user-about, .profile-page body #right-column .small-up-5 > .profile-tile, .landing-page #main .row .small-up-5 > .container, .landing-page #main #claim .small-up-5 > .container, .landing-page #main .small-up-5 > .talk-card {
   width: 20%;
   float: left; }
-  .small-up-5 > .column:nth-of-type(1n), .small-up-5 > .columns:nth-of-type(1n), .small-up-5 > .meta-left:nth-of-type(1n), .small-up-5 > .meta-right:nth-of-type(1n), .small-up-5 > #talk-description:nth-of-type(1n), .small-up-5 > #talk-actions:nth-of-type(1n), #comments .small-up-5 > .comment-meta:nth-of-type(1n), #comments .small-up-5 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-5 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-5 > .profile-tile:nth-of-type(1n) {
+  .small-up-5 > .column:nth-of-type(1n), .small-up-5 > .columns:nth-of-type(1n), .small-up-5 > .meta-left:nth-of-type(1n), .small-up-5 > .meta-right:nth-of-type(1n), .small-up-5 > #talk-description:nth-of-type(1n), .small-up-5 > #talk-actions:nth-of-type(1n), #comments .small-up-5 > .comment-meta:nth-of-type(1n), #comments .small-up-5 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-5 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-5 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-5 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-5 > .container:nth-of-type(1n), .landing-page #main .small-up-5 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-5 > .column:nth-of-type(5n+1), .small-up-5 > .columns:nth-of-type(5n+1), .small-up-5 > .meta-left:nth-of-type(5n+1), .small-up-5 > .meta-right:nth-of-type(5n+1), .small-up-5 > #talk-description:nth-of-type(5n+1), .small-up-5 > #talk-actions:nth-of-type(5n+1), #comments .small-up-5 > .comment-meta:nth-of-type(5n+1), #comments .small-up-5 > .comment-content:nth-of-type(5n+1), .profile-page body #left-column .small-up-5 > #user-about:nth-of-type(5n+1), .profile-page body #right-column .small-up-5 > .profile-tile:nth-of-type(5n+1) {
+  .small-up-5 > .column:nth-of-type(5n+1), .small-up-5 > .columns:nth-of-type(5n+1), .small-up-5 > .meta-left:nth-of-type(5n+1), .small-up-5 > .meta-right:nth-of-type(5n+1), .small-up-5 > #talk-description:nth-of-type(5n+1), .small-up-5 > #talk-actions:nth-of-type(5n+1), #comments .small-up-5 > .comment-meta:nth-of-type(5n+1), #comments .small-up-5 > .comment-content:nth-of-type(5n+1), .profile-page body #left-column .small-up-5 > #user-about:nth-of-type(5n+1), .profile-page body #right-column .small-up-5 > .profile-tile:nth-of-type(5n+1), .landing-page #main .row .small-up-5 > .container:nth-of-type(5n+1), .landing-page #main #claim .small-up-5 > .container:nth-of-type(5n+1), .landing-page #main .small-up-5 > .talk-card:nth-of-type(5n+1) {
     clear: both; }
-  .small-up-5 > .column:last-child, .small-up-5 > .columns:last-child, .small-up-5 > .meta-left:last-child, .small-up-5 > .meta-right:last-child, .small-up-5 > #talk-description:last-child, .small-up-5 > #talk-actions:last-child, #comments .small-up-5 > .comment-meta:last-child, #comments .small-up-5 > .comment-content:last-child, .profile-page body #left-column .small-up-5 > #user-about:last-child, .profile-page body #right-column .small-up-5 > .profile-tile:last-child {
+  .small-up-5 > .column:last-child, .small-up-5 > .columns:last-child, .small-up-5 > .meta-left:last-child, .small-up-5 > .meta-right:last-child, .small-up-5 > #talk-description:last-child, .small-up-5 > #talk-actions:last-child, #comments .small-up-5 > .comment-meta:last-child, #comments .small-up-5 > .comment-content:last-child, .profile-page body #left-column .small-up-5 > #user-about:last-child, .profile-page body #right-column .small-up-5 > .profile-tile:last-child, .landing-page #main .row .small-up-5 > .container:last-child, .landing-page #main #claim .small-up-5 > .container:last-child, .landing-page #main .small-up-5 > .talk-card:last-child {
     float: left; }
 
-.small-up-6 > .column, .small-up-6 > .columns, .small-up-6 > .meta-left, .small-up-6 > .meta-right, .small-up-6 > #talk-description, .small-up-6 > #talk-actions, #comments .small-up-6 > .comment-meta, #comments .small-up-6 > .comment-content, .profile-page body #left-column .small-up-6 > #user-about, .profile-page body #right-column .small-up-6 > .profile-tile {
+.small-up-6 > .column, .small-up-6 > .columns, .small-up-6 > .meta-left, .small-up-6 > .meta-right, .small-up-6 > #talk-description, .small-up-6 > #talk-actions, #comments .small-up-6 > .comment-meta, #comments .small-up-6 > .comment-content, .profile-page body #left-column .small-up-6 > #user-about, .profile-page body #right-column .small-up-6 > .profile-tile, .landing-page #main .row .small-up-6 > .container, .landing-page #main #claim .small-up-6 > .container, .landing-page #main .small-up-6 > .talk-card {
   width: 16.6666666667%;
   float: left; }
-  .small-up-6 > .column:nth-of-type(1n), .small-up-6 > .columns:nth-of-type(1n), .small-up-6 > .meta-left:nth-of-type(1n), .small-up-6 > .meta-right:nth-of-type(1n), .small-up-6 > #talk-description:nth-of-type(1n), .small-up-6 > #talk-actions:nth-of-type(1n), #comments .small-up-6 > .comment-meta:nth-of-type(1n), #comments .small-up-6 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-6 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-6 > .profile-tile:nth-of-type(1n) {
+  .small-up-6 > .column:nth-of-type(1n), .small-up-6 > .columns:nth-of-type(1n), .small-up-6 > .meta-left:nth-of-type(1n), .small-up-6 > .meta-right:nth-of-type(1n), .small-up-6 > #talk-description:nth-of-type(1n), .small-up-6 > #talk-actions:nth-of-type(1n), #comments .small-up-6 > .comment-meta:nth-of-type(1n), #comments .small-up-6 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-6 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-6 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-6 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-6 > .container:nth-of-type(1n), .landing-page #main .small-up-6 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-6 > .column:nth-of-type(6n+1), .small-up-6 > .columns:nth-of-type(6n+1), .small-up-6 > .meta-left:nth-of-type(6n+1), .small-up-6 > .meta-right:nth-of-type(6n+1), .small-up-6 > #talk-description:nth-of-type(6n+1), .small-up-6 > #talk-actions:nth-of-type(6n+1), #comments .small-up-6 > .comment-meta:nth-of-type(6n+1), #comments .small-up-6 > .comment-content:nth-of-type(6n+1), .profile-page body #left-column .small-up-6 > #user-about:nth-of-type(6n+1), .profile-page body #right-column .small-up-6 > .profile-tile:nth-of-type(6n+1) {
+  .small-up-6 > .column:nth-of-type(6n+1), .small-up-6 > .columns:nth-of-type(6n+1), .small-up-6 > .meta-left:nth-of-type(6n+1), .small-up-6 > .meta-right:nth-of-type(6n+1), .small-up-6 > #talk-description:nth-of-type(6n+1), .small-up-6 > #talk-actions:nth-of-type(6n+1), #comments .small-up-6 > .comment-meta:nth-of-type(6n+1), #comments .small-up-6 > .comment-content:nth-of-type(6n+1), .profile-page body #left-column .small-up-6 > #user-about:nth-of-type(6n+1), .profile-page body #right-column .small-up-6 > .profile-tile:nth-of-type(6n+1), .landing-page #main .row .small-up-6 > .container:nth-of-type(6n+1), .landing-page #main #claim .small-up-6 > .container:nth-of-type(6n+1), .landing-page #main .small-up-6 > .talk-card:nth-of-type(6n+1) {
     clear: both; }
-  .small-up-6 > .column:last-child, .small-up-6 > .columns:last-child, .small-up-6 > .meta-left:last-child, .small-up-6 > .meta-right:last-child, .small-up-6 > #talk-description:last-child, .small-up-6 > #talk-actions:last-child, #comments .small-up-6 > .comment-meta:last-child, #comments .small-up-6 > .comment-content:last-child, .profile-page body #left-column .small-up-6 > #user-about:last-child, .profile-page body #right-column .small-up-6 > .profile-tile:last-child {
+  .small-up-6 > .column:last-child, .small-up-6 > .columns:last-child, .small-up-6 > .meta-left:last-child, .small-up-6 > .meta-right:last-child, .small-up-6 > #talk-description:last-child, .small-up-6 > #talk-actions:last-child, #comments .small-up-6 > .comment-meta:last-child, #comments .small-up-6 > .comment-content:last-child, .profile-page body #left-column .small-up-6 > #user-about:last-child, .profile-page body #right-column .small-up-6 > .profile-tile:last-child, .landing-page #main .row .small-up-6 > .container:last-child, .landing-page #main #claim .small-up-6 > .container:last-child, .landing-page #main .small-up-6 > .talk-card:last-child {
     float: left; }
 
-.small-up-7 > .column, .small-up-7 > .columns, .small-up-7 > .meta-left, .small-up-7 > .meta-right, .small-up-7 > #talk-description, .small-up-7 > #talk-actions, #comments .small-up-7 > .comment-meta, #comments .small-up-7 > .comment-content, .profile-page body #left-column .small-up-7 > #user-about, .profile-page body #right-column .small-up-7 > .profile-tile {
+.small-up-7 > .column, .small-up-7 > .columns, .small-up-7 > .meta-left, .small-up-7 > .meta-right, .small-up-7 > #talk-description, .small-up-7 > #talk-actions, #comments .small-up-7 > .comment-meta, #comments .small-up-7 > .comment-content, .profile-page body #left-column .small-up-7 > #user-about, .profile-page body #right-column .small-up-7 > .profile-tile, .landing-page #main .row .small-up-7 > .container, .landing-page #main #claim .small-up-7 > .container, .landing-page #main .small-up-7 > .talk-card {
   width: 14.2857142857%;
   float: left; }
-  .small-up-7 > .column:nth-of-type(1n), .small-up-7 > .columns:nth-of-type(1n), .small-up-7 > .meta-left:nth-of-type(1n), .small-up-7 > .meta-right:nth-of-type(1n), .small-up-7 > #talk-description:nth-of-type(1n), .small-up-7 > #talk-actions:nth-of-type(1n), #comments .small-up-7 > .comment-meta:nth-of-type(1n), #comments .small-up-7 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-7 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-7 > .profile-tile:nth-of-type(1n) {
+  .small-up-7 > .column:nth-of-type(1n), .small-up-7 > .columns:nth-of-type(1n), .small-up-7 > .meta-left:nth-of-type(1n), .small-up-7 > .meta-right:nth-of-type(1n), .small-up-7 > #talk-description:nth-of-type(1n), .small-up-7 > #talk-actions:nth-of-type(1n), #comments .small-up-7 > .comment-meta:nth-of-type(1n), #comments .small-up-7 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-7 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-7 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-7 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-7 > .container:nth-of-type(1n), .landing-page #main .small-up-7 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-7 > .column:nth-of-type(7n+1), .small-up-7 > .columns:nth-of-type(7n+1), .small-up-7 > .meta-left:nth-of-type(7n+1), .small-up-7 > .meta-right:nth-of-type(7n+1), .small-up-7 > #talk-description:nth-of-type(7n+1), .small-up-7 > #talk-actions:nth-of-type(7n+1), #comments .small-up-7 > .comment-meta:nth-of-type(7n+1), #comments .small-up-7 > .comment-content:nth-of-type(7n+1), .profile-page body #left-column .small-up-7 > #user-about:nth-of-type(7n+1), .profile-page body #right-column .small-up-7 > .profile-tile:nth-of-type(7n+1) {
+  .small-up-7 > .column:nth-of-type(7n+1), .small-up-7 > .columns:nth-of-type(7n+1), .small-up-7 > .meta-left:nth-of-type(7n+1), .small-up-7 > .meta-right:nth-of-type(7n+1), .small-up-7 > #talk-description:nth-of-type(7n+1), .small-up-7 > #talk-actions:nth-of-type(7n+1), #comments .small-up-7 > .comment-meta:nth-of-type(7n+1), #comments .small-up-7 > .comment-content:nth-of-type(7n+1), .profile-page body #left-column .small-up-7 > #user-about:nth-of-type(7n+1), .profile-page body #right-column .small-up-7 > .profile-tile:nth-of-type(7n+1), .landing-page #main .row .small-up-7 > .container:nth-of-type(7n+1), .landing-page #main #claim .small-up-7 > .container:nth-of-type(7n+1), .landing-page #main .small-up-7 > .talk-card:nth-of-type(7n+1) {
     clear: both; }
-  .small-up-7 > .column:last-child, .small-up-7 > .columns:last-child, .small-up-7 > .meta-left:last-child, .small-up-7 > .meta-right:last-child, .small-up-7 > #talk-description:last-child, .small-up-7 > #talk-actions:last-child, #comments .small-up-7 > .comment-meta:last-child, #comments .small-up-7 > .comment-content:last-child, .profile-page body #left-column .small-up-7 > #user-about:last-child, .profile-page body #right-column .small-up-7 > .profile-tile:last-child {
+  .small-up-7 > .column:last-child, .small-up-7 > .columns:last-child, .small-up-7 > .meta-left:last-child, .small-up-7 > .meta-right:last-child, .small-up-7 > #talk-description:last-child, .small-up-7 > #talk-actions:last-child, #comments .small-up-7 > .comment-meta:last-child, #comments .small-up-7 > .comment-content:last-child, .profile-page body #left-column .small-up-7 > #user-about:last-child, .profile-page body #right-column .small-up-7 > .profile-tile:last-child, .landing-page #main .row .small-up-7 > .container:last-child, .landing-page #main #claim .small-up-7 > .container:last-child, .landing-page #main .small-up-7 > .talk-card:last-child {
     float: left; }
 
-.small-up-8 > .column, .small-up-8 > .columns, .small-up-8 > .meta-left, .small-up-8 > .meta-right, .small-up-8 > #talk-description, .small-up-8 > #talk-actions, #comments .small-up-8 > .comment-meta, #comments .small-up-8 > .comment-content, .profile-page body #left-column .small-up-8 > #user-about, .profile-page body #right-column .small-up-8 > .profile-tile {
+.small-up-8 > .column, .small-up-8 > .columns, .small-up-8 > .meta-left, .small-up-8 > .meta-right, .small-up-8 > #talk-description, .small-up-8 > #talk-actions, #comments .small-up-8 > .comment-meta, #comments .small-up-8 > .comment-content, .profile-page body #left-column .small-up-8 > #user-about, .profile-page body #right-column .small-up-8 > .profile-tile, .landing-page #main .row .small-up-8 > .container, .landing-page #main #claim .small-up-8 > .container, .landing-page #main .small-up-8 > .talk-card {
   width: 12.5%;
   float: left; }
-  .small-up-8 > .column:nth-of-type(1n), .small-up-8 > .columns:nth-of-type(1n), .small-up-8 > .meta-left:nth-of-type(1n), .small-up-8 > .meta-right:nth-of-type(1n), .small-up-8 > #talk-description:nth-of-type(1n), .small-up-8 > #talk-actions:nth-of-type(1n), #comments .small-up-8 > .comment-meta:nth-of-type(1n), #comments .small-up-8 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-8 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-8 > .profile-tile:nth-of-type(1n) {
+  .small-up-8 > .column:nth-of-type(1n), .small-up-8 > .columns:nth-of-type(1n), .small-up-8 > .meta-left:nth-of-type(1n), .small-up-8 > .meta-right:nth-of-type(1n), .small-up-8 > #talk-description:nth-of-type(1n), .small-up-8 > #talk-actions:nth-of-type(1n), #comments .small-up-8 > .comment-meta:nth-of-type(1n), #comments .small-up-8 > .comment-content:nth-of-type(1n), .profile-page body #left-column .small-up-8 > #user-about:nth-of-type(1n), .profile-page body #right-column .small-up-8 > .profile-tile:nth-of-type(1n), .landing-page #main .row .small-up-8 > .container:nth-of-type(1n), .landing-page #main #claim .small-up-8 > .container:nth-of-type(1n), .landing-page #main .small-up-8 > .talk-card:nth-of-type(1n) {
     clear: none; }
-  .small-up-8 > .column:nth-of-type(8n+1), .small-up-8 > .columns:nth-of-type(8n+1), .small-up-8 > .meta-left:nth-of-type(8n+1), .small-up-8 > .meta-right:nth-of-type(8n+1), .small-up-8 > #talk-description:nth-of-type(8n+1), .small-up-8 > #talk-actions:nth-of-type(8n+1), #comments .small-up-8 > .comment-meta:nth-of-type(8n+1), #comments .small-up-8 > .comment-content:nth-of-type(8n+1), .profile-page body #left-column .small-up-8 > #user-about:nth-of-type(8n+1), .profile-page body #right-column .small-up-8 > .profile-tile:nth-of-type(8n+1) {
+  .small-up-8 > .column:nth-of-type(8n+1), .small-up-8 > .columns:nth-of-type(8n+1), .small-up-8 > .meta-left:nth-of-type(8n+1), .small-up-8 > .meta-right:nth-of-type(8n+1), .small-up-8 > #talk-description:nth-of-type(8n+1), .small-up-8 > #talk-actions:nth-of-type(8n+1), #comments .small-up-8 > .comment-meta:nth-of-type(8n+1), #comments .small-up-8 > .comment-content:nth-of-type(8n+1), .profile-page body #left-column .small-up-8 > #user-about:nth-of-type(8n+1), .profile-page body #right-column .small-up-8 > .profile-tile:nth-of-type(8n+1), .landing-page #main .row .small-up-8 > .container:nth-of-type(8n+1), .landing-page #main #claim .small-up-8 > .container:nth-of-type(8n+1), .landing-page #main .small-up-8 > .talk-card:nth-of-type(8n+1) {
     clear: both; }
-  .small-up-8 > .column:last-child, .small-up-8 > .columns:last-child, .small-up-8 > .meta-left:last-child, .small-up-8 > .meta-right:last-child, .small-up-8 > #talk-description:last-child, .small-up-8 > #talk-actions:last-child, #comments .small-up-8 > .comment-meta:last-child, #comments .small-up-8 > .comment-content:last-child, .profile-page body #left-column .small-up-8 > #user-about:last-child, .profile-page body #right-column .small-up-8 > .profile-tile:last-child {
+  .small-up-8 > .column:last-child, .small-up-8 > .columns:last-child, .small-up-8 > .meta-left:last-child, .small-up-8 > .meta-right:last-child, .small-up-8 > #talk-description:last-child, .small-up-8 > #talk-actions:last-child, #comments .small-up-8 > .comment-meta:last-child, #comments .small-up-8 > .comment-content:last-child, .profile-page body #left-column .small-up-8 > #user-about:last-child, .profile-page body #right-column .small-up-8 > .profile-tile:last-child, .landing-page #main .row .small-up-8 > .container:last-child, .landing-page #main #claim .small-up-8 > .container:last-child, .landing-page #main .small-up-8 > .talk-card:last-child {
     float: left; }
 
-.column.small-centered, .small-centered.columns, .small-centered.meta-left, .small-centered.meta-right, .small-centered#talk-description, .small-centered#talk-actions, #comments .small-centered.comment-meta, #comments .small-centered.comment-content, .profile-page body #left-column .small-centered#user-about, .profile-page body #right-column .small-centered.profile-tile {
+.column.small-centered, .small-centered.columns, .small-centered.meta-left, .small-centered.meta-right, .small-centered#talk-description, .small-centered#talk-actions, #comments .small-centered.comment-meta, #comments .small-centered.comment-content, .profile-page body #left-column .small-centered#user-about, .profile-page body #right-column .small-centered.profile-tile, .landing-page #main .row .small-centered.container, .landing-page #main #claim .small-centered.container, .landing-page #main .small-centered.talk-card {
   float: none;
   margin-left: auto;
   margin-right: auto; }
@@ -701,7 +701,7 @@ button {
   .medium-pull-2 {
     position: relative;
     left: -16.6666666667%; }
-  .medium-offset-1 {
+  .medium-offset-1, .landing-page #main .row .container, .landing-page #main #claim .container {
     margin-left: 8.3333333333%; }
   .medium-3, #talk-actions {
     width: 25%; }
@@ -733,7 +733,7 @@ button {
     left: -41.6666666667%; }
   .medium-offset-4 {
     margin-left: 33.3333333333%; }
-  .medium-6, .profile-page body #right-column .profile-tile {
+  .medium-6, .profile-page body #right-column .profile-tile, .landing-page #main .talk-card {
     width: 50%; }
   .medium-push-6 {
     position: relative;
@@ -773,7 +773,7 @@ button {
     left: -75%; }
   .medium-offset-8 {
     margin-left: 66.6666666667%; }
-  .medium-10 {
+  .medium-10, .landing-page #main .row .container, .landing-page #main #claim .container {
     width: 83.3333333333%; }
   .medium-push-10 {
     position: relative;
@@ -797,79 +797,79 @@ button {
     width: 100%; }
   .medium-offset-11 {
     margin-left: 91.6666666667%; }
-  .medium-up-1 > .column, .medium-up-1 > .columns, .medium-up-1 > .meta-left, .medium-up-1 > .meta-right, .medium-up-1 > #talk-description, .medium-up-1 > #talk-actions, #comments .medium-up-1 > .comment-meta, #comments .medium-up-1 > .comment-content, .profile-page body #left-column .medium-up-1 > #user-about, .profile-page body #right-column .medium-up-1 > .profile-tile {
+  .medium-up-1 > .column, .medium-up-1 > .columns, .medium-up-1 > .meta-left, .medium-up-1 > .meta-right, .medium-up-1 > #talk-description, .medium-up-1 > #talk-actions, #comments .medium-up-1 > .comment-meta, #comments .medium-up-1 > .comment-content, .profile-page body #left-column .medium-up-1 > #user-about, .profile-page body #right-column .medium-up-1 > .profile-tile, .landing-page #main .row .medium-up-1 > .container, .landing-page #main #claim .medium-up-1 > .container, .landing-page #main .medium-up-1 > .talk-card {
     width: 100%;
     float: left; }
-    .medium-up-1 > .column:nth-of-type(1n), .medium-up-1 > .columns:nth-of-type(1n), .medium-up-1 > .meta-left:nth-of-type(1n), .medium-up-1 > .meta-right:nth-of-type(1n), .medium-up-1 > #talk-description:nth-of-type(1n), .medium-up-1 > #talk-actions:nth-of-type(1n), #comments .medium-up-1 > .comment-meta:nth-of-type(1n), #comments .medium-up-1 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-1 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-1 > .profile-tile:nth-of-type(1n) {
+    .medium-up-1 > .column:nth-of-type(1n), .medium-up-1 > .columns:nth-of-type(1n), .medium-up-1 > .meta-left:nth-of-type(1n), .medium-up-1 > .meta-right:nth-of-type(1n), .medium-up-1 > #talk-description:nth-of-type(1n), .medium-up-1 > #talk-actions:nth-of-type(1n), #comments .medium-up-1 > .comment-meta:nth-of-type(1n), #comments .medium-up-1 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-1 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-1 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-1 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-1 > .container:nth-of-type(1n), .landing-page #main .medium-up-1 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-1 > .column:nth-of-type(1n+1), .medium-up-1 > .columns:nth-of-type(1n+1), .medium-up-1 > .meta-left:nth-of-type(1n+1), .medium-up-1 > .meta-right:nth-of-type(1n+1), .medium-up-1 > #talk-description:nth-of-type(1n+1), .medium-up-1 > #talk-actions:nth-of-type(1n+1), #comments .medium-up-1 > .comment-meta:nth-of-type(1n+1), #comments .medium-up-1 > .comment-content:nth-of-type(1n+1), .profile-page body #left-column .medium-up-1 > #user-about:nth-of-type(1n+1), .profile-page body #right-column .medium-up-1 > .profile-tile:nth-of-type(1n+1) {
+    .medium-up-1 > .column:nth-of-type(1n+1), .medium-up-1 > .columns:nth-of-type(1n+1), .medium-up-1 > .meta-left:nth-of-type(1n+1), .medium-up-1 > .meta-right:nth-of-type(1n+1), .medium-up-1 > #talk-description:nth-of-type(1n+1), .medium-up-1 > #talk-actions:nth-of-type(1n+1), #comments .medium-up-1 > .comment-meta:nth-of-type(1n+1), #comments .medium-up-1 > .comment-content:nth-of-type(1n+1), .profile-page body #left-column .medium-up-1 > #user-about:nth-of-type(1n+1), .profile-page body #right-column .medium-up-1 > .profile-tile:nth-of-type(1n+1), .landing-page #main .row .medium-up-1 > .container:nth-of-type(1n+1), .landing-page #main #claim .medium-up-1 > .container:nth-of-type(1n+1), .landing-page #main .medium-up-1 > .talk-card:nth-of-type(1n+1) {
       clear: both; }
-    .medium-up-1 > .column:last-child, .medium-up-1 > .columns:last-child, .medium-up-1 > .meta-left:last-child, .medium-up-1 > .meta-right:last-child, .medium-up-1 > #talk-description:last-child, .medium-up-1 > #talk-actions:last-child, #comments .medium-up-1 > .comment-meta:last-child, #comments .medium-up-1 > .comment-content:last-child, .profile-page body #left-column .medium-up-1 > #user-about:last-child, .profile-page body #right-column .medium-up-1 > .profile-tile:last-child {
+    .medium-up-1 > .column:last-child, .medium-up-1 > .columns:last-child, .medium-up-1 > .meta-left:last-child, .medium-up-1 > .meta-right:last-child, .medium-up-1 > #talk-description:last-child, .medium-up-1 > #talk-actions:last-child, #comments .medium-up-1 > .comment-meta:last-child, #comments .medium-up-1 > .comment-content:last-child, .profile-page body #left-column .medium-up-1 > #user-about:last-child, .profile-page body #right-column .medium-up-1 > .profile-tile:last-child, .landing-page #main .row .medium-up-1 > .container:last-child, .landing-page #main #claim .medium-up-1 > .container:last-child, .landing-page #main .medium-up-1 > .talk-card:last-child {
       float: left; }
-  .medium-up-2 > .column, .medium-up-2 > .columns, .medium-up-2 > .meta-left, .medium-up-2 > .meta-right, .medium-up-2 > #talk-description, .medium-up-2 > #talk-actions, #comments .medium-up-2 > .comment-meta, #comments .medium-up-2 > .comment-content, .profile-page body #left-column .medium-up-2 > #user-about, .profile-page body #right-column .medium-up-2 > .profile-tile {
+  .medium-up-2 > .column, .medium-up-2 > .columns, .medium-up-2 > .meta-left, .medium-up-2 > .meta-right, .medium-up-2 > #talk-description, .medium-up-2 > #talk-actions, #comments .medium-up-2 > .comment-meta, #comments .medium-up-2 > .comment-content, .profile-page body #left-column .medium-up-2 > #user-about, .profile-page body #right-column .medium-up-2 > .profile-tile, .landing-page #main .row .medium-up-2 > .container, .landing-page #main #claim .medium-up-2 > .container, .landing-page #main .medium-up-2 > .talk-card {
     width: 50%;
     float: left; }
-    .medium-up-2 > .column:nth-of-type(1n), .medium-up-2 > .columns:nth-of-type(1n), .medium-up-2 > .meta-left:nth-of-type(1n), .medium-up-2 > .meta-right:nth-of-type(1n), .medium-up-2 > #talk-description:nth-of-type(1n), .medium-up-2 > #talk-actions:nth-of-type(1n), #comments .medium-up-2 > .comment-meta:nth-of-type(1n), #comments .medium-up-2 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-2 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-2 > .profile-tile:nth-of-type(1n) {
+    .medium-up-2 > .column:nth-of-type(1n), .medium-up-2 > .columns:nth-of-type(1n), .medium-up-2 > .meta-left:nth-of-type(1n), .medium-up-2 > .meta-right:nth-of-type(1n), .medium-up-2 > #talk-description:nth-of-type(1n), .medium-up-2 > #talk-actions:nth-of-type(1n), #comments .medium-up-2 > .comment-meta:nth-of-type(1n), #comments .medium-up-2 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-2 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-2 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-2 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-2 > .container:nth-of-type(1n), .landing-page #main .medium-up-2 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-2 > .column:nth-of-type(2n+1), .medium-up-2 > .columns:nth-of-type(2n+1), .medium-up-2 > .meta-left:nth-of-type(2n+1), .medium-up-2 > .meta-right:nth-of-type(2n+1), .medium-up-2 > #talk-description:nth-of-type(2n+1), .medium-up-2 > #talk-actions:nth-of-type(2n+1), #comments .medium-up-2 > .comment-meta:nth-of-type(2n+1), #comments .medium-up-2 > .comment-content:nth-of-type(2n+1), .profile-page body #left-column .medium-up-2 > #user-about:nth-of-type(2n+1), .profile-page body #right-column .medium-up-2 > .profile-tile:nth-of-type(2n+1) {
+    .medium-up-2 > .column:nth-of-type(2n+1), .medium-up-2 > .columns:nth-of-type(2n+1), .medium-up-2 > .meta-left:nth-of-type(2n+1), .medium-up-2 > .meta-right:nth-of-type(2n+1), .medium-up-2 > #talk-description:nth-of-type(2n+1), .medium-up-2 > #talk-actions:nth-of-type(2n+1), #comments .medium-up-2 > .comment-meta:nth-of-type(2n+1), #comments .medium-up-2 > .comment-content:nth-of-type(2n+1), .profile-page body #left-column .medium-up-2 > #user-about:nth-of-type(2n+1), .profile-page body #right-column .medium-up-2 > .profile-tile:nth-of-type(2n+1), .landing-page #main .row .medium-up-2 > .container:nth-of-type(2n+1), .landing-page #main #claim .medium-up-2 > .container:nth-of-type(2n+1), .landing-page #main .medium-up-2 > .talk-card:nth-of-type(2n+1) {
       clear: both; }
-    .medium-up-2 > .column:last-child, .medium-up-2 > .columns:last-child, .medium-up-2 > .meta-left:last-child, .medium-up-2 > .meta-right:last-child, .medium-up-2 > #talk-description:last-child, .medium-up-2 > #talk-actions:last-child, #comments .medium-up-2 > .comment-meta:last-child, #comments .medium-up-2 > .comment-content:last-child, .profile-page body #left-column .medium-up-2 > #user-about:last-child, .profile-page body #right-column .medium-up-2 > .profile-tile:last-child {
+    .medium-up-2 > .column:last-child, .medium-up-2 > .columns:last-child, .medium-up-2 > .meta-left:last-child, .medium-up-2 > .meta-right:last-child, .medium-up-2 > #talk-description:last-child, .medium-up-2 > #talk-actions:last-child, #comments .medium-up-2 > .comment-meta:last-child, #comments .medium-up-2 > .comment-content:last-child, .profile-page body #left-column .medium-up-2 > #user-about:last-child, .profile-page body #right-column .medium-up-2 > .profile-tile:last-child, .landing-page #main .row .medium-up-2 > .container:last-child, .landing-page #main #claim .medium-up-2 > .container:last-child, .landing-page #main .medium-up-2 > .talk-card:last-child {
       float: left; }
-  .medium-up-3 > .column, .medium-up-3 > .columns, .medium-up-3 > .meta-left, .medium-up-3 > .meta-right, .medium-up-3 > #talk-description, .medium-up-3 > #talk-actions, #comments .medium-up-3 > .comment-meta, #comments .medium-up-3 > .comment-content, .profile-page body #left-column .medium-up-3 > #user-about, .profile-page body #right-column .medium-up-3 > .profile-tile {
+  .medium-up-3 > .column, .medium-up-3 > .columns, .medium-up-3 > .meta-left, .medium-up-3 > .meta-right, .medium-up-3 > #talk-description, .medium-up-3 > #talk-actions, #comments .medium-up-3 > .comment-meta, #comments .medium-up-3 > .comment-content, .profile-page body #left-column .medium-up-3 > #user-about, .profile-page body #right-column .medium-up-3 > .profile-tile, .landing-page #main .row .medium-up-3 > .container, .landing-page #main #claim .medium-up-3 > .container, .landing-page #main .medium-up-3 > .talk-card {
     width: 33.3333333333%;
     float: left; }
-    .medium-up-3 > .column:nth-of-type(1n), .medium-up-3 > .columns:nth-of-type(1n), .medium-up-3 > .meta-left:nth-of-type(1n), .medium-up-3 > .meta-right:nth-of-type(1n), .medium-up-3 > #talk-description:nth-of-type(1n), .medium-up-3 > #talk-actions:nth-of-type(1n), #comments .medium-up-3 > .comment-meta:nth-of-type(1n), #comments .medium-up-3 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-3 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-3 > .profile-tile:nth-of-type(1n) {
+    .medium-up-3 > .column:nth-of-type(1n), .medium-up-3 > .columns:nth-of-type(1n), .medium-up-3 > .meta-left:nth-of-type(1n), .medium-up-3 > .meta-right:nth-of-type(1n), .medium-up-3 > #talk-description:nth-of-type(1n), .medium-up-3 > #talk-actions:nth-of-type(1n), #comments .medium-up-3 > .comment-meta:nth-of-type(1n), #comments .medium-up-3 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-3 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-3 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-3 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-3 > .container:nth-of-type(1n), .landing-page #main .medium-up-3 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-3 > .column:nth-of-type(3n+1), .medium-up-3 > .columns:nth-of-type(3n+1), .medium-up-3 > .meta-left:nth-of-type(3n+1), .medium-up-3 > .meta-right:nth-of-type(3n+1), .medium-up-3 > #talk-description:nth-of-type(3n+1), .medium-up-3 > #talk-actions:nth-of-type(3n+1), #comments .medium-up-3 > .comment-meta:nth-of-type(3n+1), #comments .medium-up-3 > .comment-content:nth-of-type(3n+1), .profile-page body #left-column .medium-up-3 > #user-about:nth-of-type(3n+1), .profile-page body #right-column .medium-up-3 > .profile-tile:nth-of-type(3n+1) {
+    .medium-up-3 > .column:nth-of-type(3n+1), .medium-up-3 > .columns:nth-of-type(3n+1), .medium-up-3 > .meta-left:nth-of-type(3n+1), .medium-up-3 > .meta-right:nth-of-type(3n+1), .medium-up-3 > #talk-description:nth-of-type(3n+1), .medium-up-3 > #talk-actions:nth-of-type(3n+1), #comments .medium-up-3 > .comment-meta:nth-of-type(3n+1), #comments .medium-up-3 > .comment-content:nth-of-type(3n+1), .profile-page body #left-column .medium-up-3 > #user-about:nth-of-type(3n+1), .profile-page body #right-column .medium-up-3 > .profile-tile:nth-of-type(3n+1), .landing-page #main .row .medium-up-3 > .container:nth-of-type(3n+1), .landing-page #main #claim .medium-up-3 > .container:nth-of-type(3n+1), .landing-page #main .medium-up-3 > .talk-card:nth-of-type(3n+1) {
       clear: both; }
-    .medium-up-3 > .column:last-child, .medium-up-3 > .columns:last-child, .medium-up-3 > .meta-left:last-child, .medium-up-3 > .meta-right:last-child, .medium-up-3 > #talk-description:last-child, .medium-up-3 > #talk-actions:last-child, #comments .medium-up-3 > .comment-meta:last-child, #comments .medium-up-3 > .comment-content:last-child, .profile-page body #left-column .medium-up-3 > #user-about:last-child, .profile-page body #right-column .medium-up-3 > .profile-tile:last-child {
+    .medium-up-3 > .column:last-child, .medium-up-3 > .columns:last-child, .medium-up-3 > .meta-left:last-child, .medium-up-3 > .meta-right:last-child, .medium-up-3 > #talk-description:last-child, .medium-up-3 > #talk-actions:last-child, #comments .medium-up-3 > .comment-meta:last-child, #comments .medium-up-3 > .comment-content:last-child, .profile-page body #left-column .medium-up-3 > #user-about:last-child, .profile-page body #right-column .medium-up-3 > .profile-tile:last-child, .landing-page #main .row .medium-up-3 > .container:last-child, .landing-page #main #claim .medium-up-3 > .container:last-child, .landing-page #main .medium-up-3 > .talk-card:last-child {
       float: left; }
-  .medium-up-4 > .column, .medium-up-4 > .columns, .medium-up-4 > .meta-left, .medium-up-4 > .meta-right, .medium-up-4 > #talk-description, .medium-up-4 > #talk-actions, #comments .medium-up-4 > .comment-meta, #comments .medium-up-4 > .comment-content, .profile-page body #left-column .medium-up-4 > #user-about, .profile-page body #right-column .medium-up-4 > .profile-tile {
+  .medium-up-4 > .column, .medium-up-4 > .columns, .medium-up-4 > .meta-left, .medium-up-4 > .meta-right, .medium-up-4 > #talk-description, .medium-up-4 > #talk-actions, #comments .medium-up-4 > .comment-meta, #comments .medium-up-4 > .comment-content, .profile-page body #left-column .medium-up-4 > #user-about, .profile-page body #right-column .medium-up-4 > .profile-tile, .landing-page #main .row .medium-up-4 > .container, .landing-page #main #claim .medium-up-4 > .container, .landing-page #main .medium-up-4 > .talk-card {
     width: 25%;
     float: left; }
-    .medium-up-4 > .column:nth-of-type(1n), .medium-up-4 > .columns:nth-of-type(1n), .medium-up-4 > .meta-left:nth-of-type(1n), .medium-up-4 > .meta-right:nth-of-type(1n), .medium-up-4 > #talk-description:nth-of-type(1n), .medium-up-4 > #talk-actions:nth-of-type(1n), #comments .medium-up-4 > .comment-meta:nth-of-type(1n), #comments .medium-up-4 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-4 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-4 > .profile-tile:nth-of-type(1n) {
+    .medium-up-4 > .column:nth-of-type(1n), .medium-up-4 > .columns:nth-of-type(1n), .medium-up-4 > .meta-left:nth-of-type(1n), .medium-up-4 > .meta-right:nth-of-type(1n), .medium-up-4 > #talk-description:nth-of-type(1n), .medium-up-4 > #talk-actions:nth-of-type(1n), #comments .medium-up-4 > .comment-meta:nth-of-type(1n), #comments .medium-up-4 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-4 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-4 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-4 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-4 > .container:nth-of-type(1n), .landing-page #main .medium-up-4 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-4 > .column:nth-of-type(4n+1), .medium-up-4 > .columns:nth-of-type(4n+1), .medium-up-4 > .meta-left:nth-of-type(4n+1), .medium-up-4 > .meta-right:nth-of-type(4n+1), .medium-up-4 > #talk-description:nth-of-type(4n+1), .medium-up-4 > #talk-actions:nth-of-type(4n+1), #comments .medium-up-4 > .comment-meta:nth-of-type(4n+1), #comments .medium-up-4 > .comment-content:nth-of-type(4n+1), .profile-page body #left-column .medium-up-4 > #user-about:nth-of-type(4n+1), .profile-page body #right-column .medium-up-4 > .profile-tile:nth-of-type(4n+1) {
+    .medium-up-4 > .column:nth-of-type(4n+1), .medium-up-4 > .columns:nth-of-type(4n+1), .medium-up-4 > .meta-left:nth-of-type(4n+1), .medium-up-4 > .meta-right:nth-of-type(4n+1), .medium-up-4 > #talk-description:nth-of-type(4n+1), .medium-up-4 > #talk-actions:nth-of-type(4n+1), #comments .medium-up-4 > .comment-meta:nth-of-type(4n+1), #comments .medium-up-4 > .comment-content:nth-of-type(4n+1), .profile-page body #left-column .medium-up-4 > #user-about:nth-of-type(4n+1), .profile-page body #right-column .medium-up-4 > .profile-tile:nth-of-type(4n+1), .landing-page #main .row .medium-up-4 > .container:nth-of-type(4n+1), .landing-page #main #claim .medium-up-4 > .container:nth-of-type(4n+1), .landing-page #main .medium-up-4 > .talk-card:nth-of-type(4n+1) {
       clear: both; }
-    .medium-up-4 > .column:last-child, .medium-up-4 > .columns:last-child, .medium-up-4 > .meta-left:last-child, .medium-up-4 > .meta-right:last-child, .medium-up-4 > #talk-description:last-child, .medium-up-4 > #talk-actions:last-child, #comments .medium-up-4 > .comment-meta:last-child, #comments .medium-up-4 > .comment-content:last-child, .profile-page body #left-column .medium-up-4 > #user-about:last-child, .profile-page body #right-column .medium-up-4 > .profile-tile:last-child {
+    .medium-up-4 > .column:last-child, .medium-up-4 > .columns:last-child, .medium-up-4 > .meta-left:last-child, .medium-up-4 > .meta-right:last-child, .medium-up-4 > #talk-description:last-child, .medium-up-4 > #talk-actions:last-child, #comments .medium-up-4 > .comment-meta:last-child, #comments .medium-up-4 > .comment-content:last-child, .profile-page body #left-column .medium-up-4 > #user-about:last-child, .profile-page body #right-column .medium-up-4 > .profile-tile:last-child, .landing-page #main .row .medium-up-4 > .container:last-child, .landing-page #main #claim .medium-up-4 > .container:last-child, .landing-page #main .medium-up-4 > .talk-card:last-child {
       float: left; }
-  .medium-up-5 > .column, .medium-up-5 > .columns, .medium-up-5 > .meta-left, .medium-up-5 > .meta-right, .medium-up-5 > #talk-description, .medium-up-5 > #talk-actions, #comments .medium-up-5 > .comment-meta, #comments .medium-up-5 > .comment-content, .profile-page body #left-column .medium-up-5 > #user-about, .profile-page body #right-column .medium-up-5 > .profile-tile {
+  .medium-up-5 > .column, .medium-up-5 > .columns, .medium-up-5 > .meta-left, .medium-up-5 > .meta-right, .medium-up-5 > #talk-description, .medium-up-5 > #talk-actions, #comments .medium-up-5 > .comment-meta, #comments .medium-up-5 > .comment-content, .profile-page body #left-column .medium-up-5 > #user-about, .profile-page body #right-column .medium-up-5 > .profile-tile, .landing-page #main .row .medium-up-5 > .container, .landing-page #main #claim .medium-up-5 > .container, .landing-page #main .medium-up-5 > .talk-card {
     width: 20%;
     float: left; }
-    .medium-up-5 > .column:nth-of-type(1n), .medium-up-5 > .columns:nth-of-type(1n), .medium-up-5 > .meta-left:nth-of-type(1n), .medium-up-5 > .meta-right:nth-of-type(1n), .medium-up-5 > #talk-description:nth-of-type(1n), .medium-up-5 > #talk-actions:nth-of-type(1n), #comments .medium-up-5 > .comment-meta:nth-of-type(1n), #comments .medium-up-5 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-5 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-5 > .profile-tile:nth-of-type(1n) {
+    .medium-up-5 > .column:nth-of-type(1n), .medium-up-5 > .columns:nth-of-type(1n), .medium-up-5 > .meta-left:nth-of-type(1n), .medium-up-5 > .meta-right:nth-of-type(1n), .medium-up-5 > #talk-description:nth-of-type(1n), .medium-up-5 > #talk-actions:nth-of-type(1n), #comments .medium-up-5 > .comment-meta:nth-of-type(1n), #comments .medium-up-5 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-5 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-5 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-5 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-5 > .container:nth-of-type(1n), .landing-page #main .medium-up-5 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-5 > .column:nth-of-type(5n+1), .medium-up-5 > .columns:nth-of-type(5n+1), .medium-up-5 > .meta-left:nth-of-type(5n+1), .medium-up-5 > .meta-right:nth-of-type(5n+1), .medium-up-5 > #talk-description:nth-of-type(5n+1), .medium-up-5 > #talk-actions:nth-of-type(5n+1), #comments .medium-up-5 > .comment-meta:nth-of-type(5n+1), #comments .medium-up-5 > .comment-content:nth-of-type(5n+1), .profile-page body #left-column .medium-up-5 > #user-about:nth-of-type(5n+1), .profile-page body #right-column .medium-up-5 > .profile-tile:nth-of-type(5n+1) {
+    .medium-up-5 > .column:nth-of-type(5n+1), .medium-up-5 > .columns:nth-of-type(5n+1), .medium-up-5 > .meta-left:nth-of-type(5n+1), .medium-up-5 > .meta-right:nth-of-type(5n+1), .medium-up-5 > #talk-description:nth-of-type(5n+1), .medium-up-5 > #talk-actions:nth-of-type(5n+1), #comments .medium-up-5 > .comment-meta:nth-of-type(5n+1), #comments .medium-up-5 > .comment-content:nth-of-type(5n+1), .profile-page body #left-column .medium-up-5 > #user-about:nth-of-type(5n+1), .profile-page body #right-column .medium-up-5 > .profile-tile:nth-of-type(5n+1), .landing-page #main .row .medium-up-5 > .container:nth-of-type(5n+1), .landing-page #main #claim .medium-up-5 > .container:nth-of-type(5n+1), .landing-page #main .medium-up-5 > .talk-card:nth-of-type(5n+1) {
       clear: both; }
-    .medium-up-5 > .column:last-child, .medium-up-5 > .columns:last-child, .medium-up-5 > .meta-left:last-child, .medium-up-5 > .meta-right:last-child, .medium-up-5 > #talk-description:last-child, .medium-up-5 > #talk-actions:last-child, #comments .medium-up-5 > .comment-meta:last-child, #comments .medium-up-5 > .comment-content:last-child, .profile-page body #left-column .medium-up-5 > #user-about:last-child, .profile-page body #right-column .medium-up-5 > .profile-tile:last-child {
+    .medium-up-5 > .column:last-child, .medium-up-5 > .columns:last-child, .medium-up-5 > .meta-left:last-child, .medium-up-5 > .meta-right:last-child, .medium-up-5 > #talk-description:last-child, .medium-up-5 > #talk-actions:last-child, #comments .medium-up-5 > .comment-meta:last-child, #comments .medium-up-5 > .comment-content:last-child, .profile-page body #left-column .medium-up-5 > #user-about:last-child, .profile-page body #right-column .medium-up-5 > .profile-tile:last-child, .landing-page #main .row .medium-up-5 > .container:last-child, .landing-page #main #claim .medium-up-5 > .container:last-child, .landing-page #main .medium-up-5 > .talk-card:last-child {
       float: left; }
-  .medium-up-6 > .column, .medium-up-6 > .columns, .medium-up-6 > .meta-left, .medium-up-6 > .meta-right, .medium-up-6 > #talk-description, .medium-up-6 > #talk-actions, #comments .medium-up-6 > .comment-meta, #comments .medium-up-6 > .comment-content, .profile-page body #left-column .medium-up-6 > #user-about, .profile-page body #right-column .medium-up-6 > .profile-tile {
+  .medium-up-6 > .column, .medium-up-6 > .columns, .medium-up-6 > .meta-left, .medium-up-6 > .meta-right, .medium-up-6 > #talk-description, .medium-up-6 > #talk-actions, #comments .medium-up-6 > .comment-meta, #comments .medium-up-6 > .comment-content, .profile-page body #left-column .medium-up-6 > #user-about, .profile-page body #right-column .medium-up-6 > .profile-tile, .landing-page #main .row .medium-up-6 > .container, .landing-page #main #claim .medium-up-6 > .container, .landing-page #main .medium-up-6 > .talk-card {
     width: 16.6666666667%;
     float: left; }
-    .medium-up-6 > .column:nth-of-type(1n), .medium-up-6 > .columns:nth-of-type(1n), .medium-up-6 > .meta-left:nth-of-type(1n), .medium-up-6 > .meta-right:nth-of-type(1n), .medium-up-6 > #talk-description:nth-of-type(1n), .medium-up-6 > #talk-actions:nth-of-type(1n), #comments .medium-up-6 > .comment-meta:nth-of-type(1n), #comments .medium-up-6 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-6 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-6 > .profile-tile:nth-of-type(1n) {
+    .medium-up-6 > .column:nth-of-type(1n), .medium-up-6 > .columns:nth-of-type(1n), .medium-up-6 > .meta-left:nth-of-type(1n), .medium-up-6 > .meta-right:nth-of-type(1n), .medium-up-6 > #talk-description:nth-of-type(1n), .medium-up-6 > #talk-actions:nth-of-type(1n), #comments .medium-up-6 > .comment-meta:nth-of-type(1n), #comments .medium-up-6 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-6 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-6 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-6 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-6 > .container:nth-of-type(1n), .landing-page #main .medium-up-6 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-6 > .column:nth-of-type(6n+1), .medium-up-6 > .columns:nth-of-type(6n+1), .medium-up-6 > .meta-left:nth-of-type(6n+1), .medium-up-6 > .meta-right:nth-of-type(6n+1), .medium-up-6 > #talk-description:nth-of-type(6n+1), .medium-up-6 > #talk-actions:nth-of-type(6n+1), #comments .medium-up-6 > .comment-meta:nth-of-type(6n+1), #comments .medium-up-6 > .comment-content:nth-of-type(6n+1), .profile-page body #left-column .medium-up-6 > #user-about:nth-of-type(6n+1), .profile-page body #right-column .medium-up-6 > .profile-tile:nth-of-type(6n+1) {
+    .medium-up-6 > .column:nth-of-type(6n+1), .medium-up-6 > .columns:nth-of-type(6n+1), .medium-up-6 > .meta-left:nth-of-type(6n+1), .medium-up-6 > .meta-right:nth-of-type(6n+1), .medium-up-6 > #talk-description:nth-of-type(6n+1), .medium-up-6 > #talk-actions:nth-of-type(6n+1), #comments .medium-up-6 > .comment-meta:nth-of-type(6n+1), #comments .medium-up-6 > .comment-content:nth-of-type(6n+1), .profile-page body #left-column .medium-up-6 > #user-about:nth-of-type(6n+1), .profile-page body #right-column .medium-up-6 > .profile-tile:nth-of-type(6n+1), .landing-page #main .row .medium-up-6 > .container:nth-of-type(6n+1), .landing-page #main #claim .medium-up-6 > .container:nth-of-type(6n+1), .landing-page #main .medium-up-6 > .talk-card:nth-of-type(6n+1) {
       clear: both; }
-    .medium-up-6 > .column:last-child, .medium-up-6 > .columns:last-child, .medium-up-6 > .meta-left:last-child, .medium-up-6 > .meta-right:last-child, .medium-up-6 > #talk-description:last-child, .medium-up-6 > #talk-actions:last-child, #comments .medium-up-6 > .comment-meta:last-child, #comments .medium-up-6 > .comment-content:last-child, .profile-page body #left-column .medium-up-6 > #user-about:last-child, .profile-page body #right-column .medium-up-6 > .profile-tile:last-child {
+    .medium-up-6 > .column:last-child, .medium-up-6 > .columns:last-child, .medium-up-6 > .meta-left:last-child, .medium-up-6 > .meta-right:last-child, .medium-up-6 > #talk-description:last-child, .medium-up-6 > #talk-actions:last-child, #comments .medium-up-6 > .comment-meta:last-child, #comments .medium-up-6 > .comment-content:last-child, .profile-page body #left-column .medium-up-6 > #user-about:last-child, .profile-page body #right-column .medium-up-6 > .profile-tile:last-child, .landing-page #main .row .medium-up-6 > .container:last-child, .landing-page #main #claim .medium-up-6 > .container:last-child, .landing-page #main .medium-up-6 > .talk-card:last-child {
       float: left; }
-  .medium-up-7 > .column, .medium-up-7 > .columns, .medium-up-7 > .meta-left, .medium-up-7 > .meta-right, .medium-up-7 > #talk-description, .medium-up-7 > #talk-actions, #comments .medium-up-7 > .comment-meta, #comments .medium-up-7 > .comment-content, .profile-page body #left-column .medium-up-7 > #user-about, .profile-page body #right-column .medium-up-7 > .profile-tile {
+  .medium-up-7 > .column, .medium-up-7 > .columns, .medium-up-7 > .meta-left, .medium-up-7 > .meta-right, .medium-up-7 > #talk-description, .medium-up-7 > #talk-actions, #comments .medium-up-7 > .comment-meta, #comments .medium-up-7 > .comment-content, .profile-page body #left-column .medium-up-7 > #user-about, .profile-page body #right-column .medium-up-7 > .profile-tile, .landing-page #main .row .medium-up-7 > .container, .landing-page #main #claim .medium-up-7 > .container, .landing-page #main .medium-up-7 > .talk-card {
     width: 14.2857142857%;
     float: left; }
-    .medium-up-7 > .column:nth-of-type(1n), .medium-up-7 > .columns:nth-of-type(1n), .medium-up-7 > .meta-left:nth-of-type(1n), .medium-up-7 > .meta-right:nth-of-type(1n), .medium-up-7 > #talk-description:nth-of-type(1n), .medium-up-7 > #talk-actions:nth-of-type(1n), #comments .medium-up-7 > .comment-meta:nth-of-type(1n), #comments .medium-up-7 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-7 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-7 > .profile-tile:nth-of-type(1n) {
+    .medium-up-7 > .column:nth-of-type(1n), .medium-up-7 > .columns:nth-of-type(1n), .medium-up-7 > .meta-left:nth-of-type(1n), .medium-up-7 > .meta-right:nth-of-type(1n), .medium-up-7 > #talk-description:nth-of-type(1n), .medium-up-7 > #talk-actions:nth-of-type(1n), #comments .medium-up-7 > .comment-meta:nth-of-type(1n), #comments .medium-up-7 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-7 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-7 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-7 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-7 > .container:nth-of-type(1n), .landing-page #main .medium-up-7 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-7 > .column:nth-of-type(7n+1), .medium-up-7 > .columns:nth-of-type(7n+1), .medium-up-7 > .meta-left:nth-of-type(7n+1), .medium-up-7 > .meta-right:nth-of-type(7n+1), .medium-up-7 > #talk-description:nth-of-type(7n+1), .medium-up-7 > #talk-actions:nth-of-type(7n+1), #comments .medium-up-7 > .comment-meta:nth-of-type(7n+1), #comments .medium-up-7 > .comment-content:nth-of-type(7n+1), .profile-page body #left-column .medium-up-7 > #user-about:nth-of-type(7n+1), .profile-page body #right-column .medium-up-7 > .profile-tile:nth-of-type(7n+1) {
+    .medium-up-7 > .column:nth-of-type(7n+1), .medium-up-7 > .columns:nth-of-type(7n+1), .medium-up-7 > .meta-left:nth-of-type(7n+1), .medium-up-7 > .meta-right:nth-of-type(7n+1), .medium-up-7 > #talk-description:nth-of-type(7n+1), .medium-up-7 > #talk-actions:nth-of-type(7n+1), #comments .medium-up-7 > .comment-meta:nth-of-type(7n+1), #comments .medium-up-7 > .comment-content:nth-of-type(7n+1), .profile-page body #left-column .medium-up-7 > #user-about:nth-of-type(7n+1), .profile-page body #right-column .medium-up-7 > .profile-tile:nth-of-type(7n+1), .landing-page #main .row .medium-up-7 > .container:nth-of-type(7n+1), .landing-page #main #claim .medium-up-7 > .container:nth-of-type(7n+1), .landing-page #main .medium-up-7 > .talk-card:nth-of-type(7n+1) {
       clear: both; }
-    .medium-up-7 > .column:last-child, .medium-up-7 > .columns:last-child, .medium-up-7 > .meta-left:last-child, .medium-up-7 > .meta-right:last-child, .medium-up-7 > #talk-description:last-child, .medium-up-7 > #talk-actions:last-child, #comments .medium-up-7 > .comment-meta:last-child, #comments .medium-up-7 > .comment-content:last-child, .profile-page body #left-column .medium-up-7 > #user-about:last-child, .profile-page body #right-column .medium-up-7 > .profile-tile:last-child {
+    .medium-up-7 > .column:last-child, .medium-up-7 > .columns:last-child, .medium-up-7 > .meta-left:last-child, .medium-up-7 > .meta-right:last-child, .medium-up-7 > #talk-description:last-child, .medium-up-7 > #talk-actions:last-child, #comments .medium-up-7 > .comment-meta:last-child, #comments .medium-up-7 > .comment-content:last-child, .profile-page body #left-column .medium-up-7 > #user-about:last-child, .profile-page body #right-column .medium-up-7 > .profile-tile:last-child, .landing-page #main .row .medium-up-7 > .container:last-child, .landing-page #main #claim .medium-up-7 > .container:last-child, .landing-page #main .medium-up-7 > .talk-card:last-child {
       float: left; }
-  .medium-up-8 > .column, .medium-up-8 > .columns, .medium-up-8 > .meta-left, .medium-up-8 > .meta-right, .medium-up-8 > #talk-description, .medium-up-8 > #talk-actions, #comments .medium-up-8 > .comment-meta, #comments .medium-up-8 > .comment-content, .profile-page body #left-column .medium-up-8 > #user-about, .profile-page body #right-column .medium-up-8 > .profile-tile {
+  .medium-up-8 > .column, .medium-up-8 > .columns, .medium-up-8 > .meta-left, .medium-up-8 > .meta-right, .medium-up-8 > #talk-description, .medium-up-8 > #talk-actions, #comments .medium-up-8 > .comment-meta, #comments .medium-up-8 > .comment-content, .profile-page body #left-column .medium-up-8 > #user-about, .profile-page body #right-column .medium-up-8 > .profile-tile, .landing-page #main .row .medium-up-8 > .container, .landing-page #main #claim .medium-up-8 > .container, .landing-page #main .medium-up-8 > .talk-card {
     width: 12.5%;
     float: left; }
-    .medium-up-8 > .column:nth-of-type(1n), .medium-up-8 > .columns:nth-of-type(1n), .medium-up-8 > .meta-left:nth-of-type(1n), .medium-up-8 > .meta-right:nth-of-type(1n), .medium-up-8 > #talk-description:nth-of-type(1n), .medium-up-8 > #talk-actions:nth-of-type(1n), #comments .medium-up-8 > .comment-meta:nth-of-type(1n), #comments .medium-up-8 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-8 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-8 > .profile-tile:nth-of-type(1n) {
+    .medium-up-8 > .column:nth-of-type(1n), .medium-up-8 > .columns:nth-of-type(1n), .medium-up-8 > .meta-left:nth-of-type(1n), .medium-up-8 > .meta-right:nth-of-type(1n), .medium-up-8 > #talk-description:nth-of-type(1n), .medium-up-8 > #talk-actions:nth-of-type(1n), #comments .medium-up-8 > .comment-meta:nth-of-type(1n), #comments .medium-up-8 > .comment-content:nth-of-type(1n), .profile-page body #left-column .medium-up-8 > #user-about:nth-of-type(1n), .profile-page body #right-column .medium-up-8 > .profile-tile:nth-of-type(1n), .landing-page #main .row .medium-up-8 > .container:nth-of-type(1n), .landing-page #main #claim .medium-up-8 > .container:nth-of-type(1n), .landing-page #main .medium-up-8 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .medium-up-8 > .column:nth-of-type(8n+1), .medium-up-8 > .columns:nth-of-type(8n+1), .medium-up-8 > .meta-left:nth-of-type(8n+1), .medium-up-8 > .meta-right:nth-of-type(8n+1), .medium-up-8 > #talk-description:nth-of-type(8n+1), .medium-up-8 > #talk-actions:nth-of-type(8n+1), #comments .medium-up-8 > .comment-meta:nth-of-type(8n+1), #comments .medium-up-8 > .comment-content:nth-of-type(8n+1), .profile-page body #left-column .medium-up-8 > #user-about:nth-of-type(8n+1), .profile-page body #right-column .medium-up-8 > .profile-tile:nth-of-type(8n+1) {
+    .medium-up-8 > .column:nth-of-type(8n+1), .medium-up-8 > .columns:nth-of-type(8n+1), .medium-up-8 > .meta-left:nth-of-type(8n+1), .medium-up-8 > .meta-right:nth-of-type(8n+1), .medium-up-8 > #talk-description:nth-of-type(8n+1), .medium-up-8 > #talk-actions:nth-of-type(8n+1), #comments .medium-up-8 > .comment-meta:nth-of-type(8n+1), #comments .medium-up-8 > .comment-content:nth-of-type(8n+1), .profile-page body #left-column .medium-up-8 > #user-about:nth-of-type(8n+1), .profile-page body #right-column .medium-up-8 > .profile-tile:nth-of-type(8n+1), .landing-page #main .row .medium-up-8 > .container:nth-of-type(8n+1), .landing-page #main #claim .medium-up-8 > .container:nth-of-type(8n+1), .landing-page #main .medium-up-8 > .talk-card:nth-of-type(8n+1) {
       clear: both; }
-    .medium-up-8 > .column:last-child, .medium-up-8 > .columns:last-child, .medium-up-8 > .meta-left:last-child, .medium-up-8 > .meta-right:last-child, .medium-up-8 > #talk-description:last-child, .medium-up-8 > #talk-actions:last-child, #comments .medium-up-8 > .comment-meta:last-child, #comments .medium-up-8 > .comment-content:last-child, .profile-page body #left-column .medium-up-8 > #user-about:last-child, .profile-page body #right-column .medium-up-8 > .profile-tile:last-child {
+    .medium-up-8 > .column:last-child, .medium-up-8 > .columns:last-child, .medium-up-8 > .meta-left:last-child, .medium-up-8 > .meta-right:last-child, .medium-up-8 > #talk-description:last-child, .medium-up-8 > #talk-actions:last-child, #comments .medium-up-8 > .comment-meta:last-child, #comments .medium-up-8 > .comment-content:last-child, .profile-page body #left-column .medium-up-8 > #user-about:last-child, .profile-page body #right-column .medium-up-8 > .profile-tile:last-child, .landing-page #main .row .medium-up-8 > .container:last-child, .landing-page #main #claim .medium-up-8 > .container:last-child, .landing-page #main .medium-up-8 > .talk-card:last-child {
       float: left; }
-  .column.medium-centered, .medium-centered.columns, .medium-centered.meta-left, .medium-centered.meta-right, .medium-centered#talk-description, .medium-centered#talk-actions, #comments .medium-centered.comment-meta, #comments .medium-centered.comment-content, .profile-page body #left-column .medium-centered#user-about, .profile-page body #right-column .medium-centered.profile-tile {
+  .column.medium-centered, .medium-centered.columns, .medium-centered.meta-left, .medium-centered.meta-right, .medium-centered#talk-description, .medium-centered#talk-actions, #comments .medium-centered.comment-meta, #comments .medium-centered.comment-content, .profile-page body #left-column .medium-centered#user-about, .profile-page body #right-column .medium-centered.profile-tile, .landing-page #main .row .medium-centered.container, .landing-page #main #claim .medium-centered.container, .landing-page #main .medium-centered.talk-card {
     float: none;
     margin-left: auto;
     margin-right: auto; }
@@ -907,9 +907,9 @@ button {
   .large-pull-3 {
     position: relative;
     left: -25%; }
-  .large-offset-2 {
+  .large-offset-2, .landing-page #main .row .container, .landing-page #main #claim .container {
     margin-left: 16.6666666667%; }
-  .large-4, .meta-right {
+  .large-4, .meta-right, .landing-page #main .talk-card {
     width: 33.3333333333%; }
   .large-push-4 {
     position: relative;
@@ -949,7 +949,7 @@ button {
     left: -58.3333333333%; }
   .large-offset-6 {
     margin-left: 50%; }
-  .large-8, .meta-left {
+  .large-8, .meta-left, .landing-page #main .row .container, .landing-page #main #claim .container {
     width: 66.6666666667%; }
   .large-push-8 {
     position: relative;
@@ -993,79 +993,79 @@ button {
     width: 100%; }
   .large-offset-11 {
     margin-left: 91.6666666667%; }
-  .large-up-1 > .column, .large-up-1 > .columns, .large-up-1 > .meta-left, .large-up-1 > .meta-right, .large-up-1 > #talk-description, .large-up-1 > #talk-actions, #comments .large-up-1 > .comment-meta, #comments .large-up-1 > .comment-content, .profile-page body #left-column .large-up-1 > #user-about, .profile-page body #right-column .large-up-1 > .profile-tile {
+  .large-up-1 > .column, .large-up-1 > .columns, .large-up-1 > .meta-left, .large-up-1 > .meta-right, .large-up-1 > #talk-description, .large-up-1 > #talk-actions, #comments .large-up-1 > .comment-meta, #comments .large-up-1 > .comment-content, .profile-page body #left-column .large-up-1 > #user-about, .profile-page body #right-column .large-up-1 > .profile-tile, .landing-page #main .row .large-up-1 > .container, .landing-page #main #claim .large-up-1 > .container, .landing-page #main .large-up-1 > .talk-card {
     width: 100%;
     float: left; }
-    .large-up-1 > .column:nth-of-type(1n), .large-up-1 > .columns:nth-of-type(1n), .large-up-1 > .meta-left:nth-of-type(1n), .large-up-1 > .meta-right:nth-of-type(1n), .large-up-1 > #talk-description:nth-of-type(1n), .large-up-1 > #talk-actions:nth-of-type(1n), #comments .large-up-1 > .comment-meta:nth-of-type(1n), #comments .large-up-1 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-1 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-1 > .profile-tile:nth-of-type(1n) {
+    .large-up-1 > .column:nth-of-type(1n), .large-up-1 > .columns:nth-of-type(1n), .large-up-1 > .meta-left:nth-of-type(1n), .large-up-1 > .meta-right:nth-of-type(1n), .large-up-1 > #talk-description:nth-of-type(1n), .large-up-1 > #talk-actions:nth-of-type(1n), #comments .large-up-1 > .comment-meta:nth-of-type(1n), #comments .large-up-1 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-1 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-1 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-1 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-1 > .container:nth-of-type(1n), .landing-page #main .large-up-1 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-1 > .column:nth-of-type(1n+1), .large-up-1 > .columns:nth-of-type(1n+1), .large-up-1 > .meta-left:nth-of-type(1n+1), .large-up-1 > .meta-right:nth-of-type(1n+1), .large-up-1 > #talk-description:nth-of-type(1n+1), .large-up-1 > #talk-actions:nth-of-type(1n+1), #comments .large-up-1 > .comment-meta:nth-of-type(1n+1), #comments .large-up-1 > .comment-content:nth-of-type(1n+1), .profile-page body #left-column .large-up-1 > #user-about:nth-of-type(1n+1), .profile-page body #right-column .large-up-1 > .profile-tile:nth-of-type(1n+1) {
+    .large-up-1 > .column:nth-of-type(1n+1), .large-up-1 > .columns:nth-of-type(1n+1), .large-up-1 > .meta-left:nth-of-type(1n+1), .large-up-1 > .meta-right:nth-of-type(1n+1), .large-up-1 > #talk-description:nth-of-type(1n+1), .large-up-1 > #talk-actions:nth-of-type(1n+1), #comments .large-up-1 > .comment-meta:nth-of-type(1n+1), #comments .large-up-1 > .comment-content:nth-of-type(1n+1), .profile-page body #left-column .large-up-1 > #user-about:nth-of-type(1n+1), .profile-page body #right-column .large-up-1 > .profile-tile:nth-of-type(1n+1), .landing-page #main .row .large-up-1 > .container:nth-of-type(1n+1), .landing-page #main #claim .large-up-1 > .container:nth-of-type(1n+1), .landing-page #main .large-up-1 > .talk-card:nth-of-type(1n+1) {
       clear: both; }
-    .large-up-1 > .column:last-child, .large-up-1 > .columns:last-child, .large-up-1 > .meta-left:last-child, .large-up-1 > .meta-right:last-child, .large-up-1 > #talk-description:last-child, .large-up-1 > #talk-actions:last-child, #comments .large-up-1 > .comment-meta:last-child, #comments .large-up-1 > .comment-content:last-child, .profile-page body #left-column .large-up-1 > #user-about:last-child, .profile-page body #right-column .large-up-1 > .profile-tile:last-child {
+    .large-up-1 > .column:last-child, .large-up-1 > .columns:last-child, .large-up-1 > .meta-left:last-child, .large-up-1 > .meta-right:last-child, .large-up-1 > #talk-description:last-child, .large-up-1 > #talk-actions:last-child, #comments .large-up-1 > .comment-meta:last-child, #comments .large-up-1 > .comment-content:last-child, .profile-page body #left-column .large-up-1 > #user-about:last-child, .profile-page body #right-column .large-up-1 > .profile-tile:last-child, .landing-page #main .row .large-up-1 > .container:last-child, .landing-page #main #claim .large-up-1 > .container:last-child, .landing-page #main .large-up-1 > .talk-card:last-child {
       float: left; }
-  .large-up-2 > .column, .large-up-2 > .columns, .large-up-2 > .meta-left, .large-up-2 > .meta-right, .large-up-2 > #talk-description, .large-up-2 > #talk-actions, #comments .large-up-2 > .comment-meta, #comments .large-up-2 > .comment-content, .profile-page body #left-column .large-up-2 > #user-about, .profile-page body #right-column .large-up-2 > .profile-tile {
+  .large-up-2 > .column, .large-up-2 > .columns, .large-up-2 > .meta-left, .large-up-2 > .meta-right, .large-up-2 > #talk-description, .large-up-2 > #talk-actions, #comments .large-up-2 > .comment-meta, #comments .large-up-2 > .comment-content, .profile-page body #left-column .large-up-2 > #user-about, .profile-page body #right-column .large-up-2 > .profile-tile, .landing-page #main .row .large-up-2 > .container, .landing-page #main #claim .large-up-2 > .container, .landing-page #main .large-up-2 > .talk-card {
     width: 50%;
     float: left; }
-    .large-up-2 > .column:nth-of-type(1n), .large-up-2 > .columns:nth-of-type(1n), .large-up-2 > .meta-left:nth-of-type(1n), .large-up-2 > .meta-right:nth-of-type(1n), .large-up-2 > #talk-description:nth-of-type(1n), .large-up-2 > #talk-actions:nth-of-type(1n), #comments .large-up-2 > .comment-meta:nth-of-type(1n), #comments .large-up-2 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-2 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-2 > .profile-tile:nth-of-type(1n) {
+    .large-up-2 > .column:nth-of-type(1n), .large-up-2 > .columns:nth-of-type(1n), .large-up-2 > .meta-left:nth-of-type(1n), .large-up-2 > .meta-right:nth-of-type(1n), .large-up-2 > #talk-description:nth-of-type(1n), .large-up-2 > #talk-actions:nth-of-type(1n), #comments .large-up-2 > .comment-meta:nth-of-type(1n), #comments .large-up-2 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-2 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-2 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-2 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-2 > .container:nth-of-type(1n), .landing-page #main .large-up-2 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-2 > .column:nth-of-type(2n+1), .large-up-2 > .columns:nth-of-type(2n+1), .large-up-2 > .meta-left:nth-of-type(2n+1), .large-up-2 > .meta-right:nth-of-type(2n+1), .large-up-2 > #talk-description:nth-of-type(2n+1), .large-up-2 > #talk-actions:nth-of-type(2n+1), #comments .large-up-2 > .comment-meta:nth-of-type(2n+1), #comments .large-up-2 > .comment-content:nth-of-type(2n+1), .profile-page body #left-column .large-up-2 > #user-about:nth-of-type(2n+1), .profile-page body #right-column .large-up-2 > .profile-tile:nth-of-type(2n+1) {
+    .large-up-2 > .column:nth-of-type(2n+1), .large-up-2 > .columns:nth-of-type(2n+1), .large-up-2 > .meta-left:nth-of-type(2n+1), .large-up-2 > .meta-right:nth-of-type(2n+1), .large-up-2 > #talk-description:nth-of-type(2n+1), .large-up-2 > #talk-actions:nth-of-type(2n+1), #comments .large-up-2 > .comment-meta:nth-of-type(2n+1), #comments .large-up-2 > .comment-content:nth-of-type(2n+1), .profile-page body #left-column .large-up-2 > #user-about:nth-of-type(2n+1), .profile-page body #right-column .large-up-2 > .profile-tile:nth-of-type(2n+1), .landing-page #main .row .large-up-2 > .container:nth-of-type(2n+1), .landing-page #main #claim .large-up-2 > .container:nth-of-type(2n+1), .landing-page #main .large-up-2 > .talk-card:nth-of-type(2n+1) {
       clear: both; }
-    .large-up-2 > .column:last-child, .large-up-2 > .columns:last-child, .large-up-2 > .meta-left:last-child, .large-up-2 > .meta-right:last-child, .large-up-2 > #talk-description:last-child, .large-up-2 > #talk-actions:last-child, #comments .large-up-2 > .comment-meta:last-child, #comments .large-up-2 > .comment-content:last-child, .profile-page body #left-column .large-up-2 > #user-about:last-child, .profile-page body #right-column .large-up-2 > .profile-tile:last-child {
+    .large-up-2 > .column:last-child, .large-up-2 > .columns:last-child, .large-up-2 > .meta-left:last-child, .large-up-2 > .meta-right:last-child, .large-up-2 > #talk-description:last-child, .large-up-2 > #talk-actions:last-child, #comments .large-up-2 > .comment-meta:last-child, #comments .large-up-2 > .comment-content:last-child, .profile-page body #left-column .large-up-2 > #user-about:last-child, .profile-page body #right-column .large-up-2 > .profile-tile:last-child, .landing-page #main .row .large-up-2 > .container:last-child, .landing-page #main #claim .large-up-2 > .container:last-child, .landing-page #main .large-up-2 > .talk-card:last-child {
       float: left; }
-  .large-up-3 > .column, .large-up-3 > .columns, .large-up-3 > .meta-left, .large-up-3 > .meta-right, .large-up-3 > #talk-description, .large-up-3 > #talk-actions, #comments .large-up-3 > .comment-meta, #comments .large-up-3 > .comment-content, .profile-page body #left-column .large-up-3 > #user-about, .profile-page body #right-column .large-up-3 > .profile-tile {
+  .large-up-3 > .column, .large-up-3 > .columns, .large-up-3 > .meta-left, .large-up-3 > .meta-right, .large-up-3 > #talk-description, .large-up-3 > #talk-actions, #comments .large-up-3 > .comment-meta, #comments .large-up-3 > .comment-content, .profile-page body #left-column .large-up-3 > #user-about, .profile-page body #right-column .large-up-3 > .profile-tile, .landing-page #main .row .large-up-3 > .container, .landing-page #main #claim .large-up-3 > .container, .landing-page #main .large-up-3 > .talk-card {
     width: 33.3333333333%;
     float: left; }
-    .large-up-3 > .column:nth-of-type(1n), .large-up-3 > .columns:nth-of-type(1n), .large-up-3 > .meta-left:nth-of-type(1n), .large-up-3 > .meta-right:nth-of-type(1n), .large-up-3 > #talk-description:nth-of-type(1n), .large-up-3 > #talk-actions:nth-of-type(1n), #comments .large-up-3 > .comment-meta:nth-of-type(1n), #comments .large-up-3 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-3 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-3 > .profile-tile:nth-of-type(1n) {
+    .large-up-3 > .column:nth-of-type(1n), .large-up-3 > .columns:nth-of-type(1n), .large-up-3 > .meta-left:nth-of-type(1n), .large-up-3 > .meta-right:nth-of-type(1n), .large-up-3 > #talk-description:nth-of-type(1n), .large-up-3 > #talk-actions:nth-of-type(1n), #comments .large-up-3 > .comment-meta:nth-of-type(1n), #comments .large-up-3 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-3 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-3 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-3 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-3 > .container:nth-of-type(1n), .landing-page #main .large-up-3 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-3 > .column:nth-of-type(3n+1), .large-up-3 > .columns:nth-of-type(3n+1), .large-up-3 > .meta-left:nth-of-type(3n+1), .large-up-3 > .meta-right:nth-of-type(3n+1), .large-up-3 > #talk-description:nth-of-type(3n+1), .large-up-3 > #talk-actions:nth-of-type(3n+1), #comments .large-up-3 > .comment-meta:nth-of-type(3n+1), #comments .large-up-3 > .comment-content:nth-of-type(3n+1), .profile-page body #left-column .large-up-3 > #user-about:nth-of-type(3n+1), .profile-page body #right-column .large-up-3 > .profile-tile:nth-of-type(3n+1) {
+    .large-up-3 > .column:nth-of-type(3n+1), .large-up-3 > .columns:nth-of-type(3n+1), .large-up-3 > .meta-left:nth-of-type(3n+1), .large-up-3 > .meta-right:nth-of-type(3n+1), .large-up-3 > #talk-description:nth-of-type(3n+1), .large-up-3 > #talk-actions:nth-of-type(3n+1), #comments .large-up-3 > .comment-meta:nth-of-type(3n+1), #comments .large-up-3 > .comment-content:nth-of-type(3n+1), .profile-page body #left-column .large-up-3 > #user-about:nth-of-type(3n+1), .profile-page body #right-column .large-up-3 > .profile-tile:nth-of-type(3n+1), .landing-page #main .row .large-up-3 > .container:nth-of-type(3n+1), .landing-page #main #claim .large-up-3 > .container:nth-of-type(3n+1), .landing-page #main .large-up-3 > .talk-card:nth-of-type(3n+1) {
       clear: both; }
-    .large-up-3 > .column:last-child, .large-up-3 > .columns:last-child, .large-up-3 > .meta-left:last-child, .large-up-3 > .meta-right:last-child, .large-up-3 > #talk-description:last-child, .large-up-3 > #talk-actions:last-child, #comments .large-up-3 > .comment-meta:last-child, #comments .large-up-3 > .comment-content:last-child, .profile-page body #left-column .large-up-3 > #user-about:last-child, .profile-page body #right-column .large-up-3 > .profile-tile:last-child {
+    .large-up-3 > .column:last-child, .large-up-3 > .columns:last-child, .large-up-3 > .meta-left:last-child, .large-up-3 > .meta-right:last-child, .large-up-3 > #talk-description:last-child, .large-up-3 > #talk-actions:last-child, #comments .large-up-3 > .comment-meta:last-child, #comments .large-up-3 > .comment-content:last-child, .profile-page body #left-column .large-up-3 > #user-about:last-child, .profile-page body #right-column .large-up-3 > .profile-tile:last-child, .landing-page #main .row .large-up-3 > .container:last-child, .landing-page #main #claim .large-up-3 > .container:last-child, .landing-page #main .large-up-3 > .talk-card:last-child {
       float: left; }
-  .large-up-4 > .column, .large-up-4 > .columns, .large-up-4 > .meta-left, .large-up-4 > .meta-right, .large-up-4 > #talk-description, .large-up-4 > #talk-actions, #comments .large-up-4 > .comment-meta, #comments .large-up-4 > .comment-content, .profile-page body #left-column .large-up-4 > #user-about, .profile-page body #right-column .large-up-4 > .profile-tile {
+  .large-up-4 > .column, .large-up-4 > .columns, .large-up-4 > .meta-left, .large-up-4 > .meta-right, .large-up-4 > #talk-description, .large-up-4 > #talk-actions, #comments .large-up-4 > .comment-meta, #comments .large-up-4 > .comment-content, .profile-page body #left-column .large-up-4 > #user-about, .profile-page body #right-column .large-up-4 > .profile-tile, .landing-page #main .row .large-up-4 > .container, .landing-page #main #claim .large-up-4 > .container, .landing-page #main .large-up-4 > .talk-card {
     width: 25%;
     float: left; }
-    .large-up-4 > .column:nth-of-type(1n), .large-up-4 > .columns:nth-of-type(1n), .large-up-4 > .meta-left:nth-of-type(1n), .large-up-4 > .meta-right:nth-of-type(1n), .large-up-4 > #talk-description:nth-of-type(1n), .large-up-4 > #talk-actions:nth-of-type(1n), #comments .large-up-4 > .comment-meta:nth-of-type(1n), #comments .large-up-4 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-4 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-4 > .profile-tile:nth-of-type(1n) {
+    .large-up-4 > .column:nth-of-type(1n), .large-up-4 > .columns:nth-of-type(1n), .large-up-4 > .meta-left:nth-of-type(1n), .large-up-4 > .meta-right:nth-of-type(1n), .large-up-4 > #talk-description:nth-of-type(1n), .large-up-4 > #talk-actions:nth-of-type(1n), #comments .large-up-4 > .comment-meta:nth-of-type(1n), #comments .large-up-4 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-4 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-4 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-4 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-4 > .container:nth-of-type(1n), .landing-page #main .large-up-4 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-4 > .column:nth-of-type(4n+1), .large-up-4 > .columns:nth-of-type(4n+1), .large-up-4 > .meta-left:nth-of-type(4n+1), .large-up-4 > .meta-right:nth-of-type(4n+1), .large-up-4 > #talk-description:nth-of-type(4n+1), .large-up-4 > #talk-actions:nth-of-type(4n+1), #comments .large-up-4 > .comment-meta:nth-of-type(4n+1), #comments .large-up-4 > .comment-content:nth-of-type(4n+1), .profile-page body #left-column .large-up-4 > #user-about:nth-of-type(4n+1), .profile-page body #right-column .large-up-4 > .profile-tile:nth-of-type(4n+1) {
+    .large-up-4 > .column:nth-of-type(4n+1), .large-up-4 > .columns:nth-of-type(4n+1), .large-up-4 > .meta-left:nth-of-type(4n+1), .large-up-4 > .meta-right:nth-of-type(4n+1), .large-up-4 > #talk-description:nth-of-type(4n+1), .large-up-4 > #talk-actions:nth-of-type(4n+1), #comments .large-up-4 > .comment-meta:nth-of-type(4n+1), #comments .large-up-4 > .comment-content:nth-of-type(4n+1), .profile-page body #left-column .large-up-4 > #user-about:nth-of-type(4n+1), .profile-page body #right-column .large-up-4 > .profile-tile:nth-of-type(4n+1), .landing-page #main .row .large-up-4 > .container:nth-of-type(4n+1), .landing-page #main #claim .large-up-4 > .container:nth-of-type(4n+1), .landing-page #main .large-up-4 > .talk-card:nth-of-type(4n+1) {
       clear: both; }
-    .large-up-4 > .column:last-child, .large-up-4 > .columns:last-child, .large-up-4 > .meta-left:last-child, .large-up-4 > .meta-right:last-child, .large-up-4 > #talk-description:last-child, .large-up-4 > #talk-actions:last-child, #comments .large-up-4 > .comment-meta:last-child, #comments .large-up-4 > .comment-content:last-child, .profile-page body #left-column .large-up-4 > #user-about:last-child, .profile-page body #right-column .large-up-4 > .profile-tile:last-child {
+    .large-up-4 > .column:last-child, .large-up-4 > .columns:last-child, .large-up-4 > .meta-left:last-child, .large-up-4 > .meta-right:last-child, .large-up-4 > #talk-description:last-child, .large-up-4 > #talk-actions:last-child, #comments .large-up-4 > .comment-meta:last-child, #comments .large-up-4 > .comment-content:last-child, .profile-page body #left-column .large-up-4 > #user-about:last-child, .profile-page body #right-column .large-up-4 > .profile-tile:last-child, .landing-page #main .row .large-up-4 > .container:last-child, .landing-page #main #claim .large-up-4 > .container:last-child, .landing-page #main .large-up-4 > .talk-card:last-child {
       float: left; }
-  .large-up-5 > .column, .large-up-5 > .columns, .large-up-5 > .meta-left, .large-up-5 > .meta-right, .large-up-5 > #talk-description, .large-up-5 > #talk-actions, #comments .large-up-5 > .comment-meta, #comments .large-up-5 > .comment-content, .profile-page body #left-column .large-up-5 > #user-about, .profile-page body #right-column .large-up-5 > .profile-tile {
+  .large-up-5 > .column, .large-up-5 > .columns, .large-up-5 > .meta-left, .large-up-5 > .meta-right, .large-up-5 > #talk-description, .large-up-5 > #talk-actions, #comments .large-up-5 > .comment-meta, #comments .large-up-5 > .comment-content, .profile-page body #left-column .large-up-5 > #user-about, .profile-page body #right-column .large-up-5 > .profile-tile, .landing-page #main .row .large-up-5 > .container, .landing-page #main #claim .large-up-5 > .container, .landing-page #main .large-up-5 > .talk-card {
     width: 20%;
     float: left; }
-    .large-up-5 > .column:nth-of-type(1n), .large-up-5 > .columns:nth-of-type(1n), .large-up-5 > .meta-left:nth-of-type(1n), .large-up-5 > .meta-right:nth-of-type(1n), .large-up-5 > #talk-description:nth-of-type(1n), .large-up-5 > #talk-actions:nth-of-type(1n), #comments .large-up-5 > .comment-meta:nth-of-type(1n), #comments .large-up-5 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-5 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-5 > .profile-tile:nth-of-type(1n) {
+    .large-up-5 > .column:nth-of-type(1n), .large-up-5 > .columns:nth-of-type(1n), .large-up-5 > .meta-left:nth-of-type(1n), .large-up-5 > .meta-right:nth-of-type(1n), .large-up-5 > #talk-description:nth-of-type(1n), .large-up-5 > #talk-actions:nth-of-type(1n), #comments .large-up-5 > .comment-meta:nth-of-type(1n), #comments .large-up-5 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-5 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-5 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-5 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-5 > .container:nth-of-type(1n), .landing-page #main .large-up-5 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-5 > .column:nth-of-type(5n+1), .large-up-5 > .columns:nth-of-type(5n+1), .large-up-5 > .meta-left:nth-of-type(5n+1), .large-up-5 > .meta-right:nth-of-type(5n+1), .large-up-5 > #talk-description:nth-of-type(5n+1), .large-up-5 > #talk-actions:nth-of-type(5n+1), #comments .large-up-5 > .comment-meta:nth-of-type(5n+1), #comments .large-up-5 > .comment-content:nth-of-type(5n+1), .profile-page body #left-column .large-up-5 > #user-about:nth-of-type(5n+1), .profile-page body #right-column .large-up-5 > .profile-tile:nth-of-type(5n+1) {
+    .large-up-5 > .column:nth-of-type(5n+1), .large-up-5 > .columns:nth-of-type(5n+1), .large-up-5 > .meta-left:nth-of-type(5n+1), .large-up-5 > .meta-right:nth-of-type(5n+1), .large-up-5 > #talk-description:nth-of-type(5n+1), .large-up-5 > #talk-actions:nth-of-type(5n+1), #comments .large-up-5 > .comment-meta:nth-of-type(5n+1), #comments .large-up-5 > .comment-content:nth-of-type(5n+1), .profile-page body #left-column .large-up-5 > #user-about:nth-of-type(5n+1), .profile-page body #right-column .large-up-5 > .profile-tile:nth-of-type(5n+1), .landing-page #main .row .large-up-5 > .container:nth-of-type(5n+1), .landing-page #main #claim .large-up-5 > .container:nth-of-type(5n+1), .landing-page #main .large-up-5 > .talk-card:nth-of-type(5n+1) {
       clear: both; }
-    .large-up-5 > .column:last-child, .large-up-5 > .columns:last-child, .large-up-5 > .meta-left:last-child, .large-up-5 > .meta-right:last-child, .large-up-5 > #talk-description:last-child, .large-up-5 > #talk-actions:last-child, #comments .large-up-5 > .comment-meta:last-child, #comments .large-up-5 > .comment-content:last-child, .profile-page body #left-column .large-up-5 > #user-about:last-child, .profile-page body #right-column .large-up-5 > .profile-tile:last-child {
+    .large-up-5 > .column:last-child, .large-up-5 > .columns:last-child, .large-up-5 > .meta-left:last-child, .large-up-5 > .meta-right:last-child, .large-up-5 > #talk-description:last-child, .large-up-5 > #talk-actions:last-child, #comments .large-up-5 > .comment-meta:last-child, #comments .large-up-5 > .comment-content:last-child, .profile-page body #left-column .large-up-5 > #user-about:last-child, .profile-page body #right-column .large-up-5 > .profile-tile:last-child, .landing-page #main .row .large-up-5 > .container:last-child, .landing-page #main #claim .large-up-5 > .container:last-child, .landing-page #main .large-up-5 > .talk-card:last-child {
       float: left; }
-  .large-up-6 > .column, .large-up-6 > .columns, .large-up-6 > .meta-left, .large-up-6 > .meta-right, .large-up-6 > #talk-description, .large-up-6 > #talk-actions, #comments .large-up-6 > .comment-meta, #comments .large-up-6 > .comment-content, .profile-page body #left-column .large-up-6 > #user-about, .profile-page body #right-column .large-up-6 > .profile-tile {
+  .large-up-6 > .column, .large-up-6 > .columns, .large-up-6 > .meta-left, .large-up-6 > .meta-right, .large-up-6 > #talk-description, .large-up-6 > #talk-actions, #comments .large-up-6 > .comment-meta, #comments .large-up-6 > .comment-content, .profile-page body #left-column .large-up-6 > #user-about, .profile-page body #right-column .large-up-6 > .profile-tile, .landing-page #main .row .large-up-6 > .container, .landing-page #main #claim .large-up-6 > .container, .landing-page #main .large-up-6 > .talk-card {
     width: 16.6666666667%;
     float: left; }
-    .large-up-6 > .column:nth-of-type(1n), .large-up-6 > .columns:nth-of-type(1n), .large-up-6 > .meta-left:nth-of-type(1n), .large-up-6 > .meta-right:nth-of-type(1n), .large-up-6 > #talk-description:nth-of-type(1n), .large-up-6 > #talk-actions:nth-of-type(1n), #comments .large-up-6 > .comment-meta:nth-of-type(1n), #comments .large-up-6 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-6 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-6 > .profile-tile:nth-of-type(1n) {
+    .large-up-6 > .column:nth-of-type(1n), .large-up-6 > .columns:nth-of-type(1n), .large-up-6 > .meta-left:nth-of-type(1n), .large-up-6 > .meta-right:nth-of-type(1n), .large-up-6 > #talk-description:nth-of-type(1n), .large-up-6 > #talk-actions:nth-of-type(1n), #comments .large-up-6 > .comment-meta:nth-of-type(1n), #comments .large-up-6 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-6 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-6 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-6 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-6 > .container:nth-of-type(1n), .landing-page #main .large-up-6 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-6 > .column:nth-of-type(6n+1), .large-up-6 > .columns:nth-of-type(6n+1), .large-up-6 > .meta-left:nth-of-type(6n+1), .large-up-6 > .meta-right:nth-of-type(6n+1), .large-up-6 > #talk-description:nth-of-type(6n+1), .large-up-6 > #talk-actions:nth-of-type(6n+1), #comments .large-up-6 > .comment-meta:nth-of-type(6n+1), #comments .large-up-6 > .comment-content:nth-of-type(6n+1), .profile-page body #left-column .large-up-6 > #user-about:nth-of-type(6n+1), .profile-page body #right-column .large-up-6 > .profile-tile:nth-of-type(6n+1) {
+    .large-up-6 > .column:nth-of-type(6n+1), .large-up-6 > .columns:nth-of-type(6n+1), .large-up-6 > .meta-left:nth-of-type(6n+1), .large-up-6 > .meta-right:nth-of-type(6n+1), .large-up-6 > #talk-description:nth-of-type(6n+1), .large-up-6 > #talk-actions:nth-of-type(6n+1), #comments .large-up-6 > .comment-meta:nth-of-type(6n+1), #comments .large-up-6 > .comment-content:nth-of-type(6n+1), .profile-page body #left-column .large-up-6 > #user-about:nth-of-type(6n+1), .profile-page body #right-column .large-up-6 > .profile-tile:nth-of-type(6n+1), .landing-page #main .row .large-up-6 > .container:nth-of-type(6n+1), .landing-page #main #claim .large-up-6 > .container:nth-of-type(6n+1), .landing-page #main .large-up-6 > .talk-card:nth-of-type(6n+1) {
       clear: both; }
-    .large-up-6 > .column:last-child, .large-up-6 > .columns:last-child, .large-up-6 > .meta-left:last-child, .large-up-6 > .meta-right:last-child, .large-up-6 > #talk-description:last-child, .large-up-6 > #talk-actions:last-child, #comments .large-up-6 > .comment-meta:last-child, #comments .large-up-6 > .comment-content:last-child, .profile-page body #left-column .large-up-6 > #user-about:last-child, .profile-page body #right-column .large-up-6 > .profile-tile:last-child {
+    .large-up-6 > .column:last-child, .large-up-6 > .columns:last-child, .large-up-6 > .meta-left:last-child, .large-up-6 > .meta-right:last-child, .large-up-6 > #talk-description:last-child, .large-up-6 > #talk-actions:last-child, #comments .large-up-6 > .comment-meta:last-child, #comments .large-up-6 > .comment-content:last-child, .profile-page body #left-column .large-up-6 > #user-about:last-child, .profile-page body #right-column .large-up-6 > .profile-tile:last-child, .landing-page #main .row .large-up-6 > .container:last-child, .landing-page #main #claim .large-up-6 > .container:last-child, .landing-page #main .large-up-6 > .talk-card:last-child {
       float: left; }
-  .large-up-7 > .column, .large-up-7 > .columns, .large-up-7 > .meta-left, .large-up-7 > .meta-right, .large-up-7 > #talk-description, .large-up-7 > #talk-actions, #comments .large-up-7 > .comment-meta, #comments .large-up-7 > .comment-content, .profile-page body #left-column .large-up-7 > #user-about, .profile-page body #right-column .large-up-7 > .profile-tile {
+  .large-up-7 > .column, .large-up-7 > .columns, .large-up-7 > .meta-left, .large-up-7 > .meta-right, .large-up-7 > #talk-description, .large-up-7 > #talk-actions, #comments .large-up-7 > .comment-meta, #comments .large-up-7 > .comment-content, .profile-page body #left-column .large-up-7 > #user-about, .profile-page body #right-column .large-up-7 > .profile-tile, .landing-page #main .row .large-up-7 > .container, .landing-page #main #claim .large-up-7 > .container, .landing-page #main .large-up-7 > .talk-card {
     width: 14.2857142857%;
     float: left; }
-    .large-up-7 > .column:nth-of-type(1n), .large-up-7 > .columns:nth-of-type(1n), .large-up-7 > .meta-left:nth-of-type(1n), .large-up-7 > .meta-right:nth-of-type(1n), .large-up-7 > #talk-description:nth-of-type(1n), .large-up-7 > #talk-actions:nth-of-type(1n), #comments .large-up-7 > .comment-meta:nth-of-type(1n), #comments .large-up-7 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-7 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-7 > .profile-tile:nth-of-type(1n) {
+    .large-up-7 > .column:nth-of-type(1n), .large-up-7 > .columns:nth-of-type(1n), .large-up-7 > .meta-left:nth-of-type(1n), .large-up-7 > .meta-right:nth-of-type(1n), .large-up-7 > #talk-description:nth-of-type(1n), .large-up-7 > #talk-actions:nth-of-type(1n), #comments .large-up-7 > .comment-meta:nth-of-type(1n), #comments .large-up-7 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-7 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-7 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-7 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-7 > .container:nth-of-type(1n), .landing-page #main .large-up-7 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-7 > .column:nth-of-type(7n+1), .large-up-7 > .columns:nth-of-type(7n+1), .large-up-7 > .meta-left:nth-of-type(7n+1), .large-up-7 > .meta-right:nth-of-type(7n+1), .large-up-7 > #talk-description:nth-of-type(7n+1), .large-up-7 > #talk-actions:nth-of-type(7n+1), #comments .large-up-7 > .comment-meta:nth-of-type(7n+1), #comments .large-up-7 > .comment-content:nth-of-type(7n+1), .profile-page body #left-column .large-up-7 > #user-about:nth-of-type(7n+1), .profile-page body #right-column .large-up-7 > .profile-tile:nth-of-type(7n+1) {
+    .large-up-7 > .column:nth-of-type(7n+1), .large-up-7 > .columns:nth-of-type(7n+1), .large-up-7 > .meta-left:nth-of-type(7n+1), .large-up-7 > .meta-right:nth-of-type(7n+1), .large-up-7 > #talk-description:nth-of-type(7n+1), .large-up-7 > #talk-actions:nth-of-type(7n+1), #comments .large-up-7 > .comment-meta:nth-of-type(7n+1), #comments .large-up-7 > .comment-content:nth-of-type(7n+1), .profile-page body #left-column .large-up-7 > #user-about:nth-of-type(7n+1), .profile-page body #right-column .large-up-7 > .profile-tile:nth-of-type(7n+1), .landing-page #main .row .large-up-7 > .container:nth-of-type(7n+1), .landing-page #main #claim .large-up-7 > .container:nth-of-type(7n+1), .landing-page #main .large-up-7 > .talk-card:nth-of-type(7n+1) {
       clear: both; }
-    .large-up-7 > .column:last-child, .large-up-7 > .columns:last-child, .large-up-7 > .meta-left:last-child, .large-up-7 > .meta-right:last-child, .large-up-7 > #talk-description:last-child, .large-up-7 > #talk-actions:last-child, #comments .large-up-7 > .comment-meta:last-child, #comments .large-up-7 > .comment-content:last-child, .profile-page body #left-column .large-up-7 > #user-about:last-child, .profile-page body #right-column .large-up-7 > .profile-tile:last-child {
+    .large-up-7 > .column:last-child, .large-up-7 > .columns:last-child, .large-up-7 > .meta-left:last-child, .large-up-7 > .meta-right:last-child, .large-up-7 > #talk-description:last-child, .large-up-7 > #talk-actions:last-child, #comments .large-up-7 > .comment-meta:last-child, #comments .large-up-7 > .comment-content:last-child, .profile-page body #left-column .large-up-7 > #user-about:last-child, .profile-page body #right-column .large-up-7 > .profile-tile:last-child, .landing-page #main .row .large-up-7 > .container:last-child, .landing-page #main #claim .large-up-7 > .container:last-child, .landing-page #main .large-up-7 > .talk-card:last-child {
       float: left; }
-  .large-up-8 > .column, .large-up-8 > .columns, .large-up-8 > .meta-left, .large-up-8 > .meta-right, .large-up-8 > #talk-description, .large-up-8 > #talk-actions, #comments .large-up-8 > .comment-meta, #comments .large-up-8 > .comment-content, .profile-page body #left-column .large-up-8 > #user-about, .profile-page body #right-column .large-up-8 > .profile-tile {
+  .large-up-8 > .column, .large-up-8 > .columns, .large-up-8 > .meta-left, .large-up-8 > .meta-right, .large-up-8 > #talk-description, .large-up-8 > #talk-actions, #comments .large-up-8 > .comment-meta, #comments .large-up-8 > .comment-content, .profile-page body #left-column .large-up-8 > #user-about, .profile-page body #right-column .large-up-8 > .profile-tile, .landing-page #main .row .large-up-8 > .container, .landing-page #main #claim .large-up-8 > .container, .landing-page #main .large-up-8 > .talk-card {
     width: 12.5%;
     float: left; }
-    .large-up-8 > .column:nth-of-type(1n), .large-up-8 > .columns:nth-of-type(1n), .large-up-8 > .meta-left:nth-of-type(1n), .large-up-8 > .meta-right:nth-of-type(1n), .large-up-8 > #talk-description:nth-of-type(1n), .large-up-8 > #talk-actions:nth-of-type(1n), #comments .large-up-8 > .comment-meta:nth-of-type(1n), #comments .large-up-8 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-8 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-8 > .profile-tile:nth-of-type(1n) {
+    .large-up-8 > .column:nth-of-type(1n), .large-up-8 > .columns:nth-of-type(1n), .large-up-8 > .meta-left:nth-of-type(1n), .large-up-8 > .meta-right:nth-of-type(1n), .large-up-8 > #talk-description:nth-of-type(1n), .large-up-8 > #talk-actions:nth-of-type(1n), #comments .large-up-8 > .comment-meta:nth-of-type(1n), #comments .large-up-8 > .comment-content:nth-of-type(1n), .profile-page body #left-column .large-up-8 > #user-about:nth-of-type(1n), .profile-page body #right-column .large-up-8 > .profile-tile:nth-of-type(1n), .landing-page #main .row .large-up-8 > .container:nth-of-type(1n), .landing-page #main #claim .large-up-8 > .container:nth-of-type(1n), .landing-page #main .large-up-8 > .talk-card:nth-of-type(1n) {
       clear: none; }
-    .large-up-8 > .column:nth-of-type(8n+1), .large-up-8 > .columns:nth-of-type(8n+1), .large-up-8 > .meta-left:nth-of-type(8n+1), .large-up-8 > .meta-right:nth-of-type(8n+1), .large-up-8 > #talk-description:nth-of-type(8n+1), .large-up-8 > #talk-actions:nth-of-type(8n+1), #comments .large-up-8 > .comment-meta:nth-of-type(8n+1), #comments .large-up-8 > .comment-content:nth-of-type(8n+1), .profile-page body #left-column .large-up-8 > #user-about:nth-of-type(8n+1), .profile-page body #right-column .large-up-8 > .profile-tile:nth-of-type(8n+1) {
+    .large-up-8 > .column:nth-of-type(8n+1), .large-up-8 > .columns:nth-of-type(8n+1), .large-up-8 > .meta-left:nth-of-type(8n+1), .large-up-8 > .meta-right:nth-of-type(8n+1), .large-up-8 > #talk-description:nth-of-type(8n+1), .large-up-8 > #talk-actions:nth-of-type(8n+1), #comments .large-up-8 > .comment-meta:nth-of-type(8n+1), #comments .large-up-8 > .comment-content:nth-of-type(8n+1), .profile-page body #left-column .large-up-8 > #user-about:nth-of-type(8n+1), .profile-page body #right-column .large-up-8 > .profile-tile:nth-of-type(8n+1), .landing-page #main .row .large-up-8 > .container:nth-of-type(8n+1), .landing-page #main #claim .large-up-8 > .container:nth-of-type(8n+1), .landing-page #main .large-up-8 > .talk-card:nth-of-type(8n+1) {
       clear: both; }
-    .large-up-8 > .column:last-child, .large-up-8 > .columns:last-child, .large-up-8 > .meta-left:last-child, .large-up-8 > .meta-right:last-child, .large-up-8 > #talk-description:last-child, .large-up-8 > #talk-actions:last-child, #comments .large-up-8 > .comment-meta:last-child, #comments .large-up-8 > .comment-content:last-child, .profile-page body #left-column .large-up-8 > #user-about:last-child, .profile-page body #right-column .large-up-8 > .profile-tile:last-child {
+    .large-up-8 > .column:last-child, .large-up-8 > .columns:last-child, .large-up-8 > .meta-left:last-child, .large-up-8 > .meta-right:last-child, .large-up-8 > #talk-description:last-child, .large-up-8 > #talk-actions:last-child, #comments .large-up-8 > .comment-meta:last-child, #comments .large-up-8 > .comment-content:last-child, .profile-page body #left-column .large-up-8 > #user-about:last-child, .profile-page body #right-column .large-up-8 > .profile-tile:last-child, .landing-page #main .row .large-up-8 > .container:last-child, .landing-page #main #claim .large-up-8 > .container:last-child, .landing-page #main .large-up-8 > .talk-card:last-child {
       float: left; }
-  .column.large-centered, .large-centered.columns, .large-centered.meta-left, .large-centered.meta-right, .large-centered#talk-description, .large-centered#talk-actions, #comments .large-centered.comment-meta, #comments .large-centered.comment-content, .profile-page body #left-column .large-centered#user-about, .profile-page body #right-column .large-centered.profile-tile {
+  .column.large-centered, .large-centered.columns, .large-centered.meta-left, .large-centered.meta-right, .large-centered#talk-description, .large-centered#talk-actions, #comments .large-centered.comment-meta, #comments .large-centered.comment-content, .profile-page body #left-column .large-centered#user-about, .profile-page body #right-column .large-centered.profile-tile, .landing-page #main .row .large-centered.container, .landing-page #main #claim .large-centered.container, .landing-page #main .large-centered.talk-card {
     float: none;
     margin-left: auto;
     margin-right: auto; }
@@ -1098,7 +1098,7 @@ small {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Eagle', 'Eagle-Book';
-  font-weight: 300;
+  font-weight: normal;
   font-style: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
@@ -1243,13 +1243,13 @@ kbd {
   margin-left: 0;
   list-style: none; }
 
-.text-left {
+.text-left, .landing-page #main .talk-card .talk-card-inside {
   text-align: left; }
 
 .text-right {
   text-align: right; }
 
-.text-center, .start-page #main h1 {
+.text-center, .landing-page #main .row, .landing-page #main .row .container, .landing-page #main h1, .landing-page #main #claim .container {
   text-align: center; }
 
 .text-justify {
@@ -1326,7 +1326,7 @@ kbd {
   h2, h3 {
     page-break-after: avoid; } }
 
-.button {
+.button, .landing-page #main button {
   display: inline-block;
   text-align: center;
   line-height: 1;
@@ -1341,95 +1341,95 @@ kbd {
   font-size: 0.9rem;
   background: #2c46b0;
   color: #fff; }
-  [data-whatinput='mouse'] .button {
+  [data-whatinput='mouse'] .button, [data-whatinput='mouse'] .landing-page #main button, .landing-page #main [data-whatinput='mouse'] button {
     outline: 0; }
-  .button:hover, .button:focus {
+  .button:hover, .landing-page #main button:hover, .button:focus, .landing-page #main button:focus {
     background: #253b96;
     color: #fff; }
-  .button.tiny {
+  .button.tiny, .landing-page #main button.tiny {
     font-size: 0.6rem; }
-  .button.small {
+  .button.small, .landing-page #main button.small {
     font-size: 0.75rem; }
-  .button.large {
+  .button.large, .landing-page #main button {
     font-size: 1.25rem; }
-  .button.expanded {
+  .button.expanded, .landing-page #main button.expanded {
     display: block;
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
-  .button.primary {
+  .button.primary, .landing-page #main button.primary {
     background: #2c46b0;
     color: #fff; }
-    .button.primary:hover, .button.primary:focus {
+    .button.primary:hover, .landing-page #main button.primary:hover, .button.primary:focus, .landing-page #main button.primary:focus {
       background: #23388d;
       color: #fff; }
-  .button.secondary, .reveal-modal button.button {
+  .button.secondary, .reveal-modal button.button, .landing-page #main button {
     background: #54c6c6;
     color: #fff; }
-    .button.secondary:hover, .reveal-modal button.button:hover, .button.secondary:focus, .reveal-modal button.button:focus {
+    .button.secondary:hover, .reveal-modal button.button:hover, .landing-page #main button:hover, .button.secondary:focus, .reveal-modal button.button:focus, .landing-page #main button:focus {
       background: #38a9a9;
       color: #fff; }
-  .button.success {
+  .button.success, .landing-page #main button.success {
     background: #d8f793;
     color: #000; }
-    .button.success:hover, .button.success:focus {
+    .button.success:hover, .landing-page #main button.success:hover, .button.success:focus, .landing-page #main button.success:focus {
       background: #bef24a;
       color: #000; }
-  .button.alert {
+  .button.alert, .landing-page #main button.alert {
     background: #f82847;
     color: #fff; }
-    .button.alert:hover, .button.alert:focus {
+    .button.alert:hover, .landing-page #main button.alert:hover, .button.alert:focus, .landing-page #main button.alert:focus {
       background: #df0727;
       color: #fff; }
-  .button.warning {
+  .button.warning, .landing-page #main button.warning {
     background: #ffed00;
     color: #fff; }
-    .button.warning:hover, .button.warning:focus {
+    .button.warning:hover, .landing-page #main button.warning:hover, .button.warning:focus, .landing-page #main button.warning:focus {
       background: #ccbe00;
       color: #fff; }
-  .button.hollow {
+  .button.hollow, .landing-page #main button {
     border: 1px solid #2c46b0;
     color: #2c46b0; }
-    .button.hollow, .button.hollow:hover, .button.hollow:focus {
+    .button.hollow, .landing-page #main button, .button.hollow:hover, .landing-page #main button:hover, .button.hollow:focus, .landing-page #main button:focus {
       background: transparent; }
-    .button.hollow:hover, .button.hollow:focus {
+    .button.hollow:hover, .landing-page #main button:hover, .button.hollow:focus, .landing-page #main button:focus {
       border-color: #162358;
       color: #162358; }
-    .button.hollow.primary {
+    .button.hollow.primary, .landing-page #main button.primary {
       border: 1px solid #2c46b0;
       color: #2c46b0; }
-      .button.hollow.primary:hover, .button.hollow.primary:focus {
+      .button.hollow.primary:hover, .landing-page #main button.primary:hover, .button.hollow.primary:focus, .landing-page #main button.primary:focus {
         border-color: #162358;
         color: #162358; }
-    .button.hollow.secondary, .reveal-modal button.button.hollow {
+    .button.hollow.secondary, .reveal-modal button.button.hollow, .landing-page #main button {
       border: 1px solid #54c6c6;
       color: #54c6c6; }
-      .button.hollow.secondary:hover, .reveal-modal button.button.hollow:hover, .button.hollow.secondary:focus, .reveal-modal button.button.hollow:focus {
+      .button.hollow.secondary:hover, .reveal-modal button.button.hollow:hover, .landing-page #main button:hover, .button.hollow.secondary:focus, .reveal-modal button.button.hollow:focus, .landing-page #main button:focus {
         border-color: #236a6a;
         color: #236a6a; }
-    .button.hollow.success {
+    .button.hollow.success, .landing-page #main button.success {
       border: 1px solid #d8f793;
       color: #d8f793; }
-      .button.hollow.success:hover, .button.hollow.success:focus {
+      .button.hollow.success:hover, .landing-page #main button.success:hover, .button.hollow.success:focus, .landing-page #main button.success:focus {
         border-color: #83b70e;
         color: #83b70e; }
-    .button.hollow.alert {
+    .button.hollow.alert, .landing-page #main button.alert {
       border: 1px solid #f82847;
       color: #f82847; }
-      .button.hollow.alert:hover, .button.hollow.alert:focus {
+      .button.hollow.alert:hover, .landing-page #main button.alert:hover, .button.hollow.alert:focus, .landing-page #main button.alert:focus {
         border-color: #8b0519;
         color: #8b0519; }
-    .button.hollow.warning {
+    .button.hollow.warning, .landing-page #main button.warning {
       border: 1px solid #ffed00;
       color: #ffed00; }
-      .button.hollow.warning:hover, .button.hollow.warning:focus {
+      .button.hollow.warning:hover, .landing-page #main button.warning:hover, .button.hollow.warning:focus, .landing-page #main button.warning:focus {
         border-color: #807700;
         color: #807700; }
-  .button.disabled, .button[disabled] {
+  .button.disabled, .landing-page #main button.disabled, .button[disabled], .landing-page #main button[disabled] {
     opacity: 0.25;
     cursor: not-allowed;
     pointer-events: none; }
-  .button.dropdown::after {
+  .button.dropdown::after, .landing-page #main button.dropdown::after {
     content: '';
     display: block;
     width: 0;
@@ -1442,7 +1442,7 @@ kbd {
     float: right;
     margin-left: 1em;
     display: inline-block; }
-  .button.arrow-only::after {
+  .button.arrow-only::after, .landing-page #main button.arrow-only::after {
     margin-left: 0;
     float: none;
     top: 0.2em; }
@@ -1453,12 +1453,12 @@ kbd {
   width: 100%;
   height: 2.4375rem;
   padding: 0.5rem;
-  border: 1px solid #cacaca;
+  border: 0px solid #e1e2e7;
   margin: 0 0 1rem;
   font-family: inherit;
   font-size: 1rem;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: rgba(225, 226, 231, 0.2);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
@@ -1513,7 +1513,7 @@ label {
   color: #000000; }
   label.middle {
     margin: 0 0 1rem;
-    padding: 0.5625rem 0; }
+    padding: 0.5rem 0; }
 
 .help-text {
   margin-top: -0.5rem;
@@ -1582,7 +1582,7 @@ legend {
 select {
   height: 2.4375rem;
   padding: 0.5rem;
-  border: 1px solid #cacaca;
+  border: 0px solid #e1e2e7;
   border-radius: 0;
   margin: 0 0 1rem;
   font-size: 1rem;
@@ -1714,10 +1714,10 @@ select {
   margin-left: auto;
   margin-right: auto; }
 
-.clearfix::before, .clearfix::after {
+.clearfix::before, .landing-page #main #talk-collection::before, .clearfix::after, .landing-page #main #talk-collection::after {
   content: ' ';
   display: table; }
-.clearfix::after {
+.clearfix::after, .landing-page #main #talk-collection::after {
   clear: both; }
 
 .accordion {
@@ -1781,7 +1781,7 @@ select {
   border-radius: 50%;
   background: #2c46b0;
   color: #FFFFFF; }
-  .badge.secondary, .reveal-modal button.badge {
+  .badge.secondary, .reveal-modal button.badge, .landing-page #main button.badge {
     background: #54c6c6;
     color: #FFFFFF; }
   .badge.success {
@@ -1830,65 +1830,65 @@ select {
     display: table; }
   .button-group::after {
     clear: both; }
-  .button-group .button {
+  .button-group .button, .button-group .landing-page #main button, .landing-page #main .button-group button {
     float: left;
     margin: 0;
     font-size: inherit; }
-    .button-group .button:not(:last-child) {
+    .button-group .button:not(:last-child), .button-group .landing-page #main button:not(:last-child), .landing-page #main .button-group button:not(:last-child) {
       border-right: 1px solid #FFFFFF; }
   .button-group.tiny {
     font-size: 0.6rem; }
   .button-group.small {
     font-size: 0.75rem; }
-  .button-group.large {
+  .button-group.large, .landing-page #main button.button-group {
     font-size: 1.25rem; }
-  .button-group.expanded .button:nth-last-child(2):first-child, .button-group.expanded .button:nth-last-child(2):first-child ~ .button {
+  .button-group.expanded .button:nth-last-child(2):first-child, .button-group.expanded .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .button-group.expanded button:nth-last-child(2):first-child, .button-group.expanded .button:nth-last-child(2):first-child ~ .button, .button-group.expanded .landing-page #main button:nth-last-child(2):first-child ~ .button, .landing-page #main .button-group.expanded button:nth-last-child(2):first-child ~ .button, .button-group.expanded .landing-page #main .button:nth-last-child(2):first-child ~ button, .landing-page #main .button-group.expanded .button:nth-last-child(2):first-child ~ button, .button-group.expanded .landing-page #main button:nth-last-child(2):first-child ~ button, .landing-page #main .button-group.expanded button:nth-last-child(2):first-child ~ button {
     width: 50%; }
-  .button-group.expanded .button:nth-last-child(3):first-child, .button-group.expanded .button:nth-last-child(3):first-child ~ .button {
+  .button-group.expanded .button:nth-last-child(3):first-child, .button-group.expanded .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .button-group.expanded button:nth-last-child(3):first-child, .button-group.expanded .button:nth-last-child(3):first-child ~ .button, .button-group.expanded .landing-page #main button:nth-last-child(3):first-child ~ .button, .landing-page #main .button-group.expanded button:nth-last-child(3):first-child ~ .button, .button-group.expanded .landing-page #main .button:nth-last-child(3):first-child ~ button, .landing-page #main .button-group.expanded .button:nth-last-child(3):first-child ~ button, .button-group.expanded .landing-page #main button:nth-last-child(3):first-child ~ button, .landing-page #main .button-group.expanded button:nth-last-child(3):first-child ~ button {
     width: 33.3333333333%; }
-  .button-group.expanded .button:nth-last-child(4):first-child, .button-group.expanded .button:nth-last-child(4):first-child ~ .button {
+  .button-group.expanded .button:nth-last-child(4):first-child, .button-group.expanded .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .button-group.expanded button:nth-last-child(4):first-child, .button-group.expanded .button:nth-last-child(4):first-child ~ .button, .button-group.expanded .landing-page #main button:nth-last-child(4):first-child ~ .button, .landing-page #main .button-group.expanded button:nth-last-child(4):first-child ~ .button, .button-group.expanded .landing-page #main .button:nth-last-child(4):first-child ~ button, .landing-page #main .button-group.expanded .button:nth-last-child(4):first-child ~ button, .button-group.expanded .landing-page #main button:nth-last-child(4):first-child ~ button, .landing-page #main .button-group.expanded button:nth-last-child(4):first-child ~ button {
     width: 25%; }
-  .button-group.expanded .button:nth-last-child(5):first-child, .button-group.expanded .button:nth-last-child(5):first-child ~ .button {
+  .button-group.expanded .button:nth-last-child(5):first-child, .button-group.expanded .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .button-group.expanded button:nth-last-child(5):first-child, .button-group.expanded .button:nth-last-child(5):first-child ~ .button, .button-group.expanded .landing-page #main button:nth-last-child(5):first-child ~ .button, .landing-page #main .button-group.expanded button:nth-last-child(5):first-child ~ .button, .button-group.expanded .landing-page #main .button:nth-last-child(5):first-child ~ button, .landing-page #main .button-group.expanded .button:nth-last-child(5):first-child ~ button, .button-group.expanded .landing-page #main button:nth-last-child(5):first-child ~ button, .landing-page #main .button-group.expanded button:nth-last-child(5):first-child ~ button {
     width: 20%; }
-  .button-group.expanded .button:nth-last-child(6):first-child, .button-group.expanded .button:nth-last-child(6):first-child ~ .button {
+  .button-group.expanded .button:nth-last-child(6):first-child, .button-group.expanded .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .button-group.expanded button:nth-last-child(6):first-child, .button-group.expanded .button:nth-last-child(6):first-child ~ .button, .button-group.expanded .landing-page #main button:nth-last-child(6):first-child ~ .button, .landing-page #main .button-group.expanded button:nth-last-child(6):first-child ~ .button, .button-group.expanded .landing-page #main .button:nth-last-child(6):first-child ~ button, .landing-page #main .button-group.expanded .button:nth-last-child(6):first-child ~ button, .button-group.expanded .landing-page #main button:nth-last-child(6):first-child ~ button, .landing-page #main .button-group.expanded button:nth-last-child(6):first-child ~ button {
     width: 16.6666666667%; }
-  .button-group.primary .button {
+  .button-group.primary .button, .button-group.primary .landing-page #main button, .landing-page #main .button-group.primary button {
     background: #2c46b0;
     color: #fff; }
-    .button-group.primary .button:hover, .button-group.primary .button:focus {
+    .button-group.primary .button:hover, .button-group.primary .landing-page #main button:hover, .landing-page #main .button-group.primary button:hover, .button-group.primary .button:focus, .button-group.primary .landing-page #main button:focus, .landing-page #main .button-group.primary button:focus {
       background: #23388d;
       color: #fff; }
-  .button-group.secondary .button, .reveal-modal button.button-group .button {
+  .button-group.secondary .button, .reveal-modal button.button-group .button, .landing-page #main button.button-group .button, .button-group.secondary .landing-page #main button, .landing-page #main .button-group.secondary button, .reveal-modal button.button-group .landing-page #main button, .landing-page #main button.button-group button {
     background: #54c6c6;
     color: #fff; }
-    .button-group.secondary .button:hover, .reveal-modal button.button-group .button:hover, .button-group.secondary .button:focus, .reveal-modal button.button-group .button:focus {
+    .button-group.secondary .button:hover, .reveal-modal button.button-group .button:hover, .landing-page #main button.button-group .button:hover, .button-group.secondary .landing-page #main button:hover, .landing-page #main .button-group.secondary button:hover, .reveal-modal button.button-group .landing-page #main button:hover, .landing-page #main button.button-group button:hover, .button-group.secondary .button:focus, .reveal-modal button.button-group .button:focus, .landing-page #main button.button-group .button:focus, .button-group.secondary .landing-page #main button:focus, .landing-page #main .button-group.secondary button:focus, .reveal-modal button.button-group .landing-page #main button:focus, .landing-page #main button.button-group button:focus {
       background: #38a9a9;
       color: #fff; }
-  .button-group.success .button {
+  .button-group.success .button, .button-group.success .landing-page #main button, .landing-page #main .button-group.success button {
     background: #d8f793;
     color: #000; }
-    .button-group.success .button:hover, .button-group.success .button:focus {
+    .button-group.success .button:hover, .button-group.success .landing-page #main button:hover, .landing-page #main .button-group.success button:hover, .button-group.success .button:focus, .button-group.success .landing-page #main button:focus, .landing-page #main .button-group.success button:focus {
       background: #bef24a;
       color: #000; }
-  .button-group.alert .button {
+  .button-group.alert .button, .button-group.alert .landing-page #main button, .landing-page #main .button-group.alert button {
     background: #f82847;
     color: #fff; }
-    .button-group.alert .button:hover, .button-group.alert .button:focus {
+    .button-group.alert .button:hover, .button-group.alert .landing-page #main button:hover, .landing-page #main .button-group.alert button:hover, .button-group.alert .button:focus, .button-group.alert .landing-page #main button:focus, .landing-page #main .button-group.alert button:focus {
       background: #df0727;
       color: #fff; }
-  .button-group.warning .button {
+  .button-group.warning .button, .button-group.warning .landing-page #main button, .landing-page #main .button-group.warning button {
     background: #ffed00;
     color: #fff; }
-    .button-group.warning .button:hover, .button-group.warning .button:focus {
+    .button-group.warning .button:hover, .button-group.warning .landing-page #main button:hover, .landing-page #main .button-group.warning button:hover, .button-group.warning .button:focus, .button-group.warning .landing-page #main button:focus, .landing-page #main .button-group.warning button:focus {
       background: #ccbe00;
       color: #fff; }
-  .button-group.stacked .button, .button-group.stacked-for-small .button {
+  .button-group.stacked .button, .button-group.stacked .landing-page #main button, .landing-page #main .button-group.stacked button, .button-group.stacked-for-small .button, .button-group.stacked-for-small .landing-page #main button, .landing-page #main .button-group.stacked-for-small button {
     width: 100%;
     border-right: 0; }
   @media screen and (min-width: 40em) {
-    .button-group.stacked-for-small .button {
+    .button-group.stacked-for-small .button, .button-group.stacked-for-small .landing-page #main button, .landing-page #main .button-group.stacked-for-small button {
       width: auto; }
-      .button-group.stacked-for-small .button:not(:last-child) {
+      .button-group.stacked-for-small .button:not(:last-child), .button-group.stacked-for-small .landing-page #main button:not(:last-child), .landing-page #main .button-group.stacked-for-small button:not(:last-child) {
         border-right: 1px solid #FFFFFF; } }
 
 .callout {
@@ -1905,7 +1905,7 @@ select {
     margin-bottom: 0; }
   .callout.primary {
     background-color: #dce1f6; }
-  .callout.secondary, .reveal-modal button.callout {
+  .callout.secondary, .reveal-modal button.callout, .landing-page #main button.callout {
     background-color: #e5f6f6; }
   .callout.success {
     background-color: #f9feef; }
@@ -1918,7 +1918,7 @@ select {
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem; }
-  .callout.large {
+  .callout.large, .landing-page #main button.callout {
     padding-top: 3rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
@@ -2004,7 +2004,7 @@ select {
 .dropdown-pane.small {
   width: 200px; }
 
-.dropdown-pane.large {
+.dropdown-pane.large, .landing-page #main button.dropdown-pane {
   width: 400px; }
 
 [data-whatinput='mouse'] .dropdown.menu a {
@@ -2119,7 +2119,7 @@ select {
   border-radius: 0;
   background: #2c46b0;
   color: #FFFFFF; }
-  .label.secondary, .reveal-modal button.label {
+  .label.secondary, .reveal-modal button.label, .landing-page #main button.label {
     background: #54c6c6;
     color: #FFFFFF; }
   .label.success {
@@ -2452,7 +2452,7 @@ html, body {
   border-radius: 0; }
   .progress.primary .progress-meter {
     background-color: #2c46b0; }
-  .progress.secondary .progress-meter, .reveal-modal button.progress .progress-meter {
+  .progress.secondary .progress-meter, .reveal-modal button.progress .progress-meter, .landing-page #main button.progress .progress-meter {
     background-color: #54c6c6; }
   .progress.success .progress-meter {
     background-color: #d8f793; }
@@ -2596,7 +2596,7 @@ body.is-reveal-open {
   @media screen and (min-width: 40em) {
     .reveal {
       min-height: 0; } }
-  .reveal .column, .reveal .columns, .reveal .meta-left, .reveal .meta-right, .reveal #talk-description, .reveal #talk-actions, .reveal #comments .comment-meta, #comments .reveal .comment-meta, .reveal #comments .comment-content, #comments .reveal .comment-content, .reveal .profile-page body #left-column #user-about, .profile-page body #left-column .reveal #user-about, .reveal .profile-page body #right-column .profile-tile, .profile-page body #right-column .reveal .profile-tile, .reveal .columns, .reveal .meta-left, .reveal .meta-right, .reveal #talk-description, .reveal #talk-actions, .reveal #comments .comment-meta, #comments .reveal .comment-meta, .reveal #comments .comment-content, #comments .reveal .comment-content, .reveal .profile-page body #left-column #user-about, .profile-page body #left-column .reveal #user-about, .reveal .profile-page body #right-column .profile-tile, .profile-page body #right-column .reveal .profile-tile {
+  .reveal .column, .reveal .columns, .reveal .meta-left, .reveal .meta-right, .reveal #talk-description, .reveal #talk-actions, .reveal #comments .comment-meta, #comments .reveal .comment-meta, .reveal #comments .comment-content, #comments .reveal .comment-content, .reveal .profile-page body #left-column #user-about, .profile-page body #left-column .reveal #user-about, .reveal .profile-page body #right-column .profile-tile, .profile-page body #right-column .reveal .profile-tile, .reveal .landing-page #main .row .container, .landing-page #main .row .reveal .container, .reveal .landing-page #main #claim .container, .landing-page #main #claim .reveal .container, .reveal .landing-page #main .talk-card, .landing-page #main .reveal .talk-card, .reveal .columns, .reveal .meta-left, .reveal .meta-right, .reveal #talk-description, .reveal #talk-actions, .reveal #comments .comment-meta, #comments .reveal .comment-meta, .reveal #comments .comment-content, #comments .reveal .comment-content, .reveal .profile-page body #left-column #user-about, .profile-page body #left-column .reveal #user-about, .reveal .profile-page body #right-column .profile-tile, .profile-page body #right-column .reveal .profile-tile, .reveal .landing-page #main .row .container, .landing-page #main .row .reveal .container, .reveal .landing-page #main #claim .container, .landing-page #main #claim .reveal .container, .reveal .landing-page #main .talk-card, .landing-page #main .reveal .talk-card {
     min-width: 0; }
   .reveal > :last-child {
     margin-bottom: 0; }
@@ -2607,7 +2607,7 @@ body.is-reveal-open {
   .reveal.collapse {
     padding: 0; }
   @media screen and (min-width: 40em) {
-    .reveal .reveal {
+    .reveal .reveal, .reveal .landing-page #main button.reveal, .landing-page #main .reveal button.reveal {
       left: auto;
       right: auto;
       margin: 0 auto; } }
@@ -2620,7 +2620,7 @@ body.is-reveal-open {
       width: 50%;
       max-width: 75rem; } }
   @media screen and (min-width: 40em) {
-    .reveal.large {
+    .reveal.large, .landing-page #main button.reveal {
       width: 90%;
       max-width: 75rem; } }
   .reveal.full {
@@ -2715,14 +2715,14 @@ body.is-reveal-open {
 .switch.small input:checked ~ .switch-paddle:after {
   left: 2rem; }
 
-.switch.large .switch-paddle {
+.switch.large .switch-paddle, .landing-page #main button.switch .switch-paddle {
   width: 5rem;
   height: 2.5rem;
   font-size: 1rem; }
-.switch.large .switch-paddle::after {
+.switch.large .switch-paddle::after, .landing-page #main button.switch .switch-paddle::after {
   width: 2rem;
   height: 2rem; }
-.switch.large input:checked ~ .switch-paddle:after {
+.switch.large input:checked ~ .switch-paddle:after, .landing-page #main button.switch input:checked ~ .switch-paddle:after {
   left: 2.75rem; }
 
 table {
@@ -2950,7 +2950,7 @@ table.hover tr:nth-of-type(even):hover {
     transform: translateY(-50%); }
 
 .top-bar {
-  padding: 1rem; }
+  padding: 0.5rem; }
   .top-bar::before, .top-bar::after {
     content: ' ';
     display: table; }
@@ -2959,7 +2959,7 @@ table.hover tr:nth-of-type(even):hover {
   .top-bar, .top-bar ul {
     background-color: #e1e2e7; }
   .top-bar a {
-    color: #2c46b0; }
+    color: rgba(255, 255, 255, 0.5); }
   .top-bar input {
     width: 200px;
     margin-right: 1rem; }
@@ -5572,6 +5572,240 @@ table.hover tr:nth-of-type(even):hover {
 .icon-uniE951:before {
   content: "\e951"; }
 
+#thumb-container, .thumb-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background: none;
+  padding: 6px;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.more-thumbs {
+  flex: 0 0 auto;
+  align-self: center; }
+
+.thumbnail {
+  padding: 6px;
+  width: 100%;
+  background: none;
+  display: block;
+  cursor: pointer; }
+
+.thumbnail-inside {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: 12px 12px 12px 24px;
+  flex: 1 100%;
+  cursor: pointer; }
+
+.thumb-image-holder, .thumb-image {
+  width: 10vw;
+  height: 10vw;
+  min-width: 10vw;
+  min-height: 10vw;
+  margin: 12px;
+  z-index: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  position: relative; }
+
+.thumb-image-holder svg {
+  flex: 0 0 0;
+  max-height: 0;
+  display: none; }
+
+.thumb-image {
+  margin: 0;
+  background: url(../img/thumbs/thumb0.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  -webkit-filter: sepia(.1) opacity(0.7);
+  flex: 0;
+  -webkit-flex: 0; }
+
+.follow-topic {
+  font-size: 1rem;
+  background: rgba(180, 182, 190, 0.3);
+  padding: 6px 6px 3px 6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 12px; }
+  .follow-topic:hover {
+    cursor: pointer;
+    background: rgba(180, 182, 190, 0.5); }
+
+.thumb-overlay {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(254, 241, 222, 0.2);
+  transition: background .5s ease;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center; }
+
+.thumb-overlay:after {
+  content: "";
+  flex: 0;
+  width: 0;
+  height: 0;
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+  border-left: 44px solid rgba(255, 255, 255, 0.8); }
+
+.thumbnail-inside:hover {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); }
+
+.thumb-image-holder:hover .thumb-overlay {
+  background: rgba(84, 198, 198, 0.7); }
+
+.thumbnail-inside:hover .thumb-overlay:after {
+  border-left: 44px solid white; }
+
+.thumb-title:hover {
+  text-decoration: underline; }
+
+.no-touch .thumb-listenlater {
+  transition: background-color .5s ease; }
+
+.no-touch .thumb-listenlater:after {
+  content: 'add to playlist';
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  opacity: 0;
+  color: #FFFFFF;
+  background: #64697e;
+  padding: 3px 6px;
+  margin-left: -58px;
+  margin-top: -36px;
+  transition: all .2s ease;
+  position: absolute; }
+
+.no-touch .thumb-listenlater:hover {
+  background-color: #64697e;
+  color: #fff; }
+
+.thumb-listenlater:hover:after {
+  opacity: 1; }
+
+.thumb-right {
+  background: none;
+  flex: 1 1 75%;
+  margin: 12px 12px 12px 0;
+  padding: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.thumb-info {
+  flex: 1 0 auto; }
+
+h1.thumb-title {
+  margin-top: 0;
+  font-size: 1.25rem;
+  line-height: 21px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: text-decoration .5s ease; }
+
+.is-live {
+  background: #54c6c6;
+  color: #FFFFFF;
+  padding: 0 4px;
+  border-radius: 2px;
+  margin-right: 4px;
+  font-size: 1.125rem; }
+
+.thumb-actions {
+  flex: 0 0 42px;
+  -webkit-flex: 0 0 42px;
+  align-self: flex-end;
+  color: #8F939C;
+  background: none;
+  padding: 12px 0;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  width: 100%;
+  border-top: 1px solid #EEEEEE; }
+
+.thumb-listenlater {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  text-align: center;
+  padding-top: 12px;
+  background: #FAFAFA;
+  font-size: 0.875rem;
+  align-self: flex-end;
+  color: #8F939C; }
+
+.thumb-listenlater.selected {
+  background: #64697e;
+  color: #FFFFFF; }
+
+.thumb-duration, .thumb-plays, .thumb-timeago {
+  margin-right: 6px; }
+
+.thumb-timeago {
+  margin-left: 0; }
+
+p.thumb-meta {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #54c6c6;
+  line-height: 1.25rem;
+  margin-bottom: 10px; }
+
+.thumb-meta-meta {
+  font-family: 'Roboto Condensed';
+  color: #8F939C;
+  font-weight: 400; }
+
+.thumb-publisher {
+  color: #54c6c6;
+  font-weight: 400; }
+
+.thumb-publisher:hover {
+  text-decoration: underline; }
+
+.thumb-classification {
+  color: #8F939C;
+  text-transform: capitalize; }
+
+p.thumb-logline {
+  font-family: 'adobe-caslon-pro', times, serif;
+  color: #8F939C;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-bottom: 12px; }
+  p.thumb-logline a {
+    color: #8F939C; }
+
 /* all app scss styles here */
 html, body {
   -webkit-font-smoothing: antialiased;
@@ -5580,20 +5814,21 @@ html, body {
   color: #121214;
   background: #3F4044; }
 
-.start-page {
-  background: #29292b; }
-  .start-page #main section {
-    padding: 96px 0; }
-    .start-page #main section.light {
-      background: #e1e2e7; }
-  .start-page #main h1 {
-    color: white;
-    letter-spacing: 2px; }
-
-button {
+button, .button, .landing-page #main button {
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 0.0625rem;
+  border-width: 4px; }
+  button.small, .button.small, .landing-page #main button.small {
+    border-width: 2px; }
+  button.large, .landing-page #main button, .button.large, .landing-page #main button {
+    border-width: 4px; }
+  button .info, .button .info, .landing-page #main button .info {
+    background: rgba(255, 255, 255, 0.5); }
+    button .info .hollow, button .info .landing-page #main button, .landing-page #main button .info button, .button .info .hollow, .landing-page #main button .info .hollow, .button .info .landing-page #main button, .landing-page #main .button .info button, .landing-page #main button .info button {
+      border-color: rgba(255, 255, 255, 0.5); }
+  button:hover, button:active, .button:hover, .landing-page #main button:hover, .button:active, .landing-page #main button:active {
+    background: #54c6c6; }
 
 .about {
   padding: 48px; }
@@ -5608,25 +5843,65 @@ button {
   width: 100%;
   z-index: 999; }
 
-.button.hollow {
-  border-width: 4px !important; }
-
 hr {
   margin: 0; }
 
 .sticky {
   z-index: 3000; }
 
-.name {
-  padding: 20px; }
-  .name img {
-    margin-right: 12px; }
-  .name a {
+.top-bar {
+  background-image: -moz-linear-gradient(90deg, #383a3d 0%, #35363b 100%);
+  background-image: -webkit-linear-gradient(90deg, #383a3d 0%, #35363b 100%);
+  background-image: -ms-linear-gradient(90deg, #383a3d 0%, #35363b 100%);
+  background-image: -moz-linear-gradient(90deg, #404245 0%, #35353b 100%);
+  background-image: -webkit-linear-gradient(90deg, #404245 0%, #35353b 100%);
+  background-image: -ms-linear-gradient(90deg, #404245 0%, #35353b 100%);
+  background: rgba(18, 18, 20, 0.2); }
+  .top-bar .logo a span {
     font-family: 'Eagle', 'Eagle-Book';
     color: #f82847;
-    letter-spacing: 6px;
+    letter-spacing: 0.375rem;
     font-size: 0.875rem;
-    line-height: 0.875rem; }
+    line-height: 2.25rem;
+    font-weight: normal;
+    margin: 0 60px 0 12px; }
+  .top-bar .button.hollow, .top-bar .landing-page #main button, .landing-page #main .top-bar button {
+    border-width: 4px !important; }
+    .top-bar .button.hollow.small, .top-bar .landing-page #main button.small, .landing-page #main .top-bar button.small {
+      border-width: 2px !important; }
+    .top-bar .button.hollow.info, .top-bar .landing-page #main button.info, .landing-page #main .top-bar button.info {
+      border-color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.5); }
+      .top-bar .button.hollow.info:hover, .top-bar .landing-page #main button.info:hover, .landing-page #main .top-bar button.info:hover, .top-bar .button.hollow.info:active, .top-bar .landing-page #main button.info:active, .landing-page #main .top-bar button.info:active {
+        color: white;
+        border-color: white; }
+  .top-bar .search-btn a {
+    padding: 5px !important; }
+    .top-bar .search-btn a .button, .top-bar .search-btn a .landing-page #main button, .landing-page #main .top-bar .search-btn a button {
+      font-size: 1rem;
+      background: none;
+      color: #fef1de; }
+  .top-bar .sign-in a {
+    padding-right: 0 !important; }
+  .top-bar ul {
+    background: none; }
+    .top-bar ul li {
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.0625rem;
+      font-size: 0.875rem; }
+      .top-bar ul li a:hover, .top-bar ul li a:active {
+        color: white; }
+      .top-bar ul li .submenu a {
+        color: #121214; }
+    .top-bar ul li.search-btn a {
+      padding-left: 0 !important; }
+  .top-bar .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
+    border-color: rgba(254, 241, 222, 0.5) transparent transparent; }
+  .top-bar input {
+    font-weight: 300;
+    width: auto;
+    margin-right: 0; }
 
 .avatar {
   height: 100%;
@@ -5647,71 +5922,7 @@ hr {
 .sizes {
   color: #FFFFFF; }
 
-.big-search {
-  margin: 24px;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s; }
-
-.home-search {
-  margin-top: -3px;
-  background: orange;
-  background: url(../img/bg/repub-lighter-gray.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  padding: 48px;
-  max-width: 100vw; }
-  .home-search p.lead {
-    font-family: georgia, serif;
-    color: #64697e;
-    font-weight: 300;
-    line-height: 1.4em;
-    margin-top: 24px;
-    padding-right: 48px; }
-  .home-search h1 {
-    color: #3F4044;
-    letter-spacing: -1px;
-    font-weight: 500;
-    font-size: 3.75rem;
-    line-height: 4.125rem;
-    width: auto; }
-    .home-search h1 .purple-bg {
-      background: #a339cd; }
-  .home-search h4 {
-    color: #FFFFFF; }
-  .home-search ::-webkit-input-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-  .home-search :-moz-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-  .home-search ::-moz-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-  .home-search :-ms-input-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-  .home-search a {
-    color: #FFFFFF;
-    font-weight: 700; }
-    .home-search a:hover {
-      text-decoration: underline; }
-
-.sign-in {
-  padding: 60px 0; }
-
-.sign-in-box {
-  background: #FFFFFF;
-  padding: 24px 12px 8px 12px; }
-  .sign-in-box h3 {
-    color: #54c6c6;
-    margin-bottom: 18px; }
-  .sign-in-box input {
-    color: #54c6c6; }
-  .sign-in-box ::-webkit-input-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-  .sign-in-box :-moz-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-  .sign-in-box ::-moz-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-  .sign-in-box :-ms-input-placeholder {
-    color: rgba(84, 198, 198, 0.8); }
-
-.button.blank {
+.button.blank, .landing-page #main button.blank {
   background: none;
   color: #64697e; }
 
@@ -5745,7 +5956,7 @@ hr {
   animation-iteration-count: infinite; }
 
 .open-blink:before {
-  content: ' ';
+  content: "";
   position: absolute;
   top: -8px;
   left: -8px;
@@ -5767,25 +5978,6 @@ hr {
     text-transform: capitalize;
     text-decoration: underline;
     color: #8F939C; }
-
-.grad-button {
-  color: transparent;
-  font-size: 2rem;
-  border: 4px solid transparent;
-  border-image: linear-gradient(45deg, #54c6c6, #ffed00);
-  border-image-slice: 1;
-  background: linear-gradient(45deg, #54c6c6, #ffed00);
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  transition: all 0.2s ease;
-  padding: 12px; }
-  .grad-button:hover {
-    color: transparent;
-    border-image: linear-gradient(45deg, #2c46b0, #54c6c6);
-    border-image-slice: 1;
-    background: linear-gradient(45deg, #2c46b0, #54c6c6);
-    -webkit-background-clip: text;
-    text-fill-color: transparent; }
 
 .titlebar {
   flex: 1 0;
@@ -5811,14 +6003,14 @@ hr {
 .sort-bar h5 a.active {
   color: #8F939C; }
 
-.sort-bar .button, .sort-by .button {
+.sort-bar .button, .sort-bar .landing-page #main button, .landing-page #main .sort-bar button, .sort-by .button, .sort-by .landing-page #main button, .landing-page #main .sort-by button {
   margin: 0;
   background: rgba(68, 74, 89, 0.1); }
 
-.sort-bar .button:hover, .sort-by .button:hover {
+.sort-bar .button:hover, .sort-bar .landing-page #main button:hover, .landing-page #main .sort-bar button:hover, .sort-by .button:hover, .sort-by .landing-page #main button:hover, .landing-page #main .sort-by button:hover {
   background: rgba(68, 74, 89, 0.2); }
 
-.sort-bar .button.selected, .sort-by .button.selected {
+.sort-bar .button.selected, .sort-bar .landing-page #main button.selected, .landing-page #main .sort-bar button.selected, .sort-by .button.selected, .sort-by .landing-page #main button.selected, .landing-page #main .sort-by button.selected {
   background: #54c6c6; }
 
 .sort-by {
@@ -6079,7 +6271,7 @@ body.talk-page {
       #main-column.alt, #main-column.alt3 {
         padding-top: 103px; } }
 
-button, .button {
+button, .button, .landing-page #main button {
   outline: none; }
 
 .img-circle, .pub-avatar img {
@@ -6356,7 +6548,7 @@ button, .button {
     #talk-actions .button-group li {
       width: 33.33%;
       padding: 1px; }
-      #talk-actions .button-group li .button {
+      #talk-actions .button-group li .button, #talk-actions .button-group li .landing-page #main button, .landing-page #main #talk-actions .button-group li button {
         border: 0; }
       @media screen and (min-width: 40em) {
         #talk-actions .button-group li {
@@ -6857,7 +7049,7 @@ html.profile-page, .profile-page body {
         min-width: 117px;
         height: 66px;
         min-height: 66px; }
-      .profile-page body #right-column .profile-row .date {
+      .profile-page body #right-column .profile-row .date, .profile-page body #right-column .profile-row .landing-page #main .talk-card .talk-card-inside .speaker, .landing-page #main .talk-card .talk-card-inside .profile-page body #right-column .profile-row .speaker, .profile-page body #right-column .profile-row .landing-page #main .talk-card .talk-card-inside #talk-description .format-box, .landing-page #main .talk-card .talk-card-inside #talk-description .profile-page body #right-column .profile-row .format-box, .profile-page body #right-column .profile-row #talk-description .landing-page #main .talk-card .talk-card-inside .format-box, #talk-description .landing-page #main .talk-card .talk-card-inside .profile-page body #right-column .profile-row .format-box {
         color: rgba(255, 255, 255, 0.5); }
 
 #filter-bar {
@@ -6866,7 +7058,7 @@ html.profile-page, .profile-page body {
     border: 1px solid #b4b6be; }
   #filter-bar .filter {
     padding: 0 6px; }
-  #filter-bar button, #filter-bar .button {
+  #filter-bar button, #filter-bar .button, #filter-bar .landing-page #main button, .landing-page #main #filter-bar button {
     background: #FAFAFA;
     color: #64697e;
     text-align: left;
@@ -6876,3 +7068,82 @@ html.profile-page, .profile-page body {
 
 .topics-results {
   padding: 18px; }
+
+.landing-page #main {
+  background: #29292b; }
+  .landing-page #main .row {
+    max-width: 1200px; }
+    .landing-page #main .row .container h1 {
+      color: #54c6c6;
+      margin-bottom: 12px; }
+    .landing-page #main .row .container .lead {
+      margin-bottom: 60px; }
+  .landing-page #main button {
+    margin: 12px;
+    border-width: 4px; }
+    .landing-page #main button:hover, .landing-page #main button:active, .landing-page #main button:focus {
+      background: none;
+      border-color: #2c46b0;
+      color: #2c46b0; }
+    .landing-page #main button.large, .landing-page #main button {
+      border-width: 4px; }
+  .landing-page #main h1 {
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.125rem;
+    margin-bottom: 12px; }
+  .landing-page #main section {
+    padding: 20vh 0; }
+    .landing-page #main section.light {
+      background: #f2f2f2; }
+    .landing-page #main section.blue {
+      background: #2c46b0; }
+  .landing-page #main #talk-collection {
+    margin-bottom: 48px; }
+  .landing-page #main #claim {
+    text-align: center;
+    padding: 30vh 0 40vh 0;
+    background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
+    background-size: cover; }
+  .landing-page #main #coming-up .lead {
+    color: white; }
+  .landing-page #main .talk-card {
+    padding: 6px; }
+    .landing-page #main .talk-card .talk-card-inside {
+      background: #FAFAFA;
+      padding: 24px;
+      transition: all .2s ease; }
+      .landing-page #main .talk-card .talk-card-inside .publisher {
+        margin: 0;
+        line-height: 18px;
+        font-weight: 500;
+        margin-bottom: 12px; }
+      .landing-page #main .talk-card .talk-card-inside .date, .landing-page #main .talk-card .talk-card-inside .speaker, .landing-page #main .talk-card .talk-card-inside #talk-description .format-box, #talk-description .landing-page #main .talk-card .talk-card-inside .format-box {
+        margin: 0;
+        font-size: 0.6875rem;
+        line-height: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.0625rem;
+        color: rgba(41, 41, 43, 0.5);
+        margin-bottom: 6px; }
+      .landing-page #main .talk-card .talk-card-inside img {
+        margin-bottom: 12px; }
+      .landing-page #main .talk-card .talk-card-inside .title {
+        display: block;
+        /* Fallback for non-webkit */
+        display: -webkit-box;
+        height: 50.4px;
+        /* Fallback for non-webkit */
+        margin: 0 auto;
+        font-size: 21px;
+        line-height: 1.2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 24px; }
+      .landing-page #main .talk-card .talk-card-inside .speaker a, .landing-page #main .talk-card .talk-card-inside #talk-description .format-box a, #talk-description .landing-page #main .talk-card .talk-card-inside .format-box a {
+        text-transform: none; }
+      .landing-page #main .talk-card .talk-card-inside:hover {
+        background: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }

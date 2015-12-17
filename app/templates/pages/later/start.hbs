@@ -1,0 +1,31 @@
+---
+title: Start page
+---
+
+{{!-- top section --}}
+<section class="claim dark">
+	<div class="row">
+		<div class="container">
+			<h1>Home To the Spoken Word.</h1>
+			<button href="#">Publish</button>
+			<button href="#">Listen</button>
+		</div>
+	</div>
+</section>
+
+
+{{!-- listen now --}}
+<section class="listen-now light">
+<div class="row">
+	<div class="container">
+	<h1>Listen Now</h1>
+		<p class="lead">In the Voice Republic Archive you can listen to professional audio content from different areas: politics, culture, sciences and economy.</p>
+
+	</div>
+
+{{#withFirst thumbs 4}}
+{{>funky-tile}}
+{{/withFirst}}
+</div>
+	
+</section>

@@ -1,0 +1,189 @@
+@mixin landing-page-column {
+    @extend .medium-10;
+    @extend .medium-offset-1;
+
+    @extend .large-8;
+
+    @extend .large-offset-2;
+
+    @extend .columns;
+
+    @extend .text-center;
+}
+
+$h1-bottom-margin: 12px;
+
+.landing-page #main {
+    // padding-top: 100px;
+    background: $talk-dark;
+
+    .row {
+        max-width: 1200px;
+
+        @extend .text-center;
+
+        .container {
+            @include landing-page-column;
+
+            h1 {
+                color: $secondary-color;
+                margin-bottom: $h1-bottom-margin;
+            }
+
+            .lead {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    button {
+        @extend .button;
+
+        @extend .hollow;
+
+        @extend .large;
+
+        @extend .secondary;
+
+        margin: 12px;
+        border-width: 4px;
+
+        &:hover, &:active, &:focus {
+            background: none;
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+
+        &.large {
+            border-width: 4px;
+        }
+    }
+
+    h1 {
+        @extend .text-center;
+
+        font-size: rem-calc(48);
+
+        // text-transform: uppercase;
+        color: white;
+        letter-spacing: rem-calc(2);
+        margin-bottom: $h1-bottom-margin;
+    }
+
+    section {
+        padding: 20vh 0;
+
+        &.light {
+            background: $snow;
+        }
+
+        &.blue {
+            background: $primary-color;
+        }
+    }
+
+    #talk-collection {
+        @extend .clearfix;
+
+        margin-bottom: 48px;
+    }
+
+    #claim {
+        text-align: center;
+        padding: 30vh 0 40vh 0;
+        background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
+        background-size: cover;
+
+        .container {
+            @include landing-page-column;
+        }
+    }
+
+    #listen-now {}
+
+    #coming-up {
+        .lead {
+            color: white;
+        }
+    }
+
+    .talk-card {
+        @extend .medium-6;
+
+        @extend .large-4;
+
+        @extend .columns;
+
+        padding: 6px;
+
+        .talk-card-inside {
+            background: $ghost;
+            padding: 24px;
+
+            @extend .text-left;
+
+            transition: all .2s ease;
+
+            .publisher {
+                margin: 0;
+                line-height: 18px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+
+            .date {
+                margin: 0;
+                font-size: rem-calc(11);
+                line-height: rem-calc(12);
+                text-transform: uppercase;
+                letter-spacing: rem-calc(1);
+                color: rgba($talk-dark, 0.5);
+                margin-bottom: 6px;
+            }
+
+            img {
+                margin-bottom: 12px;
+            }
+
+            $font-size: 21px;
+            $line-height: 1.2;
+            $lines-to-show: 2;
+
+            .title {
+                // font-family: $body-font-family;
+                // font-weight: bold;
+                // color: rgba(white, .8);
+                display: block;
+
+                /* Fallback for non-webkit */
+                display: -webkit-box;
+
+                // max-width: 400px;
+                height: $font-size * $line-height * $lines-to-show;
+
+                /* Fallback for non-webkit */
+                margin: 0 auto;
+                font-size: $font-size;
+                line-height: $line-height;
+                -webkit-line-clamp: $lines-to-show;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 24px;
+            }
+
+            .speaker {
+                @extend .date;
+
+                a {
+                    text-transform: none;
+                }
+            }
+
+            &:hover {
+                background: white;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+---
+title: Start page
+cats: 
+- name: "Politics and Society"
+  description: "Red-hot political topics and discussions about our society in the audio live stream or the archive. Listen to people who have a say."
+- name: "Sciences"
+  description: "Scientific lectures, panels and conferences in our virtual auditorium – listen live or download as podcast."
+- name: "Arts and Culture"
+  description: "News from the cultural scene, streamed live and made available in the audio archive. We let artists, critics and curators speak out."
+- name: "Technology"
+  description: "Not only for geeks: technological progress concerns all of us. Listen to live streams or download the podcasts."
+- name: "Media"
+  description: "The media world is changing rapidly. Lectures and discussions about traditional media and digitalisation in the audio archive and in live streams."
+- name: "Business"
+  description: "Business conferences and company events offer interesting insights into economic developments and useful career advice."
+
+
+---
+{{!-- ---------- --}}
+{{!-- top section --}}
+<section id="claim" class="dark">
+	<div class="row">
+		<div class="container">
+			<h1>Home To the Spoken Word.</h1>
+			<a href="#"><button href="#">Publish</button></a>
+			<a href="#"><button>Listen</button></a>
+		</div>
+	</div>
+</section>
+{{!-- ---------- --}}
+{{!-- listen now --}}
+<section id="listen-now" class="light">
+	<div class="row">
+		<div class="container">
+			<h1>Listen Now</h1>
+			<p class="lead">In the Voice Republic Archive you can listen to professional audio content from different areas: politics, culture, sciences and economy.</p>
+		</div>
+		<div id="talk-collection">
+			{{#withFirst thumbs 6}}
+			{{>landing-tile}}
+			{{/withFirst}}
+		</div>
+	</div>
+	<div class="row">
+		<a href="#"><button>More</button></a>
+	</div>
+</section>
+{{!-- ---------- --}}
+{{!-- coming up  --}}
+<section id="coming-up" class="blue">
+	<div class="row">
+		<div class="container">
+			<h1>Coming Up Live</h1>
+		</div>
+		<div id="talk-collection">
+			{{#withFirst thumbs 6}}
+			{{>landing-tile}}
+			{{/withFirst}}
+		</div>
+	</div>
+	<div class="row">
+		<a href="#"><button>More</button></a>
+	</div>
+</section> 
+{{!-- ---------- --}}
+{{!-- coming up  --}}
+<section id="categories" class="light">
+	<div class="row">
+		<div class="container">
+			<h1>Categories</h1>
+		</div>
+		<div id="talk-collection">
+			{{#each  cats}}
+			<div class="category">
+				<h3>{{this.name}}</h3>
+				<p class="lead">{{this.description}}</p>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+	<div class="row">
+		<a href="#"><button>More</button></a>
+	</div>
+</section>

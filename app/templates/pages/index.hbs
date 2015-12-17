@@ -1,24 +1,5 @@
 ---
-title: Start page
+title: menu
+layout: app/templates/layouts/blank.hbs
 ---
-
-{{!-- top section --}}
-<section class="dark">
-
-<div class="row">
-
-<div class="medium-8 medium-offset-2 columns text-center">{{#markdown}}
-# Voice Republic. Home To the Spoken Word.
-{{/markdown}}	
-<button class="secondary hollow button" href="#">Publish</button>
-<button class="secondary hollow button" href="#">Listen</button>
-</div>
-</div>
-
-</section>
-
-
-{{!-- listen now --}}
-<section class="light">
-	
-</section>
+{{>responsive-menu}}
