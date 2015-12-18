@@ -11,6 +11,11 @@
     @extend .text-center;
 }
 
+@mixin hollow-button($color) {
+    border-color:$color;
+    color:$color;
+}
+
 $h1-bottom-margin: 12px;
 
 .landing-page #main {
@@ -62,7 +67,7 @@ $h1-bottom-margin: 12px;
     h1 {
         @extend .text-center;
 
-        font-size: rem-calc(48);
+        // font-size: rem-calc(48);
 
         // text-transform: uppercase;
         color: white;
@@ -79,6 +84,9 @@ $h1-bottom-margin: 12px;
 
         &.blue {
             background: $primary-color;
+            button:hover, button:active {
+                @include hollow-button(white);
+            }
         }
     }
 
@@ -102,8 +110,48 @@ $h1-bottom-margin: 12px;
     #listen-now {}
 
     #coming-up {
+        h1 {
+            margin-bottom: 60px;
+        }
         .lead {
             color: white;
+        }
+    }
+
+    #categories {
+        background:$talk-dark;
+        $color: $info-color;
+         h1 {
+            margin-bottom: 60px;
+
+        }
+        #talk-collection {
+            .category {
+                @extend .medium-6;
+                @extend .columns;
+                padding: 48px 24px;
+
+                h3 {
+                    color: $color;
+                    &:active, &:hover {
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+
+                .lead {
+                    color: $color;
+                    &:hover, &:active {
+                        text-decoration: underline;
+                    }
+                }
+                hr {
+                    border-color:$primary-color;
+                    max-width:100px;
+                    margin:0 auto;
+                    margin-top: 48px;
+                }
+            }
         }
     }
 

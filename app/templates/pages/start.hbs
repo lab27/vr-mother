@@ -69,16 +69,14 @@ cats:
 		<div class="container">
 			<h1>Categories</h1>
 		</div>
-		<div id="talk-collection">
+		<div id="talk-collection" data-equalizer>
 			{{#each  cats}}
-			<div class="category">
-				<h3>{{this.name}}</h3>
-				<p class="lead">{{this.description}}</p>
+			<div class="category" data-equalizer-watch>
+				<a href="explore.html"><h3>{{this.name}}</h3>
+				<p class="lead">{{this.description}}</p></a>
+				<hr>
 			</div>
 			{{/each}}
 		</div>
-	</div>
-	<div class="row">
-		<a href="#"><button>More</button></a>
 	</div>
 </section>

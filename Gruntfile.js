@@ -17,8 +17,8 @@ module.exports = function(grunt) {
                 explicitArray: false,
             },
             csv2json: {
-                src: ['<%= app %>/data/tags.csv'],
-                dest: '<%= app %>/data/tags.json'
+                src: ['<%= app %>/data/publishers.csv'],
+                dest: '<%= app %>/data/publishers.json'
             }
         },
         // pageres: {
@@ -254,7 +254,7 @@ module.exports = function(grunt) {
     grunt.registerTask('bower-install', ['wiredep']);
 
     grunt.registerTask('default', [
-        'convert',
+       //'convert',
         'assemble',
         'compile-sass',
         // 'postcss',
@@ -266,7 +266,7 @@ module.exports = function(grunt) {
     ]);
     grunt.registerTask('validate-js', ['jshint']);
     grunt.registerTask('server-dist', ['connect:dist']);
-
+    grunt.registerTask('data', ['convert']);
     grunt.registerTask('publish', ['compile-sass', 'clean:dist',
         //'validate-js', 
         'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin'
