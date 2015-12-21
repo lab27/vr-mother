@@ -2,16 +2,22 @@
 title: Start page
 cats:
 - name: "Politics and Society"
+  icon: "politics"
   description: "Red-hot political topics and discussions about our society in the audio live stream or the archive. Listen to people who have a say."
 - name: "Sciences"
+  icon: "science"
   description: "Scientific lectures, panels and conferences in our virtual auditorium – listen live or download as podcast."
 - name: "Arts and Culture"
+  icon: "arts"
   description: "News from the cultural scene, streamed live and made available in the audio archive. We let artists, critics and curators speak out."
 - name: "Technology"
+  icon: "tech"
   description: "Not only for geeks: technological progress concerns all of us. Listen to live streams or download the podcasts."
 - name: "Media"
+  icon: "media"
   description: "The media world is changing rapidly. Lectures and discussions about traditional media and digitalisation in the audio archive and in live streams."
 - name: "Business"
+  icon: "business"
   description: "Business conferences and company events offer interesting insights into economic developments and useful career advice."
 ---
 {{!-- ---------- --}}
@@ -20,8 +26,14 @@ cats:
 	<div class="row">
 		<div class="container">
 			<h1>Home To the Spoken Word.</h1>
-			<a href="#"><button href="#">Publish</button></a>
-			<a href="#"><button>Listen</button></a>
+			<div class="claim-cta-half">
+			
+				<a href="#"><button href="#"><div class="icon megaphone"></div> Publish</button></a>
+			</div>
+<div class="claim-cta-half">
+			
+			<a href="#"><button><div class="icon headphones"></div> Listen</button></a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -71,6 +83,7 @@ cats:
 			{{#each  cats}}
 			<div class="category" data-equalizer-watch>
 				<a href="explore.html">
+					<div class="icon {{icon}}"></div>
 					<h3>{{this.name}}</h3>
 					<p class="lead">{{this.description}}</p>
 				</a>
