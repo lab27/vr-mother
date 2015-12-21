@@ -1,13 +1,9 @@
 @mixin landing-page-column {
     @extend .medium-10;
     @extend .medium-offset-1;
-
     @extend .large-8;
-
     @extend .large-offset-2;
-
     @extend .columns;
-
     @extend .text-center;
 }
 
@@ -88,6 +84,23 @@ $h1-bottom-margin: 12px;
                 @include hollow-button(white);
             }
         }
+        &.white {
+            background: white;
+        }
+        &.dark {
+              background:$talk-dark;
+              color: $info-color;
+        }
+        &.turquoise {
+            background: $secondary-color;
+            color:white;
+            button {
+                @include hollow-button($primary-color);
+                &:hover, &:active {
+                    @include hollow-button($warning-color);
+                }
+            }
+        }
     }
 
     #talk-collection {
@@ -119,30 +132,36 @@ $h1-bottom-margin: 12px;
     }
 
     #categories {
-        background:$talk-dark;
-        $color: $info-color;
+      
          h1 {
             margin-bottom: 60px;
 
         }
         #talk-collection {
+            $color: $info-color;
             .category {
                 @extend .medium-6;
                 @extend .columns;
                 padding: 48px 24px;
 
+                *:hover > * {
+                    text-decoration: underline;
+                    color: white;
+                }
+
                 h3 {
                     color: $color;
                     &:active, &:hover {
                         color: white;
-                        text-decoration: underline;
+                        // text-decoration: underline;
                     }
                 }
 
                 .lead {
                     color: $color;
                     &:hover, &:active {
-                        text-decoration: underline;
+                        color:white;
+                        // text-decoration: underline;
                     }
                 }
                 hr {
@@ -153,6 +172,45 @@ $h1-bottom-margin: 12px;
                 }
             }
         }
+    }
+
+    #publishers {
+
+        #publisher-collection {
+            .publisher {
+                @extend .medium-6;
+                @extend .columns;
+                padding: 48px 24px;
+
+                *:hover > * {
+                    text-decoration: underline;
+                    color: $almost-black;
+                }
+
+                h4, .lead {
+                color: $dark-gray;
+            }
+            
+            img {
+                max-width: 300px;
+            }
+            hr {
+                    border-color:$light-gray;
+                    max-width:100px;
+                    margin:0 auto;
+                    margin-top: 48px;
+                }
+            }
+            
+            div:last-child {
+                @extend .end;
+            }
+            div:last-child:not(:nth-child(even)) {
+                @extend .medium-offset-3;
+            }
+            
+        }
+
     }
 
     .talk-card {

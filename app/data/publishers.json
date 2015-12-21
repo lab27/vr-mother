@@ -1,32 +1,37 @@
 [
   {
-    "re:publica 2014/2015": "Frankfurt Book Fair",
-    "republica": "frankfurt",
-    "Europe’s biggest internet and digital conference can be listened to on Voice Republic since 2014.": "The world’s most important event in the book business publishes selected content on Voice Republic."
+    "name": "re:publica 2014/2015",
+    "img": "republica",
+    "desc": "Europe’s biggest internet and digital conference can be listened to on Voice Republic since 2014."
   },
   {
-    "re:publica 2014/2015": "Haus der Kulturen der Welt",
-    "republica": "kulturen",
-    "Europe’s biggest internet and digital conference can be listened to on Voice Republic since 2014.": "The international cultural center makes their project “100 Years of Now” audible on Voice Republic."
+    "name": "Frankfurt Book Fair",
+    "img": "frankfurt",
+    "desc": "The world’s most important event in the book business publishes selected content on Voice Republic."
   },
   {
-    "re:publica 2014/2015": "ETH/University of Zurich",
-    "republica": "eth",
-    "Europe’s biggest internet and digital conference can be listened to on Voice Republic since 2014.": "The Center “History of Knowledge” regularly streams its events live from the Cabaret Voltaire. The colloquia and symposia can also be listened to in the archive."
+    "name": "Haus der Kulturen der Welt",
+    "img": "kulturen",
+    "desc": "The international cultural center makes their project “100 Years of Now” audible on Voice Republic."
   },
   {
-    "re:publica 2014/2015": "Fraunhofer Institute",
-    "republica": "frauenhofer",
-    "Europe’s biggest internet and digital conference can be listened to on Voice Republic since 2014.": "Voice Republic accompanies the “Urban Future Conference 2015” and gives everyone who is interested the opportunity to listen to the talks."
+    "name": "ETH/University of Zurich",
+    "img": "eth",
+    "desc": "The Center “History of Knowledge” regularly streams its events live from the Cabaret Voltaire. The colloquia and symposia can also be listened to in the archive."
   },
   {
-    "re:publica 2014/2015": "Maxim Gorki Theater",
-    "republica": "gorki",
-    "Europe’s biggest internet and digital conference can be listened to on Voice Republic since 2014.": "The Maxim Gorki Theater in Berlin is one of the most important theaters in the German-speaking area and publishes selected discussions, lectures and symposia on Voice Republic."
+    "name": "Fraunhofer Institute",
+    "img": "frauenhofer",
+    "desc": "Voice Republic accompanies the “Urban Future Conference 2015” and gives everyone who is interested the opportunity to listen to the talks."
   },
   {
-    "re:publica 2014/2015": "Mosse Lectures at Humboldt University",
-    "republica": "mosse",
-    "Europe’s biggest internet and digital conference can be listened to on Voice Republic since 2014.": "The lecture series “Mosse Lectures” at the Humboldt University in Berlin imparts knowledge on topics like history, politics, economy, arts and literature. The lectures can be listened to on Voice Republic."
+    "name": "Maxim Gorki Theater",
+    "img": "gorki",
+    "desc": "The Maxim Gorki Theater in Berlin is one of the most important theaters in the German-speaking area and publishes selected discussions, lectures and symposia on Voice Republic."
+  },
+  {
+    "name": "Mosse Lectures at Humboldt University",
+    "img": "mosse",
+    "desc": "The lecture series “Mosse Lectures” at the Humboldt University in Berlin imparts knowledge on topics like history, politics, economy, arts and literature. The lectures can be listened to on Voice Republic."
   }
 ]

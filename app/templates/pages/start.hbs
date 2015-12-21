@@ -1,6 +1,6 @@
 ---
 title: Start page
-cats: 
+cats:
 - name: "Politics and Society"
   description: "Red-hot political topics and discussions about our society in the audio live stream or the archive. Listen to people who have a say."
 - name: "Sciences"
@@ -13,8 +13,6 @@ cats:
   description: "The media world is changing rapidly. Lectures and discussions about traditional media and digitalisation in the audio archive and in live streams."
 - name: "Business"
   description: "Business conferences and company events offer interesting insights into economic developments and useful career advice."
-
-
 ---
 {{!-- ---------- --}}
 {{!-- top section --}}
@@ -42,7 +40,7 @@ cats:
 		</div>
 	</div>
 	<div class="row">
-		<a href="#"><button>More</button></a>
+		<a href="#"><button>More Talks  &raquo;</button></a>
 	</div>
 </section>
 {{!-- ---------- --}}
@@ -59,12 +57,12 @@ cats:
 		</div>
 	</div>
 	<div class="row">
-		<a href="#"><button>More</button></a>
+		<a href="#"><button>More Talks &raquo;</button></a>
 	</div>
-</section> 
+</section>
 {{!-- ---------- --}}
-{{!-- coming up  --}}
-<section id="categories" class="light">
+{{!-- categories --}}
+<section id="categories" class="dark">
 	<div class="row">
 		<div class="container">
 			<h1>Categories</h1>
@@ -72,11 +70,51 @@ cats:
 		<div id="talk-collection" data-equalizer>
 			{{#each  cats}}
 			<div class="category" data-equalizer-watch>
-				<a href="explore.html"><h3>{{this.name}}</h3>
-				<p class="lead">{{this.description}}</p></a>
+				<a href="explore.html">
+					<h3>{{this.name}}</h3>
+					<p class="lead">{{this.description}}</p>
+				</a>
 				<hr>
 			</div>
 			{{/each}}
+		</div>
+	</div>
+</section>
+{{!-- ---------- --}}
+{{!-- publishers  --}}
+<section id="publishers" class="white">
+	<div class="row">
+		<div class="container">
+			<h1>These publishers are already on Voice Republic:</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div id="publisher-collection" data-equalizer>
+			{{#each  publishers}}
+			<div class="publisher" data-equalizer-watch>
+				<a href="profile.html">
+					<img src="img/publishers/{{img}}.png" alt="">
+					<h4>{{name}}</h4>
+					<p class="lead">{{desc}}</p>
+				</a>
+				<hr>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+	<div class="row clearfix">
+		<a href="explore.html"><button>More Publishers &raquo;</button></a>
+	</div>
+</section>
+{{!-- ---------- --}}
+{{!-- cta  --}}
+<section id="cta" class="turquoise">
+	<div class="row">
+		<div class="container">
+			<h2>Are you planning a conference or event?</h2>
+			<a href="join.html"><button>Start Now</button></a><br>
+			<a href="contact.html">or Contact us</a>
+			<!-- <a href="contact.html"><button>Contact Us</button></a> -->
 		</div>
 	</div>
 </section>
