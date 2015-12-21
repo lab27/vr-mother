@@ -52,6 +52,9 @@ $h1-bottom-margin: 12px;
                   &.headphones {
         -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%22-625%20387%2028%2028%22%20style%3D%22enable-background%3Anew%20-625%20387%2028%2028%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20id%3D%22headphones%22%20d%3D%22M-618%2C399c-1.1%2C0-2%2C0.9-2%2C2v12c0%2C1.1%2C0.9%2C2%2C2%2C2c1.1%2C0%2C2-0.9%2C2-2v-12C-616%2C399.9-616.9%2C399-618%2C399%0A%09%20M-599%2C403v-9c0-0.1-0.1-7-9-7h-6c-8.9%2C0-9%2C6.9-9%2C7v9c-1.2%2C0.9-2%2C2.3-2%2C4c0%2C2.4%2C1.7%2C4.4%2C4%2C4.9V394c0-0.2%2C0.1-5%2C7-5h6%0A%09c6.7%2C0%2C7%2C4.5%2C7%2C5v17.9c2.3-0.5%2C4-2.5%2C4-4.9C-597%2C405.4-597.8%2C403.9-599%2C403%20M-604%2C399c-1.1%2C0-2%2C0.9-2%2C2v12c0%2C1.1%2C0.9%2C2%2C2%2C2%0A%09c1.1%2C0%2C2-0.9%2C2-2v-12C-602%2C399.9-602.9%2C399-604%2C399%22%2F%3E%0A%3C%2Fsvg%3E%0A"); 
     }
+      &.down-arrow {
+        -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20id%3D%22down-arrow%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2028%2028%22%20style%3D%22enable-background%3Anew%200%200%2028%2028%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpolygon%20points%3D%2214%2C28%200%2C14%202%2C12%2014%2C24%2026%2C12%2028%2C14%20%22%2F%3E%0A%3C%2Fsvg%3E%0A"); 
+    }
 }
 
 
@@ -67,7 +70,7 @@ $h1-bottom-margin: 12px;
         .container {
             @include landing-page-column;
 
-            h1 {
+            h2 {
                 color: $secondary-color;
                 margin-bottom: $h1-bottom-margin;
             }
@@ -101,7 +104,7 @@ $h1-bottom-margin: 12px;
         }
     }
 
-    h1 {
+    h1, h2 {
         @extend .text-center;
 
         // font-size: rem-calc(48);
@@ -114,6 +117,13 @@ $h1-bottom-margin: 12px;
 
     section {
         padding: 20vh 0;
+        h2 {
+            font-size: rem-calc(21);
+            line-height: rem-calc(24);
+            letter-spacing: rem-calc(2);
+            text-transform: uppercase;
+            margin-bottom: $h1-bottom-margin;
+        }
 
         &.light {
             background: $snow;
@@ -155,8 +165,21 @@ $h1-bottom-margin: 12px;
         padding: 30vh 0 40vh 0;
         background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
         background-size: cover;
+
+        .down-arrow {
+            width:28px;
+            height: 28px;
+            position: absolute;
+            bottom:10%;
+            left:50%;
+            margin-left:-12px;
+            background-color: white;
+        }
         h1 {
             color: white;
+            @include breakpoint(large) {
+                // font-size: rem-calc(72);
+            }
         }
 
         .container {
@@ -165,11 +188,11 @@ $h1-bottom-margin: 12px;
                 @extend .medium-6;
                 @extend .columns;
                 padding-top: 48px;
-                text-align:right;
-                // :first-child {
-                //     background: red;
-                //     text-align: right;
-                // }
+                
+                &:last-child {
+                    padding-top: 6px;
+                }
+
                 .icon {
                     display: inline-block;
                     vertical-align: middle;
@@ -181,8 +204,14 @@ $h1-bottom-margin: 12px;
                 a:hover .icon {
                     background-color:$primary-color;
                 }
-                &:last-child {
+             
+                @include breakpoint(medium) {
+                 text-align:right;
+                 padding-top: 48px;
+                 &:last-child {
                     text-align: left;
+                    padding-top: 48px;
+                 }
                 }
             }
 
@@ -192,7 +221,7 @@ $h1-bottom-margin: 12px;
     #listen-now {}
 
     #coming-up {
-        h1 {
+        h2 {
             margin-bottom: 60px;
         }
         .lead {
@@ -202,7 +231,7 @@ $h1-bottom-margin: 12px;
 
     #categories {
       
-         h1 {
+         h2 {
             margin-bottom: 60px;
 
         }
@@ -269,7 +298,7 @@ $h1-bottom-margin: 12px;
                 }
 
                 h4, .lead {
-                color: $dark-gray;
+                color: rgba($dark-gray,.8);
             }
             
             img {
@@ -373,4 +402,6 @@ $h1-bottom-margin: 12px;
             }
         }
     }
+
+
 }
