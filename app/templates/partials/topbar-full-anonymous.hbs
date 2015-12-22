@@ -5,7 +5,9 @@ component: topbar-search
   <button class="menu-icon" type="button" data-toggle></button>
   <div class="title-bar-title">Menu</div>
 </div>
-<div class="top-bar" id="example-menu">
+
+<div id="topbar-container" data-sticky-container >
+<div class="top-bar" id="example-menu" data-sticky data-options="marginTop:0">
   <div class="top-bar-left">
     <ul class="menu" data-dropdown-menu>
       <li class="logo">
@@ -35,11 +37,12 @@ component: topbar-search
         </ul>
       </li>
       <li class="sign-in">
-        <a href="#"><button type="button" class="button hollow small info">sign in</button></a>
+        <a href="#"><button type="button" class="button hollow  info">sign in</button></a>
       </li>
       <li>
-        <a href="#"><button type="button" class="button small">Join for free</button></a>
+        <a href="#"><button type="button" class="button ">Join for free</button></a>
       </li>
     </ul>
   </div>
+</div>
 </div>
