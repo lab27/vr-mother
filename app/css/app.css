@@ -458,7 +458,7 @@ button {
     .row.large-uncollapse > .column, .row.large-uncollapse > .columns, footer .row.large-uncollapse > .footer-section, .row.large-uncollapse > .meta-left, .row.large-uncollapse > .meta-right, .row.large-uncollapse > #talk-description, .row.large-uncollapse > #talk-actions, #comments .row.large-uncollapse > .comment-meta, #comments .row.large-uncollapse > .comment-content, .profile-page body #left-column .row.large-uncollapse > #user-about, .profile-page body #right-column .row.large-uncollapse > .profile-tile, .landing-page #main .row.large-uncollapse > .container, .landing-page #main #claim .row.large-uncollapse > .container, .landing-page #main #claim .container .row.large-uncollapse > .claim-cta-half, .landing-page #main #categories #talk-collection .row.large-uncollapse > .category, .landing-page #main #publishers #publisher-collection .row.large-uncollapse > .publisher, .landing-page #main .row.large-uncollapse > .talk-card, .landing-page #main .landing-feature .row.large-uncollapse > .landing-half {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-  .row.expanded {
+  .row.expanded, .join-page #join-box button.row {
     max-width: none; }
 
 .column, .columns, footer .footer-section, .meta-left, .meta-right, #talk-description, #talk-actions, #comments .comment-meta, #comments .comment-content, .profile-page body #left-column #user-about, .profile-page body #right-column .profile-tile, .landing-page #main .row .container, .landing-page #main #claim .container, .landing-page #main #claim .container .claim-cta-half, .landing-page #main #categories #talk-collection .category, .landing-page #main #publishers #publisher-collection .publisher, .landing-page #main .talk-card, .landing-page #main .landing-feature .landing-half {
@@ -1334,7 +1334,7 @@ kbd {
 .text-right {
   text-align: right; }
 
-.text-center, .landing-page #main .row, .landing-page #main .row .container, .landing-page #main h1, .landing-page #main h2, .landing-page #main #claim .container {
+.text-center, .landing-page #main .row, .landing-page #main .row .container, .landing-page #main h1, .landing-page #main h2, .landing-page #main #claim .container, .join-page #join-box h5 {
   text-align: center; }
 
 .text-justify {
@@ -1442,9 +1442,9 @@ kbd {
     font-size: 0.6rem; }
   .button.small, .landing-page #main button.small {
     font-size: 0.75rem; }
-  .button.large, .landing-page #main button {
+  .button.large, .landing-page #main button, .join-page #join-box button.button {
     font-size: 1.25rem; }
-  .button.expanded, .landing-page #main button.expanded {
+  .button.expanded, .landing-page #main button.expanded, .landing-page #main .join-page #join-box button, .join-page #join-box .landing-page #main button, .join-page #join-box button.button {
     display: block;
     width: 100%;
     margin-left: 0;
@@ -1951,52 +1951,52 @@ select {
     font-size: 0.6rem; }
   .button-group.small {
     font-size: 0.75rem; }
-  .button-group.large, .landing-page #main button.button-group {
+  .button-group.large, .landing-page #main button.button-group, .join-page #join-box button.button-group {
     font-size: 1.25rem; }
-  .button-group.expanded .button:nth-last-child(2):first-child, .button-group.expanded .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .button-group.expanded button:nth-last-child(2):first-child,
-  .button-group.expanded .button:nth-last-child(2):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(2):first-child, .join-page #join-box button.button-group .button:nth-last-child(2):first-child, .button-group.expanded .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .button-group.expanded button:nth-last-child(2):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child,
+  .button-group.expanded .button:nth-last-child(2):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(2):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(2):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(2):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(2):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(2):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(2):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(2):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(2):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(2):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(2):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(2):first-child ~ button {
+  .button-group.expanded button:nth-last-child(2):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child ~ button {
     width: 50%; }
-  .button-group.expanded .button:nth-last-child(3):first-child, .button-group.expanded .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .button-group.expanded button:nth-last-child(3):first-child,
-  .button-group.expanded .button:nth-last-child(3):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(3):first-child, .join-page #join-box button.button-group .button:nth-last-child(3):first-child, .button-group.expanded .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .button-group.expanded button:nth-last-child(3):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child,
+  .button-group.expanded .button:nth-last-child(3):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(3):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(3):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(3):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(3):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(3):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(3):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(3):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(3):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(3):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(3):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(3):first-child ~ button {
+  .button-group.expanded button:nth-last-child(3):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child ~ button {
     width: 33.3333333333%; }
-  .button-group.expanded .button:nth-last-child(4):first-child, .button-group.expanded .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .button-group.expanded button:nth-last-child(4):first-child,
-  .button-group.expanded .button:nth-last-child(4):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(4):first-child, .join-page #join-box button.button-group .button:nth-last-child(4):first-child, .button-group.expanded .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .button-group.expanded button:nth-last-child(4):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child,
+  .button-group.expanded .button:nth-last-child(4):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(4):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(4):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(4):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(4):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(4):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(4):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(4):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(4):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(4):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(4):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(4):first-child ~ button {
+  .button-group.expanded button:nth-last-child(4):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child ~ button {
     width: 25%; }
-  .button-group.expanded .button:nth-last-child(5):first-child, .button-group.expanded .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .button-group.expanded button:nth-last-child(5):first-child,
-  .button-group.expanded .button:nth-last-child(5):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(5):first-child, .join-page #join-box button.button-group .button:nth-last-child(5):first-child, .button-group.expanded .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .button-group.expanded button:nth-last-child(5):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child,
+  .button-group.expanded .button:nth-last-child(5):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(5):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(5):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(5):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(5):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(5):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(5):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(5):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(5):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(5):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(5):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(5):first-child ~ button {
+  .button-group.expanded button:nth-last-child(5):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child ~ button {
     width: 20%; }
-  .button-group.expanded .button:nth-last-child(6):first-child, .button-group.expanded .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .button-group.expanded button:nth-last-child(6):first-child,
-  .button-group.expanded .button:nth-last-child(6):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(6):first-child, .join-page #join-box button.button-group .button:nth-last-child(6):first-child, .button-group.expanded .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .button-group.expanded button:nth-last-child(6):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child,
+  .button-group.expanded .button:nth-last-child(6):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(6):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(6):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(6):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(6):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(6):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(6):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(6):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(6):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(6):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(6):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(6):first-child ~ button {
+  .button-group.expanded button:nth-last-child(6):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child ~ button {
     width: 16.6666666667%; }
   .button-group.primary .button, .button-group.primary .landing-page #main button, .landing-page #main .button-group.primary button {
     background: #2c46b0;
@@ -2064,7 +2064,7 @@ select {
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem; }
-  .callout.large, .landing-page #main button.callout {
+  .callout.large, .landing-page #main button.callout, .join-page #join-box button.callout {
     padding-top: 3rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
@@ -2150,7 +2150,7 @@ select {
 .dropdown-pane.small {
   width: 200px; }
 
-.dropdown-pane.large, .landing-page #main button.dropdown-pane {
+.dropdown-pane.large, .landing-page #main button.dropdown-pane, .join-page #join-box button.dropdown-pane {
   width: 400px; }
 
 [data-whatinput='mouse'] .dropdown.menu a, [data-whatinput='mouse'] footer ul.dropdown a, footer [data-whatinput='mouse'] ul.dropdown a {
@@ -2355,25 +2355,25 @@ select {
     margin-right: 1rem; }
   .menu.align-right > li, footer ul.align-right > li {
     float: right; }
-  .menu.expanded, footer ul.expanded {
+  .menu.expanded, footer ul.expanded, .join-page #join-box button.menu {
     display: table;
     width: 100%; }
-    .menu.expanded > li:nth-last-child(2):first-child, footer ul.expanded > li:nth-last-child(2):first-child,
-    .menu.expanded > li:nth-last-child(2):first-child ~ li, footer ul.expanded > li:nth-last-child(2):first-child ~ li {
+    .menu.expanded > li:nth-last-child(2):first-child, footer ul.expanded > li:nth-last-child(2):first-child, .join-page #join-box button.menu > li:nth-last-child(2):first-child,
+    .menu.expanded > li:nth-last-child(2):first-child ~ li, footer ul.expanded > li:nth-last-child(2):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(2):first-child ~ li {
       width: 50%; }
-    .menu.expanded > li:nth-last-child(3):first-child, footer ul.expanded > li:nth-last-child(3):first-child,
-    .menu.expanded > li:nth-last-child(3):first-child ~ li, footer ul.expanded > li:nth-last-child(3):first-child ~ li {
+    .menu.expanded > li:nth-last-child(3):first-child, footer ul.expanded > li:nth-last-child(3):first-child, .join-page #join-box button.menu > li:nth-last-child(3):first-child,
+    .menu.expanded > li:nth-last-child(3):first-child ~ li, footer ul.expanded > li:nth-last-child(3):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(3):first-child ~ li {
       width: 33.3333333333%; }
-    .menu.expanded > li:nth-last-child(4):first-child, footer ul.expanded > li:nth-last-child(4):first-child,
-    .menu.expanded > li:nth-last-child(4):first-child ~ li, footer ul.expanded > li:nth-last-child(4):first-child ~ li {
+    .menu.expanded > li:nth-last-child(4):first-child, footer ul.expanded > li:nth-last-child(4):first-child, .join-page #join-box button.menu > li:nth-last-child(4):first-child,
+    .menu.expanded > li:nth-last-child(4):first-child ~ li, footer ul.expanded > li:nth-last-child(4):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(4):first-child ~ li {
       width: 25%; }
-    .menu.expanded > li:nth-last-child(5):first-child, footer ul.expanded > li:nth-last-child(5):first-child,
-    .menu.expanded > li:nth-last-child(5):first-child ~ li, footer ul.expanded > li:nth-last-child(5):first-child ~ li {
+    .menu.expanded > li:nth-last-child(5):first-child, footer ul.expanded > li:nth-last-child(5):first-child, .join-page #join-box button.menu > li:nth-last-child(5):first-child,
+    .menu.expanded > li:nth-last-child(5):first-child ~ li, footer ul.expanded > li:nth-last-child(5):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(5):first-child ~ li {
       width: 20%; }
-    .menu.expanded > li:nth-last-child(6):first-child, footer ul.expanded > li:nth-last-child(6):first-child,
-    .menu.expanded > li:nth-last-child(6):first-child ~ li, footer ul.expanded > li:nth-last-child(6):first-child ~ li {
+    .menu.expanded > li:nth-last-child(6):first-child, footer ul.expanded > li:nth-last-child(6):first-child, .join-page #join-box button.menu > li:nth-last-child(6):first-child,
+    .menu.expanded > li:nth-last-child(6):first-child ~ li, footer ul.expanded > li:nth-last-child(6):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(6):first-child ~ li {
       width: 16.6666666667%; }
-    .menu.expanded > li:first-child:last-child, footer ul.expanded > li:first-child:last-child {
+    .menu.expanded > li:first-child:last-child, footer ul.expanded > li:first-child:last-child, .join-page #join-box button.menu > li:first-child:last-child {
       width: 100%; }
   .menu.icon-top > li > a, footer ul.icon-top > li > a {
     text-align: center; }
@@ -2805,7 +2805,7 @@ body.is-reveal-open {
   .reveal.collapse {
     padding: 0; }
   @media screen and (min-width: 40em) {
-    .reveal .reveal, .reveal .landing-page #main button.reveal, .landing-page #main .reveal button.reveal {
+    .reveal .reveal, .reveal .landing-page #main button.reveal, .landing-page #main .reveal button.reveal, .reveal .join-page #join-box button.reveal, .join-page #join-box .reveal button.reveal {
       left: auto;
       right: auto;
       margin: 0 auto; } }
@@ -2818,7 +2818,7 @@ body.is-reveal-open {
       width: 50%;
       max-width: 75rem; } }
   @media screen and (min-width: 40em) {
-    .reveal.large, .landing-page #main button.reveal {
+    .reveal.large, .landing-page #main button.reveal, .join-page #join-box button.reveal {
       width: 90%;
       max-width: 75rem; } }
   .reveal.full {
@@ -2917,16 +2917,16 @@ body.is-reveal-open {
 .switch.small input:checked ~ .switch-paddle:after {
   left: 2rem; }
 
-.switch.large .switch-paddle, .landing-page #main button.switch .switch-paddle {
+.switch.large .switch-paddle, .landing-page #main button.switch .switch-paddle, .join-page #join-box button.switch .switch-paddle {
   width: 5rem;
   height: 2.5rem;
   font-size: 1rem; }
 
-.switch.large .switch-paddle::after, .landing-page #main button.switch .switch-paddle::after {
+.switch.large .switch-paddle::after, .landing-page #main button.switch .switch-paddle::after, .join-page #join-box button.switch .switch-paddle::after {
   width: 2rem;
   height: 2rem; }
 
-.switch.large input:checked ~ .switch-paddle:after, .landing-page #main button.switch input:checked ~ .switch-paddle:after {
+.switch.large input:checked ~ .switch-paddle:after, .landing-page #main button.switch input:checked ~ .switch-paddle:after, .join-page #join-box button.switch input:checked ~ .switch-paddle:after {
   left: 2.75rem; }
 
 table {
@@ -6034,7 +6034,7 @@ button, .button, .landing-page #main button {
   border-width: 4px; }
   button.small, .button.small, .landing-page #main button.small {
     border-width: 2px; }
-  button.large, .landing-page #main button, .button.large, .landing-page #main button {
+  button.large, .landing-page #main button, .join-page #join-box button, .button.large, .landing-page #main button, .join-page #join-box button.button {
     border-width: 4px; }
   button .info, .button .info, .landing-page #main button .info {
     background: rgba(255, 255, 255, 0.5); }
@@ -7356,7 +7356,9 @@ html.profile-page,
       color: #54c6c6;
       margin-bottom: 12px; }
     .landing-page #main .row .container .lead {
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      font-size: 1rem;
+      line-height: 1.875rem; }
   .landing-page #main button {
     margin: 12px;
     border-width: 2px; }
@@ -7364,7 +7366,7 @@ html.profile-page,
       background: none;
       border-color: #2c46b0;
       color: #2c46b0; }
-    .landing-page #main button.large, .landing-page #main button {
+    .landing-page #main button.large, .landing-page #main button, .landing-page #main .join-page #join-box button, .join-page #join-box .landing-page #main button {
       border-width: 4px; }
   .landing-page #main h1, .landing-page #main h2 {
     color: white;
@@ -7572,3 +7574,79 @@ html.profile-page,
         margin-bottom: 36px; }
       .landing-page #main .landing-feature .feature-copy button {
         margin: 0; }
+
+.join-page {
+  background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
+  background-size: cover; }
+  .join-page body {
+    background: none;
+    text-align: center;
+    padding-top: 100px; }
+  .join-page #join-box {
+    background: white;
+    margin: 0 auto;
+    padding: 24px; }
+    .join-page #join-box img {
+      margin-bottom: 36px; }
+    .join-page #join-box h5 {
+      margin-bottom: 0;
+      color: #29292b;
+      font-size: 1.5rem; }
+    .join-page #join-box .lead {
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      color: #b4b6be;
+      margin-bottom: 48px; }
+    @media screen and (min-width: 40em) {
+      .join-page #join-box {
+        border-radius: 4px;
+        max-width: 600px;
+        padding: 40px 100px 40px 100px; } }
+    .join-page #join-box .input-layout {
+      position: relative;
+      margin-top: 42px; }
+      .join-page #join-box .input-layout input {
+        outline: 0;
+        padding: 0;
+        box-shadow: none;
+        background: white;
+        border-bottom: 1px solid #e1e2e7;
+        height: 36px;
+        line-height: 26px;
+        font-size: 1.125rem; }
+        .join-page #join-box .input-layout input:focus {
+          outline: none;
+          border: none;
+          border-bottom: 1px solid #f82847; }
+        .join-page #join-box .input-layout input:focus ~ label {
+          top: -24px;
+          color: #f82847;
+          font-size: 0.75rem;
+          text-transform: uppercase; }
+        .join-page #join-box .input-layout input[type=text]:valid ~ label, .join-page #join-box .input-layout input[type=password]:valid ~ label {
+          top: -24px;
+          color: #b4b6be;
+          font-size: 0.75rem;
+          text-transform: uppercase; }
+      .join-page #join-box .input-layout label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        pointer-events: none;
+        font-size: 1rem;
+        color: #b4b6be;
+        transition: all .2s ease; }
+      .join-page #join-box .input-layout .alert {
+        display: none; }
+      .join-page #join-box .input-layout:last-child {
+        margin-bottom: 0; }
+    .join-page #join-box footer {
+      background: none;
+      padding: 0;
+      padding-top: 36px;
+      color: #29292b; }
+      .join-page #join-box footer a {
+        color: #54c6c6; }
+    .join-page #join-box button:hover, .join-page #join-box button:focus {
+      background: #54c6c6; }

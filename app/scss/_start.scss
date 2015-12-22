@@ -78,6 +78,8 @@ $h1-bottom-margin: 12px;
 
             .lead {
                 margin-bottom: 60px;
+                font-size: rem-calc(16);
+                line-height: rem-calc(30);
             }
         }
     }
