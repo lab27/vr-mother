@@ -5,6 +5,9 @@
         // background: $bluish-gray;
         height: 100%;
         min-height: 100vh;
+        .top-bar {
+            background:$talk-dark;
+        }
     }
     
     html.profile-light, .profile-light body {
@@ -13,7 +16,7 @@
     	min-height:100vh;
     }
     .profile-page body {
-        // padding-top: 103px;
+        padding-top: 84px;
         // min-height: 100vh;
         #main {
             @extend .row;
@@ -163,7 +166,7 @@
             #user-block {
                 text-align: center;
                 img {
-                    margin-bottom: 0;
+                    margin-bottom: 12px;
                 }
                 #user-name {
                     margin-bottom: 0;

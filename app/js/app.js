@@ -240,13 +240,21 @@ $('.profile-avatar').on('click',function(){
 });
 
 //$('#coming-up:in-viewport h2').css( 'color', 'red' );
-var $div = $('#coming-up');
+var $comingUp = $('#coming-up');
+var $claim = $('#claim');
+
 $(window).scroll(function() {
     // console.log('scrolling..');
-    if ( $div.is( ':in-viewport' ) ) {
+    if ( $comingUp.is( ':in-viewport' ) ) {
   $('.down-arrow').addClass('hide');
 }
-    // $( '#coming-up:in-viewport( 100 )' ).css( 'background-color', 'red' );
+
+if ($claim.is (':in-viewport')){
+
+    $('.top-bar').removeClass('with-background');
+} else {
+    $('.top-bar').addClass('with-background');
+}
 
 });
 

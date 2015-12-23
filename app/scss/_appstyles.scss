@@ -82,7 +82,12 @@ hr {
     z-index: 3000;
 }
 
-
+.sticky-container {
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+}
 
 
 .top-bar {
@@ -95,9 +100,17 @@ hr {
     background-image: -webkit-linear-gradient( 90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
     // background: rgba($almost-black,.2);
-    background: $talk-dark;
+    background: rgba($talk-dark,0);
+    transition: background .3s ease;
     margin:0;
     right:0;
+    left:0;
+
+    &.with-background {
+        background:$talk-dark;
+    }
+
+
     .logo a span{
         font-family: $header-font-family;
         color: $alert-color;

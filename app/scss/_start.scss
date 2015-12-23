@@ -68,8 +68,10 @@ $h1-bottom-margin: 12px;
 
         @extend .text-center;
 
+
         .container {
             @include landing-page-column;
+            
 
             h2 {
                 color: $secondary-color;
@@ -121,11 +123,11 @@ $h1-bottom-margin: 12px;
     section {
         padding: 20vh 0;
         h2 {
-            font-size: rem-calc(21);
-            line-height: rem-calc(24);
-            letter-spacing: rem-calc(2);
-            text-transform: uppercase;
-            margin-bottom: $h1-bottom-margin;
+            // font-size: rem-calc();
+            // line-height: rem-calc(24);
+            // letter-spacing: rem-calc(2);
+            // text-transform: uppercase;
+            // margin-bottom: $h1-bottom-margin;
         }
 
         &.light {
@@ -178,20 +180,36 @@ $h1-bottom-margin: 12px;
             // margin-left:-12px;
             background-color: white;
             margin-top: 96px;
+            animation-duration: 2s;
+        }
+        header {
+            @extend .clearfix;
         }
         h1 {
             color: white;
             @include breakpoint(large) {
-                // font-size: rem-calc(72);
+                font-size: rem-calc(72);
+                line-height: rem-calc(80);
+                letter-spacing: rem-calc(3);
+                margin-bottom: 24px;
             }
+        }
+        .lead {
+            // font-size: rem-calc(18);
+            // text-transform: uppercase;
+            letter-spacing: rem-calc(1);
+        }
+        a {
+            color: $secondary-color;
         }
 
         .container {
-            @include landing-page-column;
+            // @include landing-page-column;
+            float:left;
             .claim-cta-half {
                 @extend .medium-6;
                 @extend .columns;
-                padding-top: 48px;
+                padding-top: 12px;
                 
                 &:last-child {
                     padding-top: 6px;
