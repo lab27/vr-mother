@@ -462,6 +462,7 @@ footer {
     a {
         color: $smoke;
         font-weight: 700;
+
     }
     a:hover {
         color: $white;
@@ -475,12 +476,12 @@ footer {
         @extend .clearfix;
         margin-top: 48px;
         padding-top: 84px;
-        // text-align: center;
         margin: 0 auto;
-        // .footer-link {
-        //     // @extend .medium-1;
-        //     // @extend .columns;
-        // }
+        li a {
+            padding:0;
+        padding-bottom: 12px;
+        }
+
     }
     .social {
         text-align: center;

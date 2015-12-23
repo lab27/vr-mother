@@ -1,0 +1,105 @@
+//Join Page
+.join-page {
+	background:url(../img/bg/coney.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	body {
+		background: none;
+		text-align: center;
+		padding-top: 100px;
+	}
+
+	#join-box {
+		background:white;
+		margin:0 auto;
+		padding:24px;
+		img {
+			margin-bottom: 36px;
+		}
+
+		h5 {
+			@extend .text-center;
+			margin-bottom: 0;
+			color:$talk-dark;
+			font-size: rem-calc(24);
+		}
+		.lead {
+			text-transform: uppercase;
+			font-size: rem-calc(14);
+			color:$charcoal;
+			margin-bottom: 48px;
+		}
+		@include breakpoint(medium){
+			border-radius: 4px;
+			max-width: 600px;
+			padding: 40px 100px 40px 100px;
+		}
+		.input-layout {
+						position:relative;
+						margin-top:42px;
+
+			input {
+			outline: 0;
+			padding:0;
+			box-shadow:none;
+			background:white;
+			border-bottom:1px solid $light-gray;
+			height:36px;
+			line-height: 26px;
+			font-size: rem-calc(18);
+			&:focus {
+				outline: none;
+				border:none;
+				border-bottom:1px solid $alert-color;
+			}
+			&:focus ~ label {
+				top: -24px;
+				color:$alert-color;
+				font-size: rem-calc(12);
+				text-transform: uppercase;
+			}
+			&[type=text]:valid ~ label, &[type=password]:valid ~ label  {
+				top: -24px;
+				color:$charcoal;
+				font-size: rem-calc(12);
+				text-transform: uppercase;
+			}
+		}
+
+		label {
+			position: absolute;
+			top:0;
+			left:0;
+			text-align: left;
+			pointer-events:none;
+			font-size: rem-calc(16);
+			color:$charcoal;
+			transition: all .2s ease;
+		}
+
+		.alert {
+			display: none;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		}
+		footer {
+			background: none;
+			padding: 0;
+			padding-top:36px;
+			color: $talk-dark;
+			a {
+				color:$secondary-color;
+			}
+		}
+		button {
+			@extend .large;
+			@extend .expanded;
+			&:hover, &:focus {
+				background:$secondary-color;
+			}
+		}
+		
+	}
+
+}
