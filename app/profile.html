@@ -1,33 +1,73 @@
 <!doctype html>
-<html class="no-js profile-page" lang="en" >
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Voice Republic | User Patrick Frank</title>
-        <!-- build:css css/libraries.min.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
-        <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css"/>
-        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-        <!-- endbower -->
-        <!-- endbuild -->
+<html class="no-js profile-page profile-light" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Republic | User Patrick Frank</title>
+    <!-- build:css css/libraries.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app_override.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
     
-        <!-- build:css css/app.min.css -->
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/app_override.css">
-        <!-- endbuild -->
-        <!-- build:js js/vendor/modernizr.min.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body class="">
-        
-<div class="row" id="left-column">
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    
+    <div id="topbar-container" data-sticky-container >
+    <div class="top-bar" id="example-menu" data-sticky data-options="marginTop:0">
+      <div class="top-bar-left">
+        <ul class="menu" data-dropdown-menu>
+          <li class="logo">
+            <a href="start.html">
+              <img class="" src="img/logo/logo-red.svg" width="60">
+              <span class="show-for-large-up">VOICE REPUBLIC</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="">
+            <a href="publish.html">Publish</a>
+    <!--         <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul> -->
+          </li>
+          <li class="has-submenu">
+            <a href="#">Listen</a>
+            <ul class="submenu menu vertical" data-submenu>
+            <li><a href="listen.html">Listen</a></li>
+              <li><a href="explore.html">Explore</a></li>
+            </ul>
+          </li>
+          <li class="sign-in">
+            <a href="#"><button type="button" class="button hollow  info">sign in</button></a>
+          </li>
+          <li>
+            <a href="join.html"><button type="button" class="button ">Join for free</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>    <div id="main" role="main">
+      
+<div id="left-column">
 	<div id="user-block">
-	<div class="publisher-badge"></div>
+		<!-- <div class="publisher-badge"></div> -->
 		<div class="profile-avatar">
-					<!-- <div id="user-badge"><span class="icon-uniE913"></span></div> -->
-
+			<!-- <div id="user-badge"><span class="icon-uniE913"></span></div> -->
 			<img src="img/avatars/patrick.png" width="160" height="160" class="img-circle" alt="">
 		</div>
 		<h3 id="user-name">Patrick Frank</h3>
@@ -42,12 +82,12 @@
 		<ul class="social-links">
 			<li class="list-item"><span class="icon-uniE949"></span></li>
 			<li class="list-item"><span class="icon-uniE94A"></span></li>
-			<li class="list-item"><span class="icon-uniE941"></span></li>
-		</ul> 
+			<li class="list-item"><span class="icon-uniE90A"></span></li>
+		</ul>
 	</div>
 	<hr>
 	<div class="row" id="user-about">
-		<p class="column-header">About</p>
+		<p class="column-header">About Patrick Frank</p>
 		<p>
 			Kompositionsstudien an der ZHdK in Zürich. Studium der Kulturwissenschaften, Philosophie und Soziologie an der Universität Luzern.<br><br>
 			In Franks kompositorische Arbeiten verbinden sich Kulturtheorie mit Neuer Musik. Frank inszeniert 'Diskurskonzerte' unter Beteiligung von Philosophen, Politiker oder Aktivisten. Dabei greift er sowohl auf bestehende Theorien bekannter und weniger bekannter PhilosophenInnen und SoziologenInnen zurück, als auch auf eigene Thesen.<br><br>
@@ -64,628 +104,669 @@
 	</div>
 </div>
 <div id="right-column">
-	<div class="tab-holder funky">
-		<ul class="tabs left" data-tabs id="main-tabs">
+	<!-- <div class="tab-holder"> -->
+		<ul class="tabs" data-tabs id="example-tabs">
+  <li class="tabs-title is-active"><a href="#archived" aria-selected="true">7 Archived Talks</a></li>
+  <li class="tabs-title"><a href="#upcoming">3 Upcoming Talks</a></li>
+  <li class="tabs-title"><a href="#series">2 Series</a></li>
+  <li class="tabs-title"><a href="#pinned">12 Pinned Talks</a></li>
+</ul>
+		<!-- 	<ul class="tabs viewtoggle right" data-tab>
+				<li class="tab-label">VIEW:</li>
+				<li class="tabs-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
+				<li class="tabs-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
+		</ul> -->
+	<!-- </div> -->
+	<div class="tabs-content" data-tabs-content="example-tabs">
+		<div class="tabs-panel" id="upcoming">
 			
-			<li class="tabs-title" id="tab-upcoming">
-				<a href="#upcoming">
-
-					<span class="icon icon-uniE875"> </span> <span class="label-text">Upcoming</span>
-					<!-- <span class="tab-badge">3</span> -->
-					</a>
-				</li>
-				<li class="tabs-title is-active" id="tab-archived">
-					<a href="#archived">
-						<span class="icon icon-uniE6A0"> </span> <span class="label-text">7 Archived</span>
-					</a>
-					<!-- <span class="tab-badge">7</span> -->
-				</li>
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Scheduled for: 12.12.2015</p>
+					<img src="img/thumbs-cropped/thumb0.jpg" alt="">
+					<h5 class="profile-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Scheduled for: 12.12.2015</p>
+					<img src="img/thumbs-cropped/thumb1.jpg" alt="">
+					<h5 class="profile-title">Independent Cultural Spaces in Turkey and Germany</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Scheduled for: 12.12.2015</p>
+					<img src="img/thumbs-cropped/thumb2.jpg" alt="">
+					<h5 class="profile-title">Watching the Watchers: Building a Sousveillance State</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>		</div>
+		<!-- 			<div class="tabs-panel" id="upcoming-list">
+				<table id="archive-table">
+						<thead>
+								<tr>
+										<th class="thumb">Image</th>
+										<th>Title</th>
+										
+										<th>Date</th>
+								</tr>
+						</thead>
+						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb0.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Sozialer Wandel und Politische Kunst in der Südosttürkei</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;234 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb1.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Independent Cultural Spaces in Turkey and Germany</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;1k plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb2.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Watching the Watchers: Building a Sousveillance State</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 2 months ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;877 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb3.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 4 months ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;56 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb4.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Religion in Europa</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;12k plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb5.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Visual Diagnostics for Design Thinking Teams</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;449 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb6.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Platform Cooperativism vs. the Sharing Economy</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;3k plays</span> 
+						
+								</td>
+								
+						
+						</tr>				</table>
 				
-				<li class="tabs-title" id="tab-series">
-					<a href="#series">
+		</div> -->
+		
+		<div class="tabs-panel is-active" id="archived">
+			
 
-						<span class="icon icon-uniE6B2"> </span> <span class="label-text">Series</span>
-
-						<!-- <span class="tab-badge">3</span> -->
-					</a>
-				</li>
-				
-				<li class="tabs-title" id="tab-pinned">
-					<a href="#pinned">
-
-						<span class="icon icon-uniE8E6"> </span> <span class="label-text">12 Pinned</span>
-
-						<!-- <span class="tab-badge">12</span> -->
-						</a>
-					</li>
-				</ul>
-			<!-- 	<ul class="tabs viewtoggle right" data-tab>
-					<li class="tab-label">VIEW:</li>
-					<li class="tabs-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
-					<li class="tabs-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
-				</ul> -->
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Published 3 days ago</p>
+					<img src="img/thumbs-cropped/thumb0.jpg" alt="">
+					<h5 class="profile-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
 			</div>
-			<div class="tabs-content" data-tabs-content="main-tabs">
-				<div class="tabs-panel" id="upcoming">
-					
-					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Scheduled for: 12.12.2015</p>
-							<img src="img/thumbs-cropped/thumb0.jpg" alt="">
-							<h5 class="profile-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Scheduled for: 12.12.2015</p>
-							<img src="img/thumbs-cropped/thumb1.jpg" alt="">
-							<h5 class="profile-title">Independent Cultural Spaces in Turkey and Germany</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Scheduled for: 12.12.2015</p>
-							<img src="img/thumbs-cropped/thumb2.jpg" alt="">
-							<h5 class="profile-title">Watching the Watchers: Building a Sousveillance State</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>				</div>
-	<!-- 			<div class="tabs-panel" id="upcoming-list">
-					<table id="archive-table">
-						<thead>
-							<tr>
-								<th class="thumb">Image</th>
-								<th>Title</th>
-								
-								<th>Date</th>
-							</tr>
-						</thead>
-						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb0.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Sozialer Wandel und Politische Kunst in der Südosttürkei</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;234 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb1.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Independent Cultural Spaces in Turkey and Germany</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;1k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb2.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Watching the Watchers: Building a Sousveillance State</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 2 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;877 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb3.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 4 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;56 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb4.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Religion in Europa</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;12k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb5.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Visual Diagnostics for Design Thinking Teams</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;449 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb6.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Platform Cooperativism vs. the Sharing Economy</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;3k plays</span> 
-						
-								</td>
-								
-						
-						</tr>					</table>
-					
-				</div> -->
-				
-				<div class="tabs-panel is-active" id="archived">
-					
-					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb0.jpg" alt="">
-							<h5 class="profile-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb1.jpg" alt="">
-							<h5 class="profile-title">Independent Cultural Spaces in Turkey and Germany</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Published 2 months ago</p>
-							<img src="img/thumbs-cropped/thumb2.jpg" alt="">
-							<h5 class="profile-title">Watching the Watchers: Building a Sousveillance State</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Published 4 months ago</p>
-							<img src="img/thumbs-cropped/thumb3.jpg" alt="">
-							<h5 class="profile-title">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb4.jpg" alt="">
-							<h5 class="profile-title">Religion in Europa</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb5.jpg" alt="">
-							<h5 class="profile-title">Visual Diagnostics for Design Thinking Teams</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb6.jpg" alt="">
-							<h5 class="profile-title">Platform Cooperativism vs. the Sharing Economy</h5>
-							<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
-						</div>
-					</div>				</div>
-<!-- 				<div class="tabs-panel" id="list">
-					<table id="archive-table">
-						<thead>
-							<tr>
-								<th class="thumb">Image</th>
-								<th>Title</th>
-								<th>Date</th>
-								<th>Plays</th>
-							</tr>
-						</thead>
-						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb0.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Sozialer Wandel und Politische Kunst in der Südosttürkei</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;234 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb1.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Independent Cultural Spaces in Turkey and Germany</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;1k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb2.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Watching the Watchers: Building a Sousveillance State</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 2 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;877 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb3.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 4 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;56 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb4.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Religion in Europa</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;12k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb5.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Visual Diagnostics for Design Thinking Teams</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;449 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb6.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Platform Cooperativism vs. the Sharing Economy</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;3k plays</span> 
-						
-								</td>
-								
-						
-						</tr>					</table>
-					
-				</div> -->
-				<div class="tabs-panel" id="series">
-					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<img src="img/thumbs/series1.jpg" alt="">
-							<h5 class="profile-title">Wir reden über uns: Perspektiven der Gegenwart</h5>
-							<div class="clearfix">
-							<p class="speaker left">1 Talks</p>
-							<p class="speaker right">234 Plays</p>
-					
-							</div>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<img src="img/thumbs/series2.png" alt="">
-							<h5 class="profile-title">Neue Musik Diskurs</h5>
-							<div class="clearfix">
-							<p class="speaker left">3 Talks</p>
-							<p class="speaker right">1244 Plays</p>
-					
-							</div>
-						</div>
-					</div>				</div>
-				<div class="tabs-panel" id="pinned">
-					
-					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">nGbK</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb0.jpg" alt="">
-							<h5 class="profile-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">nGbK</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb1.jpg" alt="">
-							<h5 class="profile-title">Independent Cultural Spaces in Turkey and Germany</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">re:publica15</p>
-							<p class="profile-date">Published 2 months ago</p>
-							<img src="img/thumbs-cropped/thumb2.jpg" alt="">
-							<h5 class="profile-title">Watching the Watchers: Building a Sousveillance State</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">AMAZE Berlin</p>
-							<p class="profile-date">Published 4 months ago</p>
-							<img src="img/thumbs-cropped/thumb3.jpg" alt="">
-							<h5 class="profile-title">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">Publixsphere Channel</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb4.jpg" alt="">
-							<h5 class="profile-title">Religion in Europa</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">HPI School of Design Thinking</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb5.jpg" alt="">
-							<h5 class="profile-title">Visual Diagnostics for Design Thinking Teams</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">Rosa Luxemburg Stiftung</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb6.jpg" alt="">
-							<h5 class="profile-title">Platform Cooperativism vs. the Sharing Economy</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">Courage Foundation</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb7.jpg" alt="">
-							<h5 class="profile-title">The digital surveillance state - Quo vadis, Democracy?</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">Henrik Lafrenz</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb8.jpg" alt="">
-							<h5 class="profile-title">Der Deichgraf Peter Lafrenz</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">Respawn</p>
-							<p class="profile-date">Published 1 day ago</p>
-							<img src="img/thumbs-cropped/thumb9.jpg" alt="">
-							<h5 class="profile-title">Playful Oasis - An indie collective story</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">Respawn</p>
-							<p class="profile-date">Published 2 days ago</p>
-							<img src="img/thumbs-cropped/thumb9.jpg" alt="">
-							<h5 class="profile-title">Fast Forward Africa - A Digital Movement moderated by Thorsten S. Wiedemann, Founder and Artistic Director of A MAZE.</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>					
-					<div class="profile-tile">
-						<div class="profile-tile-inside">
-							<p class="profile-publisher">Henrik Lafrenz</p>
-							<p class="profile-date">Published 3 days ago</p>
-							<img src="img/thumbs-cropped/thumb9.jpg" alt="">
-							<h5 class="profile-title">Der Deichgraf Peter Lafrenz</h5>
-							<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-						</div>
-					</div>				</div>
+
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Published 3 days ago</p>
+					<img src="img/thumbs-cropped/thumb1.jpg" alt="">
+					<h5 class="profile-title">Independent Cultural Spaces in Turkey and Germany</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>
+
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Published 2 months ago</p>
+					<img src="img/thumbs-cropped/thumb2.jpg" alt="">
+					<h5 class="profile-title">Watching the Watchers: Building a Sousveillance State</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>
+
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Published 4 months ago</p>
+					<img src="img/thumbs-cropped/thumb3.jpg" alt="">
+					<h5 class="profile-title">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>
+
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Published 3 days ago</p>
+					<img src="img/thumbs-cropped/thumb4.jpg" alt="">
+					<h5 class="profile-title">Religion in Europa</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>
+
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Published 3 days ago</p>
+					<img src="img/thumbs-cropped/thumb5.jpg" alt="">
+					<h5 class="profile-title">Visual Diagnostics for Design Thinking Teams</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
+			</div>
+
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<p class="profile-date">Published 3 days ago</p>
+					<img src="img/thumbs-cropped/thumb6.jpg" alt="">
+					<h5 class="profile-title">Platform Cooperativism vs. the Sharing Economy</h5>
+					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
+				</div>
 			</div>
 		</div>
-        <!-- build:js js/vendor/libraries.min.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/fastclick/lib/fastclick.js"></script>
-        <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-        <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-        <script src="bower_components/wow/dist/wow.min.js"></script>
-        <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:js js/vendor/foundation.min.js -->
-           <script src="bower_components/foundation-sites/js/foundation/foundation.core.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.abide.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.accordion.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.alert.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.clearing.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.dropdown.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.equalizer.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.interchange.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.joyride.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.magellan.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.offcanvas.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.orbit.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.reveal.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.slider.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.tab.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.tooltip.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation/foundation.topbar.js"></script>
-     <script src="bower_components/foundation-sites/js/foundation/foundation.tab.js"></script>
-
-        
-        <!-- endbuild -->
-        <!-- build:js js/app.min.js -->
-        <script src="js/app.js"></script>
-
-        <!-- endbuild -->
-        <script src="js/sup-topbar.min.js"></script>
-    </body>
+		<!-- 				<div class="tabs-panel" id="list">
+				<table id="archive-table">
+						<thead>
+								<tr>
+										<th class="thumb">Image</th>
+										<th>Title</th>
+										<th>Date</th>
+										<th>Plays</th>
+								</tr>
+						</thead>
+						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb0.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Sozialer Wandel und Politische Kunst in der Südosttürkei</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;234 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb1.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Independent Cultural Spaces in Turkey and Germany</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;1k plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb2.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Watching the Watchers: Building a Sousveillance State</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 2 months ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;877 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb3.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 4 months ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;56 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb4.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Religion in Europa</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;12k plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb5.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Visual Diagnostics for Design Thinking Teams</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;449 plays</span> 
+						
+								</td>
+								
+						
+						</tr>						
+						<tr class="profile-row">
+						
+							<td class="thumb">
+								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb6.jpg" alt=""></a>
+							</td>
+							<td>
+								<a href="talk3.html"><span class="profile-title left">Platform Cooperativism vs. the Sharing Economy</span></a>
+							</td>
+							
+								
+								<td>
+												<span class="date "> 3 days ago </span>
+						
+								</td>
+								<td>
+									<span class="date "> &nbsp;3k plays</span> 
+						
+								</td>
+								
+						
+						</tr>				</table>
+				
+		</div> -->
+		<div class="tabs-panel" id="series">
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<img src="img/thumbs/series1.jpg" alt="">
+					<h5 class="profile-title">Wir reden über uns: Perspektiven der Gegenwart</h5>
+					<div class="clearfix">
+					<p class="speaker left">1 Talks</p>
+					<p class="speaker right">234 Plays</p>
+			
+					</div>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					<img src="img/thumbs/series2.png" alt="">
+					<h5 class="profile-title">Neue Musik Diskurs</h5>
+					<div class="clearfix">
+					<p class="speaker left">3 Talks</p>
+					<p class="speaker right">1244 Plays</p>
+			
+					</div>
+				</div>
+			</div>		</div>
+		<div class="tabs-panel" id="pinned">
+			
+			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">nGbK</p>
+					<img src="img/thumbs-cropped/thumb0.jpg" alt="">
+					<h5 class="profile-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">nGbK</p>
+					<img src="img/thumbs-cropped/thumb1.jpg" alt="">
+					<h5 class="profile-title">Independent Cultural Spaces in Turkey and Germany</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 2 months ago by</p>
+					<p class="profile-publisher">re:publica15</p>
+					<img src="img/thumbs-cropped/thumb2.jpg" alt="">
+					<h5 class="profile-title">Watching the Watchers: Building a Sousveillance State</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 4 months ago by</p>
+					<p class="profile-publisher">AMAZE Berlin</p>
+					<img src="img/thumbs-cropped/thumb3.jpg" alt="">
+					<h5 class="profile-title">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">Publixsphere Channel</p>
+					<img src="img/thumbs-cropped/thumb4.jpg" alt="">
+					<h5 class="profile-title">Religion in Europa</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">HPI School of Design Thinking</p>
+					<img src="img/thumbs-cropped/thumb5.jpg" alt="">
+					<h5 class="profile-title">Visual Diagnostics for Design Thinking Teams</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">Rosa Luxemburg Stiftung</p>
+					<img src="img/thumbs-cropped/thumb6.jpg" alt="">
+					<h5 class="profile-title">Platform Cooperativism vs. the Sharing Economy</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">Courage Foundation</p>
+					<img src="img/thumbs-cropped/thumb7.jpg" alt="">
+					<h5 class="profile-title">The digital surveillance state - Quo vadis, Democracy?</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">Henrik Lafrenz</p>
+					<img src="img/thumbs-cropped/thumb8.jpg" alt="">
+					<h5 class="profile-title">Der Deichgraf Peter Lafrenz</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 1 day ago by</p>
+					<p class="profile-publisher">Respawn</p>
+					<img src="img/thumbs-cropped/thumb9.jpg" alt="">
+					<h5 class="profile-title">Playful Oasis - An indie collective story</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 2 days ago by</p>
+					<p class="profile-publisher">Respawn</p>
+					<img src="img/thumbs-cropped/thumb9.jpg" alt="">
+					<h5 class="profile-title">Fast Forward Africa - A Digital Movement moderated by Thorsten S. Wiedemann, Founder and Artistic Director of A MAZE.</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>			
+			<div class="profile-tile">
+				<div class="profile-tile-inside">
+					
+					<p class="profile-date">Published 3 days ago by</p>
+					<p class="profile-publisher">Henrik Lafrenz</p>
+					<img src="img/thumbs-cropped/thumb9.jpg" alt="">
+					<h5 class="profile-title">Der Deichgraf Peter Lafrenz</h5>
+					<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>		</div>
+	</div>
+</div>
+    </div>
+    
+    <footer>
+    	<div class="row">
+    		<h3 class="text-center"><img src="img/logo/logo_with_type-beige.svg" width="120"></h3>
+    		<div class="footer-section">
+    			
+    			<div class="row">
+    				<div class="footer-section">
+    					<ul>
+    						<li><a href="#">About</a></li>
+    						<li><a href="#">Pricing</a></li>
+    						<li><a href="#">Support &amp; FAQ</a></li>
+    						<li><a href="#">Blog</a></li>
+    						<li><a href="#">Terms &amp; Privacy</a></li>
+    					</ul>
+    				</div>
+    				<div class="footer-section">
+    					<ul>
+    						<li><a href="#">Press</a></li>
+    						<li><a href="#">Service Status</a></li>
+    						<li><a href="#">Contact</a></li>
+    						<li><a href="#">Careers</a></li>
+    						<li><a href="#">Imprint</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div id="footer-social-links">
+    				<a href="#"><span class="icon-uniE949"> </span></a>
+    				<a href="#"><span class="icon-uniE94A"> </span></a>
+    				<!-- <li role="presentation"><a href="#"><span class="social icon-uniE94A"> </span></a></li> -->
+    			</div>
+    		</div>
+    		<div class="footer-section">
+    			<p class="lead">
+    				<strong>What Is Voice Republic</strong><br>
+    				Voice Republic is the platform for the spoken word. We make it easy to <a href="publish.html">live-stream</a> your event, presentation, discussion or lecture&mdash;and keep it in our archive for those who missed it live. <br><Br>
+    				
+    				Users from anywhere in the world can tune in and add their thoughts to the "comments" feed&mdash;in realtime. Right after the live broadcast, the recording is automatically saved in our archive. Anyone can access it on our platform at any time, or subscribe to it as a podcast.<br><br>
+    				
+    				If you already have recorded content from past events, you can easily upload files to Voice Republic. Starting at <a href="pricing.html">12 euros per talk</a>, you can boost your reach and position your content from the fields of politics, science, arts and culture, technology and business in a guaranteed high-quality environment. <br><br>Listening is free for all users.
+    			</p>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<p class="text-center copyright">&copy;2015 Voice Republic Media AG</p>
+    	</div>
+    </footer>    <!-- build:js js/vendor/libraries.min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/vendor/foundation.min.js -->
+    <script src="bower_components/foundation-sites/js/foundation.core.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.nest.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.equalizer.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.interchange.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.orbit.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.reveal.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.slider.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.tabs.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.dropdownMenu.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.responsiveMenu.js"></script>
+    <script src="bower_components/foundation-sites/js/foundation.responsiveToggle.js"></script>
+        <script src="bower_components/foundation-sites/js/foundation.sticky.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js js/app.min.js -->
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>

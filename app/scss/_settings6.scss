@@ -465,15 +465,15 @@ $reveal-background: $primary-color;
 // // --------
 // $tab-margin: 0;
 $tab-background: rgba(white, 0);
-// $tab-background-active: $light-gray;
+$tab-background-active: $warning-color;
 // $tab-border: $light-gray;
-// $tab-item-color: foreground($tab-background, $primary-color);
-// $tab-item-background-hover: $white;
+$tab-item-color: foreground(white, $almost-black);
+$tab-item-background-hover: rgba($almost-black, .2);
 // $tab-item-padding: 1.25rem 1.5rem;
 // $tab-expand-max: 6;
 $tab-content-background: rgba(white, 0);
 // $tab-content-border: $light-gray;
-// $tab-content-color: foreground($tab-background, $primary-color);
+$tab-content-color: foreground($tab-background, $white);
 // $tab-content-padding: 1rem;
 // // 32. Thumbnail
 // // -------------

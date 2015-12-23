@@ -3,12 +3,11 @@ title: User Patrick Frank
 layout: app/templates/layouts/profile-layout.hbs
 ---
 {{!-- Left Column --}}
-<div class="row" id="left-column">
+<div id="left-column">
 	<div id="user-block">
-	<div class="publisher-badge"></div>
+		<!-- <div class="publisher-badge"></div> -->
 		<div class="profile-avatar">
-					<!-- <div id="user-badge"><span class="icon-uniE913"></span></div> -->
-
+			<!-- <div id="user-badge"><span class="icon-uniE913"></span></div> -->
 			<img src="img/avatars/patrick.png" width="160" height="160" class="img-circle" alt="">
 		</div>
 		<h3 id="user-name">Patrick Frank</h3>
@@ -24,12 +23,12 @@ layout: app/templates/layouts/profile-layout.hbs
 		<ul class="social-links">
 			<li class="list-item"><span class="icon-uniE949"></span></li>
 			<li class="list-item"><span class="icon-uniE94A"></span></li>
-			<li class="list-item"><span class="icon-uniE941"></span></li>
-		</ul> 
+			<li class="list-item"><span class="icon-uniE90A"></span></li>
+		</ul>
 	</div>
 	<hr>
 	<div class="row" id="user-about">
-		<p class="column-header">About</p>
+		<p class="column-header">About Patrick Frank</p>
 		<p>
 			Kompositionsstudien an der ZHdK in Zürich. Studium der Kulturwissenschaften, Philosophie und Soziologie an der Universität Luzern.<br><br>
 			In Franks kompositorische Arbeiten verbinden sich Kulturtheorie mit Neuer Musik. Frank inszeniert 'Diskurskonzerte' unter Beteiligung von Philosophen, Politiker oder Aktivisten. Dabei greift er sowohl auf bestehende Theorien bekannter und weniger bekannter PhilosophenInnen und SoziologenInnen zurück, als auch auf eigene Thesen.<br><br>
@@ -47,103 +46,77 @@ layout: app/templates/layouts/profile-layout.hbs
 </div>
 {{!-- Right Columns --}}
 <div id="right-column">
-	<div class="tab-holder funky">
-		<ul class="tabs left" data-tabs id="main-tabs">
+	<!-- <div class="tab-holder"> -->
+		<ul class="tabs" data-tabs id="example-tabs">
+  <li class="tabs-title is-active"><a href="#archived" aria-selected="true">7 Archived Talks</a></li>
+  <li class="tabs-title"><a href="#upcoming">3 Upcoming Talks</a></li>
+  <li class="tabs-title"><a href="#series">2 Series</a></li>
+  <li class="tabs-title"><a href="#pinned">12 Pinned Talks</a></li>
+</ul>
+		<!-- 	<ul class="tabs viewtoggle right" data-tab>
+				<li class="tab-label">VIEW:</li>
+				<li class="tabs-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
+				<li class="tabs-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
+		</ul> -->
+	<!-- </div> -->
+	<div class="tabs-content" data-tabs-content="example-tabs">
+		<div class="tabs-panel" id="upcoming">
 			
-			<li class="tabs-title" id="tab-upcoming">
-				<a href="#upcoming">
-
-					<span class="icon icon-uniE875"> </span> <span class="label-text">Upcoming</span>
-					<!-- <span class="tab-badge">3</span> -->
-					</a>
-				</li>
-				<li class="tabs-title is-active" id="tab-archived">
-					<a href="#archived">
-						<span class="icon icon-uniE6A0"> </span> <span class="label-text">7 Archived</span>
-					</a>
-					<!-- <span class="tab-badge">7</span> -->
-				</li>
-				
-				<li class="tabs-title" id="tab-series">
-					<a href="#series">
-
-						<span class="icon icon-uniE6B2"> </span> <span class="label-text">Series</span>
-
-						<!-- <span class="tab-badge">3</span> -->
-					</a>
-				</li>
-				
-				<li class="tabs-title" id="tab-pinned">
-					<a href="#pinned">
-
-						<span class="icon icon-uniE8E6"> </span> <span class="label-text">12 Pinned</span>
-
-						<!-- <span class="tab-badge">12</span> -->
-						</a>
-					</li>
-				</ul>
-			<!-- 	<ul class="tabs viewtoggle right" data-tab>
-					<li class="tab-label">VIEW:</li>
-					<li class="tabs-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
-					<li class="tabs-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
-				</ul> -->
-			</div>
-			<div class="tabs-content" data-tabs-content="main-tabs">
-				<div class="tabs-panel" id="upcoming">
-					
-					{{#withFirst thumbs 3}}
-					{{>upcoming-tile}}
-					{{/withFirst}}
-				</div>
-	<!-- 			<div class="tabs-panel" id="upcoming-list">
-					<table id="archive-table">
-						<thead>
-							<tr>
-								<th class="thumb">Image</th>
-								<th>Title</th>
-								
-								<th>Date</th>
-							</tr>
-						</thead>
-						{{#withFirst thumbs 7}}
-						{{>profile-row}}
-						{{/withFirst}}
-					</table>
-					
-				</div> -->
-				
-				<div class="tabs-panel is-active" id="archived">
-					
-					{{#withFirst thumbs 7}}
-					{{>archive-tile}}
-					{{/withFirst}}
-				</div>
-<!-- 				<div class="tabs-panel" id="list">
-					<table id="archive-table">
-						<thead>
-							<tr>
-								<th class="thumb">Image</th>
-								<th>Title</th>
-								<th>Date</th>
-								<th>Plays</th>
-							</tr>
-						</thead>
-						{{#withFirst thumbs 7}}
-						{{>profile-row}}
-						{{/withFirst}}
-					</table>
-					
-				</div> -->
-				<div class="tabs-panel" id="series">
-					{{#each series}}
-					{{>series}}
-					{{/each}}
-				</div>
-				<div class="tabs-panel" id="pinned">
-					
-					{{#each thumbs}}
-					{{>pinned-tile}}
-					{{/each}}
-				</div>
-			</div>
+			{{#withFirst thumbs 3}}
+			{{>upcoming-tile}}
+			{{/withFirst}}
 		</div>
+		<!-- 			<div class="tabs-panel" id="upcoming-list">
+				<table id="archive-table">
+						<thead>
+								<tr>
+										<th class="thumb">Image</th>
+										<th>Title</th>
+										
+										<th>Date</th>
+								</tr>
+						</thead>
+						{{#withFirst thumbs 7}}
+						{{>profile-row}}
+						{{/withFirst}}
+				</table>
+				
+		</div> -->
+		
+		<div class="tabs-panel is-active" id="archived">
+			
+			{{#withFirst thumbs 7}}
+
+			{{>archive-tile}}
+
+			{{/withFirst}}
+		</div>
+		<!-- 				<div class="tabs-panel" id="list">
+				<table id="archive-table">
+						<thead>
+								<tr>
+										<th class="thumb">Image</th>
+										<th>Title</th>
+										<th>Date</th>
+										<th>Plays</th>
+								</tr>
+						</thead>
+						{{#withFirst thumbs 7}}
+						{{>profile-row}}
+						{{/withFirst}}
+				</table>
+				
+		</div> -->
+		<div class="tabs-panel" id="series">
+			{{#each series}}
+			{{>series}}
+			{{/each}}
+		</div>
+		<div class="tabs-panel" id="pinned">
+			
+			{{#each thumbs}}
+			{{>pinned-tile}}
+			{{/each}}
+		</div>
+	</div>
+</div>

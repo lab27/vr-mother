@@ -233,11 +233,22 @@ window.setInterval(function() {
 }, 100);
 
 
-//change to light view on avatar click (profile page)
-// $('.profile-avatar').on('click',function(){
-//     $('html').toggleClass('profile-light');
+// change to light view on avatar click (profile page)
+$('.profile-avatar').on('click',function(){
+    $('html').toggleClass('profile-light');
 
-// });
+});
+
+//$('#coming-up:in-viewport h2').css( 'color', 'red' );
+var $div = $('#coming-up');
+$(window).scroll(function() {
+    console.log('scrolling..');
+    if ( $div.is( ':in-viewport' ) ) {
+  $('.down-arrow').addClass('hide');
+}
+    // $( '#coming-up:in-viewport( 100 )' ).css( 'background-color', 'red' );
+
+});
 
 // $('#user-name').on('click',function(){
 //     $('.tab-holder').toggleClass('funky');

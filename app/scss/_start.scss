@@ -172,11 +172,12 @@ $h1-bottom-margin: 12px;
         .down-arrow {
             width:28px;
             height: 28px;
-            position: absolute;
-            bottom:10%;
-            left:50%;
-            margin-left:-12px;
+            // position: absolute;
+            // bottom:10%;
+            // left:50%;
+            // margin-left:-12px;
             background-color: white;
+            margin-top: 96px;
         }
         h1 {
             color: white;
@@ -328,85 +329,7 @@ $h1-bottom-margin: 12px;
 
     }
 
-    .talk-card {
-        @extend .medium-6;
 
-        @extend .large-4;
-
-        @extend .columns;
-
-        padding: 6px;
-
-        .talk-card-inside {
-            background: $ghost;
-            padding: 24px;
-
-            @extend .text-left;
-
-            transition: all .2s ease;
-
-            .publisher {
-                margin: 0;
-                line-height: 18px;
-                font-weight: 500;
-                margin-bottom: 12px;
-            }
-
-            .date {
-                margin: 0;
-                font-size: rem-calc(11);
-                line-height: rem-calc(12);
-                text-transform: uppercase;
-                letter-spacing: rem-calc(1);
-                color: rgba($talk-dark, 0.5);
-                margin-bottom: 6px;
-            }
-
-            img {
-                margin-bottom: 12px;
-            }
-
-            $font-size: 21px;
-            $line-height: 1.2;
-            $lines-to-show: 2;
-
-            .title {
-                // font-family: $body-font-family;
-                // font-weight: bold;
-                // color: rgba(white, .8);
-                display: block;
-
-                /* Fallback for non-webkit */
-                display: -webkit-box;
-
-                // max-width: 400px;
-                height: $font-size * $line-height * $lines-to-show;
-
-                /* Fallback for non-webkit */
-                margin: 0 auto;
-                font-size: $font-size;
-                line-height: $line-height;
-                -webkit-line-clamp: $lines-to-show;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                margin-bottom: 24px;
-            }
-
-            .speaker {
-                @extend .date;
-
-                a {
-                    text-transform: none;
-                }
-            }
-
-            &:hover {
-                background: white;
-                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-            }
-        }
-    }
     .landing-feature {
     padding-top:72px;
     padding-bottom: 72px;
@@ -487,3 +410,83 @@ margin-bottom:36px;
 }
 
 }
+    .talk-card {
+        @extend .medium-6;
+
+        @extend .large-4;
+
+        @extend .columns;
+
+        padding: 6px;
+        background:none;
+
+        .talk-card-inside {
+            background: $ghost;
+            padding: 24px;
+
+            @extend .text-left;
+
+            transition: all .2s ease;
+
+            .publisher {
+                margin: 0;
+                line-height: 18px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+
+            .date {
+                margin: 0;
+                font-size: rem-calc(11);
+                line-height: rem-calc(12);
+                text-transform: uppercase;
+                letter-spacing: rem-calc(1);
+                color: rgba($talk-dark, 0.5);
+                margin-bottom: 6px;
+            }
+
+            img {
+                margin-bottom: 12px;
+            }
+
+            $font-size: 21px;
+            $line-height: 1.2;
+            $lines-to-show: 2;
+
+            .title {
+                // font-family: $body-font-family;
+                // font-weight: bold;
+                // color: rgba(white, .8);
+                display: block;
+
+                /* Fallback for non-webkit */
+                display: -webkit-box;
+
+                // max-width: 400px;
+                height: $font-size * $line-height * $lines-to-show;
+
+                /* Fallback for non-webkit */
+                margin: 0 auto;
+                font-size: $font-size;
+                line-height: $line-height;
+                -webkit-line-clamp: $lines-to-show;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 24px;
+            }
+
+            .speaker {
+                @extend .date;
+
+                a {
+                    text-transform: none;
+                }
+            }
+
+            &:hover {
+                background: white;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
