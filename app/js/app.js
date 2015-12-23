@@ -242,7 +242,7 @@ $('.profile-avatar').on('click',function(){
 //$('#coming-up:in-viewport h2').css( 'color', 'red' );
 var $div = $('#coming-up');
 $(window).scroll(function() {
-    console.log('scrolling..');
+    // console.log('scrolling..');
     if ( $div.is( ':in-viewport' ) ) {
   $('.down-arrow').addClass('hide');
 }
