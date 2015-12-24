@@ -39,28 +39,6 @@
             .profile-avatar {
                 margin-bottom: 6px;
                 display: block;
-                // &:after {
-                //     content: "";
-                //     background: $primary-color;
-                //     height: 30px;
-                //     width: 30px;
-                //     max-width: 30px;
-                //     max-height: 30px;
-                //     display: inline-block;
-                //     border-radius: 15px;
-                //     position: absolute;
-                //     background-image: svg-background($megaphone) !important;
-                //     background-repeat: no-repeat !important;
-                //     background-position: center center !important;
-                //     background-size: .6875rem !important;
-                //     -webkit-appearance: none !important;
-                //     -moz-appearance: none !important;
-                //     // padding-right: 2.5rem !important;
-                //     // height: $input-height                         !important;
-                //     line-height: 1 !important;
-                //     margin-top: 110px;
-                //     margin-left: -25px;
-                // }
             }
             #user-badge {
                 position: absolute;
@@ -174,8 +152,6 @@
             }
         }
         #right-column {
-            // @extend .row;
-            // @extend .collapse;
             .tabs {
                 max-height: 60px;
                 border:none;
@@ -189,7 +165,7 @@
                     border-right: none;
                    
                 }
-                .tabs-title:last-child a{
+                .tabs-title:last-child a {
                         border-right: 2px solid $warning-color;
                     }
                 .is-active a {
@@ -247,65 +223,7 @@
                     }
                 }
             }
-            // .tab-title {
-            //     a {
-            //         border: 1px solid transparent;
-            //         // background: rgba($info-color,.2);
-            //         height: 44px;
-            //         //border-radius: 22px;
-            //         margin-right: 6px;
-            //         color: rgba(white, .3);
-            //         font-weight: bold;
-            //         padding: rem-calc(11) rem-calc(24);
-            //         padding-right: 7px;
-            //         span.label-text {
-            //             @extend .left;
-            //             // @extend .show-for-small-only;
-            //             // @extend .show-for-xlarge-up;
-            //             // @extend .hide-for-medium-only;
-            //         }
-            //         .icon {
-            //             @extend .left;
-            //             font-size: rem-calc(16);
-            //             vertical-align: text-bottom;
-            //             margin-right: 12px;
-            //         }
-            //         .tab-badge {
-            //             @extend .right;
-            //             font-size: rem-calc(10);
-            //             background: rgba($almost-black, .4);
-            //             padding: 6px;
-            //             text-align: center;
-            //             min-width: 30px;
-            //             height: 30px;
-            //             border-radius: 15px;
-            //             display: inline-block;
-            //             vertical-align: -webkit-baseline-middle;
-            //             margin-top: -5px;
-            //             margin-left: 12px;
-            //         }
-            //         &:hover {
-            //             // outline:none;
-            //             background: rgba($almost-black, .3);
-            //             // border:2px solid rgba(white,.3);
-            //             color: rgba(white, .4);
-            //         }
-            //         // &:focus {
-            //         // 	outline:none;
-            //         // 	border:1px solid rgba(white,.3);
-            //         // 	box-shadow: 0 0 5px rgba(white, .3);
-            //         // }
-            //     }
-            //     &.active a {
-            //         // background:
-            //         // border:2px solid $primary-color;
-            //         outline: none;
-            //         color: white;
-            //         &:hover {
-            //             background: $primary-color;
-            //         }
-            //     }
-            // }
+          
             @include breakpoint(large) {
                 margin-left: 396px;
                 padding: 24px 48px 48px 24px;
@@ -385,19 +303,7 @@
                 img {
                     margin-bottom: 12px;
                 }
-                // h2 {
-                //   display: block; /* Fallback for non-webkit */
-                //   display: -webkit-box;
-                //   max-width: 400px;
-                //   height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
-                //   margin: 0 auto;
-                //   font-size: $font-size;
-                //   line-height: $line-height;
-                //   -webkit-line-clamp: $lines-to-show;
-                //   -webkit-box-orient: vertical;
-                //   overflow: hidden;
-                //   text-overflow: ellipsis;
-                // }
+       
                 $font-size: 16px;
                 $line-height: 1.2;
                 $lines-to-show: 2;
@@ -508,7 +414,7 @@
                         background: white;
                     }
                 }
-    		ul.viewtoggle  {
+    		ul.viewtoggle {
     				@extend .hide;
     			li.tab-label {
     				color: $almost-black;

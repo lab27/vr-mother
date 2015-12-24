@@ -5,9 +5,7 @@ layout: app/templates/layouts/profile-layout.hbs
 {{!-- Left Column --}}
 <div id="left-column">
 	<div id="user-block">
-		<!-- <div class="publisher-badge"></div> -->
 		<div class="profile-avatar">
-			<!-- <div id="user-badge"><span class="icon-uniE913"></span></div> -->
 			<img src="img/avatars/patrick.png" width="160" height="160" class="img-circle" alt="">
 		</div>
 		<h3 id="user-name">Patrick Frank</h3>
@@ -17,7 +15,6 @@ layout: app/templates/layouts/profile-layout.hbs
 			<li class="user-meta-item">5 Talks</li>
 			<li class="user-meta-item">3 Series</li>
 			<li class="user-meta-item">14 Pins</li>
-			{{!-- <li class="user-meta-item">2k Plays</li> --}}
 		</ul>
 		<p class="plays-count">2k Plays</p>
 		<ul class="social-links">
@@ -46,19 +43,13 @@ layout: app/templates/layouts/profile-layout.hbs
 </div>
 {{!-- Right Columns --}}
 <div id="right-column">
-	<!-- <div class="tab-holder"> -->
-		<ul class="tabs" data-tabs id="example-tabs">
-  <li class="tabs-title is-active"><a href="#archived" aria-selected="true">7 Archived Talks</a></li>
-  <li class="tabs-title"><a href="#upcoming">3 Upcoming Talks</a></li>
-  <li class="tabs-title"><a href="#series">2 Series</a></li>
-  <li class="tabs-title"><a href="#pinned">12 Pinned Talks</a></li>
-</ul>
-		<!-- 	<ul class="tabs viewtoggle right" data-tab>
-				<li class="tab-label">VIEW:</li>
-				<li class="tabs-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
-				<li class="tabs-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
-		</ul> -->
-	<!-- </div> -->
+	<ul class="tabs" data-tabs id="example-tabs">
+		<li class="tabs-title is-active"><a href="#archived" aria-selected="true">7 Archived Talks</a></li>
+		<li class="tabs-title"><a href="#upcoming">3 Upcoming Talks</a></li>
+		<li class="tabs-title"><a href="#series">2 Series</a></li>
+		<li class="tabs-title"><a href="#pinned">12 Pinned Talks</a></li>
+	</ul>
+	
 	<div class="tabs-content" data-tabs-content="example-tabs">
 		<div class="tabs-panel" id="upcoming">
 			
@@ -66,47 +57,13 @@ layout: app/templates/layouts/profile-layout.hbs
 			{{>upcoming-tile}}
 			{{/withFirst}}
 		</div>
-		<!-- 			<div class="tabs-panel" id="upcoming-list">
-				<table id="archive-table">
-						<thead>
-								<tr>
-										<th class="thumb">Image</th>
-										<th>Title</th>
-										
-										<th>Date</th>
-								</tr>
-						</thead>
-						{{#withFirst thumbs 7}}
-						{{>profile-row}}
-						{{/withFirst}}
-				</table>
-				
-		</div> -->
 		
 		<div class="tabs-panel is-active" id="archived">
 			
 			{{#withFirst thumbs 7}}
-
 			{{>archive-tile}}
-
 			{{/withFirst}}
 		</div>
-		<!-- 				<div class="tabs-panel" id="list">
-				<table id="archive-table">
-						<thead>
-								<tr>
-										<th class="thumb">Image</th>
-										<th>Title</th>
-										<th>Date</th>
-										<th>Plays</th>
-								</tr>
-						</thead>
-						{{#withFirst thumbs 7}}
-						{{>profile-row}}
-						{{/withFirst}}
-				</table>
-				
-		</div> -->
 		<div class="tabs-panel" id="series">
 			{{#each series}}
 			{{>series}}

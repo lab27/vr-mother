@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js profile-page profile-light" lang="en" >
+<html class="no-js profile-page" lang="en" >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,52 +22,52 @@
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">Menu</div>
     </div>
-    
     <div id="topbar-container" data-sticky-container >
-    <div class="top-bar" id="example-menu" data-sticky data-options="marginTop:0">
-      <div class="top-bar-left">
-        <ul id="branding" class="menu" data-dropdown-menu>
-          <li class="logo">
-            <a href="start.html">
-              <img class="" src="img/logo/logo-red.svg" width="60">
-              <span class="show-for-large-up">VOICE REPUBLIC</span>
-            </a>
-          </li>
-        </ul>
+      <div class="top-bar" id="example-menu" data-sticky data-options="marginTop:0">
+        <div class="top-bar-left">
+          <ul id="branding" class="menu" data-dropdown-menu>
+            <li class="logo">
+              <a href="start.html">
+                <img class="" src="img/logo/logo-red.svg" width="60">
+                <span class="show-for-large-up">VOICE REPUBLIC</span>
+              </a>
+            </li>
+            <li>
+              <div class="input-group">
+                <input class="input-group-field" type="text" placeholder="Search Voice Republic">
+                <div class="input-group-button">
+                  <a href="#"><button type="submit" class="search-btn"><span class="icon-uniE7E9"></span></button></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="">
+              <a href="publish.html">Publish</a>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Listen</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="listen.html">Listen</a></li>
+                <li><a href="explore.html">Explore</a></li>
+              </ul>
+            </li>
+            <li class="sign-in">
+              <a href="#"><button type="button" class="button hollow  info">sign in</button></a>
+            </li>
+            <li>
+              <a href="join.html"><button type="button" class="button ">Join for free</button></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="">
-            <a href="publish.html">Publish</a>
-    <!--         <ul class="submenu menu vertical" data-submenu>
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul> -->
-          </li>
-          <li class="has-submenu">
-            <a href="#">Listen</a>
-            <ul class="submenu menu vertical" data-submenu>
-            <li><a href="listen.html">Listen</a></li>
-              <li><a href="explore.html">Explore</a></li>
-            </ul>
-          </li>
-          <li class="sign-in">
-            <a href="#"><button type="button" class="button hollow  info">sign in</button></a>
-          </li>
-          <li>
-            <a href="join.html"><button type="button" class="button ">Join for free</button></a>
-          </li>
-        </ul>
-      </div>
-    </div>
     </div>    <div id="main" role="main">
       
 <div id="left-column">
 	<div id="user-block">
-		<!-- <div class="publisher-badge"></div> -->
 		<div class="profile-avatar">
-			<!-- <div id="user-badge"><span class="icon-uniE913"></span></div> -->
 			<img src="img/avatars/patrick.png" width="160" height="160" class="img-circle" alt="">
 		</div>
 		<h3 id="user-name">Patrick Frank</h3>
@@ -104,19 +104,13 @@
 	</div>
 </div>
 <div id="right-column">
-	<!-- <div class="tab-holder"> -->
-		<ul class="tabs" data-tabs id="example-tabs">
-  <li class="tabs-title is-active"><a href="#archived" aria-selected="true">7 Archived Talks</a></li>
-  <li class="tabs-title"><a href="#upcoming">3 Upcoming Talks</a></li>
-  <li class="tabs-title"><a href="#series">2 Series</a></li>
-  <li class="tabs-title"><a href="#pinned">12 Pinned Talks</a></li>
-</ul>
-		<!-- 	<ul class="tabs viewtoggle right" data-tab>
-				<li class="tab-label">VIEW:</li>
-				<li class="tabs-title"><a id="list-view" href="#list"><span class="icon-uniE789"></span></a></li>
-				<li class="tabs-title active"><a id="grid-view" href="#archived"><span class="icon-uniE78A"></span></a></li>
-		</ul> -->
-	<!-- </div> -->
+	<ul class="tabs" data-tabs id="example-tabs">
+		<li class="tabs-title is-active"><a href="#archived" aria-selected="true">7 Archived Talks</a></li>
+		<li class="tabs-title"><a href="#upcoming">3 Upcoming Talks</a></li>
+		<li class="tabs-title"><a href="#series">2 Series</a></li>
+		<li class="tabs-title"><a href="#pinned">12 Pinned Talks</a></li>
+	</ul>
+	
 	<div class="tabs-content" data-tabs-content="example-tabs">
 		<div class="tabs-panel" id="upcoming">
 			
@@ -145,170 +139,9 @@
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
 			</div>		</div>
-		<!-- 			<div class="tabs-panel" id="upcoming-list">
-				<table id="archive-table">
-						<thead>
-								<tr>
-										<th class="thumb">Image</th>
-										<th>Title</th>
-										
-										<th>Date</th>
-								</tr>
-						</thead>
-						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb0.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Sozialer Wandel und Politische Kunst in der Südosttürkei</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;234 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb1.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Independent Cultural Spaces in Turkey and Germany</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;1k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb2.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Watching the Watchers: Building a Sousveillance State</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 2 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;877 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb3.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 4 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;56 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb4.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Religion in Europa</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;12k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb5.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Visual Diagnostics for Design Thinking Teams</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;449 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb6.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Platform Cooperativism vs. the Sharing Economy</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;3k plays</span> 
-						
-								</td>
-								
-						
-						</tr>				</table>
-				
-		</div> -->
 		
 		<div class="tabs-panel is-active" id="archived">
 			
-
 			
 			<div class="profile-tile">
 				<div class="profile-tile-inside">
@@ -317,9 +150,7 @@
 					<h5 class="profile-title">Sozialer Wandel und Politische Kunst in der Südosttürkei</h5>
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
-			</div>
-
-			
+			</div>			
 			<div class="profile-tile">
 				<div class="profile-tile-inside">
 					<p class="profile-date">Published 3 days ago</p>
@@ -327,9 +158,7 @@
 					<h5 class="profile-title">Independent Cultural Spaces in Turkey and Germany</h5>
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
-			</div>
-
-			
+			</div>			
 			<div class="profile-tile">
 				<div class="profile-tile-inside">
 					<p class="profile-date">Published 2 months ago</p>
@@ -337,9 +166,7 @@
 					<h5 class="profile-title">Watching the Watchers: Building a Sousveillance State</h5>
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
-			</div>
-
-			
+			</div>			
 			<div class="profile-tile">
 				<div class="profile-tile-inside">
 					<p class="profile-date">Published 4 months ago</p>
@@ -347,9 +174,7 @@
 					<h5 class="profile-title">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</h5>
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
-			</div>
-
-			
+			</div>			
 			<div class="profile-tile">
 				<div class="profile-tile-inside">
 					<p class="profile-date">Published 3 days ago</p>
@@ -357,9 +182,7 @@
 					<h5 class="profile-title">Religion in Europa</h5>
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
-			</div>
-
-			
+			</div>			
 			<div class="profile-tile">
 				<div class="profile-tile-inside">
 					<p class="profile-date">Published 3 days ago</p>
@@ -367,9 +190,7 @@
 					<h5 class="profile-title">Visual Diagnostics for Design Thinking Teams</h5>
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
-			</div>
-
-			
+			</div>			
 			<div class="profile-tile">
 				<div class="profile-tile-inside">
 					<p class="profile-date">Published 3 days ago</p>
@@ -377,168 +198,7 @@
 					<h5 class="profile-title">Platform Cooperativism vs. the Sharing Economy</h5>
 					<p class="speaker">SprecherIn: <a href="#">Patrick Frank</a></p>
 				</div>
-			</div>
-		</div>
-		<!-- 				<div class="tabs-panel" id="list">
-				<table id="archive-table">
-						<thead>
-								<tr>
-										<th class="thumb">Image</th>
-										<th>Title</th>
-										<th>Date</th>
-										<th>Plays</th>
-								</tr>
-						</thead>
-						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb0.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Sozialer Wandel und Politische Kunst in der Südosttürkei</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;234 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb1.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Independent Cultural Spaces in Turkey and Germany</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;1k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb2.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Watching the Watchers: Building a Sousveillance State</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 2 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;877 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb3.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">A MAZE Masterclass: Rami Ismail in conversation with Leigh Alexander</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 4 months ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;56 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb4.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Religion in Europa</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;12k plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb5.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Visual Diagnostics for Design Thinking Teams</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;449 plays</span> 
-						
-								</td>
-								
-						
-						</tr>						
-						<tr class="profile-row">
-						
-							<td class="thumb">
-								<a href="talk3.html"><img class="left" src="img/thumbs-cropped/thumb6.jpg" alt=""></a>
-							</td>
-							<td>
-								<a href="talk3.html"><span class="profile-title left">Platform Cooperativism vs. the Sharing Economy</span></a>
-							</td>
-							
-								
-								<td>
-												<span class="date "> 3 days ago </span>
-						
-								</td>
-								<td>
-									<span class="date "> &nbsp;3k plays</span> 
-						
-								</td>
-								
-						
-						</tr>				</table>
-				
-		</div> -->
+			</div>		</div>
 		<div class="tabs-panel" id="series">
 			
 			<div class="profile-tile">
@@ -735,38 +395,40 @@
     	<div class="row">
     		<p class="text-center copyright">&copy;2015 Voice Republic Media AG</p>
     	</div>
-    </footer>    <!-- build:js js/vendor/libraries.min.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-    <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:js js/vendor/foundation.min.js -->
-    <script src="bower_components/foundation-sites/js/foundation.core.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.util.nest.js"></script>
-        <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.interchange.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.orbit.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.reveal.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.slider.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.tabs.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.dropdownMenu.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.responsiveMenu.js"></script>
-    <script src="bower_components/foundation-sites/js/foundation.responsiveToggle.js"></script>
-     <script src="bower_components/foundation-sites/js/foundation.sticky.js"></script>
-    <!-- endbuild -->
-    
-    <!-- build:js js/app.min.js -->
-    <script src="js/app.js"></script>
-    <!-- endbuild -->
+    </footer> 
+ 
+ <!-- build:js js/vendor/libraries.min.js -->
+     <!-- bower:js -->
+     <script src="bower_components/jquery/dist/jquery.js"></script>
+     <script src="bower_components/fastclick/lib/fastclick.js"></script>
+     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+     <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+     <script src="bower_components/isInViewport/lib/isInViewport.min.js"></script>
+     <!-- endbower -->
+     <!-- endbuild -->
+     <!-- build:js js/vendor/foundation.min.js -->
+     <script src="bower_components/foundation-sites/js/foundation.core.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.util.box.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.util.nest.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.interchange.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.orbit.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.reveal.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.slider.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.tooltip.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.tabs.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.dropdown.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.dropdownMenu.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.responsiveMenu.js"></script>
+     <script src="bower_components/foundation-sites/js/foundation.responsiveToggle.js"></script>
+         <script src="bower_components/foundation-sites/js/foundation.sticky.js"></script>
+     <!-- endbuild -->
+     
+     <!-- build:js js/app.min.js -->
+     <script src="js/app.js"></script>
+     <!-- endbuild -->
   </body>
 </html>

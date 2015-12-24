@@ -1,0 +1,119 @@
+.sticky {
+    z-index: 3000;
+}
+
+.sticky-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.top-bar {
+    @extend .sticky;
+
+    background-image: -moz-linear-gradient(90deg, rgb(56, 58, 61) 0%, rgb(53, 54, 59) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(56, 58, 61) 0%, rgb(53, 54, 59) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(56, 58, 61) 0%, rgb(53, 54, 59) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
+    background: rgba($talk-dark, 0);
+    transition: background .3s ease;
+    margin: 0;
+    right: 0;
+    left: 0;
+
+    &.with-background {
+        background: $talk-dark;
+    }
+
+    .logo a span {
+        font-family: $header-font-family;
+        color: $alert-color;
+        letter-spacing: rem-calc(6);
+        font-size: rem-calc(14);
+        line-height: rem-calc(36);
+        font-weight: normal;
+        margin: 0 60px 0 12px;
+    }
+
+    .button.hollow {
+        border-width: 2px !important;
+
+        &.small {
+            border-width: 2px !important;
+        }
+
+        &.info {
+            border-color: $topbar-link-color;
+            color: $topbar-link-color;
+
+            &:hover, &:active {
+                color: white;
+                border-color: white;
+            }
+        }
+    }
+
+    .search-btn {
+        font-size: rem-calc(20);
+        font-weight: 800;
+        padding-left: 6px;
+        padding-top: 4px;
+        background: none;
+        color: $info-color;
+    }
+
+    .sign-in {
+        a {
+            padding-right: 0 !important;
+        }
+    }
+
+    ul {
+        background: none;
+
+        li {
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: rem-calc(1);
+            font-size: rem-calc(14);
+
+            // letter-spacing: rem-calc(1);
+            a:hover, a:active {
+                color: white;
+            }
+
+            .submenu {
+                a {
+                    color: $almost-black;
+                }
+            }
+        }
+
+        li.search-btn a {
+            padding-left: 0 !important;
+        }
+    }
+
+    .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
+        border-color: rgba($info-color, 0.5) transparent transparent;
+    }
+
+    .input-group {
+        margin: 0;
+    }
+
+    input {
+        font-weight: 300;
+        width: auto;
+        margin-right: 0;
+        background: rgba($almost-black, 0.5);
+        color: white;
+
+        &:focus {
+            background: $primary-color;
+        }
+    }
+}

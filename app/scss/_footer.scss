@@ -1,0 +1,98 @@
+//FOOTER
+footer {
+    padding: 84px 12px;
+    padding-bottom: 12px;
+    background: $talk-dark;
+    color: $ghost;
+
+    h3 {
+        margin-bottom: 60px;
+    }
+
+    .footer-section {
+        @extend .medium-6;
+
+        @extend .columns;
+    }
+
+    .lead {
+        font-size: rem-calc(14);
+        color: $info-color;
+    }
+
+    img {
+        margin-bottom: 36px;
+    }
+
+    a {
+        color: $smoke;
+        font-weight: 700;
+        font-size: rem-calc(14);
+    }
+
+    a:hover {
+        color: $white;
+        text-decoration: underline;
+    }
+
+    ul {
+        @extend .menu;
+
+        @extend .vertical;
+
+        @extend .align-left;
+
+        @extend .clearfix;
+
+        @extend .small-text-center;
+
+        margin: 0 auto;
+
+        li a {
+            padding: 0;
+            padding-bottom: 12px;
+        }
+    }
+
+    #footer-social-links {
+        @extend .clearfix;
+
+        @extend .row;
+
+        font-size: rem-calc(36);
+        margin-bottom: 84px;
+        padding-top: 48px;
+        padding-left: 24px;
+
+        a {
+            font-size: rem-calc(24);
+            margin-right: 24px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright {
+        color: $info-color;
+        font-size: rem-calc(14);
+        padding-top: 96px;
+    }
+
+    .footer-link-section {
+        @extend .medium-4;
+
+        @extend .medium-offset-2;
+
+        @extend .left;
+
+        @extend columns;
+
+        &:last-child {
+            @extend .right;
+
+            @extend .medium-offset-0;
+        }
+    }
+}
