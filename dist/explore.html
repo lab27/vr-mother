@@ -14,45 +14,47 @@
       <button class="menu-icon" type="button" data-toggle></button>
       <div class="title-bar-title">Menu</div>
     </div>
-    
     <div id="topbar-container" data-sticky-container >
-    <div class="top-bar" id="example-menu" data-sticky data-options="marginTop:0">
-      <div class="top-bar-left">
-        <ul id="branding" class="menu" data-dropdown-menu>
-          <li class="logo">
-            <a href="start.html">
-              <img class="" src="img/logo/logo-red.svg" width="60">
-              <span class="show-for-large-up">VOICE REPUBLIC</span>
-            </a>
-          </li>
-        </ul>
+      <div class="top-bar" id="example-menu" data-sticky data-options="marginTop:0">
+        <div class="top-bar-left">
+          <ul id="branding" class="menu" data-dropdown-menu>
+            <li class="logo">
+              <a href="start.html">
+                <img class="" src="img/logo/logo-red.svg" width="60">
+                <span class="show-for-large-up">VOICE REPUBLIC</span>
+              </a>
+            </li>
+            <li>
+              <div class="input-group">
+                <input class="input-group-field" type="text" placeholder="Search Voice Republic">
+                <div class="input-group-button">
+                  <a href="#"><button type="submit" class="search-btn"><span class="icon-uniE7E9"></span></button></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="">
+              <a href="publish.html">Publish</a>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Listen</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="listen.html">Listen</a></li>
+                <li><a href="explore.html">Explore</a></li>
+              </ul>
+            </li>
+            <li class="sign-in">
+              <a href="#"><button type="button" class="button hollow  info">sign in</button></a>
+            </li>
+            <li>
+              <a href="join.html"><button type="button" class="button ">Join for free</button></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="">
-            <a href="publish.html">Publish</a>
-    <!--         <ul class="submenu menu vertical" data-submenu>
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul> -->
-          </li>
-          <li class="has-submenu">
-            <a href="#">Listen</a>
-            <ul class="submenu menu vertical" data-submenu>
-            <li><a href="listen.html">Listen</a></li>
-              <li><a href="explore.html">Explore</a></li>
-            </ul>
-          </li>
-          <li class="sign-in">
-            <a href="#"><button type="button" class="button hollow  info">sign in</button></a>
-          </li>
-          <li>
-            <a href="join.html"><button type="button" class="button ">Join for free</button></a>
-          </li>
-        </ul>
-      </div>
-    </div>
     </div>    <div id="main" role="main">
       
 <!-- <div class="radio-btns">
@@ -238,9 +240,9 @@
 		</div>	</div>
 </div>
     </div>
-    <script src="js/vendor/libraries.min.js"></script>
+
+<script src="js/vendor/libraries.min.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     
     <script src="js/app.min.js"></script>
-  </body>
 </html>
