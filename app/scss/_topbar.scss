@@ -18,7 +18,7 @@
     background-image: -moz-linear-gradient(90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
     background-image: -ms-linear-gradient(90deg, rgb(64, 66, 69) 0%, rgb(53, 53, 59) 100%);
-    background: rgba($talk-dark, 0);
+    background: rgba($talk-dark, 1);
     transition: background .3s ease;
     margin: 0;
     right: 0;
@@ -57,12 +57,13 @@
     }
 
     .search-btn {
-        font-size: rem-calc(20);
+        font-size: rem-calc(18);
         font-weight: 800;
-        padding-left: 6px;
-        padding-top: 4px;
-        background: none;
+        padding: 6px 6px 6px 12px;
+        background: rgba($almost-black, 0.5);
         color: $info-color;
+        height: 40px;
+        border-radius: 0 4px 4px 0;
     }
 
     .sign-in {
@@ -99,10 +100,16 @@
 
     .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
         border-color: rgba($info-color, 0.5) transparent transparent;
+        right: 10px;
     }
 
     .input-group {
         margin: 0;
+    }
+
+    .input-group-field {
+        border-radius: 4px 0 0 4px;
+        padding-left: 12px;
     }
 
     input {

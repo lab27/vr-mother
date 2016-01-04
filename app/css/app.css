@@ -458,7 +458,7 @@ button {
     .row.large-uncollapse > .column, .profile-page body .large-uncollapse#main > .column, .explore-page body .large-uncollapse#main > .column, footer .large-uncollapse#footer-social-links > .column, .row.large-uncollapse > .columns, .profile-page body .large-uncollapse#main > .columns, .explore-page body .large-uncollapse#main > .columns, footer .large-uncollapse#footer-social-links > .columns, .row.large-uncollapse > .meta-left, .profile-page body .large-uncollapse#main > .meta-left, .explore-page body .large-uncollapse#main > .meta-left, footer .large-uncollapse#footer-social-links > .meta-left, .row.large-uncollapse > .meta-right, .profile-page body .large-uncollapse#main > .meta-right, .explore-page body .large-uncollapse#main > .meta-right, footer .large-uncollapse#footer-social-links > .meta-right, .row.large-uncollapse > #talk-description, .profile-page body .large-uncollapse#main > #talk-description, .explore-page body .large-uncollapse#main > #talk-description, footer .large-uncollapse#footer-social-links > #talk-description, .row.large-uncollapse > #talk-actions, .profile-page body .large-uncollapse#main > #talk-actions, .explore-page body .large-uncollapse#main > #talk-actions, footer .large-uncollapse#footer-social-links > #talk-actions, #comments .row.large-uncollapse > .comment-meta, .profile-page body #comments .large-uncollapse#main > .comment-meta, #comments .profile-page body .large-uncollapse#main > .comment-meta, .explore-page body #comments .large-uncollapse#main > .comment-meta, #comments .explore-page body .large-uncollapse#main > .comment-meta, footer #comments .large-uncollapse#footer-social-links > .comment-meta, #comments footer .large-uncollapse#footer-social-links > .comment-meta, #comments .row.large-uncollapse > .comment-content, .profile-page body #comments .large-uncollapse#main > .comment-content, #comments .profile-page body .large-uncollapse#main > .comment-content, .explore-page body #comments .large-uncollapse#main > .comment-content, #comments .explore-page body .large-uncollapse#main > .comment-content, footer #comments .large-uncollapse#footer-social-links > .comment-content, #comments footer .large-uncollapse#footer-social-links > .comment-content, .profile-page body #left-column .row.large-uncollapse > #user-about, .profile-page body #left-column .large-uncollapse#main > #user-about, footer .profile-page body #left-column .large-uncollapse#footer-social-links > #user-about, .profile-page body #left-column footer .large-uncollapse#footer-social-links > #user-about, .profile-page body #right-column .row.large-uncollapse > .profile-tile, .profile-page body #right-column .large-uncollapse#main > .profile-tile, footer .profile-page body #right-column .large-uncollapse#footer-social-links > .profile-tile, .profile-page body #right-column footer .large-uncollapse#footer-social-links > .profile-tile, .landing-page #main .row.large-uncollapse > .container, .profile-page body .landing-page #main .row .large-uncollapse#main > .container, .explore-page body .landing-page #main .row .large-uncollapse#main > .container, footer .landing-page #main .row .large-uncollapse#footer-social-links > .container, .landing-page #main .profile-page body #main .row.large-uncollapse > .container, .landing-page #main .profile-page body .large-uncollapse#main > .container, footer .landing-page #main .profile-page body #main .large-uncollapse#footer-social-links > .container, .profile-page body .landing-page #main #main .row.large-uncollapse > .container, .profile-page body .landing-page #main .large-uncollapse#main > .container, footer .profile-page body .landing-page #main #main .large-uncollapse#footer-social-links > .container, .landing-page #main .explore-page body #main .row.large-uncollapse > .container, .landing-page #main .explore-page body .large-uncollapse#main > .container, footer .landing-page #main .explore-page body #main .large-uncollapse#footer-social-links > .container, .explore-page body .landing-page #main #main .row.large-uncollapse > .container, .explore-page body .landing-page #main .large-uncollapse#main > .container, footer .explore-page body .landing-page #main #main .large-uncollapse#footer-social-links > .container, .landing-page #main footer #footer-social-links .row.large-uncollapse > .container, .profile-page body .landing-page #main footer #footer-social-links .large-uncollapse#main > .container, .explore-page body .landing-page #main footer #footer-social-links .large-uncollapse#main > .container, .landing-page #main footer .large-uncollapse#footer-social-links > .container, footer .landing-page #main #footer-social-links .row.large-uncollapse > .container, .profile-page body footer .landing-page #main #footer-social-links .large-uncollapse#main > .container, .explore-page body footer .landing-page #main #footer-social-links .large-uncollapse#main > .container, footer .landing-page #main .large-uncollapse#footer-social-links > .container, .landing-page #main #claim .container .row.large-uncollapse > .claim-cta-half, .profile-page body .landing-page #main #claim .container .large-uncollapse#main > .claim-cta-half, .landing-page #main #claim .container .profile-page body .large-uncollapse#main > .claim-cta-half, .explore-page body .landing-page #main #claim .container .large-uncollapse#main > .claim-cta-half, .landing-page #main #claim .container .explore-page body .large-uncollapse#main > .claim-cta-half, footer .landing-page #main #claim .container .large-uncollapse#footer-social-links > .claim-cta-half, .landing-page #main #claim .container footer .large-uncollapse#footer-social-links > .claim-cta-half, .landing-page #main #categories #talk-collection .row.large-uncollapse > .category, .profile-page body .landing-page #main #categories #talk-collection .large-uncollapse#main > .category, .landing-page #main #categories #talk-collection .profile-page body .large-uncollapse#main > .category, .explore-page body .landing-page #main #categories #talk-collection .large-uncollapse#main > .category, .landing-page #main #categories #talk-collection .explore-page body .large-uncollapse#main > .category, footer .landing-page #main #categories #talk-collection .large-uncollapse#footer-social-links > .category, .landing-page #main #categories #talk-collection footer .large-uncollapse#footer-social-links > .category, .landing-page #main #publishers #publisher-collection .row.large-uncollapse > .publisher, .profile-page body .landing-page #main #publishers #publisher-collection .large-uncollapse#main > .publisher, .landing-page #main #publishers #publisher-collection .profile-page body .large-uncollapse#main > .publisher, .explore-page body .landing-page #main #publishers #publisher-collection .large-uncollapse#main > .publisher, .landing-page #main #publishers #publisher-collection .explore-page body .large-uncollapse#main > .publisher, footer .landing-page #main #publishers #publisher-collection .large-uncollapse#footer-social-links > .publisher, .landing-page #main #publishers #publisher-collection footer .large-uncollapse#footer-social-links > .publisher, .landing-page #main .landing-feature .row.large-uncollapse > .landing-half, .profile-page body .landing-page #main .landing-feature .large-uncollapse#main > .landing-half, .landing-page #main .landing-feature .profile-page body .large-uncollapse#main > .landing-half, .explore-page body .landing-page #main .landing-feature .large-uncollapse#main > .landing-half, .landing-page #main .landing-feature .explore-page body .large-uncollapse#main > .landing-half, footer .landing-page #main .landing-feature .large-uncollapse#footer-social-links > .landing-half, .landing-page #main .landing-feature footer .large-uncollapse#footer-social-links > .landing-half, .row.large-uncollapse > .talk-card, .profile-page body .large-uncollapse#main > .talk-card, .explore-page body .large-uncollapse#main > .talk-card, footer .large-uncollapse#footer-social-links > .talk-card, .explore-page body #main .row.large-uncollapse > .explore-page-third, .explore-page body .large-uncollapse#main > .explore-page-third, footer .explore-page body #main .large-uncollapse#footer-social-links > .explore-page-third, .explore-page body #main footer .large-uncollapse#footer-social-links > .explore-page-third, .explore-page body #main .row.large-uncollapse > #results, .explore-page body .large-uncollapse#main > #results, footer .explore-page body #main .large-uncollapse#footer-social-links > #results, .explore-page body #main footer .large-uncollapse#footer-social-links > #results, footer .row.large-uncollapse > .footer-section, .profile-page body footer .large-uncollapse#main > .footer-section, footer .profile-page body .large-uncollapse#main > .footer-section, .explore-page body footer .large-uncollapse#main > .footer-section, footer .explore-page body .large-uncollapse#main > .footer-section, footer .large-uncollapse#footer-social-links > .footer-section {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-  .row.expanded, .profile-page body .expanded#main, .profile-page body .join-page #join-box button#main, .join-page #join-box .profile-page body button#main, .join-page #join-box button.row, .join-page #join-box .explore-page body button#main, .explore-page body .join-page #join-box button#main, .join-page #join-box footer button#footer-social-links, footer .join-page #join-box button#footer-social-links, .explore-page body .expanded#main, footer .expanded#footer-social-links {
+  .row.expanded, .profile-page body .expanded#main, .profile-page body .landing-page #main #listen-now #main.category-buttons, .landing-page #main #listen-now .profile-page body #main.category-buttons, .profile-page body .join-page #join-box button#main, .join-page #join-box .profile-page body button#main, .landing-page #main #listen-now .row.category-buttons, .landing-page #main #listen-now .explore-page body .category-buttons#main, .explore-page body .landing-page #main #listen-now .category-buttons#main, .landing-page #main #listen-now footer .category-buttons#footer-social-links, footer .landing-page #main #listen-now .category-buttons#footer-social-links, .join-page #join-box button.row, .join-page #join-box .explore-page body button#main, .explore-page body .join-page #join-box button#main, .join-page #join-box footer button#footer-social-links, footer .join-page #join-box button#footer-social-links, .explore-page body .expanded#main, .explore-page body #main .filters #main.category-buttons, .explore-page body #main .filters .row.category-buttons, .explore-page body #main .filters footer .category-buttons#footer-social-links, footer .explore-page body #main .filters .category-buttons#footer-social-links, footer .expanded#footer-social-links {
     max-width: none; }
 
 .column, .columns, .meta-left, .meta-right, #talk-description, #talk-actions, #comments .comment-meta, #comments .comment-content, .profile-page body #left-column #user-about, .profile-page body #right-column .profile-tile, .landing-page #main .row .container, .landing-page #main .profile-page body #main .container, .profile-page body .landing-page #main #main .container, .landing-page #main .explore-page body #main .container, .explore-page body .landing-page #main #main .container, .landing-page #main footer #footer-social-links .container, footer .landing-page #main #footer-social-links .container, .landing-page #main #claim .container .claim-cta-half, .landing-page #main #categories #talk-collection .category, .landing-page #main #publishers #publisher-collection .publisher, .landing-page #main .landing-feature .landing-half, .talk-card, .explore-page body #main .explore-page-third, .explore-page body #main #results, footer .footer-section {
@@ -762,7 +762,7 @@ button {
     left: -25%; }
   .medium-offset-2, .profile-page body #left-column #user-about, footer .footer-link-section {
     margin-left: 16.6666666667%; }
-  .medium-4, .explore-page body #main .explore-page-third, footer .footer-link-section {
+  .medium-4, .talk-card, .explore-page body #main .explore-page-third, footer .footer-link-section {
     width: 33.3333333333%; }
   .medium-push-4 {
     position: relative;
@@ -782,7 +782,7 @@ button {
     left: -41.6666666667%; }
   .medium-offset-4 {
     margin-left: 33.3333333333%; }
-  .medium-6, .profile-page body #right-column .profile-tile, .landing-page #main #claim .container .claim-cta-half, .landing-page #main #categories #talk-collection .category, .landing-page #main #publishers #publisher-collection .publisher, .landing-page #main .landing-feature .landing-half, .talk-card, footer .footer-section {
+  .medium-6, .profile-page body #right-column .profile-tile, .landing-page #main #claim .container .claim-cta-half, .landing-page #main #categories #talk-collection .category, .landing-page #main #publishers #publisher-collection .publisher, .landing-page #main .landing-feature .landing-half, footer .footer-section {
     width: 50%; }
   .medium-push-6 {
     position: relative;
@@ -950,7 +950,7 @@ button {
     left: -16.6666666667%; }
   .large-offset-1 {
     margin-left: 8.3333333333%; }
-  .large-3 {
+  .large-3, .talk-card {
     width: 25%; }
   .large-push-3 {
     position: relative;
@@ -960,7 +960,7 @@ button {
     left: -25%; }
   .large-offset-2, .landing-page #main .row .container, .landing-page #main .profile-page body #main .container, .profile-page body .landing-page #main #main .container, .landing-page #main .explore-page body #main .container, .explore-page body .landing-page #main #main .container, .landing-page #main footer #footer-social-links .container, footer .landing-page #main #footer-social-links .container {
     margin-left: 16.6666666667%; }
-  .large-4, .meta-right, .profile-page body #right-column .profile-tile, .talk-card {
+  .large-4, .meta-right, .profile-page body #right-column .profile-tile {
     width: 33.3333333333%; }
   .large-push-4 {
     position: relative;
@@ -1444,7 +1444,7 @@ kbd {
     font-size: 0.75rem; }
   .button.large, .landing-page #main button, .join-page #join-box button.button {
     font-size: 1.25rem; }
-  .button.expanded, .landing-page #main button.expanded, .landing-page #main .join-page #join-box button, .join-page #join-box .landing-page #main button, .join-page #join-box button.button {
+  .button.expanded, .landing-page #main button.expanded, .landing-page #main #listen-now button.category-buttons, .landing-page #main .join-page #join-box button, .join-page #join-box .landing-page #main button, .landing-page .explore-page body #main .filters button.category-buttons, .explore-page body .landing-page #main .filters button.category-buttons, .landing-page #main #listen-now .button.category-buttons, .join-page #join-box button.button, .explore-page body #main .filters .button.category-buttons {
     display: block;
     width: 100%;
     margin-left: 0;
@@ -1735,11 +1735,11 @@ select {
   visibility: hidden; }
 
 @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-  .hide-for-small-only, #talk-actions .button-group li a .action-name, .profile-page body #right-column .viewtoggle {
+  .hide-for-small-only, #talk-actions .button-group li a .action-name, #talk-actions .landing-page #main #listen-now .category-buttons li a .action-name, .landing-page #main #listen-now #talk-actions .category-buttons li a .action-name, #talk-actions .explore-page body #main .filters .category-buttons li a .action-name, .explore-page body #main .filters #talk-actions .category-buttons li a .action-name, .profile-page body #right-column .viewtoggle {
     display: none !important; } }
 
 @media screen and (max-width: 0em), screen and (min-width: 40em) {
-  .show-for-small-only, #talk-actions .button-group li a .comment-count, .profile-page body #left-column .user-meta-group {
+  .show-for-small-only, #talk-actions .button-group li a .comment-count, #talk-actions .landing-page #main #listen-now .category-buttons li a .comment-count, .landing-page #main #listen-now #talk-actions .category-buttons li a .comment-count, #talk-actions .explore-page body #main .filters .category-buttons li a .comment-count, .explore-page body #main .filters #talk-actions .category-buttons li a .comment-count, .profile-page body #left-column .user-meta-group {
     display: none !important; } }
 
 @media screen and (min-width: 40em) {
@@ -1813,10 +1813,10 @@ select {
     .show-for-portrait {
       display: block !important; } }
 
-.float-left {
+.float-left, .talk-card .talk-card-inside .meta .running-time, .talk-card .talk-card-inside .icon {
   float: left !important; }
 
-.float-right {
+.float-right, .talk-card .talk-card-inside .meta .play-count, .explore-page body #main #results .results-count .small-filter {
   float: right !important; }
 
 .float-center {
@@ -1824,11 +1824,11 @@ select {
   margin-left: auto;
   margin-right: auto; }
 
-.clearfix::before, .profile-page body #main::before, .profile-page body #right-column .tab-holder::before, .landing-page #main #talk-collection::before, .landing-page #main #claim header::before, .explore-page body #main .filters::before, footer ul::before, footer #footer-social-links::before, .clearfix::after, .profile-page body #main::after, .profile-page body #right-column .tab-holder::after, .landing-page #main #talk-collection::after, .landing-page #main #claim header::after, .explore-page body #main .filters::after, footer ul::after, footer #footer-social-links::after {
+.clearfix::before, .profile-page body #main::before, .profile-page body #right-column .tab-holder::before, .landing-page #main #talk-collection::before, .landing-page #main #talk-teasers::before, .landing-page #main #claim header::before, .talk-card .talk-card-inside .meta::before, .explore-page body #main .filters::before, footer ul::before, footer #footer-social-links::before, .clearfix::after, .profile-page body #main::after, .profile-page body #right-column .tab-holder::after, .landing-page #main #talk-collection::after, .landing-page #main #talk-teasers::after, .landing-page #main #claim header::after, .talk-card .talk-card-inside .meta::after, .explore-page body #main .filters::after, footer ul::after, footer #footer-social-links::after {
   content: ' ';
   display: table; }
 
-.clearfix::after, .profile-page body #main::after, .profile-page body #right-column .tab-holder::after, .landing-page #main #talk-collection::after, .landing-page #main #claim header::after, .explore-page body #main .filters::after, footer ul::after, footer #footer-social-links::after {
+.clearfix::after, .profile-page body #main::after, .profile-page body #right-column .tab-holder::after, .landing-page #main #talk-collection::after, .landing-page #main #talk-teasers::after, .landing-page #main #claim header::after, .talk-card .talk-card-inside .meta::after, .explore-page body #main .filters::after, footer ul::after, footer #footer-social-links::after {
   clear: both; }
 
 .accordion {
@@ -1933,108 +1933,108 @@ select {
   .breadcrumbs .disabled {
     color: #cacaca; }
 
-.button-group {
+.button-group, .landing-page #main #listen-now .category-buttons, .explore-page body #main .filters .category-buttons {
   margin-bottom: 1rem;
   font-size: 0.9rem; }
-  .button-group::before, .button-group::after {
+  .button-group::before, .landing-page #main #listen-now .category-buttons::before, .explore-page body #main .filters .category-buttons::before, .button-group::after, .landing-page #main #listen-now .category-buttons::after, .explore-page body #main .filters .category-buttons::after {
     content: ' ';
     display: table; }
-  .button-group::after {
+  .button-group::after, .landing-page #main #listen-now .category-buttons::after, .explore-page body #main .filters .category-buttons::after {
     clear: both; }
-  .button-group .button, .button-group .landing-page #main button, .landing-page #main .button-group button {
+  .button-group .button, .landing-page #main #listen-now .category-buttons .button, .explore-page body #main .filters .category-buttons .button, .button-group .landing-page #main button, .landing-page #main .button-group button, .landing-page #main #listen-now .category-buttons button, .explore-page body .landing-page #main .filters .category-buttons button, .landing-page .explore-page body #main .filters .category-buttons button {
     float: left;
     margin: 0;
     font-size: inherit; }
-    .button-group .button:not(:last-child), .button-group .landing-page #main button:not(:last-child), .landing-page #main .button-group button:not(:last-child) {
+    .button-group .button:not(:last-child), .landing-page #main #listen-now .category-buttons .button:not(:last-child), .explore-page body #main .filters .category-buttons .button:not(:last-child), .button-group .landing-page #main button:not(:last-child), .landing-page #main .button-group button:not(:last-child), .landing-page #main #listen-now .category-buttons button:not(:last-child), .explore-page body .landing-page #main .filters .category-buttons button:not(:last-child), .landing-page .explore-page body #main .filters .category-buttons button:not(:last-child) {
       border-right: 1px solid #FFFFFF; }
-  .button-group.tiny {
+  .button-group.tiny, .landing-page #main #listen-now .tiny.category-buttons, .explore-page body #main .filters .tiny.category-buttons {
     font-size: 0.6rem; }
-  .button-group.small {
+  .button-group.small, .landing-page #main #listen-now .small.category-buttons, .explore-page body #main .filters .small.category-buttons {
     font-size: 0.75rem; }
-  .button-group.large, .landing-page #main button.button-group, .join-page #join-box button.button-group {
+  .button-group.large, .landing-page #main button.button-group, .landing-page #main #listen-now button.category-buttons, .landing-page .explore-page body #main .filters button.category-buttons, .explore-page body .landing-page #main .filters button.category-buttons, .landing-page #main #listen-now .large.category-buttons, .join-page #join-box button.button-group, .join-page #join-box .explore-page body #main .filters button.category-buttons, .explore-page body #main .filters .join-page #join-box button.category-buttons, .explore-page body #main .filters .large.category-buttons {
     font-size: 1.25rem; }
-  .button-group.expanded .button:nth-last-child(2):first-child, .join-page #join-box button.button-group .button:nth-last-child(2):first-child, .button-group.expanded .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .button-group.expanded button:nth-last-child(2):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child,
-  .button-group.expanded .button:nth-last-child(2):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(2):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(2):first-child, .landing-page #main #listen-now .category-buttons .button:nth-last-child(2):first-child, .join-page #join-box button.button-group .button:nth-last-child(2):first-child, .explore-page body #main .filters .category-buttons .button:nth-last-child(2):first-child, .button-group.expanded .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .button-group.expanded button:nth-last-child(2):first-child, .landing-page #main #listen-now .category-buttons button:nth-last-child(2):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(2):first-child, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(2):first-child,
+  .button-group.expanded .button:nth-last-child(2):first-child ~ .button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(2):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(2):first-child ~ .button, .explore-page body #main .filters .category-buttons .button:nth-last-child(2):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(2):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(2):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(2):first-child ~ .button, .landing-page #main #listen-now .category-buttons button:nth-last-child(2):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child ~ .button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(2):first-child ~ .button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(2):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(2):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(2):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(2):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(2):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(2):first-child ~ button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(2):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(2):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(2):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons .button:nth-last-child(2):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons .button:nth-last-child(2):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(2):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(2):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child ~ button {
+  .button-group.expanded button:nth-last-child(2):first-child ~ button, .landing-page #main #listen-now .category-buttons button:nth-last-child(2):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(2):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(2):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(2):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(2):first-child ~ button {
     width: 50%; }
-  .button-group.expanded .button:nth-last-child(3):first-child, .join-page #join-box button.button-group .button:nth-last-child(3):first-child, .button-group.expanded .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .button-group.expanded button:nth-last-child(3):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child,
-  .button-group.expanded .button:nth-last-child(3):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(3):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(3):first-child, .landing-page #main #listen-now .category-buttons .button:nth-last-child(3):first-child, .join-page #join-box button.button-group .button:nth-last-child(3):first-child, .explore-page body #main .filters .category-buttons .button:nth-last-child(3):first-child, .button-group.expanded .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .button-group.expanded button:nth-last-child(3):first-child, .landing-page #main #listen-now .category-buttons button:nth-last-child(3):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(3):first-child, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(3):first-child,
+  .button-group.expanded .button:nth-last-child(3):first-child ~ .button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(3):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(3):first-child ~ .button, .explore-page body #main .filters .category-buttons .button:nth-last-child(3):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(3):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(3):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(3):first-child ~ .button, .landing-page #main #listen-now .category-buttons button:nth-last-child(3):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child ~ .button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(3):first-child ~ .button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(3):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(3):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(3):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(3):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(3):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(3):first-child ~ button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(3):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(3):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(3):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons .button:nth-last-child(3):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons .button:nth-last-child(3):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(3):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(3):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child ~ button {
+  .button-group.expanded button:nth-last-child(3):first-child ~ button, .landing-page #main #listen-now .category-buttons button:nth-last-child(3):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(3):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(3):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(3):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(3):first-child ~ button {
     width: 33.3333333333%; }
-  .button-group.expanded .button:nth-last-child(4):first-child, .join-page #join-box button.button-group .button:nth-last-child(4):first-child, .button-group.expanded .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .button-group.expanded button:nth-last-child(4):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child,
-  .button-group.expanded .button:nth-last-child(4):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(4):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(4):first-child, .landing-page #main #listen-now .category-buttons .button:nth-last-child(4):first-child, .join-page #join-box button.button-group .button:nth-last-child(4):first-child, .explore-page body #main .filters .category-buttons .button:nth-last-child(4):first-child, .button-group.expanded .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .button-group.expanded button:nth-last-child(4):first-child, .landing-page #main #listen-now .category-buttons button:nth-last-child(4):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(4):first-child, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(4):first-child,
+  .button-group.expanded .button:nth-last-child(4):first-child ~ .button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(4):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(4):first-child ~ .button, .explore-page body #main .filters .category-buttons .button:nth-last-child(4):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(4):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(4):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(4):first-child ~ .button, .landing-page #main #listen-now .category-buttons button:nth-last-child(4):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child ~ .button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(4):first-child ~ .button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(4):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(4):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(4):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(4):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(4):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(4):first-child ~ button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(4):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(4):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(4):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons .button:nth-last-child(4):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons .button:nth-last-child(4):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(4):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(4):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child ~ button {
+  .button-group.expanded button:nth-last-child(4):first-child ~ button, .landing-page #main #listen-now .category-buttons button:nth-last-child(4):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(4):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(4):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(4):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(4):first-child ~ button {
     width: 25%; }
-  .button-group.expanded .button:nth-last-child(5):first-child, .join-page #join-box button.button-group .button:nth-last-child(5):first-child, .button-group.expanded .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .button-group.expanded button:nth-last-child(5):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child,
-  .button-group.expanded .button:nth-last-child(5):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(5):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(5):first-child, .landing-page #main #listen-now .category-buttons .button:nth-last-child(5):first-child, .join-page #join-box button.button-group .button:nth-last-child(5):first-child, .explore-page body #main .filters .category-buttons .button:nth-last-child(5):first-child, .button-group.expanded .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .button-group.expanded button:nth-last-child(5):first-child, .landing-page #main #listen-now .category-buttons button:nth-last-child(5):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(5):first-child, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(5):first-child,
+  .button-group.expanded .button:nth-last-child(5):first-child ~ .button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(5):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(5):first-child ~ .button, .explore-page body #main .filters .category-buttons .button:nth-last-child(5):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(5):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(5):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(5):first-child ~ .button, .landing-page #main #listen-now .category-buttons button:nth-last-child(5):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child ~ .button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(5):first-child ~ .button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(5):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(5):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(5):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(5):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(5):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(5):first-child ~ button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(5):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(5):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(5):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons .button:nth-last-child(5):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons .button:nth-last-child(5):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(5):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(5):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child ~ button {
+  .button-group.expanded button:nth-last-child(5):first-child ~ button, .landing-page #main #listen-now .category-buttons button:nth-last-child(5):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(5):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(5):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(5):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(5):first-child ~ button {
     width: 20%; }
-  .button-group.expanded .button:nth-last-child(6):first-child, .join-page #join-box button.button-group .button:nth-last-child(6):first-child, .button-group.expanded .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .button-group.expanded button:nth-last-child(6):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child,
-  .button-group.expanded .button:nth-last-child(6):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(6):first-child ~ .button,
+  .button-group.expanded .button:nth-last-child(6):first-child, .landing-page #main #listen-now .category-buttons .button:nth-last-child(6):first-child, .join-page #join-box button.button-group .button:nth-last-child(6):first-child, .explore-page body #main .filters .category-buttons .button:nth-last-child(6):first-child, .button-group.expanded .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .button-group.expanded button:nth-last-child(6):first-child, .landing-page #main #listen-now .category-buttons button:nth-last-child(6):first-child, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(6):first-child, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(6):first-child,
+  .button-group.expanded .button:nth-last-child(6):first-child ~ .button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(6):first-child ~ .button, .join-page #join-box button.button-group .button:nth-last-child(6):first-child ~ .button, .explore-page body #main .filters .category-buttons .button:nth-last-child(6):first-child ~ .button,
   .button-group.expanded .landing-page #main button:nth-last-child(6):first-child ~ .button, .landing-page #main
-  .button-group.expanded button:nth-last-child(6):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child ~ .button,
+  .button-group.expanded button:nth-last-child(6):first-child ~ .button, .landing-page #main #listen-now .category-buttons button:nth-last-child(6):first-child ~ .button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child ~ .button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child ~ .button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(6):first-child ~ .button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(6):first-child ~ .button,
   .button-group.expanded .landing-page #main .button:nth-last-child(6):first-child ~ button, .landing-page #main
-  .button-group.expanded .button:nth-last-child(6):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(6):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(6):first-child ~ button,
+  .button-group.expanded .button:nth-last-child(6):first-child ~ button, .landing-page #main #listen-now .category-buttons .button:nth-last-child(6):first-child ~ button, .join-page #join-box button.button-group .landing-page #main .button:nth-last-child(6):first-child ~ button, .landing-page #main .join-page #join-box button.button-group .button:nth-last-child(6):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons .button:nth-last-child(6):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons .button:nth-last-child(6):first-child ~ button,
   .button-group.expanded .landing-page #main button:nth-last-child(6):first-child ~ button, .landing-page #main
-  .button-group.expanded button:nth-last-child(6):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child ~ button {
+  .button-group.expanded button:nth-last-child(6):first-child ~ button, .landing-page #main #listen-now .category-buttons button:nth-last-child(6):first-child ~ button, .join-page #join-box button.button-group .landing-page #main button:nth-last-child(6):first-child ~ button, .landing-page #main .join-page #join-box button.button-group button:nth-last-child(6):first-child ~ button, .explore-page body .landing-page #main .filters .category-buttons button:nth-last-child(6):first-child ~ button, .landing-page .explore-page body #main .filters .category-buttons button:nth-last-child(6):first-child ~ button {
     width: 16.6666666667%; }
-  .button-group.primary .button, .button-group.primary .landing-page #main button, .landing-page #main .button-group.primary button {
+  .button-group.primary .button, .landing-page #main #listen-now .primary.category-buttons .button, .explore-page body #main .filters .primary.category-buttons .button, .button-group.primary .landing-page #main button, .landing-page #main .button-group.primary button, .landing-page #main #listen-now .primary.category-buttons button, .explore-page body .landing-page #main .filters .primary.category-buttons button, .landing-page .explore-page body #main .filters .primary.category-buttons button {
     background: #2c46b0;
     color: #fff; }
-    .button-group.primary .button:hover, .button-group.primary .landing-page #main button:hover, .landing-page #main .button-group.primary button:hover, .button-group.primary .button:focus, .button-group.primary .landing-page #main button:focus, .landing-page #main .button-group.primary button:focus {
+    .button-group.primary .button:hover, .landing-page #main #listen-now .primary.category-buttons .button:hover, .explore-page body #main .filters .primary.category-buttons .button:hover, .button-group.primary .landing-page #main button:hover, .landing-page #main .button-group.primary button:hover, .landing-page #main #listen-now .primary.category-buttons button:hover, .explore-page body .landing-page #main .filters .primary.category-buttons button:hover, .landing-page .explore-page body #main .filters .primary.category-buttons button:hover, .button-group.primary .button:focus, .landing-page #main #listen-now .primary.category-buttons .button:focus, .explore-page body #main .filters .primary.category-buttons .button:focus, .button-group.primary .landing-page #main button:focus, .landing-page #main .button-group.primary button:focus, .landing-page #main #listen-now .primary.category-buttons button:focus, .explore-page body .landing-page #main .filters .primary.category-buttons button:focus, .landing-page .explore-page body #main .filters .primary.category-buttons button:focus {
       background: #23388d;
       color: #fff; }
-  .button-group.secondary .button, .reveal-modal button.button-group .button, .landing-page #main button.button-group .button, .button-group.secondary .landing-page #main button, .landing-page #main .button-group.secondary button, .reveal-modal button.button-group .landing-page #main button, .landing-page #main button.button-group button {
+  .button-group.secondary .button, .reveal-modal button.button-group .button, .reveal-modal .explore-page body #main .filters button.category-buttons .button, .explore-page body #main .filters .reveal-modal button.category-buttons .button, .landing-page #main button.button-group .button, .landing-page #main #listen-now button.category-buttons .button, .landing-page .explore-page body #main .filters button.category-buttons .button, .explore-page body .landing-page #main .filters button.category-buttons .button, .landing-page #main #listen-now .secondary.category-buttons .button, .explore-page body #main .filters .secondary.category-buttons .button, .button-group.secondary .landing-page #main button, .landing-page #main .button-group.secondary button, .reveal-modal button.button-group .landing-page #main button, .landing-page #main button.button-group button, .landing-page #main #listen-now button.category-buttons button, .landing-page .explore-page body #main .filters button.category-buttons button, .explore-page body .landing-page #main .filters button.category-buttons button, .landing-page #main #listen-now .secondary.category-buttons button, .explore-page body .landing-page #main .filters .secondary.category-buttons button, .landing-page .explore-page body #main .filters .secondary.category-buttons button {
     background: #54c6c6;
     color: #fff; }
-    .button-group.secondary .button:hover, .reveal-modal button.button-group .button:hover, .landing-page #main button.button-group .button:hover, .button-group.secondary .landing-page #main button:hover, .landing-page #main .button-group.secondary button:hover, .reveal-modal button.button-group .landing-page #main button:hover, .landing-page #main button.button-group button:hover, .button-group.secondary .button:focus, .reveal-modal button.button-group .button:focus, .landing-page #main button.button-group .button:focus, .button-group.secondary .landing-page #main button:focus, .landing-page #main .button-group.secondary button:focus, .reveal-modal button.button-group .landing-page #main button:focus, .landing-page #main button.button-group button:focus {
+    .button-group.secondary .button:hover, .reveal-modal button.button-group .button:hover, .reveal-modal .explore-page body #main .filters button.category-buttons .button:hover, .explore-page body #main .filters .reveal-modal button.category-buttons .button:hover, .landing-page #main button.button-group .button:hover, .landing-page #main #listen-now button.category-buttons .button:hover, .landing-page .explore-page body #main .filters button.category-buttons .button:hover, .explore-page body .landing-page #main .filters button.category-buttons .button:hover, .landing-page #main #listen-now .secondary.category-buttons .button:hover, .explore-page body #main .filters .secondary.category-buttons .button:hover, .button-group.secondary .landing-page #main button:hover, .landing-page #main .button-group.secondary button:hover, .reveal-modal button.button-group .landing-page #main button:hover, .landing-page #main button.button-group button:hover, .landing-page #main #listen-now button.category-buttons button:hover, .landing-page .explore-page body #main .filters button.category-buttons button:hover, .explore-page body .landing-page #main .filters button.category-buttons button:hover, .landing-page #main #listen-now .secondary.category-buttons button:hover, .explore-page body .landing-page #main .filters .secondary.category-buttons button:hover, .landing-page .explore-page body #main .filters .secondary.category-buttons button:hover, .button-group.secondary .button:focus, .reveal-modal button.button-group .button:focus, .reveal-modal .explore-page body #main .filters button.category-buttons .button:focus, .explore-page body #main .filters .reveal-modal button.category-buttons .button:focus, .landing-page #main button.button-group .button:focus, .landing-page #main #listen-now button.category-buttons .button:focus, .landing-page .explore-page body #main .filters button.category-buttons .button:focus, .explore-page body .landing-page #main .filters button.category-buttons .button:focus, .landing-page #main #listen-now .secondary.category-buttons .button:focus, .explore-page body #main .filters .secondary.category-buttons .button:focus, .button-group.secondary .landing-page #main button:focus, .landing-page #main .button-group.secondary button:focus, .reveal-modal button.button-group .landing-page #main button:focus, .landing-page #main button.button-group button:focus, .landing-page #main #listen-now button.category-buttons button:focus, .landing-page .explore-page body #main .filters button.category-buttons button:focus, .explore-page body .landing-page #main .filters button.category-buttons button:focus, .landing-page #main #listen-now .secondary.category-buttons button:focus, .explore-page body .landing-page #main .filters .secondary.category-buttons button:focus, .landing-page .explore-page body #main .filters .secondary.category-buttons button:focus {
       background: #38a9a9;
       color: #fff; }
-  .button-group.success .button, .button-group.success .landing-page #main button, .landing-page #main .button-group.success button {
+  .button-group.success .button, .landing-page #main #listen-now .success.category-buttons .button, .explore-page body #main .filters .success.category-buttons .button, .button-group.success .landing-page #main button, .landing-page #main .button-group.success button, .landing-page #main #listen-now .success.category-buttons button, .explore-page body .landing-page #main .filters .success.category-buttons button, .landing-page .explore-page body #main .filters .success.category-buttons button {
     background: #d8f793;
     color: #000; }
-    .button-group.success .button:hover, .button-group.success .landing-page #main button:hover, .landing-page #main .button-group.success button:hover, .button-group.success .button:focus, .button-group.success .landing-page #main button:focus, .landing-page #main .button-group.success button:focus {
+    .button-group.success .button:hover, .landing-page #main #listen-now .success.category-buttons .button:hover, .explore-page body #main .filters .success.category-buttons .button:hover, .button-group.success .landing-page #main button:hover, .landing-page #main .button-group.success button:hover, .landing-page #main #listen-now .success.category-buttons button:hover, .explore-page body .landing-page #main .filters .success.category-buttons button:hover, .landing-page .explore-page body #main .filters .success.category-buttons button:hover, .button-group.success .button:focus, .landing-page #main #listen-now .success.category-buttons .button:focus, .explore-page body #main .filters .success.category-buttons .button:focus, .button-group.success .landing-page #main button:focus, .landing-page #main .button-group.success button:focus, .landing-page #main #listen-now .success.category-buttons button:focus, .explore-page body .landing-page #main .filters .success.category-buttons button:focus, .landing-page .explore-page body #main .filters .success.category-buttons button:focus {
       background: #bef24a;
       color: #000; }
-  .button-group.alert .button, .button-group.alert .landing-page #main button, .landing-page #main .button-group.alert button {
+  .button-group.alert .button, .landing-page #main #listen-now .alert.category-buttons .button, .explore-page body #main .filters .alert.category-buttons .button, .button-group.alert .landing-page #main button, .landing-page #main .button-group.alert button, .landing-page #main #listen-now .alert.category-buttons button, .explore-page body .landing-page #main .filters .alert.category-buttons button, .landing-page .explore-page body #main .filters .alert.category-buttons button {
     background: #f82847;
     color: #fff; }
-    .button-group.alert .button:hover, .button-group.alert .landing-page #main button:hover, .landing-page #main .button-group.alert button:hover, .button-group.alert .button:focus, .button-group.alert .landing-page #main button:focus, .landing-page #main .button-group.alert button:focus {
+    .button-group.alert .button:hover, .landing-page #main #listen-now .alert.category-buttons .button:hover, .explore-page body #main .filters .alert.category-buttons .button:hover, .button-group.alert .landing-page #main button:hover, .landing-page #main .button-group.alert button:hover, .landing-page #main #listen-now .alert.category-buttons button:hover, .explore-page body .landing-page #main .filters .alert.category-buttons button:hover, .landing-page .explore-page body #main .filters .alert.category-buttons button:hover, .button-group.alert .button:focus, .landing-page #main #listen-now .alert.category-buttons .button:focus, .explore-page body #main .filters .alert.category-buttons .button:focus, .button-group.alert .landing-page #main button:focus, .landing-page #main .button-group.alert button:focus, .landing-page #main #listen-now .alert.category-buttons button:focus, .explore-page body .landing-page #main .filters .alert.category-buttons button:focus, .landing-page .explore-page body #main .filters .alert.category-buttons button:focus {
       background: #df0727;
       color: #fff; }
-  .button-group.warning .button, .button-group.warning .landing-page #main button, .landing-page #main .button-group.warning button {
+  .button-group.warning .button, .landing-page #main #listen-now .warning.category-buttons .button, .explore-page body #main .filters .warning.category-buttons .button, .button-group.warning .landing-page #main button, .landing-page #main .button-group.warning button, .landing-page #main #listen-now .warning.category-buttons button, .explore-page body .landing-page #main .filters .warning.category-buttons button, .landing-page .explore-page body #main .filters .warning.category-buttons button {
     background: #ffed00;
     color: #fff; }
-    .button-group.warning .button:hover, .button-group.warning .landing-page #main button:hover, .landing-page #main .button-group.warning button:hover, .button-group.warning .button:focus, .button-group.warning .landing-page #main button:focus, .landing-page #main .button-group.warning button:focus {
+    .button-group.warning .button:hover, .landing-page #main #listen-now .warning.category-buttons .button:hover, .explore-page body #main .filters .warning.category-buttons .button:hover, .button-group.warning .landing-page #main button:hover, .landing-page #main .button-group.warning button:hover, .landing-page #main #listen-now .warning.category-buttons button:hover, .explore-page body .landing-page #main .filters .warning.category-buttons button:hover, .landing-page .explore-page body #main .filters .warning.category-buttons button:hover, .button-group.warning .button:focus, .landing-page #main #listen-now .warning.category-buttons .button:focus, .explore-page body #main .filters .warning.category-buttons .button:focus, .button-group.warning .landing-page #main button:focus, .landing-page #main .button-group.warning button:focus, .landing-page #main #listen-now .warning.category-buttons button:focus, .explore-page body .landing-page #main .filters .warning.category-buttons button:focus, .landing-page .explore-page body #main .filters .warning.category-buttons button:focus {
       background: #ccbe00;
       color: #fff; }
-  .button-group.stacked .button, .button-group.stacked .landing-page #main button, .landing-page #main .button-group.stacked button, .button-group.stacked-for-small .button, .button-group.stacked-for-small .landing-page #main button, .landing-page #main .button-group.stacked-for-small button {
+  .button-group.stacked .button, .landing-page #main #listen-now .stacked.category-buttons .button, .explore-page body #main .filters .stacked.category-buttons .button, .button-group.stacked .landing-page #main button, .landing-page #main .button-group.stacked button, .landing-page #main #listen-now .stacked.category-buttons button, .explore-page body .landing-page #main .filters .stacked.category-buttons button, .landing-page .explore-page body #main .filters .stacked.category-buttons button, .button-group.stacked-for-small .button, .landing-page #main #listen-now .stacked-for-small.category-buttons .button, .explore-page body #main .filters .stacked-for-small.category-buttons .button, .button-group.stacked-for-small .landing-page #main button, .landing-page #main .button-group.stacked-for-small button, .landing-page #main #listen-now .stacked-for-small.category-buttons button, .explore-page body .landing-page #main .filters .stacked-for-small.category-buttons button, .landing-page .explore-page body #main .filters .stacked-for-small.category-buttons button {
     width: 100%;
     border-right: 0; }
   @media screen and (min-width: 40em) {
-    .button-group.stacked-for-small .button, .button-group.stacked-for-small .landing-page #main button, .landing-page #main .button-group.stacked-for-small button {
+    .button-group.stacked-for-small .button, .landing-page #main #listen-now .stacked-for-small.category-buttons .button, .explore-page body #main .filters .stacked-for-small.category-buttons .button, .button-group.stacked-for-small .landing-page #main button, .landing-page #main .button-group.stacked-for-small button, .landing-page #main #listen-now .stacked-for-small.category-buttons button, .explore-page body .landing-page #main .filters .stacked-for-small.category-buttons button, .landing-page .explore-page body #main .filters .stacked-for-small.category-buttons button {
       width: auto; }
-      .button-group.stacked-for-small .button:not(:last-child), .button-group.stacked-for-small .landing-page #main button:not(:last-child), .landing-page #main .button-group.stacked-for-small button:not(:last-child) {
+      .button-group.stacked-for-small .button:not(:last-child), .landing-page #main #listen-now .stacked-for-small.category-buttons .button:not(:last-child), .explore-page body #main .filters .stacked-for-small.category-buttons .button:not(:last-child), .button-group.stacked-for-small .landing-page #main button:not(:last-child), .landing-page #main .button-group.stacked-for-small button:not(:last-child), .landing-page #main #listen-now .stacked-for-small.category-buttons button:not(:last-child), .explore-page body .landing-page #main .filters .stacked-for-small.category-buttons button:not(:last-child), .landing-page .explore-page body #main .filters .stacked-for-small.category-buttons button:not(:last-child) {
         border-right: 1px solid #FFFFFF; } }
 
 .callout {
@@ -2355,25 +2355,25 @@ select {
     margin-right: 1rem; }
   .menu.align-right > li, footer ul.align-right > li {
     float: right; }
-  .menu.expanded, .join-page #join-box button.menu, footer ul.expanded {
+  .menu.expanded, .landing-page #main #listen-now .menu.category-buttons, .landing-page #main #listen-now footer ul.category-buttons, footer .landing-page #main #listen-now ul.category-buttons, .join-page #join-box button.menu, .explore-page body #main .filters .menu.category-buttons, .explore-page body #main .filters footer ul.category-buttons, footer .explore-page body #main .filters ul.category-buttons, footer ul.expanded {
     display: table;
     width: 100%; }
-    .menu.expanded > li:nth-last-child(2):first-child, .join-page #join-box button.menu > li:nth-last-child(2):first-child, footer ul.expanded > li:nth-last-child(2):first-child,
-    .menu.expanded > li:nth-last-child(2):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(2):first-child ~ li, footer ul.expanded > li:nth-last-child(2):first-child ~ li {
+    .menu.expanded > li:nth-last-child(2):first-child, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(2):first-child, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(2):first-child, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(2):first-child, .join-page #join-box button.menu > li:nth-last-child(2):first-child, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(2):first-child, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(2):first-child, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(2):first-child, footer ul.expanded > li:nth-last-child(2):first-child,
+    .menu.expanded > li:nth-last-child(2):first-child ~ li, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(2):first-child ~ li, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(2):first-child ~ li, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(2):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(2):first-child ~ li, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(2):first-child ~ li, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(2):first-child ~ li, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(2):first-child ~ li, footer ul.expanded > li:nth-last-child(2):first-child ~ li {
       width: 50%; }
-    .menu.expanded > li:nth-last-child(3):first-child, .join-page #join-box button.menu > li:nth-last-child(3):first-child, footer ul.expanded > li:nth-last-child(3):first-child,
-    .menu.expanded > li:nth-last-child(3):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(3):first-child ~ li, footer ul.expanded > li:nth-last-child(3):first-child ~ li {
+    .menu.expanded > li:nth-last-child(3):first-child, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(3):first-child, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(3):first-child, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(3):first-child, .join-page #join-box button.menu > li:nth-last-child(3):first-child, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(3):first-child, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(3):first-child, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(3):first-child, footer ul.expanded > li:nth-last-child(3):first-child,
+    .menu.expanded > li:nth-last-child(3):first-child ~ li, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(3):first-child ~ li, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(3):first-child ~ li, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(3):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(3):first-child ~ li, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(3):first-child ~ li, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(3):first-child ~ li, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(3):first-child ~ li, footer ul.expanded > li:nth-last-child(3):first-child ~ li {
       width: 33.3333333333%; }
-    .menu.expanded > li:nth-last-child(4):first-child, .join-page #join-box button.menu > li:nth-last-child(4):first-child, footer ul.expanded > li:nth-last-child(4):first-child,
-    .menu.expanded > li:nth-last-child(4):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(4):first-child ~ li, footer ul.expanded > li:nth-last-child(4):first-child ~ li {
+    .menu.expanded > li:nth-last-child(4):first-child, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(4):first-child, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(4):first-child, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(4):first-child, .join-page #join-box button.menu > li:nth-last-child(4):first-child, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(4):first-child, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(4):first-child, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(4):first-child, footer ul.expanded > li:nth-last-child(4):first-child,
+    .menu.expanded > li:nth-last-child(4):first-child ~ li, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(4):first-child ~ li, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(4):first-child ~ li, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(4):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(4):first-child ~ li, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(4):first-child ~ li, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(4):first-child ~ li, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(4):first-child ~ li, footer ul.expanded > li:nth-last-child(4):first-child ~ li {
       width: 25%; }
-    .menu.expanded > li:nth-last-child(5):first-child, .join-page #join-box button.menu > li:nth-last-child(5):first-child, footer ul.expanded > li:nth-last-child(5):first-child,
-    .menu.expanded > li:nth-last-child(5):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(5):first-child ~ li, footer ul.expanded > li:nth-last-child(5):first-child ~ li {
+    .menu.expanded > li:nth-last-child(5):first-child, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(5):first-child, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(5):first-child, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(5):first-child, .join-page #join-box button.menu > li:nth-last-child(5):first-child, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(5):first-child, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(5):first-child, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(5):first-child, footer ul.expanded > li:nth-last-child(5):first-child,
+    .menu.expanded > li:nth-last-child(5):first-child ~ li, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(5):first-child ~ li, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(5):first-child ~ li, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(5):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(5):first-child ~ li, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(5):first-child ~ li, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(5):first-child ~ li, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(5):first-child ~ li, footer ul.expanded > li:nth-last-child(5):first-child ~ li {
       width: 20%; }
-    .menu.expanded > li:nth-last-child(6):first-child, .join-page #join-box button.menu > li:nth-last-child(6):first-child, footer ul.expanded > li:nth-last-child(6):first-child,
-    .menu.expanded > li:nth-last-child(6):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(6):first-child ~ li, footer ul.expanded > li:nth-last-child(6):first-child ~ li {
+    .menu.expanded > li:nth-last-child(6):first-child, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(6):first-child, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(6):first-child, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(6):first-child, .join-page #join-box button.menu > li:nth-last-child(6):first-child, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(6):first-child, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(6):first-child, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(6):first-child, footer ul.expanded > li:nth-last-child(6):first-child,
+    .menu.expanded > li:nth-last-child(6):first-child ~ li, .landing-page #main #listen-now .menu.category-buttons > li:nth-last-child(6):first-child ~ li, .landing-page #main #listen-now footer ul.category-buttons > li:nth-last-child(6):first-child ~ li, footer .landing-page #main #listen-now ul.category-buttons > li:nth-last-child(6):first-child ~ li, .join-page #join-box button.menu > li:nth-last-child(6):first-child ~ li, .explore-page body #main .filters .menu.category-buttons > li:nth-last-child(6):first-child ~ li, .explore-page body #main .filters footer ul.category-buttons > li:nth-last-child(6):first-child ~ li, footer .explore-page body #main .filters ul.category-buttons > li:nth-last-child(6):first-child ~ li, footer ul.expanded > li:nth-last-child(6):first-child ~ li {
       width: 16.6666666667%; }
-    .menu.expanded > li:first-child:last-child, .join-page #join-box button.menu > li:first-child:last-child, footer ul.expanded > li:first-child:last-child {
+    .menu.expanded > li:first-child:last-child, .landing-page #main #listen-now .menu.category-buttons > li:first-child:last-child, .landing-page #main #listen-now footer ul.category-buttons > li:first-child:last-child, footer .landing-page #main #listen-now ul.category-buttons > li:first-child:last-child, .join-page #join-box button.menu > li:first-child:last-child, .explore-page body #main .filters .menu.category-buttons > li:first-child:last-child, .explore-page body #main .filters footer ul.category-buttons > li:first-child:last-child, footer .explore-page body #main .filters ul.category-buttons > li:first-child:last-child, footer ul.expanded > li:first-child:last-child {
       width: 100%; }
   .menu.icon-top > li > a, footer ul.icon-top > li > a {
     text-align: center; }
@@ -6374,29 +6374,29 @@ button,
   @media screen and (min-width: 40em) {
     #talk-actions {
       text-align: right; } }
-  #talk-actions .button-group {
+  #talk-actions .button-group, #talk-actions .landing-page #main #listen-now .category-buttons, .landing-page #main #listen-now #talk-actions .category-buttons, #talk-actions .explore-page body #main .filters .category-buttons, .explore-page body #main .filters #talk-actions .category-buttons {
     width: 100%;
     text-align: center;
     margin-bottom: 24px; }
     @media screen and (min-width: 40em) {
-      #talk-actions .button-group {
+      #talk-actions .button-group, #talk-actions .landing-page #main #listen-now .category-buttons, .landing-page #main #listen-now #talk-actions .category-buttons, #talk-actions .explore-page body #main .filters .category-buttons, .explore-page body #main .filters #talk-actions .category-buttons {
         text-align: right; } }
     @media screen and (min-width: 64em) {
-      #talk-actions .button-group {
+      #talk-actions .button-group, #talk-actions .landing-page #main #listen-now .category-buttons, .landing-page #main #listen-now #talk-actions .category-buttons, #talk-actions .explore-page body #main .filters .category-buttons, .explore-page body #main .filters #talk-actions .category-buttons {
         width: 180px; } }
-    #talk-actions .button-group li {
+    #talk-actions .button-group li, #talk-actions .landing-page #main #listen-now .category-buttons li, .landing-page #main #listen-now #talk-actions .category-buttons li, #talk-actions .explore-page body #main .filters .category-buttons li, .explore-page body #main .filters #talk-actions .category-buttons li {
       width: 33.33%;
       padding: 1px; }
-      #talk-actions .button-group li .button, #talk-actions .button-group li .landing-page #main button, .landing-page #main #talk-actions .button-group li button {
+      #talk-actions .button-group li .button, #talk-actions .landing-page #main #listen-now .category-buttons li .button, .landing-page #main #listen-now #talk-actions .category-buttons li .button, #talk-actions .explore-page body #main .filters .category-buttons li .button, .explore-page body #main .filters #talk-actions .category-buttons li .button, #talk-actions .button-group li .landing-page #main button, .landing-page #main #talk-actions .button-group li button, #talk-actions .landing-page #main #listen-now .category-buttons li button, .landing-page #main #listen-now #talk-actions .category-buttons li button, #talk-actions .explore-page body .landing-page #main .filters .category-buttons li button, .landing-page #talk-actions .explore-page body #main .filters .category-buttons li button, .explore-page body .landing-page #main .filters #talk-actions .category-buttons li button, .landing-page .explore-page body #main .filters #talk-actions .category-buttons li button {
         border: 0; }
       @media screen and (min-width: 40em) {
-        #talk-actions .button-group li {
+        #talk-actions .button-group li, #talk-actions .landing-page #main #listen-now .category-buttons li, .landing-page #main #listen-now #talk-actions .category-buttons li, #talk-actions .explore-page body #main .filters .category-buttons li, .explore-page body #main .filters #talk-actions .category-buttons li {
           margin: 0;
           width: 100%; } }
       @media screen and (min-width: 64em) {
-        #talk-actions .button-group li {
+        #talk-actions .button-group li, #talk-actions .landing-page #main #listen-now .category-buttons li, .landing-page #main #listen-now #talk-actions .category-buttons li, #talk-actions .explore-page body #main .filters .category-buttons li, .explore-page body #main .filters #talk-actions .category-buttons li {
           width: 180px; } }
-      #talk-actions .button-group li a {
+      #talk-actions .button-group li a, #talk-actions .landing-page #main #listen-now .category-buttons li a, .landing-page #main #listen-now #talk-actions .category-buttons li a, #talk-actions .explore-page body #main .filters .category-buttons li a, .explore-page body #main .filters #talk-actions .category-buttons li a {
         width: 100%;
         height: 60px;
         background: rgba(100, 105, 126, 0.2);
@@ -6407,17 +6407,17 @@ button,
         font-size: 1.125rem;
         padding-top: 16px; }
         @media screen and (min-width: 40em) {
-          #talk-actions .button-group li a {
+          #talk-actions .button-group li a, #talk-actions .landing-page #main #listen-now .category-buttons li a, .landing-page #main #listen-now #talk-actions .category-buttons li a, #talk-actions .explore-page body #main .filters .category-buttons li a, .explore-page body #main .filters #talk-actions .category-buttons li a {
             margin: 0;
             text-align: left; } }
         @media screen and (min-width: 40em) {
-          #talk-actions .button-group li a {
+          #talk-actions .button-group li a, #talk-actions .landing-page #main #listen-now .category-buttons li a, .landing-page #main #listen-now #talk-actions .category-buttons li a, #talk-actions .explore-page body #main .filters .category-buttons li a, .explore-page body #main .filters #talk-actions .category-buttons li a {
             padding-left: 16px; } }
-        #talk-actions .button-group li a:hover {
+        #talk-actions .button-group li a:hover, #talk-actions .landing-page #main #listen-now .category-buttons li a:hover, .landing-page #main #listen-now #talk-actions .category-buttons li a:hover, #talk-actions .explore-page body #main .filters .category-buttons li a:hover, .explore-page body #main .filters #talk-actions .category-buttons li a:hover {
           background: #2c46b0; }
-        #talk-actions .button-group li a .comment-count {
+        #talk-actions .button-group li a .comment-count, #talk-actions .landing-page #main #listen-now .category-buttons li a .comment-count, .landing-page #main #listen-now #talk-actions .category-buttons li a .comment-count, #talk-actions .explore-page body #main .filters .category-buttons li a .comment-count, .explore-page body #main .filters #talk-actions .category-buttons li a .comment-count {
           font-size: 0.625rem; }
-        #talk-actions .button-group li a .action-name {
+        #talk-actions .button-group li a .action-name, #talk-actions .landing-page #main #listen-now .category-buttons li a .action-name, .landing-page #main #listen-now #talk-actions .category-buttons li a .action-name, #talk-actions .explore-page body #main .filters .category-buttons li a .action-name, .explore-page body #main .filters #talk-actions .category-buttons li a .action-name {
           font-size: 0.75rem;
           margin-left: 12px; }
 
@@ -6828,7 +6828,7 @@ html.profile-light, .profile-light body {
         min-width: 117px;
         height: 66px;
         min-height: 66px; }
-      .profile-page body #right-column .profile-row .date, .profile-page body #right-column .profile-row .talk-card .talk-card-inside .speaker, .talk-card .talk-card-inside .profile-page body #right-column .profile-row .speaker, .profile-page body #right-column .profile-row .talk-card .talk-card-inside #talk-description .format-box, .talk-card .talk-card-inside #talk-description .profile-page body #right-column .profile-row .format-box, .profile-page body #right-column .profile-row #talk-description .talk-card .talk-card-inside .format-box, #talk-description .talk-card .talk-card-inside .profile-page body #right-column .profile-row .format-box {
+      .profile-page body #right-column .profile-row .date, .profile-page body #right-column .profile-row .talk-card .talk-card-inside .image-box .hover-info .speaker, .talk-card .talk-card-inside .image-box .hover-info .profile-page body #right-column .profile-row .speaker, .profile-page body #right-column .profile-row .talk-card .talk-card-inside .image-box .hover-info #talk-description .format-box, .talk-card .talk-card-inside .image-box .hover-info #talk-description .profile-page body #right-column .profile-row .format-box, .profile-page body #right-column .profile-row #talk-description .talk-card .talk-card-inside .image-box .hover-info .format-box, #talk-description .talk-card .talk-card-inside .image-box .hover-info .profile-page body #right-column .profile-row .format-box {
         color: rgba(255, 255, 255, 0.5); }
 
 .profile-light body #left-column {
@@ -6927,9 +6927,12 @@ html.profile-light, .profile-light body {
   overflow: hidden; }
   .landing-page #main .row, .landing-page #main .profile-page body #main, .profile-page body .landing-page #main #main, .landing-page #main .explore-page body #main, .explore-page body .landing-page #main #main, .landing-page #main footer #footer-social-links, footer .landing-page #main #footer-social-links {
     max-width: 1200px; }
-    .landing-page #main .row .container h2, .landing-page #main .profile-page body #main .container h2, .profile-page body .landing-page #main #main .container h2, .landing-page #main .explore-page body #main .container h2, .explore-page body .landing-page #main #main .container h2, .landing-page #main footer #footer-social-links .container h2, footer .landing-page #main #footer-social-links .container h2 {
+    .landing-page #main .row h2, .landing-page #main .profile-page body #main h2, .profile-page body .landing-page #main #main h2, .landing-page #main .explore-page body #main h2, .explore-page body .landing-page #main #main h2, .landing-page #main footer #footer-social-links h2, footer .landing-page #main #footer-social-links h2 {
       color: #54c6c6;
-      margin-bottom: 12px; }
+      margin-bottom: 48px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3125rem; }
     .landing-page #main .row .container .lead, .landing-page #main .profile-page body #main .container .lead, .profile-page body .landing-page #main #main .container .lead, .landing-page #main .explore-page body #main .container .lead, .explore-page body .landing-page #main #main .container .lead, .landing-page #main footer #footer-social-links .container .lead, footer .landing-page #main #footer-social-links .container .lead {
       margin-bottom: 60px;
       font-size: 1rem;
@@ -6946,11 +6949,11 @@ html.profile-light, .profile-light body {
   .landing-page #main h1, .landing-page #main h2 {
     color: white;
     letter-spacing: 0.125rem;
-    margin-bottom: 12px; }
+    margin-bottom: 48px; }
   .landing-page #main section {
-    padding: 20vh 0; }
+    padding: 96px 0; }
     .landing-page #main section.light {
-      background: #f2f2f2; }
+      background: #EFEFEF; }
     .landing-page #main section.blue {
       background: #2c46b0; }
       .landing-page #main section.blue button:hover, .landing-page #main section.blue button:active {
@@ -6961,6 +6964,9 @@ html.profile-light, .profile-light body {
     .landing-page #main section.dark {
       background: #29292b;
       color: #fef1de; }
+    .landing-page #main section.yellow {
+      background: #ffed00;
+      columns: #a339cd; }
     .landing-page #main section.turquoise {
       background: #54c6c6;
       color: white; }
@@ -6970,11 +6976,12 @@ html.profile-light, .profile-light body {
         .landing-page #main section.turquoise button:hover, .landing-page #main section.turquoise button:active {
           border-color: #f82847;
           color: #f82847; }
-  .landing-page #main #talk-collection {
+  .landing-page #main #talk-collection, .landing-page #main #talk-teasers {
     margin-bottom: 48px; }
   .landing-page #main #claim {
     text-align: center;
-    padding: 30vh 0 40vh 0;
+    padding-top: 192px;
+    padding-bottom: 96px;
     background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
     background-size: cover; }
     .landing-page #main #claim .down-arrow {
@@ -6984,20 +6991,29 @@ html.profile-light, .profile-light body {
       margin-top: 96px;
       animation-duration: 2s; }
     .landing-page #main #claim h1 {
-      color: white; }
+      color: white;
+      text-transform: uppercase; }
       @media screen and (min-width: 64em) {
         .landing-page #main #claim h1 {
-          font-size: 4.5rem;
-          line-height: 5rem;
-          letter-spacing: 0.1875rem;
+          font-size: 2.625rem;
+          line-height: 3rem;
+          letter-spacing: 0.375rem;
           margin-bottom: 24px; } }
     .landing-page #main #claim .lead {
-      letter-spacing: 0.0625rem; }
+      font-size: 1.125rem;
+      letter-spacing: 0.0625rem;
+      margin-bottom: 0; }
+      .landing-page #main #claim .lead a {
+        font-weight: 500;
+        color: #fef1de; }
+        .landing-page #main #claim .lead a:hover {
+          text-decoration: underline; }
     .landing-page #main #claim a {
       color: #54c6c6; }
     .landing-page #main #claim .container {
       float: left; }
       .landing-page #main #claim .container .claim-cta-half {
+        padding: 0;
         padding-top: 12px; }
         .landing-page #main #claim .container .claim-cta-half:last-child {
           padding-top: 6px; }
@@ -7012,12 +7028,28 @@ html.profile-light, .profile-light body {
         @media screen and (min-width: 40em) {
           .landing-page #main #claim .container .claim-cta-half {
             text-align: right;
-            padding-top: 48px; }
+            padding-top: 24px; }
             .landing-page #main #claim .container .claim-cta-half:last-child {
               text-align: left;
-              padding-top: 48px; } }
+              padding-top: 24px; } }
   .landing-page #main #listen-now {
-    border-bottom: 1px solid #e1e2e7; }
+    border-bottom: 1px solid #e1e2e7;
+    padding-top: 60px; }
+    .landing-page #main #listen-now .category-buttons {
+      float: none;
+      margin-bottom: 48px; }
+      .landing-page #main #listen-now .category-buttons .button, .landing-page #main #listen-now .category-buttons button {
+        background: #ffed00;
+        color: #a339cd;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+        letter-spacing: 0;
+        padding: 24px 6px; }
+        .landing-page #main #listen-now .category-buttons .button .icon, .landing-page #main #listen-now .category-buttons button .icon {
+          background-color: #a339cd;
+          margin-bottom: 12px; }
+        .landing-page #main #listen-now .category-buttons .button:hover, .landing-page #main #listen-now .category-buttons button:hover {
+          background: #54c6c6; }
   .landing-page #main #coming-up h2 {
     margin-bottom: 60px; }
   .landing-page #main #coming-up .lead {
@@ -7027,22 +7059,15 @@ html.profile-light, .profile-light body {
   .landing-page #main #categories #talk-collection .category {
     padding: 48px 24px; }
     .landing-page #main #categories #talk-collection .category *:hover > * {
-      text-decoration: none;
-      color: white; }
+      text-decoration: none; }
     .landing-page #main #categories #talk-collection .category *:hover > h3 {
       text-decoration: underline; }
-    .landing-page #main #categories #talk-collection .category *:hover > .icon {
-      background-color: white; }
-    .landing-page #main #categories #talk-collection .category *:hover > .lead {
-      color: white; }
+    .landing-page #main #categories #talk-collection .category .icon {
+      background-color: #a339cd; }
     .landing-page #main #categories #talk-collection .category h3 {
-      color: #fef1de; }
-      .landing-page #main #categories #talk-collection .category h3:active, .landing-page #main #categories #talk-collection .category h3:hover {
-        color: white; }
+      color: #a339cd; }
     .landing-page #main #categories #talk-collection .category .lead {
-      color: #fef1de; }
-      .landing-page #main #categories #talk-collection .category .lead:hover, .landing-page #main #categories #talk-collection .category .lead:active {
-        color: white; }
+      color: #a339cd; }
     .landing-page #main #categories #talk-collection .category hr {
       border-color: #54c6c6;
       max-width: 100px;
@@ -7050,6 +7075,9 @@ html.profile-light, .profile-light body {
       margin-top: 48px; }
   .landing-page #main #publishers #publisher-collection .publisher {
     padding: 48px 24px; }
+    .landing-page #main #publishers #publisher-collection .publisher h4 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-weight: 700; }
     .landing-page #main #publishers #publisher-collection .publisher *:hover > h4 {
       text-decoration: underline;
       color: #121214; }
@@ -7119,14 +7147,19 @@ html.profile-light, .profile-light body {
   background: none; }
   .talk-card .talk-card-inside {
     background: #FAFAFA;
-    padding: 24px;
+    padding: 12px;
+    cursor: pointer;
     transition: all .2s ease; }
     .talk-card .talk-card-inside .publisher {
       margin: 0;
       line-height: 18px;
       font-weight: 500;
-      margin-bottom: 12px; }
-    .talk-card .talk-card-inside .date, .talk-card .talk-card-inside .speaker, .talk-card .talk-card-inside #talk-description .format-box, #talk-description .talk-card .talk-card-inside .format-box {
+      margin-bottom: 0;
+      color: rgba(41, 41, 43, 0.5); }
+      .talk-card .talk-card-inside .publisher:hover {
+        text-decoration: underline; }
+    .talk-card .talk-card-inside .meta {
+      width: 100%;
       margin: 0;
       font-size: 0.6875rem;
       line-height: 0.75rem;
@@ -7134,27 +7167,70 @@ html.profile-light, .profile-light body {
       letter-spacing: 0.0625rem;
       color: rgba(41, 41, 43, 0.5);
       margin-bottom: 6px; }
-    .talk-card .talk-card-inside img {
-      margin-bottom: 12px; }
+    .talk-card .talk-card-inside .date, .talk-card .talk-card-inside .image-box .hover-info .speaker, .talk-card .talk-card-inside .image-box .hover-info #talk-description .format-box, #talk-description .talk-card .talk-card-inside .image-box .hover-info .format-box {
+      margin: 0;
+      font-size: 0.6875rem;
+      line-height: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.0625rem;
+      color: rgba(41, 41, 43, 0.5);
+      margin-bottom: 6px; }
+      .talk-card .talk-card-inside .date strong, .talk-card .talk-card-inside .image-box .hover-info .speaker strong, .talk-card .talk-card-inside .image-box .hover-info #talk-description .format-box strong, #talk-description .talk-card .talk-card-inside .image-box .hover-info .format-box strong {
+        font-weight: 500; }
+    .talk-card .talk-card-inside .image-box {
+      margin-bottom: 12px;
+      position: relative; }
+      .talk-card .talk-card-inside .image-box .hover-info {
+        position: absolute;
+        padding: 12px;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(41, 41, 43, 0.9);
+        opacity: 0;
+        transition: opacity .2s ease; }
+        .talk-card .talk-card-inside .image-box .hover-info .speaker, .talk-card .talk-card-inside .image-box .hover-info #talk-description .format-box, #talk-description .talk-card .talk-card-inside .image-box .hover-info .format-box {
+          color: #e1e2e7; }
+          .talk-card .talk-card-inside .image-box .hover-info .speaker a, .talk-card .talk-card-inside .image-box .hover-info #talk-description .format-box a, #talk-description .talk-card .talk-card-inside .image-box .hover-info .format-box a {
+            text-decoration: none;
+            text-transform: none;
+            color: white; }
+            .talk-card .talk-card-inside .image-box .hover-info .speaker a:hover, .talk-card .talk-card-inside .image-box .hover-info #talk-description .format-box a:hover, #talk-description .talk-card .talk-card-inside .image-box .hover-info .format-box a:hover {
+              text-decoration: underline; }
     .talk-card .talk-card-inside .title {
       display: block;
       /* Fallback for non-webkit */
       display: -webkit-box;
-      height: 50.4px;
+      height: 43.2px;
       /* Fallback for non-webkit */
       margin: 0 auto;
-      font-size: 21px;
+      font-size: 18px;
       line-height: 1.2;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin-bottom: 24px; }
-    .talk-card .talk-card-inside .speaker a, .talk-card .talk-card-inside #talk-description .format-box a, #talk-description .talk-card .talk-card-inside .format-box a {
-      text-transform: none; }
+      margin-bottom: 6px;
+      transition: text-decoration .2s ease; }
+    .talk-card .talk-card-inside a {
+      color: #29292b; }
     .talk-card .talk-card-inside:hover {
       background: #FFFFFF;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
+    .talk-card .talk-card-inside:hover > .title {
+      text-decoration: underline; }
+    .talk-card .talk-card-inside:hover > .image-box .hover-info {
+      display: block !important;
+      opacity: 1; }
+    .talk-card .talk-card-inside .icon {
+      width: 24px;
+      height: 24px;
+      margin-top: 6px;
+      margin-right: 12px;
+      background-color: #e1e2e7; }
+    .talk-card .talk-card-inside .info-right {
+      text-align: right; }
 
 .join-page {
   height: 100%;
@@ -7259,6 +7335,26 @@ html.profile-light, .profile-light body {
     margin-top: 48px; }
   .explore-page body #main .filters {
     padding: 48px 20px 12px 20px; }
+    .explore-page body #main .filters .category-buttons {
+      float: none;
+      margin-bottom: 12px; }
+      .explore-page body #main .filters .category-buttons .button, .explore-page body .landing-page #main .filters .category-buttons button, .landing-page .explore-page body #main .filters .category-buttons button {
+        background: #ffed00;
+        color: #a339cd;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+        letter-spacing: 0;
+        padding: 24px 6px; }
+        .explore-page body #main .filters .category-buttons .button .icon, .explore-page body .landing-page #main .filters .category-buttons button .icon, .landing-page .explore-page body #main .filters .category-buttons button .icon {
+          background-color: #a339cd;
+          margin-bottom: 12px; }
+        .explore-page body #main .filters .category-buttons .button:hover, .explore-page body .landing-page #main .filters .category-buttons button:hover, .landing-page .explore-page body #main .filters .category-buttons button:hover {
+          background: #54c6c6; }
+        .explore-page body #main .filters .category-buttons .button.active, .explore-page body .landing-page #main .filters .category-buttons button.active, .landing-page .explore-page body #main .filters .category-buttons button.active {
+          background-color: #2c46b0;
+          color: white; }
+          .explore-page body #main .filters .category-buttons .button.active .icon, .explore-page body .landing-page #main .filters .category-buttons button.active .icon, .landing-page .explore-page body #main .filters .category-buttons button.active .icon {
+            background-color: white; }
     .explore-page body #main .filters h6 {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
       font-weight: 300;
@@ -7301,6 +7397,10 @@ html.profile-light, .profile-light body {
         margin-bottom: 24px;
         line-height: 1.5rem;
         padding-bottom: 12px; }
+      .explore-page body #main #results .results-count .small-filter {
+        width: 140px; }
+        .explore-page body #main #results .results-count .small-filter select {
+          background-color: #ffed00; }
 
 footer {
   padding: 84px 12px;
@@ -7357,7 +7457,7 @@ footer {
   background-image: -moz-linear-gradient(90deg, #404245 0%, #35353b 100%);
   background-image: -webkit-linear-gradient(90deg, #404245 0%, #35353b 100%);
   background-image: -ms-linear-gradient(90deg, #404245 0%, #35353b 100%);
-  background: rgba(41, 41, 43, 0);
+  background: #29292b;
   transition: background .3s ease;
   margin: 0;
   right: 0;
@@ -7383,12 +7483,13 @@ footer {
         color: white;
         border-color: white; }
   .top-bar .search-btn {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 800;
-    padding-left: 6px;
-    padding-top: 4px;
-    background: none;
-    color: #fef1de; }
+    padding: 6px 6px 6px 12px;
+    background: rgba(18, 18, 20, 0.5);
+    color: #fef1de;
+    height: 40px;
+    border-radius: 0 4px 4px 0; }
   .top-bar .sign-in a {
     padding-right: 0 !important; }
   .top-bar ul {
@@ -7405,9 +7506,13 @@ footer {
     .top-bar ul li.search-btn a {
       padding-left: 0 !important; }
   .top-bar .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after, .top-bar footer ul.dropdown .is-dropdown-submenu-parent.is-down-arrow > a::after, footer .top-bar ul.dropdown .is-dropdown-submenu-parent.is-down-arrow > a::after {
-    border-color: rgba(254, 241, 222, 0.5) transparent transparent; }
+    border-color: rgba(254, 241, 222, 0.5) transparent transparent;
+    right: 10px; }
   .top-bar .input-group {
     margin: 0; }
+  .top-bar .input-group-field {
+    border-radius: 4px 0 0 4px;
+    padding-left: 12px; }
   .top-bar input {
     font-weight: 300;
     width: auto;

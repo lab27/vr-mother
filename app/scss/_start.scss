@@ -17,7 +17,7 @@
     color: $color;
 }
 
-$h1-bottom-margin: 12px;
+$h1-bottom-margin: 48px;
 
 .icon {
     display: block;
@@ -79,13 +79,16 @@ $h1-bottom-margin: 12px;
 
         @extend .text-center;
 
+        h2 {
+            color: $secondary-color;
+            margin-bottom: $h1-bottom-margin;
+            font-size: rem-calc(24);
+            text-transform: uppercase;
+            letter-spacing: rem-calc(5);
+        }
+
         .container {
             @include landing-page-column;
-
-            h2 {
-                color: $secondary-color;
-                margin-bottom: $h1-bottom-margin;
-            }
 
             .lead {
                 margin-bottom: 60px;
@@ -130,19 +133,10 @@ $h1-bottom-margin: 12px;
     }
 
     section {
-        padding: 20vh 0;
-
-        h2 {
-            // font-size: rem-calc();
-            // line-height: rem-calc(24);
-            // letter-spacing: rem-calc(2);
-            // text-transform: uppercase;
-            // margin-bottom: $h1-bottom-margin;
-       
-        }
+        padding: 96px 0;
 
         &.light {
-            background: $snow;
+            background: $silver;
         }
 
         &.blue {
@@ -162,6 +156,11 @@ $h1-bottom-margin: 12px;
             color: $info-color;
         }
 
+        &.yellow {
+            background: $warning-color;
+            columns: $brand-purple;
+        }
+
         &.turquoise {
             background: $secondary-color;
             color: white;
@@ -176,26 +175,34 @@ $h1-bottom-margin: 12px;
         }
     }
 
-    #talk-collection {
+    #talk-collection, #talk-teasers {
         @extend .clearfix;
 
         margin-bottom: 48px;
     }
 
+    // #talk-teasers {
+    //     @include breakpoint(medium) {
+    //         margin-top: -18px;
+
+    //         &:last-child {
+    //             display: none;
+    //         }
+    //     }
+    // }
+
     #claim {
         text-align: center;
-        padding: 30vh 0 40vh 0;
+        padding-top: 192px;
+        padding-bottom: 96px;
+
+        // padding: 30vh 0 40vh 0;
         background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
         background-size: cover;
 
         .down-arrow {
             width: 28px;
             height: 28px;
-
-            // position: absolute;
-            // bottom:10%;
-            // left:50%;
-            // margin-left:-12px;
             background-color: white;
             margin-top: 96px;
             animation-duration: 2s;
@@ -207,19 +214,29 @@ $h1-bottom-margin: 12px;
 
         h1 {
             color: white;
+            text-transform: uppercase;
 
             @include breakpoint(large) {
-                font-size: rem-calc(72);
-                line-height: rem-calc(80);
-                letter-spacing: rem-calc(3);
+                font-size: rem-calc(42);
+                line-height: rem-calc(48);
+                letter-spacing: rem-calc(6);
                 margin-bottom: 24px;
             }
         }
 
         .lead {
-            // font-size: rem-calc(18);
-            // text-transform: uppercase;
+            font-size: rem-calc(18);
             letter-spacing: rem-calc(1);
+            margin-bottom: 0;
+
+            a {
+                font-weight: 500;
+                color: $info-color;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
 
         a {
@@ -235,6 +252,7 @@ $h1-bottom-margin: 12px;
 
                 @extend .columns;
 
+                padding: 0;
                 padding-top: 12px;
 
                 &:last-child {
@@ -255,19 +273,55 @@ $h1-bottom-margin: 12px;
 
                 @include breakpoint(medium) {
                     text-align: right;
-                    padding-top: 48px;
+                    padding-top: 24px;
 
                     &:last-child {
                         text-align: left;
-                        padding-top: 48px;
+                        padding-top: 24px;
                     }
                 }
+
+
+                // button {
+                //     height: 60px;
+                // }
+           
             }
         }
     }
 
     #listen-now {
         border-bottom: 1px solid $light-gray;
+        padding-top: 60px;
+
+        .listen-interstitial {}
+
+        .category-buttons {
+            @extend .button-group;
+
+            @extend .expanded;
+
+            float: none;
+            margin-bottom: 48px;
+
+            .button {
+                background: $warning-color;
+                color: $brand-purple;
+                font-size: rem-calc(12);
+                line-height: rem-calc(14);
+                letter-spacing: 0;
+                padding: 24px 6px;
+
+                .icon {
+                    background-color: $brand-purple;
+                    margin-bottom: 12px;
+                }
+
+                &:hover {
+                    background: $secondary-color;
+                }
+            }
+        }
     }
 
     #coming-up {
@@ -286,7 +340,7 @@ $h1-bottom-margin: 12px;
         }
 
         #talk-collection {
-            $color: $info-color;
+            $color: $brand-purple;
 
             .category {
                 @extend .medium-6;
@@ -297,7 +351,9 @@ $h1-bottom-margin: 12px;
 
                 *:hover > * {
                     text-decoration: none;
-                    color: white;
+
+                    // color: $alert-color;
+               
                 }
 
                 *:hover > h3 {
@@ -305,18 +361,24 @@ $h1-bottom-margin: 12px;
                 }
 
                 *:hover > .icon {
-                    background-color: white;
+                    // background-color: $alert-color;
+               
                 }
 
                 *:hover > .lead {
-                    color: white;
+                    // color: $alert-color;
+               
+                }
+
+                .icon {
+                    background-color: $color;
                 }
 
                 h3 {
                     color: $color;
 
                     &:active, &:hover {
-                        color: white;
+                        // color: $alert-color;
 
                         // text-decoration: underline;
                    
@@ -327,7 +389,7 @@ $h1-bottom-margin: 12px;
                     color: $color;
 
                     &:hover, &:active {
-                        color: white;
+                        // color: $alert-color;
 
                         // text-decoration: underline;
                    
@@ -352,6 +414,11 @@ $h1-bottom-margin: 12px;
                 @extend .columns;
 
                 padding: 48px 24px;
+
+                h4 {
+                    font-family: $body-font-family;
+                    font-weight: 700;
+                }
 
                 *:hover > h4 {
                     text-decoration: underline;
@@ -481,9 +548,9 @@ $h1-bottom-margin: 12px;
 }
 
 .talk-card {
-    @extend .medium-6;
+    @extend .medium-4;
 
-    @extend .large-4;
+    @extend .large-3;
 
     @extend .columns;
 
@@ -492,7 +559,8 @@ $h1-bottom-margin: 12px;
 
     .talk-card-inside {
         background: $ghost;
-        padding: 24px;
+        padding: 12px;
+        cursor: pointer;
 
         @extend .text-left;
 
@@ -502,7 +570,33 @@ $h1-bottom-margin: 12px;
             margin: 0;
             line-height: 18px;
             font-weight: 500;
-            margin-bottom: 12px;
+            margin-bottom: 0;
+            color: rgba($talk-dark, 0.5);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .meta {
+            @extend .clearfix;
+
+            width: 100%;
+            margin: 0;
+            font-size: rem-calc(11);
+            line-height: rem-calc(12);
+            text-transform: uppercase;
+            letter-spacing: rem-calc(1);
+            color: rgba($talk-dark, 0.5);
+            margin-bottom: 6px;
+
+            .running-time {
+                @extend .float-left;
+            }
+
+            .play-count {
+                @extend .float-right;
+            }
         }
 
         .date {
@@ -513,20 +607,54 @@ $h1-bottom-margin: 12px;
             letter-spacing: rem-calc(1);
             color: rgba($talk-dark, 0.5);
             margin-bottom: 6px;
+
+            strong {
+                font-weight: 500;
+
+                // color: rgba($talk-dark, 0.8);
+           
+            }
         }
 
-        img {
+        .image-box {
             margin-bottom: 12px;
+            position: relative;
+
+            .hover-info {
+                position: absolute;
+                padding: 12px;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba($talk-dark, 0.9);
+                opacity: 0;
+                transition: opacity .2s ease;
+
+                .speaker {
+                    @extend .date;
+
+                    color: $light-gray;
+
+                    a {
+                        text-decoration: none;
+                        text-transform: none;
+                        color: white;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
         }
 
-        $font-size: 21px;
+        $font-size: 18px;
         $line-height: 1.2;
+
         $lines-to-show: 2;
 
         .title {
-            // font-family: $body-font-family;
-            // font-weight: bold;
-            // color: rgba(white, .8);
             display: block;
 
             /* Fallback for non-webkit */
@@ -543,20 +671,40 @@ $h1-bottom-margin: 12px;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-bottom: 24px;
+            margin-bottom: 6px;
+            transition: text-decoration .2s ease;
         }
 
-        .speaker {
-            @extend .date;
-
-            a {
-                text-transform: none;
-            }
+        a {
+            color: $talk-dark;
         }
 
         &:hover {
             background: $white;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover > .title {
+            text-decoration: underline;
+        }
+
+        &:hover > .image-box .hover-info {
+            display: block !important;
+            opacity: 1;
+        }
+
+        .icon {
+            @extend .float-left;
+
+            width: 24px;
+            height: 24px;
+            margin-top: 6px;
+            margin-right: 12px;
+            background-color: $light-gray;
+        }
+
+        .info-right {
+            text-align: right;
         }
     }
 }

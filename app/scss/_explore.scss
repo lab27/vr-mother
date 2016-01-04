@@ -80,6 +80,42 @@
 
             padding: 48px 20px 12px 20px;
 
+            .category-buttons {
+                @extend .button-group;
+
+                @extend .expanded;
+
+                float: none;
+                margin-bottom: 12px;
+
+                .button {
+                    background: $warning-color;
+                    color: $brand-purple;
+                    font-size: rem-calc(12);
+                    line-height: rem-calc(14);
+                    letter-spacing: 0;
+                    padding: 24px 6px;
+
+                    .icon {
+                        background-color: $brand-purple;
+                        margin-bottom: 12px;
+                    }
+
+                    &:hover {
+                        background: $secondary-color;
+                    }
+
+                    &.active {
+                        background-color: $primary-color;
+                        color: white;
+
+                        .icon {
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+
             // background: white;
             h6 {
                 font-family: $body-font-family;
@@ -148,7 +184,16 @@
                     line-height: rem-calc(24);
                     padding-bottom: 12px;
                 }
-           
+
+                .small-filter {
+                    @extend .float-right;
+
+                    width: 140px;
+
+                    select {
+                        background-color: $warning-color;
+                    }
+                }
             }
         }
     }

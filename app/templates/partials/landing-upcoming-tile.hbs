@@ -1,13 +1,13 @@
 ---
-component: landing-tile
+component: landing-upcoming-tile
 ---
 <div class="talk-card">
 		<div class="talk-card-inside">
 			<h5 class="title">{{title}}</h5>
-			<p class="meta">
+			{{!-- <p class="meta">
 				<span class="running-time">46:23</span>
 				<span class="play-count">2.2k Plays</span>
-			</p>
+			</p> --}}
 			<div class="image-box">
 				<img src="img/thumbs-cropped/thumb{{myNum}}.jpg" alt="">
 				<div class="hover-info">
@@ -17,7 +17,7 @@ component: landing-tile
 			<div class="bottom-info">
 				<div class="icon {{topic}}"></div>
 				<div class="info-right">
-					<p class="date">Published <strong>{{time-ago}}</strong> by</p>
+					<p class="date">19:00 today</p>
 					<a href="profile.html"><p class="publisher">{{truncate publisher 27 "..."}}</p></a>
 				</div>
 			</div>

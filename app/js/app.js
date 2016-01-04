@@ -71,4 +71,10 @@ if ($claim.is (':in-viewport')){
 }
 });
 
+$('.category-buttons .button').on('click', function(){
+    $(this).siblings().removeClass('active');
+    $(this).toggleClass('active');
+});
+
+
 $(document).foundation();

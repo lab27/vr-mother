@@ -33,12 +33,18 @@ component: topbar-search
         <li class="has-submenu">
           <a href="#">Listen</a>
           <ul class="submenu menu vertical" data-submenu>
+          <li class="title">Categories</li>
+{{#each cats}}
+<li><a href="explore.html">{{name}}</a></li>
+{{/each}}
+
+
             <li><a href="listen.html">Listen</a></li>
             <li><a href="explore.html">Explore</a></li>
           </ul>
         </li>
         <li class="sign-in">
-          <a href="#"><button type="button" class="button hollow  info">sign in</button></a>
+          <a href="#">sign in</a>
         </li>
         <li>
           <a href="join.html"><button type="button" class="button ">Join for free</button></a>
