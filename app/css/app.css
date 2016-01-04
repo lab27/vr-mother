@@ -7049,7 +7049,7 @@ html.profile-light, .profile-light body {
           background-color: #a339cd;
           margin-bottom: 12px; }
         .landing-page #main #listen-now .category-buttons .button:hover, .landing-page #main #listen-now .category-buttons button:hover {
-          background: #54c6c6; }
+          background: #fef1de; }
   .landing-page #main #coming-up h2 {
     margin-bottom: 60px; }
   .landing-page #main #coming-up .lead {
@@ -7349,9 +7349,9 @@ html.profile-light, .profile-light body {
           background-color: #a339cd;
           margin-bottom: 12px; }
         .explore-page body #main .filters .category-buttons .button:hover, .explore-page body .landing-page #main .filters .category-buttons button:hover, .landing-page .explore-page body #main .filters .category-buttons button:hover {
-          background: #54c6c6; }
+          background: #fef1de; }
         .explore-page body #main .filters .category-buttons .button.active, .explore-page body .landing-page #main .filters .category-buttons button.active, .landing-page .explore-page body #main .filters .category-buttons button.active {
-          background-color: #2c46b0;
+          background-color: #a339cd;
           color: white; }
           .explore-page body #main .filters .category-buttons .button.active .icon, .explore-page body .landing-page #main .filters .category-buttons button.active .icon, .landing-page .explore-page body #main .filters .category-buttons button.active .icon {
             background-color: white; }

@@ -102,11 +102,11 @@
                     }
 
                     &:hover {
-                        background: $secondary-color;
+                        background: $info-color;
                     }
 
                     &.active {
-                        background-color: $primary-color;
+                        background-color: $brand-purple;
                         color: white;
 
                         .icon {
