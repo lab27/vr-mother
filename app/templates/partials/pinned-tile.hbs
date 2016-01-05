@@ -1,13 +1,25 @@
 ---
 component: pinned-tile
 ---
-<div class="profile-tile">
-	<div class="profile-tile-inside">
-		
-		<p class="profile-date">Published {{time-ago}} ago by</p>
-		<p class="profile-publisher">{{publisher}}</p>
-		<img src="img/thumbs-cropped/thumb{{myNum}}.jpg" alt="">
-		<h5 class="profile-title">{{title}}</h5>
-		<p class="speaker">SprecherIn: <a href="profile.html">Patrick Frank</a></p>
-	</div>
+<div class="talk-card">
+		<div class="talk-card-inside">
+			<h5 class="title">{{title}}</h5>
+			<p class="meta">
+				<span class="running-time">46:23</span>
+				<span class="play-count">2.2k Plays</span>
+			</p>
+			<div class="image-box">
+				<img src="img/thumbs-cropped/thumb{{myNum}}.jpg" alt="">
+				<div class="hover-info">
+					<p class="speaker">Sprecher/In: <a href="profile.html">Patrick Frank</a></p>
+				</div>
+			</div>
+			<div class="bottom-info">
+				<div class="icon {{topic}}"></div>
+				<div class="info-right">
+					<p class="date">Published <strong>{{time-ago}}</strong> by</p>
+					<a href="profile.html"><p class="publisher">{{truncate publisher 27 "..."}}</p></a>
+				</div>
+			</div>
+		</div>
 </div>

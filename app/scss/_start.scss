@@ -468,13 +468,13 @@ $h1-bottom-margin: 48px;
                 position: relative;
                 padding: 24px;
 
-                &.left {
-                    padding-left: 0;
+                // &.left {
+                //     padding-left: 0;
 
-                    img {
-                        right: 0;
-                    }
-                }
+                //     img {
+                //         right: 0;
+                //     }
+                // }
 
                 &.right {
                     text-align: right;
@@ -507,14 +507,15 @@ $h1-bottom-margin: 48px;
                 color: $jet;
             }
 
-            img {
-                @include breakpoint(medium) {
-                    position: absolute;
+            // img {
+            //     @include breakpoint(medium) {
+            //         // position: absolute;
 
-                    // left:0;
-                    max-width: none;
-                }
-            }
+            //         // left:0;
+            //         // max-width: none;
+            //     }
+            // }
+       
         }
 
         .feature-copy {
@@ -543,168 +544,6 @@ $h1-bottom-margin: 48px;
             button {
                 margin: 0;
             }
-        }
-    }
-}
-
-.talk-card {
-    @extend .medium-4;
-
-    @extend .large-3;
-
-    @extend .columns;
-
-    padding: 6px;
-    background: none;
-
-    .talk-card-inside {
-        background: $ghost;
-        padding: 12px;
-        cursor: pointer;
-
-        @extend .text-left;
-
-        transition: all .2s ease;
-
-        .publisher {
-            margin: 0;
-            line-height: 18px;
-            font-weight: 500;
-            margin-bottom: 0;
-            color: rgba($talk-dark, 0.5);
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .meta {
-            @extend .clearfix;
-
-            width: 100%;
-            margin: 0;
-            font-size: rem-calc(11);
-            line-height: rem-calc(12);
-            text-transform: uppercase;
-            letter-spacing: rem-calc(1);
-            color: rgba($talk-dark, 0.5);
-            margin-bottom: 6px;
-
-            .running-time {
-                @extend .float-left;
-            }
-
-            .play-count {
-                @extend .float-right;
-            }
-        }
-
-        .date {
-            margin: 0;
-            font-size: rem-calc(11);
-            line-height: rem-calc(12);
-            text-transform: uppercase;
-            letter-spacing: rem-calc(1);
-            color: rgba($talk-dark, 0.5);
-            margin-bottom: 6px;
-
-            strong {
-                font-weight: 500;
-
-                // color: rgba($talk-dark, 0.8);
-           
-            }
-        }
-
-        .image-box {
-            margin-bottom: 12px;
-            position: relative;
-
-            .hover-info {
-                position: absolute;
-                padding: 12px;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                left: 0;
-                background-color: rgba($talk-dark, 0.9);
-                opacity: 0;
-                transition: opacity .2s ease;
-
-                .speaker {
-                    @extend .date;
-
-                    color: $light-gray;
-
-                    a {
-                        text-decoration: none;
-                        text-transform: none;
-                        color: white;
-
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-        }
-
-        $font-size: 18px;
-        $line-height: 1.2;
-
-        $lines-to-show: 2;
-
-        .title {
-            display: block;
-
-            /* Fallback for non-webkit */
-            display: -webkit-box;
-
-            // max-width: 400px;
-            height: $font-size * $line-height * $lines-to-show;
-
-            /* Fallback for non-webkit */
-            margin: 0 auto;
-            font-size: $font-size;
-            line-height: $line-height;
-            -webkit-line-clamp: $lines-to-show;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-bottom: 6px;
-            transition: text-decoration .2s ease;
-        }
-
-        a {
-            color: $talk-dark;
-        }
-
-        &:hover {
-            background: $white;
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        &:hover > .title {
-            text-decoration: underline;
-        }
-
-        &:hover > .image-box .hover-info {
-            display: block !important;
-            opacity: 1;
-        }
-
-        .icon {
-            @extend .float-left;
-
-            width: 24px;
-            height: 24px;
-            margin-top: 6px;
-            margin-right: 12px;
-            background-color: $light-gray;
-        }
-
-        .info-right {
-            text-align: right;
         }
     }
 }
