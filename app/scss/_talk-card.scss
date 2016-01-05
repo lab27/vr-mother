@@ -8,6 +8,10 @@
     padding: 6px;
     background: none;
 
+    &:last-child {
+        @extend .end;
+    }
+
     .talk-card-inside {
         background: $ghost;
         padding: 12px;
@@ -183,6 +187,24 @@
             width: 16.6667%;
         }
 
+
+        &.series {
+            .series-thumb {
+                margin-bottom: 12px;
+            }
+
+            .talk-count {
+                @extend .float-left;
+            }
+
+            .meta {
+                margin-bottom: 0;
+            }
+
+            .talk-count, .play-count {
+                margin-bottom: 0;
+            }
+        }
 
         .talk-card-inside h5 {
             color: $talk-dark;

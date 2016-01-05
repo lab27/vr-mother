@@ -2,6 +2,15 @@
 title: User Patrick Frank
 layout: app/templates/layouts/profile-layout.hbs
 ---
+{{!-- Dismisssable CTA --}}
+<div id="cta-panel" data-closable>
+<p>Would you like to publish your content on Voice Republic? 
+<a href="join.html" id="cta-button" class="button">Start Now &raquo;</a></p>
+<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
 {{!-- Left Column --}}
 <div id="left-column">
 	<div id="user-block">
@@ -54,7 +63,7 @@ layout: app/templates/layouts/profile-layout.hbs
 		<div class="tabs-panel" id="upcoming">
 			
 			{{#withFirst thumbs 3}}
-			{{>upcoming-tile}}
+			{{>landing-upcoming-tile}}
 			{{/withFirst}}
 		</div>
 		
