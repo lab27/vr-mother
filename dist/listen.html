@@ -24,44 +24,47 @@
                 <span class="show-for-large-up">VOICE REPUBLIC</span>
               </a>
             </li>
-            <li>
-              <div class="input-group">
-                <input class="input-group-field" type="text" placeholder="Search Voice Republic">
-                <div class="input-group-button">
-                  <a href="#"><button type="submit" class="search-btn"><span class="icon-uniE7E9"></span></button></a>
-                </div>
-              </div>
-            </li>
+            
           </ul>
         </div>
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
-            <li class="">
-              <a href="publish.html">Publish</a>
-            </li>
-            <li class="has-submenu">
+            <li class="has-submenu can-hide">
               <a href="#">Listen</a>
               <ul class="submenu menu vertical" data-submenu>
-              <li class="title">Categories</li>
-    <li><a href="explore.html">Politics and Society</a></li>
-    <li><a href="explore.html">Sciences</a></li>
-    <li><a href="explore.html">Arts and Culture</a></li>
-    <li><a href="explore.html">Technology</a></li>
-    <li><a href="explore.html">Media</a></li>
-    <li><a href="explore.html">Business</a></li>
-    
-    
+                <li class="drop-title">Categories</li>
+                <li><a href="explore.html">Politics and Society</a></li>
+                <li><a href="explore.html">Sciences</a></li>
+                <li><a href="explore.html">Arts and Culture</a></li>
+                <li><a href="explore.html">Technology</a></li>
+                <li><a href="explore.html">Media</a></li>
+                <li><a href="explore.html">Business</a></li>
+                <li class="divider"></li>
                 <li><a href="listen.html">Listen</a></li>
                 <li><a href="explore.html">Explore</a></li>
               </ul>
             </li>
-            <li class="sign-in">
-              <a href="#">sign in</a>
+            <li class="can-hide">
+              <a href="publish.html">Publish</a>
             </li>
-            <li>
-              <a href="join.html"><button type="button" class="button ">Join for free</button></a>
+            
+            <li class="sign-in can-hide">
+              <a href="#">Sign In</a>
             </li>
+            <li class="join can-hide">
+              <a href="join.html">Join for Free</a>
+            </li>
+            <li id="search-loupe" class="can-hide "><a href="#"><span class="icon-uniE7E9"></span></a></li>
           </ul>
+          <div class="search-container hide">
+            <form>
+              <label><span class="icon-uniE7E9"></span></label>
+              <input type="text" value="" id="search-field" class="search" placeholder="Whatchya lookin' for, cowboy?">
+            </form>
+            <button id="search-close" class="close-button" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>    <div id="main" role="main">
