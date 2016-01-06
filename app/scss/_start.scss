@@ -78,6 +78,7 @@ $h1-bottom-margin: 48px;
         max-width: 1200px;
 
         @extend .text-center;
+        padding: 12px;
 
         h2 {
             color: $secondary-color;
@@ -193,12 +194,15 @@ $h1-bottom-margin: 48px;
 
     #claim {
         text-align: center;
-        padding-top: 192px;
         padding-bottom: 96px;
 
         // padding: 30vh 0 40vh 0;
         background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
         background-size: cover;
+
+        @include breakpoint(medium){
+            padding-top:162px;
+        }
 
         .down-arrow {
             width: 28px;

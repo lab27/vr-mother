@@ -39,7 +39,11 @@
         font-size: rem-calc(14);
         line-height: rem-calc(36);
         font-weight: normal;
-        margin: 0 60px 0 12px;
+        margin: 0 0px 0 12px;
+        display: none;
+        @include breakpoint(850px) {
+            display: inline-block;
+        }
     }
 
     .button.hollow {

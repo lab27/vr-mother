@@ -6689,7 +6689,8 @@ html.profile-light, .profile-light body {
   background: #29292b;
   overflow: hidden; }
   .landing-page #main .row, .landing-page #main .profile-page body #main, .profile-page body .landing-page #main #main, .landing-page #main .explore-page body #main, .explore-page body .landing-page #main #main, .landing-page #main footer #footer-social-links, footer .landing-page #main #footer-social-links {
-    max-width: 1200px; }
+    max-width: 1200px;
+    padding: 12px; }
     .landing-page #main .row h2, .landing-page #main .profile-page body #main h2, .profile-page body .landing-page #main #main h2, .landing-page #main .explore-page body #main h2, .explore-page body .landing-page #main #main h2, .landing-page #main footer #footer-social-links h2, footer .landing-page #main #footer-social-links h2 {
       color: #54c6c6;
       margin-bottom: 48px;
@@ -6743,10 +6744,12 @@ html.profile-light, .profile-light body {
     margin-bottom: 48px; }
   .landing-page #main #claim {
     text-align: center;
-    padding-top: 192px;
     padding-bottom: 96px;
     background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
     background-size: cover; }
+    @media screen and (min-width: 40em) {
+      .landing-page #main #claim {
+        padding-top: 162px; } }
     .landing-page #main #claim .down-arrow {
       width: 28px;
       height: 28px;
@@ -6987,7 +6990,7 @@ html.profile-light, .profile-light body {
       background: #54c6c6; }
 
 .explore-page body {
-  background: #f2f2f2;
+  background: #EFEFEF;
   padding-top: 90px; }
   .explore-page body .top-bar {
     background: #29292b; }
@@ -7032,7 +7035,6 @@ html.profile-light, .profile-light body {
         color: #3c4258; }
     .explore-page body #main .filters select {
       background-color: #ffed00;
-      padding-left: 12px;
       line-height: 24px;
       height: 48px;
       font-weight: 500; }
@@ -7065,7 +7067,8 @@ html.profile-light, .profile-light body {
       .explore-page body #main #results .results-count .small-filter {
         width: 140px; }
         .explore-page body #main #results .results-count .small-filter select {
-          background-color: #ffed00; }
+          background-color: #ffed00;
+          padding-left: 12px; }
 
 footer {
   padding: 84px 12px;
@@ -7138,7 +7141,11 @@ footer {
     font-size: 0.875rem;
     line-height: 2.25rem;
     font-weight: normal;
-    margin: 0 60px 0 12px; }
+    margin: 0 0px 0 12px;
+    display: none; }
+    @media screen and (min-width: 53.125em) {
+      .top-bar .logo a span {
+        display: inline-block; } }
   .top-bar .button.hollow, .top-bar .landing-page #main button, .landing-page #main .top-bar button {
     border-width: 2px !important; }
     .top-bar .button.hollow.small, .top-bar .landing-page #main button.small, .landing-page #main .top-bar button.small {
