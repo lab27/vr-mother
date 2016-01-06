@@ -24,6 +24,10 @@
     right: 0;
     left: 0;
 
+    .top-bar-right {
+        margin-top: 12px;
+    }
+
     &.with-background {
         background: $talk-dark;
     }
@@ -66,30 +70,66 @@
         border-radius: 0 4px 4px 0;
     }
 
-    .sign-in {
-        a {
-            padding-right: 0 !important;
-        }
-    }
+
 
     ul {
         background: none;
 
         li {
-            text-transform: uppercase;
+            // text-transform: uppercase;
             font-weight: 500;
-            letter-spacing: rem-calc(1);
+            letter-spacing: rem-calc(.5);
             font-size: rem-calc(14);
+            padding-right: 12px;
+
 
             // letter-spacing: rem-calc(1);
             a:hover, a:active {
                 color: white;
             }
 
+            
+            .drop-title {
+                color: $primary-color;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding-left:14px;
+                padding-top:12px;
+            
+            }
+
+            .divider {
+                height:1px;
+                background: $talk-dark;
+            }
             .submenu {
                 a {
                     color: $almost-black;
+                    &:hover {
+                        color: $alert-color;
+                    }
                 }
+            }
+
+            &#search-loupe a {
+                font-weight: 700;
+                font-size: rem-calc(18);
+                padding-top:7px;
+            }
+
+            &.join a {
+                color: $secondary-color;
+                &:hover {
+                    color: $warning-color;
+                }
+            }
+
+            &.zoomIn {
+                animation-duration: .2s;
+            }
+
+            &.zoomOut {
+                // pointer-events: none;
             }
         }
 
@@ -103,24 +143,53 @@
         right: 10px;
     }
 
-    .input-group {
-        margin: 0;
-    }
+    .search-container {
+        position:fixed;
+        top:18px;
+        right:24px;
+        width: 460px;
+        background: $talk-dark;
+        animation-duration: .5s;
 
-    .input-group-field {
-        border-radius: 4px 0 0 4px;
-        padding-left: 12px;
-    }
-
-    input {
-        font-weight: 300;
-        width: auto;
-        margin-right: 0;
-        background: rgba($almost-black, 0.5);
-        color: white;
-
-        &:focus {
-            background: $primary-color;
+        form {
+                  label {
+            color: white;
+            font-size: rem-calc(18);
+            width: 24px;
+            float: left;
+            padding-top:7px;
         }
+            input {
+                float:left;
+                font-weight: 300;
+        font-size: rem-calc(14);
+        width: 300px;
+        margin-right: 0;
+        background: $talk-dark;
+        color: white;
+        box-shadow: none;
+
+        &:focus, &:active {
+            background: $talk-dark;
+            border-color: $talk-dark;
+        }
+        }
+        
+        }
+
+        .close-button {
+            font-size: rem-calc(36);
+            font-weight: 200;
+            color:$alert-color;
+            top:0;
+            &:hover {
+                background:none;
+                color: $warning-color;
+            }
+        }
+  
+   
     }
+
+
 }

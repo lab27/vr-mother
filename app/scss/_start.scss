@@ -117,7 +117,7 @@ $h1-bottom-margin: 48px;
         }
 
         &.large {
-            border-width: 4px;
+            border-width: 3px;
         }
     }
 
@@ -128,7 +128,7 @@ $h1-bottom-margin: 48px;
 
         // text-transform: uppercase;
         color: white;
-        letter-spacing: rem-calc(2);
+        letter-spacing: rem-calc(6);
         margin-bottom: $h1-bottom-margin;
     }
 
@@ -226,7 +226,7 @@ $h1-bottom-margin: 48px;
 
         .lead {
             font-size: rem-calc(18);
-            letter-spacing: rem-calc(1);
+            letter-spacing: rem-calc(.5);
             margin-bottom: 0;
 
             a {
