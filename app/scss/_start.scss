@@ -17,6 +17,9 @@
     color: $color;
 }
 
+
+
+
 $h1-bottom-margin: 48px;
 
 .icon {
@@ -213,6 +216,8 @@ $h1-bottom-margin: 48px;
         @include breakpoint(medium){
             padding-top:162px;
         }
+
+ 
 
         .down-arrow {
             width: 28px;
