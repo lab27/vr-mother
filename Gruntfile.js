@@ -272,7 +272,7 @@ module.exports = function(grunt) {
           files: [{
             cwd: 'app/css',
             src: ['*.css'],
-            dest: '../dev/public/assets/stylesheets'
+            dest: '../voicerepublic/public/assets/stylesheets'
           }],
           verbose: true // Display log messages when copying files
         }
