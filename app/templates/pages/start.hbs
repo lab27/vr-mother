@@ -41,7 +41,7 @@ title: Start
 			<div class="category-buttons">
 			<form action="explore.html" method="post">
 				{{#each  cats}}
-				<a class="button" href="explore.html?active={{icon}}"><span class="icon {{icon}}"></span>{{name}}</a>
+				<a class="button" href="explore.html?active={{icon}}"><div class="svg-icon"><svg><use xlink:href="#icon-{{icon}}"></use></svg></div>{{name}}</a>
 				{{/each}}
 				</form>
 			</div>

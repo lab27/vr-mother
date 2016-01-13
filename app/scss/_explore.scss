@@ -1,3 +1,15 @@
+@keyframes dash {
+    50% {
+        stroke-dasharray: 20,19;
+        stroke: #ffed00;
+        transform: scaleX(0.9) scaleY(0.9);
+    }
+
+    100% {
+        stroke-dashoffset: -234;
+    }
+}
+
 .explore-page body {
     background: $silver;
     padding-top: 90px;
@@ -106,8 +118,13 @@
 
             @extend .columns;
 
-            padding-top: 24px;
-            padding-bottom: 48px;
+            @extend .clearfix;
+
+            padding: 16px;
+
+            #results-grid {
+                margin-bottom: 24px;
+            }
 
             .results-count {
                 padding: 0 6px;
@@ -134,6 +151,28 @@
                         background-color: $warning-color;
                         padding-left: 12px;
                     }
+                }
+            }
+
+            #loading-animation {
+                @extend .row;
+
+                @extend .clearfix;
+
+                margin-top: 12px;
+                height: 56px;
+
+                & svg {
+                    display: block;
+                    height: 36px;
+                    margin: 0 auto;
+                }
+
+                path {
+                    stroke-dasharray: 36,3;
+                    stroke-dashoffset: 0;
+                    animation: dash 3s linear infinite;
+                    transform-origin: center center;
                 }
             }
         }

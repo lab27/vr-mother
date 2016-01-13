@@ -148,14 +148,23 @@
             opacity: 1;
         }
 
-        .icon {
-            @extend .float-left;
+        .svg-icon {
+            float: left;
+            max-width: 24px;
+            max-height: 24px;
 
-            width: 24px;
-            height: 24px;
-            margin-top: 6px;
-            margin-right: 12px;
-            background-color: $light-gray;
+            svg {
+                @extend .float-left;
+
+                max-width: 24px;
+                max-height: 24px;
+                margin-top: 6px;
+                margin-right: 12px;
+
+                * {
+                    fill: $light-gray;
+                }
+            }
         }
 
         .info-right {
@@ -208,6 +217,20 @@
 
         .talk-card-inside h5 {
             color: $talk-dark;
+        }
+
+        .bottom-info {
+            .icon {
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 0;
+                background-color: $secondary-color;
+                margin-right: 12px;
+            }
+
+            .info-right {
+                @extend .float-right;
+            }
         }
     }
 }

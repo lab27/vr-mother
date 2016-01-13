@@ -31,6 +31,22 @@ module.exports = function(grunt) {
         //         }
         //     }
         // },
+        svgstore: {
+            options: {
+              prefix : 'icon-', 
+              
+              svg: { 
+               
+                style: 'display:none;'
+              },
+             
+            },
+            default: {
+                files: {
+                    "<%= app %>/templates/partials/svg-defs.hbs":["<%= app %>/img/svg/*.svg"]
+                }
+            }
+          },
 
 
         sass: {
@@ -186,6 +202,10 @@ module.exports = function(grunt) {
                 files: '<%= app %>/scss/**/*.scss',
                 tasks: ['sass']
             },
+            svg: {
+                files: '<%= app %>/img/svg/*.svg',
+                tasks: ['svgstore']
+            },
             // postcss: {
             // 	files: '<%= app %>/scss/**/*.scss',
             // 	tasks: ['postcss']
@@ -255,9 +275,10 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [
        //'convert',
+       'svgstore',
         'assemble',
         'compile-sass',
-        // 'postcss',
+        'postcss',
 
         //'bower-install',
         //'browserSync:livereload',
