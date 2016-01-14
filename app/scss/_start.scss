@@ -1,4 +1,5 @@
-@mixin landing-page-column {
+.landing-container {
+    // @include landing-page-column;
     @extend .medium-10;
 
     @extend .medium-offset-1;
@@ -10,6 +11,12 @@
     @extend .columns;
 
     @extend .text-center;
+
+    .lead {
+        margin-bottom: 60px;
+        font-size: rem-calc(16);
+        line-height: rem-calc(30);
+    }
 }
 
 @mixin hollow-button($color) {
@@ -18,11 +25,6 @@
 }
 
 $h1-bottom-margin: 48px;
-
-@mixin clip-path($name) {
-    -webkit-clip-path: url(#clippath-#{$name});
-    clip-path: url(#clippath-#{$name});
-}
 
 .svg-icon {
     display: block;
@@ -49,52 +51,33 @@ $h1-bottom-margin: 48px;
     height: 36px;
     margin: 0 auto;
     margin-bottom: 24px;
-
-    // background-color: $info-color;
     transition: background-color .2s ease;
-
-    // &.politics {
-    //     @include clip-path(politics);
-    // }
-
-    // &.tech {
-    //     @include clip-path(tech);
-    // }
-
-    // &.arts {
-    //     @include clip-path(arts);
-    // }
-
-    // &.science {
-    //     @include clip-path(science);
-    // }
-
-    // &.media {
-    //     @include clip-path(media);
-    // }
-
-    // &.business {
-    //     @include clip-path(business);
-    // }
-
-    // &.mic {
-    //     @include clip-path(mic);
-    // }
-
-    // &.megaphone {
-    //     @include clip-path(megaphone);
-    // }
-
-    // &.headphones {
-    //     @include clip-path(headphones);
-    // }
-
-    // &.down-arrow {
-    //     @include clip-path(down-arrow);
-    // }
 }
 
-.landing-page #main {
+button {
+    @extend .button;
+
+    @extend .hollow;
+
+    @extend .large;
+
+    @extend .secondary;
+
+    margin: 12px;
+    border-width: 2px;
+
+    &:hover, &:active, &:focus {
+        background: none;
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+
+    &.large {
+        border-width: 3px;
+    }
+}
+
+.root-index #main {
     // padding-top: 100px;
     background: $talk-dark;
     overflow: hidden;
@@ -112,39 +95,6 @@ $h1-bottom-margin: 48px;
             font-size: rem-calc(24);
             text-transform: uppercase;
             letter-spacing: rem-calc(5);
-        }
-
-        .container {
-            @include landing-page-column;
-
-            .lead {
-                margin-bottom: 60px;
-                font-size: rem-calc(16);
-                line-height: rem-calc(30);
-            }
-        }
-    }
-
-    button {
-        @extend .button;
-
-        @extend .hollow;
-
-        @extend .large;
-
-        @extend .secondary;
-
-        margin: 12px;
-        border-width: 2px;
-
-        &:hover, &:active, &:focus {
-            background: none;
-            border-color: $primary-color;
-            color: $primary-color;
-        }
-
-        &.large {
-            border-width: 3px;
         }
     }
 
@@ -207,16 +157,6 @@ $h1-bottom-margin: 48px;
 
         margin-bottom: 48px;
     }
-
-    // #talk-teasers {
-    //     @include breakpoint(medium) {
-    //         margin-top: -18px;
-
-    //         &:last-child {
-    //             display: none;
-    //         }
-    //     }
-    // }
 
     #claim {
         text-align: center;

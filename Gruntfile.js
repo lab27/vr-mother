@@ -278,7 +278,7 @@ module.exports = function(grunt) {
        'svgstore',
         'assemble',
         'compile-sass',
-        'postcss',
+        //'postcss',
 
         //'bower-install',
         //'browserSync:livereload',

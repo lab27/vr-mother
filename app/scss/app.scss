@@ -35,15 +35,19 @@
 @import "../bower_components/foundation-sites/scss/components/pagination";
 @import "../bower_components/foundation-sites/scss/components/progress-bar";
 @import "../bower_components/foundation-sites/scss/components/reveal";
-@import "../bower_components/foundation-sites/scss/components/slider";
+
+// @import "../bower_components/foundation-sites/scss/components/slider";
 @import "../bower_components/foundation-sites/scss/components/sticky";
-@import "../bower_components/foundation-sites/scss/components/switch";
-@import "../bower_components/foundation-sites/scss/components/table";
+
+// @import "../bower_components/foundation-sites/scss/components/switch";
+// @import "../bower_components/foundation-sites/scss/components/table";
 @import "../bower_components/foundation-sites/scss/components/tabs";
 @import "../bower_components/foundation-sites/scss/components/title-bar";
 @import "../bower_components/foundation-sites/scss/components/top-bar";
-@import "../bower_components/foundation-sites/scss/components/thumbnail";
-@import "../bower_components/foundation-sites/scss/components/tooltip";
+
+// @import "../bower_components/foundation-sites/scss/components/thumbnail";
+
+// @import "../bower_components/foundation-sites/scss/components/tooltip";
 
 @include foundation-global-styles;
 
@@ -115,17 +119,17 @@
 
 @include foundation-top-bar;
 
-//@import "iconfont";
-@import "icons";
 @import "appstyles";
 
-@import "talk";
 @import "profile";
 
 @import "start";
 
 @import "join";
+
 @import "explore";
 @import "footer";
+
 @import "topbar";
+
 @import "talk-card";
