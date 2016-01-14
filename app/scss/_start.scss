@@ -77,7 +77,11 @@ button {
     }
 }
 
+<<<<<<< HEAD
 .root-index #main {
+=======
+.root-index {
+>>>>>>> d7f80120360a199bad98212dfd13368b9e4213e2
     // padding-top: 100px;
     background: $talk-dark;
     overflow: hidden;
@@ -256,7 +260,7 @@ button {
                 // button {
                 //     height: 60px;
                 // }
-           
+
             }
         }
     }
@@ -324,7 +328,7 @@ button {
                     text-decoration: none;
 
                     // color: $alert-color;
-               
+
                 }
 
                 *:hover > h3 {
@@ -333,12 +337,12 @@ button {
 
                 *:hover > .icon {
                     // background-color: $alert-color;
-               
+
                 }
 
                 *:hover > .lead {
                     // color: $alert-color;
-               
+
                 }
 
                 .icon {
@@ -352,7 +356,7 @@ button {
                         // color: $alert-color;
 
                         // text-decoration: underline;
-                   
+
                     }
                 }
 
@@ -363,7 +367,7 @@ button {
                         // color: $alert-color;
 
                         // text-decoration: underline;
-                   
+
                     }
                 }
 
@@ -486,7 +490,7 @@ button {
             //         // max-width: none;
             //     }
             // }
-       
+
         }
 
         .feature-copy {

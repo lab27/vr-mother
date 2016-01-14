@@ -33,13 +33,13 @@ module.exports = function(grunt) {
         // },
         svgstore: {
             options: {
-              prefix : 'icon-', 
-              
-              svg: { 
-               
+              prefix : 'icon-',
+
+              svg: {
+
                 style: 'display:none;'
               },
-             
+
             },
             default: {
                 files: {
@@ -200,16 +200,16 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: '<%= app %>/scss/**/*.scss',
-                tasks: ['sass']
+              tasks: ['sass', 'sync']
             },
             svg: {
                 files: '<%= app %>/img/svg/*.svg',
-                tasks: ['svgstore']
+              tasks: ['svgstore']
             },
             // postcss: {
             // 	files: '<%= app %>/scss/**/*.scss',
             // 	tasks: ['postcss']
-            // },			
+            // },
             livereload: {
                 files: ['<%= app %>/**/*.html', '!<%= app %>/bower_components/**', '<%= app %>/js/**/*.js', '<%= app %>/css/**/*.css', '<%= app %>/scss/**/*.scss', '<%= app %>/images/**/*.{jpg,gif,svg,jpeg,png}'],
                 options: {
@@ -265,7 +265,18 @@ module.exports = function(grunt) {
                     'foundation-sites'
                 ]
             }
+        },
+
+      sync: {
+        main: {
+          files: [{
+            cwd: 'app/css',
+            src: ['*.css'],
+            dest: '../voicerepublic/public/assets/stylesheets'
+          }],
+          verbose: true // Display log messages when copying files
         }
+      }
 
     });
 
@@ -278,7 +289,9 @@ module.exports = function(grunt) {
        'svgstore',
         'assemble',
         'compile-sass',
-        //'postcss',
+
+        'sync',
+        'postcss',
 
         //'bower-install',
         //'browserSync:livereload',
@@ -289,7 +302,7 @@ module.exports = function(grunt) {
     grunt.registerTask('server-dist', ['connect:dist']);
     grunt.registerTask('data', ['convert']);
     grunt.registerTask('publish', ['compile-sass', 'clean:dist',
-        //'validate-js', 
+        //'validate-js',
         'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin'
     ]);
 

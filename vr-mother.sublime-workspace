@@ -1,0 +1,537 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"light",
+				"light-blue"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"he",
+				"headline-font"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"me",
+				"medium-up"
+			],
+			[
+				"be",
+				"beige"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bod",
+				"body-font"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"eagle",
+				"eagle-light"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"mic",
+				"microphone"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 208.0,
+		"last_filter": "spacegra",
+		"selected_items":
+		[
+			[
+				"spacegra",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: int",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.settings().erase(\"color_scheme\")"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/dev/src/vr-mother"
+	],
+	"file_history":
+	[
+		"/home/dev/src/vr-mother/Gruntfile.js",
+		"/home/dev/src/vr-mother/app/templates/layouts/default.hbs",
+		"/home/dev/src/vr-mother/app/css/app.css",
+		"/home/dev/src/vr-mother/app/scss/_appstyles.scss",
+		"/home/dev/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/dev/src/vr-mother/app/scss/_start.scss",
+		"/home/dev/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/dev/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/dev/src/vr-mother/vr-mother.sublime-project",
+		"/home/dev/src/vr-mother/bigobjects.txt",
+		"/home/dev/src/vr-mother/bigtosmall.txt",
+		"/home/dev/src/voicerepublic/app/views/layouts/velvet_root.html.haml",
+		"/home/dev/src/voicerepublic/public/assets/stylesheets/animate.min.css",
+		"/home/dev/src/voicerepublic/public/assets/stylesheets/explore.min.css",
+		"/home/dev/src/voicerepublic/app/views/root/index.html.haml",
+		"/home/dev/src/voicerepublic/public/assets/stylesheets/landing.min.css",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/explore.scss",
+		"/home/dev/src/voicerepublic/app/views/shared/_actionbar.html.haml",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/shared/top_actionbar.scss",
+		"/home/dev/src/voicerepublic/app/controllers/root_controller.rb",
+		"/home/dev/src/voicerepublic/public/assets/stylesheets/_icons.scss",
+		"/home/dev/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/dev/src/voicerepublic/vendor/assets/stylesheets/landing.min.css",
+		"/home/dev/.config/sublime-text-3/Packages/Minifier/Minifier.sublime-settings",
+		"/home/dev/.config/sublime-text-3/Packages/User/Minifier.sublime-settings",
+		"/home/dev/src/voicerepublic/app/controllers/explore_controller.rb",
+		"/home/dev/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/home/dev/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/foundation-rails-5.1.1.0/vendor/assets/stylesheets/foundation/components/_forms.scss",
+		"/etc/apt/sources.list",
+		"/home/dev/src/voicerepublic/app/views/explore/index.html.haml",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/shared/velvet_talkbox.scss",
+		"/home/dev/src/voicerepublic/app/assets/javascripts/velvet.js",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/_settings.scss",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/explore.sass",
+		"/home/dev/src/voicerepublic/app/views/explore/_results.html.haml",
+		"/home/dev/src/voicerepublic/app/views/layouts/velvet.html.haml",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/velvet.scss",
+		"/home/dev/src/voicerepublic/app/views/landing_page/index.html.haml",
+		"/home/dev/.config/sublime-text-3/Packages/User/html2haml.sublime-settings",
+		"/home/dev/.config/sublime-text-3/Packages/html2haml/html2haml.sublime-settings",
+		"/home/dev/src/voicerepublic/app/views/layouts/application_velvet.html.erb",
+		"/home/dev/src/voicerepublic/app/views/shared/_notice_or_error_velvet.html.erb",
+		"/home/dev/src/voicerepublic/config/locales/en-landing_page.yml",
+		"/home/dev/src/voicerepublic/Gemfile",
+		"/home/dev/src/voicerepublic/app/controllers/application_controller.rb",
+		"/home/dev/src/voicerepublic/app/views/shared/_actionbar_velvet.html.haml",
+		"/home/dev/src/voicerepublic/app/views/shared/_footer_velvet.html.haml",
+		"/home/dev/src/voicerepublic/app/views/shared/_publisher_tile.html.haml",
+		"/home/dev/src/voicerepublic/app/controllers/landing_page_controller.rb",
+		"/home/dev/src/voicerepublic/spec/features/users_spec.rb",
+		"/home/dev/src/voicerepublic/spec/features/search_spec.rb",
+		"/home/dev/src/voicerepublic/spec/features/talks_spec.rb",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/grids_variables_mixins/velvet_ci.scss",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/talks.scss",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/grids_variables_mixins/foundation.scss",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/application.css.scss",
+		"/home/dev/src/voicerepublic/.rspec",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/shared/talk_medium_box.scss",
+		"/home/dev/src/voicerepublic/public/images/icons/play-arrow-999.svg",
+		"/home/dev/src/voicerepublic/app/views/shared/_talk_velvet_medium_box.html.haml",
+		"/home/dev/src/voicerepublic/app/views/shared/_description.en.html.haml",
+		"/home/dev/src/voicerepublic/app/views/shared/equalizer.html",
+		"/home/dev/src/voicerepublic/app/views/shared/_avatar_image_velvet.html.haml",
+		"/home/dev/src/voicerepublic/config/locales/en.yml",
+		"/home/dev/src/voicerepublic/app/views/layouts/application.html.erb",
+		"/home/dev/src/rc.local",
+		"/etc/rc.loacl",
+		"/etc/rc.local",
+		"/home/dev/src/voicerepublic/app/views/landing_page/_summary.en.html.haml",
+		"/home/dev/src/voicerepublic/config/initializers/assets.rb",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/support.scss",
+		"/home/dev/src/voicerepublic/app/views/shared/_helpful_share.haml",
+		"/home/dev/src/voicerepublic/app/views/support/pro-setup.en.html.haml",
+		"/home/dev/src/voicerepublic/public/images/support/thumbs-up.svg",
+		"/home/dev/src/voicerepublic/public/images/support/thumbs-down.svg",
+		"/home/dev/src/voicerepublic/public/images/support/facebook-circle.svg",
+		"/home/dev/src/voicerepublic/public/images/support/twitter-circle.svg",
+		"/home/dev/src/voicerepublic/app/views/layouts/support.html.haml",
+		"/home/dev/src/voicerepublic/.git/COMMIT_EDITMSG",
+		"/home/dev/src/voicerepublic/app/views/support/index.html.haml",
+		"/home/dev/src/voicerepublic/app/assets/stylesheets/landing_page.scss"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/dev/src/voicerepublic/app/assets/stylesheets",
+			"/home/dev/src/voicerepublic/config/locales",
+			"/home/dev/src/voicerepublic/app",
+			"/home/dev/src/voicerepublic/config/locales",
+			"/home/dev/src/voicerepublic/app/assets/stylesheets",
+			"/home/dev/src/voicerepublic/app",
+			"/home/dev/src/voicerepublic/app/controllers",
+			"/home/dev/src/voicerepublic/app",
+			"/home/dev/src/voicerepublic/config/locales",
+			"/home/dev/src/voicerepublic/app/assets/stylesheets",
+			"/home/dev/src/voicerepublic/config/locales",
+			"/home/dev/src/voicerepublic/app/assets",
+			"/home/dev/src/voicerepublic"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dev",
+			".tmp",
+			"copy",
+			"explore-page",
+			"icon",
+			"landing-page",
+			"../fonts/",
+			"Eagle",
+			"eagle",
+			"../fonts/",
+			"eagle-book",
+			"%a{:href => \"profile.html\"}",
+			"img/publishers",
+			"landing-page",
+			"image",
+			"eagle",
+			"}\n",
+			"dropdown",
+			"top-bar .input",
+			"input",
+			"select",
+			"independent",
+			"talkbox",
+			"avatar",
+			"facebook",
+			"Successfully authenticated from Facebook account",
+			"title",
+			"healine-font",
+			"$body-font",
+			"$brand-font-bold",
+			"velvet",
+			"publisher_",
+			"= render partial: 'shared/publisher_tile', :locals => ",
+			"title",
+			"foundation",
+			"headline-font",
+			"headling-font",
+			"body-font",
+			"body-",
+			"section",
+			"Helvetica Neue\", helvetica, arial, sans-serif",
+			"\"Helvetica Neue\", helvetica, arial, sans-serif",
+			"font-fam",
+			"font-family-sans",
+			"font-family",
+			"font-famil",
+			"arial",
+			"font-weight",
+			"eagle",
+			"talks",
+			"gray",
+			"publisher_name",
+			"image_tag",
+			"foundation",
+			"top-ac",
+			"media",
+			"logo",
+			"welcome",
+			"logo",
+			"action",
+			"store-links",
+			"velvet",
+			"search",
+			"logo",
+			"action",
+			"footer",
+			"search",
+			"span",
+			"notice_or_error",
+			"flash_messages",
+			"flash",
+			"foundation",
+			"application",
+			"Cheers",
+			"light-blue",
+			"url(",
+			"url",
+			"talk",
+			"live_talks_url",
+			"home to the spoken word",
+			"minion",
+			"this",
+			"tiny",
+			"a339cd",
+			"#a339cd",
+			"#fef1de",
+			"#2C46B0",
+			"#54C6C6",
+			"#21273D",
+			"#FDEC03",
+			"#F82847",
+			"droid-serif",
+			"Baskerville",
+			"georgia",
+			"accordion",
+			"accord",
+			"enjoy the world of the spoken word",
+			".en.",
+			".en"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"explore-index",
+			"root-index",
+			"/assets/fonts/",
+			"-#%a{:href => \"profile.html\"}",
+			"images/sponsored_publishers",
+			"root-index",
+			"",
+			"publisher_image",
+			" '",
+			"$purple",
+			"$beige",
+			"$blue",
+			"$light-blue",
+			"$dark",
+			"$yellow",
+			"$red",
+			"freight-display-pro",
+			"droid-serif",
+			"'droid-serif'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "vr-mother.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"velvet",
+				"public/assets/stylesheets/velvet.min.css"
+			],
+			[
+				"exploreinde",
+				"app/views/explore/index.html.haml"
+			],
+			[
+				"rootind",
+				"app/views/root/index.html.haml"
+			],
+			[
+				"talk_car",
+				"app/views/shared/_talk_card.html.haml"
+			],
+			[
+				"root/inde",
+				"app/views/root/index.html.haml"
+			],
+			[
+				"talk_c",
+				"app/views/shared/_talk_card.html.haml"
+			],
+			[
+				"min.css",
+				"public/assets/stylesheets/landing.min.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
