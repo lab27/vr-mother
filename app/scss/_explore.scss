@@ -188,7 +188,7 @@
         transition: background .2s ease;
 
         &:hover {
-            background: orange;
+            background: $info-color;
         }
 
         &.selected {
@@ -201,6 +201,10 @@
             p {
                 color: $warning-color;
             }
+        }
+
+        &.focus {
+            border: 2px solid red;
         }
 
         p {

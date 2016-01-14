@@ -2800,8 +2800,7 @@ button {
     border-width: 3px; }
 
 .root-index {
-  background: #29292b;
-  overflow: hidden; }
+  background: #29292b; }
   .root-index .row {
     max-width: 1200px;
     padding: 12px; }
@@ -3179,13 +3178,15 @@ button {
     bottom: 0;
     transition: background .2s ease; }
     .category-buttons label:hover {
-      background: orange; }
+      background: #fef1de; }
     .category-buttons label.selected {
       background: #a339cd; }
       .category-buttons label.selected svg {
         fill: #ffed00; }
       .category-buttons label.selected p {
         color: #ffed00; }
+    .category-buttons label.focus {
+      border: 2px solid red; }
     .category-buttons label p {
       text-transform: uppercase;
       color: #a339cd;
