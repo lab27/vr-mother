@@ -1,0 +1,13 @@
+{
+	"settings":{
+// "theme": "Spacegray Light.sublime-theme",
+//   	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.light.tmTheme",
+		},
+	
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
