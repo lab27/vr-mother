@@ -3,6 +3,15 @@
     color: $color;
 }
 
+.top-bar-left, .top-bar-right {
+    @include breakpoint(small){
+        width:50%;
+    }
+    @include breakpoint(medium){
+        width: 344px;
+    }
+}
+
 $h1-bottom-margin: 48px;
 
 .svg-icon {
@@ -59,6 +68,10 @@ button {
 .root-index {
     // padding-top: 100px;
     background: $talk-dark;
+
+    .talk-card {
+
+    }
 
     .row {
         max-width: 1200px;
@@ -139,12 +152,14 @@ button {
     #claim {
         text-align: center;
         padding-bottom: 96px;
+        background:url(../../images/background/matterhorn.jpg) no-repeat 50% 50%;
+        background-size:cover;
 
         // padding: 30vh 0 40vh 0;
 
-        @include breakpoint(medium) {
-            padding-top: 162px;
-        }
+        // @include breakpoint(medium) {
+        //     padding-top: 162px;
+        // }
 
 
         .down-arrow {
@@ -162,6 +177,12 @@ button {
         h1 {
             color: white;
             text-transform: uppercase;
+
+            @include breakpoint(medium) {
+                font-size: rem-calc(36);
+                letter-spacing: rem-calc(6);
+                margin-bottom: 24px;
+            }
 
             @include breakpoint(large) {
                 font-size: rem-calc(42);
@@ -244,12 +265,13 @@ button {
         .listen-interstitial {}
 
         .category-buttons {
-            @extend .button-group;
+            // @extend .button-group;
 
-            @extend .expanded;
+            @extend .clearfix;
 
             float: none;
             margin-bottom: 48px;
+            padding:0;
 
             .button {
                 background: $warning-color;
@@ -258,6 +280,23 @@ button {
                 line-height: rem-calc(14);
                 letter-spacing: 0;
                 padding: 24px 6px;
+                width: 100%;
+                margin-bottom: 6px;
+                @include breakpoint(medium){
+                    float: left;
+                    width: calc(50% - 3px);
+                    &:nth-child(odd){
+
+                        margin-right:6px;
+                    }
+                }
+                @include breakpoint(large){
+                    width: calc(100%/6);
+                    margin-right:0;
+                    &:nth-child(odd){
+                        margin-right: 0;
+                    }
+                }
 
                 .icon {
                     background-color: $brand-purple;
@@ -290,11 +329,18 @@ button {
             $color: $brand-purple;
 
             .category {
+                a {
+                    color: $brand-purple;
+                }
                 @extend .medium-6;
 
                 @extend .columns;
 
                 padding: 48px 24px;
+
+                a svg {
+                    fill:$brand-purple;
+                }
 
                 *:hover > * {
                     text-decoration: none;

@@ -1,18 +1,26 @@
+
+
 .talk-card {
     padding: 6px;
     background: none;
-    @include breakpoint(560px){
+       @include breakpoint(560px){
         width: 50%;
     }
     @include breakpoint(760px){
         width: 33.333%;
     }
-    @include breakpoint(1100px){
+        @include breakpoint(1100px){
         width: 25%;
     }
+
+    .explore-index & {
+
+
     @include breakpoint(1600px){
         width: 20%;
     }
+    }
+
 
 
 
