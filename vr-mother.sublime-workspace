@@ -107,6 +107,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/scss/_start.scss",
+			"settings":
+			{
+				"buffer_size": 10678,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -169,10 +177,14 @@
 	},
 	"expanded_folders":
 	[
-		"/home/dev/src/vr-mother"
+		"/home/dev/src/vr-mother",
+		"/home/dev/src/vr-mother/app",
+		"/home/dev/src/vr-mother/app/fonts",
+		"/home/dev/src/vr-mother/app/scss"
 	],
 	"file_history":
 	[
+		"/home/dev/src/vr-mother/vr-mother.sublime-project",
 		"/home/dev/src/vr-mother/Gruntfile.js",
 		"/home/dev/src/vr-mother/app/templates/layouts/default.hbs",
 		"/home/dev/src/vr-mother/app/css/app.css",
@@ -181,7 +193,6 @@
 		"/home/dev/src/vr-mother/app/scss/_start.scss",
 		"/home/dev/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
 		"/home/dev/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
-		"/home/dev/src/vr-mother/vr-mother.sublime-project",
 		"/home/dev/src/vr-mother/bigobjects.txt",
 		"/home/dev/src/vr-mother/bigtosmall.txt",
 		"/home/dev/src/voicerepublic/app/views/layouts/velvet_root.html.haml",
@@ -284,6 +295,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<<<",
 			"dev",
 			".tmp",
 			"copy",
@@ -419,8 +431,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/scss/_start.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1317,
+								1317
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
