@@ -1,6 +1,20 @@
 .talk-card {
     padding: 6px;
     background: none;
+    @include breakpoint(560px){
+        width: 50%;
+    }
+    @include breakpoint(760px){
+        width: 33.333%;
+    }
+    @include breakpoint(1100px){
+        width: 25%;
+    }
+    @include breakpoint(1600px){
+        width: 20%;
+    }
+
+
 
     &:last-child {
         @extend .end;

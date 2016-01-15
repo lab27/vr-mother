@@ -61,19 +61,7 @@
         }
     }
 
-    .explore-page-third {
-        @extend .medium-4;
 
-        @extend .columns;
-
-        padding: 0;
-        padding-right: 12px;
-        padding-top: 12px;
-
-        &:last-of-type {
-            padding-right: 0;
-        }
-    }
 
    
 
@@ -101,27 +89,54 @@
     // background: $warning-color;
     padding: 0 12px;
 
-    svg {
-        max-width: 36px;
-        max-height: 36px;
-        fill: $brand-purple;
-        margin: 12px 0;
+    .icon {
+        float:left;
+        margin:0 auto;
+        width: 24px;
+        padding: 4px 0 0 6px;
+        @include breakpoint(medium){
+            float:none;
+            width: 36px;
+            height: 36px;
+            margin:0 auto;
+            margin-bottom:24px; 
+            padding:0;
+        }
+        svg {
+            max-width: 24px;
+            max-height: 24px;
+            fill: $brand-purple;
+            margin: 0;
+            @include breakpoint(large){
+                max-width: 36px;
+                max-height: 36px;
+                margin:12px 0;
+            }
+        }
     }
+
+
 
     li {
         background: none;
         padding: 0;
         text-align: center;
         position: relative;
-        width: calc(100%/7);
+        width: calc(100%);
+        max-height: 60px;
+        margin-bottom: 2px;
+        @include breakpoint(medium){
+            width: calc(100%/7);
+            margin-bottom: 0;
 
-        &:hover {}
+        }
     }
 
     label {
         display: block;
         background: $warning-color;
         padding: 12px;
+        min-height:60px;
 
         // position: absolute;
         top: 0;
@@ -155,6 +170,13 @@
             color: $brand-purple;
             font-size: rem-calc(12);
             font-weight: 500;
+            margin-bottom: 0;
+            margin-top:7px;
+            margin-right: 30px;
+            @include breakpoint(medium){
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
         }
     }
 
@@ -203,7 +225,7 @@
     }
 }
 
-#loading-animation {
+#spy {
     // @extend .row;
 
     @extend .clearfix;
