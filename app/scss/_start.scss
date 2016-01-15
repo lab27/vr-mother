@@ -77,11 +77,9 @@ button {
     }
 }
 
-
 .root-index {
     // padding-top: 100px;
     background: $talk-dark;
-    overflow: hidden;
 
     .row {
         max-width: 1200px;
@@ -164,8 +162,6 @@ button {
         padding-bottom: 96px;
 
         // padding: 30vh 0 40vh 0;
-        background: url(../img/bg/coney.jpg) no-repeat 50% 50%;
-        background-size: cover;
 
         @include breakpoint(medium) {
             padding-top: 162px;
@@ -257,7 +253,7 @@ button {
                 // button {
                 //     height: 60px;
                 // }
-
+           
             }
         }
     }
@@ -325,7 +321,7 @@ button {
                     text-decoration: none;
 
                     // color: $alert-color;
-
+               
                 }
 
                 *:hover > h3 {
@@ -334,12 +330,12 @@ button {
 
                 *:hover > .icon {
                     // background-color: $alert-color;
-
+               
                 }
 
                 *:hover > .lead {
                     // color: $alert-color;
-
+               
                 }
 
                 .icon {
@@ -353,7 +349,7 @@ button {
                         // color: $alert-color;
 
                         // text-decoration: underline;
-
+                   
                     }
                 }
 
@@ -364,7 +360,7 @@ button {
                         // color: $alert-color;
 
                         // text-decoration: underline;
-
+                   
                     }
                 }
 
@@ -487,7 +483,7 @@ button {
             //         // max-width: none;
             //     }
             // }
-
+       
         }
 
         .feature-copy {

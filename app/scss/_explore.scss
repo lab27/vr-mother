@@ -10,6 +10,10 @@
     }
 }
 
+#results {
+    background: orange;
+}
+
 .explore-index {
     background: $silver;
     padding-top: 90px;
@@ -51,53 +55,56 @@
         }
     }
 
-    #results {
-        @extend .medium-12;
+    // #results {
+    //     @extend .medium-12;
 
-        @extend .columns;
+    //     @extend .columns;
 
-        @extend .clearfix;
+    //     @extend .clearfix;
 
-        padding: 16px;
+    //     padding: 16px;
 
-        #results-grid {
-            margin-bottom: 24px;
-        }
+    //     #results-grid {
+    //         margin-bottom: 24px;
+    //     }
 
-        .results-count {
-            padding: 0 6px;
+    //     .results-count {
+    //         padding: 0 6px;
 
-            p {
-                font-weight: 700;
-                display: inline-block;
-                color: $alert-color;
-                margin-bottom: 6px;
-                border-bottom: 4px solid $alert-color;
-                width: auto;
-                margin: 0 auto;
-                margin-bottom: 24px;
-                line-height: rem-calc(24);
-                padding-bottom: 12px;
-            }
+    //         p {
+    //             font-weight: 700;
+    //             display: inline-block;
+    //             color: $alert-color;
+    //             margin-bottom: 6px;
+    //             border-bottom: 4px solid $alert-color;
+    //             width: auto;
+    //             margin: 0 auto;
+    //             margin-bottom: 24px;
+    //             line-height: rem-calc(24);
+    //             padding-bottom: 12px;
+    //         }
 
-            .small-filter {
-                @extend .float-right;
+    //         .small-filter {
+    //             @extend .float-right;
 
-                width: 140px;
+    //             width: 140px;
 
-                select {
-                    background-color: $warning-color;
-                    padding-left: 12px;
-                }
-            }
-        }
-    }
+    //             select {
+    //                 background-color: $warning-color;
+    //                 padding-left: 12px;
+    //             }
+    //         }
+    //     }
+    // }
 
     select {
         background-color: $warning-color;
         line-height: 24px;
         height: 48px;
         font-weight: 500;
+        float: right;
+        max-width: 200px;
+        margin-top: 24px;
     }
 
     hr {
@@ -151,6 +158,112 @@
             // }
        
         }
+    }
+}
+
+.category-buttons {
+    // background: $warning-color;
+    padding: 0;
+
+    svg {
+        max-width: 36px;
+        max-height: 36px;
+        fill: $brand-purple;
+        margin: 12px 0;
+    }
+
+    li {
+        background: none;
+        padding: 0;
+        text-align: center;
+        position: relative;
+        width: calc(100%/7);
+
+        &:hover {}
+    }
+
+    label {
+        display: block;
+        background: $warning-color;
+        padding: 12px;
+
+        // position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: background .2s ease;
+
+        &:hover {
+            background: $info-color;
+        }
+
+        &.selected {
+            background: $brand-purple;
+
+            svg {
+                fill: $warning-color;
+            }
+
+            p {
+                color: $warning-color;
+            }
+        }
+
+        &.focus {
+            border: 2px solid red;
+        }
+
+        p {
+            text-transform: uppercase;
+            color: $brand-purple;
+            font-size: rem-calc(12);
+            font-weight: 500;
+        }
+    }
+
+    input[type="radio"] {
+        opacity: .01;
+        z-index: 100;
+        margin: 0;
+    }
+
+    h5 {
+        z-index: 500;
+    }
+
+    [type="radio"] {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    [type="radio"] + label::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        // background: red;
+
+        // z-index: 0;
+   
+    }
+
+    [type="radio"]:checked + label::before {
+        background: rgba(orange, 0.6);
+    }
+
+    [type="radio"]:focus + label {
+        border: 2px solid green;
     }
 }
 

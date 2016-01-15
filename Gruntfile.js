@@ -200,7 +200,11 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: '<%= app %>/scss/**/*.scss',
-              tasks: ['sass', 'sync']
+                tasks: ['sass', 'sync']
+            },
+            js: {
+                files: '<%= app %>/js/*.js',
+                tasks: ['sync:js']
             },
             svg: {
                 files: '<%= app %>/img/svg/*.svg',
@@ -275,6 +279,14 @@ module.exports = function(grunt) {
             dest: '../voicerepublic/public/assets/stylesheets'
           }],
           verbose: true // Display log messages when copying files
+        },
+        js: {
+          files: [{
+            cwd: 'app/js',
+            src: ['*.js'],
+            dest: '../voicerepublic/public/assets/javascripts'
+          }],
+          verbose: true
         }
       }
 
@@ -291,6 +303,7 @@ module.exports = function(grunt) {
         'compile-sass',
 
         'sync',
+        'sync:js',
         'postcss',
 
         //'bower-install',
