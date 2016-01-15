@@ -113,11 +113,17 @@
     font-size: rem-calc(18);
     padding-top: 10px;
 
-    svg {
-        fill: rgba(white, 0.5);
-        width: 18px;
-        height: 18px;
+    .svg-icon {
+        height: 6px;
+
+        svg {
+            fill: rgba(white, 0.5);
+            width: 18px;
+            height: 18px;
+        }
     }
+
+
 
     &:hover {
         svg {
@@ -129,7 +135,7 @@
 .search-container {
     position: fixed;
     top: 18px;
-    right: 24px;
+    right: 0;
     width: 460px;
     background: $talk-dark;
     animation-duration: .5s;
@@ -141,6 +147,15 @@
             width: 24px;
             float: left;
             padding-top: 7px;
+                .svg-icon {
+        height: 6px;
+
+        svg {
+            fill: rgba(white, 0.5);
+            width: 18px;
+            height: 18px;
+        }
+    }
         }
 
         input {

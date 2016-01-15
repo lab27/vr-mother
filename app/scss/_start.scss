@@ -1,24 +1,3 @@
-.landing-container {
-    // @include landing-page-column;
-    @extend .medium-10;
-
-    @extend .medium-offset-1;
-
-    @extend .large-8;
-
-    @extend .large-offset-2;
-
-    @extend .columns;
-
-    @extend .text-center;
-
-    .lead {
-        margin-bottom: 60px;
-        font-size: rem-calc(16);
-        line-height: rem-calc(30);
-    }
-}
-
 @mixin hollow-button($color) {
     border-color: $color;
     color: $color;
@@ -355,6 +334,7 @@ button {
 
                 .lead {
                     color: $color;
+                    height: 100px;
 
                     &:hover, &:active {
                         // color: $alert-color;
