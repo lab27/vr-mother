@@ -11,7 +11,26 @@
 }
 
 #results {
-    background: orange;
+    background: $silver;
+    padding:0 6px;
+    margin-top: -56px;
+}
+
+#more {
+    margin:0;
+
+}
+
+#result-count {
+    font-weight: 700;
+    display: inline-block;
+    color: $alert-color;
+    border-bottom: 4px solid $alert-color;
+    width: auto;
+    margin: 0 auto 24px;
+    line-height: 1.5rem;
+    padding-bottom: 12px;
+    margin-left: 6px;
 }
 
 .explore-index {
@@ -25,6 +44,7 @@
         color: $secondary-color;
         text-transform: uppercase;
         margin-top: 48px;
+        margin-bottom: 42px;
     }
 
     h6 {
@@ -55,47 +75,7 @@
         }
     }
 
-    // #results {
-    //     @extend .medium-12;
-
-    //     @extend .columns;
-
-    //     @extend .clearfix;
-
-    //     padding: 16px;
-
-    //     #results-grid {
-    //         margin-bottom: 24px;
-    //     }
-
-    //     .results-count {
-    //         padding: 0 6px;
-
-    //         p {
-    //             font-weight: 700;
-    //             display: inline-block;
-    //             color: $alert-color;
-    //             margin-bottom: 6px;
-    //             border-bottom: 4px solid $alert-color;
-    //             width: auto;
-    //             margin: 0 auto;
-    //             margin-bottom: 24px;
-    //             line-height: rem-calc(24);
-    //             padding-bottom: 12px;
-    //         }
-
-    //         .small-filter {
-    //             @extend .float-right;
-
-    //             width: 140px;
-
-    //             select {
-    //                 background-color: $warning-color;
-    //                 padding-left: 12px;
-    //             }
-    //         }
-    //     }
-    // }
+   
 
     select {
         background-color: $warning-color;
@@ -105,6 +85,7 @@
         float: right;
         max-width: 200px;
         margin-top: 24px;
+        margin-right: 12px;
     }
 
     hr {
@@ -113,57 +94,12 @@
         border-color: $light-gray;
     }
 
-    #main {
-        // @extend .row;
 
-        .filters {
-            @extend .clearfix;
-
-            padding: 48px 20px 12px 20px;
-
-            // .category-buttons {
-            //     @extend .button-group;
-
-            //     @extend .expanded;
-
-            //     float: none;
-            //     margin-bottom: 12px;
-
-            //     .button {
-            //         background: $warning-color;
-            //         color: $brand-purple;
-            //         font-size: rem-calc(12);
-            //         line-height: rem-calc(14);
-            //         letter-spacing: 0;
-            //         padding: 24px 6px;
-
-            //         .icon {
-            //             background-color: $brand-purple;
-            //             margin-bottom: 12px;
-            //         }
-
-            //         &:hover {
-            //             background: $info-color;
-            //         }
-
-            //         &.active {
-            //             background-color: $brand-purple;
-            //             color: white;
-
-            //             .icon {
-            //                 background-color: white;
-            //             }
-            //         }
-            //     }
-            // }
-       
-        }
-    }
 }
 
 .category-buttons {
     // background: $warning-color;
-    padding: 0;
+    padding: 0 12px;
 
     svg {
         max-width: 36px;
