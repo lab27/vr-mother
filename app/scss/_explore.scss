@@ -10,6 +10,10 @@
     }
 }
 
+#results {
+    background: orange;
+}
+
 .explore-index {
     background: $silver;
     padding-top: 90px;
@@ -51,53 +55,56 @@
         }
     }
 
-    #results {
-        @extend .medium-12;
+    // #results {
+    //     @extend .medium-12;
 
-        @extend .columns;
+    //     @extend .columns;
 
-        @extend .clearfix;
+    //     @extend .clearfix;
 
-        padding: 16px;
+    //     padding: 16px;
 
-        #results-grid {
-            margin-bottom: 24px;
-        }
+    //     #results-grid {
+    //         margin-bottom: 24px;
+    //     }
 
-        .results-count {
-            padding: 0 6px;
+    //     .results-count {
+    //         padding: 0 6px;
 
-            p {
-                font-weight: 700;
-                display: inline-block;
-                color: $alert-color;
-                margin-bottom: 6px;
-                border-bottom: 4px solid $alert-color;
-                width: auto;
-                margin: 0 auto;
-                margin-bottom: 24px;
-                line-height: rem-calc(24);
-                padding-bottom: 12px;
-            }
+    //         p {
+    //             font-weight: 700;
+    //             display: inline-block;
+    //             color: $alert-color;
+    //             margin-bottom: 6px;
+    //             border-bottom: 4px solid $alert-color;
+    //             width: auto;
+    //             margin: 0 auto;
+    //             margin-bottom: 24px;
+    //             line-height: rem-calc(24);
+    //             padding-bottom: 12px;
+    //         }
 
-            .small-filter {
-                @extend .float-right;
+    //         .small-filter {
+    //             @extend .float-right;
 
-                width: 140px;
+    //             width: 140px;
 
-                select {
-                    background-color: $warning-color;
-                    padding-left: 12px;
-                }
-            }
-        }
-    }
+    //             select {
+    //                 background-color: $warning-color;
+    //                 padding-left: 12px;
+    //             }
+    //         }
+    //     }
+    // }
 
     select {
         background-color: $warning-color;
         line-height: 24px;
         height: 48px;
         font-weight: 500;
+        float: right;
+        max-width: 200px;
+        margin-top: 24px;
     }
 
     hr {
