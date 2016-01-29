@@ -1,8 +1,16 @@
 //Join Page
-.join-page {
+.registrations {
 	height:100%;
-	// background:url(../img/bg/coney.jpg) no-repeat 50% 50%;
-	background-size: cover;
+	
+	
+	html & {
+		background:url(../../images/background/matterhorn.jpg) no-repeat 50% 50%;
+		background-size: cover;
+		height: 100%;
+		padding:0;
+		margin:0;
+	
+	}
 	body {
 		height: 100%;
 		background: none;
@@ -12,11 +20,12 @@
 			position:fixed;
 			top:0;
 			left:0;
+
 			z-index: 1;
 		}
 	}
 
-	#join-box {
+	#input-block {
 		background:white;
 		margin:0;
 		padding:24px;

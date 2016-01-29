@@ -3,6 +3,8 @@
 .talk-card {
     padding: 6px;
     background: none;
+    position:relative;
+
        @include breakpoint(560px){
         width: 50%;
     }
@@ -21,6 +23,33 @@
     }
     }
 
+    &.postlive, &.processing, &.suspended {
+        pointer-events:none;
+        .talk-card-inside {
+            opacity: .5;
+
+        }
+
+       
+        
+        .not_available {
+            position:absolute;
+            top:97px;
+            left:30px;
+            right:30px;
+            padding:12px;
+            background:$warning-color;
+            p {
+                font-size: rem-calc(12);
+                line-height: rem-calc(14);
+                margin-bottom: 0;
+                font-weight: 500;
+                height: auto;
+            }
+
+        }
+    }
+
 
 
 
@@ -32,6 +61,7 @@
         background: $ghost;
         padding: 12px;
         cursor: pointer;
+         position:relative;
 
         @extend .text-left;
 
@@ -49,6 +79,16 @@
                 text-decoration: underline;
             }
         }
+
+        p.series-label {
+                color:$almost-black;
+                font-size: rem-calc(12);
+                text-transform: uppercase;
+                letter-spacing: rem-calc(4);
+                margin:0;
+                margin-bottom: 10px;
+                line-height: rem-calc(12);
+            }
 
         .meta {
             @extend .clearfix;
@@ -126,7 +166,7 @@
 
         $lines-to-show: 2;
 
-        .title {
+        .title, .series > & {
             display: block;
 
             /* Fallback for non-webkit */
@@ -145,6 +185,7 @@
             text-overflow: ellipsis;
             margin-bottom: 6px;
             transition: text-decoration .2s ease;
+
         }
 
         a {
@@ -230,6 +271,7 @@
             .talk-count, .play-count {
                 margin-bottom: 0;
             }
+
         }
 
         .talk-card-inside h5 {
@@ -251,3 +293,59 @@
         }
     }
 }
+
+$font-size: 14px;
+        $line-height: 1.2;
+        $lines-to-show: 2;
+
+.series .talk-card-inside p.lead {
+        
+
+            display: block;
+
+            /* Fallback for non-webkit */
+            display: -webkit-box;
+
+            // max-width: 400px;
+            height: $font-size * $line-height * $lines-to-show;
+
+            /* Fallback for non-webkit */
+            margin: 0 auto;
+            font-size: $font-size;
+            line-height: $line-height;
+            -webkit-line-clamp: $lines-to-show;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 6px;
+            transition: text-decoration .2s ease;
+        }
+
+
+.talk-card:hover .talk-card-inside h5.title, .series:hover .talk-card-inside h5.title {
+    text-decoration: underline;
+ }  
+
+.series .talk-card-inside .meta {
+    height:18px;
+
+    a {
+        color: $alert-color;
+        font-weight: 500;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+    .series {
+        .talk-card-inside {
+            padding-top: 12px;
+            img {
+                margin-bottom: 12px;
+            }
+            .title,p.lead {
+                color: $almost-black;
+            }
+        }
+    }

@@ -1,4 +1,17 @@
 /* all app scss styles here */
+
+@mixin button-hollow-style($color: $primary-color) {
+  $color-hover: $alert-color;
+
+  border: 1px solid $color;
+  color: $color;
+
+  &:hover, &:focus {
+    border-color: $color-hover;
+    color: $color-hover;
+  }
+}
+
 @font-face {
     font-family: 'Eagle';
     src: url('../fonts/Eagle-Book.eot?-u70zge');
@@ -12,7 +25,7 @@ body {
     height: 100%;
     font-weight: 300;
     color: $almost-black;
-    background: $dark-gray;
+    background: $silver;
 }
 
 button, .button {
@@ -20,6 +33,12 @@ button, .button {
     text-transform: uppercase;
     letter-spacing: rem-calc(1);
     border-width: 3px;
+    &.hollow {
+        border-width:2px;
+    }
+    &.alert.hollow {
+        border-width:2px;
+    }
 
     &.small {
         border-width: 2px;
@@ -42,21 +61,30 @@ button, .button {
     }
 }
 
+.close-button {
+    padding:0;
+    margin:0;
+    border:0;
+}
+
 //avatar
 .avatar {
     height: 100%;
     padding: 12px 0;
+    img {
+        border:1px solid rgba($talk-dark,.1);
+        border-radius:50%;
+    }
 }
 
-.avatar-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 28px;
+.avatar-image {
+    border-radius: 50%;
     border: 2px solid $smoke;
-    background: url(../img/lips.png) no-repeat 50% 50%;
     background-size: cover;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin:0 auto;
+}
+
+section {
+    padding:12px;
 }

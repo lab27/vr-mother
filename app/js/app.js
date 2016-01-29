@@ -1,5 +1,7 @@
 'use strict';
 
+//auto close the flash message:
+$('.flash-msg').delay(3000).fadeOut(1000);
 
 
 
@@ -20,7 +22,10 @@
 //     });
 // });
 
-
+$('#mobile-logo').on('click', function(){
+    console.log('opening the mobile nav');
+    $('#mobile-nav').toggle();
+});
 
 $('.button-play-pause').on('click', function() {
     $(this).children('span').each(function() {

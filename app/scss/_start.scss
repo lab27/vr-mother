@@ -12,6 +12,11 @@
     }
 }
 
+.top-bar-right {
+    @include breakpoint(medium){
+        width: auto;
+    }
+}
 $h1-bottom-margin: 48px;
 
 .svg-icon {
@@ -68,39 +73,7 @@ button {
 .root-index {
     // padding-top: 100px;
     background: $talk-dark;
-
-    .talk-card {
-
-    }
-
-    .row {
-        max-width: 1200px;
-
-        @extend .text-center;
-
-        padding: 12px;
-
-        h2 {
-            color: $secondary-color;
-            margin-bottom: $h1-bottom-margin;
-            font-size: rem-calc(24);
-            text-transform: uppercase;
-            letter-spacing: rem-calc(5);
-        }
-    }
-
-    h1, h2 {
-        @extend .text-center;
-
-        // font-size: rem-calc(48);
-
-        // text-transform: uppercase;
-        color: white;
-        letter-spacing: rem-calc(6);
-        margin-bottom: $h1-bottom-margin;
-    }
-
-    section {
+        section {
         padding: 96px 0;
 
         &.light {
@@ -142,6 +115,36 @@ button {
             }
         }
     }
+}
+
+    .row {
+        max-width: 1200px;
+
+        @extend .text-center;
+
+        padding: 12px;
+
+        h2 {
+            color: $secondary-color;
+            margin-bottom: $h1-bottom-margin;
+            font-size: rem-calc(24);
+            text-transform: uppercase;
+            letter-spacing: rem-calc(5);
+        }
+    }
+
+    h1, h2 {
+        @extend .text-center;
+
+        // font-size: rem-calc(48);
+
+        // text-transform: uppercase;
+        color: white;
+        letter-spacing: rem-calc(6);
+        margin-bottom: $h1-bottom-margin;
+    }
+
+
 
     #talk-collection, #talk-teasers {
         @extend .clearfix;
@@ -152,7 +155,7 @@ button {
     #claim {
         text-align: center;
         padding-bottom: 96px;
-        background:url(../../images/background/matterhorn.jpg) no-repeat 50% 50%;
+        background:url(../../images/background/matterhorn.jpg) no-repeat 50% 25%;
         background-size:cover;
 
         // padding: 30vh 0 40vh 0;
@@ -424,7 +427,11 @@ button {
                 }
 
                 img {
-                    max-width: 300px;
+                    max-width: 50vw;
+                    @include breakpoint(medium){
+                        max-width: 300px;
+                    }
+
                 }
 
                 hr {
@@ -540,4 +547,4 @@ button {
             }
         }
     }
-}
+// }
