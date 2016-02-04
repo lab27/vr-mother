@@ -87,6 +87,9 @@ footer {
     margin-bottom: 48px;
     padding-top: 48px;
     padding-left: 0;
+    @include breakpoint(small only){
+        text-align: center;
+    }
 
     a {
         font-size: rem-calc(24);

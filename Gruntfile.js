@@ -283,7 +283,7 @@ module.exports = function(grunt) {
         js: {
           files: [{
             cwd: 'app/js',
-            src: ['*.js'],
+            src: ['**/*.js'],
             dest: '../voicerepublic/public/assets/javascripts'
           }],
           verbose: true
@@ -316,7 +316,7 @@ module.exports = function(grunt) {
     grunt.registerTask('data', ['convert']);
     grunt.registerTask('publish', ['compile-sass', 'clean:dist',
         //'validate-js',
-        'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin'
+        'useminPrepare', 'copy:dist', 'concat', 'cssmin', 'uglify', 'usemin'
     ]);
 
 };

@@ -130,7 +130,7 @@ BlinkMacSystemFont,
 sans-serif;
 $body-font-family: $system-font-family;
 $header-font-family: 'Eagle',
-'Eagle-Book';
+'Eagle-Book',$system-font-family;
 $header-font-weight: normal;
 // // 2. Breakpoints
 // // --------------
@@ -251,7 +251,7 @@ $header-font-weight: normal;
 // $button-margin: 0 $global-margin $global-margin 0;
 // $button-fill: solid;
 // $button-background: $primary-color;
-// $button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background-hover: $alert-color;
 // $button-color: #fff;
 // $button-color-alt: #000;
 // $button-radius: $global-radius;
@@ -266,13 +266,13 @@ $header-font-weight: normal;
 // // 13. Callout
 // // -----------
 // $callout-background: $white;
-// $callout-background-fade: 85%;
-// $callout-border: 1px solid rgba($black, 0.25);
-// $callout-margin: 0 0 1rem 0;
+$callout-background-fade: 0;
+$callout-border: 0;
+$callout-margin: 0;
 // $callout-padding: 1rem;
 // $callout-font-color: $body-font-color;
 // $callout-font-color-alt: $body-background;
-// $callout-radius: $global-radius;
+$callout-radius: 0;
 // $callout-link-tint: 30%;
 // // 14. Close Button
 // // ----------------
@@ -322,28 +322,29 @@ $dropdown-font-size: 14rem;
 // $input-prefix-background: $light-gray;
 // $input-prefix-border: 1px solid $medium-gray;
 // $input-prefix-padding: 1rem;
-// $form-label-color: $black;
+$form-label-color: $talk-dark;
 // $form-label-font-size: rem-calc(14);
-// $form-label-font-weight: $global-weight-normal;
+$form-label-font-weight: 500;
 // $form-label-line-height: 1.8;
 // $select-background: #fafafa;
 // $select-triangle-color: #333;
 // $select-radius: $global-radius;
-// $input-color: $black;
+$input-color: $talk-dark;
 // $input-font-family: inherit;
-// $input-font-size: rem-calc(16);
-$input-background: rgba($light-gray,.2);
+$input-font-size: rem-calc(16);
+$input-background: white;
 // $input-background-focus: $white;
 // $input-background-disabled: $light-gray;
-$input-border: 0px solid $light-gray;
-// $input-border-focus: 1px solid $dark-gray;
-// $input-shadow: inset 0 1px 2px rgba($black, 0.1);
+$input-border: 1px solid $steel;
+$input-border-focus: 1px solid $secondary-color;
+$input-shadow: none;
 // $input-shadow-focus: 0 0 5px $medium-gray;
+$input-shadow-focus:none;
 // $input-cursor-disabled: default;
 // $input-transition: box-shadow 0.5s,
 // border-color 0.25s ease-in-out;
 // $input-number-spinners: true;
-//$input-radius: $global-radius;
+$input-radius: 2px;
 // // 20. Label
 // // ---------
 // $label-background: $primary-color;
