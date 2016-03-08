@@ -8,7 +8,7 @@
 //     	box-shadow:none;
 
 //     }
-.registrations, .sessions {
+.registrations, .sessions, .confirmations, .passwords {
     height: 100%;
     html & {
         // background: url(../../images/background/matterhorn.jpg) no-repeat 50% 50% fixed;
@@ -32,6 +32,36 @@
 
     label {
     	text-align: left;
+    }
+
+    #error_explanation {
+        h2 {
+            text-transform: none;
+            color:$alert-color;
+            font-size:rem-calc(18);
+            letter-spacing: rem-calc(0);
+            margin-bottom: 12px;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: decimal;
+            text-align: left;
+            font-size: rem-calc(14);
+            margin-bottom: 24px;
+            color: $alert-color;
+            font-weight: 500;
+
+            li {
+                // padding-left:1em;
+                // text-indent: -.7em;
+                // &:before {
+                //     content: "• ";
+                //     color: $alert-color;
+                // }
+            }
+
+        }
     }
 
     

@@ -88,9 +88,9 @@
         color: $secondary-color;
         font-size: rem-calc(24);
     }
-    p {
-        font-size: rem-calc(14);
-    }
+    // p {
+    //     font-size: rem-calc(14);
+    // }
     #avatar-img {
         margin-bottom: 6px;
         display: block;
@@ -144,6 +144,7 @@
         // font-family: $header-font-family;
    
     }
+
     @include breakpoint(medium) {
         @extend .left;
         background: rgba($almost-black, 0.2);
@@ -162,18 +163,14 @@
     }
 }
 
-#user-block {
-    text-align: center;
-    padding: 24px;
-    padding-bottom: 0;
-    position: relative;
-    .user-meta-group {
+    .user-meta-group, .series-meta-group {
         margin: 0;
         margin-bottom: 0;
+        text-align: center;
         li {
             font-size: rem-calc(12);
             color: $almost-black;
-            padding: 6px;
+            // padding: 6px;
             height: 32px;
             margin: 0;
             width: 25%;
@@ -195,9 +192,21 @@
                 background: none;
                 font-size: rem-calc(10);
                 text-transform: uppercase;
+                color:$talk-dark;
+            }
+            hr {
+                border-color: $warning-color;
             }
         }
+
+
     }
+
+#user-block {
+    text-align: center;
+    padding: 24px;
+    padding-bottom: 0;
+    position: relative;
     img {
         margin-bottom: 12px;
     }
@@ -425,6 +434,7 @@
 
 #user-description {
     color: $almost-black;
+    font-size: rem-calc(14);
 }
 
 #user-about {
@@ -443,6 +453,9 @@
         font-weight: 700;
     }
     li {
+        font-size: rem-calc(14);
+    }
+    p {
         font-size: rem-calc(14);
     }
     a {
@@ -575,7 +588,6 @@
             label {
                 margin-bottom: 4px;
             }
-
             .button {
                 padding: .85rem;
             }
@@ -642,9 +654,10 @@
     }
     .slug {
         padding-bottom: 12px;
-        @include breakpoint(medium){
-            padding-right:12px !important;
+        @include breakpoint(medium) {
+            padding-right: 12px !important;
         }
+
         .input-group-label {
             font-size: rem-calc(12);
             @include breakpoint(medium) {
@@ -684,32 +697,32 @@
         background: $info-color;
         color: $almost-black;
     }
-    .inputfile {
-        input {
-            width: 0.1px;
-            height: 0.1px;
-            opacity: 0;
-            overflow: hidden;
-            position: absolute;
-            z-index: -1;
-        }
-        label {
-            // line-height: 30px;
-            cursor: pointer;
-            text-align: center;
+}
 
-            .svg-icon {
-                float: none;
-                display: inline-block;
+.inputfile {
+    input {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    label {
+        // line-height: 30px;
+        cursor: pointer;
+        text-align: center;
+        .svg-icon {
+            float: none;
+            display: inline-block;
+            max-width: 18px;
+            max-height: 18px;
+            margin-right: 12px;
+            vertical-align: inherit;
+            svg {
                 max-width: 18px;
                 max-height: 18px;
-                margin-right: 12px;
-                vertical-align: inherit;
-                svg {
-                    max-width: 18px;
-                    max-height: 18px;
-                    margin-top: 6px;
-                }
+                margin-top: 6px;
             }
         }
     }

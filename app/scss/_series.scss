@@ -1,0 +1,155 @@
+//series
+.series {
+    background: $silver;
+    h3 {
+    	font-family: $body-font-family;
+    	font-size: rem-calc(16);
+    	color: $talk-dark;
+    	font-weight: 700;
+    }
+    .link-delete {
+        float: left;
+        color: $charcoal;
+        border-color: $charcoal;
+    }
+    .button-cancel {
+        margin-right: 6px;
+    }
+    .preview-img {
+        width: 600px;
+        height: 400px;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    .series-container {
+    	max-width: 900px;
+    	margin: 0 auto;
+    	padding-top:12px;
+    }
+
+    .user-box {
+    	* {
+    		display: inline-block;
+    	}
+
+    	.image-box {
+    	 	text-align: center;
+    	 	img {
+    	 		margin: 0 auto;
+    	 	}
+    	 }
+
+
+    }
+
+    // #right-column h3 {
+    //     font-family: $body-font-family;
+    //     font-size: rem-calc(18);
+    //     text-align: left;
+    //     font-weight: 700;
+    //     color:$secondary-color;
+    //     margin-left: 6px;	
+    // }
+    // max-width: rem-calc(900);
+    // margin: 0 auto;
+    // padding-top: 24px;
+    // text-align: center;
+    .row {
+        padding: 0;
+        // text-align: center;
+        // .columns {
+        //     padding: 12px;
+        // }
+        .talk-card {
+            padding: 6px;
+            @include breakpoint(900px) {
+                width: 33.3333%;
+            }
+        }
+        &.image-box,
+        &.meta-data-box {
+            padding: 12px;
+        }
+        &.meta-data-box {
+            padding-top: 0;
+        }
+    }
+
+    .meta-data-box {
+    	hr {
+    		border-color: $warning-color;
+    	}
+    }
+    .title-box {
+
+    		img {
+    			margin: 0 auto;
+    		}
+        padding: 12px 0;
+      
+
+        p.series-user {
+            color: $talk-dark;
+            font-weight: 500;
+            font-size: rem-calc(12);
+            margin-left: 6px;
+            margin-bottom: 0;
+            display: inline-block;
+        }
+    }
+    .talks-title {
+        padding: 0;
+        padding-bottom: 6px;
+        color: $primary-color;
+        width: auto;
+    }
+    .talks-grid {
+        padding: 0;
+        margin: -6px;
+        padding-bottom: 24px;
+        width: auto;
+        @include breakpoint(medium) {
+            width: 100%;
+        }
+    }
+    .action-links {
+        text-align: center;
+        padding-top: 12px;
+    }
+    .talks-box {
+        padding: 12px;
+        padding-bottom: 0;
+        @include breakpoint(medium) {
+            padding-right: 0;
+        }
+
+        hr {
+            border-color: $primary-color;
+        }
+    }
+    .series-label {
+        font-size: rem-calc(12);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: rem-calc(1);
+        line-height: rem-calc(12);
+        margin-bottom: 6px;
+    }
+    .series-description {
+        padding: 12px;
+        // padding-bottom: 60px;
+   
+    }
+    .series-description p {
+        text-align: left !important;
+        font-weight: 300;
+    }
+    .series-title {
+    	margin: 0;
+    	color: $secondary-color;
+    }
+    h3.about {
+        color: $primary-color;
+    }
+}

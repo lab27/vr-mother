@@ -1,44 +1,44 @@
-
-
 .talk-card {
     padding: 6px;
     background: none;
-    position:relative;
+    position: relative;
 
-       @include breakpoint(560px){
+    @include breakpoint(560px) {
         width: 50%;
     }
-    @include breakpoint(760px){
+
+
+    @include breakpoint(760px) {
         width: 33.333%;
     }
-        @include breakpoint(1100px){
+
+
+    @include breakpoint(1100px) {
         width: 25%;
     }
 
+
     .explore-index & {
-
-
-    @include breakpoint(1600px){
-        width: 20%;
-    }
+        @include breakpoint(1600px) {
+            width: 20%;
+        }
     }
 
     &.postlive, &.processing, &.suspended {
-        pointer-events:none;
+        //pointer-events: none;
+
         .talk-card-inside {
             opacity: .5;
-
         }
 
-       
-        
         .not_available {
-            position:absolute;
-            top:97px;
-            left:30px;
-            right:30px;
-            padding:12px;
-            background:$warning-color;
+            position: absolute;
+            top: 97px;
+            left: 30px;
+            right: 30px;
+            padding: 12px;
+            background: $warning-color;
+
             p {
                 font-size: rem-calc(12);
                 line-height: rem-calc(14);
@@ -46,12 +46,8 @@
                 font-weight: 500;
                 height: auto;
             }
-
         }
     }
-
-
-
 
     &:last-child {
         @extend .end;
@@ -61,7 +57,7 @@
         background: $ghost;
         padding: 12px;
         cursor: pointer;
-         position:relative;
+        position: relative;
 
         @extend .text-left;
 
@@ -81,14 +77,14 @@
         }
 
         p.series-label {
-                color:$almost-black;
-                font-size: rem-calc(12);
-                text-transform: uppercase;
-                letter-spacing: rem-calc(4);
-                margin:0;
-                margin-bottom: 10px;
-                line-height: rem-calc(12);
-            }
+            color: $almost-black;
+            font-size: rem-calc(12);
+            text-transform: uppercase;
+            letter-spacing: rem-calc(4);
+            margin: 0;
+            margin-bottom: 10px;
+            line-height: rem-calc(12);
+        }
 
         .meta {
             @extend .clearfix;
@@ -143,9 +139,10 @@
                 opacity: 0;
                 transition: opacity .2s ease;
 
-                .speaker {
-                    @extend .date;
-
+                .teaser, .speaker {
+                    // @extend .date;
+                    font-size: rem-calc(12);
+                    line-height: rem-calc(14);
                     color: $light-gray;
 
                     a {
@@ -158,7 +155,13 @@
                         }
                     }
                 }
+            p.speaker {
+                color: $info-color;
             }
+
+
+            }
+
         }
 
         $font-size: 18px;
@@ -185,7 +188,6 @@
             text-overflow: ellipsis;
             margin-bottom: 6px;
             transition: text-decoration .2s ease;
-
         }
 
         a {
@@ -201,7 +203,7 @@
             text-decoration: underline;
         }
 
-        &:hover > .image-box .hover-info {
+        &:hover .hover-info {
             display: block !important;
             opacity: 1;
         }
@@ -271,7 +273,6 @@
             .talk-count, .play-count {
                 margin-bottom: 0;
             }
-
         }
 
         .talk-card-inside h5 {
@@ -295,57 +296,57 @@
 }
 
 $font-size: 14px;
-        $line-height: 1.2;
-        $lines-to-show: 2;
+$line-height: 1.2;
+$lines-to-show: 2;
 
 .series .talk-card-inside p.lead {
-        
+    display: block;
 
-            display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
 
-            /* Fallback for non-webkit */
-            display: -webkit-box;
+    // max-width: 400px;
+    height: $font-size * $line-height * $lines-to-show;
 
-            // max-width: 400px;
-            height: $font-size * $line-height * $lines-to-show;
-
-            /* Fallback for non-webkit */
-            margin: 0 auto;
-            font-size: $font-size;
-            line-height: $line-height;
-            -webkit-line-clamp: $lines-to-show;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-bottom: 6px;
-            transition: text-decoration .2s ease;
-        }
-
+    /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 6px;
+    transition: text-decoration .2s ease;
+}
 
 .talk-card:hover .talk-card-inside h5.title, .series:hover .talk-card-inside h5.title {
     text-decoration: underline;
- }  
+}
 
 .series .talk-card-inside .meta {
-    height:18px;
+    height: 18px;
 
     a {
         color: $alert-color;
         font-weight: 500;
+
         &:hover {
             text-decoration: underline;
         }
     }
 }
 
-    .series {
-        .talk-card-inside {
-            padding-top: 12px;
-            img {
-                margin-bottom: 12px;
-            }
-            .title,p.lead {
-                color: $almost-black;
-            }
+.series {
+    .talk-card-inside {
+        padding-top: 12px;
+
+        img {
+            margin-bottom: 12px;
+        }
+
+        .title, p.lead {
+            color: $almost-black;
         }
     }
+}

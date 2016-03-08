@@ -89,7 +89,7 @@ function changeLabelName(input)
         $label   = $input.next( 'label' ),
         labelVal = $label.html();
 
-        console.log('should change label name')
+        //console.log('should change label name')
 
     // $input.on( 'change', function( e )
     // {
@@ -119,25 +119,34 @@ function readURL(input) {
         
         reader.onload = function (e) {
             var fileName = $('input[type=file]').val().split('\\').pop();
-            $('#avatar-img').css('background-image', 'url(' + e.target.result) + ')';
-            //console.log('filename:' + fileName);
-            $('.profile-avatar label').find('span').html(fileName);
+            $('.preview-img').css('background-image', 'url(' + e.target.result) + ')';
+            console.log('filename:' + fileName);
+            $('.preview-img').next().find('span').html(fileName);
         }
         
         reader.readAsDataURL(input.files[0]);
     }
 }
 
-$("#user_avatar").change(function(){
+$("#user_avatar, #series_image").change(function(){
     console.log('should change the image');
     readURL(this);
     // changeLabelName($('.inputfile'));
 });
 
 $("input#user_slug").focus(function(){  
-    console.log('tryign to schange slug');
+    //console.log('tryign to schange slug');
 
     $('.slug-warning').removeClass('hide');
+});
+
+//trigger thing on search 
+$('.search-container button[type="submit"]').click(function(){
+       $('#working').removeClass('hide');
+    });
+$('.search-container input').keypress(function(e){
+        if(e.which == 13){//Enter key pressed
+$('#working').removeClass('hide');        }
 });
 
 $(document).foundation();

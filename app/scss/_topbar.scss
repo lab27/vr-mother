@@ -1,3 +1,17 @@
+#working {
+    position:absolute;
+    height:80px;
+    max-height: 80px;
+    top:0;
+    left:0;
+    right:0;
+    background: $info-color;
+    text-align: center;
+    color: $talk-dark;
+    padding-top: 21px;
+    z-index: 9999;
+    pointer-events:none;
+}
 .logo a span {
     font-family: $header-font-family;
     color: $alert-color;
@@ -184,7 +198,7 @@
 }
 
 .search-container {
-    position: fixed;
+    position: absolute;
     top: 18px;
     right: 0;
     width: 380px;
@@ -199,8 +213,8 @@
             margin: 0;
             padding: 0;
             border: 0;
-            padding-top: 21px;
-            margin-left: -40px;
+            padding-top: 8px;
+            margin-left: -32px;
             .svg-icon {
                 height: 6px;
                 svg {

@@ -47,7 +47,7 @@
 
 // @import "../bower_components/foundation-sites/scss/components/thumbnail";
 
-// @import "../bower_components/foundation-sites/scss/components/tooltip";
+@import "../bower_components/foundation-sites/scss/components/tooltip";
 
 @include foundation-global-styles;
 
@@ -97,7 +97,7 @@
 
 // @include foundation-pagination;
 
-// @include foundation-progress-bar;
+@include foundation-progress-bar;
 
 // @include foundation-slider;
 
@@ -115,7 +115,7 @@
 
 @include foundation-title-bar;
 
-// @include foundation-tooltip;
+@include foundation-tooltip;
 
 @include foundation-top-bar;
 
@@ -134,3 +134,7 @@
 
 @import "talk-card";
 @import "alert-box";
+@import "talk-forms";
+@import "error";
+@import "pricing";
+@import "series";

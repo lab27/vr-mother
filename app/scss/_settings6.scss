@@ -130,6 +130,7 @@ BlinkMacSystemFont,
 sans-serif;
 $body-font-family: $system-font-family;
 $header-font-family: 'Eagle',
+
 'Eagle-Book',$system-font-family;
 $header-font-weight: normal;
 // // 2. Breakpoints
@@ -495,7 +496,7 @@ $tab-content-color: foreground($tab-background, $white);
 // $titlebar-icon-spacing: 0.25rem;
 // // 34. Tooltip
 // // -----------
-// $tooltip-background-color: $black;
+$tooltip-background-color: $brand-purple;
 // $tooltip-color: $white;
 // $tooltip-padding: 0.75rem;
 // $tooltip-font-size: $small-font-size;
@@ -503,6 +504,7 @@ $tab-content-color: foreground($tab-background, $white);
 // $tooltip-pip-height: $tooltip-pip-width * 0.866;
 // $tooltip-pip-offset: 1.25rem;
 // $tooltip-radius: $global-radius;
+$has-tip-border-bottom: none;
 // // 35. Top Bar
 // // -----------
 $topbar-padding: .5rem;
