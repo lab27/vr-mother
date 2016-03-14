@@ -7,10 +7,21 @@
     	color: $talk-dark;
     	font-weight: 700;
     }
+
+    .series-meta-group li {
+    	color: $info-color;
+    	p.label {
+    		color: $white;
+    	}
+    }
+
+    .top-section {
+    	background:$secondary-color;
+    }
     .link-delete {
         float: left;
-        color: $charcoal;
-        border-color: $charcoal;
+        color: $info-color;
+        border-color: $info-color;
     }
     .button-cancel {
         margin-right: 6px;
@@ -42,6 +53,59 @@
 
 
     }
+    .series-grid {
+    	max-width: none;
+    	width: 100%;
+
+    }
+    .series-left-column {
+    	// background:yellow;
+    	padding: 12px;
+    	@include breakpoint(large){
+    		// max-width: 350px;
+    		padding: 24px;
+    		padding-right: 0;
+
+    	}
+    	img {
+    		margin-top: 6px;
+    	}
+    }
+
+    .series-right-column {
+    	// background: orange;
+    	@include breakpoint(medium){
+    		padding:12px;
+    	}
+    	@include breakpoint(large){
+    		padding:24px;
+    		padding-left:12px;
+    	// width: calc(100% - 350px)
+    	// margin-left: 350px;
+    	}
+    }
+
+        .talk-card {
+        @include breakpoint(medium) {
+            width: 100%;
+        }
+
+        @include breakpoint(800px) {
+            width: 50%;
+        }
+
+        @include breakpoint(1400px) {
+            width: 33.333%;
+        }
+
+        @include breakpoint(1800px) {
+            width: 25%;
+        }
+
+        @include breakpoint(2200px) {
+            width: 20%;
+        }
+    }
 
     // #right-column h3 {
     //     font-family: $body-font-family;
@@ -61,12 +125,7 @@
         // .columns {
         //     padding: 12px;
         // }
-        .talk-card {
-            padding: 6px;
-            @include breakpoint(900px) {
-                width: 33.3333%;
-            }
-        }
+
         &.image-box,
         &.meta-data-box {
             padding: 12px;
@@ -82,27 +141,35 @@
     	}
     }
     .title-box {
-
+    		text-align: center;
     		img {
     			margin: 0 auto;
+    			margin-bottom: 0;
+    			vertical-align: middle;
     		}
-        padding: 12px 0;
+        padding: 24px 0 6px 0;
       
 
-        p.series-user {
+    }
+    .byline {
+    	margin-bottom: 24px;
+    }
+        span.user {
             color: $talk-dark;
-            font-weight: 500;
-            font-size: rem-calc(12);
+            font-weight: 700;
+            font-size: rem-calc(14);
             margin-left: 6px;
             margin-bottom: 0;
             display: inline-block;
         }
-    }
     .talks-title {
         padding: 0;
         padding-bottom: 6px;
         color: $primary-color;
         width: auto;
+        h3 {
+        	margin-left: 12px;
+        }
     }
     .talks-grid {
         padding: 0;
@@ -135,6 +202,8 @@
         letter-spacing: rem-calc(1);
         line-height: rem-calc(12);
         margin-bottom: 6px;
+        opacity: .6;
+        margin-right: 6px;
     }
     .series-description {
         padding: 12px;
@@ -147,9 +216,23 @@
     }
     .series-title {
     	margin: 0;
-    	color: $secondary-color;
+    	color: $warning-color;
     }
     h3.about {
         color: $primary-color;
     }
+}
+
+.menu-centered {
+	text-align:center;
+	.menu > li {
+		display: inline-block;
+	}
+
+	li.mail {
+		svg {
+			max-width: 26px;
+			max-height: 32px;
+		}
+	}
 }

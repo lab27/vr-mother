@@ -67,12 +67,15 @@
         .publisher {
             margin: 0;
             line-height: 18px;
-            font-weight: 500;
+            font-weight: 300;
             margin-bottom: 0;
+            font-size: rem-calc(14);
             color: rgba($talk-dark, 0.5);
+            color:$secondary-color;
 
             &:hover {
                 text-decoration: underline;
+                color:$primary-color;
             }
         }
 
@@ -86,25 +89,23 @@
             line-height: rem-calc(12);
         }
 
-        .meta {
-            @extend .clearfix;
-
+        .meta-data {
             width: 100%;
             margin: 0;
             font-size: rem-calc(11);
             line-height: rem-calc(12);
             text-transform: uppercase;
             letter-spacing: rem-calc(1);
-            color: rgba($talk-dark, 0.5);
+            color: rgba($light-gray, 0.5);
             margin-bottom: 6px;
 
-            .running-time {
-                @extend .float-left;
-            }
+            // .running-time {
+            //     @extend .float-left;
+            // }
 
-            .play-count {
-                @extend .float-right;
-            }
+            // .play-count {
+            //     @extend .float-right;
+            // }
         }
 
         .date {
@@ -113,7 +114,7 @@
             line-height: rem-calc(12);
             text-transform: uppercase;
             letter-spacing: rem-calc(1);
-            color: rgba($talk-dark, 0.5);
+            // color: rgba($talk-dark, 0.5);
             margin-bottom: 6px;
 
             strong {
@@ -127,6 +128,7 @@
         .image-box {
             margin-bottom: 12px;
             position: relative;
+            margin-top:6px;
 
             .hover-info {
                 position: absolute;
@@ -186,7 +188,7 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-bottom: 6px;
+            margin-bottom: 0;
             transition: text-decoration .2s ease;
         }
 
@@ -211,18 +213,19 @@
         .svg-icon {
             float: left;
             max-width: 24px;
-            max-height: 24px;
+            max-height: 4px;
+            color:$light-gray;
 
             svg {
-                @extend .float-left;
+                // @extend .float-left;
 
                 max-width: 24px;
                 max-height: 24px;
-                margin-top: 6px;
+                margin-top: 0;
                 margin-right: 12px;
 
                 * {
-                    fill: $light-gray;
+                    fill: currentColor;
                 }
             }
         }
@@ -348,5 +351,86 @@ $lines-to-show: 2;
         .title, p.lead {
             color: $almost-black;
         }
+    }
+}
+
+.talk-card .bottom-info {
+    display: table;
+    width:100%;
+    & > .svg-icon {
+        height: 10px;
+    }
+    * {
+        display: table-cell;
+    }
+
+    .svg-icon {
+        width: 44px;
+        vertical-align: middle;
+        padding-top:0;
+        max-height: 20px;
+    }
+
+    .play-count {
+        width: 100%;
+        text-align:center;
+        font-size: rem-calc(12);
+        vertical-align: middle;
+        color:$charcoal;
+    }
+
+    .pin-btn, .unpin-btn {
+        max-width: 44px;
+        padding: 12px;
+        background: none;
+        border:1px solid $light-gray;
+        color:$light-gray;
+        border-radius:2px;
+        .svg-icon {
+            padding-top: 0;
+            color: $light-gray;
+            max-height: 6px;
+        }
+        svg {
+            max-width: 16px;
+            max-height: 16px;
+            margin:0;
+            
+        }
+        &:hover {
+            border-color:$secondary-color;
+            color:$secondary-color;
+            .svg-icon {
+                color:$secondary-color;
+                fill: $secondary-color;
+            }
+        }
+    }
+
+    .pinboard {
+        height: 44px;
+        max-height: 44px;
+    }
+
+    .unpin-btn {
+        background:$secondary-color;
+        border-color: $secondary-color;
+        .svg-icon {
+            color: white;
+        }
+        &:hover {
+            background:$alert-color;
+            border-color: $alert-color;
+            .svg-icon {
+                color: white;
+            }
+        }
+    }
+
+    .pin-placeholder {
+        width: 44px;
+        height: 44px;
+        background:none;
+        display: block;
     }
 }

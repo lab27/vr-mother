@@ -192,8 +192,9 @@
                 background: none;
                 font-size: rem-calc(10);
                 text-transform: uppercase;
-                color:$talk-dark;
+                // color:$talk-dark;
             }
+            
             hr {
                 border-color: $warning-color;
             }
